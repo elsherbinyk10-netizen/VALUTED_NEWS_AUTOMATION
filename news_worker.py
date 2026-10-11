@@ -78,43 +78,10 @@ def entry_datetime(entry):
 
 
 def shopify_access_token():
-    shop = env("SHOPIFY_STORE_DOMAIN")
-    client_id = env("SHOPIFY_CLIENT_ID")
-    client_secret = env("SHOPIFY_CLIENT_SECRET")
-
-    if not shop or not client_id or not client_secret:
-        raise RuntimeError(
-            "Missing Shopify configuration. Set SHOPIFY_STORE_DOMAIN, "
-            "SHOPIFY_CLIENT_ID, and SHOPIFY_CLIENT_SECRET."
-        )
-
-    response = requests.post(
-        f"https://{shop}/admin/oauth/access_token",
-        data={
-            "grant_type": "client_credentials",
-            "client_id": client_id,
-            "client_secret": client_secret,
-        },
-        timeout=30,
-    )
-    if not response.ok:
-        try:
-            details = response.json()
-        except ValueError:
-            details = response.text[:1000]
-
-        raise RuntimeError(
-            f"Shopify token request failed ({response.status_code}): {details}"
-        )
-
-    payload = response.json()
-    token = payload.get("access_token")
-
+    token = env("SHOPIFY_ADMIN_ACCESS_TOKEN")
     if not token:
-        raise RuntimeError("Shopify did not return an access token.")
-
+        raise RuntimeError("Missing SHOPIFY_ADMIN_ACCESS_TOKEN repository secret.")
     return token
-
 
 def shopify_graphql(query, variables):
     shop = env("SHOPIFY_STORE_DOMAIN")
