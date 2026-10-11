@@ -1,5 +1,3 @@
-
-```yaml
 name: Valuted News RSS Automation
 
 on:
@@ -19,6 +17,7 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+
     env:
       SHOPIFY_STORE_DOMAIN: ${{ secrets.SHOPIFY_STORE_DOMAIN }}
       SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ADMIN_ACCESS_TOKEN }}
@@ -60,7 +59,7 @@ jobs:
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+users.noreply.github.com"
           git add data/processed.json
           if git diff --cached --quiet; then
             echo "No processing-state changes to commit."
@@ -68,4 +67,3 @@ jobs:
             git commit -m "Update news processing state [skip ci]"
             git push
           fi
-```
