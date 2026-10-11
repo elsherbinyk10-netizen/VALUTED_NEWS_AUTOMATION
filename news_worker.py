@@ -264,6 +264,7 @@ def main():
         "1", "true", "yes", "on"
     }
     candidates = []
+    candidate_keys = set()
 
     for config in feeds:
         name, url, category = config["name"], config["url"], config["category"]
@@ -278,8 +279,9 @@ def main():
                 if not title or not source_url:
                     continue
                 key = story_key(source_url, title)
-                if key in seen:
+                if key in seen or key in candidate_keys:
                     continue
+                candidate_keys.add(key)
                 published = entry_datetime(entry)
                 if published and published < cutoff:
                     if not args.dry_run:
