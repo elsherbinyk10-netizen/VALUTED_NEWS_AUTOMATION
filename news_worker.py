@@ -77,25 +77,62 @@ def entry_datetime(entry):
     return None
 
 
+def shopify_access_token():
+    shop = env("SHOPIFY_STORE_DOMAIN")
+    client_id = env("SHOPIFY_CLIENT_ID")
+    client_secret = env("SHOPIFY_CLIENT_SECRET")
+
+    if not shop or not client_id or not client_secret:
+        raise RuntimeError(
+            "Missing Shopify configuration. Set SHOPIFY_STORE_DOMAIN, "
+            "SHOPIFY_CLIENT_ID, and SHOPIFY_CLIENT_SECRET."
+        )
+
+    response = requests.post(
+        f"https://{shop}/admin/oauth/access_token",
+        data={
+            "grant_type": "client_credentials",
+            "client_id": client_id,
+            "client_secret": client_secret,
+        },
+        timeout=30,
+    )
+    response.raise_for_status()
+    payload = response.json()
+    token = payload.get("access_token")
+
+    if not token:
+        raise RuntimeError("Shopify did not return an access token.")
+
+    return token
+
+
 def shopify_graphql(query, variables):
     shop = env("SHOPIFY_STORE_DOMAIN")
-    token = env("SHOPIFY_ADMIN_ACCESS_TOKEN")
     api_version = env("SHOPIFY_API_VERSION", "2026-10")
-    if not shop or not token:
-        raise RuntimeError("Missing Shopify credentials. Set SHOPIFY_STORE_DOMAIN and SHOPIFY_ADMIN_ACCESS_TOKEN as GitHub secrets.")
+
+    if not shop:
+        raise RuntimeError("Missing SHOPIFY_STORE_DOMAIN.")
+
+    token = shopify_access_token()
     endpoint = f"https://{shop}/admin/api/{api_version}/graphql.json"
+
     response = requests.post(
         endpoint,
-        headers={"X-Shopify-Access-Token": token, "Content-Type": "application/json"},
+        headers={
+            "X-Shopify-Access-Token": token,
+            "Content-Type": "application/json",
+        },
         json={"query": query, "variables": variables},
         timeout=30,
     )
     response.raise_for_status()
     payload = response.json()
+
     if payload.get("errors"):
         raise RuntimeError(f"Shopify GraphQL error: {payload['errors']}")
-    return payload.get("data", {})
 
+    return payload.get("data", {})
 
 def make_editorial(title, publisher, category, description):
     safe_description = html.escape(description[:700])
