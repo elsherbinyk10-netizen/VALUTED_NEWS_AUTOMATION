@@ -102,6 +102,16 @@ def shopify_graphql(query, variables):
         json={"query": query, "variables": variables},
         timeout=30,
     )
+    if response.status_code in (401, 403):
+        raise RuntimeError(
+            "Shopify authentication/permission failure (HTTP "
+            + str(response.status_code)
+            + "). Check the GitHub Actions secrets "
+              "SHOPIFY_ADMIN_ACCESS_TOKEN and SHOPIFY_STORE_DOMAIN. "
+              "They must match VALUTED NEWS; verify the token is current "
+              "and the app has the required write_content access. "
+              "Never print or commit the token."
+        )
     response.raise_for_status()
     payload = response.json()
 
@@ -111,19 +121,37 @@ def shopify_graphql(query, variables):
     return payload.get("data", {})
 
 def make_editorial(title, publisher, category, description):
-    safe_description = html.escape(description[:700])
+    """Build a transparent review draft from RSS metadata without inventing facts."""
+    safe_title = clean_text(title)[:120] or "Valuted News update"
+    excerpt = clean_text(description)
+    safe_description = html.escape(excerpt[:1800])
+
+    summary = (
+        excerpt[:280].rstrip()
+        if excerpt
+        else f"{safe_title}. Read the original report from {publisher}."
+    )
+
+    body = (
+        "<p><strong>Editorial review required — draft only.</strong> "
+        "This draft is based on an RSS headline and feed description. "
+        "The claims have not been independently verified by Valuted News. "
+        "An editor must review the original source, add verified context "
+        "and reporting, and correct the article before publication.</p>"
+    )
+
+    if safe_description:
+        body += f"<h2>Source feed summary</h2><p>{safe_description}</p>"
+    else:
+        body += (
+            "<p>The feed did not provide a summary. Review the original "
+            "source and write a verified report before publication.</p>"
+        )
+
     return {
-        "title": clean_text(title)[:120] or "Valuted News update",
-        "summary": (
-            f"Valuted News is tracking this {category.lower()} story "
-            f"from {publisher}. Read the original source for the full report."
-        )[:300],
-        "body": (
-            "<p><strong>Editorial review required.</strong> "
-            "This RSS item has not been independently verified. "
-            "Review the original source before publication.</p>"
-            f"<p><strong>Feed description:</strong> {safe_description}</p>"
-        ),
+        "title": safe_title,
+        "summary": summary[:300],
+        "body": body,
         "quality_ok": False,
     }
 
@@ -214,6 +242,8 @@ def main():
     candidates = candidates[:max_items]
     logging.info("Found %d new candidate(s); dry_run=%s; auto_publish=%s", len(candidates), args.dry_run, auto_publish)
 
+    failures = 0
+
     for item in candidates:
         logging.info("Candidate [%s] %s — %s", item["category"], item["title"], item["url"])
         if args.dry_run:
@@ -222,7 +252,9 @@ def main():
             editorial = make_editorial(item["title"], item["publisher"], item["category"], item["description"])
             # Publish automatically only when enabled and the story
             # has not triggered the high-risk review filter.
-            publish = auto_publish and not item["risk"]
+            # RSS metadata alone is not sufficient for publication.
+            # Keep all generated articles as drafts pending human fact-checking.
+            publish = False
             article = create_shopify_article(
                 blog_id, editorial["title"], editorial["summary"], editorial["body"],
                 item["url"], item["publisher"], item["category"], publish,
@@ -240,10 +272,20 @@ def main():
             }
             logging.info("Created Shopify %s: %s (%s)", "article" if publish else "draft", article.get("title"), article.get("id"))
         except Exception as exc:
+            failures += 1
             logging.exception("Failed to process %s: %s", item["title"], exc)
+            if "Shopify authentication/permission failure" in str(exc):
+                raise
 
     if not args.dry_run:
         save_state(state)
+
+    if failures:
+        raise RuntimeError(
+            f"{failures} article(s) failed. See the log above; "
+            "the workflow is marked failed so the problem is visible."
+        )
+
     logging.info("Run finished.")
 
 
