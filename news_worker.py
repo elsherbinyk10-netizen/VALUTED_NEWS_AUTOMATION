@@ -154,32 +154,56 @@ def shopify_graphql(query, variables):
     return payload.get("data", {})
 
 def make_editorial(title, publisher, category, description):
-    """Build a transparent review draft from RSS metadata without inventing facts."""
+    """Create a professionally structured, source-attributed review draft."""
     safe_title = clean_text(title)[:120] or "Valuted News update"
     excerpt = clean_text(description)
-    safe_description = html.escape(excerpt[:1800])
+    publisher_text = clean_text(publisher) or "Original source"
+    category_text = clean_text(category) or "World"
+
+    # Escape untrusted feed content before inserting it into HTML.
+    safe_description = html.escape(excerpt[:2500])
+    safe_publisher = html.escape(publisher_text)
+    safe_category = html.escape(category_text)
 
     summary = (
         excerpt[:280].rstrip()
         if excerpt
-        else f"{safe_title}. Read the original report from {publisher}."
+        else f"{safe_title}. Read the original report from {publisher_text}."
     )
 
     body = (
-        "<p><strong>Editorial review required — draft only.</strong> "
-        "This draft is based on an RSS headline and feed description. "
-        "The claims have not been independently verified by Valuted News. "
-        "An editor must review the original source, add verified context "
-        "and reporting, and correct the article before publication.</p>"
+        '<div class="valuted-news-article">'
+        '<p><strong>EDITORIAL REVIEW REQUIRED — NOT FOR PUBLICATION</strong></p>'
+        '<p>This article draft was assembled from RSS metadata. '
+        'The information has not been independently verified by Valuted News. '
+        'Review the original source, confirm names, dates and claims, '
+        'and add independently verified context before publishing.</p>'
+        '<hr>'
+        '<h2>At a glance</h2>'
+        f'<p>{safe_description}</p>'
+        if safe_description else
+        '<div class="valuted-news-article">'
+        '<p><strong>EDITORIAL REVIEW REQUIRED — NOT FOR PUBLICATION</strong></p>'
+        '<p>The RSS feed did not provide a usable summary. '
+        'Review the original source and write a verified report before publishing.</p>'
+        '<hr>'
+        '<h2>Story details</h2>'
+        '<p>No source summary was available for this draft.</p>'
     )
 
-    if safe_description:
-        body += f"<h2>Source feed summary</h2><p>{safe_description}</p>"
-    else:
-        body += (
-            "<p>The feed did not provide a summary. Review the original "
-            "source and write a verified report before publication.</p>"
-        )
+    body += (
+        '<h2>Editorial checklist</h2>'
+        '<ul>'
+        '<li>Verify the claims against the original report and, where appropriate, additional reliable sources.</li>'
+        '<li>Add verified context and original reporting; do not infer missing facts.</li>'
+        '<li>Check names, dates, locations, figures and quotations.</li>'
+        '<li>Confirm image ownership and usage rights before adding a featured image.</li>'
+        '</ul>'
+        '<p><strong>Section:</strong> ' + safe_category + '</p>'
+        '<p><strong>Original publisher:</strong> ' + safe_publisher + '</p>'
+        '<p><em>Valuted News Desk — editorial draft</em></p>'
+        '</div>'
+    )
 
     return {
         "title": safe_title,
