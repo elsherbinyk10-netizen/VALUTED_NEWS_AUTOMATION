@@ -1,4 +1,235 @@
 {
   "version": 1,
-  "items": {}
+  "items": {
+    "d3af5cec0fbba1c6a87ecb9c52d8f67f700ebe60ad90275240b4f3110019543a": {
+      "status": "skipped_stale",
+      "source": "BBC World",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "bfe81a720fc1b903efbbd8379bbd0139cc8654d0a76932f4111212b0437c09e5": {
+      "status": "skipped_stale",
+      "source": "BBC World",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "f62ac42d83fdfc3987819849cab1d7e6bcd222353585ba77f80b1d31568fe74a": {
+      "status": "skipped_stale",
+      "source": "BBC World",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "3cb62881a812a27562c083ed3f3a80df9e3d78376130f9294f7590a3007da1f8": {
+      "status": "skipped_stale",
+      "source": "BBC World",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "45ee4516e19b1b5812334dbaaa4dc94cb3f5a5806ba835ba7c461f1ee8740ec4": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "c4d3de43f668164e824f576ab4ac9044db186362a9a1e9e3e87ba5dc1ec15815": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "27e565231ea632c0ce1e1eedd409ac319014112fcdc86012cbe559ed907f6442": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "ccc8cfcec63655ab18aae96e8f527135e3f12baa075162352698ea54e8090c87": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "8f17a2801297e8c27f7a524874139bf7a851014f8464f77f1db0f4018f79d6f7": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "142dbf7d38a85d247b246ca6def2c87a985cfab96ef61400343f0f3cd9f77ade": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "38bf8b07009714971c93f3c229ea0252a00ceca0b07a98f8cabbf614fc669c82": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "4809cc48c3d335758e99314bfb8552c9e0ceada0b80c7e9e922c939c4999cc56": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "c33270f76703b64b12f6c812d3c184f837a6fa8735bd878d5696da95c3dc9179": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "329a33b3e560dea053b20cf87d73c40f8c605d4fc2e589453a4f0df541f3691b": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "1415399ecca92cca3c775acc2714918404c2a0673753e8c9096206a2d8ceb6a7": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "5f41991d5bed7345798f8170c50f4bc8131d0da0e9007c2b602df66c0d39b38e": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "4074446185b15f0d82f02df8257e6193bd75559e8b028e3f62c0b00a7768ee28": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "2eced5b9b09d88190f57c849b3e99b1a84b5a6b25466087d7ea25f8aeb525734": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "ea39801bb0381e8ad1702c61109132ab9a73140f916d750b87a0e4a45080fa48": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "7ad84d0adb1e3fda1a85d5d2be340d72d2551dcd32e5f09a7ff4954e05ad8a55": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "e73f4c05540c2edfaa9b2b9f3f19cf4ad803cac9e8c4fa8e3097684d1212e30d": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "c27cf7e621acbc08d2bff7ed00eeaa3f83f22306933189cc60ab38bbd876efa4": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "ea13eba4a7e8245e72ccafac4c5b120b33b0c97035b0e9481f50c60475c0a7eb": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "83c3d2ef3a579386fb9b95d4948adc95858f5c7e390dd5bd6e4bdba8453a6e5b": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "f5c71591a60f5a8e467c5ad1b7735d91aa594ccd089454fe684e7446786a1aff": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "c82f6c029e0dea73c800369be997027b1318580873814d4aaa2253837fd50d99": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "21ff1f56f68a0e568308ce57805ad26e67aabbafe7019ecb812055236ba98686": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "51f4a4388501acf7472c60ae5d8e1d852c86723dbad6a468381f3a7b87777e8d": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "66662a00a700c4c4d880c592ca88be330022fe213a1dd1371510d2cd5fc3739b": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "94facf81bc4dc241f9d3cc1e2ca6cb6dae3cfce320afb6154a10f97a7eb0eeaa": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "f07f8294f68786d697d5bcb45c9ecd6c28b6c2235fe751964c8edcec26f112e3": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "b63e79dbf28efa27a74c64d1376199adce73a5a3a4438725e4b4f31008368639": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "0480765c69fcc60d0de58f9386e5317c5f39b7cc7a772d9155b8ac093011ce9b": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "c90d5a4dd6fdc5bf2296344e84df5ab4937fccdc8579315ac505c6872d134c8e": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "ad11e6cfb14a5b9663cb419cc048c1a2384fab26a27c0aebeb6c7c567373dd01": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "a17ebdc0cffc8f70ba181cf2156804e477ecbac4fe7ea518a86ea38f0a734576": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "ca691b64f42f124bc71de14eb33114dcf6b16e8834b6b3c6cdd891286d8b4ad5": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "14bb7b514bbf64d849b99b26a61373089cb48189a8329b8e624dd6bfabf59db8": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "b5c109cca896d75505a2a24a764651550f5f62520e1eb3951b7fa98227fa59fc": {
+      "status": "skipped_stale",
+      "source": "NASA News",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "bb1afe9c7b46b8c3b2ea6903fc5aebfd5576cbaa9bb637d41efb25841539b6c1": {
+      "status": "skipped_stale",
+      "source": "NASA News",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "174527e0ab0de8a59850cf982fb82295c097f762f88a86486982883da45b9a35": {
+      "status": "skipped_stale",
+      "source": "NASA News",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "e4f2618d2f0ea3703b2ddc07414aef0091d2a1a16aba84e353ef0845f1fa38c2": {
+      "status": "skipped_stale",
+      "source": "NASA News",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "57f3a3d36dfa1845bdb564798b95b2aa9f601184b6a6c7c502b7409d140d9db9": {
+      "status": "skipped_stale",
+      "source": "NASA News",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "74da31eddbb7c532f4d7e747d5ba1634772d663c9bedbe0c5d5ec858e0634e5d": {
+      "status": "skipped_stale",
+      "source": "NASA News",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "106b657c30ff37f732ffa042f435e26cf426131a46e42176337eee9b77452627": {
+      "status": "skipped_stale",
+      "source": "NASA News",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    },
+    "6ce7a4489b05058fe1355de940685b598d88cb0aaa13e43656b4637df467ce94": {
+      "status": "skipped_stale",
+      "source": "NASA News",
+      "seen_at": "2026-10-11T19:53:31.030806+00:00"
+    }
+  }
 }
