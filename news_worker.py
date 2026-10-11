@@ -98,29 +98,19 @@ def shopify_graphql(query, variables):
 
 
 def make_editorial(title, publisher, category, description):
-    """Create a source-attributed draft without any paid AI service."""
-    safe_description = html.escape(description[:2000])
-    safe_publisher = html.escape(publisher)
-    safe_category = html.escape(category)
-
-    summary = (
-        f"Valuted News is tracking this {category.lower()} story "
-        f"from {publisher}. Review the original source for the full report."
-    )
-
-    body = (
-        "<p><strong>Editorial review required.</strong> "
-        "This RSS-based draft has not been independently verified. "
-        "Review the source and add original reporting before publication.</p>"
-        f"<h2>What the feed reports</h2><p>{safe_description or 'No description was provided by the feed.'}</p>"
-        f"<p><strong>Category:</strong> {safe_category}</p>"
-        f"<p><strong>Publisher:</strong> {safe_publisher}</p>"
-    )
-
+    safe_description = html.escape(description[:700])
     return {
         "title": clean_text(title)[:120] or "Valuted News update",
-        "summary": summary[:300],
-        "body": body,
+        "summary": (
+            f"Valuted News is tracking this {category.lower()} story "
+            f"from {publisher}. Read the original source for the full report."
+        )[:300],
+        "body": (
+            "<p><strong>Editorial review required.</strong> "
+            "This RSS item has not been independently verified. "
+            "Review the original source before publication.</p>"
+            f"<p><strong>Feed description:</strong> {safe_description}</p>"
+        ),
         "quality_ok": False,
     }
 
@@ -148,7 +138,7 @@ def create_shopify_article(blog_id, title, summary, body, source_url, publisher,
         "summary": summary[:300],
         "tags": ["Valuted News", category, publisher],
         "author": {"name": "Valuted News Desk"},
-        "isPublished": False,  # Draft-only safety lock
+        "isPublished": False,  # Draft-only safety lock,  # Draft-only safety lock
     }
     data = shopify_graphql(mutation, {"article": article})
     result = data.get("articleCreate") or {}
@@ -160,7 +150,7 @@ def create_shopify_article(blog_id, title, summary, body, source_url, publisher,
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dry-run", action="store_true", help="Fetch feeds and show candidate titles; do not write to Shopify or state.")
+    parser.add_argument("--dry-run", action="store_true", help="Fetch feeds without writing to Shopify or state.")
     args = parser.parse_args()
 
     blog_id = env("SHOPIFY_BLOG_ID")
