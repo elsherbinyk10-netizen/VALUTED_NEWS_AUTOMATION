@@ -262,6 +262,33 @@
       "publisher": "BBC World",
       "risk_flag": true,
       "created_at": "2026-10-11T23:18:45.796681+00:00"
+    },
+    "24bf0be915bd1d28bc9515ba9ae093a63556a3d9901c0d8c2df347de872c816d": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754783387927",
+      "title": "Watch: What's behind Trump's energy ceasefire claim?",
+      "source_url": "https://www.bbc.co.uk/news/videos/cwvgde9vrdd9o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": true,
+      "created_at": "2026-10-11T23:19:02.490549+00:00"
+    },
+    "ce87b58ff82383b3f634550ace9f6f329a99b9d6cdfe8231d79214c1ec92d271": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754783420695",
+      "title": "Orangutans released back into Borneo forest after devastating fires",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwvgde0m2d73o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "created_at": "2026-10-11T23:19:02.490549+00:00"
+    },
+    "09cec1f6e809608c5b20ff9b79517d3d459f8f21563bde39bd5b844cc48b6197": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754783453463",
+      "title": "Poland detains man suspected of planning assassination of PM Tusk",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6n9rvynl5p5o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": true,
+      "created_at": "2026-10-11T23:19:02.490549+00:00"
     }
   }
 }
