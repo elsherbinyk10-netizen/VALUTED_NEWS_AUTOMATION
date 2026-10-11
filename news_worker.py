@@ -151,7 +151,7 @@ def create_shopify_article(blog_id, title, summary, body, source_url, publisher,
         "summary": summary[:300],
         "tags": ["Valuted News", category, publisher],
         "author": {"name": "Valuted News Desk"},
-        "isPublished": False,  # Draft-only safety lock,  # Draft-only safety lock,  # Draft-only safety lock,  # Draft-only safety lock,  # Draft-only safety lock,  # Draft-only safety lock,  # Draft-only safety lock
+        "isPublished": bool(publish)
     }
     data = shopify_graphql(mutation, {"article": article})
     result = data.get("articleCreate") or {}
@@ -175,7 +175,7 @@ def main():
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(hours=int(env("MAX_AGE_HOURS", "36")))
     max_items = max(1, min(10, int(env("MAX_ARTICLES_PER_RUN", "3"))))
-    auto_publish = False  # Publishing is intentionally disabled.
+    auto_publish = True
     candidates = []
 
     for config in feeds:
@@ -218,7 +218,7 @@ def main():
             continue
         try:
             editorial = make_editorial(item["title"], item["publisher"], item["category"], item["description"])
-            publish = False  # Never auto-publish RSS articles.
+            publish = True
             article = create_shopify_article(
                 blog_id, editorial["title"], editorial["summary"], editorial["body"],
                 item["url"], item["publisher"], item["category"], publish,

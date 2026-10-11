@@ -3,8 +3,7 @@ name: Valuted News RSS Automation
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 * * * *"
-    - cron: "47 * * * *"
+    - cron: "17 6 * * *"
 
 permissions:
   contents: write
@@ -46,7 +45,6 @@ jobs:
         run: |
           test -n "$SHOPIFY_STORE_DOMAIN" || { echo "Missing repository secret SHOPIFY_STORE_DOMAIN"; exit 1; }
           test -n "$SHOPIFY_ADMIN_ACCESS_TOKEN" || { echo "Missing repository secret SHOPIFY_ADMIN_ACCESS_TOKEN"; exit 1; }
-          test -n "$SHOPIFY_CLIENT_SECRET" || { echo "Missing repository secret SHOPIFY_CLIENT_SECRET"; exit 1; }
           test -f feeds.json || { echo "feeds.json is missing"; exit 1; }
 
       - name: Run RSS collector
