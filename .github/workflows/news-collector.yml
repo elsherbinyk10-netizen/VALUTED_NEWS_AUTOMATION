@@ -21,8 +21,8 @@ jobs:
     env:
       SHOPIFY_STORE_DOMAIN: ${{ secrets.SHOPIFY_STORE_DOMAIN }}
       SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ADMIN_ACCESS_TOKEN }}
-      SHOPIFY_API_VERSION: ${{ vars.SHOPIFY_API_VERSION }}
-      SHOPIFY_BLOG_ID: ${{ vars.SHOPIFY_BLOG_ID }}
+      SHOPIFY_API_VERSION: "2026-10"
+      SHOPIFY_BLOG_ID: "gid://shopify/Blog/126010065175"
       MAX_ARTICLES_PER_RUN: ${{ vars.MAX_ARTICLES_PER_RUN || '3' }}
       MAX_AGE_HOURS: ${{ vars.MAX_AGE_HOURS || '36' }}
 
@@ -45,7 +45,6 @@ jobs:
         run: |
           test -n "$SHOPIFY_STORE_DOMAIN" || { echo "Missing repository secret SHOPIFY_STORE_DOMAIN"; exit 1; }
           test -n "$SHOPIFY_ADMIN_ACCESS_TOKEN" || { echo "Missing repository secret SHOPIFY_ADMIN_ACCESS_TOKEN"; exit 1; }
-          test -n "$SHOPIFY_BLOG_ID" || { echo "Missing repository variable SHOPIFY_BLOG_ID"; exit 1; }
           test -f feeds.json || { echo "feeds.json is missing"; exit 1; }
 
       - name: Run RSS collector
