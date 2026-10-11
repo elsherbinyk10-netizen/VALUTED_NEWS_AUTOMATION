@@ -97,7 +97,16 @@ def shopify_access_token():
         },
         timeout=30,
     )
-    response.raise_for_status()
+    if not response.ok:
+        try:
+            details = response.json()
+        except ValueError:
+            details = response.text[:1000]
+
+        raise RuntimeError(
+            f"Shopify token request failed ({response.status_code}): {details}"
+        )
+
     payload = response.json()
     token = payload.get("access_token")
 
