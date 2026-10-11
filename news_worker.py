@@ -175,7 +175,9 @@ def main():
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(hours=int(env("MAX_AGE_HOURS", "36")))
     max_items = max(1, min(10, int(env("MAX_ARTICLES_PER_RUN", "3"))))
-    auto_publish = True
+    auto_publish = env("AUTO_PUBLISH", "true").lower() in {
+        "1", "true", "yes", "on"
+    }
     candidates = []
 
     for config in feeds:
@@ -218,7 +220,9 @@ def main():
             continue
         try:
             editorial = make_editorial(item["title"], item["publisher"], item["category"], item["description"])
-            publish = True
+            # Publish automatically only when enabled and the story
+            # has not triggered the high-risk review filter.
+            publish = auto_publish and not item["risk"]
             article = create_shopify_article(
                 blog_id, editorial["title"], editorial["summary"], editorial["body"],
                 item["url"], item["publisher"], item["category"], publish,
