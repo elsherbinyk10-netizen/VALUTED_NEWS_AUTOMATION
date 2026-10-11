@@ -138,7 +138,7 @@ def create_shopify_article(blog_id, title, summary, body, source_url, publisher,
         "summary": summary[:300],
         "tags": ["Valuted News", category, publisher],
         "author": {"name": "Valuted News Desk"},
-        "isPublished": False,  # Draft-only safety lock,  # Draft-only safety lock,  # Draft-only safety lock,  # Draft-only safety lock,  # Draft-only safety lock,  # Draft-only safety lock
+        "isPublished": False,  # Draft-only safety lock,  # Draft-only safety lock,  # Draft-only safety lock,  # Draft-only safety lock,  # Draft-only safety lock,  # Draft-only safety lock,  # Draft-only safety lock
     }
     data = shopify_graphql(mutation, {"article": article})
     result = data.get("articleCreate") or {}
