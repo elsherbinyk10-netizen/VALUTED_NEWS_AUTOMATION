@@ -235,6 +235,33 @@
       "status": "skipped_stale",
       "source": "BBC World",
       "seen_at": "2026-10-11T21:26:28.869298+00:00"
+    },
+    "6563c1b8fad16be9b49756493b3de9b8e49b42d989d7b5b663ef606ce45648d0": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754783289623",
+      "title": "One killed, 11 injured in second Houthi strike on Riyadh airport in two days",
+      "source_url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": true,
+      "created_at": "2026-10-11T23:18:45.796681+00:00"
+    },
+    "9425c6a29215c5ea624710f9a168610054f9642caca610abce01056077a2bf4c": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754783322391",
+      "title": "Trump's 'energy ceasefire' claim welcomed by Zelensky but Russia silent",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6pvg4jyz1m0o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "created_at": "2026-10-11T23:18:45.796681+00:00"
+    },
+    "11186f3a1a89634bd176f1f336c524f74ff6122dd23fd35c77f15c989bb3fc38": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754783355159",
+      "title": "Dozens of gold prospectors killed in strikes on Egypt-Sudan border, rights group says",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqy43vrk8wv8o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": true,
+      "created_at": "2026-10-11T23:18:45.796681+00:00"
     }
   }
 }
