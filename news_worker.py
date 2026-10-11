@@ -78,10 +78,43 @@ def entry_datetime(entry):
 
 
 def shopify_access_token():
-    token = env("SHOPIFY_ADMIN_ACCESS_TOKEN")
-    if not token:
-        raise RuntimeError("Missing SHOPIFY_ADMIN_ACCESS_TOKEN repository secret.")
-    return token
+    shop = env("SHOPIFY_STORE_DOMAIN")
+    client_id = env("SHOPIFY_CLIENT_ID")
+    client_secret = env("SHOPIFY_CLIENT_SECRET")
+
+    if not shop:
+        raise RuntimeError("Missing SHOPIFY_STORE_DOMAIN repository secret.")
+    if not client_id or not client_secret:
+        raise RuntimeError(
+            "Missing SHOPIFY_CLIENT_ID or SHOPIFY_CLIENT_SECRET repository secret."
+        )
+
+    endpoint = f"https://{shop}/admin/oauth/access_token"
+    try:
+        response = requests.post(
+            endpoint,
+            json={
+                "client_id": client_id,
+                "client_secret": client_secret,
+                "grant_type": "client_credentials",
+            },
+            headers={"Content-Type": "application/json"},
+            timeout=30,
+        )
+        if not response.ok:
+            raise RuntimeError(
+                f"Shopify token request failed with HTTP {response.status_code}: "
+                f"{response.text[:500]}"
+            )
+        payload = response.json()
+        token = payload.get("access_token")
+        if not token:
+            raise RuntimeError("Shopify token response did not include an access_token.")
+        logging.info("Obtained a temporary Shopify Admin API token.")
+        return token
+    except requests.RequestException as exc:
+        raise RuntimeError(f"Could not obtain Shopify Admin API token: {exc}") from exc
+
 
 def shopify_graphql(query, variables):
     shop = env("SHOPIFY_STORE_DOMAIN")
@@ -203,7 +236,7 @@ def main():
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(hours=int(env("MAX_AGE_HOURS", "36")))
     max_items = max(1, min(10, int(env("MAX_ARTICLES_PER_RUN", "3"))))
-    auto_publish = env("AUTO_PUBLISH", "true").lower() in {
+    auto_publish = env("AUTO_PUBLISH", "false").lower() in {
         "1", "true", "yes", "on"
     }
     candidates = []
