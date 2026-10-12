@@ -413,6 +413,43 @@
       "publisher": "NPR News",
       "risk_flag": true,
       "created_at": "2026-10-12T12:49:04.532342+00:00"
+    },
+    "8b461ffd78bd31cc20a6bb0042f0fa4abeebb5af7423eb93126ad77fb89d24f9": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-12T18:32:36.737885+00:00"
+    },
+    "f5183f6ff8c05371beffdc7b9d8f8200f79f1477a66aed10fbd1cca63b3bcbfe": {
+      "status": "skipped_stale",
+      "source": "NASA News",
+      "seen_at": "2026-10-12T18:32:36.737885+00:00"
+    },
+    "f01b2978388106ae470bb299818a71c1f1cb69c62a9d290823273b938c546896": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754792530199",
+      "title": "Fridges in French supermarkets hit by cyber attack",
+      "source_url": "https://www.bbc.co.uk/news/articles/crq5nzxv9q4yo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": true,
+      "created_at": "2026-10-12T18:32:36.737885+00:00"
+    },
+    "858a145164c4b0536cbb2c0245e9aeea028880ab0e3eab32bb51d14c5df8acb8": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754792562967",
+      "title": "Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says",
+      "source_url": "https://www.bbc.co.uk/news/articles/cvlyd4pdlwkxo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": true,
+      "created_at": "2026-10-12T18:32:36.737885+00:00"
+    },
+    "92557e2d9ab72d66e9e914263be848f0ea1bc808922802b72af55c3378c80170": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754792595735",
+      "title": "Federal agents search Rep. Ilhan Omar's DC home, DOJ says it approved the warrant",
+      "source_url": "https://www.npr.org/2026/10/12/nx-s1-5998856/federal-agents-search-congressperson-home-dc-doj",
+      "publisher": "NPR News",
+      "risk_flag": false,
+      "created_at": "2026-10-12T18:32:36.737885+00:00"
     }
   }
 }
