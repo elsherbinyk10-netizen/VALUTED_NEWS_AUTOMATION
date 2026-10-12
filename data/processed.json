@@ -386,6 +386,33 @@
       "publisher": "BBC Business",
       "risk_flag": false,
       "created_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "d8b2e2b81bbb6b138e185e6552343ea4ef807294f4cbbc26d38afc642308d957": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754790269207",
+      "title": "Pupil arrested after two teachers shot at French school",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm2keg7910gvo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "created_at": "2026-10-12T12:49:04.532342+00:00"
+    },
+    "cc1852ad81be8243caf0f8c4b976faaf0dba764eafe925bac03ea1df22bf8897": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754790301975",
+      "title": "Who are the Houthis, and why are they so hard to fight?",
+      "source_url": "https://www.bbc.co.uk/news/videos/cmy56nzd6y69o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "created_at": "2026-10-12T12:49:04.532342+00:00"
+    },
+    "7668a2c12d45b92ce52db4922bba9204037e8f20ae29b69d737e4f8640226cea": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754790334743",
+      "title": "DOJ launches antitrust probe of TV networks. And, Trump says Ukraine needs new leader",
+      "source_url": "https://www.npr.org/2026/10/12/g-s1-147772/up-first-newsletter-trump-ukraine-russia-antitrust-investigation-hurricane-isaias-saudi-airport",
+      "publisher": "NPR News",
+      "risk_flag": true,
+      "created_at": "2026-10-12T12:49:04.532342+00:00"
     }
   }
 }
