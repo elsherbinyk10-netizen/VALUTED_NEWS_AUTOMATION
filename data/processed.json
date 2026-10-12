@@ -289,6 +289,103 @@
       "publisher": "BBC World",
       "risk_flag": true,
       "created_at": "2026-10-11T23:19:02.490549+00:00"
+    },
+    "782d0eff1df90b4d6f6f62642cf390d13d405d75d4bf24ca295fe0c0c87d4ec2": {
+      "status": "skipped_stale",
+      "source": "BBC World",
+      "seen_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "040c30b6e35dd0e92a261da56a45e069d1c5a41b7832544caca51bfa20711a29": {
+      "status": "skipped_stale",
+      "source": "BBC World",
+      "seen_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "26642edca61eefe9f39f190984ff0b63233047b27c17548af40ac493c2159815": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "27179cdad45769a749c54439784333d8c1f6a088c7f21e7d7c24c7a36ae58c45": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "046866fdb067a13d0b9dbd400ffb87042fb01a105320d635d58bd19aaecd5d6e": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "588e3e94b49102851ad1bb6f0be214a847c14c976de4ce1e0c1486b460789888": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "1d75e299bcd2d377f95368714d61cb686efbdfb56c954cf9fff4da74576e34cd": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "3973f4fd41e710826cddf2389fbd6d4a4bd2bfdacb954dd567c1578716d4854f": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "6051a59784aaab81619050b3f14e9a25f2f650e858a33947c2b042988fa5e3ec": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "1319ea6a20f99dabe488ea7bb43d93a024d47a024b516c703c5c4c4d30c42bad": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "3cc89b1fcc6c74e54c4950f53b1be06bc97c5d591ed97ab960323361a1cfb3e7": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "8560aa33eacd8979841c71f542143d3a0486b402e79c1babe04a595e06519086": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "73dce97cf4c27e36665cb2d77dc956096c486b9da4b98b68113e33265111d47b": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "547bb86c1593b370291c9ea868fc9e7d2842bc62b1a6790e8a8edfdf8c0bdb8e": {
+      "status": "skipped_stale",
+      "source": "NASA News",
+      "seen_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "123f715457c06110bf64e12e834020c35c16ba690fad048ee2f7507530325106": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754785779991",
+      "title": "Watch: How did Roman Abramovich's advisors help hide his wealth?",
+      "source_url": "https://www.bbc.co.uk/news/videos/c9rkynp1m01mo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "created_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "6490f52bc4e27312714a75a7255467300259eeb5282a3303987122b0ebf071b7": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754785812759",
+      "title": "Healey must find up to £35bn to meet spending plans, says think tank",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm78pwdp3n5qo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "risk_flag": true,
+      "created_at": "2026-10-12T06:38:38.333441+00:00"
+    },
+    "b1a74f411bd8882324c92460b3f4100a170b28e2223e63bfae3a0989a31f2ea0": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754785845527",
+      "title": "Why some have no choice but to pay costly oil prices",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqgm09xvlvjeo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "created_at": "2026-10-12T06:38:38.333441+00:00"
     }
   }
 }
