@@ -77,6 +77,40 @@ def entry_datetime(entry):
     return None
 
 
+
+def extract_image(entry):
+    """Return publisher-supplied RSS artwork only; never synthesize a generic image."""
+    candidates = []
+    for field in ("media_content", "media_thumbnail"):
+        values = entry.get(field, []) or []
+        if isinstance(values, dict):
+            values = [values]
+        for item in values:
+            if isinstance(item, dict) and item.get("url"):
+                media_type = str(item.get("type", "")).lower()
+                medium = str(item.get("medium", "")).lower()
+                if medium == "image" or media_type.startswith("image/") or not media_type:
+                    candidates.append(item["url"])
+    for item in entry.get("enclosures", []) or []:
+        if isinstance(item, dict) and item.get("href") and str(item.get("type", "")).lower().startswith("image/"):
+            candidates.append(item["href"])
+    html_fields = [entry.get("summary", ""), entry.get("description", "")]
+    for content_item in entry.get("content", []) or []:
+        if isinstance(content_item, dict):
+            html_fields.append(content_item.get("value", ""))
+    for markup in html_fields:
+        match = re.search(r"""<img\b[^>]*?\b(?:src|data-src)=["']([^"']+)["']""", markup or "", re.I)
+        if match:
+            candidates.append(html.unescape(match.group(1)))
+    for candidate in candidates:
+        try:
+            parsed = urlparse(str(candidate).strip())
+            if parsed.scheme in ("http", "https") and parsed.netloc:
+                return parsed.geturl()
+        except Exception:
+            continue
+    return ""
+
 def shopify_access_token():
     shop = env("SHOPIFY_STORE_DOMAIN")
     client_id = env("SHOPIFY_CLIENT_ID")
@@ -213,7 +247,7 @@ def make_editorial(title, publisher, category, description):
     }
 
 
-def create_shopify_article(blog_id, title, summary, body, source_url, publisher, category, publish):
+def create_shopify_article(blog_id, title, summary, body, source_url, publisher, category, publish, image_url=''):
     mutation = """
     mutation CreateNewsArticle($article: ArticleCreateInput!) {
       articleCreate(article: $article) {
@@ -236,7 +270,8 @@ def create_shopify_article(blog_id, title, summary, body, source_url, publisher,
         "summary": summary[:300],
         "tags": ["Valuted News", category, publisher],
         "author": {"name": "Valuted News Desk"},
-        "isPublished": bool(publish)
+        "isPublished": bool(publish),
+        "image": {"url": image_url, "altText": title[:250]} if image_url else None
     }
     data = shopify_graphql(mutation, {"article": article})
     result = data.get("articleCreate") or {}
@@ -292,7 +327,7 @@ def main():
                 candidates.append({
                     "key": key, "title": title, "url": source_url, "publisher": name,
                     "category": category, "description": description, "published": published,
-                    "risk": risk,
+                    "image_url": extract_image(entry), "risk": risk,
                 })
         except Exception:
             logging.exception("Feed processing failed: %s", name)
@@ -317,6 +352,7 @@ def main():
             article = create_shopify_article(
                 blog_id, editorial["title"], editorial["summary"], editorial["body"],
                 item["url"], item["publisher"], item["category"], publish,
+                item.get("image_url", "")
             )
             if not article:
                 raise RuntimeError("Shopify returned no article and no userErrors.")
@@ -327,6 +363,7 @@ def main():
                 "source_url": item["url"],
                 "publisher": item["publisher"],
                 "risk_flag": item["risk"],
+                "has_publisher_artwork": bool(item.get("image_url")),
                 "created_at": now.isoformat(),
             }
             logging.info("Created Shopify %s: %s (%s)", "article" if publish else "draft", article.get("title"), article.get("id"))
