@@ -113,6 +113,10 @@ def extract_image(entry):
 
 def shopify_access_token():
     shop = env("SHOPIFY_STORE_DOMAIN")
+    direct_token = env("SHOPIFY_ADMIN_ACCESS_TOKEN")
+    if direct_token:
+        logging.info("Using configured Shopify Admin API token.")
+        return direct_token
     client_id = env("SHOPIFY_CLIENT_ID")
     client_secret = env("SHOPIFY_CLIENT_SECRET")
 
