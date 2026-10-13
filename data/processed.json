@@ -450,6 +450,53 @@
       "publisher": "NPR News",
       "risk_flag": false,
       "created_at": "2026-10-12T18:32:36.737885+00:00"
+    },
+    "3b36d17aa5f97a0985b06911dde573950f6f9ae6dc7e4fce0ce851b5561ada39": {
+      "status": "skipped_stale",
+      "source": "BBC World",
+      "seen_at": "2026-10-13T06:37:39.746554+00:00"
+    },
+    "247efd53ed44311dd3cd20094793d93eadc68fd6ba6a26d1395ec6d11a1e210c": {
+      "status": "skipped_stale",
+      "source": "BBC World",
+      "seen_at": "2026-10-13T06:37:39.746554+00:00"
+    },
+    "9c456bbec7c9470c9513ebd5a529fc702a76c22b9e7bf6511a125e81ea9df805": {
+      "status": "skipped_stale",
+      "source": "BBC World",
+      "seen_at": "2026-10-13T06:37:39.746554+00:00"
+    },
+    "1c0a28c71f388243671549df1885b7258039db2850c92a1356625b02e12cebb9": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-13T06:37:39.746554+00:00"
+    },
+    "16b45dda4b6dc086193882645e155859caea4ef02b4ae696a35e21d03fef2e93": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754795938071",
+      "title": "Breaking Bad actor RJ Mitte dies aged 34",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmn045en7d88o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "created_at": "2026-10-13T06:37:39.746554+00:00"
+    },
+    "9e03930a6513f8cb9d94e67bb2553feacdaa2e4d4172c49c7aca9d3cddffa8f5": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754795970839",
+      "title": "UK growth forecast upgraded but energy prices and rates to hit in 2027",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmglw0r21zexo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "risk_flag": true,
+      "created_at": "2026-10-13T06:37:39.746554+00:00"
+    },
+    "83f644ccfd6d90ff017b2d5c21cfa76ee3afd069af7a9ea44c8707f1d795ca4d": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754796003607",
+      "title": "DNA and vehicle-tracking help French investigators recover stolen Renoirs",
+      "source_url": "https://www.npr.org/2026/10/13/g-s1-147818/france-stolen-renoirs-recovered",
+      "publisher": "NPR News",
+      "risk_flag": false,
+      "created_at": "2026-10-13T06:37:39.746554+00:00"
     }
   }
 }
