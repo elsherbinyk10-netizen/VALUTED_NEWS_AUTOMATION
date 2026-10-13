@@ -549,6 +549,46 @@
       "publisher": "BBC World",
       "risk_flag": true,
       "created_at": "2026-10-13T12:38:01.277096+00:00"
+    },
+    "9260364d7cc64745bc85dd977ab880ff4323b2369f70a325960a4d5df4c8fdbd": {
+      "status": "skipped_stale",
+      "source": "BBC World",
+      "seen_at": "2026-10-13T18:35:38.703000+00:00"
+    },
+    "dfecbaa7cd4849d7851746d73ca8fcd0743e328a78f5f36e6e50b8ec44f19ce7": {
+      "status": "skipped_stale",
+      "source": "NASA News",
+      "seen_at": "2026-10-13T18:35:38.703000+00:00"
+    },
+    "a60ef15e42ee33d723d5ce2e9936d59ba620e51c3e7ff95a962beab49519d5e2": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754801803543",
+      "title": "Cornell bans all fraternity parties over gang sex assault allegations",
+      "source_url": "https://www.bbc.co.uk/news/articles/cw8dzg094zd9o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-13T18:35:38.703000+00:00"
+    },
+    "4c4f3673e6e39a252ec6b393a19d0133ee1ae09fcfc67f44813f0bb428eb1897": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754801836311",
+      "title": "Pope's surgery to remove lump on lung 'concluded successfully', Vatican says",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-13T18:35:38.703000+00:00"
+    },
+    "4183644b410a6cd2686b8f17f63b61c93111b3b51efa0d77c0493852c814352b": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754801869079",
+      "title": "'If we don't scream, they won't listen to us': Student protesters speak to BBC in Paris",
+      "source_url": "https://www.bbc.co.uk/news/videos/ckg5jqg1npd7o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-13T18:35:38.703000+00:00"
     }
   }
 }
