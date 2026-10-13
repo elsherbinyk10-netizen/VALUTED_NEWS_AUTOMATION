@@ -497,6 +497,58 @@
       "publisher": "NPR News",
       "risk_flag": false,
       "created_at": "2026-10-13T06:37:39.746554+00:00"
+    },
+    "c85d70cd1e15bc1003a062505e638c8b826c8a37219a5c50a732338f824dd7dc": {
+      "status": "skipped_stale",
+      "source": "BBC World",
+      "seen_at": "2026-10-13T12:38:01.277096+00:00"
+    },
+    "0caeab95bb6afe294a6ed6d9323bad831bddef0d3a8b7fc8c095659b06da206b": {
+      "status": "skipped_stale",
+      "source": "BBC World",
+      "seen_at": "2026-10-13T12:38:01.277096+00:00"
+    },
+    "d969e1731fd072c5487e490cbb833f240c10e4bb34fb75ce60783709470b916c": {
+      "status": "skipped_stale",
+      "source": "BBC World",
+      "seen_at": "2026-10-13T12:38:01.277096+00:00"
+    },
+    "9de3998d20ead81ff4b837e6441b9c9d37894b66066dc0543add2215927e16de": {
+      "status": "skipped_stale",
+      "source": "BBC World",
+      "seen_at": "2026-10-13T12:38:01.277096+00:00"
+    },
+    "a4702e76b2a8f50f44198505b040e37d7819f973ac392fdac03b492f99b2848c": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-13T12:38:01.277096+00:00"
+    },
+    "36cd3c034800949469389dad991aeaa723b733e8b0b0690556e4de4f11b62b41": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754798985495",
+      "title": "Car finance compensation payments delayed until next year",
+      "source_url": "https://www.bbc.co.uk/news/articles/c2l9vvj097lo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "created_at": "2026-10-13T12:38:01.277096+00:00"
+    },
+    "8367d6f6f5f92243e3fcfcf4739fbc14d8c4ff37aba1a541f085d4ad1c05387e": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754799018263",
+      "title": "Poundland in rescue talks as owners seek buyer",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckr5ydvvln0mo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "created_at": "2026-10-13T12:38:01.277096+00:00"
+    },
+    "fb245af0673954a9f2b78b4268f61070697e935ffda27928d35149c4ece3175d": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754799051031",
+      "title": "Bulgaria summons Russian ambassador after ship sinks in Black Sea drone attack",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmn06w5x9g25o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": true,
+      "created_at": "2026-10-13T12:38:01.277096+00:00"
     }
   }
 }
