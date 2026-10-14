@@ -679,6 +679,36 @@
       "risk_flag": false,
       "has_publisher_artwork": true,
       "created_at": "2026-10-14T12:48:42.226493+00:00"
+    },
+    "392291d3bd118e17b93d1f0405cdede48e9b0b9163fbf289614401b183372de1": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754822119703",
+      "title": "What if you could turn off your algorithm? Australia is about to try",
+      "source_url": "https://www.bbc.co.uk/news/videos/ck78pj2qy42po?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-14T18:47:56.856276+00:00"
+    },
+    "e8602edea19ee0dce7c4f25c5a771bba306568638fe787500c06ee5e49e5cb2e": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754822152471",
+      "title": "Drop-off charges at UK airports to be reviewed after sharp increase",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwp8gynk13rro?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-14T18:47:56.856276+00:00"
+    },
+    "2e3f8fb74e6bb1176bd2c3c68e6f56a5e1d85ce31d449e29c66d87651cc23137": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754822185239",
+      "title": "Kenya confirms second Ebola case - a relative of the first victim",
+      "source_url": "https://www.bbc.co.uk/news/articles/cw5yn8rn04ljo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": true,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-14T18:47:56.856276+00:00"
     }
   }
 }
