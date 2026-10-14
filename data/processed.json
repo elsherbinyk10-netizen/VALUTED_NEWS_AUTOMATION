@@ -589,6 +589,56 @@
       "risk_flag": false,
       "has_publisher_artwork": true,
       "created_at": "2026-10-13T18:35:38.703000+00:00"
+    },
+    "9d2e3538f5941923e54674be623e41fb66fa9feff75019347e34f5e63d117ddb": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-14T06:49:18.901185+00:00"
+    },
+    "46087bb9b492e6fa5752329027853b5d4f494f77da30ee338a8e2156baa9cdf9": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-14T06:49:18.901185+00:00"
+    },
+    "1aff4bf29ee2a8bdccd232627290e4c58fcea1d55b390cc9cc2627e91a9ef19f": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-14T06:49:18.901185+00:00"
+    },
+    "7a17dffa24825917f5cc8256c1e2ab27dedc0f48580204b71cbead3b5eb39dec": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-14T06:49:18.901185+00:00"
+    },
+    "11f619156f4570458ba84b0b74931488e43e7182dcf8c50c8e46745db9a2be53": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754806456599",
+      "title": "Turkey police raid opposition TV station, halting live broadcasts",
+      "source_url": "https://www.bbc.co.uk/news/articles/crx23y3d970vo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-14T06:49:18.901185+00:00"
+    },
+    "fec2ddb6cf3f1e21dd9ae3b7f98e6cdcea3d5416f8ba75480fbc4cdbeb416639": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754806489367",
+      "title": "Heating oil users face fuel or food winter choice'",
+      "source_url": "https://www.bbc.co.uk/news/articles/cv4g18we232ro?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-14T06:49:18.901185+00:00"
+    },
+    "e010b16d60156884509b3bf58a4d107433b461de48d44ca3970bdbc0ced503b9": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754806522135",
+      "title": "Not building third runway would be 'huge missed opportunity', warns Heathrow boss",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckdd8egder5ro?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "risk_flag": true,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-14T06:49:18.901185+00:00"
     }
   }
 }
