@@ -639,6 +639,46 @@
       "risk_flag": true,
       "has_publisher_artwork": true,
       "created_at": "2026-10-14T06:49:18.901185+00:00"
+    },
+    "a8dcae6b1c52ec2bfedfa6b4cc0ed60b707828bcd81fb2d8c2c2b064bed053f0": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-14T12:48:42.226493+00:00"
+    },
+    "82fbdd27e64a27c45387f141126b7a7ef811b352256c74fb76c1b952e5755891": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-14T12:48:42.226493+00:00"
+    },
+    "96faa508b0e30813b50f2c7436506d8fbc1cdd73d65af8588c8afd4f9b72ef60": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754815598871",
+      "title": "US inflation rises more than expected ahead of midterm elections",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-14T12:48:42.226493+00:00"
+    },
+    "e7c3af778fcfbca899b53da4041bdb9d0ed72f4d30d7b286279b1ed36f67c0b9": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754815631639",
+      "title": "Burnham says he wants to 'repair bridges' between Ukraine and US",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq98z59xdny5o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": true,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-14T12:48:42.226493+00:00"
+    },
+    "682415106c6cc7b9ba3c3400b803e9032b966bd87a94efb8275c0c9e5565ab83": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754815664407",
+      "title": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines",
+      "source_url": "https://www.bbc.co.uk/news/articles/cw99zpmnxzmjo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-14T12:48:42.226493+00:00"
     }
   }
 }
