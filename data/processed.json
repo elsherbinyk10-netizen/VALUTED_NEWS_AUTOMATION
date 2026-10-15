@@ -749,6 +749,41 @@
       "risk_flag": false,
       "has_publisher_artwork": true,
       "created_at": "2026-10-15T06:49:10.880730+00:00"
+    },
+    "681dcee3dafd58819402168d0591bb3d49665d805bc2429cba455824d1b9143e": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-15T12:51:01.714381+00:00"
+    },
+    "d64e80c26203100f74bb5fe51e0c9c1c6762f0210d6906084905db26ad970377": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754833522967",
+      "title": "At least 33 pupils and teacher killed after school roof collapses in Pakistan",
+      "source_url": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": true,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-15T12:51:01.714381+00:00"
+    },
+    "64e921aaa04cd034456ec6d665f830fe6df0a1098c17f928b1a84cf0d9836fdb": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754833555735",
+      "title": "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": true,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-15T12:51:01.714381+00:00"
+    },
+    "0b7274ba05c98359d99b394fa51ae174cfd8397234b50c31bedd51aeb93870e6": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754833588503",
+      "title": "AI giant Anthropic woos potential investors ahead of stock market debut",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqzjx448vxkgo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-15T12:51:01.714381+00:00"
     }
   }
 }
