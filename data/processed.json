@@ -709,6 +709,46 @@
       "risk_flag": true,
       "has_publisher_artwork": true,
       "created_at": "2026-10-14T18:47:56.856276+00:00"
+    },
+    "795dedefcd9e4e2e01dc68c8adea1a335b24e06533dd8f097594419f1337e2e0": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-15T06:49:10.880730+00:00"
+    },
+    "a988f720de23b8d1f89321da8bad738a24517812c04f093326cde076df745bf0": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-15T06:49:10.880730+00:00"
+    },
+    "1f7088d56feb4c6fc259037c73350429cd529ba2a927c33c1881454d187680f3": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754828804375",
+      "title": "UK economy grew 0.1% in August ahead of Healey's first Budget",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck8dz1me439no?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-15T06:49:10.880730+00:00"
+    },
+    "4203f02c58c4f3e5d5515f6cd5728c50ab6995427ed150c0e0dc437bb71e075b": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754828837143",
+      "title": "Thousands of NI workers to get pay bump as Real Living Wage rises",
+      "source_url": "https://www.bbc.co.uk/news/videos/cq398xnyx4gyo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-15T06:49:10.880730+00:00"
+    },
+    "eabcd42a819b6b051dc4a597dfd61ae097b64a6e57b451b00e7447419c0c0744": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754828869911",
+      "title": "Musk says US government may be behind slowdown of Ukraine drone speeds",
+      "source_url": "https://www.bbc.co.uk/news/articles/c8wy9veedgygo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-15T06:49:10.880730+00:00"
     }
   }
 }
