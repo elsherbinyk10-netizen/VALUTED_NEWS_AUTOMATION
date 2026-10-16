@@ -884,6 +884,36 @@
       "risk_flag": false,
       "has_publisher_artwork": true,
       "created_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "6a78c52774f4a4ed097b0f4e933797a08917a4a7bbf57cc54b3c49dc867e01b0": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754862194967",
+      "title": "Toxic algorithms wouldn't let them go - now Australia wants an off switch",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwr7y8er1n8vo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-16T18:43:47.826831+00:00"
+    },
+    "024c80ca33de095ff05886071d1ed7e70499830886c12b16836d217bd7151f3a": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754862227735",
+      "title": "Trump casts doubt on press secretary's future",
+      "source_url": "https://www.npr.org/2026/10/16/nx-s1-6005317/trump-casts-doubt-on-press-secretarys-future",
+      "publisher": "NPR News",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-16T18:43:47.826831+00:00"
+    },
+    "7902f8c962c4510d7668d5b566d75eed6f076bf322da35cf0bb03884513e113c": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754862260503",
+      "title": "Hot flashes, night sweats, insomnia – OB-GYNS set new rules for menopause treatment",
+      "source_url": "https://www.npr.org/2026/10/16/nx-s1-6005201/health-treatment-menopause-hot-flash-night-sweats-insomnia",
+      "publisher": "NPR News",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-16T18:43:47.826831+00:00"
     }
   }
 }
