@@ -784,6 +784,106 @@
       "risk_flag": false,
       "has_publisher_artwork": true,
       "created_at": "2026-10-15T12:51:01.714381+00:00"
+    },
+    "8ba3bd46be05f686c43250c3abd3fcfa1b3486d6a22a61578e273146487486ba": {
+      "status": "skipped_stale",
+      "source": "BBC World",
+      "seen_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "056f4bacd70046a7f1ea802995557b51d0e736ca3e25ddae8418276eedda42ac": {
+      "status": "skipped_stale",
+      "source": "BBC World",
+      "seen_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "0dea10406e1d83cc6768ba21da23d0f7c23c9251691d1fd87563421ffe133b78": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "21c8f65b5ef4b79f64c9363cd8c656f5ae9e6217fa060a1df7de979f9754987c": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "d99898d8d7f4f5f918b975fe1e7e79dd203fad7b80574a578358814113cae4b8": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "f72fa532500caca18a61e8eb5ee9b520e484ff56cf57375185c871f863d61b6c": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "d671b97964ae11053434d2ea6b8eea26c09379405852568e8d1d5b663fafacc8": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "b114b0162d6fb9682a29a92108d7975c52ad3aca017ca24bfe5d35b304387b25": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "953d39d95191c33058b6835393564a5676300cd046b2fb2d324e8875b34c84fd": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "fcdee5de1875209fbb0d75173f0b761635d95d72474fd1c3b4547b0741f848da": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "d4f2375d084377be7fd8ef69d085c683056d119f53eeaa916391a4b8376549e0": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "9b0c771212c84272775a552b639b1160caf588f5d585c5967f4cbeddbbb74b1f": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "1429e29f28cf5f2d4fd3d0c57935310121e94a999fec300f309ed06a0fee6a09": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "6cf513a2aadcf3b85d612ee814a1c47a27b61992ff3a98f9cbfd720243cb5a45": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "528ff2fd500f7c20806100dcf34c43a9737504049bfb931cca564ed0cf78b31d": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754853413143",
+      "title": "Watch: Did Tesla really just unveil a flying car?",
+      "source_url": "https://www.bbc.co.uk/news/videos/ckly4mj1g3n9o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "0446e5ab7c62b132400021a8b0140bf348ebcd64294dcf38d37c74fd3f34735c": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754853445911",
+      "title": "US senators call for investigation into Ukraine's Starlink restrictions",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq398zl8jmvdo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-16T12:49:27.685790+00:00"
+    },
+    "bbfd72c7e959fc3e1efbee32fc1f50b236c4a489c14453e3b18dcd7fdb95271e": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754853478679",
+      "title": "Dad fined after son, 2, died in Cyprus hotel fall",
+      "source_url": "https://www.bbc.co.uk/news/articles/cvj6j1klez88o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "created_at": "2026-10-16T12:49:27.685790+00:00"
     }
   }
 }
