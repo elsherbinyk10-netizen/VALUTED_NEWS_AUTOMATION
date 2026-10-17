@@ -60,9 +60,9 @@ def infer_category(article):
     tags = " ".join(article.get("tags") or []).lower()
     title = (article.get("title") or "").lower()
     combined = tags + " " + title
-    if re.search(r"\b(movie|movies|film|films|cinema|streaming|tv|television|trailer)\\b", combined):
+    if re.search(r"\b(movie|movies|film|films|cinema|streaming|tv|television|trailer)\b", combined):
         return "Movies"
-    if re.search(r"\b(music|song|songs|album|albums|singer|singers|concert|concerts|tour|tours|music video)\\b", combined):
+    if re.search(r"\b(music|song|songs|album|albums|singer|singers|concert|concerts|tour|tours|music video)\b", combined):
         return "Music"
     return next((x.title() for x in ("technology", "science", "business", "sports", "world", "politics", "health", "entertainment") if x in combined), "News")
 
