@@ -198,6 +198,30 @@ def main():
             "valuted_news", "placeholder", "generic poster", "default thumbnail"
         ))
         return not url or generic
+    def media_identity(article):
+        image = article.get("image") or {}
+        url = str(image.get("url") or "")
+        parsed = urlparse(url)
+        basename = parsed.path.rsplit("/", 1)[-1]
+        # Shopify's image resize variants can add different UUID suffixes to the same source asset.
+        match = re.match(r"^(.+?_s0-w\\d+)", basename, re.I)
+        return (parsed.hostname or "").lower() + "/" + (match.group(1) if match else basename) if basename else ""
+
+    from collections import Counter
+    identity_counts = Counter(media_identity(a) for a in articles if media_identity(a))
+    def needs_real_image(article):
+        image = article.get("image") or {}
+        url = str(image.get("url") or "")
+        alt = str(image.get("altText") or "")
+        combined = (url + " " + alt).lower()
+        generic = any(term in combined for term in (
+            "google news", "google-news", "google_news", "valuted news", "valuted-news",
+            "valuted_news", "placeholder", "generic poster", "default thumbnail"
+        ))
+        body = (article.get("body") or "").lower()
+        repeated_aggregator_art = ("google news top stories" in body and identity_counts[media_identity(article)] > 1) if media_identity(article) else False
+        return not url or generic or repeated_aggregator_art
+
     missing = [a for a in articles if a.get("isPublished") and needs_real_image(a)]
     limit = max(1, min(20, int(env("MEDIA_BACKFILL_LIMIT", "20"))))
     fixed = 0
