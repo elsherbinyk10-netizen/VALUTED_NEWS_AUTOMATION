@@ -30,9 +30,9 @@ def list_resources():
     query = """
     query TranslationQueue {
       blog(id: "gid://shopify/Blog/126010065175") {
-        articles(first: 100, reverse: true) { nodes { id title isPublished publishedAt } }
+        articles(first: 250, reverse: true) { nodes { id title isPublished publishedAt } }
       }
-      pages(first: 100) { nodes { id title isPublished } }
+      pages(first: 250) { nodes { id title isPublished } }
     }
     """
     data = graphql(query)
