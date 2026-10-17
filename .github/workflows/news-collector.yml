@@ -6,6 +6,8 @@ on:
     branches: [main]
     paths:
       - "news_worker.py"
+      - "backfill_media.py"
+      - "translate_news.py"
       - "tests/**"
       - "requirements.txt"
       - "feeds.json"
@@ -66,6 +68,16 @@ jobs:
 
       - name: Run RSS collector
         run: python news_worker.py
+
+      - name: Backfill missing or generic featured images
+        env:
+          MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '5' }}
+        run: python backfill_media.py
+
+      - name: Translate published articles and pages into all enabled locales
+        env:
+          TRANSLATION_MAX_RESOURCES_PER_RUN: ${{ vars.TRANSLATION_MAX_RESOURCES_PER_RUN || '2' }}
+        run: python translate_news.py
 
       - name: Commit deduplication state safely
         shell: bash
