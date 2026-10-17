@@ -82,11 +82,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+users.noreply.github.com"
 
-          # Preserve this run's state, then merge it with the latest remote state.
+          # Save this run's state, then merge it onto the newest remote tree.
+          # Never rebase a processed.json-only commit: concurrent code commits can
+          # otherwise conflict in the state file and fail after publishing succeeded.
           cp data/processed.json /tmp/processed-local.json
-          git fetch origin main
-          git checkout origin/main -- data/processed.json
-          python - <<'PY'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python - <<'PY'
           import json
           from pathlib import Path
           local = json.loads(Path("/tmp/processed-local.json").read_text())
@@ -99,18 +102,19 @@ jobs:
               if old is None or str(value.get("seen_at", "")) >= str(old.get("seen_at", "")):
                   items[key] = value
           merged["items"] = items
-          Path("data/processed.json").write_text(json.dumps(merged, indent=2, sort_keys=True) + "\n")
+          Path("data/processed.json").write_text(json.dumps(merged, indent=2, sort_keys=True) + "\\n")
           print(f"Merged deduplication state: {len(items)} unique items")
           PY
-
-          git add data/processed.json
-          if git diff --cached --quiet; then
-            echo "No processing-state changes to commit."
-            exit 0
-          fi
-
-          git commit -m "Update news processing state [skip ci]"
-          # A theme/configuration edit can land while the collector runs.
-          # Rebase our state-only commit on top of the newest main before pushing.
-          git pull --rebase origin main
-          git push
+            git add data/processed.json
+            if git diff --cached --quiet; then
+              echo "No processing-state changes to commit."
+              exit 0
+            fi
+            git -c user.name="github-actions[bot]" -c user.email="41898282+users.noreply.github.com" commit -m "Update news processing state [skip ci]"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; retrying against latest main."
+          done
+          echo "Unable to push merged processing state after 3 attempts."
+          exit 1
