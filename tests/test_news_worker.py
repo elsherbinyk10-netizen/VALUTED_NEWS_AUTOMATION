@@ -49,7 +49,7 @@ class VideoEmbedTests(unittest.TestCase):
         get_mock.return_value = response
         parse_mock.return_value = Mock(entries=[
             {"link": "https://www.youtube.com/watch?v=AbCdEf12345",
-             "title": "NASA Artemis moon mission latest update",
+             "title": "NASA Artemis moon mission official video",
              "author": "NASA"}
         ])
         html = worker.fetch_related_youtube_embed("NASA Artemis moon mission", "Science")
