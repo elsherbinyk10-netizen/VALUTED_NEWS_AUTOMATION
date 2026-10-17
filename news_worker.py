@@ -475,7 +475,7 @@ def should_auto_publish(item, auto_publish):
     return bool(
         auto_publish
         and not item.get("risk")
-        and len(clean_text(item.get("description", ""))) >= 120
+        and len(clean_text(item.get("description", ""))) >= 450
         and canonical_url(item.get("url", ""))
         and clean_text(item.get("title", ""))
         # Do not auto-publish image-less news cards; keep these in draft for review.
