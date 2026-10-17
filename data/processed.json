@@ -495,6 +495,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "403bcfdcb0f581475d0c699419b764935179d51cc9194bc09137a913c6e09e15": {
+      "seen_at": "2026-10-17T05:38:12.339694+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "4074446185b15f0d82f02df8257e6193bd75559e8b028e3f62c0b00a7768ee28": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -652,6 +657,17 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "5d6d1117971740342b42a101fd0f07a8bbf3aece3281db1cfb7673e1cbf2ed85": {
+      "created_at": "2026-10-17T05:38:12.339694+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News Top Stories",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754865144087",
+      "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOX2luakxEaEVyTXo5MTktaTdoVzd4Zk1EX1NoYk8zZGE4bDNoYVpBS3FZeXJnMU1jazRhVkVfT2hSZ3pPY1JmSlotWVY3LWFjcDdGeDV2eU12bHhMM2E3QWI1aVczdmxiYjhBNlhGU1RCeE9hakdKN3hmTlZvTEgwSmxQam1lNVdJOUVFemlueXNwcFVUS3hYckNfb0UwbVJrZ0ticnctYmlueFR0MHRBR0cwZ1ZJc3VlNVFNcGw5SndCczR4VVhrNndabWptMGcwMF9aVQ?oc=5",
+      "status": "draft",
+      "title": "Trump puts new Russia sanctions passed by Congress on hold amid deepening row with Ukraine - The Guardian"
+    },
     "5f41991d5bed7345798f8170c50f4bc8131d0da0e9007c2b602df66c0d39b38e": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -775,6 +791,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "73f263f9cefed5d448a290215cb657c06fe61188c1a8e1738cc7827c233f7943": {
+      "seen_at": "2026-10-17T05:38:12.339694+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "74da31eddbb7c532f4d7e747d5ba1634772d663c9bedbe0c5d5ec858e0634e5d": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "NASA News",
@@ -812,6 +833,11 @@
     "795dedefcd9e4e2e01dc68c8adea1a335b24e06533dd8f097594419f1337e2e0": {
       "seen_at": "2026-10-15T06:49:10.880730+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "7992ef0a53024180669a48f19502df3f249f666c777cb8a060a8bb6235069497": {
+      "seen_at": "2026-10-17T05:38:12.339694+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "7a0ed471691e116b5dd4062f9b87d18e64ab34f11ec0a6ae9224415698c03b5e": {
@@ -1542,6 +1568,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/crq5nzxv9q4yo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Fridges in French supermarkets hit by cyber attack"
+    },
+    "f03ed81c684966cb093f3a07904355b8f6b3e9280b60b4b5b4310d6f10584a66": {
+      "seen_at": "2026-10-17T05:38:12.339694+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
     },
     "f07f8294f68786d697d5bcb45c9ecd6c28b6c2235fe751964c8edcec26f112e3": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
