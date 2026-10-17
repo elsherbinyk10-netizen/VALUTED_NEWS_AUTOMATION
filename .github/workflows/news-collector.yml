@@ -117,7 +117,7 @@ jobs:
           for key, value in local_video.get("attempted", {}).items():
               if key not in merged_attempts or str(value) >= str(merged_attempts[key]):
                   merged_attempts[key] = value
-          video_path.write_text(json.dumps({"attempted": merged_attempts}, indent=2, sort_keys=True) + "\\n")
+          video_path.write_text(json.dumps({"attempted": merged_attempts}, indent=2, sort_keys=True) + "\n")
           print(f"Merged video attempt state: {len(merged_attempts)} articles")
           print(f"Merged deduplication state: {len(items)} unique items")
           PY
