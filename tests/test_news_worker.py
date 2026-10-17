@@ -77,7 +77,7 @@ class VideoEmbedTests(unittest.TestCase):
             "title": "A science discovery announced by NASA",
             "url": "https://example.com/story",
             "image_url": "https://images.example.com/story.jpg",
-            "description": "This is a sufficiently detailed source summary " * 4,
+            "description": "This is a sufficiently detailed source summary with relevant facts and context. " * 8,
             "risk": False,
         }
         self.assertTrue(worker.should_auto_publish(item, True))
