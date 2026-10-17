@@ -50,7 +50,11 @@ def story_key(url, title):
 def load_state():
     if not STATE_FILE.exists():
         return {"version": 1, "items": {}}
-    data = json.loads(STATE_FILE.read_text(encoding="utf-8"))
+    raw = STATE_FILE.read_text(encoding="utf-8").rstrip()
+    # Recover from the historical literal backslash-n suffix without losing records.
+    while raw.endswith("\\n"):
+        raw = raw[:-2].rstrip()
+    data = json.loads(raw)
     if not isinstance(data.get("items"), dict):
         raise RuntimeError("Deduplication state is malformed; stopping to avoid duplicate publishing.")
     return data
