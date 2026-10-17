@@ -80,6 +80,7 @@ jobs:
         run: python translate_news.py
 
       - name: Commit deduplication state safely
+        if: always()
         shell: bash
         run: |
           set -euo pipefail
