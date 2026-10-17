@@ -459,6 +459,8 @@ def should_auto_publish(item, auto_publish):
         and len(clean_text(item.get("description", ""))) >= 120
         and canonical_url(item.get("url", ""))
         and clean_text(item.get("title", ""))
+        # Do not auto-publish image-less news cards; keep these in draft for review.
+        and canonical_url(item.get("image_url", ""))
     )
 
 
