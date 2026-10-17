@@ -71,7 +71,7 @@ jobs:
 
       - name: Backfill missing or generic featured images
         env:
-          MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '5' }}
+          MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '20' }}
         run: python backfill_media.py
 
       - name: Commit deduplication state safely
