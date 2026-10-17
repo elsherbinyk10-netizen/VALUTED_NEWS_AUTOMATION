@@ -111,6 +111,61 @@ def extract_image(entry):
             continue
     return ""
 
+
+def extract_video_embed(entry):
+    """Use only video URLs supplied by the publisher's RSS metadata."""
+    candidates = []
+    for field in ("media_content", "media_player"):
+        values = entry.get(field, []) or []
+        if isinstance(values, dict):
+            values = [values]
+        for item in values:
+            if not isinstance(item, dict):
+                continue
+            url = item.get("url") or item.get("content") or item.get("href")
+            media_type = str(item.get("type", "")).lower()
+            if url and ("video" in media_type or field == "media_player"):
+                candidates.append(str(url))
+    for item in entry.get("enclosures", []) or []:
+        if isinstance(item, dict):
+            url = item.get("href")
+            media_type = str(item.get("type", "")).lower()
+            if url and (media_type.startswith("video/") or url.lower().split("?")[0].endswith((".mp4", ".webm", ".ogg"))):
+                candidates.append(str(url))
+    for markup in [entry.get("summary", ""), entry.get("description", "")] + [
+        item.get("value", "") for item in (entry.get("content", []) or []) if isinstance(item, dict)
+    ]:
+        for match in re.findall(r"""https?://[^\s\"'<>]+""", markup or "", re.I):
+            candidates.append(html.unescape(match).rstrip("),.;"))
+    for candidate in candidates:
+        try:
+            parsed = urlparse(candidate)
+            host = (parsed.hostname or "").lower()
+            path = parsed.path.lower()
+            if parsed.scheme not in ("http", "https"):
+                continue
+            if host in ("youtube.com", "www.youtube.com", "m.youtube.com", "youtu.be"):
+                video_id = ""
+                if host == "youtu.be":
+                    video_id = path.strip("/").split("/")[0]
+                elif path == "/watch":
+                    video_id = dict(parse_qsl(parsed.query)).get("v", "")
+                elif path.startswith(("/embed/", "/shorts/")):
+                    video_id = path.split("/")[2] if len(path.split("/")) > 2 else ""
+                if re.fullmatch(r"[A-Za-z0-9_-]{6,20}", video_id):
+                    return f'<div class="valuted-news-video" style="position:relative;width:100%;aspect-ratio:16/9;margin:24px 0"><iframe src="https://www.youtube-nocookie.com/embed/{video_id}" title="Related news video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>'
+            if host in ("vimeo.com", "www.vimeo.com", "player.vimeo.com"):
+                video_id = path.strip("/").split("/")[-1]
+                if video_id.isdigit():
+                    return f'<div class="valuted-news-video" style="position:relative;width:100%;aspect-ratio:16/9;margin:24px 0"><iframe src="https://player.vimeo.com/video/{video_id}" title="Related news video" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>'
+            if path.endswith((".mp4", ".webm", ".ogg")):
+                safe_url = html.escape(candidate, quote=True)
+                return f'<video controls preload="metadata" playsinline style="display:block;width:100%;height:auto;max-width:100%;margin:24px 0"><source src="{safe_url}"></video>'
+        except Exception:
+            continue
+    return ""
+
+
 def shopify_access_token():
     shop = env("SHOPIFY_STORE_DOMAIN")
     direct_token = env("SHOPIFY_ADMIN_ACCESS_TOKEN")
@@ -191,7 +246,7 @@ def shopify_graphql(query, variables):
 
     return payload.get("data", {})
 
-def make_editorial(title, publisher, category, description):
+def make_editorial(title, publisher, category, description, video_html=""):
     """Create a professionally structured, source-attributed review draft."""
     safe_title = clean_text(title)[:120] or "Valuted News update"
     excerpt = clean_text(description)
@@ -228,6 +283,9 @@ def make_editorial(title, publisher, category, description):
         '<h2>Story details</h2>'
         '<p>No source summary was available for this draft.</p>'
     )
+
+    if video_html:
+        body += '<h2>Related video</h2>' + video_html
 
     body += (
         '<h2>Editorial checklist</h2>'
@@ -331,7 +389,7 @@ def main():
                 candidates.append({
                     "key": key, "title": title, "url": source_url, "publisher": name,
                     "category": category, "description": description, "published": published,
-                    "image_url": extract_image(entry), "risk": risk,
+                    "image_url": extract_image(entry), "video_html": extract_video_embed(entry), "risk": risk,
                 })
         except Exception:
             logging.exception("Feed processing failed: %s", name)
@@ -347,7 +405,7 @@ def main():
         if args.dry_run:
             continue
         try:
-            editorial = make_editorial(item["title"], item["publisher"], item["category"], item["description"])
+            editorial = make_editorial(item["title"], item["publisher"], item["category"], item["description"], item.get("video_html", ""))
             # Publish automatically only when enabled and the story
             # has not triggered the high-risk review filter.
             # RSS metadata alone is not sufficient for publication.
@@ -368,6 +426,7 @@ def main():
                 "publisher": item["publisher"],
                 "risk_flag": item["risk"],
                 "has_publisher_artwork": bool(item.get("image_url")),
+                "has_embedded_video": bool(item.get("video_html")),
                 "created_at": now.isoformat(),
             }
             logging.info("Created Shopify %s: %s (%s)", "article" if publish else "draft", article.get("title"), article.get("id"))
@@ -387,7 +446,3 @@ def main():
         )
 
     logging.info("Run finished.")
-
-
-if __name__ == "__main__":
-    main()
