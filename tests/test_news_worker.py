@@ -52,7 +52,7 @@ class VideoEmbedTests(unittest.TestCase):
              "title": "NASA Artemis moon mission latest update",
              "author": "NASA"}
         ])
-        html = worker.fetch_related_youtube_embed("NASA Artemis moon mission")
+        html = worker.fetch_related_youtube_embed("NASA Artemis moon mission", "Science")
         self.assertIn("youtube-nocookie.com/embed/AbCdEf12345", html)
         self.assertIn("Related video", html)
         self.assertIn("youtube.com/feeds/videos.xml?search_query=", get_mock.call_args.args[0])
@@ -69,7 +69,7 @@ class VideoEmbedTests(unittest.TestCase):
              "title": "Unrelated cooking show recipe",
              "author": "Food Channel"}
         ])
-        html = worker.fetch_related_youtube_embed("NASA Artemis moon mission")
+        html = worker.fetch_related_youtube_embed("NASA Artemis moon mission", "Science")
         self.assertEqual(html, "")
 
     def test_auto_publish_requires_flag_low_risk_summary_and_news_image(self):
@@ -132,6 +132,39 @@ class VideoEmbedTests(unittest.TestCase):
         self.assertIn("EDITORIAL REVIEW REQUIRED", article["body"])
         self.assertFalse(article["quality_ok"])
 
+
+    @patch.object(worker.requests, "get")
+    @patch.object(worker.feedparser, "parse")
+    def test_movie_category_requires_trailer_match(self, parse_mock, get_mock):
+        response = Mock()
+        response.content = b"<feed></feed>"
+        response.raise_for_status.return_value = None
+        get_mock.return_value = response
+        parse_mock.return_value = Mock(entries=[
+            {"link": "https://www.youtube.com/watch?v=AbCdEf12345",
+             "title": "Spider-Man Brand New Day Official Trailer",
+             "author": "Sony Pictures"}
+        ])
+        html = worker.fetch_related_youtube_embed("Spider-Man Brand New Day", "Movies")
+        self.assertIn("youtube-nocookie.com/embed/AbCdEf12345", html)
+        self.assertIn("Official Trailer", html)
+        self.assertIn("official trailer", get_mock.call_args.args[0].lower())
+
+    @patch.object(worker.requests, "get")
+    @patch.object(worker.feedparser, "parse")
+    def test_music_category_queries_for_song_or_music_video(self, parse_mock, get_mock):
+        response = Mock()
+        response.content = b"<feed></feed>"
+        response.raise_for_status.return_value = None
+        get_mock.return_value = response
+        parse_mock.return_value = Mock(entries=[
+            {"link": "https://www.youtube.com/watch?v=AbCdEf12345",
+             "title": "Harry Styles What Is Enough Live Performance",
+             "author": "Harry Styles"}
+        ])
+        html = worker.fetch_related_youtube_embed("Harry Styles Liam Payne new song", "Music")
+        self.assertIn("youtube-nocookie.com/embed/AbCdEf12345", html)
+        self.assertIn("official song", get_mock.call_args.args[0].lower())
 
 if __name__ == "__main__":
     unittest.main()
