@@ -39,6 +39,15 @@ def normalized_title(title):
     return " ".join(re.findall(r"[a-z0-9]+", (title or "").lower()))
 
 
+def normalized_image_identity(url):
+    """Collapse CDN resize and random UUID suffixes to detect reused source artwork."""
+    parsed = urlparse(url or "")
+    basename = parsed.path.rsplit("/", 1)[-1]
+    basename = re.sub(r"_s0-w[0-9]+", "", basename, flags=re.I)
+    basename = re.sub(r"_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}(?=\.)", "", basename, flags=re.I)
+    return (parsed.hostname or "").lower() + "/" + basename if basename else ""
+
+
 def main():
     articles = backfill_media.list_articles()
     audited = articles
@@ -47,8 +56,7 @@ def main():
         image = article.get("image") or {}
         url = str(image.get("url") or "")
         if url:
-            parsed = urlparse(url)
-            identity = (parsed.hostname or "").lower() + parsed.path
+            identity = normalized_image_identity(url)
             by_image[identity].append(article)
 
     # Check URLs concurrently to keep the daily run within the GitHub Actions time budget.
@@ -71,8 +79,7 @@ def main():
         elif not url_health.get(url, False):
             reason = "image-url-unavailable-or-not-image"
         else:
-            parsed = urlparse(url)
-            identity = (parsed.hostname or "").lower() + parsed.path
+            identity = normalized_image_identity(url)
             siblings = by_image[identity]
             unique_titles = {normalized_title(x.get("title")) for x in siblings}
             # Only flag an asset reused for three or more distinct headlines.
