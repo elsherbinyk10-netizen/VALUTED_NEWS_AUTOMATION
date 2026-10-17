@@ -82,7 +82,7 @@ def main():
         if not article.get("isPublished"):
             continue
         body = article.get("body") or ""
-        if re.search(r"youtube-nocookie\.com/embed/|youtube\.com/embed/|player\\.vimeo\.com/video/|<video\\b", body, re.I):
+        if any(marker in body.lower() for marker in ("youtube-nocookie.com/embed/", "youtube.com/embed/", "player.vimeo.com/video/", "<video")):
             continue
         key = str(article.get("id") or "")
         stamp = attempted.get(key, "")
