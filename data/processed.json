@@ -1232,6 +1232,17 @@
       "has_publisher_artwork": true,
       "has_embedded_video": false,
       "created_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "f3a72496ba3397ea8ea5ed37caf3c872b602f2c821d83d7a792408927edf0af4": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754864193815",
+      "title": "Why hasn't the UK had any named storms yet?",
+      "source_url": "https://www.bbc.co.uk/weather/articles/ck5yn68mj88vo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "has_publisher_artwork": true,
+      "has_embedded_video": false,
+      "created_at": "2026-10-17T04:07:54.294431+00:00"
     }
   }
 }
