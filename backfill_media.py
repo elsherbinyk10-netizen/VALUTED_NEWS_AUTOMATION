@@ -146,7 +146,17 @@ def main():
     if not env("SHOPIFY_STORE_DOMAIN"):
         raise RuntimeError("Missing SHOPIFY_STORE_DOMAIN.")
     articles = list_articles()
-    missing = [a for a in articles if a.get("isPublished") and not (a.get("image") or {}).get("url")]
+    def needs_real_image(article):
+        image = article.get("image") or {}
+        url = str(image.get("url") or "")
+        alt = str(image.get("altText") or "")
+        combined = (url + " " + alt).lower()
+        generic = any(term in combined for term in (
+            "google news", "google-news", "google_news", "valuted news", "valuted-news",
+            "valuted_news", "placeholder", "generic poster", "default thumbnail"
+        ))
+        return not url or generic
+    missing = [a for a in articles if a.get("isPublished") and needs_real_image(a)]
     limit = max(1, min(20, int(env("MEDIA_BACKFILL_LIMIT", "5"))))
     fixed = 0
     unresolved = []
