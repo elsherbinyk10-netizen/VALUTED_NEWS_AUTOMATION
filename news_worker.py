@@ -223,15 +223,29 @@ def extract_video_embed(entry):
     return ""
 
 
-def fetch_related_youtube_embed(story_title):
-    """Find a relevant public YouTube RSS result without a paid API key."""
+def fetch_related_youtube_embed(story_title, category=""):
+    """Find a relevant public YouTube video via RSS, with category-specific relevance checks."""
     try:
-        words = re.findall(r"[a-zA-Z0-9]{4,}", (story_title or "").lower())
-        stop = {"about", "after", "before", "latest", "what", "when", "where", "will", "from", "with", "into", "over", "news", "update", "explained"}
+        title = clean_text(story_title)
+        category_text = clean_text(category).lower()
+        words = re.findall(r"[a-zA-Z0-9]{3,}", title.lower())
+        stop = {"about", "after", "before", "latest", "what", "when", "where", "will", "from", "with", "into", "over", "news", "update", "explained", "official", "video", "trailer", "music"}
         terms = list(dict.fromkeys(w for w in words if w not in stop))[:8]
         if len(terms) < 2:
             return ""
-        query = requests.utils.quote(" ".join(terms[:6]) + " news")
+
+        is_movie = any(x in category_text for x in ("movie", "film", "cinema", "tv", "television", "streaming")) or bool(re.search(r"\\b(trailer|teaser|movie|film)\\b", title, re.I))
+        is_music = any(x in category_text for x in ("music", "song", "album", "artist", "concert")) or bool(re.search(r"\\b(song|album|singer|music|concert|tour)\\b", title, re.I))
+        if is_movie:
+            query_text = " ".join(terms[:5]) + " official trailer"
+            required_hints = {"trailer", "teaser", "official"}
+        elif is_music:
+            query_text = " ".join(terms[:5]) + " official song music video live performance"
+            required_hints = {"song", "music", "video", "official", "live", "performance", "audio", "tribute", "concert", "lyrics"}
+        else:
+            query_text = " ".join(terms[:6]) + " official news video interview"
+            required_hints = {"video", "interview", "statement", "speech", "press", "official", "report", "explains", "explainer"}
+        query = requests.utils.quote(query_text)
         feed_url = "https://www.youtube.com/feeds/videos.xml?search_query=" + query
         response = requests.get(
             feed_url,
@@ -243,7 +257,7 @@ def fetch_related_youtube_embed(story_title):
         title_terms = set(terms)
         best = None
         best_score = 0
-        for entry in parsed.entries[:12]:
+        for entry in parsed.entries[:15]:
             video_url = str(entry.get("link", ""))
             parsed_url = urlparse(video_url)
             video_id = dict(parse_qsl(parsed_url.query)).get("v", "")
@@ -251,16 +265,18 @@ def fetch_related_youtube_embed(story_title):
                 continue
             if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id):
                 continue
-            video_title = clean_text(entry.get("title", "")).lower()
-            video_words = set(re.findall(r"[a-zA-Z0-9]{4,}", video_title))
-            score = len(title_terms & video_words)
-            if score > best_score:
-                best, best_score = (video_id, clean_text(entry.get("title", "")), entry.get("author", "")), score
-        # Require a meaningful title overlap; never attach an arbitrary trending clip.
-        if not best or best_score < 2:
+            video_title = clean_text(entry.get("title", ""))
+            video_words = set(re.findall(r"[a-zA-Z0-9]{3,}", video_title.lower()))
+            overlap = len(title_terms & video_words)
+            hint_match = bool(video_words & required_hints)
+            score = overlap + (2 if hint_match else 0)
+            if overlap >= 2 and hint_match and score > best_score:
+                best, best_score = (video_id, video_title, entry.get("author", "")), score
+        # Never attach a generic trending clip or a movie clip that is not actually a trailer.
+        if not best:
             return ""
         video_id, video_title, channel = best
-        safe_title = html.escape(video_title or "Related news video", quote=True)
+        safe_title = html.escape(video_title or "Related video", quote=True)
         safe_channel = html.escape(clean_text(channel) or "YouTube publisher", quote=True)
         return (
             '<div class="valuted-news-video" style="position:relative;width:100%;aspect-ratio:16/9;margin:24px 0">'
@@ -272,7 +288,7 @@ def fetch_related_youtube_embed(story_title):
             '" target="_blank" rel="noopener noreferrer">' + safe_title + '</a> · ' + safe_channel + '</p>'
         )
     except Exception as exc:
-        logging.info("No related YouTube video found for %s: %s", story_title, exc)
+        logging.info("No category-matched YouTube video found for %s: %s", story_title, exc)
         return ""
 
 
@@ -634,7 +650,7 @@ def main():
                 if not item.get("video_html") and media.get("video_html"):
                     item["video_html"] = media["video_html"]
             if not item.get("video_html"):
-                item["video_html"] = fetch_related_youtube_embed(item["title"])
+                item["video_html"] = fetch_related_youtube_embed(item["title"], item.get("category", ""))
             publish = should_auto_publish(item, auto_publish)
             if publish:
                 editorial = make_public_news_brief(
