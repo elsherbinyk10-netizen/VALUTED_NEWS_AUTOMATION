@@ -166,6 +166,59 @@ def extract_video_embed(entry):
     return ""
 
 
+def fetch_related_youtube_embed(story_title):
+    """Find a relevant public YouTube RSS result without a paid API key."""
+    try:
+        words = re.findall(r"[a-zA-Z0-9]{4,}", (story_title or "").lower())
+        stop = {"about", "after", "before", "latest", "what", "when", "where", "will", "from", "with", "into", "over", "news", "update", "explained"}
+        terms = list(dict.fromkeys(w for w in words if w not in stop))[:8]
+        if len(terms) < 2:
+            return ""
+        query = requests.utils.quote(" ".join(terms[:6]) + " news")
+        feed_url = "https://www.youtube.com/feeds/videos.xml?search_query=" + query
+        response = requests.get(
+            feed_url,
+            headers={"User-Agent": "VALUTED-NEWS-RSS-Bot/1.0"},
+            timeout=(3, 7),
+        )
+        response.raise_for_status()
+        parsed = feedparser.parse(response.content)
+        title_terms = set(terms)
+        best = None
+        best_score = 0
+        for entry in parsed.entries[:12]:
+            video_url = str(entry.get("link", ""))
+            parsed_url = urlparse(video_url)
+            video_id = dict(parse_qsl(parsed_url.query)).get("v", "")
+            if parsed_url.hostname not in ("www.youtube.com", "youtube.com") or parsed_url.path != "/watch":
+                continue
+            if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id):
+                continue
+            video_title = clean_text(entry.get("title", "")).lower()
+            video_words = set(re.findall(r"[a-zA-Z0-9]{4,}", video_title))
+            score = len(title_terms & video_words)
+            if score > best_score:
+                best, best_score = (video_id, clean_text(entry.get("title", "")), entry.get("author", "")), score
+        # Require a meaningful title overlap; never attach an arbitrary trending clip.
+        if not best or best_score < 2:
+            return ""
+        video_id, video_title, channel = best
+        safe_title = html.escape(video_title or "Related news video", quote=True)
+        safe_channel = html.escape(clean_text(channel) or "YouTube publisher", quote=True)
+        return (
+            '<div class="valuted-news-video" style="position:relative;width:100%;aspect-ratio:16/9;margin:24px 0">'
+            '<iframe src="https://www.youtube-nocookie.com/embed/' + video_id +
+            '" title="' + safe_title + '" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" '
+            'allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" '
+            'allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>'
+            '<p class="vn-video-credit">Related video: <a href="https://www.youtube.com/watch?v=' + video_id +
+            '" target="_blank" rel="noopener noreferrer">' + safe_title + '</a> · ' + safe_channel + '</p>'
+        )
+    except Exception as exc:
+        logging.info("No related YouTube video found for %s: %s", story_title, exc)
+        return ""
+
+
 def fetch_article_media(source_url):
     """Read only public Open Graph/Twitter media metadata from the publisher page."""
     try:
@@ -475,6 +528,8 @@ def main():
                     item["image_url"] = media["image_url"]
                 if not item.get("video_html") and media.get("video_html"):
                     item["video_html"] = media["video_html"]
+            if not item.get("video_html"):
+                item["video_html"] = fetch_related_youtube_embed(item["title"])
             editorial = make_editorial(item["title"], item["publisher"], item["category"], item["description"], item.get("video_html", ""))
             # Publish automatically only when enabled and the story
             # has not triggered the high-risk review filter.
@@ -498,21 +553,3 @@ def main():
                 "has_publisher_artwork": bool(item.get("image_url")),
                 "has_embedded_video": bool(item.get("video_html")),
                 "created_at": now.isoformat(),
-            }
-            logging.info("Created Shopify %s: %s (%s)", "article" if publish else "draft", article.get("title"), article.get("id"))
-        except Exception as exc:
-            failures += 1
-            logging.exception("Failed to process %s: %s", item["title"], exc)
-            if "Shopify authentication/permission failure" in str(exc):
-                raise
-
-    if not args.dry_run:
-        save_state(state)
-
-    if failures:
-        raise RuntimeError(
-            f"{failures} article(s) failed. See the log above; "
-            "the workflow is marked failed so the problem is visible."
-        )
-
-    logging.info("Run finished.")
