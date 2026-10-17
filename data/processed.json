@@ -574,6 +574,17 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "5026d19b9d0f7357817e6e1b8ceea9a3de82ee8e6887412872d3bf68b455e4cc": {
+      "created_at": "2026-10-17T05:11:17.786554+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754864619799",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6m24e1ln130o?at_medium=RSS&at_campaign=rss",
+      "status": "draft",
+      "title": "Avian flu and costs among reasons for loss of captive birds at Castle Espie"
+    },
     "51f4a4388501acf7472c60ae5d8e1d852c86723dbad6a468381f3a7b87777e8d": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
