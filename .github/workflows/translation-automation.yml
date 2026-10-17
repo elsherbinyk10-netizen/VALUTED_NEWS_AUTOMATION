@@ -63,5 +63,13 @@ jobs:
             exit 0
           fi
           git commit -m "Save translation queue progress [skip ci]"
-          git pull --rebase origin main
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push; then
+              exit 0
+            fi
+            echo "Concurrent repository update; retrying state push ($attempt/3)."
+            sleep 2
+          done
+          echo "Could not persist translation state after three attempts."
+          exit 1
