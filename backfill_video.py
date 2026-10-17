@@ -80,8 +80,6 @@ def main():
     articles = list_articles()
     eligible = []
     for article in articles:
-        if not article.get("isPublished"):
-            continue
         body = article.get("body") or ""
         if any(marker in body.lower() for marker in ("youtube-nocookie.com/embed/", "youtube.com/embed/", "player.vimeo.com/video/", "<video")):
             continue
@@ -95,7 +93,7 @@ def main():
             continue
         eligible.append(article)
 
-    logging.info("Published articles=%d; missing video=%d; batch limit=%d", sum(bool(a.get("isPublished")) for a in articles), len(eligible), limit)
+    logging.info("Articles checked (published + drafts)=%d; missing video=%d; batch limit=%d", len(articles), len(eligible), limit)
     processed = 0
     added = 0
     for article in eligible:
