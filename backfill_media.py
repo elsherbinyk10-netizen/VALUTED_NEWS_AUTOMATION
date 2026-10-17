@@ -71,7 +71,8 @@ def wikimedia_image(title):
     )
     query.raise_for_status()
     pages = query.json().get("query", {}).get("pages", {})
-    title_terms = set(re.findall(r"[a-z0-9]{4,}", title.lower()))
+    stopwords = {"news", "latest", "update", "updates", "what", "when", "where", "does", "that", "this", "from", "with", "about", "guide", "how", "follow", "world", "report", "reports", "explainer", "explained", "today", "2026"}
+    title_terms = set(re.findall(r"[a-z0-9]{4,}", title.lower())) - stopwords
     candidates = []
     for page in pages.values():
         info = (page.get("imageinfo") or [{}])[0]
@@ -82,7 +83,7 @@ def wikimedia_image(title):
         description = clean_text((meta.get("ImageDescription") or {}).get("value", ""))
         combined = (page.get("title", "") + " " + description).lower()
         score = len(title_terms & set(re.findall(r"[a-z0-9]{4,}", combined)))
-        if score < 1 or not info.get("thumburl") or not license_name:
+        if score < 2 or not info.get("thumburl") or not license_name:
             continue
         if not any(x in license_name.lower() for x in ("cc0", "public domain", "cc by", "cc-by", "cc by-sa", "cc-by-sa")):
             continue
@@ -157,7 +158,7 @@ def main():
         ))
         return not url or generic
     missing = [a for a in articles if a.get("isPublished") and needs_real_image(a)]
-    limit = max(1, min(20, int(env("MEDIA_BACKFILL_LIMIT", "5"))))
+    limit = max(1, min(20, int(env("MEDIA_BACKFILL_LIMIT", "20"))))
     fixed = 0
     unresolved = []
     logging.info("Published articles checked=%d; missing images=%d; per-run limit=%d", len(articles), len(missing), limit)
