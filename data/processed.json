@@ -243,6 +243,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "1e8ff0ca33d7e5a6c752e04dcfd12982b079c6880ad59f57a63b43c4452cafab": {
+      "seen_at": "2026-10-17T06:08:06.057590+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "1ed9e8d52d8c1185be8234c53ed17965bcca0befbc0fcd9343423226107cc439": {
       "created_at": "2026-10-17T05:12:33.395349+00:00",
       "has_embedded_video": false,
@@ -404,6 +409,11 @@
     "329a33b3e560dea053b20cf87d73c40f8c605d4fc2e589453a4f0df541f3691b": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "34afc9c798c8617cd58de37975e8b474c028d2566cb7d0af004801df25bb32fb": {
+      "seen_at": "2026-10-17T06:08:06.057590+00:00",
+      "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
     "353718754d757ccb50dd804170e9380765ad91be4a0b45eb0c38b8d39c6df2cd": {
@@ -580,6 +590,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "4b31a65269f1add9289cca2be3cafe5ad8450bafc5f240bb1b7ab26ce89cf0fc": {
+      "seen_at": "2026-10-17T06:08:06.057590+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "4c4f3673e6e39a252ec6b393a19d0133ee1ae09fcfc67f44813f0bb428eb1897": {
       "created_at": "2026-10-13T18:35:38.703000+00:00",
       "has_publisher_artwork": true,
@@ -646,6 +661,17 @@
       "seen_at": "2026-10-12T06:38:38.333441+00:00",
       "source": "NASA News",
       "status": "skipped_stale"
+    },
+    "56fcc685ac2dfe168991d96592f94b56e3b2f5f4f54c697f9c791e44ae86eaad": {
+      "created_at": "2026-10-17T06:08:06.057590+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754865471767",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm5yngn0pl2ro?at_medium=RSS&at_campaign=rss",
+      "status": "draft",
+      "title": "Nightclubs are disappearing - and it's affecting young people"
     },
     "57f3a3d36dfa1845bdb564798b95b2aa9f601184b6a6c7c502b7409d140d9db9": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
@@ -948,6 +974,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "860afb8685ecdcdd030c4084c88db3126e1f97a2e03802ff6eefbd093e8ea304": {
+      "seen_at": "2026-10-17T06:08:06.057590+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "868b338b316d0765386fee19bb725f6fc7da84187fa4c0df308a9f151ab340e6": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
@@ -966,6 +997,11 @@
     "88bbc92bcd1cb5e124eb109c8b4e00e10293740a33435ea3c87d940944ec83a9": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "89e7ce0e0402bd6a0d8b5c53de32180e1fdb4b369d3fede76c1dd9d5340de1ed": {
+      "seen_at": "2026-10-17T06:08:06.057590+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "8b461ffd78bd31cc20a6bb0042f0fa4abeebb5af7423eb93126ad77fb89d24f9": {
@@ -1005,6 +1041,11 @@
     "92e5858d27de486c20a34931a7acf4cf350596195708a7a308c28fed84edafe0": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "NPR Business",
+      "status": "skipped_stale"
+    },
+    "93a06f2f4a9fd44dfbc205c4f1b13974b7d5894f486f71f91bf22ff4a2e48438": {
+      "seen_at": "2026-10-17T06:08:06.057590+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "9425c6a29215c5ea624710f9a168610054f9642caca610abce01056077a2bf4c": {
@@ -1266,6 +1307,11 @@
     "bfe81a720fc1b903efbbd8379bbd0139cc8654d0a76932f4111212b0437c09e5": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "c105533c1047b81b0cbbe2eceeef34082d8abe7e50fb237236a1b18a1bc9eb1c": {
+      "seen_at": "2026-10-17T06:08:06.057590+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "c11a9e9221b409d3b3011497c1d264a46e9e6e7bb32f8f85691d0e0cccf5224f": {
@@ -1629,6 +1675,11 @@
     "f72fa532500caca18a61e8eb5ee9b520e484ff56cf57375185c871f863d61b6c": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "f7e861e5d6951e1c3a4846918e056d76162cf33d6d3f5c3898c1bc94518ac9c6": {
+      "seen_at": "2026-10-17T06:08:06.057590+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "f8103e0fcf8adce9e6ad672980c55f55d4d3ea21a09e86ed7ea2cdf059ce11e7": {
