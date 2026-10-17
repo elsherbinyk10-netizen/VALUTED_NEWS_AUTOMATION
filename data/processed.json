@@ -476,7 +476,7 @@
       "status": "skipped_stale"
     },
     "3bf02e14e5a1741f19938116e9078ab06c12c60d0a4c8999a776a92cb09bfa49": {
-      "seen_at": "2026-10-17T06:08:31.417343+00:00",
+      "seen_at": "2026-10-17T06:09:05.781957+00:00",
       "source": "Google News Business",
       "status": "skipped_stale"
     },
@@ -668,12 +668,12 @@
       "status": "skipped_stale"
     },
     "56fcc685ac2dfe168991d96592f94b56e3b2f5f4f54c697f9c791e44ae86eaad": {
-      "created_at": "2026-10-17T06:08:31.417343+00:00",
+      "created_at": "2026-10-17T06:08:06.057590+00:00",
       "has_embedded_video": false,
       "has_publisher_artwork": true,
       "publisher": "BBC Business",
       "risk_flag": false,
-      "shopify_article_id": "gid://shopify/Article/754865504535",
+      "shopify_article_id": "gid://shopify/Article/754865471767",
       "source_url": "https://www.bbc.co.uk/news/articles/cm5yngn0pl2ro?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Nightclubs are disappearing - and it's affecting young people"
@@ -916,6 +916,17 @@
       "seen_at": "2026-10-14T12:48:42.226493+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
+    },
+    "83150c0bc6787b69b0f904fca7be36f3002846a9b0e6ed2ea3351d76bb07279b": {
+      "created_at": "2026-10-17T06:09:05.781957+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News World",
+      "risk_flag": true,
+      "shopify_article_id": "gid://shopify/Article/754865537303",
+      "source_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZEQyQ3diMWtjYmFLOFBTY1I5OU1veHF4cGFtM1JBNE13QlNtWXIxRENVdlc2UmJqN1BETkJhYjBDcXdHeTZYanZtZTdTeGE1aTdGT09KaGF2aGhUWWcwU3hJaHhLa2pBNmRuZnpJeXprdVpWMnV6MFBlb1JuZWNIQ2VLTXFTSDJrcU1GYm9xMNIBjwFBVV95cUxOOXNya01NSlNpYlBtcWVIUHBZcUxtMXIyZnpZNmFPYTVYYXFXNjhPM0gyRXg1V0xCWmFKNTJCVjlhS0VfMDFIdTVkWXNjdEl1dzFpS0xCRks3aVo4WVo1Yi0wUWtBQ3p3ZjdZY0IydGw5c0I1U09CeFh3cjlxaVR0TXJQUGhsZDJHSlExSll3RQ?oc=5",
+      "status": "draft",
+      "title": "Brazil: Amazon deforestation lowest in nearly 40 years - DW.com"
     },
     "832ca8742d0202d670c484f9e1208bb7b862e4f2e2f6b04db2353ffe6bf55367": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
