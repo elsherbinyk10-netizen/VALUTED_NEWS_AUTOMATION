@@ -227,6 +227,17 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "1ed9e8d52d8c1185be8234c53ed17965bcca0befbc0fcd9343423226107cc439": {
+      "created_at": "2026-10-17T05:12:33.395349+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754864685335",
+      "source_url": "https://www.rollingstone.com/music/music-news/harry-styles-liam-payne-new-song-msg-1235644335",
+      "status": "published",
+      "title": "Harry Styles Performs New Song Written for Liam Payne at MSG"
+    },
     "1ef60b69b657f0835c83dd98685286111fd50236ca9ba2b68a46f82a6248d2b1": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
@@ -250,6 +261,11 @@
     "21c8f65b5ef4b79f64c9363cd8c656f5ae9e6217fa060a1df7de979f9754987c": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "21edbce795b45cb035dc9130802cac707304d260f54c865543bbe51bfa43f713": {
+      "seen_at": "2026-10-17T05:12:33.395349+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "21ff1f56f68a0e568308ce57805ad26e67aabbafe7019ecb812055236ba98686": {
@@ -1471,6 +1487,11 @@
     "f07f8294f68786d697d5bcb45c9ecd6c28b6c2235fe751964c8edcec26f112e3": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "f2cab740b2d39b8626e999039a1b793b72730e951ff9a5629c57170eb01fc633": {
+      "seen_at": "2026-10-17T05:12:33.395349+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "f3a72496ba3397ea8ea5ed37caf3c872b602f2c821d83d7a792408927edf0af4": {
