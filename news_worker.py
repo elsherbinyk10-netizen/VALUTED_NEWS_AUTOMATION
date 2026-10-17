@@ -166,6 +166,69 @@ def extract_video_embed(entry):
     return ""
 
 
+def fetch_article_media(source_url):
+    """Read only public Open Graph/Twitter media metadata from the publisher page."""
+    try:
+        parsed = urlparse(source_url)
+        if parsed.scheme not in ("http", "https") or not parsed.hostname:
+            return {"image_url": "", "video_html": ""}
+        response = requests.get(
+            source_url,
+            headers={"User-Agent": "VALUTED-NEWS-RSS-Bot/1.0 (+publisher metadata; contact site owner)", "Accept": "text/html,application/xhtml+xml"},
+            timeout=(3, 7),
+            allow_redirects=True,
+            stream=True,
+        )
+        try:
+            if not response.ok or "html" not in response.headers.get("Content-Type", "").lower():
+                return {"image_url": "", "video_html": ""}
+            chunks = []
+            total = 0
+            for chunk in response.iter_content(chunk_size=16384):
+                if not chunk:
+                    continue
+                chunks.append(chunk)
+                total += len(chunk)
+                if total >= 1_500_000:
+                    break
+            markup = b"".join(chunks).decode(response.encoding or "utf-8", errors="replace")
+        finally:
+            response.close()
+
+        image_url = ""
+        meta_tags = re.findall(r"<meta\b[^>]*>", markup, re.I)
+        for tag in meta_tags:
+            prop = re.search(r"""(?:property|name)\s*=\s*["'](?:og:image(?::secure_url)?|twitter:image(?::src)?)["']""", tag, re.I)
+            if not prop:
+                continue
+            match = re.search(r"""content\s*=\s*["']([^"']+)["']""", tag, re.I)
+            if match:
+                candidate = html.unescape(match.group(1)).strip()
+                parsed_image = urlparse(candidate)
+                if parsed_image.scheme in ("http", "https") and parsed_image.netloc:
+                    image_url = candidate
+                    break
+
+        video_markup = []
+        for tag in re.findall(r"<meta\b[^>]*>", markup, re.I):
+            is_video = re.search(r"""(?:property|name)\s*=\s*["'](?:og:video(?::url|:secure_url|:type)?|twitter:player)["']""", tag, re.I)
+            if is_video:
+                match = re.search(r"""content\s*=\s*["']([^"']+)["']""", tag, re.I)
+                if match:
+                    video_markup.append('<iframe src="' + html.escape(html.unescape(match.group(1)), quote=True) + '"></iframe>')
+        for match in re.findall(r"""<iframe\b[^>]*\bsrc\s*=\s*["']([^"']+)["'][^>]*>""", markup, re.I):
+            video_markup.append('<iframe src="' + html.escape(html.unescape(match), quote=True) + '"></iframe>')
+        video_html = ""
+        for candidate_markup in video_markup[:10]:
+            video_html = extract_video_embed({"content": [{"value": candidate_markup}]})
+            if video_html:
+                break
+        return {"image_url": image_url, "video_html": video_html}
+    except Exception as exc:
+        logging.debug("Publisher media metadata unavailable for %s: %s", source_url, exc)
+        return {"image_url": "", "video_html": ""}
+
+
 def shopify_access_token():
     shop = env("SHOPIFY_STORE_DOMAIN")
     direct_token = env("SHOPIFY_ADMIN_ACCESS_TOKEN")
@@ -405,6 +468,13 @@ def main():
         if args.dry_run:
             continue
         try:
+            # If RSS omits artwork/video metadata, check only the publisher's public page metadata.
+            if not item.get("image_url") or not item.get("video_html"):
+                media = fetch_article_media(item["url"])
+                if not item.get("image_url") and media.get("image_url"):
+                    item["image_url"] = media["image_url"]
+                if not item.get("video_html") and media.get("video_html"):
+                    item["video_html"] = media["video_html"]
             editorial = make_editorial(item["title"], item["publisher"], item["category"], item["description"], item.get("video_html", ""))
             # Publish automatically only when enabled and the story
             # has not triggered the high-risk review filter.
