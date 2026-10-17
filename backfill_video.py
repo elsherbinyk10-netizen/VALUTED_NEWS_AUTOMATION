@@ -9,12 +9,13 @@ import re
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
-from news_worker import env, shopify_graphql, fetch_related_youtube_embed
+from news_worker import env, shopify_graphql, fetch_related_youtube_embed, fetch_article_media
+from backfill_media import source_urls
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 BLOG_ID = env("SHOPIFY_BLOG_ID", "gid://shopify/Blog/126010065175")
 STATE_FILE = Path("data/video_backfill.json")
-RETRY_DAYS = 2
+RETRY_DAYS = 1
 
 
 def load_state():
@@ -75,7 +76,7 @@ def main():
     attempted = state.setdefault("attempted", {})
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=RETRY_DAYS)
-    limit = max(1, min(20, int(env("VIDEO_BACKFILL_LIMIT", "8"))))
+    limit = max(1, min(25, int(env("VIDEO_BACKFILL_LIMIT", "20"))))
     articles = list_articles()
     eligible = []
     for article in articles:
@@ -105,7 +106,25 @@ def main():
         attempted[key] = now.isoformat()
         try:
             category = infer_category(article)
-            embed = fetch_related_youtube_embed(article.get("title", ""), category)
+            # Prefer a video embedded on the article's own cited publisher page.
+            # Only fall back to public video search when source-page metadata has no video.
+            embed = ""
+            source_candidates = list(source_urls(article.get("body", "")))[:5]
+            for source_url in source_candidates:
+                try:
+                    media = fetch_article_media(source_url)
+                    candidate_embed = media.get("video_html", "")
+                    if candidate_embed and any(host in candidate_embed.lower() for host in (
+                        "youtube-nocookie.com/embed/", "youtube.com/embed/",
+                        "player.vimeo.com/video/", "<video"
+                    )):
+                        embed = candidate_embed
+                        logging.info("Found publisher-page video for: %s", article.get("title"))
+                        break
+                except Exception as source_error:
+                    logging.info("Publisher video lookup failed for %s: %s", article.get("title"), source_error)
+            if not embed:
+                embed = fetch_related_youtube_embed(article.get("title", ""), category)
             if not embed:
                 logging.info("No confident %s video match; leaving article unchanged: %s", category, article.get("title"))
                 continue
