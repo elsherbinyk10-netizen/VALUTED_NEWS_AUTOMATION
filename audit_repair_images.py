@@ -7,6 +7,7 @@ headlines). It does not replace an image solely because an automated text score 
 import logging
 import os
 import re
+from concurrent.futures import ThreadPoolExecutor
 from collections import defaultdict
 from urllib.parse import urlparse
 
@@ -47,9 +48,13 @@ def main():
         url = str(image.get("url") or "")
         if url:
             parsed = urlparse(url)
-            # Strip query parameters so Shopify resize/cache variants still compare.
             identity = (parsed.hostname or "").lower() + parsed.path
             by_image[identity].append(article)
+
+    # Check URLs concurrently to keep the daily run within the GitHub Actions time budget.
+    urls = list({str((a.get("image") or {}).get("url") or "") for a in published if (a.get("image") or {}).get("url")})
+    with ThreadPoolExecutor(max_workers=12) as pool:
+        url_health = dict(zip(urls, pool.map(image_url_ok, urls)))
 
     flagged = {}
     for article in published:
@@ -63,7 +68,7 @@ def main():
             "valuted_news", "placeholder", "default-thumbnail", "generic poster", "favicon"
         )):
             reason = "missing-or-placeholder"
-        elif not image_url_ok(url):
+        elif not url_health.get(url, False):
             reason = "image-url-unavailable-or-not-image"
         else:
             parsed = urlparse(url)
