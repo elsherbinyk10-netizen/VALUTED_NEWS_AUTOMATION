@@ -72,14 +72,18 @@ class VideoEmbedTests(unittest.TestCase):
         html = worker.fetch_related_youtube_embed("NASA Artemis moon mission")
         self.assertEqual(html, "")
 
-    def test_auto_publish_requires_flag_low_risk_and_usable_summary(self):
+    def test_auto_publish_requires_flag_low_risk_summary_and_news_image(self):
         item = {
             "title": "A science discovery announced by NASA",
             "url": "https://example.com/story",
+            "image_url": "https://images.example.com/story.jpg",
             "description": "This is a sufficiently detailed source summary " * 4,
             "risk": False,
         }
         self.assertTrue(worker.should_auto_publish(item, True))
+        item["image_url"] = ""
+        self.assertFalse(worker.should_auto_publish(item, True))
+        item["image_url"] = "https://images.example.com/story.jpg"
         self.assertFalse(worker.should_auto_publish(item, False))
         item["risk"] = True
         self.assertFalse(worker.should_auto_publish(item, True))
