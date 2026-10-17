@@ -97,6 +97,43 @@ def image_url_is_generic(url):
         return True
 
 
+def extract_entry_text(entry):
+    """Prefer the longest substantive text supplied by the feed, without scraping or copying the publisher's full page."""
+    candidates = []
+    for item in entry.get("content", []) or []:
+        if isinstance(item, dict):
+            value = clean_text(item.get("value", ""))
+            if value:
+                candidates.append(value)
+    for key in ("summary", "description"):
+        value = clean_text(entry.get(key, ""))
+        if value:
+            candidates.append(value)
+    # RSS sometimes provides a short summary and a much fuller content:encoded field.
+    return max(candidates, key=len) if candidates else ""
+
+
+def paragraphize_source_text(value, max_sentences=4):
+    """Format source-provided text into readable paragraphs without adding unsupported claims."""
+    text = clean_text(value)
+    if not text:
+        return []
+    sentences = re.split(r"(?<=[.!?])\\s+(?=[A-Z0-9“‘\"'])", text)
+    paragraphs = []
+    current = []
+    for sentence in sentences:
+        sentence = sentence.strip()
+        if not sentence:
+            continue
+        current.append(sentence)
+        if len(current) >= max_sentences:
+            paragraphs.append(" ".join(current))
+            current = []
+    if current:
+        paragraphs.append(" ".join(current))
+    return paragraphs or [text]
+
+
 def extract_image(entry):
     """Return publisher-supplied article artwork; reject generic feed/logo images."""
     candidates = []
@@ -450,13 +487,17 @@ def make_public_news_brief(title, publisher, category, description, source_url, 
     """Create a clearly attributed, concise news brief without inventing facts."""
     safe_publisher = html.escape(clean_text(publisher) or "Original publisher")
     safe_category = html.escape(clean_text(category) or "World")
-    safe_description = html.escape(clean_text(description)[:2500])
+    source_paragraphs = paragraphize_source_text(description)
+    safe_paragraphs = [html.escape(paragraph) for paragraph in source_paragraphs]
+    safe_description = html.escape(clean_text(description)[:12000])
     safe_source = html.escape(canonical_url(source_url), quote=True)
     summary = clean_text(description)[:300] or clean_text(title)[:200]
+    # Render the complete feed-supplied story text as readable paragraphs; do not invent filler.
+    paragraphs_html = "".join(f"<p>{paragraph}</p>" for paragraph in safe_paragraphs)
     body = (
         '<article class="valuted-news-article">'
         f'<p class="vn-news-category"><strong>{safe_category}</strong></p>'
-        f'<p>{safe_description}</p>'
+        f'<h2>What the report says</h2>{paragraphs_html}'
     )
     if video_html:
         body += '<h2>Related video</h2>' + video_html
@@ -475,7 +516,8 @@ def should_auto_publish(item, auto_publish):
     return bool(
         auto_publish
         and not item.get("risk")
-        and len(clean_text(item.get("description", ""))) >= 450
+        and len(clean_text(item.get("description", ""))) >= 1500
+        and len(clean_text(item.get("description", "")).split()) >= 220
         and canonical_url(item.get("url", ""))
         and clean_text(item.get("title", ""))
         # Do not auto-publish image-less news cards; keep these in draft for review.
@@ -558,7 +600,7 @@ def main():
                     if not args.dry_run:
                         seen[key] = {"status": "skipped_stale", "source": name, "seen_at": now.isoformat()}
                     continue
-                description = clean_text(entry.get("summary", "") or entry.get("description", ""))
+                description = extract_entry_text(entry)
                 risk = bool(HIGH_RISK.search(title + " " + description))
                 candidates.append({
                     "key": key, "title": title, "url": source_url, "publisher": name,
