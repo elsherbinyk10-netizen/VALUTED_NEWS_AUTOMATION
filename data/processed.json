@@ -196,6 +196,17 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "178a4d548f348666a1ac9cb0243a53a3402ebbf216e246d40bcd0b317ba3d0ce": {
+      "created_at": "2026-10-17T04:58:37.026768+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "NASA News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754864587031",
+      "source_url": "https://science.nasa.gov/image-article/apod-2026-october-17-3d-67p",
+      "status": "published",
+      "title": "APOD: 2026 October 17 \u2013 3D 67P"
+    },
     "1aff4bf29ee2a8bdccd232627290e4c58fcea1d55b390cc9cc2627e91a9ef19f": {
       "seen_at": "2026-10-14T06:49:18.901185+00:00",
       "source": "BBC Business",
@@ -551,6 +562,11 @@
     "4dd0c916ee5681f87125e6b9b30470d11fbf76cdc1bb0197a054e5d60f54959f": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "4f022f1bb495706ec93573a80f0cfbadb0bdf98d060082ddb25fd8b5b289d61a": {
+      "seen_at": "2026-10-17T04:58:37.026768+00:00",
+      "source": "NPR Business",
       "status": "skipped_stale"
     },
     "4f5083dd20c787d7ef4675c027b5396ce22c0ce7a9654e64b362b9fa8c28615b": {
@@ -1360,6 +1376,11 @@
     "e61dba9252f9b1b2cd9b4e96a2d97faef6c6e12f985f7e95b55677a62afd2204": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "e6fef7c36f5e40963d117a6e33950168a44cfe498dc6cb4b08aad08d03cb95bc": {
+      "seen_at": "2026-10-17T04:58:37.026768+00:00",
+      "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
     "e73f4c05540c2edfaa9b2b9f3f19cf4ad803cac9e8c4fa8e3097684d1212e30d": {
