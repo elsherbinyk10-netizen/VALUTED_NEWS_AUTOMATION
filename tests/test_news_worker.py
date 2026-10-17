@@ -148,7 +148,7 @@ class VideoEmbedTests(unittest.TestCase):
         html = worker.fetch_related_youtube_embed("Spider-Man Brand New Day", "Movies")
         self.assertIn("youtube-nocookie.com/embed/AbCdEf12345", html)
         self.assertIn("Official Trailer", html)
-        self.assertIn("official trailer", get_mock.call_args.args[0].lower())
+        self.assertIn("official%20trailer", get_mock.call_args.args[0].lower())
 
     @patch.object(worker.requests, "get")
     @patch.object(worker.feedparser, "parse")
@@ -164,7 +164,7 @@ class VideoEmbedTests(unittest.TestCase):
         ])
         html = worker.fetch_related_youtube_embed("Harry Styles Liam Payne new song", "Music")
         self.assertIn("youtube-nocookie.com/embed/AbCdEf12345", html)
-        self.assertIn("official song", get_mock.call_args.args[0].lower())
+        self.assertIn("official%20song", get_mock.call_args.args[0].lower())
 
 if __name__ == "__main__":
     unittest.main()
