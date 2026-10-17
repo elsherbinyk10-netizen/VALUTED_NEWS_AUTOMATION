@@ -1526,6 +1526,17 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "ce6857b2c85f1c377b34e9ecb4e93ff1c91baa7e18a13d8bfba9a81bfc91a9ae": {
+      "created_at": "2026-10-17T06:49:32.877437+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News Top Stories",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754865963287",
+      "source_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPRUlsZVQwRS0xdzNOV09jVzh6NnQzZndNN25GdEQ0YUw1U294ZTZLcm9uNXAtZzBUampmT1pzVDVjUHR1cDNqS3pTM2g1czAwbWo5WHN6bU9tMC1wYXRqSmp5UmNES0xpVlBfRnZkQzVDNVBWMlRrSnpZV3hYb3JNY0pwSXZvUUtYd1BlQmFRU21Nd3p5OVl2Z0pUZkZ2LXVFYlJORDk0M2J3ZDVEaDBTUkt3NnJ1eXJCTFNKRUdRM3REMnhEUnBGMFZzdjIzUmNjSDR0OE5yZw?oc=5",
+      "status": "draft",
+      "title": "Rep. Ilhan Omar\u2019s lawyers say authorities ignored judge\u2019s restrictions on home search - The Washington Post"
+    },
     "ce87b58ff82383b3f634550ace9f6f329a99b9d6cdfe8231d79214c1ec92d271": {
       "created_at": "2026-10-11T23:19:02.490549+00:00",
       "publisher": "BBC World",
