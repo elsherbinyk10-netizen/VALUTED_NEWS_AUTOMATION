@@ -82,8 +82,23 @@ def entry_datetime(entry):
 
 
 
+def image_url_is_generic(url):
+    """Reject generic feed/logo placeholders; only article-specific publisher media is eligible."""
+    try:
+        parsed = urlparse(str(url or "").strip())
+        host = (parsed.hostname or "").lower()
+        path = parsed.path.lower()
+        query = parsed.query.lower()
+        if not host or host in {"news.google.com", "google.com", "www.google.com", "googleusercontent.com"}:
+            return True
+        bad_terms = ("google-news", "google_news", "valuted-news", "valuted_news", "placeholder", "default-thumbnail", "favicon", "/logo")
+        return any(term in path for term in bad_terms) or "news.google.com" in query
+    except Exception:
+        return True
+
+
 def extract_image(entry):
-    """Return publisher-supplied RSS artwork only; never synthesize a generic image."""
+    """Return publisher-supplied article artwork; reject generic feed/logo images."""
     candidates = []
     for field in ("media_content", "media_thumbnail"):
         values = entry.get(field, []) or []
@@ -109,7 +124,7 @@ def extract_image(entry):
     for candidate in candidates:
         try:
             parsed = urlparse(str(candidate).strip())
-            if parsed.scheme in ("http", "https") and parsed.netloc:
+            if parsed.scheme in ("http", "https") and parsed.netloc and not image_url_is_generic(parsed.geturl()):
                 return parsed.geturl()
         except Exception:
             continue
@@ -567,7 +582,7 @@ def main():
             # If RSS omits artwork/video metadata, check only the publisher's public page metadata.
             if not item.get("image_url") or not item.get("video_html"):
                 media = fetch_article_media(item["url"])
-                if not item.get("image_url") and media.get("image_url"):
+                if (not item.get("image_url") or image_url_is_generic(item.get("image_url"))) and media.get("image_url") and not image_url_is_generic(media.get("image_url")):
                     item["image_url"] = media["image_url"]
                 if not item.get("video_html") and media.get("video_html"):
                     item["video_html"] = media["video_html"]
