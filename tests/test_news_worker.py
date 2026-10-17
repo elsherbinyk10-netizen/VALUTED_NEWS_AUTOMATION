@@ -166,5 +166,17 @@ class VideoEmbedTests(unittest.TestCase):
         self.assertIn("youtube-nocookie.com/embed/AbCdEf12345", html)
         self.assertIn("official%20song", get_mock.call_args.args[0].lower())
 
+    @patch.object(worker.requests, "get")
+    def test_youtube_html_fallback_when_search_rss_returns_400(self, get_mock):
+        rss_response = Mock()
+        rss_response.raise_for_status.side_effect = worker.requests.HTTPError("400 Bad Request")
+        html_response = Mock()
+        html_response.raise_for_status.return_value = None
+        html_response.text = '<a id="video-title" title="Spider-Man Brand New Day Official Trailer" href="/watch?v=AbCdEf12345">Official Trailer</a>'
+        get_mock.side_effect = [rss_response, html_response]
+        result = worker.fetch_related_youtube_embed("Spider-Man Brand New Day", "Movies")
+        self.assertIn("youtube-nocookie.com/embed/AbCdEf12345", result)
+        self.assertEqual(get_mock.call_count, 2)
+
 if __name__ == "__main__":
     unittest.main()
