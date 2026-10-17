@@ -504,8 +504,8 @@ def make_public_news_brief(title, publisher, category, description, source_url, 
     body += (
         '<p><strong>Source:</strong> ' + safe_publisher + '. '
         '<a href="' + safe_source + '" rel="nofollow noopener noreferrer">Read the original report</a></p>'
-        '<p><em>This brief summarizes information supplied by the original publisher. '
-        'Follow the source link for the full report and updates.</em></p>'
+        '<p><em>Valuted News presents this source-attributed report using information available from the cited publisher. '
+        'Check the source for subsequent developments and corrections.</em></p>'
         '</article>'
     )
     return {"title": clean_text(title)[:120], "summary": summary, "body": body, "quality_ok": True}
@@ -517,7 +517,9 @@ def should_auto_publish(item, auto_publish):
         auto_publish
         and not item.get("risk")
         and len(clean_text(item.get("description", ""))) >= 1500
-        and len(clean_text(item.get("description", "")).split()) >= 220
+        # A homepage excerpt is not a complete article. Require substantial source text.
+        and len(clean_text(item.get("description", "")).split()) >= 350
+        and len(clean_text(item.get("description", ""))) >= 2200
         and canonical_url(item.get("url", ""))
         and clean_text(item.get("title", ""))
         # Do not auto-publish image-less news cards; keep these in draft for review.
