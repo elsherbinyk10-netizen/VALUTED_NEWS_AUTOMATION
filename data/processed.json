@@ -1037,6 +1037,17 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "8980f89c0231959facfaec719af439e613185439352a7f16d360bd656cd1b56c": {
+      "created_at": "2026-10-17T06:34:07.201625+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754865799447",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqde8zk6d916o?at_medium=RSS&at_campaign=rss",
+      "status": "draft",
+      "title": "Call for more food funding due to high living cost"
+    },
     "89e7ce0e0402bd6a0d8b5c53de32180e1fdb4b369d3fede76c1dd9d5340de1ed": {
       "seen_at": "2026-10-17T06:08:31.417343+00:00",
       "source": "BBC World",
@@ -1045,6 +1056,11 @@
     "8b461ffd78bd31cc20a6bb0042f0fa4abeebb5af7423eb93126ad77fb89d24f9": {
       "seen_at": "2026-10-12T18:32:36.737885+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "8b58371186fd9dcef24e3d0021f9a373f372d2aac50865eb0f329ec9bc9440de": {
+      "seen_at": "2026-10-17T06:34:07.201625+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "8ba3bd46be05f686c43250c3abd3fcfa1b3486d6a22a61578e273146487486ba": {
@@ -1315,6 +1331,11 @@
     "b99482615aa422c7d298411ea86cd51827f404ac57de5681921ba5aa94f3e8ba": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "bac47cf804415cd8cf5ec1ffe597a64c7d800cbe9fae23255b14c20d09299cac": {
+      "seen_at": "2026-10-17T06:34:07.201625+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "bb1afe9c7b46b8c3b2ea6903fc5aebfd5576cbaa9bb637d41efb25841539b6c1": {
