@@ -8,6 +8,7 @@ on:
       - "news_worker.py"
       - "backfill_media.py"
       - "backfill_video.py"
+      - "audit_repair_images.py"
       - "translate_news.py"
       - "tests/**"
       - "requirements.txt"
@@ -62,7 +63,7 @@ jobs:
           test -f feeds.json || { echo "feeds.json is missing"; exit 1; }
 
       - name: Validate Python syntax
-        run: python -m py_compile news_worker.py backfill_video.py
+        run: python -m py_compile news_worker.py backfill_video.py backfill_media.py audit_repair_images.py
 
       - name: Test video embed and editorial safety
         run: python -m unittest discover -s tests -v
@@ -74,6 +75,11 @@ jobs:
         env:
           MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '20' }}
         run: python backfill_media.py
+
+      - name: Audit and repair missing, broken, placeholder, or widely reused article images
+        env:
+          MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '20' }}
+        run: python audit_repair_images.py
 
       - name: Add relevant videos to published articles
         env:
