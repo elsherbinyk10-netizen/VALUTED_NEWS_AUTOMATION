@@ -35,6 +35,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "03ceda4a91f51a03c595906f0aab21231dcaf5431e801f959bcfeefb3cb200b2": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "040c30b6e35dd0e92a261da56a45e069d1c5a41b7832544caca51bfa20711a29": {
       "seen_at": "2026-10-12T06:38:38.333441+00:00",
       "source": "BBC World",
@@ -163,6 +168,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "138d2464f01b287970950fe6527b8e69f556169507801689d8342d78fd988677": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "1415399ecca92cca3c775acc2714918404c2a0673753e8c9096206a2d8ceb6a7": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -231,6 +241,11 @@
     "1c0a28c71f388243671549df1885b7258039db2850c92a1356625b02e12cebb9": {
       "seen_at": "2026-10-13T06:37:39.746554+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "1d1a3ce47e5cd1f9e20423fa1490dc03103faa28a51a0c2faf6b96a02a03f477": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "1d75e299bcd2d377f95368714d61cb686efbdfb56c954cf9fff4da74576e34cd": {
@@ -341,6 +356,11 @@
       "status": "draft",
       "title": "Watch: What's behind Trump's energy ceasefire claim?"
     },
+    "2554deac31f8536bae3567f88cd6fc39f3b4dcac7f6b674ebe1d8e5da77ef115": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "26642edca61eefe9f39f190984ff0b63233047b27c17548af40ac493c2159815": {
       "seen_at": "2026-10-12T06:38:38.333441+00:00",
       "source": "BBC Business",
@@ -398,6 +418,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "2dcdee8cb4e15480f41cfa8a6f6a0ae83cbf7e487543f308863ac977e68c9744": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "2e3f8fb74e6bb1176bd2c3c68e6f56a5e1d85ce31d449e29c66d87651cc23137": {
       "created_at": "2026-10-14T18:47:56.856276+00:00",
       "has_publisher_artwork": true,
@@ -441,6 +466,16 @@
     "353718754d757ccb50dd804170e9380765ad91be4a0b45eb0c38b8d39c6df2cd": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "357726915098a0230cd544cc8907bb4aa82d45da9c63f5074c3101c7edbf5ee6": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "3605fb3335d1f1bf1be7e38581ad89456bcd30b24ba1c2e9cadab1775222fab9": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "36cd3c034800949469389dad991aeaa723b733e8b0b0690556e4de4f11b62b41": {
@@ -505,6 +540,11 @@
     "3c189b291ad280ddaa0f678ae43cdf74a12e6d323d8e8f18032a3e5f4edddd21": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "3cab64b6c4fba08f40059f2488b6ad1db984d6a33d3a489c151bd15a1f5846eb": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "3cb62881a812a27562c083ed3f3a80df9e3d78376130f9294f7590a3007da1f8": {
@@ -602,6 +642,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "4604ede188e649b3f95d27bc3a1bccf3e1e8f58908c04d21376de1ded2b7f43b": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "46087bb9b492e6fa5752329027853b5d4f494f77da30ee338a8e2156baa9cdf9": {
       "seen_at": "2026-10-14T06:49:18.901185+00:00",
       "source": "BBC Business",
@@ -620,6 +665,11 @@
     "4809cc48c3d335758e99314bfb8552c9e0ceada0b80c7e9e922c939c4999cc56": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "49e22e28d7bfafbec9cf1b0656888fc0397a8331aa1d58beffb2a86230bd0822": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "4b31a65269f1add9289cca2be3cafe5ad8450bafc5f240bb1b7ab26ce89cf0fc": {
@@ -648,9 +698,19 @@
       "status": "draft",
       "title": "Brazil\u2019s Amazon deforestation hits lowest level on record - Al Jazeera"
     },
+    "4d057625a6d6f08871f53e8b6010d2d918bdde2290b83091488073a9b2e55eed": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
     "4dd0c916ee5681f87125e6b9b30470d11fbf76cdc1bb0197a054e5d60f54959f": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "4ef4b8a45d4caff22bc75dbccc2aed56451507fec43dd9793cb270eac197b54b": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "BBC Technology",
       "status": "skipped_stale"
     },
     "4f022f1bb495706ec93573a80f0cfbadb0bdf98d060082ddb25fd8b5b289d61a": {
@@ -661,6 +721,11 @@
     "4f5083dd20c787d7ef4675c027b5396ce22c0ce7a9654e64b362b9fa8c28615b": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "4f93c7aa39632aab41e05ae37a654b413eba8cc06dea5b98a2342999634dfc0f": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "5026d19b9d0f7357817e6e1b8ceea9a3de82ee8e6887412872d3bf68b455e4cc": {
@@ -1091,6 +1156,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "8979cc9c75ed361780de3e3ced05953306005b7cc620104720ade89701dbf100": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "8980f89c0231959facfaec719af439e613185439352a7f16d360bd656cd1b56c": {
       "created_at": "2026-10-17T06:34:44.951405+00:00",
       "has_embedded_video": false,
@@ -1127,6 +1197,17 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "8e2aa409f0824ff1d73c66caf78701bcb1bb8dd54489539587741a2df25d3b89": {
+      "created_at": "2026-10-17T12:41:47.879859+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754869436695",
+      "source_url": "https://www.bbc.co.uk/news/articles/c5x2vkddrkrko?at_medium=RSS&at_campaign=rss",
+      "status": "draft",
+      "title": "Pope to be discharged days after lung cancer surgery"
+    },
     "8f17a2801297e8c27f7a524874139bf7a851014f8464f77f1db0f4018f79d6f7": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -1154,6 +1235,11 @@
     "93a06f2f4a9fd44dfbc205c4f1b13974b7d5894f486f71f91bf22ff4a2e48438": {
       "seen_at": "2026-10-17T06:08:31.417343+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "93afb0f4dd6f8f94668d9fd56725602a8493f9663da4a9e0908a17de1c1a06cc": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "NASA News",
       "status": "skipped_stale"
     },
     "9425c6a29215c5ea624710f9a168610054f9642caca610abce01056077a2bf4c": {
@@ -1281,9 +1367,19 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "a40e36aa7b7970a108218c117b3ba05418f3a838338e43792030b391dfabb14f": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "a4702e76b2a8f50f44198505b040e37d7819f973ac392fdac03b492f99b2848c": {
       "seen_at": "2026-10-13T12:38:01.277096+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "a47380dceee2091be0b508ce7552c67d8050b5439f39e680e436885c094b865d": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
     "a5840e5a42f749a2ff4d292651e05379258b28d3ed6fef35d60f20a91fb12a76": {
@@ -1332,6 +1428,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "ab0c90fa8b7d28dc1ff986e30df0ecd9dc377ca9cb487793fc5f56843aef506d": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "ad11e6cfb14a5b9663cb419cc048c1a2384fab26a27c0aebeb6c7c567373dd01": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -1350,6 +1451,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cqgm09xvlvjeo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Why some have no choice but to pay costly oil prices"
+    },
+    "b42216ee01e9395550078bcd5d36aa9a3622a40937454a843e0b2cbc8c454377": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
     },
     "b5c109cca896d75505a2a24a764651550f5f62520e1eb3951b7fa98227fa59fc": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
@@ -1407,6 +1513,11 @@
       "status": "draft",
       "title": "Dad fined after son, 2, died in Cyprus hotel fall"
     },
+    "bd3f70535fc9216303752b5a944a09793af1e0078ceefa71549a680aac0546dc": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "be605aa80963d1fe28472d559622ad14da648413676bc56e87bf3ae504b61c77": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
@@ -1463,9 +1574,19 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "c38ef049da3e19d3fbb2e3aa6987436982f4eadc542e011c7eafef03c32fb694": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "c4d3de43f668164e824f576ab4ac9044db186362a9a1e9e3e87ba5dc1ec15815": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "c51c712d07df2f4261b908ce79ebdbdee53442215b117eb45a5d527d88334d89": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "c5ab069c4a2bf9e0fbdba5282f10ad0fcac72d690abd0ae12eb7fea0f69039e5": {
@@ -1642,6 +1763,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "dfbbff184799bb2a99b63ee5c8e411fe200f910cff72e61ed82cd739c7626076": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "dfc87096f6961ed1ca22fa9d4c1c97ba1e1245adb965772f7c1342761a7f9fd9": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
@@ -1695,6 +1821,11 @@
     "e73f4c05540c2edfaa9b2b9f3f19cf4ad803cac9e8c4fa8e3097684d1212e30d": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "e7a765c36abfa4ee490c38730fa3559df1ea028a142f27af2d69ad5fe1c411b7": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "e7c3af778fcfbca899b53da4041bdb9d0ed72f4d30d7b286279b1ed36f67c0b9": {
@@ -1757,6 +1888,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "ef96175331f33598955ada750461212d41f7363fb30f3bd070e0c0e1a1e3c412": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
     "f01b2978388106ae470bb299818a71c1f1cb69c62a9d290823273b938c546896": {
       "created_at": "2026-10-12T18:32:36.737885+00:00",
       "publisher": "BBC World",
@@ -1784,6 +1920,11 @@
     "f2cab740b2d39b8626e999039a1b793b72730e951ff9a5629c57170eb01fc633": {
       "seen_at": "2026-10-17T05:12:33.395349+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "f302ac9cb615f1481b500d8b94be96d3482050abe2da0ef590006e375b6d9085": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "f3a72496ba3397ea8ea5ed37caf3c872b602f2c821d83d7a792408927edf0af4": {
@@ -1825,6 +1966,16 @@
     "f8103e0fcf8adce9e6ad672980c55f55d4d3ea21a09e86ed7ea2cdf059ce11e7": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "f85fd84baf5665c27c82623e7916be36db1955c713dc87fff1bd7ada8bb0c094": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "f9fafe921d858bf1f3c3797b60e9f4268741addcc6b7ec514a22f848e78c1ab0": {
+      "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "fa90aa96426b3901635b9aec8fa621e1ff46d2e4b407c2009fa27feae5a18090": {
