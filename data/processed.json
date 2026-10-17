@@ -690,6 +690,11 @@
       "status": "draft",
       "title": "One killed, 11 injured in second Houthi strike on Riyadh airport in two days"
     },
+    "664049bc3a66e86396f9a73bb5aa8c30fc1a17d4246fbd5a7b612e80b416ef42": {
+      "seen_at": "2026-10-17T05:20:12.934883+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "66662a00a700c4c4d880c592ca88be330022fe213a1dd1371510d2cd5fc3739b": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -1083,6 +1088,17 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cw8dzg094zd9o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Cornell bans all fraternity parties over gang sex assault allegations"
+    },
+    "a666c3055a7fb3d235186ce351fd9d8bd7ed8d62dccb930f0a3274aebfe8a50c": {
+      "created_at": "2026-10-17T05:20:12.934883+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News Top Stories",
+      "risk_flag": true,
+      "shopify_article_id": "gid://shopify/Article/754864816407",
+      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNamxaaU9iamxYdlFCSmVzOHctQ1l1R1JKNm0zWjhkV3hGMmlsaFBDNkRtZmU5VXdyazgzUTdOb3ZLa1dMenpzZDVpT2cwSFVxY1RFT0I3TGxiQjZPNy1wY0V5NnFiZXR4QXJGYUFMcDQta3lrRVRROG93QU8yVzdzOEc0ZGx0SnA0VEZXYWVSSW9RMXZIWUIyZjRGNWVIRFRlNW1DTXNyaW9jUVl4RFhJRXRCNzYyQ1o5YkE?oc=5",
+      "status": "draft",
+      "title": "Congress members condemn Israeli settler attack on Washington Post photographer - The Washington Post"
     },
     "a814e655ef43ac12ffebd82737dc37ceaa2d707240cf590c891e343922feba0c": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
