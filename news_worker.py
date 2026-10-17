@@ -141,16 +141,17 @@ def extract_video_embed(entry):
         try:
             parsed = urlparse(candidate)
             host = (parsed.hostname or "").lower()
-            path = parsed.path.lower()
+            path = parsed.path
+            path_lower = path.lower()
             if parsed.scheme not in ("http", "https"):
                 continue
             if host in ("youtube.com", "www.youtube.com", "m.youtube.com", "youtu.be"):
                 video_id = ""
                 if host == "youtu.be":
                     video_id = path.strip("/").split("/")[0]
-                elif path == "/watch":
+                elif path_lower == "/watch":
                     video_id = dict(parse_qsl(parsed.query)).get("v", "")
-                elif path.startswith(("/embed/", "/shorts/")):
+                elif path_lower.startswith(("/embed/", "/shorts/")):
                     video_id = path.split("/")[2] if len(path.split("/")) > 2 else ""
                 if re.fullmatch(r"[A-Za-z0-9_-]{6,20}", video_id):
                     return f'<div class="valuted-news-video" style="position:relative;width:100%;aspect-ratio:16/9;margin:24px 0"><iframe src="https://www.youtube-nocookie.com/embed/{video_id}" title="Related news video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>'
