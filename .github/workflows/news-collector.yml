@@ -91,7 +91,7 @@ jobs:
               if old is None or str(value.get("seen_at", "")) >= str(old.get("seen_at", "")):
                   items[key] = value
           merged["items"] = items
-          Path("data/processed.json").write_text(json.dumps(merged, indent=2, sort_keys=True) + "\\n")
+          Path("data/processed.json").write_text(json.dumps(merged, indent=2, sort_keys=True) + "\n")
           print(f"Merged deduplication state: {len(items)} unique items")
           PY
 
