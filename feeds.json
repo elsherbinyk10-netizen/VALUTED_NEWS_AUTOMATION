@@ -18,5 +18,30 @@
     "name": "NPR News",
     "url": "https://feeds.npr.org/1001/rss.xml",
     "category": "World"
+  },
+  {
+    "name": "BBC Technology",
+    "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+    "category": "Technology"
+  },
+  {
+    "name": "BBC Entertainment and Arts",
+    "url": "https://feeds.bbci.co.uk/news/entertainment_and_arts/rss.xml",
+    "category": "Entertainment"
+  },
+  {
+    "name": "BBC Science and Environment",
+    "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+    "category": "Science"
+  },
+  {
+    "name": "NPR Business",
+    "url": "https://feeds.npr.org/1006/rss.xml",
+    "category": "Business"
+  },
+  {
+    "name": "NPR Arts and Entertainment",
+    "url": "https://feeds.npr.org/1008/rss.xml",
+    "category": "Entertainment"
   }
 ]
