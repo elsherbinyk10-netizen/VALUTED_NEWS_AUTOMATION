@@ -106,7 +106,7 @@ def list_articles():
     query = """
     query BackfillArticles($id: ID!) {
       blog(id: $id) {
-        articles(first: 100, reverse: true) {
+        articles(first: 250, reverse: true) {
           nodes { id title handle body isPublished image { url altText } }
         }
       }
