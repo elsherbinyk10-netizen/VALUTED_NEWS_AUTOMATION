@@ -222,11 +222,11 @@ def main():
         repeated_aggregator_art = ("google news top stories" in body and identity_counts[media_identity(article)] > 1) if media_identity(article) else False
         return not url or generic or repeated_aggregator_art
 
-    missing = [a for a in articles if a.get("isPublished") and needs_real_image(a)]
+    missing = [a for a in articles if needs_real_image(a)]
     limit = max(1, min(20, int(env("MEDIA_BACKFILL_LIMIT", "20"))))
     fixed = 0
     unresolved = []
-    logging.info("Published articles checked=%d; missing images=%d; per-run limit=%d", len(articles), len(missing), limit)
+    logging.info("Articles checked (published + drafts)=%d; missing/generic images=%d; per-run limit=%d", len(articles), len(missing), limit)
     for article in missing:
         if fixed >= limit:
             break
