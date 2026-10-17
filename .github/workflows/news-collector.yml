@@ -2,6 +2,13 @@ name: Valuted News RSS Automation
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "news_worker.py"
+      - "tests/**"
+      - "requirements.txt"
+      - ".github/workflows/news-collector.yml"
   schedule:
     - cron: "17 6,12,18 * * *"
 
