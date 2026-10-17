@@ -123,7 +123,7 @@ def main():
             logging.info("Added category-matched video to: %s (%s)", article.get("title"), category)
         except Exception:
             logging.exception("Video backfill failed for: %s", article.get("title"))
-    STATE_FILE.write_text(json.dumps(state, indent=2, sort_keys=True) + "\\n")
+    STATE_FILE.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n")
     logging.info("Video backfill finished: processed=%d added=%d", processed, added)
 
 
