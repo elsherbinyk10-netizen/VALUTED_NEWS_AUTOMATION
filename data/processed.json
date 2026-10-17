@@ -798,6 +798,11 @@
       "status": "draft",
       "title": "Toxic algorithms wouldn't let them go - now Australia wants an off switch"
     },
+    "6c26494bd093d3bfd2ba047f70c8f612bf679eaa71cf28c0d6e4f4ab676da663": {
+      "seen_at": "2026-10-17T06:46:54.120993+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "6c74bc37416ac683bef639883c80bc438a9f06bddac3e2b5ab80724c41e56def": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
@@ -1378,6 +1383,17 @@
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
+    },
+    "bf9edeeb8d41091b4383a91ffce6a07698a6d3a6af3586bec4881113025d8c2a": {
+      "created_at": "2026-10-17T06:46:54.120993+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News Top Stories",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754865897751",
+      "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9IMTR3VHR5Vm9QUlJyLUxPa3o2SHVEdUV3RkdwSzljMXJ1amZNUXljR0ktTkxWV0c1T0otZFBrYmdwQ3E3Xy1YOUxmb1RyNEQ3Y3EyWDZnRnVLZGM?oc=5",
+      "status": "draft",
+      "title": "Katie Zacharia leaves White House role less than a week after starting - BBC"
     },
     "bfe81a720fc1b903efbbd8379bbd0139cc8654d0a76932f4111212b0437c09e5": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
