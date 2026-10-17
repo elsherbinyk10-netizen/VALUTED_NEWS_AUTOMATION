@@ -8,6 +8,7 @@ on:
       - "news_worker.py"
       - "tests/**"
       - "requirements.txt"
+      - "feeds.json"
       - ".github/workflows/news-collector.yml"
   schedule:
     - cron: "17 6,12,18 * * *"
