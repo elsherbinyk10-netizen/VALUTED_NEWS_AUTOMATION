@@ -1,5 +1,10 @@
 {
   "items": {
+    "00a58e089b8107a37a627ad10ade7aae5a689cbd0ff6f659ea4ca2f4447bc0c8": {
+      "seen_at": "2026-10-17T05:40:04.653358+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
     "0119f0ea458e702750d19929ba71fdeed2232518472fd04028a931d4b7909998": {
       "seen_at": "2026-10-17T04:37:20.456657+00:00",
       "source": "Google News Technology",
@@ -1323,6 +1328,17 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "c8cbf8c84ef11ba772d8bbaa8960be73fdd5710768457d66e67745998d26323a": {
+      "created_at": "2026-10-17T05:40:04.653358+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754865209623",
+      "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Td2ZsbFdISWxWS2JJcWMxUjhBUVdqb1RzWXRIeUxubjhnMUhQTVpCcnMtd1YwU3ZoZjJ3UkYxTlhVUDEyMVg3Vmo2T2ZNNHVJOHZxMGpXUHNHRlE?oc=5",
+      "status": "draft",
+      "title": "Three men jailed for 158 years each for murdering Australian and US surfers in Mexico - BBC"
+    },
     "c90d5a4dd6fdc5bf2296344e84df5ab4937fccdc8579315ac505c6872d134c8e": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -1666,4 +1682,4 @@
     }
   },
   "version": 1
-}
+}\n
