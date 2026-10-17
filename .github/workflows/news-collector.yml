@@ -83,7 +83,7 @@ jobs:
 
       - name: Add relevant videos to published articles
         env:
-          VIDEO_BACKFILL_LIMIT: ${{ vars.VIDEO_BACKFILL_LIMIT || '8' }}
+          VIDEO_BACKFILL_LIMIT: ${{ vars.VIDEO_BACKFILL_LIMIT || '20' }}
         run: python backfill_video.py
 
       - name: Commit deduplication state safely
