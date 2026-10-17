@@ -53,6 +53,9 @@ jobs:
       - name: Validate Python syntax
         run: python -m py_compile news_worker.py
 
+      - name: Test video embed and editorial safety
+        run: python -m unittest discover -s tests -v
+
       - name: Run RSS collector
         run: python news_worker.py
 
