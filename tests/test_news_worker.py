@@ -72,6 +72,31 @@ class VideoEmbedTests(unittest.TestCase):
         html = worker.fetch_related_youtube_embed("NASA Artemis moon mission")
         self.assertEqual(html, "")
 
+    def test_auto_publish_requires_flag_low_risk_and_usable_summary(self):
+        item = {
+            "title": "A science discovery announced by NASA",
+            "url": "https://example.com/story",
+            "description": "This is a sufficiently detailed source summary " * 4,
+            "risk": False,
+        }
+        self.assertTrue(worker.should_auto_publish(item, True))
+        self.assertFalse(worker.should_auto_publish(item, False))
+        item["risk"] = True
+        self.assertFalse(worker.should_auto_publish(item, True))
+        item["risk"] = False
+        item["description"] = "Too short"
+        self.assertFalse(worker.should_auto_publish(item, True))
+
+    def test_public_brief_is_attributed_and_has_no_editorial_hold_notice(self):
+        brief = worker.make_public_news_brief(
+            "Science discovery announced", "NASA", "Science",
+            "A detailed summary supplied by the original publisher. " * 4,
+            "https://example.com/story"
+        )
+        self.assertTrue(brief["quality_ok"])
+        self.assertIn("Read the original report", brief["body"])
+        self.assertNotIn("EDITORIAL REVIEW REQUIRED", brief["body"])
+
     def test_editorial_draft_contains_related_video_and_review_notice(self):
         video = '<div class="valuted-news-video"><iframe src="https://www.youtube-nocookie.com/embed/AbCdEf12345" loading="lazy"></iframe></div>'
         article = worker.make_editorial(
