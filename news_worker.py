@@ -315,7 +315,7 @@ def fetch_article_media(source_url):
             if match:
                 candidate = html.unescape(match.group(1)).strip()
                 parsed_image = urlparse(candidate)
-                if parsed_image.scheme in ("http", "https") and parsed_image.netloc:
+                if parsed_image.scheme in ("http", "https") and parsed_image.netloc and not image_url_is_generic(candidate):
                     image_url = candidate
                     break
 
@@ -605,7 +605,10 @@ def main():
                 candidates.append({
                     "key": key, "title": title, "url": source_url, "publisher": name,
                     "category": category, "description": description, "published": published,
-                    "image_url": extract_image(entry), "video_html": extract_video_embed(entry), "risk": risk,
+                    # Aggregator RSS thumbnails often repeat one generic image across unrelated stories.
+                    # Resolve publisher metadata in the backfill workflow instead of trusting these thumbnails.
+                    "image_url": "" if "google news" in name.lower() else extract_image(entry),
+                    "video_html": extract_video_embed(entry), "risk": risk,
                 })
         except Exception:
             logging.exception("Feed processing failed: %s", name)
