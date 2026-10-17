@@ -477,6 +477,40 @@ def shopify_graphql(query, variables):
 
     return payload.get("data", {})
 
+
+def normalized_story_title(title):
+    """Normalize headlines for duplicate checks across published articles and drafts."""
+    return " ".join(re.findall(r"[a-z0-9]+", clean_text(title).lower()))
+
+
+def load_existing_shopify_story_index(blog_id):
+    """Read existing blog headlines and source links so reruns don't create duplicate drafts."""
+    query = """
+    query ExistingNewsStories($id: ID!) {
+      blog(id: $id) {
+        articles(first: 250, reverse: true) {
+          nodes { title body }
+        }
+      }
+    }
+    """
+    data = shopify_graphql(query, {"id": blog_id})
+    articles = (data.get("blog") or {}).get("articles", {}).get("nodes", [])
+    titles = set()
+    sources = set()
+    for article in articles:
+        title_key = normalized_story_title(article.get("title", ""))
+        if title_key:
+            titles.add(title_key)
+        body = article.get("body") or ""
+        for raw_url in re.findall(r"""href=["'](https?://[^"'<> ]+)["']""", body, re.I):
+            source_key = canonical_url(html.unescape(raw_url))
+            if source_key:
+                sources.add(source_key)
+    logging.info("Loaded existing Shopify duplicate index: %d titles, %d source URLs", len(titles), len(sources))
+    return titles, sources
+
+
 def make_editorial(title, publisher, category, description, video_html=""):
     """Create a professionally structured, source-attributed review draft."""
     safe_title = clean_text(title)[:120] or "Valuted News update"
@@ -636,6 +670,7 @@ def main():
     auto_publish = env("AUTO_PUBLISH", "false").lower() in {
         "1", "true", "yes", "on"
     }
+    existing_titles, existing_sources = load_existing_shopify_story_index(blog_id) if not args.dry_run else (set(), set())
     candidates = []
     candidate_keys = set()
 
@@ -650,6 +685,11 @@ def main():
                 title = clean_text(entry.get("title", ""))
                 source_url = canonical_url(entry.get("link", ""))
                 if not title or not source_url:
+                    continue
+                # The state file is the first guard; Shopify itself is the source of truth
+                # after manual runs, old failed commits, or previously created draft duplicates.
+                if normalized_story_title(title) in existing_titles or source_url in existing_sources:
+                    logging.info("Skipping already-existing Shopify story: %s", title)
                     continue
                 key = story_key(source_url, title)
                 if key in seen or key in candidate_keys:
