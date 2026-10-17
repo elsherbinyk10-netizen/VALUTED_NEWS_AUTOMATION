@@ -1038,12 +1038,12 @@
       "status": "skipped_stale"
     },
     "8980f89c0231959facfaec719af439e613185439352a7f16d360bd656cd1b56c": {
-      "created_at": "2026-10-17T06:34:07.201625+00:00",
+      "created_at": "2026-10-17T06:34:44.951405+00:00",
       "has_embedded_video": false,
       "has_publisher_artwork": true,
       "publisher": "BBC Business",
       "risk_flag": false,
-      "shopify_article_id": "gid://shopify/Article/754865799447",
+      "shopify_article_id": "gid://shopify/Article/754865832215",
       "source_url": "https://www.bbc.co.uk/news/articles/cqde8zk6d916o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Call for more food funding due to high living cost"
@@ -1334,7 +1334,7 @@
       "status": "skipped_stale"
     },
     "bac47cf804415cd8cf5ec1ffe597a64c7d800cbe9fae23255b14c20d09299cac": {
-      "seen_at": "2026-10-17T06:34:07.201625+00:00",
+      "seen_at": "2026-10-17T06:34:44.951405+00:00",
       "source": "Google News Business",
       "status": "skipped_stale"
     },
