@@ -382,6 +382,17 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "2c85031267de30640f731afdd19ccfc20f913c39392610efc2a2277bcb9252c7": {
+      "created_at": "2026-10-17T06:50:44.895506+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754865996055",
+      "source_url": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o?at_medium=RSS&at_campaign=rss",
+      "status": "draft",
+      "title": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times'"
+    },
     "2d0c1972c36b2f83c7e4593f8d1a83e844564e40256f7b2c53c84a0a3551af56": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
