@@ -92,7 +92,7 @@ jobs:
           # Never rebase a processed.json-only commit: concurrent code commits can
           # otherwise conflict in the state file and fail after publishing succeeded.
           cp data/processed.json /tmp/processed-local.json
-          cp data/video_backfill.json /tmp/video-backfill-local.json
+          if [ -f data/video_backfill.json ]; then cp data/video_backfill.json /tmp/video-backfill-local.json; else printf '{"attempted":{}}\n' > /tmp/video-backfill-local.json; fi
           for attempt in 1 2 3; do
             git fetch origin main
             git reset --hard origin/main
