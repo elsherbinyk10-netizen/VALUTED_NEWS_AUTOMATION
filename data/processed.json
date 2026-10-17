@@ -914,6 +914,324 @@
       "risk_flag": false,
       "has_publisher_artwork": true,
       "created_at": "2026-10-16T18:43:47.826831+00:00"
+    },
+    "c980ad7620ac6f402ad1803f50f88a90001299c2d18677cf9ee25f48f2b6ffbf": {
+      "status": "skipped_stale",
+      "source": "BBC Business",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "465bd43d1fcc239aa34c1226f6409efc9a5891d2e2522178c7772bd02e284ab6": {
+      "status": "skipped_stale",
+      "source": "BBC Technology",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "0b28be7298fc2a3b734a6a9fe4361615be5c35b8e5c5b40e226bca726ad96426": {
+      "status": "skipped_stale",
+      "source": "BBC Technology",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "a814e655ef43ac12ffebd82737dc37ceaa2d707240cf590c891e343922feba0c": {
+      "status": "skipped_stale",
+      "source": "BBC Technology",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "fef1a2a6f28701b08ff51246996dec68242a40ae67951849ad832fa74eb315d3": {
+      "status": "skipped_stale",
+      "source": "BBC Technology",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "455cb086d7242df7acd7f35296b3b54cc856019126c34772f0834a75987fede3": {
+      "status": "skipped_stale",
+      "source": "BBC Technology",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "e12e4919bf957a7f6384582d12637c4066e8ddbf5fd5503799dc53ebf5515499": {
+      "status": "skipped_stale",
+      "source": "BBC Technology",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "a5840e5a42f749a2ff4d292651e05379258b28d3ed6fef35d60f20a91fb12a76": {
+      "status": "skipped_stale",
+      "source": "BBC Technology",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "a0e77a89b85a6f25aad7caca5ac7218789c841ca808a4da12163af011ea191f7": {
+      "status": "skipped_stale",
+      "source": "BBC Technology",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "2d0c1972c36b2f83c7e4593f8d1a83e844564e40256f7b2c53c84a0a3551af56": {
+      "status": "skipped_stale",
+      "source": "BBC Technology",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "c78bd9d9cf8132ab967c82b48d30c88224d85ef40e091eb2a6dd213e36bad961": {
+      "status": "skipped_stale",
+      "source": "BBC Technology",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "6cdb0ccc5e113187cf5e8f87046cab0a415488a0044feaa91a78869afa587fde": {
+      "status": "skipped_stale",
+      "source": "BBC Technology",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "5cfe821513d5c5eec4d209a0bb7630d8aadf9f8c7d9738188cc063f8e1ee2908": {
+      "status": "skipped_stale",
+      "source": "BBC Entertainment and Arts",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "3c189b291ad280ddaa0f678ae43cdf74a12e6d323d8e8f18032a3e5f4edddd21": {
+      "status": "skipped_stale",
+      "source": "BBC Entertainment and Arts",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "facaf62e46b3951b1973339a36f480df757a52dc755b94380510847d6f7f5946": {
+      "status": "skipped_stale",
+      "source": "BBC Entertainment and Arts",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "9ddd951de91855094d1430c9f539cc2c5a0df10791a118f8333de9f6ce6e6a64": {
+      "status": "skipped_stale",
+      "source": "BBC Entertainment and Arts",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "42623b24a2d0e45f39cbcafdfbb3b9ad87ab4b963b8dd2ed80570d272aadf630": {
+      "status": "skipped_stale",
+      "source": "BBC Entertainment and Arts",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "3d3872524055d437f9478244b505ee5b11c63d054435a6c97cf4aa386ac09d76": {
+      "status": "skipped_stale",
+      "source": "BBC Entertainment and Arts",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "143d505ebfa65c61ad6839f3645ab8ff892952b611e55ae68eab5f392b892bb8": {
+      "status": "skipped_stale",
+      "source": "BBC Entertainment and Arts",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "31d93b8f643ec2eaf7fee5fd1eb847b70a0454981b1a407aeb06e268dfd76918": {
+      "status": "skipped_stale",
+      "source": "BBC Entertainment and Arts",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "94c91e6ad90a1549284c7674767de0d225a83a9c52f10e6e223da04182374e13": {
+      "status": "skipped_stale",
+      "source": "BBC Entertainment and Arts",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "41acbb34bf1dd78d09de16b115ff11391e7342147243f531ec21ec80c75c3a40": {
+      "status": "skipped_stale",
+      "source": "BBC Entertainment and Arts",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "26e935d8577370c68d867787ea4504ede6ee7340d373e58165a48ed9d95b6052": {
+      "status": "skipped_stale",
+      "source": "BBC Entertainment and Arts",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "1ef60b69b657f0835c83dd98685286111fd50236ca9ba2b68a46f82a6248d2b1": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "d9e40c1e28588cff59b3bc1f5246a1bd37409202919c2c62f731d898d4e1264f": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "df00d46d302755feb3b424240389d6cbbbedaf2a51de9b1c5785c69bcccc0e76": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "1dc0672dade08060b8d567776a6cc03df43ed41da9ee6881f7aacbedb7f942b6": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "6c74bc37416ac683bef639883c80bc438a9f06bddac3e2b5ab80724c41e56def": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "859bb261c248efff0d79371996debeeefe9fcff575cf8691ef9980daab95a5f6": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "e10d839a4c3c21a88e3ffa20db29dc84a8447a9781fa7ae5b6b75f14a6c3e341": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "b8e9b61a18859af0ddefa18353797c005184e48c4a058d6b94b09c1b5ee10469": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "410a51ce009c848b49cf0fe15ef06e4832a3cd1635f05cb5837e53bf9926b1a6": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "07eb9317fc46bb471cad9f90c3753622c06228dd01051b5a954449888f2c3b98": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "e0ab0469ae57bae6cecc5d22efd52aa254c8d914b765bd1c15aaee4ee6e94477": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "6dbdbd1096f471b83fd6dc5383e630fad8c17805f82fe493c0408569f7a1bf7c": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "be605aa80963d1fe28472d559622ad14da648413676bc56e87bf3ae504b61c77": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "b99482615aa422c7d298411ea86cd51827f404ac57de5681921ba5aa94f3e8ba": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "eb60987d7a962db86f2f480a7b730d4623b833e3ba034e1f45dcf7c25058f377": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "4092a753c1b1f9a60820419e0dc4e7c0bd79b07f38191a211f97fa3af7c95429": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "2041e46b627cda9507dfe5d6a840b8cd80e716102328d11c3babab100f6aa4e6": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "83a3cd32146aeb574d9a5b4571240602705186e25d390415b4345d818ce722f0": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "4f5083dd20c787d7ef4675c027b5396ce22c0ce7a9654e64b362b9fa8c28615b": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "389442110319c55db4d08c378174efdf43cf4dd9b7134c85e7595e46fe2ad4ea": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "7d3c176324224f271125312264bf38a311da1f808024f7403b8ced321a8475e5": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "bea0fd1c63c652eb999058ca7dca8c624f3faad8593ccd566cee5688a411e507": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "dfc87096f6961ed1ca22fa9d4c1c97ba1e1245adb965772f7c1342761a7f9fd9": {
+      "status": "skipped_stale",
+      "source": "BBC Science and Environment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "c323ec5ec0a5b09c4ad0755b8be119055a156370add5c4a416dc241bc8c2369b": {
+      "status": "skipped_stale",
+      "source": "NPR Business",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "c5ab069c4a2bf9e0fbdba5282f10ad0fcac72d690abd0ae12eb7fea0f69039e5": {
+      "status": "skipped_stale",
+      "source": "NPR Business",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "16b5bf34c409d03e5e97541d4247b7e313b424a87970a35a77180b237d0281a0": {
+      "status": "skipped_stale",
+      "source": "NPR Business",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "ed9cbc1269ba9db404b4e6a4b805b1abdccddf7bd522f2f90ee7a9ce2b77301c": {
+      "status": "skipped_stale",
+      "source": "NPR Business",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "ff8ae56fc01f76eba79fd9a4f1395d5a6bdc55ed494287c24eea7b4e3d61dc08": {
+      "status": "skipped_stale",
+      "source": "NPR Business",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "d1c617594cc6f67acd9a82029f100cc2f8afc60bd7816061c09e6d1330c435aa": {
+      "status": "skipped_stale",
+      "source": "NPR Business",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "2a52f7bb3050fda34e01b4a010ed74b0e790b9711603a86a74c03d5a60d5db11": {
+      "status": "skipped_stale",
+      "source": "NPR Business",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "92e5858d27de486c20a34931a7acf4cf350596195708a7a308c28fed84edafe0": {
+      "status": "skipped_stale",
+      "source": "NPR Business",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "3231ebc9c1eec4fe41d455e5a5c1a028450b15dd350cc5731710c71a299decc9": {
+      "status": "skipped_stale",
+      "source": "NPR Arts and Entertainment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "8097da7183e156877f69f817b5ac5618abc11084f96593eaab901009681d60c3": {
+      "status": "skipped_stale",
+      "source": "NPR Arts and Entertainment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "9d44d70993c5d210fec3d8982819925b0da90c2e5bf261758c2e2ed84a0a862f": {
+      "status": "skipped_stale",
+      "source": "NPR Arts and Entertainment",
+      "seen_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "244ffc3b821d4ad760d149a59a365247fda0de94fa0c79b2b9ac46b889ec65fd": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754864095511",
+      "title": "Three men jailed for 158 years each for murdering Australian and US surfers in Mexico",
+      "source_url": "https://www.bbc.co.uk/news/articles/c3kgqjkzw29wo?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": true,
+      "has_publisher_artwork": true,
+      "has_embedded_video": false,
+      "created_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "b677fdedabaf44798b79a308f434fcab6e6331180980b7efb953f13fe521ebdd": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754864128279",
+      "title": "Trump waives several Russia sanctions as new US law takes effect",
+      "source_url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": true,
+      "has_publisher_artwork": true,
+      "has_embedded_video": false,
+      "created_at": "2026-10-17T04:04:22.722721+00:00"
+    },
+    "a1365c50f71f1cd7c301b03dc14b9e6963cd2e1528eea25024ab153e3d806b8c": {
+      "status": "draft",
+      "shopify_article_id": "gid://shopify/Article/754864161047",
+      "title": "Brazil sees record fall in Amazon deforestation as key election looms",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC World",
+      "risk_flag": true,
+      "has_publisher_artwork": true,
+      "has_embedded_video": false,
+      "created_at": "2026-10-17T04:04:22.722721+00:00"
     }
   }
 }
