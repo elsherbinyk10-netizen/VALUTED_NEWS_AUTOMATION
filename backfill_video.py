@@ -60,9 +60,9 @@ def infer_category(article):
     tags = " ".join(article.get("tags") or []).lower()
     title = (article.get("title") or "").lower()
     combined = tags + " " + title
-    if re.search(r"\\b(movie|movies|film|films|cinema|streaming|tv|television|trailer)\\b", combined):
+    if re.search(r"\b(movie|movies|film|films|cinema|streaming|tv|television|trailer)\\b", combined):
         return "Movies"
-    if re.search(r"\\b(music|song|songs|album|albums|singer|singers|concert|concerts|tour|tours|music video)\\b", combined):
+    if re.search(r"\b(music|song|songs|album|albums|singer|singers|concert|concerts|tour|tours|music video)\\b", combined):
         return "Music"
     return next((x.title() for x in ("technology", "science", "business", "sports", "world", "politics", "health", "entertainment") if x in combined), "News")
 
@@ -82,7 +82,7 @@ def main():
         if not article.get("isPublished"):
             continue
         body = article.get("body") or ""
-        if re.search(r"youtube-nocookie\\.com/embed/|youtube\\.com/embed/|player\\.vimeo\\.com/video/|<video\\b", body, re.I):
+        if re.search(r"youtube-nocookie\.com/embed/|youtube\.com/embed/|player\\.vimeo\.com/video/|<video\\b", body, re.I):
             continue
         key = str(article.get("id") or "")
         stamp = attempted.get(key, "")
@@ -111,7 +111,7 @@ def main():
                 continue
             body = article.get("body") or ""
             marker = '<section class="vn-related-video" aria-label="Related video"><h2>Related video</h2>' + embed + '</section>'
-            insert_at = re.search(r"<p[^>]*>\\s*<strong>Sources?:</strong>", body, re.I)
+            insert_at = re.search(r"<p[^>]*>\s*<strong>Sources?:</strong>", body, re.I)
             if insert_at:
                 body = body[:insert_at.start()] + marker + body[insert_at.start():]
             else:
