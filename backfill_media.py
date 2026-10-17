@@ -10,7 +10,8 @@ import json
 import logging
 import re
 import time
-from urllib.parse import urlparse, urlencode
+import xml.etree.ElementTree as ET
+from urllib.parse import urlparse, urlencode, quote_plus
 
 import requests
 from news_worker import env, shopify_graphql, fetch_article_media, canonical_url, clean_text
@@ -56,6 +57,46 @@ def source_urls(body):
         if clean and clean not in seen:
             seen.add(clean)
             yield clean
+
+
+def find_publisher_source(title):
+    """Search Google News RSS for the exact story, then resolve to the publisher URL.
+    Google News is used only to discover a source URL, never as an image source.
+    """
+    endpoint = "https://news.google.com/rss/search?q=" + quote_plus('"' + title + '"') + "&hl=en-US&gl=US&ceid=US:en"
+    try:
+        response = requests.get(endpoint, headers=HEADERS, timeout=(5, 12), allow_redirects=True)
+        response.raise_for_status()
+        root = ET.fromstring(response.content)
+        title_terms = set(re.findall(r"[a-z0-9]{4,}", title.lower()))
+        stop = {"news", "latest", "update", "updates", "what", "when", "where", "does", "that", "this", "from", "with", "about", "guide", "how", "follow", "world", "report", "reports", "today", "2026"}
+        title_terms -= stop
+        choices = []
+        for item in root.findall(".//item")[:12]:
+            item_title = clean_text(item.findtext("title", ""))
+            url = (item.findtext("link", "") or "").strip()
+            if not url:
+                continue
+            shared = len(title_terms & set(re.findall(r"[a-z0-9]{4,}", item_title.lower())))
+            if shared < min(3, max(1, len(title_terms))):
+                continue
+            try:
+                resolved = requests.get(url, headers=HEADERS, timeout=(5, 12), allow_redirects=True, stream=True)
+                final_url = resolved.url
+                resolved.close()
+                parsed = urlparse(final_url)
+                host = (parsed.hostname or "").lower()
+                if parsed.scheme not in ("http", "https") or not host or host.endswith("google.com") or host.endswith("googleusercontent.com"):
+                    continue
+                choices.append((shared, canonical_url(final_url)))
+            except requests.RequestException:
+                continue
+        if choices:
+            choices.sort(reverse=True)
+            return choices[0][1]
+    except (requests.RequestException, ET.ParseError) as exc:
+        logging.info("Publisher discovery unavailable for %s: %s", title, exc)
+    return ""
 
 
 def wikimedia_image(title):
@@ -167,15 +208,21 @@ def main():
             break
         chosen = None
         source = None
-        for url in list(source_urls(article.get("body", "")))[:5]:
+        source_candidates = list(source_urls(article.get("body", "")))[:5]
+        # If a source URL was not retained in the article body, discover the publisher page
+        # from the story headline. Google News is used only for URL discovery, never artwork.
+        discovered = find_publisher_source(article["title"])
+        if discovered and discovered not in source_candidates:
+            source_candidates.insert(0, discovered)
+        for url in source_candidates[:6]:
             media = fetch_article_media(url)
             candidate = media.get("image_url", "")
             if image_is_valid(candidate):
                 chosen = {"url": candidate, "alt": article["title"], "credit": "Image source: " + url}
                 source = url
                 break
-        # Use Commons only for evergreen guides with no usable source image.
-        if not chosen and re.search(r"\b(guide|how to|how does|explainer|what happened|how to verify|news:|how to follow)\b", article["title"], re.I):
+        # Use Commons only for evergreen explainers and city guides with no usable publisher image.
+        if not chosen and re.search(r"\b(guide|how to|how does|explainer|what happened|how to verify|news:|how to follow|cairo|museum|malls?|restaurants?|hotels?|technology|science|sports|politics|health|business|markets?)\b", article["title"], re.I):
             try:
                 chosen = wikimedia_image(article["title"])
             except Exception as exc:
