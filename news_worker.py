@@ -553,3 +553,29 @@ def main():
                 "has_publisher_artwork": bool(item.get("image_url")),
                 "has_embedded_video": bool(item.get("video_html")),
                 "created_at": now.isoformat(),
+            }
+            logging.info(
+                "Created Shopify %s article: %s (image=%s, video=%s)",
+                "published" if publish else "draft",
+                editorial["title"],
+                bool(item.get("image_url")),
+                bool(item.get("video_html")),
+            )
+        except Exception:
+            failures += 1
+            logging.exception("Failed to process candidate: %s", item.get("title", "(untitled)"))
+
+    if not args.dry_run:
+        state["items"] = seen
+        save_state(state)
+
+    logging.info(
+        "Run complete: candidates=%d failures=%d dry_run=%s",
+        len(candidates), failures, args.dry_run
+    )
+    if failures:
+        raise SystemExit(1)
+
+
+if __name__ == "__main__":
+    main()
