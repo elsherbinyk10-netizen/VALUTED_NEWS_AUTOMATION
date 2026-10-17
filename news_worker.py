@@ -262,22 +262,40 @@ def fetch_related_youtube_embed(story_title, category=""):
                 for entry in parsed.entries[:15]
             ]
         except requests.RequestException as rss_error:
-            # YouTube's search RSS can return HTTP 400. Fall back to the public results page.
-            logging.info("YouTube search RSS unavailable; trying public results page: %s", rss_error)
-            search_url = "https://www.youtube.com/results?search_query=" + query
-            page = requests.get(
-                search_url,
-                headers={"User-Agent": "Mozilla/5.0 (compatible; ValutedNewsMedia/1.0)", "Accept": "text/html"},
-                timeout=(4, 8),
-            )
-            page.raise_for_status()
-            soup = BeautifulSoup(page.text, "html.parser")
-            for node in soup.select("a#video-title, a.yt-simple-endpoint#video-title"):
-                href = str(node.get("href", ""))
-                if href.startswith("/watch?v="):
-                    video_entries.append(("https://www.youtube.com" + href, clean_text(node.get("title", "") or node.get_text(" ", strip=True)), "YouTube"))
-                if len(video_entries) >= 20:
-                    break
+            # YouTube blocks search RSS in some environments. Try its public page, then Bing's
+            # public index for direct YouTube watch links; only title-matched clips are accepted.
+            logging.info("YouTube search RSS unavailable; trying public search fallbacks: %s", rss_error)
+            search_targets = [
+                ("youtube", "https://www.youtube.com/results?search_query=" + query),
+                ("bing", "https://www.bing.com/search?q=" + requests.utils.quote("site:youtube.com/watch " + query_text, safe="")),
+            ]
+            for provider, search_url in search_targets:
+                try:
+                    page = requests.get(
+                        search_url,
+                        headers={"User-Agent": "Mozilla/5.0 (compatible; ValutedNewsMedia/1.0)", "Accept": "text/html"},
+                        timeout=(4, 8),
+                    )
+                    page.raise_for_status()
+                    soup = BeautifulSoup(page.text, "html.parser")
+                    if provider == "youtube":
+                        nodes = soup.select("a#video-title, a.yt-simple-endpoint#video-title")
+                    else:
+                        nodes = soup.select("li.b_algo h2 a, a[href*='youtube.com/watch?v=']")
+                    for node in nodes:
+                        href = str(node.get("href", ""))
+                        if href.startswith("/watch?v="):
+                            href = "https://www.youtube.com" + href
+                        parsed_href = urlparse(href)
+                        if parsed_href.hostname not in ("www.youtube.com", "youtube.com") or parsed_href.path != "/watch":
+                            continue
+                        title_text = clean_text(node.get("title", "") or node.get_text(" ", strip=True))
+                        video_entries.append((href, title_text, "YouTube"))
+                    if video_entries:
+                        break
+                except requests.RequestException as fallback_error:
+                    logging.info("%s video search fallback unavailable: %s", provider, fallback_error)
+                    continue
 
         title_terms = set(terms)
         best = None
