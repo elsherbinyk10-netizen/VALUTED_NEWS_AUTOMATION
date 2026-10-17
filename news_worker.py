@@ -11,6 +11,7 @@ from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
 
 import feedparser
 import requests
+from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
 
 ROOT = Path(__file__).resolve().parent
@@ -247,32 +248,54 @@ def fetch_related_youtube_embed(story_title, category=""):
             required_hints = {"video", "interview", "statement", "speech", "press", "official", "report", "explains", "explainer"}
         query = requests.utils.quote(query_text)
         feed_url = "https://www.youtube.com/feeds/videos.xml?search_query=" + query
-        response = requests.get(
-            feed_url,
-            headers={"User-Agent": "VALUTED-NEWS-RSS-Bot/1.0"},
-            timeout=(3, 7),
-        )
-        response.raise_for_status()
-        parsed = feedparser.parse(response.content)
+        video_entries = []
+        try:
+            response = requests.get(
+                feed_url,
+                headers={"User-Agent": "VALUTED-NEWS-RSS-Bot/1.0"},
+                timeout=(3, 7),
+            )
+            response.raise_for_status()
+            parsed = feedparser.parse(response.content)
+            video_entries = [
+                (str(entry.get("link", "")), clean_text(entry.get("title", "")), clean_text(entry.get("author", "")))
+                for entry in parsed.entries[:15]
+            ]
+        except requests.RequestException as rss_error:
+            # YouTube's search RSS can return HTTP 400. Fall back to the public results page.
+            logging.info("YouTube search RSS unavailable; trying public results page: %s", rss_error)
+            search_url = "https://www.youtube.com/results?search_query=" + query
+            page = requests.get(
+                search_url,
+                headers={"User-Agent": "Mozilla/5.0 (compatible; ValutedNewsMedia/1.0)", "Accept": "text/html"},
+                timeout=(4, 8),
+            )
+            page.raise_for_status()
+            soup = BeautifulSoup(page.text, "html.parser")
+            for node in soup.select("a#video-title, a.yt-simple-endpoint#video-title"):
+                href = str(node.get("href", ""))
+                if href.startswith("/watch?v="):
+                    video_entries.append(("https://www.youtube.com" + href, clean_text(node.get("title", "") or node.get_text(" ", strip=True)), "YouTube"))
+                if len(video_entries) >= 20:
+                    break
+
         title_terms = set(terms)
         best = None
         best_score = 0
         min_overlap = 1 if is_movie else 2
-        for entry in parsed.entries[:15]:
-            video_url = str(entry.get("link", ""))
+        for video_url, video_title, channel in video_entries:
             parsed_url = urlparse(video_url)
             video_id = dict(parse_qsl(parsed_url.query)).get("v", "")
             if parsed_url.hostname not in ("www.youtube.com", "youtube.com") or parsed_url.path != "/watch":
                 continue
             if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id):
                 continue
-            video_title = clean_text(entry.get("title", ""))
             video_words = set(re.findall(r"[a-zA-Z0-9]{3,}", video_title.lower()))
             overlap = len(title_terms & video_words)
             hint_match = bool(video_words & required_hints)
             score = overlap + (2 if hint_match else 0)
             if overlap >= min_overlap and hint_match and score > best_score:
-                best, best_score = (video_id, video_title, entry.get("author", "")), score
+                best, best_score = (video_id, video_title, channel), score
         # Never attach a generic trending clip or a movie clip that is not actually a trailer.
         if not best:
             return ""
