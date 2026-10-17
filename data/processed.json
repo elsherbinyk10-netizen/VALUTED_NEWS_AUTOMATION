@@ -581,6 +581,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "456fc50ac27048e7293758237c21c437aab552b346f9d78f797edff997128f6c": {
+      "seen_at": "2026-10-17T06:44:04.013453+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "45ee4516e19b1b5812334dbaaa4dc94cb3f5a5806ba835ba7c461f1ee8740ec4": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -856,6 +861,17 @@
       "source_url": "https://www.npr.org/2026/10/12/g-s1-147772/up-first-newsletter-trump-ukraine-russia-antitrust-investigation-hurricane-isaias-saudi-airport",
       "status": "draft",
       "title": "DOJ launches antitrust probe of TV networks. And, Trump says Ukraine needs new leader"
+    },
+    "76c8f83c4111c5af4542eaa6529c27bc6108418c5af7350591ddb2bb932d32ca": {
+      "created_at": "2026-10-17T06:44:04.013453+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754865864983",
+      "source_url": "https://www.bbc.co.uk/news/articles/c615jnxv7n45o?at_medium=RSS&at_campaign=rss",
+      "status": "draft",
+      "title": "Charity reflects on changing needs over 25 years"
     },
     "782d0eff1df90b4d6f6f62642cf390d13d405d75d4bf24ca295fe0c0c87d4ec2": {
       "seen_at": "2026-10-12T06:38:38.333441+00:00",
@@ -1698,6 +1714,11 @@
     "f07f8294f68786d697d5bcb45c9ecd6c28b6c2235fe751964c8edcec26f112e3": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "f1aedc63c799bda133d5a530204f98287ed314fa568118085b8fb618b938e2a0": {
+      "seen_at": "2026-10-17T06:44:04.013453+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "f2cab740b2d39b8626e999039a1b793b72730e951ff9a5629c57170eb01fc633": {
