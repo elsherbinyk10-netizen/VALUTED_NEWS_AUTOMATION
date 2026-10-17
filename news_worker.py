@@ -229,7 +229,7 @@ def fetch_related_youtube_embed(story_title, category=""):
         title = clean_text(story_title)
         category_text = clean_text(category).lower()
         words = re.findall(r"[a-zA-Z0-9]{3,}", title.lower())
-        stop = {"about", "after", "before", "latest", "what", "when", "where", "will", "from", "with", "into", "over", "news", "update", "explained", "official", "video", "trailer", "music"}
+        stop = {"about", "after", "before", "latest", "what", "when", "where", "will", "from", "with", "into", "over", "news", "update", "explained", "official", "video", "trailer", "music", "movie", "movies", "film", "films", "cinema", "guide", "review", "release", "new", "the"}
         terms = list(dict.fromkeys(w for w in words if w not in stop))[:8]
         if len(terms) < 2:
             return ""
@@ -257,6 +257,7 @@ def fetch_related_youtube_embed(story_title, category=""):
         title_terms = set(terms)
         best = None
         best_score = 0
+        min_overlap = 1 if is_movie else 2
         for entry in parsed.entries[:15]:
             video_url = str(entry.get("link", ""))
             parsed_url = urlparse(video_url)
@@ -270,7 +271,7 @@ def fetch_related_youtube_embed(story_title, category=""):
             overlap = len(title_terms & video_words)
             hint_match = bool(video_words & required_hints)
             score = overlap + (2 if hint_match else 0)
-            if overlap >= 2 and hint_match and score > best_score:
+            if overlap >= min_overlap and hint_match and score > best_score:
                 best, best_score = (video_id, video_title, entry.get("author", "")), score
         # Never attach a generic trending clip or a movie clip that is not actually a trailer.
         if not best:
