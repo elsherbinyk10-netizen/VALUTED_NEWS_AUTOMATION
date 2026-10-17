@@ -7,6 +7,7 @@ on:
     paths:
       - "news_worker.py"
       - "backfill_media.py"
+      - "backfill_video.py"
       - "translate_news.py"
       - "tests/**"
       - "requirements.txt"
@@ -61,7 +62,7 @@ jobs:
           test -f feeds.json || { echo "feeds.json is missing"; exit 1; }
 
       - name: Validate Python syntax
-        run: python -m py_compile news_worker.py
+        run: python -m py_compile news_worker.py backfill_video.py
 
       - name: Test video embed and editorial safety
         run: python -m unittest discover -s tests -v
@@ -73,6 +74,11 @@ jobs:
         env:
           MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '20' }}
         run: python backfill_media.py
+
+      - name: Add relevant videos to published articles
+        env:
+          VIDEO_BACKFILL_LIMIT: ${{ vars.VIDEO_BACKFILL_LIMIT || '8' }}
+        run: python backfill_video.py
 
       - name: Commit deduplication state safely
         if: always()
