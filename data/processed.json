@@ -1,5 +1,10 @@
 {
   "items": {
+    "0119f0ea458e702750d19929ba71fdeed2232518472fd04028a931d4b7909998": {
+      "seen_at": "2026-10-17T04:37:20.456657+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "024c80ca33de095ff05886071d1ed7e70499830886c12b16836d217bd7151f3a": {
       "created_at": "2026-10-16T18:43:47.826831+00:00",
       "has_publisher_artwork": true,
@@ -92,6 +97,11 @@
     "0caeab95bb6afe294a6ed6d9323bad831bddef0d3a8b7fc8c095659b06da206b": {
       "seen_at": "2026-10-13T12:38:01.277096+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "0cc58a0c3807bde720d410b882875b63a3cd62ed2270dfd92a887ccfd5bbb990": {
+      "seen_at": "2026-10-17T04:37:20.456657+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "0dea10406e1d83cc6768ba21da23d0f7c23c9251691d1fd87563421ffe133b78": {
@@ -527,6 +537,17 @@
       "status": "draft",
       "title": "Pope's surgery to remove lump on lung 'concluded successfully', Vatican says"
     },
+    "4c8dfa85708bb0689baaf4b0897a46399ceef08660570646da29105bf426124e": {
+      "created_at": "2026-10-17T04:37:20.456657+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News World",
+      "risk_flag": true,
+      "shopify_article_id": "gid://shopify/Article/754864554263",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMktSUzdWbXhBUXBXWXF6MGhLVERISVpiQy1XZGdva0wzT29Gclc2MkVFbGVQRDNmWUFTZFREMHpxX2NWLTF2OW5vNXdNTXloWEE5VGV4LUp4UG9nLVJ4TTNHd3FrRGpmNjZHYkVTVk5nMXFpS2lMVkIyVDBxN0w3aWZKTmRIcmVsLXg5dnB2TWRpcTgtMFBjcW5WWHhMNW_SAaQBQVVfeXFMUFg1anBWcHJtelJMVXViUF9SRjhHMnRGUndOY1FGc05qUG1jM1U1aWhGWXVUemt6UV9qeXFUX2hwM0dqX2J5NkVGZ0pYUW01TktLSmtIYXY3eGNHWFdXMW1BOVU3MGExZEZ5VV95OUx1VTNVVmdNUExwdFNIY0FJSzdCVFdKRnZ2LUF4MGxpTmp0R2t1SFdBMkVuWmtWU256cEZ0ZXY?oc=5",
+      "status": "draft",
+      "title": "Brazil\u2019s Amazon deforestation hits lowest level on record - Al Jazeera"
+    },
     "4dd0c916ee5681f87125e6b9b30470d11fbf76cdc1bb0197a054e5d60f54959f": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Technology",
@@ -594,7 +615,7 @@
       "shopify_article_id": "gid://shopify/Article/754785812759",
       "source_url": "https://www.bbc.co.uk/news/articles/cm78pwdp3n5qo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
-      "title": "Healey must find up to £35bn to meet spending plans, says think tank"
+      "title": "Healey must find up to \u00a335bn to meet spending plans, says think tank"
     },
     "64e921aaa04cd034456ec6d665f830fe6df0a1098c17f928b1a84cf0d9836fdb": {
       "created_at": "2026-10-15T12:51:01.714381+00:00",
@@ -712,7 +733,7 @@
       "shopify_article_id": "gid://shopify/Article/754862260503",
       "source_url": "https://www.npr.org/2026/10/16/nx-s1-6005201/health-treatment-menopause-hot-flash-night-sweats-insomnia",
       "status": "draft",
-      "title": "Hot flashes, night sweats, insomnia – OB-GYNS set new rules for menopause treatment"
+      "title": "Hot flashes, night sweats, insomnia \u2013 OB-GYNS set new rules for menopause treatment"
     },
     "79386a2b8bdf76ec80c0102c72854f6eefdbaca0dde246bb8cb068c098fefd5c": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
@@ -1119,6 +1140,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "c226d54afdfe035c59ee25dbe38da9a64fb1aa4d8da40c612d49fe000a90f600": {
+      "seen_at": "2026-10-17T04:37:20.456657+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "c27cf7e621acbc08d2bff7ed00eeaa3f83f22306933189cc60ab38bbd876efa4": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -1177,6 +1203,11 @@
     "c980ad7620ac6f402ad1803f50f88a90001299c2d18677cf9ee25f48f2b6ffbf": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "c9b84585d3cc446d220c37d03012fd867f193068719241cfaade8d40bee6354d": {
+      "seen_at": "2026-10-17T04:37:20.456657+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "ca691b64f42f124bc71de14eb33114dcf6b16e8834b6b3c6cdd891286d8b4ad5": {
