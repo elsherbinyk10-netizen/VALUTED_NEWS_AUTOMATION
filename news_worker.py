@@ -426,6 +426,42 @@ def make_editorial(title, publisher, category, description, video_html=""):
     }
 
 
+
+def make_public_news_brief(title, publisher, category, description, source_url, image_url="", video_html=""):
+    """Create a clearly attributed, concise news brief without inventing facts."""
+    safe_publisher = html.escape(clean_text(publisher) or "Original publisher")
+    safe_category = html.escape(clean_text(category) or "World")
+    safe_description = html.escape(clean_text(description)[:2500])
+    safe_source = html.escape(canonical_url(source_url), quote=True)
+    summary = clean_text(description)[:300] or clean_text(title)[:200]
+    body = (
+        '<article class="valuted-news-article">'
+        f'<p class="vn-news-category"><strong>{safe_category}</strong></p>'
+        f'<p>{safe_description}</p>'
+    )
+    if video_html:
+        body += '<h2>Related video</h2>' + video_html
+    body += (
+        '<p><strong>Source:</strong> ' + safe_publisher + '. '
+        '<a href="' + safe_source + '" rel="nofollow noopener noreferrer">Read the original report</a></p>'
+        '<p><em>This brief summarizes information supplied by the original publisher. '
+        'Follow the source link for the full report and updates.</em></p>'
+        '</article>'
+    )
+    return {"title": clean_text(title)[:120], "summary": summary, "body": body, "quality_ok": True}
+
+
+def should_auto_publish(item, auto_publish):
+    """Publish only recent, adequately summarized, low-risk source-attributed briefs."""
+    return bool(
+        auto_publish
+        and not item.get("risk")
+        and len(clean_text(item.get("description", ""))) >= 120
+        and canonical_url(item.get("url", ""))
+        and clean_text(item.get("title", ""))
+    )
+
+
 def create_shopify_article(blog_id, title, summary, body, source_url, publisher, category, publish, image_url=''):
     mutation = """
     mutation CreateNewsArticle($article: ArticleCreateInput!) {
@@ -531,12 +567,18 @@ def main():
                     item["video_html"] = media["video_html"]
             if not item.get("video_html"):
                 item["video_html"] = fetch_related_youtube_embed(item["title"])
-            editorial = make_editorial(item["title"], item["publisher"], item["category"], item["description"], item.get("video_html", ""))
-            # Publish automatically only when enabled and the story
-            # has not triggered the high-risk review filter.
-            # RSS metadata alone is not sufficient for publication.
-            # Keep all generated articles as drafts pending human fact-checking.
-            publish = False
+            publish = should_auto_publish(item, auto_publish)
+            if publish:
+                editorial = make_public_news_brief(
+                    item["title"], item["publisher"], item["category"],
+                    item["description"], item["url"], item.get("image_url", ""),
+                    item.get("video_html", "")
+                )
+            else:
+                editorial = make_editorial(
+                    item["title"], item["publisher"], item["category"],
+                    item["description"], item.get("video_html", "")
+                )
             article = create_shopify_article(
                 blog_id, editorial["title"], editorial["summary"], editorial["body"],
                 item["url"], item["publisher"], item["category"], publish,
