@@ -41,9 +41,9 @@ def normalized_title(title):
 
 def main():
     articles = backfill_media.list_articles()
-    published = [a for a in articles if a.get("isPublished")]
+    audited = articles
     by_image = defaultdict(list)
-    for article in published:
+    for article in audited:
         image = article.get("image") or {}
         url = str(image.get("url") or "")
         if url:
@@ -52,12 +52,12 @@ def main():
             by_image[identity].append(article)
 
     # Check URLs concurrently to keep the daily run within the GitHub Actions time budget.
-    urls = list({str((a.get("image") or {}).get("url") or "") for a in published if (a.get("image") or {}).get("url")})
+    urls = list({str((a.get("image") or {}).get("url") or "") for a in audited if (a.get("image") or {}).get("url")})
     with ThreadPoolExecutor(max_workers=12) as pool:
         url_health = dict(zip(urls, pool.map(image_url_ok, urls)))
 
     flagged = {}
-    for article in published:
+    for article in audited:
         image = article.get("image") or {}
         url = str(image.get("url") or "")
         alt = str(image.get("altText") or "")
@@ -81,7 +81,7 @@ def main():
         if reason:
             flagged[article["id"]] = (article, reason)
 
-    logging.info("Image audit: published=%d flagged=%d", len(published), len(flagged))
+    logging.info("Image audit: articles (published + drafts)=%d flagged=%d", len(audited), len(flagged))
     for article, reason in flagged.values():
         logging.warning("Flagged (%s): %s", reason, article.get("title", "(untitled)"))
 
