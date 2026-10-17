@@ -144,6 +144,11 @@
       "status": "draft",
       "title": "Dozens of gold prospectors killed in strikes on Egypt-Sudan border, rights group says"
     },
+    "112ea918cbaa45052ca9b188455d3dfe7a6f9f501ce4bb4b60639b6f7c6418b7": {
+      "seen_at": "2026-10-17T18:37:15.737884+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "11f619156f4570458ba84b0b74931488e43e7182dcf8c50c8e46745db9a2be53": {
       "created_at": "2026-10-14T06:49:18.901185+00:00",
       "has_publisher_artwork": true,
@@ -243,9 +248,19 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "1d060f804230bcac24f6d183f6d876ec27ddc828dbf5a9e350e37dcf1e819818": {
+      "seen_at": "2026-10-17T18:37:15.737884+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "1d1a3ce47e5cd1f9e20423fa1490dc03103faa28a51a0c2faf6b96a02a03f477": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "1d631a7f95f085d521ea132e435d91da937fce2dcecbd91d32a21fc094cdff5c": {
+      "seen_at": "2026-10-17T18:37:15.737884+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "1d75e299bcd2d377f95368714d61cb686efbdfb56c954cf9fff4da74576e34cd": {
@@ -347,6 +362,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "24b9634a1e2343bb991adc27f7b370ce1ba14a81bacd96052393014591b454ae": {
+      "seen_at": "2026-10-17T18:37:15.737884+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "24bf0be915bd1d28bc9515ba9ae093a63556a3d9901c0d8c2df347de872c816d": {
       "created_at": "2026-10-11T23:19:02.490549+00:00",
       "publisher": "BBC World",
@@ -390,6 +410,11 @@
     "27e565231ea632c0ce1e1eedd409ac319014112fcdc86012cbe559ed907f6442": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "2829c424079d203f7d2f8175d2d23a036596e15f465f9706b47a9856cd63d8da": {
+      "seen_at": "2026-10-17T18:37:15.737884+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "2a52f7bb3050fda34e01b4a010ed74b0e790b9711603a86a74c03d5a60d5db11": {
@@ -597,6 +622,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "412f9ebdecc7f61d6133c1c04a4d436dda09fed4684dff4bf9da3bad8d450ec7": {
+      "seen_at": "2026-10-17T18:37:15.737884+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "4183644b410a6cd2686b8f17f63b61c93111b3b51efa0d77c0493852c814352b": {
       "created_at": "2026-10-13T18:35:38.703000+00:00",
       "has_publisher_artwork": true,
@@ -675,6 +705,11 @@
     "4b31a65269f1add9289cca2be3cafe5ad8450bafc5f240bb1b7ab26ce89cf0fc": {
       "seen_at": "2026-10-17T06:08:31.417343+00:00",
       "source": "NASA News",
+      "status": "skipped_stale"
+    },
+    "4c100a30f5efb4abd7556c9b39c4bf91fb6ea7cf65ef8968452b8ae5e39a5dc8": {
+      "seen_at": "2026-10-17T18:37:15.737884+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "4c4f3673e6e39a252ec6b393a19d0133ee1ae09fcfc67f44813f0bb428eb1897": {
@@ -759,6 +794,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "55e778132a079bc9498e60de7d0bcec878eb3335b47a573a383ba51fe978dd1b": {
+      "seen_at": "2026-10-17T18:37:15.737884+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "56fcc685ac2dfe168991d96592f94b56e3b2f5f4f54c697f9c791e44ae86eaad": {
       "created_at": "2026-10-17T06:08:06.057590+00:00",
       "has_embedded_video": false,
@@ -769,6 +809,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cm5yngn0pl2ro?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Nightclubs are disappearing - and it's affecting young people"
+    },
+    "57cf5089002c495527bba36fb861eb5f6ba34d0c387be226a03bd93cba5a331c": {
+      "seen_at": "2026-10-17T18:37:15.737884+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
     },
     "57f3a3d36dfa1845bdb564798b95b2aa9f601184b6a6c7c502b7409d140d9db9": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
@@ -885,6 +930,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cw99zpmnxzmjo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines"
+    },
+    "6a63b3a96ec49dd06511dc583d6367fda8b9562342c5adfbc98cb61146e1234e": {
+      "seen_at": "2026-10-17T18:37:15.737884+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
     },
     "6a78c52774f4a4ed097b0f4e933797a08917a4a7bbf57cc54b3c49dc867e01b0": {
       "created_at": "2026-10-16T18:43:47.826831+00:00",
@@ -1277,6 +1327,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "966eb7b7127784768f02fdd665fe44861d2ece0d92deb6fb047b6ed4740b3cee": {
+      "seen_at": "2026-10-17T18:37:15.737884+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "96faa508b0e30813b50f2c7436506d8fbc1cdd73d65af8588c8afd4f9b72ef60": {
       "created_at": "2026-10-14T12:48:42.226493+00:00",
       "has_publisher_artwork": true,
@@ -1335,6 +1390,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cmglw0r21zexo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "UK growth forecast upgraded but energy prices and rates to hit in 2027"
+    },
+    "a06797f3d253aec3882ed218405acbc30477d049b21a2a6eade01063efbca2d0": {
+      "seen_at": "2026-10-17T18:37:15.737884+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
     },
     "a0e77a89b85a6f25aad7caca5ac7218789c841ca808a4da12163af011ea191f7": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
@@ -1407,6 +1467,11 @@
       "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNamxaaU9iamxYdlFCSmVzOHctQ1l1R1JKNm0zWjhkV3hGMmlsaFBDNkRtZmU5VXdyazgzUTdOb3ZLa1dMenpzZDVpT2cwSFVxY1RFT0I3TGxiQjZPNy1wY0V5NnFiZXR4QXJGYUFMcDQta3lrRVRROG93QU8yVzdzOEc0ZGx0SnA0VEZXYWVSSW9RMXZIWUIyZjRGNWVIRFRlNW1DTXNyaW9jUVl4RFhJRXRCNzYyQ1o5YkE?oc=5",
       "status": "draft",
       "title": "Congress members condemn Israeli settler attack on Washington Post photographer - The Washington Post"
+    },
+    "a758244590b4247c82c5277f2b472d7b9901036b87c0ed6c94722bf3d811e569": {
+      "seen_at": "2026-10-17T18:37:15.737884+00:00",
+      "source": "BBC Technology",
+      "status": "skipped_stale"
     },
     "a814e655ef43ac12ffebd82737dc37ceaa2d707240cf590c891e343922feba0c": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
@@ -1758,6 +1823,16 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "dcc5fbec11432770e81bfb07e6b720ed441bb7d98b2d49bc977fb6f896eeee96": {
+      "seen_at": "2026-10-17T18:37:15.737884+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "ddb8c99291d2f1de81600f3005d49314410cae9b0463a4e8a1428047934050aa": {
+      "seen_at": "2026-10-17T18:37:15.737884+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "df00d46d302755feb3b424240389d6cbbbedaf2a51de9b1c5785c69bcccc0e76": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
@@ -1828,6 +1903,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "e7b27eae48a96eae7c528e0710e3758dfc61ae4fcd1e0aad38e9cf96243ffa9e": {
+      "seen_at": "2026-10-17T18:37:15.737884+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "e7c3af778fcfbca899b53da4041bdb9d0ed72f4d30d7b286279b1ed36f67c0b9": {
       "created_at": "2026-10-14T12:48:42.226493+00:00",
       "has_publisher_artwork": true,
@@ -1837,6 +1917,17 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cq98z59xdny5o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Burnham says he wants to 'repair bridges' between Ukraine and US"
+    },
+    "e8294c2cb52b5fb3273c8c2c01f176228d6f1bf452d6dbce67bfdc12736991e5": {
+      "created_at": "2026-10-17T18:37:15.737884+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News Top Stories",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754879037719",
+      "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOeGhYWFhIdFdCRnFmd2FTQUFrRjZSUHo0VldwQVpfY2xwNWtUVjFJQlp5UEdZTnZUYjRXSy1sdkFOVFVVaXlLbFk2TnZPcE4xcmlpS3c3T1lpWTdXY1JWNko0cjhRTTR4NnJ3dENVd090NzB3TF9HNUdqX2xkLTZzbjNXRW1KTXFISkdVUUk2ejdJRGV6STZhN010aEtqTlpP?oc=5",
+      "status": "draft",
+      "title": "Pope Leo leaves hospital after lung cancer operation - The Washington Post"
     },
     "e8602edea19ee0dce7c4f25c5a771bba306568638fe787500c06ee5e49e5cb2e": {
       "created_at": "2026-10-14T18:47:56.856276+00:00",
