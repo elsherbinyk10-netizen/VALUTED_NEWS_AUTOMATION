@@ -14,7 +14,7 @@ from news_worker import env, shopify_graphql, fetch_related_youtube_embed
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 BLOG_ID = env("SHOPIFY_BLOG_ID", "gid://shopify/Blog/126010065175")
 STATE_FILE = Path("data/video_backfill.json")
-RETRY_DAYS = 30
+RETRY_DAYS = 2
 
 
 def load_state():
