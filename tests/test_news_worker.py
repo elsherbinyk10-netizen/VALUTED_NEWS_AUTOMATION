@@ -91,6 +91,27 @@ class VideoEmbedTests(unittest.TestCase):
         item["description"] = "Too short"
         self.assertFalse(worker.should_auto_publish(item, True))
 
+    def test_feed_text_prefers_longest_content_and_formats_paragraphs(self):
+        entry = {
+            "summary": "Short summary.",
+            "content": [{"value": "<p>First verified sentence. Second verified sentence.</p><p>Third verified sentence.</p>"}],
+        }
+        extracted = worker.extract_entry_text(entry)
+        self.assertGreater(len(extracted), len("Short summary."))
+        paragraphs = worker.paragraphize_source_text(extracted)
+        self.assertTrue(paragraphs)
+        self.assertIn("First verified sentence.", " ".join(paragraphs))
+
+    def test_auto_publish_rejects_thin_summaries_even_if_image_exists(self):
+        item = {
+            "title": "Science update",
+            "url": "https://example.com/story",
+            "image_url": "https://images.example.com/story.jpg",
+            "description": "A short summary with an image.",
+            "risk": False,
+        }
+        self.assertFalse(worker.should_auto_publish(item, True))
+
     def test_public_brief_is_attributed_and_has_no_editorial_hold_notice(self):
         brief = worker.make_public_news_brief(
             "Science discovery announced", "NASA", "Science",
