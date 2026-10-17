@@ -594,7 +594,7 @@
       "shopify_article_id": "gid://shopify/Article/754785812759",
       "source_url": "https://www.bbc.co.uk/news/articles/cm78pwdp3n5qo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
-      "title": "Healey must find up to \u00a335bn to meet spending plans, says think tank"
+      "title": "Healey must find up to £35bn to meet spending plans, says think tank"
     },
     "64e921aaa04cd034456ec6d665f830fe6df0a1098c17f928b1a84cf0d9836fdb": {
       "created_at": "2026-10-15T12:51:01.714381+00:00",
@@ -712,7 +712,7 @@
       "shopify_article_id": "gid://shopify/Article/754862260503",
       "source_url": "https://www.npr.org/2026/10/16/nx-s1-6005201/health-treatment-menopause-hot-flash-night-sweats-insomnia",
       "status": "draft",
-      "title": "Hot flashes, night sweats, insomnia \u2013 OB-GYNS set new rules for menopause treatment"
+      "title": "Hot flashes, night sweats, insomnia – OB-GYNS set new rules for menopause treatment"
     },
     "79386a2b8bdf76ec80c0102c72854f6eefdbaca0dde246bb8cb068c098fefd5c": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
@@ -1492,4 +1492,4 @@
     }
   },
   "version": 1
-}\n
+}
