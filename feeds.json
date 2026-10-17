@@ -43,5 +43,35 @@
     "name": "NPR Arts and Entertainment",
     "url": "https://feeds.npr.org/1008/rss.xml",
     "category": "Entertainment"
+  },
+  {
+    "name": "Google News Top Stories",
+    "url": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en",
+    "category": "World"
+  },
+  {
+    "name": "Google News World",
+    "url": "https://news.google.com/rss/headlines/section/topic/WORLD?hl=en-US&gl=US&ceid=US:en",
+    "category": "World"
+  },
+  {
+    "name": "Google News Business",
+    "url": "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-US&gl=US&ceid=US:en",
+    "category": "Business"
+  },
+  {
+    "name": "Google News Technology",
+    "url": "https://news.google.com/rss/headlines/section/topic/TECHNOLOGY?hl=en-US&gl=US&ceid=US:en",
+    "category": "Technology"
+  },
+  {
+    "name": "Google News Entertainment",
+    "url": "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=en-US&gl=US&ceid=US:en",
+    "category": "Entertainment"
+  },
+  {
+    "name": "Google News Science",
+    "url": "https://news.google.com/rss/headlines/section/topic/SCIENCE?hl=en-US&gl=US&ceid=US:en",
+    "category": "Science"
   }
 ]
