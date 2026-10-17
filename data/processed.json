@@ -752,6 +752,17 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "614d3ce15a04dbd93f34fa5954eea80cdf725de53e58b3256356b4d980cc9edf": {
+      "created_at": "2026-10-17T06:52:13.320526+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News Top Stories",
+      "risk_flag": true,
+      "shopify_article_id": "gid://shopify/Article/754866028823",
+      "source_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcFVmNDRkc2M4OXNVMXJ2amgwd1ctYUUzbndvRkVtZEplWG5oVmdnVzFfcUtIejNsX0pEa2VnU1RxeFJSLTdTVy1Bb0kzbW9odWpsWUkwRkVKaEl6UGNVeWpFc2luZkp2dF8xMllULUV4a1c4ZjREYXVVbnI1WTdyQkJxTnB4b0dRNDdUWmZrX3ZlTDA?oc=5",
+      "status": "draft",
+      "title": "Benjamin Satterley, wrestler known as Pac, died of bronchial asthma - NBC News"
+    },
     "61f0a878d8f40acd08383ffb455fccee01616de3024fea98bcd54a7345a66d35": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
