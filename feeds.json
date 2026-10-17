@@ -73,5 +73,20 @@
     "name": "Google News Science",
     "url": "https://news.google.com/rss/headlines/section/topic/SCIENCE?hl=en-US&gl=US&ceid=US:en",
     "category": "Science"
+  },
+  {
+    "name": "Variety Music",
+    "url": "https://variety.com/v/music/feed/",
+    "category": "Music"
+  },
+  {
+    "name": "Rolling Stone Music News",
+    "url": "https://www.rollingstone.com/music/music-news/feed/",
+    "category": "Music"
+  },
+  {
+    "name": "Billboard Pro Music Business",
+    "url": "https://www.billboard.com/pro/feed/",
+    "category": "Music"
   }
 ]
