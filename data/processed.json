@@ -299,6 +299,11 @@
       "status": "draft",
       "title": "Harry Styles Enlists John Wilson for Documentary About Madison Square Garden Residency"
     },
+    "1a9050cff6dfdc717632313359c3ef3ab70482b3337c049fd09d30504af04f7a": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "1aff4bf29ee2a8bdccd232627290e4c58fcea1d55b390cc9cc2627e91a9ef19f": {
       "seen_at": "2026-10-14T06:49:18.901185+00:00",
       "source": "BBC Business",
@@ -410,6 +415,11 @@
       "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQazI1VEs4Znc2ZFNraUhjbGs0NnFPc2o0MlVJV2NMdDd3a1oxLTh0d05JOU1MQ1JNV0hJc1dSOEhYcEYyRG5vanQwdTlUbTk0WTZQQm9LQnpLTHg1VDg1aXVyRUJoYkFfZGVtYVFaTzd4TGNERmFocU5qX3oxQU1LdXBfWVNYd0J2WXdxZGZWeFN5QzhWeUpRbFlKX19laG81aW5tN0liVUY?oc=5",
       "status": "published",
       "title": "Brush fires trigger evacuations in Los Angeles, Orange counties amid Santa Ana winds across SoCal - ABC7 Los Angeles"
+    },
+    "23762474ceded32fb66949007aa91e1eca9134aab45dca4c818cd4f3696cddce": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
     },
     "23bf0a98653887e7bc0e43a1f7f2eec24dc666648844577f6d3aeb292d91fc7a": {
       "created_at": "2026-10-17T06:09:49.235434+00:00",
@@ -945,6 +955,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "4e553dd2116e92fd879be776749d51d1cc3b40fe746a4b970f145280c5143764": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "4ef4b8a45d4caff22bc75dbccc2aed56451507fec43dd9793cb270eac197b54b": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "BBC Technology",
@@ -990,6 +1005,11 @@
       "source_url": "https://www.bbc.co.uk/news/videos/ckly4mj1g3n9o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Watch: Did Tesla really just unveil a flying car?"
+    },
+    "52b0d257ff5fdd13a660d43879e6d64a9a4ce5cbdcfb3ce0e2ec453e7b296027": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
     },
     "52e95f71193f3c56e712fd91bd1a5722b7233e9f447bb9b2c839b7f5150d3166": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
@@ -1145,6 +1165,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "642c34e7eb1fd5c37a9322813ee6345f92ac49ffe7593939b9f088d1e1fb9799": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "6490f52bc4e27312714a75a7255467300259eeb5282a3303987122b0ebf071b7": {
       "created_at": "2026-10-12T06:38:38.333441+00:00",
       "publisher": "BBC Business",
@@ -1238,6 +1263,22 @@
       "status": "draft",
       "title": "Toxic algorithms wouldn't let them go - now Australia wants an off switch"
     },
+    "6b630ad26dbf7389404803fe4e6efcd48ac55d7ce0128a1e816f680e6a6be34a": {
+      "created_at": "2026-10-18T18:37:56.281386+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754885001495",
+      "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5GYnoxd1dncFRldUlCNW5vMDEydGR3U1VpY1RtQVNQdGJGTlItUVpoR1U2dUwyNVNoQU1uQzBDNU5LWUl2UTc2REswb3QzQjVpcFlEVGZhOWxJd3J0RTlIbU4xeUN2RmtIU1IyLWxaaGctZw?oc=5",
+      "status": "draft",
+      "title": "Huge Riots and Anti-Government Protests in France: What to Know - The New York Times"
+    },
+    "6bb3aa68c42b4f8a8dc344b706eb6269dfea02089d2e8ba7d8248b31ae6704ee": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "6c26494bd093d3bfd2ba047f70c8f612bf679eaa71cf28c0d6e4f4ab676da663": {
       "seen_at": "2026-10-17T06:46:54.120993+00:00",
       "source": "Google News Science",
@@ -1306,6 +1347,11 @@
     "72d26854d5856676c869bd7165f44f94202bee567e4a0c895586a34e0c94f474": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "72d8a64b22eb765536fa4eb304d3c3205aba4853413deaeb8826d91b52cb2244": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "7380c158af8ff1c29e4881df47c2485cd24715af6743d9df13d249528e2c014f": {
@@ -1686,6 +1732,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "908a7566860e8c1dcbfd029aefb16b98fe809e1417ceccd6853c3d5a81c82ef3": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "917e0c7e1d73b2cede29fd005a2cbf7f727ff1e383e0b813be63ec0ed7de5090": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Entertainment",
@@ -1743,6 +1794,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c6pvg4jyz1m0o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Trump's 'energy ceasefire' claim welcomed by Zelensky but Russia silent"
+    },
+    "94b253515e42eea7023412ba579d09f78e727dd266dfd91fe708a445a3af5ce3": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
     },
     "94c91e6ad90a1549284c7674767de0d225a83a9c52f10e6e223da04182374e13": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
@@ -1813,6 +1869,11 @@
     "9b0c771212c84272775a552b639b1160caf588f5d585c5967f4cbeddbbb74b1f": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "9c17e1292f61904c539dc109410c94dac87ab29c3392d18cbdc414e8f43c9187": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
     "9c456bbec7c9470c9513ebd5a529fc702a76c22b9e7bf6511a125e81ea9df805": {
@@ -1986,8 +2047,18 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "ae8e0cf525b8d84d15938e20a6b8bf8b1c975d6aaaa11428a0c46a17dc5034a2": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "af527f7f1e4eb5e66e83d64005c9278a7c18c6b512271bf2cf5ef324a60b4747": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "af80216b1691b3d705b45d61d01ef1216450badec5c9944b960802975418a8b9": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
@@ -2017,6 +2088,11 @@
     },
     "b42216ee01e9395550078bcd5d36aa9a3622a40937454a843e0b2cbc8c454377": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "b48732c36882651d90e7256e3ef9fc68a6a7fdc523a5c975e1f9308c4b40e91c": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Business",
       "status": "skipped_stale"
     },
@@ -2094,6 +2170,11 @@
     "bd3f70535fc9216303752b5a944a09793af1e0078ceefa71549a680aac0546dc": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "bd5cd55a0e76c63a933804f60679ecc3528350b7d5b2b30a1f3e235649e42a5b": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "be605aa80963d1fe28472d559622ad14da648413676bc56e87bf3ae504b61c77": {
@@ -2278,6 +2359,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "cb84490500c30fbbd7454c021b697ff2886cccecb6c22e59f3726eb2b266da9f": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
     "cc01790517156830ad0f1f530eab4f87a5d055b55dc2a35c485ea3287257ff32": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News World",
@@ -2327,9 +2413,24 @@
       "status": "draft",
       "title": "Orangutans released back into Borneo forest after devastating fires"
     },
+    "d01ea56722c7f856fa3e46e0710f18322a344a05f511662ef17338ccabe17ff2": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "d1a7da5307340e75e0cdbbfb5b7684b030708a54db104cdffd3e503700522720": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "d1c617594cc6f67acd9a82029f100cc2f8afc60bd7816061c09e6d1330c435aa": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "NPR Business",
+      "status": "skipped_stale"
+    },
+    "d259c68ea1bd8d2dfd869f1a5f6efb9e972e9f21fe353032d4c219fbda6afa1f": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "d3af5cec0fbba1c6a87ecb9c52d8f67f700ebe60ad90275240b4f3110019543a": {
@@ -2339,6 +2440,11 @@
     },
     "d4f2375d084377be7fd8ef69d085c683056d119f53eeaa916391a4b8376549e0": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "d573eb1805cab5c46b16a2a16cad18f5c1c5ea1d2ca485874375ce68e5b915dd": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
     },
@@ -2445,6 +2551,11 @@
     "ddb8c99291d2f1de81600f3005d49314410cae9b0463a4e8a1428047934050aa": {
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "dea95347e4b6c9d73b3a5443b0748ebee99a1c53b28e6597f548a87f9bf3afaf": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "df00d46d302755feb3b424240389d6cbbbedaf2a51de9b1c5785c69bcccc0e76": {
@@ -2583,6 +2694,11 @@
       "status": "draft",
       "title": "Drop-off charges at UK airports to be reviewed after sharp increase"
     },
+    "e8879178bd5385f9f34e303a4861f234221bea97d521d4272c803ac12f329f51": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "ea13eba4a7e8245e72ccafac4c5b120b33b0c97035b0e9481f50c60475c0a7eb": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -2636,6 +2752,11 @@
     "ed9de42d1f4343198ed660cf77fe16d36e4777e92075ef397aa49d6b292163e2": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "ee175ffd2fd8c8a92ce95f03b29878df86dd3b0ec3d1ad9c17d067c17009198c": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "ef96175331f33598955ada750461212d41f7363fb30f3bd070e0c0e1a1e3c412": {
@@ -2792,6 +2913,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "fe1c40f9b39ce3ff33db8b7b349c1362b1cc77f65867b91fa6f00a7cbf2d83cc": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "fec2ddb6cf3f1e21dd9ae3b7f98e6cdcea3d5416f8ba75480fbc4cdbeb416639": {
       "created_at": "2026-10-14T06:49:18.901185+00:00",
       "has_publisher_artwork": true,
@@ -2801,6 +2927,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cv4g18we232ro?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Heating oil users face fuel or food winter choice'"
+    },
+    "feefd6e3a3c91480d4daa1805903179876a48e6c1bd3919570f7adb5d5c82649": {
+      "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
     },
     "fef1a2a6f28701b08ff51246996dec68242a40ae67951849ad832fa74eb315d3": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
