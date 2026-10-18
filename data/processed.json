@@ -80,6 +80,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "0517bf6ece2ba83ca1c8f8692eb7b5c789c76fa4550c04ef7a4bf88026650095": {
+      "seen_at": "2026-10-18T12:53:00.593654+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "056f4bacd70046a7f1ea802995557b51d0e736ca3e25ddae8418276eedda42ac": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC World",
@@ -1408,6 +1413,17 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "7f20739422a6c9dc994fd11f0aec096e241d76a138bd4743cb31ba90fba0c52a": {
+      "created_at": "2026-10-18T12:53:00.593654+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News Top Stories",
+      "risk_flag": true,
+      "shopify_article_id": "gid://shopify/Article/754883952919",
+      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQk1CaFJzdndtbXhWVTJOMGt5WlZ5RDlzSDVEeklqU3ZuMzJPOThZOTV2cG5IWDVIMi1lSFJXWkhVdVg4OGdoajdEb0hhWWlxbVVuNkc2bGc2RlJZZTN5MDEyM2oxRU9UdkVYcWhGRHQzLUt6NktVemhJYnpTMG9MRUtJMXFSTzA3REFkcEhOTHd5ZEZBUndfZHVrR1BoeFFsRXJ1aA?oc=5",
+      "status": "draft",
+      "title": "Hurricane Trudy brings heavy rain and strong winds to Mexico\u2019s Pacific coast - AP News"
+    },
     "8097da7183e156877f69f817b5ac5618abc11084f96593eaab901009681d60c3": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "NPR Arts and Entertainment",
@@ -1552,6 +1568,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "88386493be35012956f71b20c335da7e0acadc81c30f202e4f09b68075d4d25f": {
+      "seen_at": "2026-10-18T12:53:00.593654+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "8870a621511105e1abed18a51f70d141158f4b1794b5b3bc80c7f294b66e36e3": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News World",
@@ -1611,6 +1632,11 @@
     "8c708fedda357a30ad90620abc361ee3ad9f7387ed5944bd406d081c50f01943": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "8d787f1efae63ab8869c347e08b197fb8264957a740d2a1379cbd3aee70c4537": {
+      "seen_at": "2026-10-18T12:53:00.593654+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "8e2aa409f0824ff1d73c66caf78701bcb1bb8dd54489539587741a2df25d3b89": {
@@ -1718,6 +1744,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "96837e201fa5d9edea2ab12bb97278897f338ad014d629f6632dfd64b2e16dd4": {
+      "seen_at": "2026-10-18T12:53:00.593654+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "96faa508b0e30813b50f2c7436506d8fbc1cdd73d65af8588c8afd4f9b72ef60": {
       "created_at": "2026-10-14T12:48:42.226493+00:00",
       "has_publisher_artwork": true,
@@ -1731,6 +1762,11 @@
     "988723eb735a574436124e59f511cc7e65f75d99d68ddabf68b0a50ed05c14cd": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "98f72b0d3fa997bc17fac10f41ba847a813ddb6a2e6d04974671b8bf45896cda": {
+      "seen_at": "2026-10-18T12:53:00.593654+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "9b03eaab1fd3614f3a68bf5a8fc464150117b3c094f570a72371429745e3e6bb": {
@@ -2014,6 +2050,11 @@
       "status": "draft",
       "title": "Dad fined after son, 2, died in Cyprus hotel fall"
     },
+    "bc6bff0ecf02cafe2a099656e8247cd0d242438a8d629e6e2d92d80413226161": {
+      "seen_at": "2026-10-18T12:53:00.593654+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "bd3f70535fc9216303752b5a944a09793af1e0078ceefa71549a680aac0546dc": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Science",
@@ -2189,6 +2230,11 @@
     "ca691b64f42f124bc71de14eb33114dcf6b16e8834b6b3c6cdd891286d8b4ad5": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "cb414429a60fc27c5756924a6c3d01ae9042ddf9abc15feb1b4e9d4488176ae6": {
+      "seen_at": "2026-10-18T12:53:00.593654+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "cc01790517156830ad0f1f530eab4f87a5d055b55dc2a35c485ea3287257ff32": {
