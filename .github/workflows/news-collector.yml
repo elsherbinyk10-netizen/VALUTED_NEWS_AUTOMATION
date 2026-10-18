@@ -36,7 +36,7 @@ jobs:
       SHOPIFY_CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}
       
       SHOPIFY_API_VERSION: "2026-10"
-      AUTO_PUBLISH: 'false'
+      AUTO_PUBLISH: 'true'
       SHOPIFY_BLOG_ID: "gid://shopify/Blog/126010065175"
       MAX_ARTICLES_PER_RUN: ${{ vars.MAX_ARTICLES_PER_RUN || '1' }}
       MAX_AGE_HOURS: ${{ vars.MAX_AGE_HOURS || '36' }}
