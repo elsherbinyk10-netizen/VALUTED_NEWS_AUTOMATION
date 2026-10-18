@@ -288,6 +288,17 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "19680359662f3877c06e41688d2ffc988e77b2792e8f29125b784d84c991d434": {
+      "created_at": "2026-10-18T13:35:57.538912+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754884116759",
+      "source_url": "https://www.rollingstone.com/music/music-news/harry-styles-john-wilson-documentary-msg-residency-1235644404",
+      "status": "draft",
+      "title": "Harry Styles Enlists John Wilson for Documentary About Madison Square Garden Residency"
+    },
     "1aff4bf29ee2a8bdccd232627290e4c58fcea1d55b390cc9cc2627e91a9ef19f": {
       "seen_at": "2026-10-14T06:49:18.901185+00:00",
       "source": "BBC Business",
@@ -878,6 +889,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "4b5a18b34d43cc3522401ddf759272d3a1f0493cf4dcbb3254960cbb88df8493": {
+      "seen_at": "2026-10-18T13:35:57.538912+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "4c100a30f5efb4abd7556c9b39c4bf91fb6ea7cf65ef8968452b8ae5e39a5dc8": {
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
       "source": "Google News Science",
@@ -1119,6 +1135,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "629cde9f6a3f93193a5e4465ffaf53fb82396d96e226a58d0e897eb049eee355": {
+      "seen_at": "2026-10-18T13:35:57.538912+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "635b0b2984593638ef32fce012be54e44dd3949d62a6df9852421ca1eacc8565": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
@@ -1220,6 +1241,11 @@
     "6c26494bd093d3bfd2ba047f70c8f612bf679eaa71cf28c0d6e4f4ab676da663": {
       "seen_at": "2026-10-17T06:46:54.120993+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "6c2b5fd8af9c0c34c57311896ddd64fdd6881b1b53a7ecabf6a8878a19925919": {
+      "seen_at": "2026-10-18T13:35:57.538912+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "6c74bc37416ac683bef639883c80bc438a9f06bddac3e2b5ab80724c41e56def": {
@@ -1568,6 +1594,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "880a0eaff04e0931abe97941b26141c656972b3995b5a95243075a9bb5204997": {
+      "seen_at": "2026-10-18T13:35:57.538912+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "88386493be35012956f71b20c335da7e0acadc81c30f202e4f09b68075d4d25f": {
       "seen_at": "2026-10-18T12:53:00.593654+00:00",
       "source": "BBC World",
@@ -1677,6 +1708,11 @@
     "9260364d7cc64745bc85dd977ab880ff4323b2369f70a325960a4d5df4c8fdbd": {
       "seen_at": "2026-10-13T18:35:38.703000+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "9260bbc9ed29ac1ed6458b0908f77ddd450f8bfbb9784edd46692243d30873b8": {
+      "seen_at": "2026-10-18T13:35:57.538912+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "92e5858d27de486c20a34931a7acf4cf350596195708a7a308c28fed84edafe0": {
@@ -2154,6 +2190,11 @@
     "c6419dda40a9d8133f8cb3634371add5170738e9a8356e59806bedb432a2009b": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "c647d7e798c0a91fe73eb6eaf6251a60790e54ceb8fb28fb4f9d03b2574df5da": {
+      "seen_at": "2026-10-18T13:35:57.538912+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "c6b192b0cdb16fa0aa69d441a29b49f67ac861bcf1be827c1312f7dc4ff8780a": {
