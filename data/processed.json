@@ -251,6 +251,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "11a8195024bd6c6caadbadf63662af4c2b80776766388970da9682534edb5ea8": {
+      "seen_at": "2026-10-19T12:49:09.789011+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "11f619156f4570458ba84b0b74931488e43e7182dcf8c50c8e46745db9a2be53": {
       "created_at": "2026-10-14T06:49:18.901185+00:00",
       "has_publisher_artwork": true,
@@ -686,6 +691,11 @@
     "2a52f7bb3050fda34e01b4a010ed74b0e790b9711603a86a74c03d5a60d5db11": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "NPR Business",
+      "status": "skipped_stale"
+    },
+    "2b7ba610fdaea85f55696830215b271619c6bc9dc9eee171f92b6f2bcbd10719": {
+      "seen_at": "2026-10-19T12:49:09.789011+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "2c0bc726fb7577a2ca7761dc2965811914e5ded2f0c91e4c4697bd551650b9e5": {
@@ -1625,6 +1635,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "70a3143d893989143268963d1a1fe88b88ec719acff18b686ee14d88a98fb16f": {
+      "seen_at": "2026-10-19T12:49:09.789011+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "711304d176845fb4fc9f593b52e1fbc22de2748d8ae6007b17f59ff3fb910397": {
       "created_at": "2026-10-19T11:05:10.544614+00:00",
       "has_embedded_video": false,
@@ -1720,6 +1735,11 @@
     "782d0eff1df90b4d6f6f62642cf390d13d405d75d4bf24ca295fe0c0c87d4ec2": {
       "seen_at": "2026-10-12T06:38:38.333441+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "78863e3eed089e0eb9b0cea50bc8a4192b60f115f57f4964755e40e1865d5a82": {
+      "seen_at": "2026-10-19T12:49:09.789011+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "78b46bc9c11fceaaec5805bc458aa4e6e3914573bae6e84c1849788c050a2ca7": {
@@ -2027,6 +2047,11 @@
     "8ba3bd46be05f686c43250c3abd3fcfa1b3486d6a22a61578e273146487486ba": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "8c65d395ebc259245088e328e71a0db99755463347221d0b717fabc73ed23b7d": {
+      "seen_at": "2026-10-19T12:49:09.789011+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "8c708fedda357a30ad90620abc361ee3ad9f7387ed5944bd406d081c50f01943": {
@@ -2365,6 +2390,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "a78524245ccecf633b6efbb2f5fbcf0ea3387848318163873290261e2ce1577b": {
+      "seen_at": "2026-10-19T12:49:09.789011+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "a814e655ef43ac12ffebd82737dc37ceaa2d707240cf590c891e343922feba0c": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
@@ -2438,6 +2468,11 @@
     "b00c7929aefe1498241e9e24db0b3dced05f772b4eab0ed485705ee4f099eb6f": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "b055a5f2b4d6c2ffbfa8decf910551e318c00829d4c9f14c7a65c685921f1d88": {
+      "seen_at": "2026-10-19T12:49:09.789011+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "b114b0162d6fb9682a29a92108d7975c52ad3aca017ca24bfe5d35b304387b25": {
@@ -3061,6 +3096,11 @@
     "e12e4919bf957a7f6384582d12637c4066e8ddbf5fd5503799dc53ebf5515499": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
+    "e171cbcc94f579d12d56ffd45ec9091e4bc29ff324752cf6a5ce0aa568f18523": {
+      "seen_at": "2026-10-19T12:49:09.789011+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "e1c591ea72490165c38b4f9292560363074c767f422440fbf1eaf85b90c9509d": {
