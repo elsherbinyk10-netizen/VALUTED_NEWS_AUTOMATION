@@ -49,7 +49,14 @@ def source_urls(body):
         url = html.unescape(url)
         parsed = urlparse(url)
         host = (parsed.hostname or "").lower()
-        if not host or host.endswith("valutednews.com") or host.endswith("google.com") or host.endswith("googleusercontent.com"):
+        # Never treat another owned network site or our own storefront as a news publisher.
+        # Internal links and old placeholder URLs can otherwise attach unrelated site artwork.
+        owned_hosts = (
+            "valutednews.com", "skyvalutsweather.space", "solepick.site",
+            "valutedmovies.online", "pdfdownloader.online",
+        )
+        if (not host or any(host == domain or host.endswith("." + domain) for domain in owned_hosts)
+                or host.endswith("google.com") or host.endswith("googleusercontent.com")):
             continue
         if host in ("youtube.com", "www.youtube.com", "youtu.be", "facebook.com", "instagram.com", "x.com", "twitter.com"):
             continue
@@ -204,7 +211,7 @@ def main():
         parsed = urlparse(url)
         basename = parsed.path.rsplit("/", 1)[-1]
         # Shopify's image resize variants can add different UUID suffixes to the same source asset.
-        match = re.match(r"^(.+?_s0-w\\d+)", basename, re.I)
+        match = re.match(r"^(.+?_s0-w\d+)", basename, re.I)
         return (parsed.hostname or "").lower() + "/" + (match.group(1) if match else basename) if basename else ""
 
     from collections import Counter
@@ -223,7 +230,7 @@ def main():
         return not url or generic or repeated_aggregator_art
 
     missing = [a for a in articles if needs_real_image(a)]
-    limit = max(1, min(20, int(env("MEDIA_BACKFILL_LIMIT", "20"))))
+    limit = max(1, min(25, int(env("MEDIA_BACKFILL_LIMIT", "25"))))
     fixed = 0
     unresolved = []
     logging.info("Articles checked (published + drafts)=%d; missing/generic images=%d; per-run limit=%d", len(articles), len(missing), limit)

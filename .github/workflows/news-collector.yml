@@ -27,7 +27,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
 
     env:
       SHOPIFY_STORE_DOMAIN: ${{ secrets.SHOPIFY_STORE_DOMAIN }}
@@ -74,17 +74,17 @@ jobs:
 
       - name: Backfill missing or generic featured images
         env:
-          MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '20' }}
+          MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '25' }}
         run: python backfill_media.py
 
       - name: Audit and repair missing, broken, placeholder, or widely reused article images
         env:
-          MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '20' }}
+          MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '25' }}
         run: python audit_repair_images.py
 
       - name: Add relevant videos to published articles
         env:
-          VIDEO_BACKFILL_LIMIT: ${{ vars.VIDEO_BACKFILL_LIMIT || '20' }}
+          VIDEO_BACKFILL_LIMIT: ${{ vars.VIDEO_BACKFILL_LIMIT || '25' }}
         run: python backfill_video.py
 
       - name: Commit deduplication state safely

@@ -278,19 +278,25 @@ def fetch_related_youtube_embed(story_title, category=""):
                     )
                     page.raise_for_status()
                     soup = BeautifulSoup(page.text, "html.parser")
-                    if provider == "youtube":
-                        nodes = soup.select("a#video-title, a.yt-simple-endpoint#video-title")
-                    else:
-                        nodes = soup.select("li.b_algo h2 a, a[href*='youtube.com/watch?v=']")
+                    # Search-result markup changes frequently. Inspect every anchor that
+                    # directly links to a YouTube watch page instead of relying on one CSS class.
+                    nodes = soup.select("a[href*='watch?v='], a#video-title, a.yt-simple-endpoint#video-title")
                     for node in nodes:
                         href = str(node.get("href", ""))
                         if href.startswith("/watch?v="):
                             href = "https://www.youtube.com" + href
                         parsed_href = urlparse(href)
-                        if parsed_href.hostname not in ("www.youtube.com", "youtube.com") or parsed_href.path != "/watch":
+                        if parsed_href.hostname not in ("www.youtube.com", "youtube.com", "m.youtube.com") or parsed_href.path != "/watch":
                             continue
-                        title_text = clean_text(node.get("title", "") or node.get_text(" ", strip=True))
-                        video_entries.append((href, title_text, "YouTube"))
+                        video_id = dict(parse_qsl(parsed_href.query)).get("v", "")
+                        if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id):
+                            continue
+                        title_text = clean_text(node.get("title", "") or node.get("aria-label", "") or node.get_text(" ", strip=True))
+                        if not title_text:
+                            parent = node.find_parent(["li", "div"])
+                            title_text = clean_text(parent.get_text(" ", strip=True) if parent else "")
+                        if title_text:
+                            video_entries.append(("https://www.youtube.com/watch?v=" + video_id, title_text, "YouTube"))
                     if video_entries:
                         break
                 except requests.RequestException as fallback_error:
