@@ -30,6 +30,11 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "0332e91eea9559a8e97f84827c16d7d9df79c4a10428802422967a59b75d72cb": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "033792dab4a323044665472b725efd990cb75a56e4985251470a667c087583ea": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
@@ -185,6 +190,17 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "0d1ca7925e7422f4d2945ba6d2f860447e864fd13394e4ce3034dc091e6a278e": {
+      "created_at": "2026-10-19T10:50:30.417663+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": true,
+      "shopify_article_id": "gid://shopify/Article/754891653399",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckd6d2l3dz4xo?at_medium=RSS&at_campaign=rss",
+      "status": "draft",
+      "title": "Kenya pastor accused of ordering parents to starve their children to death faces verdict"
+    },
     "0d9a40ba62e30a9e33a913668d1e29ffb26fff8aaa2af72cd766e8442fa2a289": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Variety Music",
@@ -276,6 +292,11 @@
     "15ca30da2fc5105c140c2bddb90cd27f2ba7e57f5778344bc9d175e81bf4e0ff": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "15dda46e4ddf753818fdf50f3e4166af9b031f0eb2fc27fe0ad9574d238fb51b": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "167d0cdc76e9096617b0887d260bed3a090bcc397ccd3743441b4d14d1326095": {
@@ -392,6 +413,11 @@
     "1e8ff0ca33d7e5a6c752e04dcfd12982b079c6880ad59f57a63b43c4452cafab": {
       "seen_at": "2026-10-17T06:08:31.417343+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "1eaf25dd1bd81b1bbd4d058ff25b13409455d72a0be094180b4beb1994d5c8f2": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "1ed9e8d52d8c1185be8234c53ed17965bcca0befbc0fcd9343423226107cc439": {
@@ -541,6 +567,17 @@
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Business",
       "status": "skipped_stale"
+    },
+    "25ebdf6749dec3d473ed06f524a1c1008833fdc25a8bf7e10ae1ac7406e6e83b": {
+      "created_at": "2026-10-19T10:50:30.417663+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754891620631",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm8xz5kxkkkqo?at_medium=RSS&at_campaign=rss",
+      "status": "draft",
+      "title": "You Can See Everything documentary stuns with huge box office debut"
     },
     "26642edca61eefe9f39f190984ff0b63233047b27c17548af40ac493c2159815": {
       "seen_at": "2026-10-12T06:38:38.333441+00:00",
@@ -874,6 +911,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "4090173ac4b7e33d75dc07a45c19dd70f105369375acba06b61f5b7d345105a6": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "4092a753c1b1f9a60820419e0dc4e7c0bd79b07f38191a211f97fa3af7c95429": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
@@ -1055,6 +1097,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "4e50bcab18f574e3c431d1e7438d58734efa9d3905e5192c20c5140335c165fe": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "4e553dd2116e92fd879be776749d51d1cc3b40fe746a4b970f145280c5143764": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Entertainment",
@@ -1146,6 +1193,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "56e185745856c194c37419534b5669aebc32e4212398ad3fd2a1b67f4b82caad": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
     "56fcc685ac2dfe168991d96592f94b56e3b2f5f4f54c697f9c791e44ae86eaad": {
       "created_at": "2026-10-17T06:08:06.057590+00:00",
       "has_embedded_video": false,
@@ -1202,6 +1254,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "59aadab4505a9d9c6d35e4209ad9a6b316afe76fe73c167bae275c44a60b8082": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
     "5c145585894c2fcefed65070fab71c5ec1070136320fc0786ffd44fc4319705b": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Rolling Stone Music News",
@@ -1244,6 +1301,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "5f5e56f511bf9330e82c9f8e1ae5d1a54595c93ea8e801017b5d3e3ca736fab7": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "5f9218739f12f0f2070ad04306410ca0e4b274f11d11990a4452a02009be24f3": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Entertainment",
@@ -1283,6 +1345,11 @@
     "635b0b2984593638ef32fce012be54e44dd3949d62a6df9852421ca1eacc8565": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "63bd8200de37ea2d0b27b0116174b1fb0d22ad4112b10b80294217f91c2cb266": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "63f3e6d83571203638adbecc31dd2189175792534f4bca8e73460f6a9e88182c": {
@@ -1373,6 +1440,11 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "6a3cf7f08336743aa9bb9ec55ca74305459bb1c8be7d703d27c7172cb3d3ee6f": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "6a63b3a96ec49dd06511dc583d6367fda8b9562342c5adfbc98cb61146e1234e": {
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
       "source": "NASA News",
@@ -1399,6 +1471,11 @@
       "status": "draft",
       "title": "Huge Riots and Anti-Government Protests in France: What to Know - The New York Times"
     },
+    "6b6ff484cbb3b693a4fea65a375cfd4bf312e50e3934f054ba4f2c56d1f1687d": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "6bb3aa68c42b4f8a8dc344b706eb6269dfea02089d2e8ba7d8248b31ae6704ee": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Technology",
@@ -1412,6 +1489,11 @@
     "6c2b5fd8af9c0c34c57311896ddd64fdd6881b1b53a7ecabf6a8878a19925919": {
       "seen_at": "2026-10-18T13:35:57.538912+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "6c2f578c8ffac2c250905d4e94a8149bc8fe2866752f807bf9a61aef55f6701b": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "6c74bc37416ac683bef639883c80bc438a9f06bddac3e2b5ab80724c41e56def": {
@@ -1498,6 +1580,17 @@
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
+    },
+    "730a348520838084dfc0074c5225354a427d6fa45528d6778cbfafd871c7903c": {
+      "created_at": "2026-10-19T10:50:30.417663+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News Top Stories",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754891686167",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcHhVRndKQndRWEM0aUtFR1FmbU9HRDRmNFlwWkZtVE9ZdWR6UWp2Z2ZsOGw3b3JDXzZXOVJoelRQa1NIRUFPVmlySWRDTTJfT0theUFWOXFiZGdfLWtRelM3OHNSLVB3SUtvLWZSNVZIaUZkNFN3d3JkbHQxMDRXX19ZT0xkNVd6MmxKQ3kyWV95TWVhcy1qdnVMMWdoblUyaFg5NC14WjB5d1NOZUV1UQ?oc=5",
+      "status": "draft",
+      "title": "Spain's rush to clear Ceuta migrant backlog raises rights concerns - Reuters"
     },
     "7380c158af8ff1c29e4881df47c2485cd24715af6743d9df13d249528e2c014f": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
@@ -1628,6 +1721,11 @@
     "7d3c176324224f271125312264bf38a311da1f808024f7403b8ced321a8475e5": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "7d91f4b191a9248eb1e97e3453290eb80428aaa6d33e4ca95053192968b22c2d": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "7f20739422a6c9dc994fd11f0aec096e241d76a138bd4743cb31ba90fba0c52a": {
@@ -1936,6 +2034,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "93f739923c94d18ee47c34d4675111a2c6361f409078cb612e8e757f0fcf9f5b": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "9425c6a29215c5ea624710f9a168610054f9642caca610abce01056077a2bf4c": {
       "created_at": "2026-10-11T23:18:45.796681+00:00",
       "publisher": "BBC World",
@@ -2075,6 +2178,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "a0c0a8274dc209ea8b7f6ce984a781c15cbb38c75988bdaec095dfd5d9ff56fb": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "a0e77a89b85a6f25aad7caca5ac7218789c841ca808a4da12163af011ea191f7": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
@@ -2199,6 +2307,16 @@
     },
     "ab0c90fa8b7d28dc1ff986e30df0ecd9dc377ca9cb487793fc5f56843aef506d": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "ab0d42833759b69ca3258ec3a468c55e0cd21829d68b3745d41b78afa7533146": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "ac1082f7012aded73e510d6e0e82625e9553263901b1787683fc9d09fafd8183": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Google News Business",
       "status": "skipped_stale"
     },
@@ -2594,9 +2712,19 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "cca9d1bac2fe3bb9532a140e098c9cc423aeb3f6ec39fb49bf99fb374f781fa2": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "ccc8cfcec63655ab18aae96e8f527135e3f12baa075162352698ea54e8090c87": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "cd1eb74272bdae2dfb6acadcf2f28bc0f83611be9e8c1baa39acafe8863a46f1": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "ce6857b2c85f1c377b34e9ecb4e93ff1c91baa7e18a13d8bfba9a81bfc91a9ae": {
@@ -2618,6 +2746,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cwvgde0m2d73o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Orangutans released back into Borneo forest after devastating fires"
+    },
+    "cef4e950ba0db74507dfa8db6d67fdd9c6da8d39fb1f8537c61db5b279015f54": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
     },
     "d01ea56722c7f856fa3e46e0710f18322a344a05f511662ef17338ccabe17ff2": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
@@ -2713,6 +2846,11 @@
     "d8221dfff38834d8f9dd2c677483bfa243de1d7ea5304a9963a616bae0801f20": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
+    "d8542b341e64853e4031c3d8212f02626751db4dd5895c328fa11d17e79cfd8f": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "d8b2e2b81bbb6b138e185e6552343ea4ef807294f4cbbc26d38afc642308d957": {
@@ -3102,6 +3240,11 @@
     },
     "f9fafe921d858bf1f3c3797b60e9f4268741addcc6b7ec514a22f848e78c1ab0": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "fa6b4c5a0a790a342621e05373cd554b25e82affb62ea2ba4c5ed9928a3a4589": {
+      "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Google News Business",
       "status": "skipped_stale"
     },
