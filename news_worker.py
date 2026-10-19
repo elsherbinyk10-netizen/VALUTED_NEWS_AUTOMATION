@@ -755,29 +755,28 @@ def main():
             if not item.get("video_html"):
                 item["video_html"] = fetch_related_youtube_embed(item["title"], item.get("category", ""))
             block_reasons = auto_publish_block_reasons(item, auto_publish)
-            publish = not block_reasons
-            if not publish:
-                logging.info("Keeping as editorial draft: %s — %s", item["title"], "; ".join(block_reasons))
-            if publish:
-                editorial = make_public_news_brief(
-                    item["title"], item["publisher"], item["category"],
-                    item["description"], item["url"], item.get("image_url", ""),
-                    item.get("video_html", "")
+            if block_reasons:
+                # Never create an editorial-review placeholder. Leave blocked items out of
+                # processed state so a later scheduled run retries after source/media recovery.
+                logging.warning(
+                    "Skipped without creating an editorial-review draft; will retry on a later run: %s — %s",
+                    item["title"], "; ".join(block_reasons)
                 )
-            else:
-                editorial = make_editorial(
-                    item["title"], item["publisher"], item["category"],
-                    item["description"], item.get("video_html", "")
-                )
+                continue
+            editorial = make_public_news_brief(
+                item["title"], item["publisher"], item["category"],
+                item["description"], item["url"], item.get("image_url", ""),
+                item.get("video_html", "")
+            )
             article = create_shopify_article(
                 blog_id, editorial["title"], editorial["summary"], editorial["body"],
-                item["url"], item["publisher"], item["category"], publish,
+                item["url"], item["publisher"], item["category"], True,
                 item.get("image_url", "")
             )
             if not article:
                 raise RuntimeError("Shopify returned no article and no userErrors.")
             seen[item["key"]] = {
-                "status": "published" if publish else "draft",
+                "status": "published",
                 "shopify_article_id": article.get("id"),
                 "title": article.get("title"),
                 "source_url": item["url"],
@@ -788,8 +787,7 @@ def main():
                 "created_at": now.isoformat(),
             }
             logging.info(
-                "Created Shopify %s article: %s (image=%s, video=%s)",
-                "published" if publish else "draft",
+                "Created Shopify published article: %s (image=%s, video=%s)",
                 editorial["title"],
                 bool(item.get("image_url")),
                 bool(item.get("video_html")),
