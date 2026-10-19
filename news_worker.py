@@ -609,20 +609,35 @@ def make_public_news_brief(title, publisher, category, description, source_url, 
     return {"title": clean_text(title)[:120], "summary": summary, "body": body, "quality_ok": True}
 
 
+def auto_publish_block_reasons(item, auto_publish):
+    """Return explicit reasons a feed item must remain a draft."""
+    reasons = []
+    description = clean_text(item.get("description", ""))
+    image_url = item.get("image_url", "")
+    if not auto_publish:
+        reasons.append("AUTO_PUBLISH disabled")
+    if item.get("risk"):
+        reasons.append("high-risk topic requires editorial review")
+    # A source-attributed brief may be shorter than a full article, but must contain
+    # meaningful source-provided reporting rather than a headline or teaser.
+    if len(description.split()) < 120 or len(description) < 800:
+        reasons.append(f"source text too short ({len(description.split())} words, {len(description)} characters; need 120 words/800 characters)")
+    if not canonical_url(item.get("url", "")):
+        reasons.append("missing/invalid canonical source URL")
+    if not clean_text(item.get("title", "")):
+        reasons.append("missing title")
+    if not canonical_url(image_url) or image_url_is_generic(image_url):
+        reasons.append("missing or generic featured image")
+    parsed_image = urlparse(image_url) if image_url else None
+    image_host = (parsed_image.hostname or "").lower() if parsed_image else ""
+    if image_host in {"valutednews.com", "www.valutednews.com", "skyvalutsweather.space", "solepick.site", "valutedmovies.online", "pdfdownloader.online", "news.google.com", "google.com", "www.google.com"}:
+        reasons.append("featured image is not verified publisher artwork")
+    return reasons
+
+
 def should_auto_publish(item, auto_publish):
-    """Publish only recent, adequately summarized, low-risk source-attributed briefs."""
-    return bool(
-        auto_publish
-        and not item.get("risk")
-        and len(clean_text(item.get("description", ""))) >= 1500
-        # A homepage excerpt is not a complete article. Require substantial source text.
-        and len(clean_text(item.get("description", "")).split()) >= 350
-        and len(clean_text(item.get("description", ""))) >= 2200
-        and canonical_url(item.get("url", ""))
-        and clean_text(item.get("title", ""))
-        # Do not auto-publish image-less news cards; keep these in draft for review.
-        and canonical_url(item.get("image_url", ""))
-    )
+    """Publish concise, source-attributed briefs only when all safety/quality checks pass."""
+    return not auto_publish_block_reasons(item, auto_publish)
 
 
 def create_shopify_article(blog_id, title, summary, body, source_url, publisher, category, publish, image_url=''):
@@ -739,7 +754,10 @@ def main():
                     item["video_html"] = media["video_html"]
             if not item.get("video_html"):
                 item["video_html"] = fetch_related_youtube_embed(item["title"], item.get("category", ""))
-            publish = should_auto_publish(item, auto_publish)
+            block_reasons = auto_publish_block_reasons(item, auto_publish)
+            publish = not block_reasons
+            if not publish:
+                logging.info("Keeping as editorial draft: %s — %s", item["title"], "; ".join(block_reasons))
             if publish:
                 editorial = make_public_news_brief(
                     item["title"], item["publisher"], item["category"],
