@@ -211,6 +211,17 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "0dec870e25608c6fd28469081886aa3e2b4fbe6845809e62fed09c30c5dd8bc2": {
+      "created_at": "2026-10-19T11:05:10.544614+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News Entertainment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754891817239",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxON3dzSHdVMFVTODdPZXBQcWY5OUplVTcyUFBjd0tZZ0hrUkg0TVc1UTFXVVBsWjlkNmh2cG1PdWU1bDBZbm9JaUVoTHBCUXJBMGU1bVdLWkk5NkdVcV9xSXRvT1plTEFXMTAzMTl4R2pHbm9Ia1NwYmNRWVhmc1E4S1hwRy1Vem1Lc1lhdzc4YWo5Nk1MSm42QWZ1U2hBNkE?oc=5",
+      "status": "draft",
+      "title": "Barbara Palvin Says It\u2019s \u2018Not That Big of a Deal\u2019 to Walk Victoria\u2019s Secret Catwalk at 6 Weeks Postpartum (Exclusive) -"
+    },
     "106b657c30ff37f732ffa042f435e26cf426131a46e42176337eee9b77452627": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "NASA News",
@@ -244,6 +255,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/crx23y3d970vo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Turkey police raid opposition TV station, halting live broadcasts"
+    },
+    "121db043e0229197c70b8e6f3c823c909d7e2175de9d4b8da5fdf6ec277d54b5": {
+      "seen_at": "2026-10-19T11:05:10.544614+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
     },
     "123f715457c06110bf64e12e834020c35c16ba690fad048ee2f7507530325106": {
       "created_at": "2026-10-12T06:38:38.333441+00:00",
@@ -322,6 +338,17 @@
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "NASA News",
       "status": "skipped_stale"
+    },
+    "1745458ce35508624c79e674d71bdcffdc27c229936312dc9611e5dc03a7e254": {
+      "created_at": "2026-10-19T11:05:10.544614+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News Top Stories",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754891850007",
+      "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5zMzJUY3phSUlvUEpJMVhaM0w3dmNoaGxleGM3RGRIUGNtZ05JOWxjdUJsSzdDZS1HU2ZKVnE2YjJTQjFaUm9jNi1uaUVKUFozUl9SVDNVNWJBU1BPVUVQQklyQkJjUjJtRHZHc0dWX0lxZDVaclh3aDhpTkszLU3SAYQBQVVfeXFMTnVKX1ZuMlM4MnotcjM4aHJVdno5RXVZUWtGc2R0bVl2cWhvRG5TNlA0QkNxVUM4ZS1qanFyQTZlTUVmdU5iTlJWcmJBUGZ5QWdPSjBiekJka2p3SmtPdm41dTNBaXYwZHhidFpzcXRwTkd5MHBMX3h2dGZBbk1pZ1lNUHlZ?oc=5",
+      "status": "draft",
+      "title": "Robot factories and hypersonic missiles: JPMorgan Chase\u2019s first $5 billion of defense investments - CNBC"
     },
     "178a4d548f348666a1ac9cb0243a53a3402ebbf216e246d40bcd0b317ba3d0ce": {
       "created_at": "2026-10-17T04:58:37.026768+00:00",
@@ -1561,6 +1588,17 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "711304d176845fb4fc9f593b52e1fbc22de2748d8ae6007b17f59ff3fb910397": {
+      "created_at": "2026-10-19T11:05:10.544614+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754891751703",
+      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVENUREZRaW9aZi10TGVhVW51d1NlVzVGdGFXUVdGSUk0YnJQTFlGaXFRNDNybkd3dHgtVjVyUlBEYTNRZWVHOHRIdFZKOUk2R3dyLTVnZE53cGJBcHI0b2w3WGNmbnhFdkhORUFhb0NyOC1XN05wWEluX1hrVGI2dlhOU1dXRzZHWjlLNm1WUjZnNGtLaXFzSnEyOXJSMHRsNUhSMW1EbkFRcVQzLU56NXN3?oc=5",
+      "status": "draft",
+      "title": "The Maya collapse was blamed on drought. The full story is more complicated. - The Washington Post"
+    },
     "7150157674e3f1909262ee0f1af3d35d4a5938cd8dea52e6d44a3628edd329e1": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Science",
@@ -2290,6 +2328,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "a8d6f9b1cfaec7823456f393848e1458e829e3f5c182488550094d175c4d5189": {
+      "seen_at": "2026-10-19T11:05:10.544614+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "a8dcae6b1c52ec2bfedfa6b4cc0ed60b707828bcd81fb2d8c2c2b064bed053f0": {
       "seen_at": "2026-10-14T12:48:42.226493+00:00",
       "source": "BBC Business",
@@ -2407,6 +2450,11 @@
     "b63e79dbf28efa27a74c64d1376199adce73a5a3a4438725e4b4f31008368639": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "b66af08ac468773983e1f24b4771f1b0422c195ecb2b6d0551096536c4b0715e": {
+      "seen_at": "2026-10-19T11:05:10.544614+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "b677fdedabaf44798b79a308f434fcab6e6331180980b7efb953f13fe521ebdd": {
@@ -2965,6 +3013,11 @@
     "e1c591ea72490165c38b4f9292560363074c767f422440fbf1eaf85b90c9509d": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "e345fab5bc1866323ba889280b627f1f32d367ff9d6acd6fa92e9f87208aefa7": {
+      "seen_at": "2026-10-19T11:05:10.544614+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "e38eb9052334f4b4e75cde70e14d6fe5762185fcef91a036dede5445cc1c6218": {
