@@ -169,6 +169,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "0bd739884dcd06f2ef3cf6804cb4fc93daf9c29c68c905a004d6217478c082e6": {
+      "seen_at": "2026-10-19T11:26:42.322929+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "0c5a3b385b90d43453ce64035b13c7a21ce607b75ec3947eac2bec674e4c4fca": {
       "created_at": "2026-10-17T05:19:09.136762+00:00",
       "has_embedded_video": false,
@@ -2217,6 +2222,11 @@
     "9d44d70993c5d210fec3d8982819925b0da90c2e5bf261758c2e2ed84a0a862f": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "9d765bf45a0b88ea797bbcb290faab6a20af11330de5de3efa4c5179af02fb7b": {
+      "seen_at": "2026-10-19T11:26:42.322929+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "9ddd951de91855094d1430c9f539cc2c5a0df10791a118f8333de9f6ce6e6a64": {
