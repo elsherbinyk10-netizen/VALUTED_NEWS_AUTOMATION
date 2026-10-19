@@ -483,6 +483,17 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "2077a3a6254e3c3ec56b3c56996e64bd64cf2eeed98a6db2bb5769f3376581cb": {
+      "created_at": "2026-10-19T11:09:19.891971+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754891948311",
+      "source_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOWHpmR1M1ak5abS10aHNhOWZJOTJ5Y2lTNGxSZ05UVHVZRkFGS29OYkU3eUt4UTg0ZGxvSFpIOVJ6SlZpZjFlYTlDVF96WUVjYnBZS1hjUURKZEVURGtrM093bTgtb3MtcVZkMlNyTnpWV0cyMF9oM2lQTlpKbm9KY2FwT1NGUGZNZFZaNGFzaU5uV3o4blZhdWJxT1c2OWlma01KMGhnT0ExVmUzRzVHLXY1ZmJ3ckdFRDktUC1STWxmQkhtZHd2QWg1THhWTHc0aVRWd1dsYWdZN2txWGJ6aQ?oc=5",
+      "status": "draft",
+      "title": "A big 'yikes' still hangs over the AI trade as Meta and Tesla report: What to watch this week - Yahoo Finance"
+    },
     "2092090de4aa57900c52858bb9d0600a02eaf85309ce5917f6bab2a21e290862": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Billboard Pro Music Business",
@@ -584,6 +595,11 @@
       "source_url": "https://www.bbc.co.uk/news/videos/cwvgde9vrdd9o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Watch: What's behind Trump's energy ceasefire claim?"
+    },
+    "24fc5221334c7eb6faa5476662bb12ad7bb1f2627bf6a45b79d39209e4aaf091": {
+      "seen_at": "2026-10-19T11:09:19.891971+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
     },
     "2554deac31f8536bae3567f88cd6fc39f3b4dcac7f6b674ebe1d8e5da77ef115": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
@@ -1170,6 +1186,17 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "520b9f59f60e503f2a2ff506c14cced46ead26b9d2529837e9006d51257a45f2": {
+      "created_at": "2026-10-19T11:09:19.891971+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News Technology",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754891981079",
+      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYko1ejBNd0luTGpNVV9CcXVGNFBndDFROVFxRHFSQ0Q0VzM5SG5JTENNMHFzY1l3eVVvdVFMTHRWQjR0NkVoRHRHVk9pU2RlU1RMNlVHQURuaW5WUlZUaTFtZTJoTEVEUUk5N3hGZ2t3c3ItTzl0dklta2h1VG4xM2tPVXh2cTNGSU91bHFoMjZFUUtRZzUxUXRYQTNyQ19VNzQ4cQ?oc=5",
+      "status": "draft",
+      "title": "US teens can access \u2018nudify\u2019 apps despite Apple and Google\u2019s parental controls, report finds - The Guardian"
+    },
     "528ff2fd500f7c20806100dcf34c43a9737504049bfb931cca564ed0cf78b31d": {
       "created_at": "2026-10-16T12:49:27.685790+00:00",
       "has_publisher_artwork": true,
@@ -1425,6 +1452,11 @@
     "66662a00a700c4c4d880c592ca88be330022fe213a1dd1371510d2cd5fc3739b": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "666cfac8a6e0e121c13e22c376aafef05a8f7dfa07c4597d19ce6b9907a88e93": {
+      "seen_at": "2026-10-19T11:09:19.891971+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "668b9f39c0b352b58648842a8ec2d8489220f3f4dbe934b6f22789f27f5ce959": {
@@ -2930,6 +2962,17 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "da5746e04c646f7219920be19e88e21382b548019c49768a17c8bb39e7178222": {
+      "created_at": "2026-10-19T11:09:19.891971+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "Google News Top Stories",
+      "risk_flag": true,
+      "shopify_article_id": "gid://shopify/Article/754891915543",
+      "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5rdmVJRXVkY19pbkc0TFp3dTY4dnVEcHQ1ODFnYWFWdlhPS0pHR1FMbERKYXFPTnI1NXZFMmM4ODd3bGJHR01EazlZV21IVEZ6WDdzaHlZMHBhYXo2aWd6WHpKSmE2RFJyZDM0c01aeDk2UQ?oc=5",
+      "status": "draft",
+      "title": "Boy among 2 killed after truck drives onto Wichita soccer field, 11 others injured, police say - CBS News"
+    },
     "dadab849ef805e7baf2b5cfe913501c78264d55f726b547735cb0615faf158a4": {
       "seen_at": "2026-10-17T04:21:48.914515+00:00",
       "source": "Google News World",
@@ -3348,6 +3391,11 @@
     "fe1c40f9b39ce3ff33db8b7b349c1362b1cc77f65867b91fa6f00a7cbf2d83cc": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "fea0e4c50df0b1221416f539326b78106da0f8a63db5f4665a3973651327181a": {
+      "seen_at": "2026-10-19T11:09:19.891971+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "fec2ddb6cf3f1e21dd9ae3b7f98e6cdcea3d5416f8ba75480fbc4cdbeb416639": {
