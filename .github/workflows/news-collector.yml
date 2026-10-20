@@ -72,6 +72,11 @@ jobs:
         # Immediate run requested on 2026-10-19; workflow-file push triggers this run.
         run: python news_worker.py
 
+      - name: Add relevant videos to published articles
+        env:
+          VIDEO_BACKFILL_LIMIT: ${{ vars.VIDEO_BACKFILL_LIMIT || '250' }}
+        run: python backfill_video.py
+
       - name: Backfill missing or generic featured images
         env:
           MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '100' }}
@@ -81,11 +86,6 @@ jobs:
         env:
           MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '100' }}
         run: python audit_repair_images.py
-
-      - name: Add relevant videos to published articles
-        env:
-          VIDEO_BACKFILL_LIMIT: ${{ vars.VIDEO_BACKFILL_LIMIT || '250' }}
-        run: python backfill_video.py
 
       - name: Commit deduplication state safely
         if: always()
