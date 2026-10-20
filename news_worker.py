@@ -865,6 +865,12 @@ def main():
                     logging.info("Recovered full source-page text for candidate: %s", item["title"])
             if not item.get("video_html"):
                 item["video_html"] = fetch_related_youtube_embed(item["title"], item.get("category", ""))
+            # Published articles must have an actual story-matched video embed.
+            # If no confident video can be found, leave this story unprocessed so a later
+            # scheduled run can retry instead of publishing a video-less article.
+            if not item.get("video_html"):
+                logging.warning("Skipped: no relevant embeddable video found; will retry later: %s", item["title"])
+                continue
             block_reasons = auto_publish_block_reasons(item, auto_publish)
             if block_reasons:
                 # Never create an editorial-review placeholder. Leave blocked items out of
