@@ -107,21 +107,29 @@ def find_publisher_source(title):
 
 
 def wikimedia_image(title):
-    """Find a genuinely related Commons image with a reusable license and return its credit."""
-    query = requests.get(
-        "https://commons.wikimedia.org/w/api.php",
-        params={
-            "action": "query", "format": "json", "generator": "search",
-            "gsrsearch": title, "gsrnamespace": 6, "gsrlimit": 8,
-            "prop": "imageinfo", "iiprop": "url|extmetadata", "iiurlwidth": 1400,
-        },
-        headers=HEADERS, timeout=(5, 12),
-    )
-    query.raise_for_status()
-    pages = query.json().get("query", {}).get("pages", {})
-    stopwords = {"news", "latest", "update", "updates", "what", "when", "where", "does", "that", "this", "from", "with", "about", "guide", "how", "follow", "world", "report", "reports", "explainer", "explained", "today", "2026"}
-    title_terms = set(re.findall(r"[a-z0-9]{4,}", title.lower())) - stopwords
+    """Find a related, reusable Commons image with title overlap and explicit attribution."""
+    stopwords = {"news", "latest", "update", "updates", "what", "when", "where", "does", "that", "this", "from", "with", "about", "guide", "how", "follow", "world", "report", "reports", "explainer", "explained", "today", "2026", "after", "amid", "says", "said", "could", "would", "will", "over", "into", "their", "your", "new"}
+    title_terms = list(dict.fromkeys(re.findall(r"[a-z0-9]{4,}", title.lower())))
+    useful_terms = [term for term in title_terms if term not in stopwords]
+    queries = [title]
+    if len(useful_terms) >= 3:
+        queries.append(" ".join(useful_terms[:6]))
+    if len(useful_terms) >= 4:
+        queries.append(" ".join(useful_terms[:3]))
+    pages = {}
+    for search_term in dict.fromkeys(queries):
+        try:
+            query = requests.get(
+                "https://commons.wikimedia.org/w/api.php",
+                params={"action":"query","format":"json","generator":"search","gsrsearch":search_term,"gsrnamespace":6,"gsrlimit":20,"prop":"imageinfo","iiprop":"url|extmetadata","iiurlwidth":1400},
+                headers=HEADERS, timeout=(5, 12),
+            )
+            query.raise_for_status()
+            pages.update(query.json().get("query", {}).get("pages", {}))
+        except (requests.RequestException, ValueError) as exc:
+            logging.info("Commons search unavailable for '%s': %s", search_term, exc)
     candidates = []
+    term_set = set(useful_terms)
     for page in pages.values():
         info = (page.get("imageinfo") or [{}])[0]
         meta = info.get("extmetadata") or {}
@@ -130,16 +138,16 @@ def wikimedia_image(title):
         artist = clean_text((meta.get("Artist") or {}).get("value", ""))
         description = clean_text((meta.get("ImageDescription") or {}).get("value", ""))
         combined = (page.get("title", "") + " " + description).lower()
-        score = len(title_terms & set(re.findall(r"[a-z0-9]{4,}", combined)))
-        if score < 2 or not info.get("thumburl") or not license_name:
+        overlap = term_set & set(re.findall(r"[a-z0-9]{4,}", combined))
+        if len(overlap) < 2 or not info.get("thumburl") or not license_name:
             continue
         if not any(x in license_name.lower() for x in ("cc0", "public domain", "cc by", "cc-by", "cc by-sa", "cc-by-sa")):
             continue
-        candidates.append((score, info["thumburl"], page.get("title", ""), artist, license_name, license_url))
+        candidates.append((len(overlap), info["thumburl"], page.get("title", ""), artist, license_name, license_url, description))
     if not candidates:
         return None
     candidates.sort(reverse=True)
-    score, url, file_title, artist, license_name, license_url = candidates[0]
+    score, url, file_title, artist, license_name, license_url, description = candidates[0]
     if not image_is_valid(url):
         return None
     credit = "Image credit: Wikimedia Commons — " + file_title
@@ -148,7 +156,9 @@ def wikimedia_image(title):
     credit += " · " + license_name
     if license_url:
         credit += " · " + license_url
-    return {"url": url, "credit": credit, "alt": title}
+    desc_terms = set(re.findall(r"[a-z0-9]{4,}", (file_title + " " + description).lower()))
+    alt = title if len(term_set & desc_terms) >= 3 else "Illustrative image related to: " + title + " (not necessarily depicting the specific event)"
+    return {"url": url, "credit": credit, "alt": alt}
 
 
 def list_articles():
@@ -252,8 +262,9 @@ def main():
                 chosen = {"url": candidate, "alt": article["title"], "credit": "Image source: " + url}
                 source = url
                 break
-        # Use Commons only for evergreen explainers and city guides with no usable publisher image.
-        if not chosen and re.search(r"\b(guide|how to|how does|explainer|what happened|how to verify|news:|how to follow|cairo|museum|malls?|restaurants?|hotels?|technology|science|sports|politics|health|business|markets?)\b", article["title"], re.I):
+        # Licensed, title-matched Commons artwork is a fallback for current stories too.
+        # If it may not depict the exact event, the image alt text explicitly says illustrative.
+        if not chosen:
             try:
                 chosen = wikimedia_image(article["title"])
             except Exception as exc:
