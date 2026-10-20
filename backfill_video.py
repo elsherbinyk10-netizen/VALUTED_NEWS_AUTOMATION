@@ -15,9 +15,8 @@ from backfill_media import source_urls
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 BLOG_ID = env("SHOPIFY_BLOG_ID", "gid://shopify/Blog/126010065175")
 STATE_FILE = Path("data/video_backfill.json")
-# Give each article a 24-hour cooldown so each run can move through the archive in batches.
-# Unresolved articles are retried on a later scheduled run, after older items get a turn.
-RETRY_DAYS = 1
+# Retry unresolved articles every scheduled run so the whole archive is rechecked.
+RETRY_DAYS = 0
 
 
 def load_state():
