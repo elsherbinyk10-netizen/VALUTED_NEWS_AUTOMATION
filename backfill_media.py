@@ -230,7 +230,7 @@ def main():
         return not url or generic or repeated_aggregator_art
 
     missing = [a for a in articles if needs_real_image(a)]
-    limit = max(1, min(25, int(env("MEDIA_BACKFILL_LIMIT", "25"))))
+    limit = max(1, min(100, int(env("MEDIA_BACKFILL_LIMIT", "100"))))
     fixed = 0
     unresolved = []
     logging.info("Articles checked (published + drafts)=%d; missing/generic images=%d; per-run limit=%d", len(articles), len(missing), limit)
