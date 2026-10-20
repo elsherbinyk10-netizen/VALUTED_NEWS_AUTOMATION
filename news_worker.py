@@ -457,7 +457,23 @@ def fetch_article_media(source_url):
             video_html = extract_video_embed({"content": [{"value": candidate_markup}]})
             if video_html:
                 break
-        return {"image_url": image_url, "video_html": video_html}
+
+        # Extract readable reporting from the publisher page when an RSS feed
+        # provides only a short teaser. Keep this source text for quality checks;
+        # the published brief remains attributed and links to the original.
+        article_root = soup.find("article") or soup.find("main") or soup
+        for node in article_root.select("script, style, nav, footer, header, aside, form, noscript, figure, .advertisement, .ad, .related, .social-share"):
+            node.decompose()
+        paragraphs = []
+        seen_paragraphs = set()
+        for node in article_root.find_all(["p", "h2", "h3"]):
+            text_value = clean_text(node.get_text(" ", strip=True))
+            if len(text_value) < 35 or text_value in seen_paragraphs:
+                continue
+            seen_paragraphs.add(text_value)
+            paragraphs.append(text_value)
+        article_text = " ".join(paragraphs)
+        return {"image_url": image_url, "video_html": video_html, "article_text": article_text}
     except Exception as exc:
         logging.debug("Publisher media metadata unavailable for %s: %s", source_url, exc)
         return {"image_url": "", "video_html": ""}
@@ -795,12 +811,15 @@ def main():
             logging.exception("Feed processing failed: %s", name)
 
     candidates.sort(key=lambda x: x["published"] or datetime(1970, 1, 1, tzinfo=timezone.utc), reverse=True)
-    candidates = candidates[:max_items]
-    logging.info("Found %d new candidate(s); dry_run=%s; auto_publish=%s", len(candidates), args.dry_run, auto_publish)
+    candidates = candidates[:max_items * 10]
+    logging.info("Found %d candidates to quality-check; publication cap=%d; dry_run=%s; auto_publish=%s", len(candidates), max_items, args.dry_run, auto_publish)
 
     failures = 0
+    published_count = 0
 
     for item in candidates:
+        if published_count >= max_items:
+            break
         logging.info("Candidate [%s] %s — %s", item["category"], item["title"], item["url"])
         if args.dry_run:
             continue
@@ -812,6 +831,9 @@ def main():
                     item["image_url"] = media["image_url"]
                 if not item.get("video_html") and media.get("video_html"):
                     item["video_html"] = media["video_html"]
+                if len(clean_text(item.get("description", "")).split()) < 120 and len(media.get("article_text", "").split()) >= 120:
+                    item["description"] = media["article_text"]
+                    logging.info("Recovered full source-page text for candidate: %s", item["title"])
             if not item.get("video_html"):
                 item["video_html"] = fetch_related_youtube_embed(item["title"], item.get("category", ""))
             block_reasons = auto_publish_block_reasons(item, auto_publish)
@@ -835,6 +857,9 @@ def main():
             )
             if not article:
                 raise RuntimeError("Shopify returned no article and no userErrors.")
+            published_count += 1
+            existing_titles.add(normalized_story_title(item["title"]))
+            existing_sources.add(canonical_url(item["url"]))
             seen[item["key"]] = {
                 "status": "published",
                 "shopify_article_id": article.get("id"),
@@ -861,8 +886,8 @@ def main():
         save_state(state)
 
     logging.info(
-        "Run complete: candidates=%d failures=%d dry_run=%s",
-        len(candidates), failures, args.dry_run
+        "Run complete: candidates_checked=%d published=%d failures=%d dry_run=%s",
+        len(candidates), published_count, failures, args.dry_run
     )
     if failures:
         raise SystemExit(1)
