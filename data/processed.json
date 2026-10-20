@@ -135,6 +135,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "0890c113dc11298dc42e3e3e7323ebe086889639c2421ef411dbf8feb4e12529": {
+      "seen_at": "2026-10-20T10:43:29.843909+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "08ef32cc352cc2c3eeeda5b2cfc0fc4c4a1c89b446635a0eb9629716216ecb2b": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News World",
@@ -1782,6 +1787,17 @@
       "status": "draft",
       "title": "The Maya collapse was blamed on drought. The full story is more complicated. - The Washington Post"
     },
+    "713828fff39602a3e13bbc5bbf14ef451c2b0c65516826e4f0b69d4edf0beb0d": {
+      "created_at": "2026-10-20T10:43:29.843909+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754914066711",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck87ze7wl4qno?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Burnham vows end to 'rip-off parking charges' under new rules"
+    },
     "7150157674e3f1909262ee0f1af3d35d4a5938cd8dea52e6d44a3628edd329e1": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Science",
@@ -2586,6 +2602,17 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "a8903642cc44d53a7d8bbe0a7b6547f3325f1b58919dfa03f58b7e503b32a1b9": {
+      "created_at": "2026-10-20T10:43:29.843909+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754914033943",
+      "source_url": "https://www.bbc.co.uk/news/articles/cw5yn5e8mezvo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Suspect arrested after historic town hall set alight during disorder - French media"
+    },
     "a8d6f9b1cfaec7823456f393848e1458e829e3f5c182488550094d175c4d5189": {
       "seen_at": "2026-10-19T11:05:10.544614+00:00",
       "source": "Google News Entertainment",
@@ -2822,6 +2849,17 @@
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
+    },
+    "bd0c73bf7f7e0cc3f9cc99e51398ff05b1d754cf7e873eea03374bfca163ab2c": {
+      "created_at": "2026-10-20T10:43:29.843909+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754913935639",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6eq327pzr53o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Jobless rate falls but small firms cut back hiring"
     },
     "bd3f70535fc9216303752b5a944a09793af1e0078ceefa71549a680aac0546dc": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
