@@ -36,7 +36,7 @@ jobs:
       SHOPIFY_CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}
       
       SHOPIFY_API_VERSION: "2026-10"
-      AUTO_PUBLISH: 'false'
+      AUTO_PUBLISH: 'true'
       SHOPIFY_BLOG_ID: "gid://shopify/Blog/126010065175"
       MAX_ARTICLES_PER_RUN: '3'
       MAX_AGE_HOURS: ${{ vars.MAX_AGE_HOURS || '36' }}
@@ -79,7 +79,7 @@ jobs:
 
       - name: Audit and repair missing, broken, placeholder, or widely reused article images
         env:
-          MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '25' }}
+          MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '100' }}
         run: python audit_repair_images.py
 
       - name: Add relevant videos to published articles
