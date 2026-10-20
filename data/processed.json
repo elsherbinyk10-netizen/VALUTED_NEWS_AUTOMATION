@@ -1560,6 +1560,17 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "5ff1d2988ba277683198e6c152318f7c60145a790d1d6b494b2fc6d88dd74db7": {
+      "created_at": "2026-10-20T12:49:14.255050+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754919014679",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq1m4zz9e44go?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Bereaved families could face 'unjust' tax bill after civil service pension delays"
+    },
     "6051a59784aaab81619050b3f14e9a25f2f650e858a33947c2b042988fa5e3ec": {
       "seen_at": "2026-10-12T06:38:38.333441+00:00",
       "source": "BBC Business",
@@ -2907,6 +2918,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "b86e086b6ebc4f2a4775570d3d64be7c2c192f8c62cb34840659d4e7f3c9efae": {
+      "seen_at": "2026-10-20T12:49:14.255050+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "b8e9b61a18859af0ddefa18353797c005184e48c4a058d6b94b09c1b5ee10469": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
@@ -3517,6 +3533,17 @@
       "status": "published",
       "title": "Storm Austen to bring severe gales to UK as weather warning issued"
     },
+    "e2b1f409376e92087966dd03b990e767c34795478f434ae2786b422fa25e7d51": {
+      "created_at": "2026-10-20T12:49:14.255050+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Technology",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754919047447",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqm26zzl0k12o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "UK asks Apple to widen access to its payment tech"
+    },
     "e345fab5bc1866323ba889280b627f1f32d367ff9d6acd6fa92e9f87208aefa7": {
       "seen_at": "2026-10-19T11:05:10.544614+00:00",
       "source": "Google News Technology",
@@ -3737,6 +3764,11 @@
     "f1315209d972f617ce6525a1ea7ffcbfc874f1f8cf2b924736078c0dc8a67a82": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
+    "f1530085e68acc0153c6f304ebe319954dac2342d255e5773cfbb91acc15c365": {
+      "seen_at": "2026-10-20T12:49:14.255050+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "f1aedc63c799bda133d5a530204f98287ed314fa568118085b8fb618b938e2a0": {
