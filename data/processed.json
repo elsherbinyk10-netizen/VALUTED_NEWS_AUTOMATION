@@ -2164,6 +2164,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "8afc06e671fe07c92001a0a73c02122ce617e345a096ec16c2630b34efbdfb57": {
+      "seen_at": "2026-10-20T10:14:51.554768+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "8b461ffd78bd31cc20a6bb0042f0fa4abeebb5af7423eb93126ad77fb89d24f9": {
       "seen_at": "2026-10-12T18:32:36.737885+00:00",
       "source": "BBC Business",
@@ -3511,6 +3516,11 @@
     "f302ac9cb615f1481b500d8b94be96d3482050abe2da0ef590006e375b6d9085": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "f3424c162f20adc38286ba434e8ee00adebd0967efd37df1d63336a046d19793": {
+      "seen_at": "2026-10-20T10:14:51.554768+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "f3a72496ba3397ea8ea5ed37caf3c872b602f2c821d83d7a792408927edf0af4": {
