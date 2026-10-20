@@ -15,6 +15,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "022ad7569a85a72f5446fcf84de20814633831a326b44309bfc2f464b5106284": {
+      "seen_at": "2026-10-20T11:47:10.493243+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "024c80ca33de095ff05886071d1ed7e70499830886c12b16836d217bd7151f3a": {
       "created_at": "2026-10-16T18:43:47.826831+00:00",
       "has_publisher_artwork": true,
@@ -472,6 +477,17 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "1c4f9023c98b1148baae4363dc798499c54c020dcc818193953b45dbde624300": {
+      "created_at": "2026-10-20T11:47:10.493243+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754916983063",
+      "source_url": "https://www.bbc.co.uk/news/articles/c59vz71kxxgzo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "\u00a330 rise in payments for crisis-hit households"
+    },
     "1d060f804230bcac24f6d183f6d876ec27ddc828dbf5a9e350e37dcf1e819818": {
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
       "source": "NASA News",
@@ -541,6 +557,11 @@
     "2041e46b627cda9507dfe5d6a840b8cd80e716102328d11c3babab100f6aa4e6": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "2064d808e1e7e059218c5c916266bd59f7cab585d6a616a8cc66f814f5bf52f1": {
+      "seen_at": "2026-10-20T11:47:10.493243+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "206604669dfb7483c19857f74fdbe843e97d354a4d4da69cd19684dedef438de": {
@@ -2381,6 +2402,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "96a1d05f6574f4f54ed7eba4c0f9e30b30da13d4279208823c416fb2a56413b2": {
+      "seen_at": "2026-10-20T11:47:10.493243+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "96faa508b0e30813b50f2c7436506d8fbc1cdd73d65af8588c8afd4f9b72ef60": {
       "created_at": "2026-10-14T12:48:42.226493+00:00",
       "has_publisher_artwork": true,
@@ -3434,9 +3460,25 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "e788c7fc279974cc44bd38254bc8f638de19b4c613c0f84915f1d4fcc60a897e": {
+      "created_at": "2026-10-20T11:47:10.493243+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754917015831",
+      "source_url": "https://www.bbc.co.uk/news/articles/cvrly550780po?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Residents warned not to drink tap water after hundreds fall sick near South Africa capital"
+    },
     "e79817d7ec61bb3dea4dee2c513c04b616836020f1de5cf456a51a5a595770b3": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "e79e077a07ff0a3008042476cc600dcfbb222b1692990c6c35ca0e547684b7b3": {
+      "seen_at": "2026-10-20T11:47:10.493243+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "e7a765c36abfa4ee490c38730fa3559df1ea028a142f27af2d69ad5fe1c411b7": {
@@ -3559,6 +3601,17 @@
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Entertainment",
       "status": "skipped_stale"
+    },
+    "ef624b68b0213a9bd9e04b71ad62210a729841c04190024467016c3e462424b7": {
+      "created_at": "2026-10-20T11:47:10.493243+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754916950295",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck9qzn193lrlo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Zelensky prepares for Oslo talks with US envoys as Rubio denies withholding intelligence"
     },
     "ef96175331f33598955ada750461212d41f7363fb30f3bd070e0c0e1a1e3c412": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
