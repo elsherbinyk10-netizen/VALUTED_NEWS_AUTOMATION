@@ -78,7 +78,7 @@ def main():
     attempted = state.setdefault("attempted", {})
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=RETRY_DAYS)
-    limit = max(1, min(100, int(env("VIDEO_BACKFILL_LIMIT", "100"))))
+    limit = max(1, min(250, int(env("VIDEO_BACKFILL_LIMIT", "250"))))
     articles = list_articles()
     eligible = []
     for article in articles:
