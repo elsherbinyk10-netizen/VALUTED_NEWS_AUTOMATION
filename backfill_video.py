@@ -29,16 +29,27 @@ def load_state():
 
 def list_articles():
     query = """
-    query PublishedArticlesForVideoBackfill($id: ID!) {
+    query PublishedArticlesForVideoBackfill($id: ID!, $after: String) {
       blog(id: $id) {
-        articles(first: 250, reverse: true) {
+        articles(first: 250, reverse: true, after: $after) {
           nodes { id title handle body isPublished tags }
+          pageInfo { hasNextPage endCursor }
         }
       }
     }
     """
-    data = shopify_graphql(query, {"id": BLOG_ID})
-    return (data.get("blog") or {}).get("articles", {}).get("nodes", [])
+    articles = []
+    cursor = None
+    # Read every page in the blog archive; Shopify caps each page at 250.
+    while True:
+        data = shopify_graphql(query, {"id": BLOG_ID, "after": cursor})
+        connection = (data.get("blog") or {}).get("articles", {})
+        articles.extend(connection.get("nodes", []))
+        page_info = connection.get("pageInfo") or {}
+        if not page_info.get("hasNextPage") or not page_info.get("endCursor"):
+            break
+        cursor = page_info["endCursor"]
+    return articles
 
 
 def update_body(article_id, body):
@@ -96,6 +107,9 @@ def main():
             continue
         eligible.append(article)
 
+    # Process never-attempted articles first, then the oldest attempts. This prevents
+    # unresolved early articles from starving the rest of a large archive.
+    eligible.sort(key=lambda article: attempted.get(str(article.get("id") or ""), ""))
     logging.info("Articles checked (published + drafts)=%d; missing video=%d; batch limit=%d", len(articles), len(eligible), limit)
     processed = 0
     added = 0
