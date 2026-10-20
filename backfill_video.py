@@ -76,7 +76,7 @@ def main():
     attempted = state.setdefault("attempted", {})
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=RETRY_DAYS)
-    limit = max(1, min(25, int(env("VIDEO_BACKFILL_LIMIT", "20"))))
+    limit = max(1, min(100, int(env("VIDEO_BACKFILL_LIMIT", "100"))))
     articles = list_articles()
     eligible = []
     for article in articles:
@@ -89,6 +89,8 @@ def main():
             last_attempt = datetime.fromisoformat(stamp.replace("Z", "+00:00")) if stamp else None
         except ValueError:
             last_attempt = None
+        # Retry unresolved videos daily, rather than only once every 24 hours,
+        # and allow a later run to find videos newly indexed by search providers.
         if last_attempt and last_attempt > cutoff:
             continue
         eligible.append(article)
@@ -123,6 +125,14 @@ def main():
                     logging.info("Publisher video lookup failed for %s: %s", article.get("title"), source_error)
             if not embed:
                 embed = fetch_related_youtube_embed(article.get("title", ""), category)
+            if not embed:
+                # Search exact source headline first, then retry with a shorter
+                # entity-rich query. The selector still enforces title/category
+                # overlap before any video can be attached.
+                source_title = article.get("title", "")
+                short_title = re.sub(r"[:|—–-].*$", "", source_title).strip()
+                if short_title and short_title.lower() != source_title.lower():
+                    embed = fetch_related_youtube_embed(short_title, category)
             if not embed:
                 logging.info("No confident %s video match; leaving article unchanged: %s", category, article.get("title"))
                 continue
