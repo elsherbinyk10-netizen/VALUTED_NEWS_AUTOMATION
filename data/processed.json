@@ -473,6 +473,17 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "1a9bb903c0ede7207cef2e1cdd14440443301142a3c3ac1098a7e4d9c7a5d46d": {
+      "created_at": "2026-10-20T12:12:07.452329+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Technology",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754918883607",
+      "source_url": "https://www.bbc.co.uk/news/articles/cxdd8mm6qy4mo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Google Cloud says 'power event' behind outage hitting UK banks and websites"
+    },
     "1aff4bf29ee2a8bdccd232627290e4c58fcea1d55b390cc9cc2627e91a9ef19f": {
       "seen_at": "2026-10-14T06:49:18.901185+00:00",
       "source": "BBC Business",
