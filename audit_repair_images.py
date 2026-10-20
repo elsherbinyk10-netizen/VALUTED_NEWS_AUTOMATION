@@ -105,7 +105,7 @@ def main():
     original_list_articles = backfill_media.list_articles
     try:
         backfill_media.list_articles = lambda: targeted
-        os.environ["MEDIA_BACKFILL_LIMIT"] = str(min(25, max(1, len(targeted))))
+        os.environ["MEDIA_BACKFILL_LIMIT"] = str(min(100, max(1, len(targeted))))
         backfill_media.main()
     finally:
         backfill_media.list_articles = original_list_articles
