@@ -443,7 +443,7 @@
       "status": "skipped_stale"
     },
     "1a4add21b245fda29830f99ac601c08ff4cecf12fa9f593f182744c01ff01811": {
-      "seen_at": "2026-10-20T10:34:43.716587+00:00",
+      "seen_at": "2026-10-20T10:37:54.271841+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
     },
@@ -808,6 +808,17 @@
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
+    },
+    "31e4d8425eb4ba87e25602a21e4318a3c75cb594f6c40bec3bb897dd785a0ed9": {
+      "created_at": "2026-10-20T10:37:54.271841+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754913673495",
+      "source_url": "https://www.bbc.co.uk/news/articles/c50me4w4x1vyo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Chancellor rejects calls to raise Capital Gains Tax in Budget"
     },
     "32101b855c169db699d55fc542dbbe45f48c82bac7e6725dc1aa6667f1b0c90f": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
@@ -1343,7 +1354,7 @@
       "status": "skipped_stale"
     },
     "55776cdb85113b8c29695fe8a924e536a6d83115722a7f3097015e28ba0cc024": {
-      "seen_at": "2026-10-20T10:34:43.716587+00:00",
+      "seen_at": "2026-10-20T10:37:54.271841+00:00",
       "source": "Google News World",
       "status": "skipped_stale"
     },
@@ -1777,7 +1788,7 @@
       "status": "skipped_stale"
     },
     "71a3bc5bc6e56008cf24443f5e74c00dd88393bece0b3a78aec5b7dd558dbf3a": {
-      "seen_at": "2026-10-20T10:34:43.716587+00:00",
+      "seen_at": "2026-10-20T10:37:54.271841+00:00",
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
@@ -2679,6 +2690,17 @@
       "status": "draft",
       "title": "Why some have no choice but to pay costly oil prices"
     },
+    "b24943eb49fe69f50ea1d00a017206c18c265da94351523f67064d254bbb6c25": {
+      "created_at": "2026-10-20T10:37:54.271841+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754913640727",
+      "source_url": "https://www.bbc.co.uk/news/articles/cj62y9dnd6pwo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "'I'm fed up of swiping': The singles choosing dating events over apps"
+    },
     "b32c3a17d5264a50ded804fc75c0f078430163c851a69ebee7c5348048f641b8": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News World",
@@ -3323,6 +3345,17 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "e25fc3cbe1b38360e21bb09de742436a5a035ba5f60d65b98848aa87842dc893": {
+      "created_at": "2026-10-20T10:37:54.271841+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754913706263",
+      "source_url": "https://www.bbc.co.uk/weather/articles/c9rkyjzgp6kdo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Storm Austen to bring severe gales to UK as weather warning issued"
+    },
     "e345fab5bc1866323ba889280b627f1f32d367ff9d6acd6fa92e9f87208aefa7": {
       "seen_at": "2026-10-19T11:05:10.544614+00:00",
       "source": "Google News Technology",
@@ -3684,7 +3717,7 @@
       "status": "skipped_stale"
     },
     "feb02f92e4ad66a468b60a56268b9f0c97caee7cbce661f623ea35b40803586d": {
-      "seen_at": "2026-10-20T10:34:43.716587+00:00",
+      "seen_at": "2026-10-20T10:37:54.271841+00:00",
       "source": "Google News World",
       "status": "skipped_stale"
     },
