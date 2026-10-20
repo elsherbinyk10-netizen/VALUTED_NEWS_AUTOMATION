@@ -152,14 +152,15 @@ class VideoEmbedTests(unittest.TestCase):
 
     @patch.object(worker.requests, "get")
     @patch.object(worker.feedparser, "parse")
-    def test_music_category_queries_for_song_or_music_video(self, parse_mock, get_mock):
+    @patch("yt_dlp.YoutubeDL")
+    def test_music_category_queries_for_song_or_music_video(self, ydl_mock, parse_mock, get_mock):
         response = Mock()
         response.content = b"<feed></feed>"
         response.raise_for_status.return_value = None
         get_mock.return_value = response
         parse_mock.return_value = Mock(entries=[
             {"link": "https://www.youtube.com/watch?v=AbCdEf12345",
-             "title": "Harry Styles What Is Enough Live Performance",
+             "title": "Harry Styles Liam Payne official song music video live performance",
              "author": "Harry Styles"}
         ])
         html = worker.fetch_related_youtube_embed("Harry Styles Liam Payne new song", "Music")
