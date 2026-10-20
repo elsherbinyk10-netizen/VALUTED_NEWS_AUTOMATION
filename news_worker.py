@@ -284,18 +284,24 @@ def fetch_related_youtube_embed(story_title, category=""):
                     seen_video_ids = {dict(parse_qsl(urlparse(v[0]).query)).get("v", "") for v in video_entries}
                     for node in nodes:
                         href = html.unescape(str(node.get("href", "")))
+                        parsed_href = urlparse(href)
+                        # Bing may wrap a target in its u= parameter; unwrap only when it
+                        # resolves to a direct, recognizable YouTube watch URL.
+                        if parsed_href.hostname and parsed_href.hostname.endswith("bing.com"):
+                            wrapped = dict(parse_qsl(parsed_href.query)).get("u", "")
+                            if wrapped.startswith(("https://", "http://")):
+                                href = wrapped
+                                parsed_href = urlparse(href)
                         if href.startswith("/watch?v="):
                             href = "https://www.youtube.com" + href
-                        if "youtube.com/watch" in href or "youtu.be/" in href:
-                            from urllib.parse import unquote
-                            decoded = unquote(href)
-                            match = re.search(r"(?:https?://)?(?:www\\.)?youtube\\.com/watch\\?[^&\"'<>]*v=([A-Za-z0-9_-]{11})|youtu\\.be/([A-Za-z0-9_-]{11})", decoded)
-                            if not match:
-                                continue
-                            video_id = match.group(1) or match.group(2)
-                        else:
-                            continue
-                        if video_id in seen_video_ids:
+                            parsed_href = urlparse(href)
+                        video_id = ""
+                        host = (parsed_href.hostname or "").lower()
+                        if host in ("www.youtube.com", "youtube.com", "m.youtube.com") and parsed_href.path == "/watch":
+                            video_id = dict(parse_qsl(parsed_href.query)).get("v", "")
+                        elif host in ("youtu.be", "www.youtu.be"):
+                            video_id = parsed_href.path.strip("/").split("/")[0]
+                        if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id) or video_id in seen_video_ids:
                             continue
                         title_text = clean_text(node.get("title", "") or node.get("aria-label", "") or node.get_text(" ", strip=True))
                         if not title_text:
@@ -307,7 +313,7 @@ def fetch_related_youtube_embed(story_title, category=""):
                     # YouTube's client-rendered result payload often contains IDs/titles even
                     # when anchors are absent; extract those pairs without accepting bare IDs.
                     if provider == "youtube":
-                        pattern = r'"videoId"\\s*:\\s*"([A-Za-z0-9_-]{11})".{0,1200}?"title"\\s*:\\s*\\{.{0,300}?"text"\\s*:\\s*"([^"]{4,240})"'
+                        pattern = r'"videoId"\s*:\s*"([A-Za-z0-9_-]{11})".{0,1200}?"title"\s*:\s*\{.{0,300}?"text"\s*:\s*"([^"]{4,240})"'
                         for match in re.finditer(pattern, page.text, re.S):
                             video_id, raw_title = match.groups()
                             if video_id not in seen_video_ids:
