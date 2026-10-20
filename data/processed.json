@@ -1024,6 +1024,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "407e81604c8c2a69e7009721f1ec3f73df8d963f19364eccc9d50d3f02a9c32e": {
+      "seen_at": "2026-10-20T10:00:11.031208+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "4090173ac4b7e33d75dc07a45c19dd70f105369375acba06b61f5b7d345105a6": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Google News World",
@@ -1132,6 +1137,11 @@
     "467a4a8c83d72f3506a027b088b2da01ceafcfa6d7ad2a34290ed76aedba61f9": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "47615773cd708c16374e9d4dff9c5e00ce1570844028ef1607176f364282be9a": {
+      "seen_at": "2026-10-20T10:00:11.031208+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "47adbe81ae94150569dfe0431070f9ab1c6207f8e9a40c2b901db608acca83a6": {
@@ -2535,6 +2545,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "a8335421abcc6a5016bc6d8a1f8371c29babd9307249f296d225df76de88e092": {
+      "seen_at": "2026-10-20T10:00:11.031208+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "a8d6f9b1cfaec7823456f393848e1458e829e3f5c182488550094d175c4d5189": {
       "seen_at": "2026-10-19T11:05:10.544614+00:00",
       "source": "Google News Entertainment",
@@ -3196,6 +3211,11 @@
     "db8d11e44582f83405420b3a81d2c25d65742f8d2850eb511943cf009e67a31b": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
+    "dbcd0575ec5216ad509a8883a0ca2b3288c1b98fd99e5f4762d0d14a2cea1870": {
+      "seen_at": "2026-10-20T10:00:11.031208+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "dbe2c676f292a7ef771b8ab74b5b027e0fe20afffa225e826ba810cbedfe37b4": {
