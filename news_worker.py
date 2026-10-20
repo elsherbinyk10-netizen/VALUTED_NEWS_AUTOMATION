@@ -280,16 +280,22 @@ def fetch_related_youtube_embed(story_title, category=""):
                     soup = BeautifulSoup(page.text, "html.parser")
                     # Search-result markup changes frequently. Inspect every anchor that
                     # directly links to a YouTube watch page instead of relying on one CSS class.
-                    nodes = soup.select("a[href*='watch?v='], a#video-title, a.yt-simple-endpoint#video-title")
+                    nodes = soup.select("a[href*='watch?v='], a[href*='youtu.be/'], a#video-title, a.yt-simple-endpoint#video-title")
+                    seen_video_ids = {dict(parse_qsl(urlparse(v[0]).query)).get("v", "") for v in video_entries}
                     for node in nodes:
-                        href = str(node.get("href", ""))
+                        href = html.unescape(str(node.get("href", "")))
                         if href.startswith("/watch?v="):
                             href = "https://www.youtube.com" + href
-                        parsed_href = urlparse(href)
-                        if parsed_href.hostname not in ("www.youtube.com", "youtube.com", "m.youtube.com") or parsed_href.path != "/watch":
+                        if "youtube.com/watch" in href or "youtu.be/" in href:
+                            from urllib.parse import unquote
+                            decoded = unquote(href)
+                            match = re.search(r"(?:https?://)?(?:www\\.)?youtube\\.com/watch\\?[^&\"'<>]*v=([A-Za-z0-9_-]{11})|youtu\\.be/([A-Za-z0-9_-]{11})", decoded)
+                            if not match:
+                                continue
+                            video_id = match.group(1) or match.group(2)
+                        else:
                             continue
-                        video_id = dict(parse_qsl(parsed_href.query)).get("v", "")
-                        if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id):
+                        if video_id in seen_video_ids:
                             continue
                         title_text = clean_text(node.get("title", "") or node.get("aria-label", "") or node.get_text(" ", strip=True))
                         if not title_text:
@@ -297,6 +303,16 @@ def fetch_related_youtube_embed(story_title, category=""):
                             title_text = clean_text(parent.get_text(" ", strip=True) if parent else "")
                         if title_text:
                             video_entries.append(("https://www.youtube.com/watch?v=" + video_id, title_text, "YouTube"))
+                            seen_video_ids.add(video_id)
+                    # YouTube's client-rendered result payload often contains IDs/titles even
+                    # when anchors are absent; extract those pairs without accepting bare IDs.
+                    if provider == "youtube":
+                        pattern = r'"videoId"\\s*:\\s*"([A-Za-z0-9_-]{11})".{0,1200}?"title"\\s*:\\s*\\{.{0,300}?"text"\\s*:\\s*"([^"]{4,240})"'
+                        for match in re.finditer(pattern, page.text, re.S):
+                            video_id, raw_title = match.groups()
+                            if video_id not in seen_video_ids:
+                                video_entries.append(("https://www.youtube.com/watch?v=" + video_id, clean_text(raw_title), "YouTube"))
+                                seen_video_ids.add(video_id)
                     if video_entries:
                         break
                 except requests.RequestException as fallback_error:
@@ -370,17 +386,55 @@ def fetch_article_media(source_url):
             response.close()
 
         image_url = ""
-        meta_tags = re.findall(r"<meta\b[^>]*>", markup, re.I)
-        for tag in meta_tags:
-            prop = re.search(r"""(?:property|name)\s*=\s*["'](?:og:image(?::secure_url)?|twitter:image(?::src)?)["']""", tag, re.I)
-            if not prop:
+        # Parse metadata by attributes (not attribute order), then try common structured-data
+        # formats used by publishers. Resolve relative image paths against the final page URL.
+        soup = BeautifulSoup(markup, "html.parser")
+        for tag in soup.find_all("meta"):
+            key = str(tag.get("property") or tag.get("name") or tag.get("itemprop") or "").lower()
+            if key not in {"og:image", "og:image:secure_url", "twitter:image", "twitter:image:src", "image"}:
                 continue
-            match = re.search(r"""content\s*=\s*["']([^"']+)["']""", tag, re.I)
-            if match:
-                candidate = html.unescape(match.group(1)).strip()
-                parsed_image = urlparse(candidate)
-                if parsed_image.scheme in ("http", "https") and parsed_image.netloc and not image_url_is_generic(candidate):
-                    image_url = candidate
+            candidate = str(tag.get("content") or "").strip()
+            if not candidate:
+                continue
+            candidate = requests.compat.urljoin(response.url, html.unescape(candidate))
+            parsed_image = urlparse(candidate)
+            if parsed_image.scheme in ("http", "https") and parsed_image.netloc and not image_url_is_generic(candidate):
+                image_url = candidate
+                break
+        if not image_url:
+            for tag in soup.find_all("link", href=True):
+                rel = " ".join(tag.get("rel") or []).lower()
+                if "image_src" in rel:
+                    candidate = requests.compat.urljoin(response.url, str(tag.get("href")))
+                    if not image_url_is_generic(candidate):
+                        image_url = candidate
+                        break
+        if not image_url:
+            for script in soup.find_all("script", type=re.compile(r"ld\\+json", re.I)):
+                raw = script.string or script.get_text(" ", strip=True)
+                try:
+                    structured = json.loads(raw)
+                except (ValueError, TypeError):
+                    continue
+                stack = structured if isinstance(structured, list) else [structured]
+                while stack:
+                    node = stack.pop()
+                    if isinstance(node, dict):
+                        image = node.get("image") or node.get("thumbnailUrl")
+                        if isinstance(image, dict):
+                            image = image.get("url") or image.get("contentUrl")
+                        if isinstance(image, list):
+                            image = next((v for v in image if isinstance(v, str)), "")
+                        if isinstance(image, str) and image:
+                            candidate = requests.compat.urljoin(response.url, image)
+                            parsed_image = urlparse(candidate)
+                            if parsed_image.scheme in ("http", "https") and parsed_image.netloc and not image_url_is_generic(candidate):
+                                image_url = candidate
+                                break
+                        stack.extend(v for v in node.values() if isinstance(v, (dict, list)))
+                    elif isinstance(node, list):
+                        stack.extend(node)
+                if image_url:
                     break
 
         video_markup = []
