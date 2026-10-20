@@ -913,6 +913,17 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "34bbb019ff3e7bba19c97879c19c22b658cb109c6e3e3bb8306b624b97097258": {
+      "created_at": "2026-10-20T12:05:30.651368+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754918588695",
+      "source_url": "https://www.bbc.co.uk/news/articles/cjr4yeygwdxvo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Moment giant fin whale's huge mouth engulfs thousands of tonnes of water"
+    },
     "3509f93fcfd9d2feeae4c6c00fd14f72351c5e9c7d235376225d9dcea4b10ae4": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "Rolling Stone Music News",
@@ -1851,6 +1862,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "71576406b87abc598fd7570c756a07fc40c2ac3dea22edda0d975e89d87b859c": {
+      "seen_at": "2026-10-20T12:05:30.651368+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "71a3bc5bc6e56008cf24443f5e74c00dd88393bece0b3a78aec5b7dd558dbf3a": {
       "seen_at": "2026-10-20T10:37:54.271841+00:00",
       "source": "Google News Top Stories",
@@ -1911,6 +1927,17 @@
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "NASA News",
       "status": "skipped_stale"
+    },
+    "754bf5eeaea9794bd506a5c0d6d1b9848b7c8c0593286b9c80c677283bd2c4f8": {
+      "created_at": "2026-10-20T12:05:30.651368+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754918719767",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmvg632xgndeo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Why Israeli Gen Z voters are drawn to the far right"
     },
     "7668a2c12d45b92ce52db4922bba9204037e8f20ae29b69d737e4f8640226cea": {
       "created_at": "2026-10-12T12:49:04.532342+00:00",
@@ -2448,6 +2475,11 @@
     "96a1d05f6574f4f54ed7eba4c0f9e30b30da13d4279208823c416fb2a56413b2": {
       "seen_at": "2026-10-20T11:53:48.143603+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "96e8aa4485e42967c99eafe9b73487f6d9b9efcdb19c495622df6c5b33a0ea70": {
+      "seen_at": "2026-10-20T12:05:30.651368+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "96faa508b0e30813b50f2c7436506d8fbc1cdd73d65af8588c8afd4f9b72ef60": {
