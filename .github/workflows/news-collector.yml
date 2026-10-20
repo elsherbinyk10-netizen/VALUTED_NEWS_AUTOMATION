@@ -74,7 +74,7 @@ jobs:
 
       - name: Backfill missing or generic featured images
         env:
-          MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '25' }}
+          MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '100' }}
         run: python backfill_media.py
 
       - name: Audit and repair missing, broken, placeholder, or widely reused article images
