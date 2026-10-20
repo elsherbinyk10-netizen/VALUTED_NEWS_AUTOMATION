@@ -442,6 +442,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "1a4add21b245fda29830f99ac601c08ff4cecf12fa9f593f182744c01ff01811": {
+      "seen_at": "2026-10-20T10:34:43.716587+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "1a9050cff6dfdc717632313359c3ef3ab70482b3337c049fd09d30504af04f7a": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Science",
@@ -1337,6 +1342,11 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "55776cdb85113b8c29695fe8a924e536a6d83115722a7f3097015e28ba0cc024": {
+      "seen_at": "2026-10-20T10:34:43.716587+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "55a40e8f62047f0791ca1be6014755b778200a6054995bf95c472998dff2185e": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "Google News Technology",
@@ -1764,6 +1774,11 @@
     "7150157674e3f1909262ee0f1af3d35d4a5938cd8dea52e6d44a3628edd329e1": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "71a3bc5bc6e56008cf24443f5e74c00dd88393bece0b3a78aec5b7dd558dbf3a": {
+      "seen_at": "2026-10-20T10:34:43.716587+00:00",
+      "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
     "71b70716eb06bb498396439d0f80355cdffbce9dc192d303af2d559f7360e564": {
@@ -3666,6 +3681,11 @@
     "fea0e4c50df0b1221416f539326b78106da0f8a63db5f4665a3973651327181a": {
       "seen_at": "2026-10-19T11:09:19.891971+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "feb02f92e4ad66a468b60a56268b9f0c97caee7cbce661f623ea35b40803586d": {
+      "seen_at": "2026-10-20T10:34:43.716587+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "fec2ddb6cf3f1e21dd9ae3b7f98e6cdcea3d5416f8ba75480fbc4cdbeb416639": {
