@@ -325,32 +325,35 @@ def fetch_related_youtube_embed(story_title, category=""):
                     logging.info("%s video search fallback unavailable: %s", provider, fallback_error)
                     continue
 
-        # Last-resort public search fallback: yt-dlp extracts search metadata only
-        # (no video is downloaded), avoiding YouTube's blocked search RSS endpoint.
-        try:
-            from yt_dlp import YoutubeDL
-            ydl_opts = {
-                "quiet": True, "no_warnings": True, "skip_download": True,
-                "extract_flat": "in_playlist", "ignoreerrors": True,
-                "socket_timeout": 8, "playlistend": 10,
-            }
-            with YoutubeDL(ydl_opts) as ydl:
-                search_result = ydl.extract_info("ytsearch10:" + query_text, download=False) or {}
-            known = {dict(parse_qsl(urlparse(v[0]).query)).get("v", "") for v in video_entries}
-            for entry in search_result.get("entries") or []:
-                if not entry:
-                    continue
-                video_id = str(entry.get("id") or "")
-                video_title = clean_text(entry.get("title") or "")
-                if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id) or not video_title or video_id in known:
-                    continue
-                video_entries.append(("https://www.youtube.com/watch?v=" + video_id, video_title, clean_text(entry.get("channel") or entry.get("uploader") or "YouTube")))
-                known.add(video_id)
-            if search_result.get("entries"):
-                logging.info("yt-dlp metadata search returned %d candidate video(s)", len(video_entries))
-        except Exception as search_error:
-            logging.info("yt-dlp video search fallback unavailable: %s", search_error)
-
+        # Keep mocked/provider RSS candidates authoritative when present. This also
+        # prevents a second live search from overriding a valid, deterministic result.
+        if not video_entries:
+            # Last-resort public search fallback: yt-dlp extracts search metadata only
+            # (no video is downloaded), avoiding YouTube's blocked search RSS endpoint.
+            try:
+                from yt_dlp import YoutubeDL
+                ydl_opts = {
+                    "quiet": True, "no_warnings": True, "skip_download": True,
+                    "extract_flat": "in_playlist", "ignoreerrors": True,
+                    "socket_timeout": 8, "playlistend": 10,
+                }
+                with YoutubeDL(ydl_opts) as ydl:
+                    search_result = ydl.extract_info("ytsearch10:" + query_text, download=False) or {}
+                known = {dict(parse_qsl(urlparse(v[0]).query)).get("v", "") for v in video_entries}
+                for entry in search_result.get("entries") or []:
+                    if not entry:
+                        continue
+                    video_id = str(entry.get("id") or "")
+                    video_title = clean_text(entry.get("title") or "")
+                    if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id) or not video_title or video_id in known:
+                        continue
+                    video_entries.append(("https://www.youtube.com/watch?v=" + video_id, video_title, clean_text(entry.get("channel") or entry.get("uploader") or "YouTube")))
+                    known.add(video_id)
+                if search_result.get("entries"):
+                    logging.info("yt-dlp metadata search returned %d candidate video(s)", len(video_entries))
+            except Exception as search_error:
+                logging.info("yt-dlp video search fallback unavailable: %s", search_error)
+    
         title_terms = set(terms)
         best = None
         best_score = 0
