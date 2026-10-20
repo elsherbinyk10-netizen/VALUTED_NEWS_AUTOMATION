@@ -16,7 +16,7 @@
       "status": "skipped_stale"
     },
     "022ad7569a85a72f5446fcf84de20814633831a326b44309bfc2f464b5106284": {
-      "seen_at": "2026-10-20T11:47:10.493243+00:00",
+      "seen_at": "2026-10-20T11:53:48.143603+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
     },
@@ -560,7 +560,7 @@
       "status": "skipped_stale"
     },
     "2064d808e1e7e059218c5c916266bd59f7cab585d6a616a8cc66f814f5bf52f1": {
-      "seen_at": "2026-10-20T11:47:10.493243+00:00",
+      "seen_at": "2026-10-20T11:53:48.143603+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
     },
@@ -747,6 +747,11 @@
     "27e565231ea632c0ce1e1eedd409ac319014112fcdc86012cbe559ed907f6442": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "27f6260d427cafc846a4b7e8ff94789c67f576143bfcf3e26e57b07a197fae33": {
+      "seen_at": "2026-10-20T11:53:48.143603+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "2829c424079d203f7d2f8175d2d23a036596e15f465f9706b47a9856cd63d8da": {
@@ -1548,6 +1553,17 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "6241a174cc5ae02b8b96989ffe806e4cf4469e6486840e63ded68772cadc9aa7": {
+      "created_at": "2026-10-20T11:53:48.143603+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754917638423",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck240rr10jdqo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Woman describes alleged assault by Russell Brand as 'frenzied' and 'violent'"
+    },
     "6283720af3d660dc41e4e8cb8e6494f8e2ad67e5241d2e091884fdff5fbabccf": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Entertainment",
@@ -1960,6 +1976,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "7999a2240e29195cda9e7e08aff4fff8fabbc1c3182aad923fe28b33c0c4424b": {
+      "seen_at": "2026-10-20T11:53:48.143603+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
+    },
     "7a0ed471691e116b5dd4062f9b87d18e64ab34f11ec0a6ae9224415698c03b5e": {
       "created_at": "2026-10-17T05:29:56.024014+00:00",
       "has_embedded_video": false,
@@ -1995,6 +2016,17 @@
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
+    },
+    "7ce76d9833babb6d603ef30b0cc0b33768ed78b9f7db8dbe385a7c5d5f7b8411": {
+      "created_at": "2026-10-20T11:53:48.143603+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754917933335",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "What is the Budget and what could be in it?"
     },
     "7d3c176324224f271125312264bf38a311da1f808024f7403b8ced321a8475e5": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
@@ -2403,7 +2435,7 @@
       "status": "skipped_stale"
     },
     "96a1d05f6574f4f54ed7eba4c0f9e30b30da13d4279208823c416fb2a56413b2": {
-      "seen_at": "2026-10-20T11:47:10.493243+00:00",
+      "seen_at": "2026-10-20T11:53:48.143603+00:00",
       "source": "BBC World",
       "status": "skipped_stale"
     },
@@ -3477,7 +3509,7 @@
       "status": "skipped_stale"
     },
     "e79e077a07ff0a3008042476cc600dcfbb222b1692990c6c35ca0e547684b7b3": {
-      "seen_at": "2026-10-20T11:47:10.493243+00:00",
+      "seen_at": "2026-10-20T11:53:48.143603+00:00",
       "source": "Google News World",
       "status": "skipped_stale"
     },
