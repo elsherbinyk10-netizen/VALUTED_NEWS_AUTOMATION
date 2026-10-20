@@ -379,6 +379,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "1714816a65805ea9e5915603cfa7c2aa37ad9fcd246b709658776d93583dce3b": {
+      "seen_at": "2026-10-20T10:23:22.154356+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "174527e0ab0de8a59850cf982fb82295c097f762f88a86486982883da45b9a35": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "NASA News",
