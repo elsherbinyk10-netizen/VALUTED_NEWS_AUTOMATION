@@ -72,10 +72,26 @@ def update_body(article_id, body):
 def infer_category(article):
     tags = " ".join(article.get("tags") or []).lower()
     title = (article.get("title") or "").lower()
+    body = article.get("body") or ""
     combined = tags + " " + title
-    if re.search(r"\b(movie|movies|film|films|cinema|streaming|tv|television|trailer)\b", combined):
+
+    # Prefer the explicit editorial section in RSS-derived drafts.
+    # This avoids treating general news about TV networks as entertainment.
+    section = re.search(r"<strong>\\s*Section:\\s*</strong>\\s*([^<]+)", body, re.I)
+    if section:
+        section_name = section.group(1).strip().lower()
+        section_map = {
+            "business": "Business", "world": "World", "politics": "Politics",
+            "technology": "Technology", "science": "Science", "sports": "Sports",
+            "health": "Health", "entertainment": "Entertainment", "music": "Music",
+            "movies": "Movies", "news": "News"
+        }
+        if section_name in section_map:
+            return section_map[section_name]
+
+    if re.search(r"\\b(movie|movies|film|films|cinema|streaming|trailer)\\b", combined):
         return "Movies"
-    if re.search(r"\b(music|song|songs|album|albums|singer|singers|concert|concerts|tour|tours|music video)\b", combined):
+    if re.search(r"\\b(music|song|songs|album|albums|singer|singers|concert|concerts|tour|tours|music video)\\b", combined):
         return "Music"
     return next((x.title() for x in ("technology", "science", "business", "sports", "world", "politics", "health", "entertainment") if x in combined), "News")
 
