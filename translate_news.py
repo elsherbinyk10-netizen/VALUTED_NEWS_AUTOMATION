@@ -166,12 +166,12 @@ def main():
     except Exception:
         state = {"done": {}}
     done = state.setdefault("done", {})
-    todo = [r for r in resources if not done.get(r["id"])]
-    if not todo:
-        logging.info("No unprocessed resources found; checking first %d resources for missing locale coverage.", MAX_RESOURCES)
-        todo = resources[:MAX_RESOURCES]
-    selected = todo[:MAX_RESOURCES]
-    logging.info("Translation queue resources=%d pending=%d selected=%d locales=%d", len(resources), len(todo), len(selected), len(LOCALES))
+    # Rolling freshness sweep: revisit every published article/page, not just
+    # resources never seen before. Oldest last-check timestamps go first so
+    # edits to existing articles are picked up and no resource is starved.
+    resources.sort(key=lambda r: float((done.get(r["id"]) or {}).get("processed_at", 0)))
+    selected = resources[:MAX_RESOURCES]
+    logging.info("Daily freshness sweep resources=%d selected=%d locales=%d", len(resources), len(selected), len(LOCALES))
     failures = 0
     for resource in selected:
         try:
