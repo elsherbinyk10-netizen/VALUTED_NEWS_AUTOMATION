@@ -357,7 +357,9 @@ def fetch_related_youtube_embed(story_title, category=""):
         title_terms = set(terms)
         best = None
         best_score = 0
-        min_overlap = 1 if is_movie else 2
+        # Prefer precise title overlap, but don't reject a genuinely story-related
+        # report merely because its title lacks words like "interview" or "official".
+        min_overlap = 1 if (is_movie or is_music) else 2
         for video_url, video_title, channel in video_entries:
             parsed_url = urlparse(video_url)
             video_id = dict(parse_qsl(parsed_url.query)).get("v", "")
@@ -368,8 +370,11 @@ def fetch_related_youtube_embed(story_title, category=""):
             video_words = set(re.findall(r"[a-zA-Z0-9]{3,}", video_title.lower()))
             overlap = len(title_terms & video_words)
             hint_match = bool(video_words & required_hints)
+            # For general news, two or more distinctive story terms are sufficient;
+            # category hints remain mandatory for entertainment trailers and music videos.
+            relevant = (hint_match if (is_movie or is_music) else overlap >= min_overlap)
             score = overlap + (2 if hint_match else 0)
-            if overlap >= min_overlap and hint_match and score > best_score:
+            if overlap >= min_overlap and relevant and score > best_score:
                 best, best_score = (video_id, video_title, channel), score
         # Never attach a generic trending clip or a movie clip that is not actually a trailer.
         if not best:
