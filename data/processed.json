@@ -586,6 +586,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "206530172971eb363664ebdbb08a83cc42dcbe11f08f2b87fb098ad6d9e114e3": {
+      "seen_at": "2026-10-20T18:44:16.994007+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "206604669dfb7483c19857f74fdbe843e97d354a4d4da69cd19684dedef438de": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Technology",
@@ -781,6 +786,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "28713c2b0bca04eee62a94811bd7f2e345bee3fd84a8b8d2e80edc62fc7eab91": {
+      "seen_at": "2026-10-20T18:44:16.994007+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "28804ac7a7b1a0f29afe4fb10ccf7284bc482324ab3f646b80e7df58e5efaf15": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Rolling Stone Music News",
@@ -795,6 +805,17 @@
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "NPR Business",
       "status": "skipped_stale"
+    },
+    "2b6236af8e0a1a743573f912c79c4ad2cc0a77c03e2b59fb66344f33ca83673f": {
+      "created_at": "2026-10-20T18:44:16.994007+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754924355863",
+      "source_url": "https://www.rollingstone.com/music/music-news/bill-kreutzmann-a-very-grateful-thanksgiving-in-hawaii-1235645523",
+      "status": "published",
+      "title": "Bill Kreutzmann Plans \u2018A Very Grateful Thanksgiving\u2019 in Hawaii"
     },
     "2b7ba610fdaea85f55696830215b271619c6bc9dc9eee171f92b6f2bcbd10719": {
       "seen_at": "2026-10-19T12:49:09.789011+00:00",
@@ -855,6 +876,22 @@
     "2eced5b9b09d88190f57c849b3e99b1a84b5a6b25466087d7ea25f8aeb525734": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "2f953910c20328395f4138f7994cac2ea19ca0dd271ea98270acacea508cd068": {
+      "created_at": "2026-10-20T18:44:16.994007+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "NASA News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754924388631",
+      "source_url": "https://www.nasa.gov/centers-and-facilities/glenn/sr-1-freedom-advances-with-progress-on-nuclear-power-module",
+      "status": "published",
+      "title": "NASA\u2019s SR-1 Freedom Advances with Progress on Nuclear Power Module"
+    },
+    "2ff912ab33e4d97c55b9df860d92e1639b67295426574f04f4c7be543cff02d8": {
+      "seen_at": "2026-10-20T18:44:16.994007+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "31d93b8f643ec2eaf7fee5fd1eb847b70a0454981b1a407aeb06e268dfd76918": {
@@ -1430,6 +1467,11 @@
     "55e778132a079bc9498e60de7d0bcec878eb3335b47a573a383ba51fe978dd1b": {
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "562aeb54c4750b7e6ae782664d5bd5aaa5f743c1cacb4b823bae4c57312455f1": {
+      "seen_at": "2026-10-20T18:44:16.994007+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "56e185745856c194c37419534b5669aebc32e4212398ad3fd2a1b67f4b82caad": {
@@ -2041,6 +2083,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "79d425f06478e2f73af3385c1b016bd096653cd69d67ff3b327b36faee183c9e": {
+      "seen_at": "2026-10-20T18:44:16.994007+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "7a0ed471691e116b5dd4062f9b87d18e64ab34f11ec0a6ae9224415698c03b5e": {
       "created_at": "2026-10-17T05:29:56.024014+00:00",
       "has_embedded_video": false,
@@ -2060,6 +2107,11 @@
     "7ad84d0adb1e3fda1a85d5d2be340d72d2551dcd32e5f09a7ff4954e05ad8a55": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "7b789d31ef9fa2cec2cbbcfa19280ddc158dc7f26838a66dce17bc200d0f2ba3": {
+      "seen_at": "2026-10-20T18:44:16.994007+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "7baa83ec53b300a880b7c0ee5149d7731093e6c50a573b102b59f884f35a706c": {
@@ -2352,6 +2404,11 @@
     "8c708fedda357a30ad90620abc361ee3ad9f7387ed5944bd406d081c50f01943": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "8cea88c9ff3d4178797629058f7311f7e985a51cccd3e08378983038ffcf4c8b": {
+      "seen_at": "2026-10-20T18:44:16.994007+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "8d787f1efae63ab8869c347e08b197fb8264957a740d2a1379cbd3aee70c4537": {
@@ -3166,6 +3223,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "c94caeff94a36b1ac23d3379602f50e4e374425b67aa1989ef62973bb2d872fb": {
+      "seen_at": "2026-10-20T18:44:16.994007+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "c980ad7620ac6f402ad1803f50f88a90001299c2d18677cf9ee25f48f2b6ffbf": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Business",
@@ -3234,6 +3296,17 @@
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Google News Business",
       "status": "skipped_stale"
+    },
+    "ccbd23d16b6874a9059445b40880ba745190e90022a8f6989026fad53a4f7ad0": {
+      "created_at": "2026-10-20T18:44:16.994007+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754924421399",
+      "source_url": "https://www.bbc.co.uk/news/articles/cvze4wx3elj1o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "UK government to make Jackdaw gas field announcement"
     },
     "ccc8cfcec63655ab18aae96e8f527135e3f12baa075162352698ea54e8090c87": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
@@ -3562,6 +3635,11 @@
     "e4f2618d2f0ea3703b2ddc07414aef0091d2a1a16aba84e353ef0845f1fa38c2": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "NASA News",
+      "status": "skipped_stale"
+    },
+    "e5cad304e22ba05947df18344641f0bd14b1a669e7cf3ec2c724d85f1a6e4fae": {
+      "seen_at": "2026-10-20T18:44:16.994007+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "e61dba9252f9b1b2cd9b4e96a2d97faef6c6e12f985f7e95b55677a62afd2204": {
