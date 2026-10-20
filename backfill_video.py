@@ -15,8 +15,9 @@ from backfill_media import source_urls
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 BLOG_ID = env("SHOPIFY_BLOG_ID", "gid://shopify/Blog/126010065175")
 STATE_FILE = Path("data/video_backfill.json")
-# Recheck unresolved articles on each scheduled run so the backlog can progressively fill.
-RETRY_DAYS = 0
+# Give each article a 24-hour cooldown so each run can move through the archive in batches.
+# Unresolved articles are retried on a later scheduled run, after older items get a turn.
+RETRY_DAYS = 1
 
 
 def load_state():
@@ -90,8 +91,8 @@ def main():
             last_attempt = datetime.fromisoformat(stamp.replace("Z", "+00:00")) if stamp else None
         except ValueError:
             last_attempt = None
-        # Retry unresolved videos daily, rather than only once every 24 hours,
-        # and allow a later run to find videos newly indexed by search providers.
+        # Retry unresolved videos after the cooldown so the archive can be processed in batches,
+        # while still allowing later runs to find videos newly indexed by search providers.
         if last_attempt and last_attempt > cutoff:
             continue
         eligible.append(article)
