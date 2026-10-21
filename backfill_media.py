@@ -367,6 +367,17 @@ def main():
             except Exception as exc:
                 logging.info("Openverse lookup failed for %s: %s", article["title"], exc)
         if not chosen:
+            try:
+                broad_terms = re.findall(r"[a-z0-9]{4,}", article["title"].lower())
+                broad_terms = [term for term in broad_terms if term not in {"news","latest","update","what","when","where","from","with","about","today","2026","says","after","under","behind","release","date","cast","story","guide","report"}]
+                if broad_terms:
+                    candidate = openverse_image(" ".join(broad_terms[:5]) + " photograph", excluded_image_identities)
+                    if candidate:
+                        chosen = candidate
+                        source = "Openverse broader search"
+            except Exception as exc:
+                logging.info("Openverse broader search failed for %s: %s", article["title"], exc)
+        if not chosen:
             unresolved.append(article["title"])
             logging.warning("No verified image found; leaving image blank: %s", article["title"])
             continue
