@@ -1,0 +1,54 @@
+name: Valuted News Image Repair
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/repair-news-images.yml"
+      - "backfill_media.py"
+      - "audit_repair_images.py"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: valuted-news-image-repair
+  cancel-in-progress: false
+
+jobs:
+  repair-images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      SHOPIFY_STORE_DOMAIN: ${{ secrets.SHOPIFY_STORE_DOMAIN }}
+      SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ADMIN_ACCESS_TOKEN }}
+      SHOPIFY_CLIENT_ID: ${{ secrets.SHOPIFY_CLIENT_ID }}
+      SHOPIFY_CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}
+      SHOPIFY_API_VERSION: "2026-10"
+      SHOPIFY_BLOG_ID: "gid://shopify/Blog/126010065175"
+      MEDIA_BACKFILL_LIMIT: "100"
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Validate configuration
+        shell: bash
+        run: |
+          test -n "$SHOPIFY_STORE_DOMAIN" || { echo "Missing SHOPIFY_STORE_DOMAIN"; exit 1; }
+          test -n "$SHOPIFY_ADMIN_ACCESS_TOKEN" || { test -n "$SHOPIFY_CLIENT_ID" || { echo "Missing Shopify Admin API credentials"; exit 1; }; test -n "$SHOPIFY_CLIENT_SECRET" || { echo "Missing SHOPIFY_CLIENT_SECRET"; exit 1; }; }
+      - name: Validate syntax and safety tests
+        run: |
+          python -m py_compile news_worker.py backfill_media.py audit_repair_images.py
+          python -m unittest discover -s tests -v
+      - name: Repair missing and generic featured images
+        run: python backfill_media.py
+      - name: Audit and repair broken, placeholder, or reused images
+        run: python audit_repair_images.py
