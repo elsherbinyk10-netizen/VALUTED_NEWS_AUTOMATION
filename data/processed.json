@@ -1434,6 +1434,17 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "4e21c5ec395f98f61c41679668f61188f185cf6329c27043b23718580b6cba97": {
+      "created_at": "2026-10-21T12:35:56.681076+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754943525143",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck98z6e4l725o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Irish weather warning ahead of Storm Austen"
+    },
     "4e50bcab18f574e3c431d1e7438d58734efa9d3905e5192c20c5140335c165fe": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Google News World",
@@ -2308,6 +2319,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "7e0514f47393cb9011658d6128a38df8e548297568b85f5417c5a1685554940b": {
+      "seen_at": "2026-10-21T12:35:56.681076+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "7f20739422a6c9dc994fd11f0aec096e241d76a138bd4743cb31ba90fba0c52a": {
       "created_at": "2026-10-18T12:53:00.593654+00:00",
       "has_embedded_video": false,
@@ -2880,6 +2896,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "a2b47911f4825cc6913f6e6e5e992fcca834ebbac8647749a1147859812b9ad1": {
+      "seen_at": "2026-10-21T12:35:56.681076+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "a2ba62b02e48829c27bad92db086ae57c94e0d16afc10a1be4e29566e5fcdfa4": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
@@ -3263,6 +3284,17 @@
       "seen_at": "2026-10-18T12:53:00.593654+00:00",
       "source": "Google News Entertainment",
       "status": "skipped_stale"
+    },
+    "bc72f27e57e5fdd1c37db8f1194365d72a24e5870708e5b2d8569405ad407d49": {
+      "created_at": "2026-10-21T12:35:56.681076+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754943459607",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq4g13pplyzzo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "How much gas could Jackdaw provide? And will it cut your energy bills?"
     },
     "bcd195dc5c752b2030cde5deb4f3340cfad91c8e1faf6afcbf71c0b513132c2b": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
@@ -3886,6 +3918,17 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "e2030d187439b7eb489e9bb9f7a338bad31d1a5d3d4de3017ca13ff9c29cede1": {
+      "created_at": "2026-10-21T12:35:56.681076+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754943492375",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmvg9vlgxkv8o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Astronaut surprise video leaves pupils starstruck"
+    },
     "e25fc3cbe1b38360e21bb09de742436a5a035ba5f60d65b98848aa87842dc893": {
       "created_at": "2026-10-20T10:37:54.271841+00:00",
       "has_embedded_video": false,
@@ -4239,6 +4282,11 @@
     "f62ac42d83fdfc3987819849cab1d7e6bcd222353585ba77f80b1d31568fe74a": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "f6a8fe26d3aeb445d62aabcb0f15a2dbd6699d9c759606c53e7f4a8d012bd418": {
+      "seen_at": "2026-10-21T12:35:56.681076+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "f6c98a0cf9634b9b5f0ac5d4943a71b415ee08138038d72c429bc89aad9a901f": {
