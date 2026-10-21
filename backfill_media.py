@@ -180,6 +180,65 @@ def wikimedia_image(title, excluded_identities=None):
     return {"url": url, "credit": credit, "alt": alt}
 
 
+def openverse_image(title, excluded_identities=None):
+    """Find a relevant openly licensed image when Wikimedia Commons is rate-limited."""
+    stopwords = {"news", "latest", "update", "updates", "what", "when", "where", "does", "that", "this", "from", "with", "about", "guide", "how", "follow", "world", "report", "reports", "explainer", "explained", "today", "2026", "after", "amid", "says", "said", "could", "would", "will", "over", "into", "their", "your", "new", "since", "ended"}
+    title_terms = set(re.findall(r"[a-z0-9]{4,}", title.lower())) - stopwords
+    if not title_terms:
+        return None
+    params = {
+        "q": title,
+        "license": "cc0,pdm,by,by-sa",
+        "page_size": 30,
+    }
+    response = requests.get(
+        "https://api.openverse.org/v1/images/",
+        params=params,
+        headers=HEADERS,
+        timeout=(5, 15),
+    )
+    response.raise_for_status()
+    payload = response.json()
+    candidates = []
+    for item in payload.get("results", []):
+        license_name = clean_text(str(item.get("license") or "")).lower()
+        if license_name not in {"cc0", "pdm", "by", "by-sa"}:
+            continue
+        image_url = item.get("url") or item.get("thumbnail")
+        if not image_url or normalized_image_identity(image_url) in (excluded_identities or set()):
+            continue
+        item_title = clean_text(str(item.get("title") or ""))
+        tags = item.get("tags") or []
+        tag_text = " ".join(clean_text(str(tag.get("name") if isinstance(tag, dict) else tag)) for tag in tags)
+        description = clean_text(str(item.get("description") or ""))
+        combined = (item_title + " " + tag_text + " " + description).lower()
+        overlap = title_terms & set(re.findall(r"[a-z0-9]{4,}", combined))
+        if len(overlap) < 2:
+            continue
+        if any(term in combined for term in ("logo", "watermark", "placeholder", "icon set", "clip art")):
+            continue
+        candidates.append((len(overlap), image_url, item, item_title, combined))
+    candidates.sort(key=lambda row: row[0], reverse=True)
+    for score, image_url, item, item_title, combined in candidates:
+        if not image_is_valid(image_url):
+            continue
+        creator = clean_text(str(item.get("creator") or ""))
+        license_name = clean_text(str(item.get("license") or "")).upper()
+        license_url = clean_text(str(item.get("license_url") or ""))
+        landing = clean_text(str(item.get("foreign_landing_url") or ""))
+        credit = "Image credit: Openverse — " + (item_title or title)
+        if creator:
+            credit += " · " + creator
+        credit += " · " + license_name
+        if license_url:
+            credit += " · " + license_url
+        if landing:
+            credit += " · Source: " + landing
+        alt = title if score >= 3 else "Illustrative image related to: " + title + " (not necessarily depicting the specific event)"
+        return {"url": image_url, "credit": credit, "alt": alt}
+    return None
+
+
 def list_articles():
     query = """
     query BackfillArticles($id: ID!) {
@@ -299,6 +358,14 @@ def main():
                     chosen = candidate
             except Exception as exc:
                 logging.info("Commons lookup failed for %s: %s", article["title"], exc)
+        if not chosen:
+            try:
+                candidate = openverse_image(article["title"], excluded_image_identities)
+                if candidate:
+                    chosen = candidate
+                    source = "Openverse"
+            except Exception as exc:
+                logging.info("Openverse lookup failed for %s: %s", article["title"], exc)
         if not chosen:
             unresolved.append(article["title"])
             logging.warning("No verified image found; leaving image blank: %s", article["title"])
