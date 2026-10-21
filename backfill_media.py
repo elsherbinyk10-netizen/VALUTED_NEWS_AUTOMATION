@@ -115,7 +115,7 @@ def find_publisher_source(title):
     return ""
 
 
-def wikimedia_image(title):
+def wikimedia_image(title, excluded_identities=None):
     """Find a related, reusable Commons image with title overlap and explicit attribution."""
     stopwords = {"news", "latest", "update", "updates", "what", "when", "where", "does", "that", "this", "from", "with", "about", "guide", "how", "follow", "world", "report", "reports", "explainer", "explained", "today", "2026", "after", "amid", "says", "said", "could", "would", "will", "over", "into", "their", "your", "new"}
     title_terms = list(dict.fromkeys(re.findall(r"[a-z0-9]{4,}", title.lower())))
@@ -128,11 +128,19 @@ def wikimedia_image(title):
     pages = {}
     for search_term in dict.fromkeys(queries):
         try:
-            query = requests.get(
-                "https://commons.wikimedia.org/w/api.php",
-                params={"action":"query","format":"json","generator":"search","gsrsearch":search_term,"gsrnamespace":6,"gsrlimit":20,"prop":"imageinfo","iiprop":"url|extmetadata","iiurlwidth":1400},
-                headers=HEADERS, timeout=(5, 12),
-            )
+            params = {"action":"query","format":"json","generator":"search","gsrsearch":search_term,"gsrnamespace":6,"gsrlimit":20,"prop":"imageinfo","iiprop":"url|extmetadata","iiurlwidth":1400}
+            query = None
+            for attempt in range(3):
+                query = requests.get(
+                    "https://commons.wikimedia.org/w/api.php",
+                    params=params, headers=HEADERS, timeout=(5, 12),
+                )
+                if query.status_code != 429 and query.status_code < 500:
+                    break
+                query.close()
+                time.sleep(2 * (attempt + 1))
+            if query is None:
+                continue
             query.raise_for_status()
             pages.update(query.json().get("query", {}).get("pages", {}))
         except (requests.RequestException, ValueError) as exc:
@@ -149,6 +157,8 @@ def wikimedia_image(title):
         combined = (page.get("title", "") + " " + description).lower()
         overlap = term_set & set(re.findall(r"[a-z0-9]{4,}", combined))
         if len(overlap) < 2 or not info.get("thumburl") or not license_name:
+            continue
+        if excluded_identities and normalized_image_identity(info["thumburl"]) in excluded_identities:
             continue
         if not any(x in license_name.lower() for x in ("cc0", "public domain", "cc by", "cc-by", "cc by-sa", "cc-by-sa")):
             continue
@@ -284,8 +294,8 @@ def main():
         # If it may not depict the exact event, the image alt text explicitly says illustrative.
         if not chosen:
             try:
-                candidate = wikimedia_image(article["title"])
-                if candidate and normalized_image_identity(candidate.get("url", "")) not in excluded_image_identities:
+                candidate = wikimedia_image(article["title"], excluded_image_identities)
+                if candidate:
                     chosen = candidate
             except Exception as exc:
                 logging.info("Commons lookup failed for %s: %s", article["title"], exc)
