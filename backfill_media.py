@@ -22,6 +22,15 @@ HEADERS = {"User-Agent": "ValutedNewsMediaBackfill/1.0 (editorial media metadata
 BAD_IMAGE_TERMS = ("google-news", "google_news", "valuted-news-placeholder", "valuted_news_placeholder", "logo", "favicon", "default-thumbnail")
 
 
+def normalized_image_identity(url):
+    """Normalize image URL variants so the same source asset is not reused."""
+    parsed = urlparse(url or "")
+    basename = parsed.path.rsplit("/", 1)[-1]
+    basename = re.sub(r"_s0-w[0-9]+", "", basename, flags=re.I)
+    basename = re.sub(r"_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}(?=\\.)", "", basename, flags=re.I)
+    return (parsed.hostname or "").lower() + "/" + basename if basename else ""
+
+
 def image_is_valid(url):
     if not url:
         return False
@@ -226,6 +235,15 @@ def main():
 
     from collections import Counter
     identity_counts = Counter(media_identity(a) for a in articles if media_identity(a))
+    # Exclude all currently-used assets during repairs; never reuse one image across unrelated stories.
+    try:
+        excluded_image_identities = set(json.loads(env("EXCLUDED_IMAGE_IDENTITIES", "[]")))
+    except (TypeError, ValueError):
+        excluded_image_identities = set()
+    excluded_image_identities.update(
+        normalized_image_identity(str((a.get("image") or {}).get("url") or ""))
+        for a in articles if (a.get("image") or {}).get("url")
+    )
     def needs_real_image(article):
         image = article.get("image") or {}
         url = str(image.get("url") or "")
@@ -258,7 +276,7 @@ def main():
         for url in source_candidates[:6]:
             media = fetch_article_media(url)
             candidate = media.get("image_url", "")
-            if image_is_valid(candidate):
+            if image_is_valid(candidate) and normalized_image_identity(candidate) not in excluded_image_identities:
                 chosen = {"url": candidate, "alt": article["title"], "credit": "Image source: " + url}
                 source = url
                 break
@@ -266,7 +284,9 @@ def main():
         # If it may not depict the exact event, the image alt text explicitly says illustrative.
         if not chosen:
             try:
-                chosen = wikimedia_image(article["title"])
+                candidate = wikimedia_image(article["title"])
+                if candidate and normalized_image_identity(candidate.get("url", "")) not in excluded_image_identities:
+                    chosen = candidate
             except Exception as exc:
                 logging.info("Commons lookup failed for %s: %s", article["title"], exc)
         if not chosen:
@@ -278,6 +298,7 @@ def main():
             if not result:
                 raise RuntimeError("Shopify returned no updated article.")
             fixed += 1
+            excluded_image_identities.add(normalized_image_identity(chosen["url"]))
             logging.info("Attached article-specific image: %s (%s)", article["title"], source or "Wikimedia Commons")
             time.sleep(0.4)
         except Exception:
