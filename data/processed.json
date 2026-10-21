@@ -278,6 +278,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "1084aae8dd5c10a8d63f9dfad847885773918c76d58dc439e3ec270a13bbc6aa": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "10bbcd3bda521a62367e7d51f529c972f9faf41e10085363c1d93499c888d715": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News World",
@@ -642,6 +647,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "22d5d5eaf6c9991572ae1390686570e5548f42888a70ba5fdda009ab88145faa": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "2308a0274737068d77a89daae4be40ff814177ecc7c208e61fcf0fe6f638da2c": {
       "created_at": "2026-10-17T04:19:20.871064+00:00",
       "has_embedded_video": false,
@@ -799,6 +809,11 @@
     "29660a1a941a2683cf54e451081220973ece14ffe4141a0e3cd55cde46f294c3": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "NASA News",
+      "status": "skipped_stale"
+    },
+    "2a00e825095109564ac93d93965311f61deaf82fa432066ac2f63d78bc04f2fe": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "2a52f7bb3050fda34e01b4a010ed74b0e790b9711603a86a74c03d5a60d5db11": {
@@ -1006,9 +1021,19 @@
       "status": "draft",
       "title": "Car finance compensation payments delayed until next year"
     },
+    "378b1fe2f80d79e6d30e58e58315dbec17273a8e647c5b1234473be172a9b9df": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "37d969c79866b8f41c6c4c00df74f1de7dd4a05fc72e3a798d75cf52d345e53d": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "385ea6c487f0222b803bf0e742f2cc94b142ba9080b280dd82b5b96b9c8ec45a": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "3893efae03d4d01bca69a18855cfa67b918c0b57b42c33cc99f1929bd4a4019a": {
@@ -1055,6 +1080,17 @@
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Variety Music",
       "status": "skipped_stale"
+    },
+    "3ad0ec2a8debdf50650c7055330d9cf8f4a285a2fc51378aaaf9fe524fcf39a8": {
+      "created_at": "2026-10-21T06:48:19.413657+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Variety Music",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754939429143",
+      "source_url": "https://variety.com/2026/music/news/thai-pop-star-jeff-satur-universal-music-1236918438",
+      "status": "published",
+      "title": "Thai Pop Star Jeff Satur Signs With Universal Music Southeast Asia, Sets 2027 Album and World Tour"
     },
     "3b36d17aa5f97a0985b06911dde573950f6f9ae6dc7e4fce0ce851b5561ada39": {
       "seen_at": "2026-10-13T06:37:39.746554+00:00",
@@ -1104,6 +1140,11 @@
     "3d47ea36867c6f273c2868607a189e10a807d35a2449bdf3d9a0d00c682c5dcf": {
       "seen_at": "2026-10-17T05:29:56.024014+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "3de765692d931a2ce2e01ec6afe9bace44c080d318abd456b1e56cca94e5d64c": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "3e7371bcd22f315690cd489d2e53c7122ca71088c3824e2928aeb6f504a30d36": {
@@ -1357,6 +1398,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "4e76560a44792de6eadcd33bcc383f2fb8db01ed61f904565817a8e4bd903b11": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "4ef4b8a45d4caff22bc75dbccc2aed56451507fec43dd9793cb270eac197b54b": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "BBC Technology",
@@ -1403,6 +1449,11 @@
       "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYko1ejBNd0luTGpNVV9CcXVGNFBndDFROVFxRHFSQ0Q0VzM5SG5JTENNMHFzY1l3eVVvdVFMTHRWQjR0NkVoRHRHVk9pU2RlU1RMNlVHQURuaW5WUlZUaTFtZTJoTEVEUUk5N3hGZ2t3c3ItTzl0dklta2h1VG4xM2tPVXh2cTNGSU91bHFoMjZFUUtRZzUxUXRYQTNyQ19VNzQ4cQ?oc=5",
       "status": "draft",
       "title": "US teens can access \u2018nudify\u2019 apps despite Apple and Google\u2019s parental controls, report finds - The Guardian"
+    },
+    "5223f447f7a1ab6eabb11114e7b89a924a96e1baef619909b00778cf8f86c699": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
     },
     "526a61ad5ee32820b4586cc555a10f3cf55e1a112ff674549a13cf8143c1cced": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
@@ -1560,6 +1611,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "5d56b4f9f2187d8d084278578bb00907bdec65c03e98bc8d5596face01037f62": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "5d6d1117971740342b42a101fd0f07a8bbf3aece3281db1cfb7673e1cbf2ed85": {
       "created_at": "2026-10-17T05:38:12.339694+00:00",
       "has_embedded_video": false,
@@ -1708,6 +1764,11 @@
       "status": "draft",
       "title": "One killed, 11 injured in second Houthi strike on Riyadh airport in two days"
     },
+    "6599b96a6ec0c16cbf504b041d6b587fb80e13d0078352f662d1b4d2ec76e913": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "664049bc3a66e86396f9a73bb5aa8c30fc1a17d4246fbd5a7b612e80b416ef42": {
       "seen_at": "2026-10-17T05:20:12.934883+00:00",
       "source": "BBC Business",
@@ -1802,6 +1863,11 @@
     "6bb3aa68c42b4f8a8dc344b706eb6269dfea02089d2e8ba7d8248b31ae6704ee": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "6bca2671c18c65322fffcd70c9426f45105af96a0e6e7435882908ac50418b6d": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "6c26494bd093d3bfd2ba047f70c8f612bf679eaa71cf28c0d6e4f4ab676da663": {
@@ -2002,6 +2068,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cmvg632xgndeo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Why Israeli Gen Z voters are drawn to the far right"
+    },
+    "758ad43d3928c5df1a09f2d9d7132b863dfbb63a32e167fc323dee342f7f269b": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "BBC Technology",
+      "status": "skipped_stale"
     },
     "7668a2c12d45b92ce52db4922bba9204037e8f20ae29b69d737e4f8640226cea": {
       "created_at": "2026-10-12T12:49:04.532342+00:00",
@@ -2416,6 +2487,17 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "8d8b5b6590fe99c4f1831efd8625e002a7bde81db6112f32afcd08d994da5252": {
+      "created_at": "2026-10-21T06:48:19.413657+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754939461911",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckge4vn2rnxgo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Ali G is back. But is the character past its sell-by date?"
+    },
     "8e2aa409f0824ff1d73c66caf78701bcb1bb8dd54489539587741a2df25d3b89": {
       "created_at": "2026-10-17T12:41:47.879859+00:00",
       "has_embedded_video": false,
@@ -2435,6 +2517,11 @@
     "8f17a2801297e8c27f7a524874139bf7a851014f8464f77f1db0f4018f79d6f7": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "8f6de731ca1d6e3776fbc0e2ef75e68c88ee91b5e3efb4788cfc4417cebc9de8": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "908a7566860e8c1dcbfd029aefb16b98fe809e1417ceccd6853c3d5a81c82ef3": {
@@ -2598,6 +2685,11 @@
     },
     "9b0c771212c84272775a552b639b1160caf588f5d585c5967f4cbeddbbb74b1f": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "9b6dde5b76af0fb4aac3741a14b1430cbaee95646b72bca33185c43ad2cb9d6e": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
     },
@@ -2813,6 +2905,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "aa8ae8b082ae6d26c6b2af30aaa7258e7298cdccbb6caf300c00b0e207b590f8": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "ab0c90fa8b7d28dc1ff986e30df0ecd9dc377ca9cb487793fc5f56843aef506d": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Business",
@@ -2897,6 +2994,11 @@
       "status": "draft",
       "title": "Why some have no choice but to pay costly oil prices"
     },
+    "b1fd16c8275afd9693b3c470caf615ad16328e09213dfdd09e647ddb7c6e9bbb": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "b24943eb49fe69f50ea1d00a017206c18c265da94351523f67064d254bbb6c25": {
       "created_at": "2026-10-20T10:37:54.271841+00:00",
       "has_embedded_video": false,
@@ -2980,9 +3082,19 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "b8c6e23cd93b938136ffc8552c4eefdad9a51bb0b3afd13630bb60f7fabfae24": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "b8e9b61a18859af0ddefa18353797c005184e48c4a058d6b94b09c1b5ee10469": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "b93423fcf928cc5ec33d294d1bcdf14d5e6ac25c3ccad0e96e29043dc40bb1bb": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "b99482615aa422c7d298411ea86cd51827f404ac57de5681921ba5aa94f3e8ba": {
@@ -3087,6 +3199,22 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "c038aa98247b21af3814f4488fcb0e8d5febbed3524c191347fda97935025e0a": {
+      "created_at": "2026-10-21T06:48:19.413657+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754939494679",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq5ynkx3xy11o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "US envoy arrives in Russia ahead of meeting with Putin as Zelensky says intelligence sharing 'works now'"
+    },
+    "c0bd71ac7a37dfbbb84dafd4f428ee0ae0fd2a529f4c6f120b63b48965b2d5e3": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "c105533c1047b81b0cbbe2eceeef34082d8abe7e50fb237236a1b18a1bc9eb1c": {
       "seen_at": "2026-10-17T06:08:31.417343+00:00",
       "source": "Google News Science",
@@ -3100,6 +3228,11 @@
     "c1651fb09e6981edba971c2aecb7fd55c0517bcacd02a8cbb0d73909765bd12b": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "c16a95453c1771355251ef28fa3483b1c784d2bd09379c7a36dfb81140c8153b": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "c226d54afdfe035c59ee25dbe38da9a64fb1aa4d8da40c612d49fe000a90f600": {
@@ -3170,6 +3303,11 @@
     "c647d7e798c0a91fe73eb6eaf6251a60790e54ceb8fb28fb4f9d03b2574df5da": {
       "seen_at": "2026-10-18T13:35:57.538912+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "c67da6c0eaa5eec18db04f47653c55aabfa937afb9da2bbf804d710f0d70b14a": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "c6b192b0cdb16fa0aa69d441a29b49f67ac861bcf1be827c1312f7dc4ff8780a": {
@@ -3337,6 +3475,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cwvgde0m2d73o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Orangutans released back into Borneo forest after devastating fires"
+    },
+    "ceb85490656a3dea7afe7688508d88ac0394058e7b56d9a13051ecdb0b98a460": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
     },
     "cef4e950ba0db74507dfa8db6d67fdd9c6da8d39fb1f8537c61db5b279015f54": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
@@ -3585,6 +3728,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "e1695b068220179f39aed7852fef08bba587c4d47bf861b2d3da89d0d85301a5": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "e171cbcc94f579d12d56ffd45ec9091e4bc29ff324752cf6a5ce0aa568f18523": {
       "seen_at": "2026-10-19T12:49:09.789011+00:00",
       "source": "Google News Business",
@@ -3630,6 +3778,16 @@
     "e3fcc6275db85d92c68046230c6dba820257b8453b11c1d55436a3cb22033b4e": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "e3ff4e2d72b7e23e7c58ef1cac11da717c9062b7fc099fa1c387dcec9133b8c3": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "e43025f9a3ce3ae984fcf358d279d63c2d6f84c0ca73ad900439314595ebfc9f": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "e4f2618d2f0ea3703b2ddc07414aef0091d2a1a16aba84e353ef0845f1fa38c2": {
@@ -3900,6 +4058,16 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "f526b656164117091ae3d3ecdf24de0aad5bbc9cc819e0e957687235ad459a05": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "f5350c0045d199ae8c4c930a3e987e4883193e89d2b80e2b481f493229edf098": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "f5b5ea5d97c50c125b0de02bf0838a23dbe666468db1d5bc4540415eb77e769e": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Business",
@@ -3986,6 +4154,11 @@
     },
     "fb44bd05142c520661ce225b80c07aeb28fa0c99d560ed1ab36c8cd09b5a7e5a": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "fb7cc8f3d7abb95415e23fa2c1bd7891625a36ee330245940f8a339217a624b9": {
+      "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
     },
