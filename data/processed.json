@@ -120,6 +120,11 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "06a4cc2b968c892deab521fc6711f4d8e6735ab04b104294c8e5e4f87ce3d7ba": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "07291cc6c6aa29dd04166fc3bb7aa9a77b5d03bd94d1a6bcd5f842244fd8b1b8": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Billboard Pro Music Business",
@@ -961,6 +966,17 @@
       "status": "published",
       "title": "NASA\u2019s SR-1 Freedom Advances with Progress on Nuclear Power Module"
     },
+    "2f964328fd1393fd1cb39ec9134627adab32b84205e49a6dfdc5ea6ee888d557": {
+      "created_at": "2026-10-21T18:45:36.006025+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754945622295",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqdr8zxrr3dxo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Meta fined $25bn for 'lies' over user data privacy"
+    },
     "2ff912ab33e4d97c55b9df860d92e1639b67295426574f04f4c7be543cff02d8": {
       "seen_at": "2026-10-20T18:44:16.994007+00:00",
       "source": "Google News Science",
@@ -1283,6 +1299,11 @@
     "413f6d0285c7eaee37489d22bf86ba8b5d08ee9778c6bb106eb0c5f75ea636b1": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "415e36e2825b6fb83db7a04e21e90cdb8f6a0380d6ce94d61754494dc003be76": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "4183644b410a6cd2686b8f17f63b61c93111b3b51efa0d77c0493852c814352b": {
@@ -1732,6 +1753,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "5f5ed2da3fd0ea68d1c26a0888a62318f2ddbb528a37f7cae0bfceeefc0b3d81": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "5f88f7b78ef3d7e1654b5ff7d18bb678c776cdfae610727aa24d21fbf949e83b": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "NPR Arts and Entertainment",
@@ -1920,6 +1946,17 @@
       "status": "draft",
       "title": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines"
     },
+    "686a391ecfec514d7576ec6efffeb5bee3c3f833cf1a1edf20f2acddf15cda6b": {
+      "created_at": "2026-10-21T18:45:36.006025+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Technology",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754945687831",
+      "source_url": "https://www.bbc.co.uk/news/articles/crz981p0klvgo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Just Eat apologises for AI food mistakes after social media ridicule"
+    },
     "69c14ce789ce1aa4f2b775838c7a0fbf2996185b08b724af94d53d44a98df5bc": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Technology",
@@ -2036,6 +2073,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "6d59d40062303bdf0c4788684f0d202acccc8eb9feed5a9dd511ac8423433aa9": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "6d9f325c12b566664a071e57387589fb22078543f233edb937ade7cf27a4d83c": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Technology",
@@ -2121,6 +2163,11 @@
     "71b70716eb06bb498396439d0f80355cdffbce9dc192d303af2d559f7360e564": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "722431dd92219a02258c301f3ad3899ba7e940b3661ecb5e6e7e34824f07ab47": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "72d26854d5856676c869bd7165f44f94202bee567e4a0c895586a34e0c94f474": {
@@ -2444,6 +2491,11 @@
       "status": "draft",
       "title": "Poundland in rescue talks as owners seek buyer"
     },
+    "837c76bf5124121b1fa6f78d004f07a4b204449cb13cab5d4887b9511ebb66e6": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "83a3cd32146aeb574d9a5b4571240602705186e25d390415b4345d818ce722f0": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
@@ -2489,6 +2541,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "84c497a0e8f15aaa9004013b7977dcf65b4da6afac21c2c5493249878da78b90": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "8501c7fab3adfc9f686f00f23364672d5b32b662700d04845f2703b61128d6be": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "NPR Arts and Entertainment",
@@ -2532,6 +2589,17 @@
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "86c7d377f2ee3512a182c5abb1e11dc68194754bd4260374ca5a89b81f6cf7d6": {
+      "created_at": "2026-10-21T18:45:36.006025+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754945655063",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwrkylee5px0o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Radio presenter's 'wobbles' over Children in Need cycling challenge"
     },
     "86e2c5b35787b1a880f081c057f394b6e87ed4c00a5a01af0b2ece2bd1bbc339": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
@@ -2602,6 +2670,11 @@
     "89e7ce0e0402bd6a0d8b5c53de32180e1fdb4b369d3fede76c1dd9d5340de1ed": {
       "seen_at": "2026-10-17T06:08:31.417343+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "89f4e168483cc953e5c4a672973d3b46501292c7f08fb1791b8f5284c60d1963": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
     "8afc06e671fe07c92001a0a73c02122ce617e345a096ec16c2630b34efbdfb57": {
@@ -3021,6 +3094,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "a5adb4e1f5c543fc0796dd12577c9b55acf6403c1f676754ce788cef64e7012c": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "a60ef15e42ee33d723d5ce2e9936d59ba620e51c3e7ff95a962beab49519d5e2": {
       "created_at": "2026-10-13T18:35:38.703000+00:00",
       "has_publisher_artwork": true,
@@ -3366,6 +3444,11 @@
       "status": "published",
       "title": "How much gas could Jackdaw provide? And will it cut your energy bills?"
     },
+    "bc9592ce024b0d96966c4cbbd2f29b48151796e34fea03835ac0cfb08f110184": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "bcd195dc5c752b2030cde5deb4f3340cfad91c8e1faf6afcbf71c0b513132c2b": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "Google News Science",
@@ -3564,6 +3647,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "c8395bb8966fb90dc0dd826350a77fe9a42f5b699fc5f88563fed8d8ac32f854": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "c85d70cd1e15bc1003a062505e638c8b826c8a37219a5c50a732338f824dd7dc": {
       "seen_at": "2026-10-13T12:38:01.277096+00:00",
       "source": "BBC World",
@@ -3720,6 +3808,16 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "cf88497e84253ebb60211b36f810ef7ec476aa90e4c64635b12caebcc285d81e": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "d0183ed03caf5600f35d8617457f7fdc3053b51bef97720c0f151d70ae4462c1": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "d01ea56722c7f856fa3e46e0710f18322a344a05f511662ef17338ccabe17ff2": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Science",
@@ -3758,6 +3856,11 @@
     "d4f2375d084377be7fd8ef69d085c683056d119f53eeaa916391a4b8376549e0": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "d553e1b9af4185c5b144bc6ad1bdefdd5f20f280955b413217f9c9498c716ca8": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "d573eb1805cab5c46b16a2a16cad18f5c1c5ea1d2ca485874375ce68e5b915dd": {
@@ -3885,6 +3988,11 @@
     "db8d11e44582f83405420b3a81d2c25d65742f8d2850eb511943cf009e67a31b": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
+    "db9f74c815a5ab990d5c8b0d2539b482a8c6a63b7e17b557025495220610b639": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "dbcd0575ec5216ad509a8883a0ca2b3288c1b98fd99e5f4762d0d14a2cea1870": {
@@ -4212,6 +4320,16 @@
     "ec18915aa30603c9be87cb5a053af3e5931b808424804e10be32c270c1e5acec": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "ec3380d5409e6532c0361aa59117123320e29fe4b11305d035ed804038e7ecbf": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "ec608c124b52bd3063b1e403889972cada5dc89c7c511db9732b94aca131266a": {
+      "seen_at": "2026-10-21T18:45:36.006025+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "ecfa87d7ea92819d9bac7d5ffd7bf1ed1be09eb4b68c6201bc91747ddd96ea81": {
