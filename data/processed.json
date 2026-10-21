@@ -934,6 +934,17 @@
       "status": "draft",
       "title": "Kenya confirms second Ebola case - a relative of the first victim"
     },
+    "2e51c680d5b6dac733a53f10f5b5573c6fa24bc0901f7410fc2f4ee61c38f928": {
+      "created_at": "2026-10-21T12:39:04.232654+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754943557911",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmje5k3q9ello?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Woman told Russell Brand he 'treated her like an animal', court hears"
+    },
     "2eced5b9b09d88190f57c849b3e99b1a84b5a6b25466087d7ea25f8aeb525734": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -1852,6 +1863,17 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "6689df779c82a246b99085b4a08b065d04af04533e5a6cc381f24df14dc18cb2": {
+      "created_at": "2026-10-21T12:39:04.232654+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754943623447",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6wyd53yg9n1o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Author Helen Fielding launches award to find the next Bridget Jones's Diary"
+    },
     "668b9f39c0b352b58648842a8ec2d8489220f3f4dbe934b6f22789f27f5ce959": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Billboard Pro Music Business",
@@ -2626,6 +2648,17 @@
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
+    },
+    "8fc89f7a8011e65d139e4a758702bbc6b476134451cddd4c3914e81d0141af39": {
+      "created_at": "2026-10-21T12:39:04.232654+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754943590679",
+      "source_url": "https://www.bbc.co.uk/weather/articles/c6m24ln2j43go?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Amber warning issued as Storm Austen threatens UK with strong winds and heavy rain"
     },
     "908a7566860e8c1dcbfd029aefb16b98fe809e1417ceccd6853c3d5a81c82ef3": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
