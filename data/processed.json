@@ -50,6 +50,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "0359e08f2f4179b6ff8ed8310ca6c03642798fb59628a2c073fd3857487df096": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "039196ab38431368693644bfcaad1b162fda82f6feeb682381d488e30a7cbaeb": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News World",
@@ -123,6 +128,11 @@
     "07bebbba60276f2606b23b2e26c1ac9a0780fe69c511d5921808b47ce44f0ecd": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "07c52c5bcc628f6f19a39a4f8bac537d6937294911b03614e0885c3234c1084b": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "07eb9317fc46bb471cad9f90c3753622c06228dd01051b5a954449888f2c3b98": {
@@ -273,6 +283,11 @@
       "status": "published",
       "title": "Spotify Removes 50 Million AI Slop Tracks from Recommendations This Year"
     },
+    "0e7d5355486874c161a1acba4327ffbc83b608d13aa89e87411758aba8b9813d": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "106b657c30ff37f732ffa042f435e26cf426131a46e42176337eee9b77452627": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "NASA News",
@@ -281,6 +296,11 @@
     "1084aae8dd5c10a8d63f9dfad847885773918c76d58dc439e3ec270a13bbc6aa": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "108d0503d5202f220587970eb7fecf41fb50edfb83d437c27c5711d1398de798": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "10bbcd3bda521a62367e7d51f529c972f9faf41e10085363c1d93499c888d715": {
@@ -550,6 +570,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "1e93d8d79be3994f9e025850f28c56f88c0a4746b9d7354c24b4cc6e272ebf35": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "1eaf25dd1bd81b1bbd4d058ff25b13409455d72a0be094180b4beb1994d5c8f2": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Variety Music",
@@ -647,6 +672,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "22a5987fad73cb6e4f58089f0dfc5472dd39d87045cf7dd08185456135e771e2": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "22d5d5eaf6c9991572ae1390686570e5548f42888a70ba5fdda009ab88145faa": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "Google News Entertainment",
@@ -678,6 +708,17 @@
       "source_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSUF6amxpY2lMcWdiQ09tRkNjZjZGWjFyemRBN2kyQmx3RUl2ZlN6cDJLN3ZOeFBYZEJucUpHNWpNRHpsZFh4UmkxMFZ6ak1OQ1pVemhGaEtSOGJENXljeVItbGlZUUxMNG5LSmNacXZHSjVoOTRyLTZrcTJmZ2prSWctNkE2eEYwcG15bWJnQVlWUkNKdUZKODVZSHhYellTLWNFZnkzMEFiT1FKak1adHVqV25DLUFWWC1uMDIyc0dYX0lSVFRmdDRnUVlEd094?oc=5",
       "status": "draft",
       "title": "Trump waives new Russia sanctions passed by Congress, citing \u2018national interests\u2019 - NBC News"
+    },
+    "23d28394e263a1d43bdd67d0a1ea7040f97aa6da10b4ca34a945c9378dbac4ab": {
+      "created_at": "2026-10-21T12:33:58.920704+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Technology",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754943426839",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmly0lg3w5x2o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Cyber chiefs tell websites to make critical safety update or go offline"
     },
     "244ffc3b821d4ad760d149a59a365247fda0de94fa0c79b2b9ac46b889ec65fd": {
       "created_at": "2026-10-17T04:04:22.722721+00:00",
@@ -774,6 +815,11 @@
     "271cee953f72a11c15a2fa67abeb4fdb1c16c4f33f6674bb9bd2d969df2dde73": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "27775c413fd59286daaf8216b02dc84eceba20646ac287c2d056c0e1eb73f840": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "2792ce4b915938783301ebab5b108d81c5a822149720f29be4237dd8b13040c1": {
@@ -1706,6 +1752,17 @@
       "status": "published",
       "title": "Woman describes alleged assault by Russell Brand as 'frenzied' and 'violent'"
     },
+    "628236b1f71bbc8d1307c53118e2228debb492420d259e5105fa0b326ade62bc": {
+      "created_at": "2026-10-21T12:33:58.920704+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754943361303",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6m24l9v3745o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "US citizen Stephen Hubbard freed by Russia as Trump envoy meets Putin"
+    },
     "6283720af3d660dc41e4e8cb8e6494f8e2ad67e5241d2e091884fdff5fbabccf": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Entertainment",
@@ -1870,6 +1927,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "6be14c1a850376d0542dcfe5cc4dae26b8363e2718766a83747a93f44f362bc3": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "6c26494bd093d3bfd2ba047f70c8f612bf679eaa71cf28c0d6e4f4ab676da663": {
       "seen_at": "2026-10-17T06:46:54.120993+00:00",
       "source": "Google News Science",
@@ -1898,6 +1960,11 @@
     "6cdb0ccc5e113187cf5e8f87046cab0a415488a0044feaa91a78869afa587fde": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
+    "6ce54feb62955b2bd569bb18fc37256ec312d44c622575e8511a708f25301483": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "6ce7a4489b05058fe1355de940685b598d88cb0aaa13e43656b4637df467ce94": {
@@ -2033,9 +2100,19 @@
       "status": "draft",
       "title": "Spain's rush to clear Ceuta migrant backlog raises rights concerns - Reuters"
     },
+    "733cc19037e0170330bdb1a71a543b0cd90a2f698adf1437f3a03281d9bd0f5e": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "7380c158af8ff1c29e4881df47c2485cd24715af6743d9df13d249528e2c014f": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "7396a6123994023d6bd5591a9b0ef61b65919b664560b75ef68e3d726e49f913": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "73dce97cf4c27e36665cb2d77dc956096c486b9da4b98b68113e33265111d47b": {
@@ -2190,6 +2267,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "7bacad8a4d742f52a916dc6666a0b3a7f42faf5b2e5b62a70742beed1e202fd1": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "7bc0d95c7edbf60fb6d1adbc0174f3dd9e68dc104c8b421fd4109e6f861920b0": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "Google News Business",
@@ -2250,6 +2332,11 @@
     "8202bbb8a64a03ae0dd7314fd89ddecc6c59cd7c7acdfd97cc953d7e6c29411e": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "8235d19de399a3160a334ebcc173b29db4af91899c64cadf600acc464096f807": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "82ad906e122dd6b4e9773e94fe9b54d5008b1ccad5243c36bbbca86d4e82de39": {
@@ -2534,6 +2621,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "91dd35ca3a37a08bf942593cf9e4b140314d31bbac4fd6804f9e8231d5a6ab32": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "91f6b999e8fda6c062454020636101fa6c9afdc645d3742b50a7d154d9ed753a": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Business",
@@ -2556,6 +2648,11 @@
     "9260bbc9ed29ac1ed6458b0908f77ddd450f8bfbb9784edd46692243d30873b8": {
       "seen_at": "2026-10-18T13:35:57.538912+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "92b35826394962f9eb30c2e3e7e979641b908aef1c2e261d5b6a51502c76fac2": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "92e5858d27de486c20a34931a7acf4cf350596195708a7a308c28fed84edafe0": {
@@ -2591,6 +2688,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c6pvg4jyz1m0o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Trump's 'energy ceasefire' claim welcomed by Zelensky but Russia silent"
+    },
+    "948e232c9f03e73172f53aca9148055a7c1fab6edd1beb9c8d79b9fa634cfee1": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
     },
     "94b253515e42eea7023412ba579d09f78e727dd266dfd91fe708a445a3af5ce3": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
@@ -2788,6 +2890,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "a2e14f466ebbd2dfc17acf0af7e19b6005dd01b4397b4c97394a571a0dac5a4e": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "a37e2c70026ca5cdb98c235ba22d07e201dafc31d121ec85a7b128079d5b6b17": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "NPR Business",
@@ -2920,6 +3027,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "ab84bd983e39f7403ec17e18882ea7ce5d83a9db059e9a39b4cd846f65c5855f": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "ac1082f7012aded73e510d6e0e82625e9553263901b1787683fc9d09fafd8183": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Google News Business",
@@ -2994,6 +3106,11 @@
       "status": "draft",
       "title": "Why some have no choice but to pay costly oil prices"
     },
+    "b1ec56d4f3bf48b64460b777428a80c0412ff056264565b0c6b2a1ecfe8f8768": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "b1fd16c8275afd9693b3c470caf615ad16328e09213dfdd09e647ddb7c6e9bbb": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "BBC World",
@@ -3028,6 +3145,11 @@
     "b48732c36882651d90e7256e3ef9fc68a6a7fdc523a5c975e1f9308c4b40e91c": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "b48e446a31821e64501c220ee31071bed3f364fab74ef6149b5d03de4b0bc915": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "b5341269084d70a66648b28e58fd501f8ddba2b3880ed93fd2f6560e4837ac19": {
@@ -3140,6 +3262,11 @@
     "bc6bff0ecf02cafe2a099656e8247cd0d242438a8d629e6e2d92d80413226161": {
       "seen_at": "2026-10-18T12:53:00.593654+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "bcd195dc5c752b2030cde5deb4f3340cfad91c8e1faf6afcbf71c0b513132c2b": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "bcf03a6d0e3633eb455d0f55521a43f3896d674419392a6202256b862aea0e9f": {
@@ -3456,6 +3583,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "cd88bbef362e828535aa307e32f41f2cc490fa2a93ce350686d6bf5f8eb3607b": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
     "ce6857b2c85f1c377b34e9ecb4e93ff1c91baa7e18a13d8bfba9a81bfc91a9ae": {
       "created_at": "2026-10-17T06:49:32.877437+00:00",
       "has_embedded_video": false,
@@ -3738,6 +3870,17 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "e1b80d64a126f4928dded58f8877d45a1deb6996137d3c6a8928dfc1ff947eb4": {
+      "created_at": "2026-10-21T12:33:58.920704+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754943394071",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmze4w63ly42o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Civil servant admits he 'made mistakes' juggling five government jobs"
+    },
     "e1c591ea72490165c38b4f9292560363074c767f422440fbf1eaf85b90c9509d": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "NPR Arts and Entertainment",
@@ -3820,6 +3963,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "e76126b0ebbf01e0cf6826f9b6af3a207ffd5c733f9b88d8bd1d2b5656ea1ab0": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "e788c7fc279974cc44bd38254bc8f638de19b4c613c0f84915f1d4fcc60a897e": {
       "created_at": "2026-10-20T11:47:10.493243+00:00",
       "has_embedded_video": true,
@@ -3900,6 +4048,11 @@
     "ea13eba4a7e8245e72ccafac4c5b120b33b0c97035b0e9481f50c60475c0a7eb": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "ea1fbdd203b9deab5808d11281c43b872baffbc62f45b0ccf20d6cf8d59ac190": {
+      "seen_at": "2026-10-21T12:33:58.920704+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "ea39801bb0381e8ad1702c61109132ab9a73140f916d750b87a0e4a45080fa48": {
