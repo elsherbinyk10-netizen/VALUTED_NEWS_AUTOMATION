@@ -9,7 +9,6 @@ on:
       - "backfill_media.py"
       - "backfill_video.py"
       - "audit_repair_images.py"
-      - "translate_news.py"
       - "tests/**"
       - "requirements.txt"
       - "feeds.json"
@@ -69,7 +68,6 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: Run RSS collector
-        # Immediate run requested on 2026-10-19; workflow-file push triggers this run.
         run: python news_worker.py
 
       - name: Add relevant videos to published articles
@@ -95,9 +93,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+users.noreply.github.com"
 
-          # Save this run's state, then merge it onto the newest remote tree.
-          # Never rebase a processed.json-only commit: concurrent code commits can
-          # otherwise conflict in the state file and fail after publishing succeeded.
           cp data/processed.json /tmp/processed-local.json
           if [ -f data/video_backfill.json ]; then cp data/video_backfill.json /tmp/video-backfill-local.json; else printf '{"attempted":{}}\n' > /tmp/video-backfill-local.json; fi
           for attempt in 1 2 3; do
