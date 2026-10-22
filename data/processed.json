@@ -412,6 +412,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "1415c93f83d59e6176776868932d94954cb8f7e892561f87966d2c361354a47e": {
+      "seen_at": "2026-10-22T18:45:05.397738+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "1421d792d42d6e1c6efd38311227395b01132b7385ed64fd5cb41af1ae2dc4d2": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "Google News Technology",
@@ -1153,6 +1158,11 @@
       "status": "draft",
       "title": "Fuel leak spreads more than two miles along River Taff"
     },
+    "3491781589dd05a93807ad1daf73c17f5c0ea963288f139de046ed9044cd8baf": {
+      "seen_at": "2026-10-22T18:45:05.397738+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "34afc9c798c8617cd58de37975e8b474c028d2566cb7d0af004801df25bb32fb": {
       "seen_at": "2026-10-17T06:08:06.057590+00:00",
       "source": "Google News Top Stories",
@@ -1222,6 +1232,11 @@
     "37d969c79866b8f41c6c4c00df74f1de7dd4a05fc72e3a798d75cf52d345e53d": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "38579bf2aa521259c31043909429e2f28956d6313e8caebf252fed9ca07a6b49": {
+      "seen_at": "2026-10-22T18:45:05.397738+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "385ea6c487f0222b803bf0e742f2cc94b142ba9080b280dd82b5b96b9c8ec45a": {
@@ -1935,6 +1950,11 @@
       "status": "draft",
       "title": "Takeaways from the only Minnesota Senate debate between Peggy Flanagan, Michelle Tafoya - The Washington Post"
     },
+    "5dd52872dd62c88990f5100e6d5e3c036787c9006c7c5a819f91b209601e29d3": {
+      "seen_at": "2026-10-22T18:45:05.397738+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "5f41991d5bed7345798f8170c50f4bc8131d0da0e9007c2b602df66c0d39b38e": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -2581,6 +2601,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "79cf80c310c774b9200e14e5af6b6da381738cc522815ce9bf42500ce5184505": {
+      "seen_at": "2026-10-22T18:45:05.397738+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "79d425f06478e2f73af3385c1b016bd096653cd69d67ff3b327b36faee183c9e": {
       "seen_at": "2026-10-20T18:44:16.994007+00:00",
       "source": "BBC Science and Environment",
@@ -3068,6 +3093,17 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "91c49cfb8f6c4b2795da05b4764f8f769c3ad3759d44bdb3ee3544a013be46d0": {
+      "created_at": "2026-10-22T18:45:05.397738+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754962268439",
+      "source_url": "https://www.rollingstone.com/music/music-news/eminem-former-employee-guilty-leaking-unreleased-music-1235646780",
+      "status": "published",
+      "title": "Eminem\u2019s Former Employee Pleads Guilty to Leaking Rapper\u2019s Unreleased Music"
+    },
     "91dd35ca3a37a08bf942593cf9e4b140314d31bbac4fd6804f9e8231d5a6ab32": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "BBC Science and Environment",
@@ -3246,6 +3282,17 @@
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
+    },
+    "9b1a3613ee8adfb4d85b7e437deec6f02606f5726735f9ff2454ebe1cca4934c": {
+      "created_at": "2026-10-22T18:45:05.397738+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Variety Music",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754962333975",
+      "source_url": "https://variety.com/2026/music/concert-reviews/chappell-roan-duet-christina-aguilera-benefit-shrine-1236921537",
+      "status": "published",
+      "title": "Chappell Roan Invites Christina Aguilera for \u2018Coffee,\u2019 and Fully Manages \u2018Expectations,\u2019 in First Night of Benefits at L"
     },
     "9b6dde5b76af0fb4aac3741a14b1430cbaee95646b72bca33185c43ad2cb9d6e": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
@@ -3920,6 +3967,17 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "c1ff1ed6121ec7328fbad2ca662501e7959d01c99e65e0cd0824dc2f2796ef76": {
+      "created_at": "2026-10-22T18:45:05.397738+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754962301207",
+      "source_url": "https://www.bbc.co.uk/news/articles/cky83vwnyglno?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Zuckerberg wins Meta deal to help him foot bill for possible California billionaire tax"
+    },
     "c226d54afdfe035c59ee25dbe38da9a64fb1aa4d8da40c612d49fe000a90f600": {
       "seen_at": "2026-10-17T04:37:20.456657+00:00",
       "source": "Google News Science",
@@ -4331,6 +4389,11 @@
     },
     "d79df436939aac352f84f3b02f173cae28889e6d21f1268d061d05f1cda92395": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "d7b0adce992130816a18ec89bea103f4dcf78fa0882a0bb30916a9af639d3dd2": {
+      "seen_at": "2026-10-22T18:45:05.397738+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
     },
@@ -4767,6 +4830,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "eb803718bb4d0d83dd8393b5caec5c7a8ed6f4676c6b23804b2a7bff6fbf16db": {
+      "seen_at": "2026-10-22T18:45:05.397738+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "ebc55d4cf9740aa51f64ed340c3429ef850352764b0d4e4573956f465c461d25": {
       "created_at": "2026-10-21T12:49:02.005600+00:00",
       "has_embedded_video": true,
@@ -4876,6 +4944,11 @@
     "f1530085e68acc0153c6f304ebe319954dac2342d255e5773cfbb91acc15c365": {
       "seen_at": "2026-10-20T12:49:14.255050+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "f1635285074f655572ba9a93e7c973c3fffaa94f9415a1e4f51d4f08afb8c8fd": {
+      "seen_at": "2026-10-22T18:45:05.397738+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "f1aedc63c799bda133d5a530204f98287ed314fa568118085b8fb618b938e2a0": {
