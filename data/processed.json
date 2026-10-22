@@ -170,6 +170,17 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "094cb58f9ca35447705a0f775bcf0829fbe65c50f8f6fb1c571650708094d00d": {
+      "created_at": "2026-10-22T06:48:44.728366+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Variety Music",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754952470807",
+      "source_url": "https://variety.com/2026/music/news/cmas-celebration-of-dolly-parton-1236919337",
+      "status": "published",
+      "title": "Dolly Parton CMA Tribute: Sabrina Carpenter, Julia Roberts, Oprah and More Remember the Country Icon as the \u2018Great Unifi"
+    },
     "096a7b8d06624333a212f776805237906004f5bc44fc3398aa1dd7eefc57d73b": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "NPR Business",
@@ -3496,6 +3507,11 @@
       "status": "published",
       "title": "'I'm fed up of swiping': The singles choosing dating events over apps"
     },
+    "b27de6825a290cff0607fa1e262efb9a8338e351a8f7b3269e1324b73b37aaa7": {
+      "seen_at": "2026-10-22T06:48:44.728366+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "b32c3a17d5264a50ded804fc75c0f078430163c851a69ebee7c5348048f641b8": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News World",
@@ -3815,6 +3831,11 @@
     "c51c712d07df2f4261b908ce79ebdbdee53442215b117eb45a5d527d88334d89": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "c588cd195cf7ccdd404b350c4b77867de43aa8276a43d89684c3a4340ce0a983": {
+      "seen_at": "2026-10-22T06:48:44.728366+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "c5a56df9ef05386d870d84e8d51123acdc5fb409a3280ce3b5744173f7b04ae4": {
@@ -4138,6 +4159,17 @@
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
+    },
+    "d6f35d649dcbf2c77284445e880242f7bfbd86e3c8297aa829eb6ae058ea6d3d": {
+      "created_at": "2026-10-22T06:48:44.728366+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "NASA News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754952438039",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/fires-char-new-guinea",
+      "status": "published",
+      "title": "Fires Char New Guinea"
     },
     "d754e289a206b1e0b874c0b4acb8e39fcd93489ef1873bb1d2b551737c7c4d10": {
       "created_at": "2026-10-18T06:43:24.869573+00:00",
