@@ -125,6 +125,11 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "069e96b5aad9b83035805d8cd9b36a65f5c16bebec68f0cb63670597b7b7766a": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
     "06a4cc2b968c892deab521fc6711f4d8e6735ab04b104294c8e5e4f87ce3d7ba": {
       "seen_at": "2026-10-21T18:45:36.006025+00:00",
       "source": "Google News Science",
@@ -319,6 +324,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "0fc96cc2ad05e53b0d8604042c79429b1ab0ca2d8f546486ad60346ff6393b74": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "106b657c30ff37f732ffa042f435e26cf426131a46e42176337eee9b77452627": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "NASA News",
@@ -461,6 +471,17 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "16c1563cafac9b45642367e264d7ff819383aa8f8b3b4a084719c73248a3834e": {
+      "created_at": "2026-10-22T12:48:45.756621+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754958958871",
+      "source_url": "https://www.bbc.co.uk/news/videos/cq0ld7e0jg2eo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "How did AI discover the internet's massive cyber-security risk?"
+    },
     "1714816a65805ea9e5915603cfa7c2aa37ad9fcd246b709658776d93583dce3b": {
       "seen_at": "2026-10-20T10:23:22.154356+00:00",
       "source": "Google News Science",
@@ -550,6 +571,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "1b54169ee507fb5e5e35b940112bf2b7851c44ed636b1a71b64501a314c26a20": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "1c0a28c71f388243671549df1885b7258039db2850c92a1356625b02e12cebb9": {
       "seen_at": "2026-10-13T06:37:39.746554+00:00",
       "source": "BBC Business",
@@ -570,6 +596,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c59vz71kxxgzo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "\u00a330 rise in payments for crisis-hit households"
+    },
+    "1ccc984e8b3a323b80100b20e63b484a159cf050f4b98a06ab1c0baf07d2bc19": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
     },
     "1d060f804230bcac24f6d183f6d876ec27ddc828dbf5a9e350e37dcf1e819818": {
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
@@ -809,6 +840,11 @@
     "24fc5221334c7eb6faa5476662bb12ad7bb1f2627bf6a45b79d39209e4aaf091": {
       "seen_at": "2026-10-19T11:09:19.891971+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "254864cee79163e7201bc957cee26b8b5d0a848cb6e0cb78b05cd9d30a15f0fc": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "2554deac31f8536bae3567f88cd6fc39f3b4dcac7f6b674ebe1d8e5da77ef115": {
@@ -1238,6 +1274,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "39df93b3612b787d3459860b764223573cd6af6ffdce450e122cc9d3212577fa": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "3a426e6d767df9f1dd1485a1bdafdeb013c7d0d6ddca9f23b9ea684382234300": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Variety Music",
@@ -1261,6 +1302,11 @@
     },
     "3b371dfd34d670c7cd5ffedb6ddecd5a67e3cb3f4ed175815c6f5d77b839ea1d": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "3b4361498c1a2bed8a5f6c4bfc6592287e8b157ab50a6a1c76d19cc02369080b": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
@@ -1842,6 +1888,11 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "5aced5eea1241bcb99127e32dfb572f6faf810acf5557b35f8416beb20b90122": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "5c145585894c2fcefed65070fab71c5ec1070136320fc0786ffd44fc4319705b": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Rolling Stone Music News",
@@ -1940,6 +1991,17 @@
       "seen_at": "2026-10-19T18:47:42.889839+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
+    },
+    "61aadd9083721b1b105e55b537316e6603abb90c00b059aaf72b754b15fb535e": {
+      "created_at": "2026-10-22T12:48:45.756621+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754958926103",
+      "source_url": "https://www.bbc.co.uk/news/articles/c9e8lz4mrg88o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Russell Brand accuser said alleged rape 'really hurt', court hears"
     },
     "61f0a878d8f40acd08383ffb455fccee01616de3024fea98bcd54a7345a66d35": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
@@ -2179,6 +2241,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "6c6b1f867124cc160bf609050850c83c9697e18971cebec8e7e52338ead7d4f4": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "6c74bc37416ac683bef639883c80bc438a9f06bddac3e2b5ab80724c41e56def": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
@@ -2257,6 +2324,11 @@
     "6fe9c5160dbb720fe1999162d4bf397163eaa304a742c8b66b7eb8942f63e485": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "702f26bea104ff96e20a99e564a40eb5063b2d14bf7a75c2d2c8ae3e0c42b29a": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "7033b3f869d82024700ef5673e1f90710e015be4df688449875fbbd843218e34": {
@@ -2385,6 +2457,11 @@
     "749bb522333e5a4c2bcaf6f0c6cb8090d85a02c3d20f8c3d45ad8ae13079f296": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "74c6f7a73104f9ee8e9953101be0f8c5d9493ca363d300d29eb8a9e6400863e5": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "74d86aa4b43fa73dbad6446fdb742e54d4dc339e81851a9823ae57928d47cf30": {
@@ -2606,6 +2683,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "7e98d3f9d55b358fa3d0729a31b6c74f887a88ed314227051a6ff8cca34d9bbe": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "7f20739422a6c9dc994fd11f0aec096e241d76a138bd4743cb31ba90fba0c52a": {
       "created_at": "2026-10-18T12:53:00.593654+00:00",
       "has_embedded_video": false,
@@ -2776,6 +2858,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "8660bcdf866d08010e0049615cfbebebc9a48c548ffd73e32f06b85f20fe4d8b": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "868b338b316d0765386fee19bb725f6fc7da84187fa4c0df308a9f151ab340e6": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
@@ -2939,6 +3026,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c5x2vkddrkrko?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Pope to be discharged days after lung cancer surgery"
+    },
+    "8e3bc1691d0d4cfddc3e58d67847f4912c267b9d0c03308508550c167a8773bb": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
     },
     "8ee8fbf84c30b2758faed4f4ff8abe362235386f4c5c50853fb5ecb068fe0a0b": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
@@ -3407,6 +3499,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "a988fe20fb53cee7f9ef202cb161822d0791686795ae16a41caeb3d93b9bb461": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "aa8ae8b082ae6d26c6b2af30aaa7258e7298cdccbb6caf300c00b0e207b590f8": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "Google News Technology",
@@ -3542,6 +3639,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "b40d7991507aa0e2f12766ba6627069c775ba7b54535ae6a49224470d4cc0d57": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
     "b42216ee01e9395550078bcd5d36aa9a3622a40937454a843e0b2cbc8c454377": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Business",
@@ -3575,6 +3677,11 @@
     "b5c109cca896d75505a2a24a764651550f5f62520e1eb3951b7fa98227fa59fc": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "NASA News",
+      "status": "skipped_stale"
+    },
+    "b61d386f88d150c791faca0ab3a35f85a7a75f9ac3b40a7910147c4f43fa1c7b": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "b628b01877ac77c42c9294a0678f44dbd9285bfd31a99cbe011ed6fe56173dcf": {
@@ -3928,6 +4035,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "c86e1f6ee7f5eede09abd0d73780eb391150c5f819c18de93d2873437fe666be": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "c8bafbebb3c1df24e28ea9a3a2218d3ce8e2e43aec9d22e961b0ea48aafad175": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Business",
@@ -4012,6 +4124,11 @@
       "source_url": "https://www.bbc.co.uk/news/videos/cmy56nzd6y69o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Who are the Houthis, and why are they so hard to fight?"
+    },
+    "cc639461fc851fb44ce6a4f664c2d1af7782f5f269337d7b394d57c4973f8213": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
     },
     "cc888062e60cbc79849f22823bb6067af9ec692547e4c47f301918df1551f9bd": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
@@ -4293,6 +4410,17 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "daec24bfb37ba463a5a8a58c14c2193b03d25a65400ca13b8e4e147704b859a5": {
+      "created_at": "2026-10-22T12:48:45.756621+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754958893335",
+      "source_url": "https://www.bbc.co.uk/news/articles/c83vqn2x54v1o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Weather warning in place ahead of Storm Boelo"
+    },
     "db1522401daacdc7ab2bbd87eb6c33124ec6db5e832a6de8792a4c144ecf4918": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "NPR Arts and Entertainment",
@@ -4333,6 +4461,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "de99a1d351f8396af195871dd4216c36b8942e118532c714a673755575d12837": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "dea95347e4b6c9d73b3a5443b0748ebee99a1c53b28e6597f548a87f9bf3afaf": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "BBC Business",
@@ -4367,6 +4500,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/ckdd8egder5ro?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Not building third runway would be 'huge missed opportunity', warns Heathrow boss"
+    },
+    "e09c3f31bd4edcffc2b2cddd30dac5afc7729acc94248400e01bd05add82b8e5": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
     },
     "e0ab0469ae57bae6cecc5d22efd52aa254c8d914b765bd1c15aaee4ee6e94477": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
@@ -4442,6 +4580,11 @@
       "status": "published",
       "title": "UK asks Apple to widen access to its payment tech"
     },
+    "e2cb1735ab613d900c70bbd27013cc4c3c49ebf134ddf1f2bca36af809cd9fea": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "e345fab5bc1866323ba889280b627f1f32d367ff9d6acd6fa92e9f87208aefa7": {
       "seen_at": "2026-10-19T11:05:10.544614+00:00",
       "source": "Google News Technology",
@@ -4480,6 +4623,11 @@
     "e61dba9252f9b1b2cd9b4e96a2d97faef6c6e12f985f7e95b55677a62afd2204": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "e64af4de629f30dfe0f350012997ece1b758690775111532b2580d732657cd70": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "e689e5ff26a2acf5b2b351d4a2581de38d5d6d90ffb9a97b983b804834fc1e5b": {
@@ -4735,6 +4883,11 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "f1fb5e7a2d7150e4a719a23f194d4c34b99742b3ecfd5582763a8b8e27d7982a": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "f293b9c74ff509fad25fb0950652a56500fd249482c899a5155752f6f0094d09": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
@@ -4779,6 +4932,11 @@
     "f5183f6ff8c05371beffdc7b9d8f8200f79f1477a66aed10fbd1cca63b3bcbfe": {
       "seen_at": "2026-10-12T18:32:36.737885+00:00",
       "source": "NASA News",
+      "status": "skipped_stale"
+    },
+    "f519ea6c86918f5854ae69b00d1c73993c12e3f86708ea7daf32ea53d6042af0": {
+      "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "f526b656164117091ae3d3ecdf24de0aad5bbc9cc819e0e957687235ad459a05": {
