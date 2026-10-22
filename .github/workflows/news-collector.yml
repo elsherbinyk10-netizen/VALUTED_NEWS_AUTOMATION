@@ -15,7 +15,7 @@ on:
       - "feeds.json"
       - ".github/workflows/news-collector.yml"
   schedule:
-    - cron: "17 6,12,18 * * *"
+    - cron: "17 6,12,18 * * *" # Recovery trigger requested on 2026-10-22
 
 permissions:
   contents: write
