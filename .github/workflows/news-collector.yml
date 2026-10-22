@@ -26,7 +26,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     env:
       SHOPIFY_STORE_DOMAIN: ${{ secrets.SHOPIFY_STORE_DOMAIN }}
@@ -49,10 +49,14 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
+      - name: Install dependencies with transient-failure retries
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          for attempt in 1 2 3; do
+            python -m pip install --disable-pip-version-check --upgrade pip && python -m pip install --disable-pip-version-check -r requirements.txt && exit 0
+            echo "Dependency installation attempt $attempt failed; retrying in 15 seconds."
+            sleep 15
+          done
+          exit 1
 
       - name: Validate required configuration
         shell: bash
@@ -73,17 +77,35 @@ jobs:
       - name: Add relevant videos to published articles
         env:
           VIDEO_BACKFILL_LIMIT: ${{ vars.VIDEO_BACKFILL_LIMIT || '250' }}
-        run: python backfill_video.py
+        run: |
+          for attempt in 1 2 3; do
+            python backfill_video.py && exit 0
+            echo "Video backfill attempt $attempt failed; retrying in 15 seconds."
+            sleep 15
+          done
+          exit 1
 
       - name: Backfill missing or generic featured images
         env:
           MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '100' }}
-        run: python backfill_media.py
+        run: |
+          for attempt in 1 2 3; do
+            python backfill_media.py && exit 0
+            echo "Image backfill attempt $attempt failed; retrying in 15 seconds."
+            sleep 15
+          done
+          exit 1
 
       - name: Audit and repair missing, broken, placeholder, or widely reused article images
         env:
           MEDIA_BACKFILL_LIMIT: ${{ vars.MEDIA_BACKFILL_LIMIT || '100' }}
-        run: python audit_repair_images.py
+        run: |
+          for attempt in 1 2 3; do
+            python audit_repair_images.py && exit 0
+            echo "Image audit/repair attempt $attempt failed; retrying in 15 seconds."
+            sleep 15
+          done
+          exit 1
 
       - name: Commit deduplication state safely
         if: always()
