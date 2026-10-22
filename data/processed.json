@@ -877,6 +877,17 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "28f059c34403f29bfdb8c9c4e1100a24771a1995d7458fffe96e37b8464d367c": {
+      "created_at": "2026-10-22T06:37:07.545122+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754952306967",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6ly09v09lnjo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Dame Judi Dench: 'I can't do a play, a film or read any more'"
+    },
     "293a06762cb7223326a6b02eccbca72f7fde5e061d2a7a8f9de19f2974a38acd": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News Science",
@@ -1291,6 +1302,17 @@
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "3ee3d4d40990ac23f484f683e8e7e9a243d5b3e3b7edf0a8b091440fefde4c8c": {
+      "created_at": "2026-10-22T06:37:07.545122+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "NASA News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754952339735",
+      "source_url": "https://science.nasa.gov/image-article/apod-2026-october-22-the-first-green-star-wd-j13306435",
+      "status": "published",
+      "title": "APOD: 2026 October 22 \u2013 The First Green Star, WD J1330+6435"
     },
     "3f29fb9495d75682591e7211c148432429be4d3a71bcae03c09a4280406f4dac": {
       "seen_at": "2026-10-19T18:47:42.889839+00:00",
@@ -1732,6 +1754,17 @@
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "573a2b2f2f8b6156dbe8aebcc04f5bd0102a0b986f25d05d898601023b2248f3": {
+      "created_at": "2026-10-22T06:37:07.545122+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754952372503",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckzd6rjmlzvmo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "No order, no seat: Starbucks China rolls out new store policy"
     },
     "57805d1a54c877f870346297fef58627a1d3cb1d90d4758982e4756e5114ce23": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
@@ -3076,6 +3109,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "9a22d80dc7946ecddd81716513b4d2d1eca118f9e3584d50e7ce131a0bcef563": {
+      "seen_at": "2026-10-22T06:37:07.545122+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
     "9aa492140a415eb8bbd9a22d432c0c79182afa410ae8a325acb30861e6dab1a7": {
       "seen_at": "2026-10-19T18:47:42.889839+00:00",
       "source": "Google News Science",
@@ -3471,6 +3509,11 @@
     "b42216ee01e9395550078bcd5d36aa9a3622a40937454a843e0b2cbc8c454377": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "b458f0a27cce8a9f03a637f4eebc824979a7a2d7abd48db1717cafc7bb08f5aa": {
+      "seen_at": "2026-10-22T06:37:07.545122+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "b4623a03e4628138c60a79f224fdff631ce725702ef4000880bb058c26956af9": {
@@ -3877,6 +3920,11 @@
     },
     "c9b84585d3cc446d220c37d03012fd867f193068719241cfaade8d40bee6354d": {
       "seen_at": "2026-10-17T04:37:20.456657+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "ca515d9c8c4f32dcb575525ad0b0a37ed1a07cacad756744d4fd1873a558e7a3": {
+      "seen_at": "2026-10-22T06:37:07.545122+00:00",
       "source": "Google News World",
       "status": "skipped_stale"
     },
@@ -4568,6 +4616,11 @@
     "ee175ffd2fd8c8a92ce95f03b29878df86dd3b0ec3d1ad9c17d067c17009198c": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "ee556ccb29fee9d550ee57250cb8070a036a54faef385eb763a75b3cb0fac2c5": {
+      "seen_at": "2026-10-22T06:37:07.545122+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "ef624b68b0213a9bd9e04b71ad62210a729841c04190024467016c3e462424b7": {
