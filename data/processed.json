@@ -210,9 +210,19 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "0a223d0083aacdec4e8d3a786562de2de4477e691b4d45b8f7a913f43b196d97": {
+      "seen_at": "2026-10-22T07:25:24.220805+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "0b28be7298fc2a3b734a6a9fe4361615be5c35b8e5c5b40e226bca726ad96426": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
+    "0b3b3b115eee7bed2081c554ae08fcd7fc5c3f541c6886c95e60b88fb801d9c0": {
+      "seen_at": "2026-10-22T07:25:24.220805+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "0b7274ba05c98359d99b394fa51ae174cfd8397234b50c31bedd51aeb93870e6": {
@@ -1448,6 +1458,11 @@
     "456fc50ac27048e7293758237c21c437aab552b346f9d78f797edff997128f6c": {
       "seen_at": "2026-10-17T06:44:04.013453+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "45bd0486d646e0526466f52eb74b4c5f6bf2a262f3523eb1d40efd21fef8af95": {
+      "seen_at": "2026-10-22T07:25:24.220805+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "45cf31e47d536ddb898b94c2dd0008ef570122d1fef235157066e4d4a2dde93b": {
@@ -3160,6 +3175,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "9cb6860d82127cac40000dfd418c7f7342137995c9f709b991549ec10bb2db7e": {
+      "seen_at": "2026-10-22T07:25:24.220805+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "9d2e3538f5941923e54674be623e41fb66fa9feff75019347e34f5e63d117ddb": {
       "seen_at": "2026-10-14T06:49:18.901185+00:00",
       "source": "BBC Business",
@@ -3718,6 +3738,11 @@
     },
     "bd5cd55a0e76c63a933804f60679ecc3528350b7d5b2b30a1f3e235649e42a5b": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "be5e986e3230912e7dd1226887002ae99cbbb912be140b07dc4973acd6045e04": {
+      "seen_at": "2026-10-22T07:25:24.220805+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
