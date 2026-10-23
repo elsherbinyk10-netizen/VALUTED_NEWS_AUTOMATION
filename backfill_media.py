@@ -27,7 +27,7 @@ def normalized_image_identity(url):
     parsed = urlparse(url or "")
     basename = parsed.path.rsplit("/", 1)[-1]
     basename = re.sub(r"_s0-w[0-9]+", "", basename, flags=re.I)
-    basename = re.sub(r"_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}(?=(?=\.)\\.)", "", basename, flags=re.I)
+    basename = re.sub(r"_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}(?=\.)", "", basename, flags=re.I)
     return (parsed.hostname or "").lower() + "/" + basename if basename else ""
 
 
