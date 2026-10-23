@@ -842,6 +842,11 @@
       "status": "draft",
       "title": "Watch: What's behind Trump's energy ceasefire claim?"
     },
+    "24c1e348c045bae76f5ecf4a94db48d869f00064118e3877a60cc1fe36572b41": {
+      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "24fc5221334c7eb6faa5476662bb12ad7bb1f2627bf6a45b79d39209e4aaf091": {
       "seen_at": "2026-10-19T11:09:19.891971+00:00",
       "source": "BBC Entertainment and Arts",
@@ -1112,6 +1117,11 @@
       "status": "published",
       "title": "Chancellor rejects calls to raise Capital Gains Tax in Budget"
     },
+    "320b4cdc5e3328aa01861d89e965149519078f11608730f7776bc539b8f1edd5": {
+      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "32101b855c169db699d55fc542dbbe45f48c82bac7e6725dc1aa6667f1b0c90f": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News World",
@@ -1136,6 +1146,17 @@
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
+    },
+    "3350b81653d6dc7139dff657fe90b5d2756bb8ede3c980c67caad4a11f6ad245": {
+      "created_at": "2026-10-23T05:44:00.850403+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754966757655",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmwy4wlzqz3zo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Nigeria and Kenya Ebola patients may have crossed paths at Uganda airport, officials say"
     },
     "33983a85b16b9ecec1c156ca172077888c30445ed0fbbd5a7343ca1c32b122d8": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
@@ -1365,6 +1386,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "3dc6f12e33fbdf3fcc36693b643638696988e870a919d9e38500bacc200c1bc9": {
+      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "3dd6e08f119ecdef1ca484fd2ee58f13ed7e43d7ae84098edcafd370b023edd0": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "BBC Business",
@@ -1494,6 +1520,11 @@
     "42623b24a2d0e45f39cbcafdfbb3b9ad87ab4b963b8dd2ed80570d272aadf630": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "428c317337fd4a773c4bb0e68ba27cc5fa01e9510285aef039533d1f3633645b": {
+      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "42ceb7372686636bd3d831f57beea3155d2e7980a8bbf9eb382e3cf46302b0a6": {
@@ -2039,6 +2070,11 @@
       "status": "published",
       "title": "Woman describes alleged assault by Russell Brand as 'frenzied' and 'violent'"
     },
+    "62518c5edf1fbb8ef4d6154bc6669c644a8b03adcda78f56c82a5c369769bdd3": {
+      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "628236b1f71bbc8d1307c53118e2228debb492420d259e5105fa0b326ade62bc": {
       "created_at": "2026-10-21T12:33:58.920704+00:00",
       "has_embedded_video": true,
@@ -2149,6 +2185,17 @@
       "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
     },
+    "66f3aee84ab98000f5bccc9de54c52f92f20a6abdc978e2cc8a112f20e05a0f7": {
+      "created_at": "2026-10-23T05:44:00.850403+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754966692119",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwkgjz3dpyj6o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Heavy rain warning as Storm Austen sweeps across Scotland"
+    },
     "67d146694835396703b2755d11a0dd8efcf285f87f815db05689dba1bc6d9af3": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "BBC Entertainment and Arts",
@@ -2184,6 +2231,16 @@
       "source_url": "https://www.bbc.co.uk/news/articles/crz981p0klvgo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Just Eat apologises for AI food mistakes after social media ridicule"
+    },
+    "68d1483b3beb217b9f9b54278949c7f36639db4b930e486f60191e091abba950": {
+      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "69ae216606ddac51608b3559c634db0d32dc4d30d6636f9f3cab3b4e66b43a9c": {
+      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
     },
     "69c14ce789ce1aa4f2b775838c7a0fbf2996185b08b724af94d53d44a98df5bc": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
@@ -2898,6 +2955,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "86b12a12fa9f95efa10ad82a56165952385ee7917395c4eb2301954e85ecae05": {
+      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "86c7d377f2ee3512a182c5abb1e11dc68194754bd4260374ca5a89b81f6cf7d6": {
       "created_at": "2026-10-21T18:45:36.006025+00:00",
       "has_embedded_video": true,
@@ -3018,6 +3080,11 @@
     "8c708fedda357a30ad90620abc361ee3ad9f7387ed5944bd406d081c50f01943": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "8cd95146d4f6785b7e21ecfb26a88105ea478577c0e22ca2cf365ee675ef9575": {
+      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "8cea88c9ff3d4178797629058f7311f7e985a51cccd3e08378983038ffcf4c8b": {
@@ -3266,6 +3333,11 @@
     "9a22d80dc7946ecddd81716513b4d2d1eca118f9e3584d50e7ce131a0bcef563": {
       "seen_at": "2026-10-22T06:37:07.545122+00:00",
       "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
+    "9a9074b43d782e9bd94702650d60fe48e0010f40801a66e0f2aafcdfaf97657d": {
+      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "9aa492140a415eb8bbd9a22d432c0c79182afa410ae8a325acb30861e6dab1a7": {
@@ -3551,6 +3623,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "aa3b1eb486d12cc21ba6f5e3611bf836c272e69695864f87d4d8eff2da89fc14": {
+      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "aa8ae8b082ae6d26c6b2af30aaa7258e7298cdccbb6caf300c00b0e207b590f8": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "Google News Technology",
@@ -3574,6 +3651,11 @@
     "ac1082f7012aded73e510d6e0e82625e9553263901b1787683fc9d09fafd8183": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "ac70aab17d4d7e8b249700d8af7d07d99614eb0021feb1f899864ea8c7c8a2a0": {
+      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "acaae57ef0857db566b81a43293a1456fe29a94de4af6e4b56215ef8fc5f8397": {
@@ -3673,6 +3755,11 @@
     },
     "b27de6825a290cff0607fa1e262efb9a8338e351a8f7b3269e1324b73b37aaa7": {
       "seen_at": "2026-10-22T06:48:44.728366+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "b2bb12068553824ee505001f62c579ae42821334ecc9c01dc243124c95339854": {
+      "seen_at": "2026-10-23T05:44:00.850403+00:00",
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
@@ -3816,6 +3903,11 @@
     "bacfe000aa4f4995502dd2d0763d2695f1906a54b0c3e96efbd389d6f8f74c56": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Variety Music",
+      "status": "skipped_stale"
+    },
+    "bad35d7fc923f8f085701336612d488df624dae3b857d32ba03d2bdb36d4e4c6": {
+      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "bb1afe9c7b46b8c3b2ea6903fc5aebfd5576cbaa9bb637d41efb25841539b6c1": {
@@ -4330,6 +4422,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "d533136b3f883c581421e8adcba70345f64a93c0c730b9970eeb0ea8251185aa": {
+      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "d553e1b9af4185c5b144bc6ad1bdefdd5f20f280955b413217f9c9498c716ca8": {
       "seen_at": "2026-10-21T18:45:36.006025+00:00",
       "source": "BBC World",
@@ -4370,6 +4467,11 @@
       "source_url": "https://science.nasa.gov/earth/earth-observatory/fires-char-new-guinea",
       "status": "published",
       "title": "Fires Char New Guinea"
+    },
+    "d71db5e2454ac3e0a67ffafd4be1bc1627a556fa471361643309b425054745ab": {
+      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
     },
     "d754e289a206b1e0b874c0b4acb8e39fcd93489ef1873bb1d2b551737c7c4d10": {
       "created_at": "2026-10-18T06:43:24.869573+00:00",
@@ -4794,6 +4896,17 @@
       "seen_at": "2026-10-19T18:47:42.889839+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "e9f377bc29734c3a9b3ce279f562a058039d2289ccce89805024be1032ba36fb": {
+      "created_at": "2026-10-23T05:44:00.850403+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754966724887",
+      "source_url": "https://www.bbc.co.uk/news/articles/crpdg235g76no?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "'Shock' of first England farmer hit by bird flu this season"
     },
     "ea13eba4a7e8245e72ccafac4c5b120b33b0c97035b0e9481f50c60475c0a7eb": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
