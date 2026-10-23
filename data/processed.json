@@ -592,6 +592,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "19b7e0e0a88da1cc81a427d6ed85911305d437937f50cc1851aa40f86bfeb094": {
+      "seen_at": "2026-10-23T18:45:13.548852+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
     "19f3e0a4b00b2bcfb752e80ce03c32345bd22cf3066ab31d312311c9559c425f": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "NPR Business",
@@ -2055,6 +2060,11 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "5a4cb931b2e0a9c43653e0288f57c13566f76b48ef92dcc0a02cfa0e23e8927e": {
+      "seen_at": "2026-10-23T18:45:13.548852+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "5aced5eea1241bcb99127e32dfb572f6faf810acf5557b35f8416beb20b90122": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
       "source": "Google News Technology",
@@ -3204,6 +3214,17 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "89fd2f07128809d53cf01f4755f70c3e20478c134888044f2f966c5d4b14369b": {
+      "created_at": "2026-10-23T18:45:13.548852+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "NASA News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754973966615",
+      "source_url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-power-energy-partnership",
+      "status": "published",
+      "title": "NASA, Virginia Launch Power Partnership for Energy Security"
+    },
     "8afc06e671fe07c92001a0a73c02122ce617e345a096ec16c2630b34efbdfb57": {
       "seen_at": "2026-10-20T10:14:51.554768+00:00",
       "source": "Google News Technology",
@@ -3447,6 +3468,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "9664c27d40099e09339f9b390e18081f6c7511a3a7f269e0f1e01b499bd7f702": {
+      "seen_at": "2026-10-23T18:45:13.548852+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "966eb7b7127784768f02fdd665fe44861d2ece0d92deb6fb047b6ed4740b3cee": {
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
       "source": "Google News Technology",
@@ -3502,6 +3528,17 @@
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "99cd77860bedd83a9599d713d756e02d4d43d7fcea8a67bcee212c91e3ba1c3e": {
+      "created_at": "2026-10-23T18:45:13.548852+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754974032151",
+      "source_url": "https://www.rollingstone.com/music/music-news/chappell-roan-performance-pinkpantheress-lola-young-1235647178",
+      "status": "published",
+      "title": "Chappell Roan Concludes Benefit Shows With Surprise Duets Featuring PinkPantheress, Lola Young"
     },
     "9a0002aad3da2b59012c945372c97f4e2a9657ec36915755089d82d0837f7095": {
       "seen_at": "2026-10-19T18:47:42.889839+00:00",
@@ -3722,6 +3759,11 @@
     "a5adb4e1f5c543fc0796dd12577c9b55acf6403c1f676754ce788cef64e7012c": {
       "seen_at": "2026-10-21T18:45:36.006025+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "a5fed4ab8db135e72608ef9618c347546a43b7836fcf168394c12da2f7ca5b13": {
+      "seen_at": "2026-10-23T18:45:13.548852+00:00",
+      "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
     "a60ef15e42ee33d723d5ce2e9936d59ba620e51c3e7ff95a962beab49519d5e2": {
@@ -4103,6 +4145,17 @@
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
+    },
+    "ba91862b3236d67b7e2cc3b5c140f12652aadd172c0b1d136dbe2044043b0655": {
+      "created_at": "2026-10-23T18:45:13.548852+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Variety Music",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754973999383",
+      "source_url": "https://variety.com/2026/music/news/slayyyter-cancels-european-uk-tour-dates-laryngitis-1236929864",
+      "status": "published",
+      "title": "Slayyyter Cancels Remaining European and U.K. Tour Dates to Recover From Laryngitis"
     },
     "bac47cf804415cd8cf5ec1ffe597a64c7d800cbe9fae23255b14c20d09299cac": {
       "seen_at": "2026-10-17T06:34:44.951405+00:00",
@@ -5024,6 +5077,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "e6dc47c77304d1a4b0bdc38e5d9d93f95ef9c4f1c3a4c3b2dc952e7a0b0ab1b9": {
+      "seen_at": "2026-10-23T18:45:13.548852+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "e6fef7c36f5e40963d117a6e33950168a44cfe498dc6cb4b08aad08d03cb95bc": {
       "seen_at": "2026-10-17T04:58:37.026768+00:00",
       "source": "Google News Top Stories",
@@ -5236,6 +5294,11 @@
     "ee175ffd2fd8c8a92ce95f03b29878df86dd3b0ec3d1ad9c17d067c17009198c": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "ee49f7a7e3a79bc8881ebaba6158ed992c9efc4ecfb10a23de1c2e8d36a5f752": {
+      "seen_at": "2026-10-23T18:45:13.548852+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "ee556ccb29fee9d550ee57250cb8070a036a54faef385eb763a75b3cb0fac2c5": {
@@ -5551,6 +5614,11 @@
     "ff8ae56fc01f76eba79fd9a4f1395d5a6bdc55ed494287c24eea7b4e3d61dc08": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "NPR Business",
+      "status": "skipped_stale"
+    },
+    "ffe4ac4dcb268d592f8bf8fedf5f696966085d9b3a9da3f72e062d904a28c516": {
+      "seen_at": "2026-10-23T18:45:13.548852+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     }
   },
