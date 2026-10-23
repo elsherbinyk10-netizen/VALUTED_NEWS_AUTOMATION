@@ -422,6 +422,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "14259af9e18942f1724c65a02be01968898f1dfa18896bab57e41faca86091c3": {
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "1429e29f28cf5f2d4fd3d0c57935310121e94a999fec300f309ed06a0fee6a09": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC Business",
@@ -441,6 +446,17 @@
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
+    },
+    "156b7e3d250b5d780ec44bfe4246556586e5889ace6ec75d74a049842d628dce": {
+      "created_at": "2026-10-23T05:45:26.319124+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "NASA News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754966790423",
+      "source_url": "https://science.nasa.gov/image-article/apod-2026-october-23-andromeda-in-southern-spring",
+      "status": "published",
+      "title": "APOD: 2026 October 23 \u2013 Andromeda in Southern Spring"
     },
     "1571ae1e3f7fb8504c8ce16fc36b6337a5f22696034ebcd0b6dd046474e8550d": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
@@ -802,6 +818,11 @@
       "status": "published",
       "title": "Cyber chiefs tell websites to make critical safety update or go offline"
     },
+    "23de22fc342f01eaa1a140b16975148aab2542420dfcc2d653337b9e396c10a1": {
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "244ffc3b821d4ad760d149a59a365247fda0de94fa0c79b2b9ac46b889ec65fd": {
       "created_at": "2026-10-17T04:04:22.722721+00:00",
       "has_embedded_video": false,
@@ -843,7 +864,7 @@
       "title": "Watch: What's behind Trump's energy ceasefire claim?"
     },
     "24c1e348c045bae76f5ecf4a94db48d869f00064118e3877a60cc1fe36572b41": {
-      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
     },
@@ -1118,7 +1139,7 @@
       "title": "Chancellor rejects calls to raise Capital Gains Tax in Budget"
     },
     "320b4cdc5e3328aa01861d89e965149519078f11608730f7776bc539b8f1edd5": {
-      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
@@ -1387,7 +1408,7 @@
       "status": "skipped_stale"
     },
     "3dc6f12e33fbdf3fcc36693b643638696988e870a919d9e38500bacc200c1bc9": {
-      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
     },
@@ -1523,7 +1544,7 @@
       "status": "skipped_stale"
     },
     "428c317337fd4a773c4bb0e68ba27cc5fa01e9510285aef039533d1f3633645b": {
-      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
     },
@@ -1842,6 +1863,17 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "55e37cfe53e391804aa600276aae80d2d21a0df2969f1154983167b6234057f4": {
+      "created_at": "2026-10-23T05:45:26.319124+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Variety Music",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754966855959",
+      "source_url": "https://variety.com/2026/music/news/ascap-writing-awards-biographies-john-williams-bernard-herrmann-1236922092",
+      "status": "published",
+      "title": "Biographies of John Williams and Bernard Herrmann Among Honored Works in ASCAP\u2019s Awards for Music Writing and Broadcasts"
+    },
     "55e778132a079bc9498e60de7d0bcec878eb3335b47a573a383ba51fe978dd1b": {
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
       "source": "BBC Entertainment and Arts",
@@ -2071,7 +2103,7 @@
       "title": "Woman describes alleged assault by Russell Brand as 'frenzied' and 'violent'"
     },
     "62518c5edf1fbb8ef4d6154bc6669c644a8b03adcda78f56c82a5c369769bdd3": {
-      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
@@ -2233,12 +2265,12 @@
       "title": "Just Eat apologises for AI food mistakes after social media ridicule"
     },
     "68d1483b3beb217b9f9b54278949c7f36639db4b930e486f60191e091abba950": {
-      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
     },
     "69ae216606ddac51608b3559c634db0d32dc4d30d6636f9f3cab3b4e66b43a9c": {
-      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
@@ -2956,7 +2988,7 @@
       "status": "skipped_stale"
     },
     "86b12a12fa9f95efa10ad82a56165952385ee7917395c4eb2301954e85ecae05": {
-      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
     },
@@ -3083,7 +3115,7 @@
       "status": "skipped_stale"
     },
     "8cd95146d4f6785b7e21ecfb26a88105ea478577c0e22ca2cf365ee675ef9575": {
-      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
@@ -3336,7 +3368,7 @@
       "status": "skipped_stale"
     },
     "9a9074b43d782e9bd94702650d60fe48e0010f40801a66e0f2aafcdfaf97657d": {
-      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
@@ -3624,7 +3656,7 @@
       "status": "skipped_stale"
     },
     "aa3b1eb486d12cc21ba6f5e3611bf836c272e69695864f87d4d8eff2da89fc14": {
-      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
     },
@@ -3654,7 +3686,7 @@
       "status": "skipped_stale"
     },
     "ac70aab17d4d7e8b249700d8af7d07d99614eb0021feb1f899864ea8c7c8a2a0": {
-      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
@@ -3682,6 +3714,17 @@
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "af1f23177d7a6f21cfafcd9a25d27e08f632f15b7b331d8f0416d3adf7627b13": {
+      "created_at": "2026-10-23T05:45:26.319124+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "NASA News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754966823191",
+      "source_url": "https://science.nasa.gov/earth/earth-observatory/el-nino-then-and-now",
+      "status": "published",
+      "title": "El Ni\u00f1o Then and Now"
     },
     "af527f7f1e4eb5e66e83d64005c9278a7c18c6b512271bf2cf5ef324a60b4747": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
@@ -3759,7 +3802,7 @@
       "status": "skipped_stale"
     },
     "b2bb12068553824ee505001f62c579ae42821334ecc9c01dc243124c95339854": {
-      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
@@ -3906,7 +3949,7 @@
       "status": "skipped_stale"
     },
     "bad35d7fc923f8f085701336612d488df624dae3b857d32ba03d2bdb36d4e4c6": {
-      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
@@ -4423,7 +4466,7 @@
       "status": "skipped_stale"
     },
     "d533136b3f883c581421e8adcba70345f64a93c0c730b9970eeb0ea8251185aa": {
-      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "Google News World",
       "status": "skipped_stale"
     },
@@ -4469,7 +4512,7 @@
       "title": "Fires Char New Guinea"
     },
     "d71db5e2454ac3e0a67ffafd4be1bc1627a556fa471361643309b425054745ab": {
-      "seen_at": "2026-10-23T05:44:00.850403+00:00",
+      "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "Google News World",
       "status": "skipped_stale"
     },
