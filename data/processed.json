@@ -15,6 +15,17 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "014d445b05fe83e1f1609d4929c8533e2bb37d6f8575148f990c6c3642b5a509": {
+      "created_at": "2026-10-23T06:47:46.010783+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754967150871",
+      "source_url": "https://www.bbc.co.uk/news/articles/c84g1zxeg9r4o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Matilda celebrates 15 years as West End success story"
+    },
     "022ad7569a85a72f5446fcf84de20814633831a326b44309bfc2f464b5106284": {
       "seen_at": "2026-10-20T11:53:48.143603+00:00",
       "source": "BBC Business",
@@ -58,6 +69,11 @@
     "039196ab38431368693644bfcaad1b162fda82f6feeb682381d488e30a7cbaeb": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "03b5b08435695b6fe7a5255a63c96e97f9a273cf94e4d09566755f5182156635": {
+      "seen_at": "2026-10-23T06:47:46.010783+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "03ceda4a91f51a03c595906f0aab21231dcaf5431e801f959bcfeefb3cb200b2": {
@@ -1188,6 +1204,17 @@
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
+    },
+    "33e041539c4c62c9c9117d69bb4f2c1a7861f4fc0ba678460116c4e51a7c5cf4": {
+      "created_at": "2026-10-23T06:47:46.010783+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754967118103",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmq8n3v94ql3o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Why a student protest movement is challenging 12 years of Vu\u010di\u0107 rule in Serbia"
     },
     "34038bb72868842835897f924e43e89f00623448d827b8788ff591a8ff4e6b3e": {
       "created_at": "2026-10-18T12:41:54.057892+00:00",
@@ -2731,6 +2758,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "7affb725a2de56769512ccccf881efc2e9d36cc569bbbcb6cd4b93d7515fde38": {
+      "seen_at": "2026-10-23T06:47:46.010783+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "7b789d31ef9fa2cec2cbbcfa19280ddc158dc7f26838a66dce17bc200d0f2ba3": {
       "seen_at": "2026-10-20T18:44:16.994007+00:00",
       "source": "Google News Technology",
@@ -2764,6 +2796,11 @@
     "7c75f62d99ae4fad1b7ce3c06061c546f3299aae40d3cd9d83fe8138662bd269": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "7cbd4cda4b2a0905cd4650b3cc4a8906164a9aaeeb3a00683385261b10e5ef9b": {
+      "seen_at": "2026-10-23T06:47:46.010783+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "7ce76d9833babb6d603ef30b0cc0b33768ed78b9f7db8dbe385a7c5d5f7b8411": {
@@ -3346,6 +3383,17 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "US inflation rises more than expected ahead of midterm elections"
+    },
+    "98539dff715e3cb15357d4cb5b9a01b276f70b3ab1f63ac3068c37786500e336": {
+      "created_at": "2026-10-23T06:47:46.010783+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754967085335",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmy56q2n1veqo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Lights will stay on this winter, grid operator says after concerns"
     },
     "988723eb735a574436124e59f511cc7e65f75d99d68ddabf68b0a50ed05c14cd": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
@@ -4425,6 +4473,11 @@
       "status": "published",
       "title": "What is PHP and why did it spark a global cyber-security scramble?"
     },
+    "d11b12090959fb7adade3470bae85bf80430b03535ea2d040ec2d1783970ccf0": {
+      "seen_at": "2026-10-23T06:47:46.010783+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "d14718605bdd1535c21412af8160c20b1fbf80e01d53198a78e9871983e59bb7": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Science",
@@ -5001,6 +5054,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c6gel2xv4493o?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Inflation and government borrowing highest for a year ahead of next week's Budget"
+    },
+    "ebd5ed8eaec52f796dfca9083cd527919c8c7f2ff364e6957603bea2c8739ece": {
+      "seen_at": "2026-10-23T06:47:46.010783+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
     },
     "ebefa97d2b8148e0edc31f1e317dad2c25fe39dd1c0bb1e63898278accc8ed67": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
