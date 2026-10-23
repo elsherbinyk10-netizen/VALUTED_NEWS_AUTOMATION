@@ -116,6 +116,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "0499e873921c0e79d41e4c3eab1d9361248bedbc1f8eea165ac8387356939138": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "04da432b5f6b8a4a3410f3d49d2644c9aab2b6fb4307d2319b64aed46d22bf45": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
@@ -178,6 +183,11 @@
     },
     "084905c4e9c83cb9a610ca6b39efc2fb394c179476e68ad4c1e011835b3bacad": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "088ab34aa57cfd3ff316e89e78bfd5fcd39307e1de32ee00599aac3ca166b377": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
@@ -363,6 +373,11 @@
     "10bbcd3bda521a62367e7d51f529c972f9faf41e10085363c1d93499c888d715": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "11186db8f1264f8c5f6cf9cf326f7b50e2d8324331faaea9046440e31eac8306": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "11186f3a1a89634bd176f1f336c524f74ff6122dd23fd35c77f15c989bb3fc38": {
@@ -981,6 +996,17 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "28dee48124e645dc1b4b863551b5c8d82db8d0801491d607fd76f47e4f5922aa": {
+      "created_at": "2026-10-23T12:47:40.686991+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754971574551",
+      "source_url": "https://www.rollingstone.com/music/music-news/john-mayer-tom-and-jerry-new-single-1235645973",
+      "status": "published",
+      "title": "John Mayer Recruits Dream Team of Musicians for New Song \u2018Tom and Jerry\u2019"
+    },
     "28f059c34403f29bfdb8c9c4e1100a24771a1995d7458fffe96e37b8464d367c": {
       "created_at": "2026-10-22T06:37:07.545122+00:00",
       "has_embedded_video": true,
@@ -1022,6 +1048,22 @@
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "NPR Business",
       "status": "skipped_stale"
+    },
+    "2aebac73f26263738da09919362edb1b69d3ae44989be2925ab89285a7061948": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
+    "2b1ee56484e4781999b4bafb1990f5452ccbb5f26b8195aaea9ccafc1dc7b951": {
+      "created_at": "2026-10-23T12:47:40.686991+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754971640087",
+      "source_url": "https://www.bbc.co.uk/news/articles/c59vzjm118j1o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Denmark to ban mink farming in government U-turn"
     },
     "2b6236af8e0a1a743573f912c79c4ad2cc0a77c03e2b59fb66344f33ca83673f": {
       "created_at": "2026-10-20T18:44:16.994007+00:00",
@@ -1182,6 +1224,11 @@
     "329a33b3e560dea053b20cf87d73c40f8c605d4fc2e589453a4f0df541f3691b": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "332e46e6181ac73989691093bc722d4ce91d6b1b2e511d58118c23e8bf700706": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "3350b81653d6dc7139dff657fe90b5d2756bb8ede3c980c67caad4a11f6ad245": {
@@ -1392,6 +1439,11 @@
     "3b4361498c1a2bed8a5f6c4bfc6592287e8b157ab50a6a1c76d19cc02369080b": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "3b5588db0db1c6fcd4769d9f38aafb86b044fd2b2c0d0bafd4a75977486b84ee": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "3bf02e14e5a1741f19938116e9078ab06c12c60d0a4c8999a776a92cb09bfa49": {
@@ -1615,6 +1667,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "4600bee62122c50705f45e12f5b9dc6c41d680306ec8cfc7f1a909b0631cf839": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "4604ede188e649b3f95d27bc3a1bccf3e1e8f58908c04d21376de1ded2b7f43b": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News World",
@@ -1633,6 +1690,11 @@
     "467a4a8c83d72f3506a027b088b2da01ceafcfa6d7ad2a34290ed76aedba61f9": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "46c0a2e1eea41727803877267e40125c3d6c39812ac2d6a556062eb04dcc24e5": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "NPR Business",
       "status": "skipped_stale"
     },
     "47615773cd708c16374e9d4dff9c5e00ce1570844028ef1607176f364282be9a": {
@@ -2080,6 +2142,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cq1m4zz9e44go?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Bereaved families could face 'unjust' tax bill after civil service pension delays"
+    },
+    "604a30c9edf23ab85ed9678648fa71b9b44e2d7dc837a6d253f78c0b13e34748": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
     },
     "6051a59784aaab81619050b3f14e9a25f2f650e858a33947c2b042988fa5e3ec": {
       "seen_at": "2026-10-12T06:38:38.333441+00:00",
@@ -2662,6 +2729,17 @@
       "status": "draft",
       "title": "Charity reflects on changing needs over 25 years"
     },
+    "77995bc0ac465cdd90cbe00ba13a10c73733ae8ce10aba059f8a82c14d1e1123": {
+      "created_at": "2026-10-23T12:47:40.686991+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754971607319",
+      "source_url": "https://www.bbc.co.uk/weather/articles/cw4g19dll8jlo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "October's full Hunter's Moon to light up night sky this weekend"
+    },
     "782d0eff1df90b4d6f6f62642cf390d13d405d75d4bf24ca295fe0c0c87d4ec2": {
       "seen_at": "2026-10-12T06:38:38.333441+00:00",
       "source": "BBC World",
@@ -2686,6 +2764,11 @@
       "source_url": "https://www.npr.org/2026/10/16/nx-s1-6005201/health-treatment-menopause-hot-flash-night-sweats-insomnia",
       "status": "draft",
       "title": "Hot flashes, night sweats, insomnia \u2013 OB-GYNS set new rules for menopause treatment"
+    },
+    "791aa81aa1f22c2f02a9789d69cf2f17c868d093d9f5b996b777cf589672ace3": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
     },
     "793105dc0f1235c237b52ffbff9fd076303ce8c99b4d950acf7dc3727309d644": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
@@ -2832,6 +2915,11 @@
     "7e0514f47393cb9011658d6128a38df8e548297568b85f5417c5a1685554940b": {
       "seen_at": "2026-10-21T12:35:56.681076+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "7e7b341d271497a8ccb486dde6227d30b9aac7c9047c302d009f49be49735cbe": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "7e98d3f9d55b358fa3d0729a31b6c74f887a88ed314227051a6ff8cca34d9bbe": {
@@ -3161,6 +3249,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "8d22fc4debd39ff36343d533ac0fb3f0353a4b47a5b3dd1d072f2a9797ca03b2": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "8d787f1efae63ab8869c347e08b197fb8264957a740d2a1379cbd3aee70c4537": {
       "seen_at": "2026-10-18T12:53:00.593654+00:00",
       "source": "Google News Business",
@@ -3405,6 +3498,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "99b398a27a008d052d789822f5ce59e21c507b424b1e658abb104067e68ba897": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "9a0002aad3da2b59012c945372c97f4e2a9657ec36915755089d82d0837f7095": {
       "seen_at": "2026-10-19T18:47:42.889839+00:00",
       "source": "Google News Technology",
@@ -3515,9 +3613,19 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "a00a3890ab2e40364c6052209440e8bb2a6bff8ab0c93a43d6ce47f63eec18f9": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "a06797f3d253aec3882ed218405acbc30477d049b21a2a6eade01063efbca2d0": {
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "a0a95622d4e184757dcef478a29aa30410695d7eee8b50421b06fb51c97c2a35": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "NASA News",
       "status": "skipped_stale"
     },
     "a0c0a8274dc209ea8b7f6ce984a781c15cbb38c75988bdaec095dfd5d9ff56fb": {
@@ -3564,6 +3672,11 @@
     "a2e14f466ebbd2dfc17acf0af7e19b6005dd01b4397b4c97394a571a0dac5a4e": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "a30098110f40530c819651496f11232dad749e4f49cab62c937046826dcd45e8": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "a37e2c70026ca5cdb98c235ba22d07e201dafc31d121ec85a7b128079d5b6b17": {
@@ -3892,6 +4005,11 @@
     "b48e446a31821e64501c220ee31071bed3f364fab74ef6149b5d03de4b0bc915": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "b4c060cbae4bd6a4c2d6394f5f0b6ae3516dc54e60952137aa290d8c2f0ea063": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "BBC Technology",
       "status": "skipped_stale"
     },
     "b5341269084d70a66648b28e58fd501f8ddba2b3880ed93fd2f6560e4837ac19": {
@@ -4234,6 +4352,11 @@
     "c647d7e798c0a91fe73eb6eaf6251a60790e54ceb8fb28fb4f9d03b2574df5da": {
       "seen_at": "2026-10-18T13:35:57.538912+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "c66bb1043643921f182ca1418db87a1691d18595c38b95e245cb2c468699d4ad": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "c67da6c0eaa5eec18db04f47653c55aabfa937afb9da2bbf804d710f0d70b14a": {
@@ -4732,6 +4855,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "def1ad7d8feb4a2176337a58e44bb88eabff9fac842c6acfe11b86b2f30acd4b": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "df00d46d302755feb3b424240389d6cbbbedaf2a51de9b1c5785c69bcccc0e76": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
@@ -5029,6 +5157,11 @@
       "status": "draft",
       "title": "Musk says US government may be behind slowdown of Ukraine drone speeds"
     },
+    "eabfdab6b5261ba0c2d8297e159a57514ea790c14a1308b97c0066fe13321d49": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "eb5a09bf20ddde99955bb76536d770423757094acf31719833e6ab82246b2ace": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Technology",
@@ -5271,6 +5404,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "f75fe93c884c9732472a3a843baa88d5f233e3ed7f6a1596b5f2dc4e1ca92952": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "f7e861e5d6951e1c3a4846918e056d76162cf33d6d3f5c3898c1bc94518ac9c6": {
       "seen_at": "2026-10-17T06:08:31.417343+00:00",
       "source": "BBC Science and Environment",
@@ -5294,6 +5432,11 @@
     "f8d57951c8c71704703893b65bdbdce607b35f81c2b4eeb93ec190d91e676a43": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "f916c70ecbb544ff642322a42dc0dc331f99dfcd2b1e2e3c68cf90a5ea39805d": {
+      "seen_at": "2026-10-23T12:47:40.686991+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "f9fafe921d858bf1f3c3797b60e9f4268741addcc6b7ec514a22f848e78c1ab0": {
