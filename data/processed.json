@@ -151,6 +151,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "0590192a9dd6cd4a8047c96187f91f321db85a607fad46a097d1cafd5206240f": {
+      "seen_at": "2026-10-24T18:39:21.262654+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "05ac95315a4bdee018ae56531794eb4c61829661b61fdd2661d97c447e1e9c5a": {
       "seen_at": "2026-10-19T18:47:42.889839+00:00",
       "source": "NASA News",
@@ -1119,6 +1124,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "29b14ce082896dbd223951139be58e56a436c36bfad9ee26620ba8b41fcb1cb5": {
+      "seen_at": "2026-10-24T18:39:21.262654+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "2a00e825095109564ac93d93965311f61deaf82fa432066ac2f63d78bc04f2fe": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "Google News Science",
@@ -1773,6 +1783,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "437c7c5f6ea541b64ee5a38a8b46098c51edc09bec6dd591b29ebcd0309e3220": {
+      "seen_at": "2026-10-24T18:39:21.262654+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "443ac21316b31c3c951947be4b6b2029113e84648b8c35c3f14be0cd6d11b42d": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "NPR Business",
@@ -2262,6 +2277,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "5bbefde9c6ab7e24404122b5860175722092ba0a2494bbd56bd2feefc8744a29": {
+      "seen_at": "2026-10-24T18:39:21.262654+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "5c145585894c2fcefed65070fab71c5ec1070136320fc0786ffd44fc4319705b": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Rolling Stone Music News",
@@ -2411,6 +2431,17 @@
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "6221b4b7de9023e0ccc9f84ffd096e5e03059ed7856c7ac9f44ec4631799b0ab": {
+      "created_at": "2026-10-24T18:39:21.262654+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754987172119",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm86z5n0yvy6o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "British woman dies after trying to rescue sons swept away at sea in the Bahamas"
     },
     "6241a174cc5ae02b8b96989ffe806e4cf4469e6486840e63ded68772cadc9aa7": {
       "created_at": "2026-10-20T11:53:48.143603+00:00",
@@ -2604,6 +2635,17 @@
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
+    },
+    "6a0bebe65be73dd14147330d62cdaa30b4724f84b711623f551f219b87add8ef": {
+      "created_at": "2026-10-24T18:39:21.262654+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754987139351",
+      "source_url": "https://www.bbc.co.uk/news/articles/c317kxyknwp2o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Two rescued after Nairobi building collapse with five still missing"
     },
     "6a27115d23ae67045a2d9be833353e55aab5d5f04743746bca044eccc242dedf": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
@@ -2882,6 +2924,11 @@
     "733cc19037e0170330bdb1a71a543b0cd90a2f698adf1437f3a03281d9bd0f5e": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "733d60fc908e2d6fa4c7397c2ea6e7568091b9532e25c91d1373d141a6687a33": {
+      "seen_at": "2026-10-24T18:39:21.262654+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "7380c158af8ff1c29e4881df47c2485cd24715af6743d9df13d249528e2c014f": {
@@ -4135,6 +4182,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "a52c4f38a7c7aa7feab0c88ddd1ef2378a25026a097fd6b98a1eac005bc118e3": {
+      "seen_at": "2026-10-24T18:39:21.262654+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
     "a5840e5a42f749a2ff4d292651e05379258b28d3ed6fef35d60f20a91fb12a76": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
@@ -4280,6 +4332,11 @@
     "ab84bd983e39f7403ec17e18882ea7ce5d83a9db059e9a39b4cd846f65c5855f": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "NPR Business",
+      "status": "skipped_stale"
+    },
+    "abb6a04a0c5babee251a5c200495d67bdd416d637372730c0c291ba33077f36e": {
+      "seen_at": "2026-10-24T18:39:21.262654+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "abc1d872d304e78d3d6d4f4b8b558ee917f66c97a46a951b1d04a7148d32d5b0": {
@@ -4437,6 +4494,11 @@
     "b32c3a17d5264a50ded804fc75c0f078430163c851a69ebee7c5348048f641b8": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "b3838e7c35172c1f89867ac4a1b23a1b36dd455bf9ce14805333db4be783a623": {
+      "seen_at": "2026-10-24T18:39:21.262654+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "b3b91dadef21f49a802309929d50665d3d3b47edbf034240a16b79aec61314f3": {
@@ -5316,6 +5378,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "da06580b0f9ba483c273d0dda6320395e80d621bde2801b1ca1dc2c40707bdd0": {
+      "seen_at": "2026-10-24T18:39:21.262654+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "da5746e04c646f7219920be19e88e21382b548019c49768a17c8bb39e7178222": {
       "created_at": "2026-10-19T11:09:19.891971+00:00",
       "has_embedded_video": false,
@@ -5587,6 +5654,17 @@
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
       "source": "Google News Entertainment",
       "status": "skipped_stale"
+    },
+    "e64f5893490ffebdd13dc3613ddc4e19a81f3b15b5cb241ecaf6f058fe4957ff": {
+      "created_at": "2026-10-24T18:39:21.262654+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Variety Music",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754987106583",
+      "source_url": "https://variety.com/2026/music/news/smashing-pumpkins-billy-corgan-marilyn-manson-lawsuits-1236930317",
+      "status": "published",
+      "title": "Billy Corgan Says He\u2019s Stood by Marilyn Manson Despite Sex Abuse Claims Because He \u2018Didn\u2019t Feel He Was Guilty\u2019: \u2018I Don\u2019t"
     },
     "e689e5ff26a2acf5b2b351d4a2581de38d5d6d90ffb9a97b983b804834fc1e5b": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
@@ -5872,6 +5950,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "f09674eb91dbd779ee0f9a2205ae1fe645ce34d0114b773f694451c84c012ac7": {
+      "seen_at": "2026-10-24T18:39:21.262654+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
     "f1315209d972f617ce6525a1ea7ffcbfc874f1f8cf2b924736078c0dc8a67a82": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "BBC Technology",
@@ -5895,6 +5978,11 @@
     "f1aedc63c799bda133d5a530204f98287ed314fa568118085b8fb618b938e2a0": {
       "seen_at": "2026-10-17T06:44:04.013453+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "f1d7134978766797023aa5f4194cc866ddc1746f61b65117b29a5dc765d86c67": {
+      "seen_at": "2026-10-24T18:39:21.262654+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "f1fb5e7a2d7150e4a719a23f194d4c34b99742b3ecfd5582763a8b8e27d7982a": {
@@ -6053,6 +6141,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "fa5c9268009290c62f0fac11dc8a09196fdf4007a12e7148ed6fd417057be4b3": {
+      "seen_at": "2026-10-24T18:39:21.262654+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "fa6b4c5a0a790a342621e05373cd554b25e82affb62ea2ba4c5ed9928a3a4589": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Google News Business",
@@ -6165,6 +6258,11 @@
     "ff8ae56fc01f76eba79fd9a4f1395d5a6bdc55ed494287c24eea7b4e3d61dc08": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "NPR Business",
+      "status": "skipped_stale"
+    },
+    "ffdb7d794cdf358c239a8fdf8cb8fdd1dcdbd552a06b3b0702eddb1b73cec7a5": {
+      "seen_at": "2026-10-24T18:39:21.262654+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "ffe4ac4dcb268d592f8bf8fedf5f696966085d9b3a9da3f72e062d904a28c516": {
