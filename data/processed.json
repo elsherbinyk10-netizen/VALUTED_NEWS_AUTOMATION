@@ -211,10 +211,31 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "06c9309238102b2123ab81b1b84f96c3bbe8ab2efa78a3e23921cf4332d49c25": {
+      "seen_at": "2026-10-25T18:39:34.241726+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "06dd05f6b97b1f08a1c85eceb8c0a529c7650dd6c8f47c0a14641389566e5d73": {
+      "seen_at": "2026-10-25T18:39:34.241726+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "07291cc6c6aa29dd04166fc3bb7aa9a77b5d03bd94d1a6bcd5f842244fd8b1b8": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
+    },
+    "0754330016c29494f14d308541093ab9f1f4f24186f732370c498138148ac26f": {
+      "created_at": "2026-10-25T18:39:34.241726+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754996740375",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6jdmj1ej715o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Early reports suggest record high turnout in Serbia elections"
     },
     "07bebbba60276f2606b23b2e26c1ac9a0780fe69c511d5921808b47ce44f0ecd": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
@@ -804,6 +825,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "1d8b53886469f68d00ff805f0e71174e460a7a913be8ca1613745569d6bb5663": {
+      "seen_at": "2026-10-25T18:39:34.241726+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "1dc0672dade08060b8d567776a6cc03df43ed41da9ee6881f7aacbedb7f942b6": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
@@ -1313,6 +1339,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "2d2992cb43792f1b4269339ef76c7033ad8cefcb07e79f9dedfb449f422e4de3": {
+      "seen_at": "2026-10-25T18:39:34.241726+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "2dcdee8cb4e15480f41cfa8a6f6a0ae83cbf7e487543f308863ac977e68c9744": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News World",
@@ -1569,6 +1600,11 @@
     },
     "36a97af61bfd634daf28a0673a36d5fff32b1226e072222cdbd8e5ce6e710e52": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
+    "36b4cc4ca51b13eae13d2ca63eccad4f6d7ec34b01d1ef2abed357e125e34999": {
+      "seen_at": "2026-10-25T18:39:34.241726+00:00",
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
@@ -3466,6 +3502,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "799f240e804d6b0aa2d0058e09c8ca46283e2f5f7d24f6ca5028346a339a48f1": {
+      "seen_at": "2026-10-25T18:39:34.241726+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "79cf80c310c774b9200e14e5af6b6da381738cc522815ce9bf42500ce5184505": {
       "seen_at": "2026-10-22T18:45:05.397738+00:00",
       "source": "Google News Science",
@@ -3582,6 +3623,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "What is the Budget and what could be in it?"
+    },
+    "7cf4e82b7b794f70de70c200eecd3dfb13853ce05dc1ef5f62fce6c07202cc4c": {
+      "seen_at": "2026-10-25T18:39:34.241726+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
     },
     "7d3c176324224f271125312264bf38a311da1f808024f7403b8ced321a8475e5": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
@@ -3904,6 +3950,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "891e2a6d7b48a49a3c979dc0e49cdebfc26b9a537626f3d08f15c1d95f0e51e8": {
+      "seen_at": "2026-10-25T18:39:34.241726+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "8979cc9c75ed361780de3e3ced05953306005b7cc620104720ade89701dbf100": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Business",
@@ -4061,6 +4112,11 @@
     "8f17a2801297e8c27f7a524874139bf7a851014f8464f77f1db0f4018f79d6f7": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "8f2c30cdbb97b7ba9291fe438356fedfa6c116f5c25b53fba63a5e684009802e": {
+      "seen_at": "2026-10-25T18:39:34.241726+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "8f6de731ca1d6e3776fbc0e2ef75e68c88ee91b5e3efb4788cfc4417cebc9de8": {
@@ -5405,6 +5461,22 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "c3aa3830c53974ec2145131a204e3c78e03d0726a5a2db53e56d71b24abed39c": {
+      "created_at": "2026-10-25T18:39:34.241726+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Variety Music",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/754996707607",
+      "source_url": "https://variety.com/2026/digital/news/pokemon-marshmello-concert-30th-anniversary-1236930618",
+      "status": "published",
+      "title": "DJ Pikachu: Pok\u00e9mon Goes EDM With Lasers, Battles and Marshmello in 30th Anniversary Concert at Intuit Dome"
+    },
+    "c3c656dda8e3d92279a856aa09be15b6b4b6c06ec1e775b541adb762745c19a0": {
+      "seen_at": "2026-10-25T18:39:34.241726+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "c402426b653188e4ea5e0baad5d9c09b090ae0b93c8e610c583322112dcb9ee9": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Technology",
@@ -5679,6 +5751,11 @@
     "cd88bbef362e828535aa307e32f41f2cc490fa2a93ce350686d6bf5f8eb3607b": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
+    "ce10cb21358f1178bac3fbda296b95db3ab34c9b4606cdefe60e7a5a9de011ed": {
+      "seen_at": "2026-10-25T18:39:34.241726+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "ce6857b2c85f1c377b34e9ecb4e93ff1c91baa7e18a13d8bfba9a81bfc91a9ae": {
@@ -6177,6 +6254,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c60qk5lw1z8wo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Trains cancelled and road warnings as Scotland prepares for Storm Boelo"
+    },
+    "e1fabf65e2f56c085b060f71bcde47c63de907725aad421485e4e9a97df5a39a": {
+      "seen_at": "2026-10-25T18:39:34.241726+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
     },
     "e2030d187439b7eb489e9bb9f7a338bad31d1a5d3d4de3017ca13ff9c29cede1": {
       "created_at": "2026-10-21T12:35:56.681076+00:00",
@@ -6859,6 +6941,11 @@
     "fbfb9e057e25ec7bbbf71f9726aabd94c81ad18dc080b976c62ca990c57fc16b": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "fc830b06c64e4026d7b1d52575f972e85dfa7487f507597d76930650dfda234b": {
+      "seen_at": "2026-10-25T18:39:34.241726+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "fcbdd747222bb5da54bfcb80a58a9cc540bb2eabcd7a59b128d7653bc447bf0d": {
