@@ -46,6 +46,11 @@
       "status": "draft",
       "title": "Trump casts doubt on press secretary's future"
     },
+    "0294d081a781e08fb155ddfbc529e17af4bd6a655885a135aa3b3d323d406ff0": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "02fb2161ad28d8bade28d7172c140b437c396b621fc7e62a26155e8fd01410b6": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "NPR Arts and Entertainment",
@@ -246,6 +251,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c6jdmj1ej715o?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Early reports suggest record high turnout in Serbia elections"
+    },
+    "077396b23a98de6698373513bf3a2b22b595ad61e0486fe275c8e460f9cf8975": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
     },
     "07bebbba60276f2606b23b2e26c1ac9a0780fe69c511d5921808b47ce44f0ecd": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
@@ -911,6 +921,17 @@
       "status": "published",
       "title": "Harry Styles Performs New Song Written for Liam Payne at MSG"
     },
+    "1ee616a24c0ec358930a255f21200f0264535aa8b5de515bd0bf5613ea94d55a": {
+      "created_at": "2026-10-26T14:51:31.038592+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755012141335",
+      "source_url": "https://www.bbc.co.uk/news/articles/c3vgxjex1z9wo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "US Marine indicted for murder and robbery of woman in Japan"
+    },
     "1ef60b69b657f0835c83dd98685286111fd50236ca9ba2b68a46f82a6248d2b1": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
@@ -919,6 +940,11 @@
     "1f0e79310beea4cfc95e3a12e46de67872846cc482b4f071c6950d4a18fcf84c": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "1f6258bca171e5fea12a3f249c94ef3f722da670f8f2351e82949b08e7e07890": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "1f7088d56feb4c6fc259037c73350429cd529ba2a927c33c1881454d187680f3": {
@@ -990,6 +1016,11 @@
     "210f27843df834e08d64ea5bb571a3051f0e69900b958554ce6f6c41a1399a7d": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
+    "2121648364af6182ef0f881e4c9f5b38244b103f152450e8602293e375b7e280": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "2127c4a64cb620616fc1812874f14b97bb87bfb396458843c4f303f2137faebe": {
@@ -1359,6 +1390,16 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "2b49b9229f3726fd626a0a8a50b906c99afff73900b8cd8ab0c291013b2d2dbe": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "2b595cd49e8ab6e68cb7829aeb4c036ae9c138184df2fcac6d6609e7f0b45013": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "2b6236af8e0a1a743573f912c79c4ad2cc0a77c03e2b59fb66344f33ca83673f": {
       "created_at": "2026-10-20T18:44:16.994007+00:00",
       "has_embedded_video": true,
@@ -1497,6 +1538,11 @@
     "316ed2d0479cf95c4307498c65212aad8595c3b0e5098eaf0f89a36f3cf529fb": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "31b0bbc87fbaf890651269d759d777b9eb418f978ee3f8abedd87584f98ec053": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "31d93b8f643ec2eaf7fee5fd1eb847b70a0454981b1a407aeb06e268dfd76918": {
@@ -2076,6 +2122,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Almost 1,000 arrested as clashes follow another day of mass protests across France"
+    },
+    "435930c6fb79d947a5f1f06baf7c40bfc7e39aa32b4c3bd287d97c8b32ffd81a": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
     },
     "437c7c5f6ea541b64ee5a38a8b46098c51edc09bec6dd591b29ebcd0309e3220": {
       "seen_at": "2026-10-24T18:39:21.262654+00:00",
@@ -3375,6 +3426,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "7296b2556b1cacc5135cbf35c969a06cafb855f2546e5b07b14f2834214ae5a0": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "72a1a480a53fff457f24733139aa11c1e19de79505c28dcc127e096947aa8ac4": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Technology",
@@ -3461,6 +3517,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "74165c37535ade334c5fc69491782aa5edb5b5477c5532d8f3e1f943ba520792": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "745a6c62c19c910d8533c5d20939aba12222b8b70b11cd892d4a2909c8264e32": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Billboard Pro Music Business",
@@ -3536,6 +3597,11 @@
       "source_url": "https://www.npr.org/2026/10/12/g-s1-147772/up-first-newsletter-trump-ukraine-russia-antitrust-investigation-hurricane-isaias-saudi-airport",
       "status": "draft",
       "title": "DOJ launches antitrust probe of TV networks. And, Trump says Ukraine needs new leader"
+    },
+    "76738d737cf01be9a7b8b21d6be965c68d644a4a3a7f599c26cb16d361143016": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
     },
     "76ac965f5c723a2654f21d67a8988045680d7afabd5f98292654254f124477de": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
@@ -3766,6 +3832,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "7d160b6cd0ba72c884a53c1b7bcc5054d5d72240d66a8b09416dd0aa9a3d9d94": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "7d3c176324224f271125312264bf38a311da1f808024f7403b8ced321a8475e5": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
@@ -3855,6 +3926,11 @@
     "8235d19de399a3160a334ebcc173b29db4af91899c64cadf600acc464096f807": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "8292bba03aed03055c551160473b647fc7797a8b6761002cbee95add13baf01d": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "82ad906e122dd6b4e9773e94fe9b54d5008b1ccad5243c36bbbca86d4e82de39": {
@@ -4011,6 +4087,17 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "865d376cf5cce55d678daec10bd8a3316053588fd54ade0b3578f5da0c188ebd": {
+      "created_at": "2026-10-26T14:51:31.038592+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "NASA News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755012174103",
+      "source_url": "https://www.nasa.gov/news-release/nasa-usda-sign-agreement-advancing-earth-science-agriculture",
+      "status": "published",
+      "title": "NASA, USDA Sign Agreement Advancing Earth Science, Agriculture"
+    },
     "8660bcdf866d08010e0049615cfbebebc9a48c548ffd73e32f06b85f20fe4d8b": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
       "source": "BBC Business",
@@ -4142,6 +4229,11 @@
     "8ac30c7982ab6a2678bf1acdb6d05957d2bd78c0e39864cf3bc2e466377affb9": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "8ac73862c79e893409d4c4f78423389a0c59a2e78c3a1a31b82b1af088b7ae3e": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "8afc06e671fe07c92001a0a73c02122ce617e345a096ec16c2630b34efbdfb57": {
@@ -4496,6 +4588,11 @@
     "97c227bfaa08472768aae88eb116651a3336e351a451a211251500cb04e86c05": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "97edcf1af214a79daef869e5cf394cd9f4966380739a32d4230eeff00951f1d2": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "9808c98144ac91bc79afec165eb7f37fdf3fc54856dba348a1f8537464297fd2": {
@@ -5249,6 +5346,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "b4c9ea442407a57810d1762d096c77158c27ec58d3301d1d4676ae5a5fc296bf": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
     "b5341269084d70a66648b28e58fd501f8ddba2b3880ed93fd2f6560e4837ac19": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Billboard Pro Music Business",
@@ -5330,6 +5432,17 @@
       "source_url": "https://www.bbc.co.uk/news/videos/cmn5vey19q3go?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Watch: Shops looted and restaurants gutted in Paris riots"
+    },
+    "b7e0a7314df9ab0934d32a308ba35549cda8a4bb36f925c2ba890eaaaee6ca97": {
+      "created_at": "2026-10-26T14:51:31.038592+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755012108567",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing"
     },
     "b81979796939ee3f3cd976e207ce1f5077d900d54c813ff5d0ee74654c7879f2": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
@@ -5442,6 +5555,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c65yn9p55np2o?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Four ways Labour could raise money in the Budget without hiking income tax"
+    },
+    "bbb6ef9da4a052a71524f1011a529584daf16527471d4b157f29c2569c72727d": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
     },
     "bbfd72c7e959fc3e1efbee32fc1f50b236c4a489c14453e3b18dcd7fdb95271e": {
       "created_at": "2026-10-16T12:49:27.685790+00:00",
@@ -5909,6 +6027,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "cc804c53bc8877494f24655b6e68db3119205825bd7671efe7741f47a3c0b8b7": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "cc85acd322b84b9f673437016d6fd339b8f8ebfb666992aea3f1f89ab9d8333b": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Science",
@@ -5960,6 +6083,11 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "cdfc4fbdb4a4483cc9dea880aaeb6d0f0dfa6e14fc727667731535833df486fd": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "ce10cb21358f1178bac3fbda296b95db3ab34c9b4606cdefe60e7a5a9de011ed": {
       "seen_at": "2026-10-25T18:39:34.241726+00:00",
       "source": "Google News Technology",
@@ -5993,6 +6121,11 @@
     "cef4e950ba0db74507dfa8db6d67fdd9c6da8d39fb1f8537c61db5b279015f54": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "cf3c859b74bb78765332d69c796ae48c916221e3229a790db4fc1cf5f4e76a62": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "cf4371881cc66060ff1b040d8619fad9825927dc89fe4d5bee3a91535ab2d6dd": {
@@ -6111,6 +6244,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "d47390aacd6d8c146016d576c3a55aac467400bbd35b9cc569ac5d1a446bbb9b": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "d4f2375d084377be7fd8ef69d085c683056d119f53eeaa916391a4b8376549e0": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC Business",
@@ -6129,6 +6267,11 @@
     "d573eb1805cab5c46b16a2a16cad18f5c1c5ea1d2ca485874375ce68e5b915dd": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "d58590effe1c443fb536bca4f6c46fd249a6c93ad5ab938fb081b80c38bfd00c": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "d64e80c26203100f74bb5fe51e0c9c1c6762f0210d6906084905db26ad970377": {
@@ -6419,6 +6562,11 @@
     "e043dab69f1f9f76f65ac179931e189c9bd9a45c648e89952ddb53734ff2ed34": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "e053eb7d3d2179af9996eb515730b5874349a04718cc6941f3e7b42ccd58777f": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "e09c3f31bd4edcffc2b2cddd30dac5afc7729acc94248400e01bd05add82b8e5": {
@@ -6821,6 +6969,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "ecbfdd853a708aa6de58db361ed08595e74d21b0bb57b2debfab5c2749a15549": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "ece4dc9e3d2a67fae6e1807a8d189c69afa718e28f44b4ba6f9a6f9d6af8d10e": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "BBC World",
@@ -6921,6 +7074,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "f139ec6cf16b94c05196611b61cfd9409f536006d9ed1050a98bd611098835b8": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "f1530085e68acc0153c6f304ebe319954dac2342d255e5773cfbb91acc15c365": {
       "seen_at": "2026-10-20T12:49:14.255050+00:00",
       "source": "Google News Science",
@@ -6979,6 +7137,11 @@
     "f302ac9cb615f1481b500d8b94be96d3482050abe2da0ef590006e375b6d9085": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "f33927dd3c4953eafe0c31edf676ce4b5a67bdbc0ea39fd7356d435025a0554d": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "f3424c162f20adc38286ba434e8ee00adebd0967efd37df1d63336a046d19793": {
@@ -7274,6 +7437,11 @@
     "ff5802933cf1f93b4521eadd84d3a73a04c3a6dc5321660332183e17448b1ce5": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "ff7a77c67f666e0fd74aaf70858751ade3de19d9585a0451b8030a331623a7d3": {
+      "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "ff8ae56fc01f76eba79fd9a4f1395d5a6bdc55ed494287c24eea7b4e3d61dc08": {
