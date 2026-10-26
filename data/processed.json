@@ -362,6 +362,17 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "0a3fd8915e04759246e80ce5bfdaa7868d1665b2d0df5f82bf978e1153cf25d6": {
+      "created_at": "2026-10-26T18:52:52.237313+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755016368407",
+      "source_url": "https://www.rollingstone.com/music/music-news/tate-mcrae-billboard-hot-100-number-two-olivia-rodrigo-1235645932",
+      "status": "published",
+      "title": "Tate McRae Beats Taylor Swift, Olivia Rodrigo in Billboard Hot 100 Race for \u2026 Number Two"
+    },
     "0b28be7298fc2a3b734a6a9fe4361615be5c35b8e5c5b40e226bca726ad96426": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
@@ -3168,6 +3179,11 @@
       "status": "draft",
       "title": "Toxic algorithms wouldn't let them go - now Australia wants an off switch"
     },
+    "6b068bbaa1554c16742957da4fc72a2ce2b62f7e7ba72f8d83e3edea6b3a93eb": {
+      "seen_at": "2026-10-26T18:52:52.237313+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
     "6b40b0199b663decd9a9ed6f7d4e10dcfe47d0a7ed09d0a01388825db6f34fb3": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Rolling Stone Music News",
@@ -3867,6 +3883,17 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "7ef4e61456df07c0fc3dcb25950a9b3c5be13e20e99011d3f14184d6aa4f7145": {
+      "created_at": "2026-10-26T18:52:52.237313+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755016433943",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6zxj7dvxr5yo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Political battle intensifies within Labour over Rosebank oil field"
+    },
     "7f20739422a6c9dc994fd11f0aec096e241d76a138bd4743cb31ba90fba0c52a": {
       "created_at": "2026-10-18T12:53:00.593654+00:00",
       "has_embedded_video": false,
@@ -4208,6 +4235,11 @@
     "89f4e168483cc953e5c4a672973d3b46501292c7f08fb1791b8f5284c60d1963": {
       "seen_at": "2026-10-21T18:45:36.006025+00:00",
       "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
+    "89f63b6a72c86265e879d4e9e4048df4ed43fe5331af87c7c9acdd7a3e604e03": {
+      "seen_at": "2026-10-26T18:52:52.237313+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "89fd2f07128809d53cf01f4755f70c3e20478c134888044f2f966c5d4b14369b": {
@@ -4637,6 +4669,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "99cb0ca9f2e37113ed58739ee8106ec856ded778b7b2096eb8eb0c5dd7117df7": {
+      "seen_at": "2026-10-26T18:52:52.237313+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "99cd77860bedd83a9599d713d756e02d4d43d7fcea8a67bcee212c91e3ba1c3e": {
       "created_at": "2026-10-23T18:45:13.548852+00:00",
       "has_embedded_video": true,
@@ -4768,6 +4805,17 @@
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Google News Entertainment",
       "status": "skipped_stale"
+    },
+    "9dd2f7177d8d8160728bfd8fb740960dcab1c06a06b1b24171c4dc7f8d1e0ed4": {
+      "created_at": "2026-10-26T18:52:52.237313+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755016401175",
+      "source_url": "https://www.bbc.co.uk/news/articles/cv0ldjzg9xppo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Star Trek actor Walter Koenig, who played Pavel Chekov, dies aged 90"
     },
     "9ddd951de91855094d1430c9f539cc2c5a0df10791a118f8333de9f6ce6e6a64": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
@@ -4989,6 +5037,11 @@
     "a68d4e6a67d8b53cc7ccc81248c66434a252b549b3bb85a80f442cc98441fb74": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "a737f2eecd870613fb027ce5f150a5d70f5be3dbcb1b4ba3b0811f04be8cabf7": {
+      "seen_at": "2026-10-26T18:52:52.237313+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "a758244590b4247c82c5277f2b472d7b9901036b87c0ed6c94722bf3d811e569": {
@@ -5462,6 +5515,11 @@
     "b86e086b6ebc4f2a4775570d3d64be7c2c192f8c62cb34840659d4e7f3c9efae": {
       "seen_at": "2026-10-20T12:49:14.255050+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "b8781752cfa975c93ea0c4dc320a0c2ddc31a9df54529e306036710d4b87c930": {
+      "seen_at": "2026-10-26T18:52:52.237313+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "b8c6e23cd93b938136ffc8552c4eefdad9a51bb0b3afd13630bb60f7fabfae24": {
