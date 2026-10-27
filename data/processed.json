@@ -1447,6 +1447,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "2b563f30c6804ef9a094d0c2dcde64a9e7b0fdbc332b93d41480f12bbc8ca271": {
+      "seen_at": "2026-10-27T18:49:42.592770+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "2b595cd49e8ab6e68cb7829aeb4c036ae9c138184df2fcac6d6609e7f0b45013": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
       "source": "BBC Entertainment and Arts",
@@ -1572,9 +1577,19 @@
       "status": "published",
       "title": "Meta fined $25bn for 'lies' over user data privacy"
     },
+    "2faf45cc80092cd3bbc178194f0f16683b8f72d2badd1b8fad13ed5c65fa5761": {
+      "seen_at": "2026-10-27T18:49:42.592770+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "2ff912ab33e4d97c55b9df860d92e1639b67295426574f04f4c7be543cff02d8": {
       "seen_at": "2026-10-20T18:44:16.994007+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "30993307ab52b70e5d0ef3ac31451769573f7d0aac533d7a2ca10257879cf730": {
+      "seen_at": "2026-10-27T18:49:42.592770+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "30e448b8f90ae3b9b65e2b79cb4895c5e9460d0de6eee1674f0bdc0f38acd2ea": {
@@ -1590,6 +1605,11 @@
     "316ed2d0479cf95c4307498c65212aad8595c3b0e5098eaf0f89a36f3cf529fb": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "319891840ea6cd2994257268f65e9196ac79d62a0dc88e80114682abde3e3d53": {
+      "seen_at": "2026-10-27T18:49:42.592770+00:00",
+      "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
     "31b0bbc87fbaf890651269d759d777b9eb418f978ee3f8abedd87584f98ec053": {
@@ -2024,6 +2044,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "3e4ce4c076b7d00c37904f14b5dfc62535072b54970955175d8faf758f1db4bd": {
+      "seen_at": "2026-10-27T18:49:42.592770+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "3e7371bcd22f315690cd489d2e53c7122ca71088c3824e2928aeb6f504a30d36": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Business",
@@ -2154,6 +2179,11 @@
       "source_url": "https://www.bbc.co.uk/news/videos/cq398xnyx4gyo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Thousands of NI workers to get pay bump as Real Living Wage rises"
+    },
+    "421ee4efaeb991266220826313bdd8506f66f0e7875626512fbfa01ee523d96a": {
+      "seen_at": "2026-10-27T18:49:42.592770+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
     },
     "423717cb046a0a3368a77c69c96cf47a01dd14c245adc0f45fb7bbc440440d61": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
@@ -2498,6 +2528,17 @@
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "4fdc246437b36de8da7083f7e742b28e28d6fc1c08b38556dda5059a2122f085": {
+      "created_at": "2026-10-27T18:49:42.592770+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755032162583",
+      "source_url": "https://www.rollingstone.com/music/music-news/metallica-kirk-hammett-edgar-allen-poe-the-raven-1235648680",
+      "status": "published",
+      "title": "Metallica\u2019s Kirk Hammett Reads Edgar Allen Poe\u2019s \u2018The Raven\u2019"
     },
     "5026d19b9d0f7357817e6e1b8ceea9a3de82ee8e6887412872d3bf68b455e4cc": {
       "created_at": "2026-10-17T05:11:17.786554+00:00",
@@ -3497,6 +3538,11 @@
       "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVENUREZRaW9aZi10TGVhVW51d1NlVzVGdGFXUVdGSUk0YnJQTFlGaXFRNDNybkd3dHgtVjVyUlBEYTNRZWVHOHRIdFZKOUk2R3dyLTVnZE53cGJBcHI0b2w3WGNmbnhFdkhORUFhb0NyOC1XN05wWEluX1hrVGI2dlhOU1dXRzZHWjlLNm1WUjZnNGtLaXFzSnEyOXJSMHRsNUhSMW1EbkFRcVQzLU56NXN3?oc=5",
       "status": "draft",
       "title": "The Maya collapse was blamed on drought. The full story is more complicated. - The Washington Post"
+    },
+    "71264cfca6a309956c2effb1f3735e8868eb1bc18da732f1977f5bb5dc8a818d": {
+      "seen_at": "2026-10-27T18:49:42.592770+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
     },
     "713828fff39602a3e13bbc5bbf14ef451c2b0c65516826e4f0b69d4edf0beb0d": {
       "created_at": "2026-10-20T10:43:29.843909+00:00",
@@ -4635,6 +4681,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "933e6d4859ebbaaa10803321fe025c8544173bfeb189e09f5ae7d877a7800188": {
+      "seen_at": "2026-10-27T18:49:42.592770+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "93590db6a53c7325cb17ff90e32f4e744e921c2074e87c6927aef983733c529d": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "NPR Business",
@@ -5690,6 +5741,17 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "b8725bdd16c16a3ef59a80d13d52b77fcccc87b29b79d6a73e530eba5ce69161": {
+      "created_at": "2026-10-27T18:49:42.592770+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755032195351",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmx28de233r2o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Nanotyrannus skeleton sells for $47.3m in New York auction"
+    },
     "b8781752cfa975c93ea0c4dc320a0c2ddc31a9df54529e306036710d4b87c930": {
       "seen_at": "2026-10-26T18:52:52.237313+00:00",
       "source": "Google News World",
@@ -5879,6 +5941,17 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "bd6a1a3d0c6e77b2c77d8efb6711e3821e0a7573cba9499e10103dcb47d468d5": {
+      "created_at": "2026-10-27T18:49:42.592770+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755032129815",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq0megg87n3po?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Will a new strategy help protect Northern Ireland's nature?"
+    },
     "bdd83401d77b6e3f91005e39329be9d4279961f96c05f6d66294a5a5171ce246": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Billboard Pro Music Business",
@@ -5998,9 +6071,19 @@
       "status": "published",
       "title": "Zuckerberg wins Meta deal to help him foot bill for possible California billionaire tax"
     },
+    "c21c01b5864a11b225a25d3e596090c9955bcea149a21fe79b559a12443fe344": {
+      "seen_at": "2026-10-27T18:49:42.592770+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "c226d54afdfe035c59ee25dbe38da9a64fb1aa4d8da40c612d49fe000a90f600": {
       "seen_at": "2026-10-17T04:37:20.456657+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "c22b2ac3074fbfdfa47646df9fd9c795ade90479933c8417dc514e1b44799806": {
+      "seen_at": "2026-10-27T18:49:42.592770+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "c27cf7e621acbc08d2bff7ed00eeaa3f83f22306933189cc60ab38bbd876efa4": {
@@ -7466,6 +7549,11 @@
     "f3424c162f20adc38286ba434e8ee00adebd0967efd37df1d63336a046d19793": {
       "seen_at": "2026-10-20T10:14:51.554768+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "f36fcf60bca61b147785399ecfac79b9101341a1de6300cedc13dbce4feb5c2e": {
+      "seen_at": "2026-10-27T18:49:42.592770+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "f3a72496ba3397ea8ea5ed37caf3c872b602f2c821d83d7a792408927edf0af4": {
