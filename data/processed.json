@@ -20,6 +20,17 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "01235203636ca28124c9c52b767f0575cc5fd54e081bf4b3679b4768113ac916": {
+      "created_at": "2026-10-27T06:48:31.538195+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755024003351",
+      "source_url": "https://www.bbc.co.uk/news/articles/c3dxwjx7xpj0o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Tiny zebra-striped bee in West a 'huge surprise'"
+    },
     "014d445b05fe83e1f1609d4929c8533e2bb37d6f8575148f990c6c3642b5a509": {
       "created_at": "2026-10-23T06:47:46.010783+00:00",
       "has_embedded_video": true,
@@ -49,6 +60,11 @@
     "0294d081a781e08fb155ddfbc529e17af4bd6a655885a135aa3b3d323d406ff0": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "02986a017ad14e8ee89e2853d3fe249a726a5b0f17cff7fbc32eb34981768691": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "02fb2161ad28d8bade28d7172c140b437c396b621fc7e62a26155e8fd01410b6": {
@@ -305,6 +321,11 @@
     "08ef32cc352cc2c3eeeda5b2cfc0fc4c4a1c89b446635a0eb9629716216ecb2b": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "0926cc5a84ca851b38f0b69c1f61d31ab17f84be259eb57049f41ddc73af3011": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "094cb58f9ca35447705a0f775bcf0829fbe65c50f8f6fb1c571650708094d00d": {
@@ -1230,6 +1251,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "266e5f42862fa519b041b5b37e0cbe83d1d1eb3ab3794a903d6f86c654895337": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "26845ca637aa9d37e5bc21395e5e001736ded121d5fe2ed27402ad7c22a4f523": {
       "created_at": "2026-10-17T04:21:48.914515+00:00",
       "has_embedded_video": false,
@@ -1274,6 +1300,11 @@
     "27f6260d427cafc846a4b7e8ff94789c67f576143bfcf3e26e57b07a197fae33": {
       "seen_at": "2026-10-20T11:53:48.143603+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "281d006db135345680337c18962251bcf03391060558686d9986bdcb87e6b13c": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "NPR Business",
       "status": "skipped_stale"
     },
     "2829c424079d203f7d2f8175d2d23a036596e15f465f9706b47a9856cd63d8da": {
@@ -1654,6 +1685,17 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c8vgxnp5w6vzo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Fuel leak spreads more than two miles along River Taff"
+    },
+    "3407f19a34d24c613480358e3a02e490763cab9a01190600bb0d23e7576c5bb8": {
+      "created_at": "2026-10-27T06:48:31.538195+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755023970583",
+      "source_url": "https://www.bbc.co.uk/news/articles/c5vgj8xwyj1zo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "New weather warnings as third storm set to hit Scotland"
     },
     "3491781589dd05a93807ad1daf73c17f5c0ea963288f139de046ed9044cd8baf": {
       "seen_at": "2026-10-22T18:45:05.397738+00:00",
@@ -2123,6 +2165,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "42fa0e0b16fa0d0e47745f059bd70248bce03e10ede9243c81a28f814b24212a": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "431f5566a31b29b49c93579a9a7c48f8cca15cf5c5b5b384fa694c3be8ae33e8": {
       "created_at": "2026-10-25T06:45:22.038349+00:00",
       "has_embedded_video": true,
@@ -2451,6 +2498,11 @@
     "513f1eb735ce887f1851408afbd229749c19d9beef37250b8649cc6fe1b612b4": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "517d1048cb110599df40a54f2ec125dd1337b580d035307851caa2afaa590140": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "51a3db3f0996c5717be9cd9d995d5ace249a7c4e813106ddcdf4fab27f873e2f": {
@@ -3215,6 +3267,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "6bd223bce3794bfe4e5ba933ca6a6cb4e053629126f4f171bd24421dd37a5280": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "6be14c1a850376d0542dcfe5cc4dae26b8363e2718766a83747a93f44f362bc3": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "Google News Business",
@@ -3315,6 +3372,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "6d7d8c70d4b93df4f026bf3c35bbc382ee8dd8a6b735c79ee6fb34e5e91dbd41": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "6d9f325c12b566664a071e57387589fb22078543f233edb937ade7cf27a4d83c": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Technology",
@@ -3338,6 +3400,11 @@
     "6e1142813e707b23d8cce4b06a2b0d4c7ade55016e735b52bd96a126251e2b2d": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "6eb7b24ac8776f3783662012605f16d65abb74af5bb3ff77476537da6ce8ce0a": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "6fd7b356603acc41fdd76f484b451f75051c853f23dbba6eceb60ca2713bb764": {
@@ -3945,6 +4012,11 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "81f5c49a1f282b15614551a00b5380ae08134087c7196c6393cd31852daab0dd": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
     "8202bbb8a64a03ae0dd7314fd89ddecc6c59cd7c7acdfd97cc953d7e6c29411e": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
@@ -4015,6 +4087,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "83b2030b149935b11d1ca9f6ded0d9be1f7462c128fe992cbb64a2121daccfa6": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
     "83c3d2ef3a579386fb9b95d4948adc95858f5c7e390dd5bd6e4bdba8453a6e5b": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -4028,6 +4105,11 @@
       "source_url": "https://www.npr.org/2026/10/13/g-s1-147818/france-stolen-renoirs-recovered",
       "status": "draft",
       "title": "DNA and vehicle-tracking help French investigators recover stolen Renoirs"
+    },
+    "8474ee19e651a8b70c3dd64d1121a51a802698f67d407c5b0efa702beba1b6f4": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
     },
     "8488a61eeb580b023d9b4fdbbc5d15e6b1a66a15c0d0e68e7de154202b96e7dc": {
       "created_at": "2026-10-17T06:10:30.098762+00:00",
@@ -4097,6 +4179,11 @@
     "859bb261c248efff0d79371996debeeefe9fcff575cf8691ef9980daab95a5f6": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "859e9cf18ee4c2046a9ff5532747d48d1fa7a77bb5deded3667ece5bf2ef4fa5": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "85f88b8870b3ee66e38ab8edc2cec933ebae6379276a13a1430367bc5b923f94": {
@@ -4265,6 +4352,11 @@
     },
     "8ac73862c79e893409d4c4f78423389a0c59a2e78c3a1a31b82b1af088b7ae3e": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "8ae1ab6c433566b913a11f015ef1b0168729439e3698a1bab5caa04ce7f7e0d6": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
     },
@@ -4659,9 +4751,19 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "98f379766467445167e40b4e70c4720852d07003b13af293b8b055f76ce91e89": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "98f72b0d3fa997bc17fac10f41ba847a813ddb6a2e6d04974671b8bf45896cda": {
       "seen_at": "2026-10-18T12:53:00.593654+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "98faf0921f18716a45e82799f16cd0de7f8144c735fcab5963732e3bf72208cd": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "99b398a27a008d052d789822f5ce59e21c507b424b1e658abb104067e68ba897": {
@@ -5829,6 +5931,17 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "c328efcab00e223c8c1f261679d568d2d5d593651221025688773ce4e8f1dd71": {
+      "created_at": "2026-10-27T06:48:31.538195+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755024036119",
+      "source_url": "https://www.bbc.co.uk/news/articles/c317kpqv4njno?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Budget hopes for struggling first-time buyers"
+    },
     "c33270f76703b64b12f6c812d3c184f837a6fa8735bd878d5696da95c3dc9179": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -5980,6 +6093,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "c869fd4ff50b562baf6fc9f9e633fe37ae8462f4a22ab6ae2a2ea9041ba1172e": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "c86e1f6ee7f5eede09abd0d73780eb391150c5f819c18de93d2873437fe666be": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
       "source": "Google News Science",
@@ -6029,6 +6147,11 @@
     "c99365b508811eea051b1c47bfd8f9311e44803e57e90e751ec30cc03e0edef1": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "c9b1c8f0272ee75df65049f1a945307a99a239680ab85140beff5e1fb0835bec": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "c9b84585d3cc446d220c37d03012fd867f193068719241cfaade8d40bee6354d": {
@@ -6232,6 +6355,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "d123befa85be58cc00865097f0c049a2d5f58cc6666bcdef278442277343bf08": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "d14718605bdd1535c21412af8160c20b1fbf80e01d53198a78e9871983e59bb7": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Science",
@@ -6332,6 +6460,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "d616219135c58b5168d3e7067ef61fa3682fca8bceca00024ea42851e63450cc": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "d64e80c26203100f74bb5fe51e0c9c1c6762f0210d6906084905db26ad970377": {
       "created_at": "2026-10-15T12:51:01.714381+00:00",
       "has_publisher_artwork": true,
@@ -6341,6 +6474,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "At least 33 pupils and teacher killed after school roof collapses in Pakistan"
+    },
+    "d653b050612aaf72c2bad940b799fbef76d83d4073280b36a5ae9d7d62b03baf": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
     },
     "d671b97964ae11053434d2ea6b8eea26c09379405852568e8d1d5b663fafacc8": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
@@ -6517,6 +6655,11 @@
       "status": "published",
       "title": "Fed-up driver builds AI litter tracker"
     },
+    "db8922eb3e1bc9cbaa932e04ea9d1893d5eb123789c0ed4536a1f24e1f7fe833": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "db8d11e44582f83405420b3a81d2c25d65742f8d2850eb511943cf009e67a31b": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Top Stories",
@@ -6605,6 +6748,11 @@
     "dfecbaa7cd4849d7851746d73ca8fcd0743e328a78f5f36e6e50b8ec44f19ce7": {
       "seen_at": "2026-10-13T18:35:38.703000+00:00",
       "source": "NASA News",
+      "status": "skipped_stale"
+    },
+    "dffc64bdea63bb54444563a62ac64482ef524693912613f3cc6a0059b18bd2a8": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "e010b16d60156884509b3bf58a4d107433b461de48d44ca3970bdbc0ced503b9": {
@@ -6737,6 +6885,16 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "e2cfeec4f5c6bb92f94b410648fe3094df46596b98ba4297ae0ea2462851b581": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "e339cc318bc1b4cc385c2d4c72dfd03f717c6d86b5dc71bb74b6fa1f4c086d45": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "e345fab5bc1866323ba889280b627f1f32d367ff9d6acd6fa92e9f87208aefa7": {
       "seen_at": "2026-10-19T11:05:10.544614+00:00",
       "source": "Google News Technology",
@@ -6826,6 +6984,11 @@
     "e76126b0ebbf01e0cf6826f9b6af3a207ffd5c733f9b88d8bd1d2b5656ea1ab0": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "e764a5389607640e08851c6cda14d8b18a013fd0cf6032766f7e0cb2a48c0974": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "e782c0857e444b1e43623b20639037ebe4831c1728af75aacde87590388207c0": {
@@ -7415,6 +7578,11 @@
     "fc2568292034cd4579957b15338527612f2e5af18841a7b0e29a52ef5fd671c9": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "fc745a0383d9a37ac3b7d98587deba6dc69fce66ac713e420f5e97025552474d": {
+      "seen_at": "2026-10-27T06:48:31.538195+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "fc830b06c64e4026d7b1d52575f972e85dfa7487f507597d76930650dfda234b": {
