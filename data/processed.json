@@ -815,6 +815,11 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "19f01e8e8621d851da72b52dfc806cd046b01339df189fe194a02372aabb7a43": {
+      "seen_at": "2026-10-27T12:50:27.915668+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "19f3e0a4b00b2bcfb752e80ce03c32345bd22cf3066ab31d312311c9559c425f": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "NPR Business",
@@ -1302,6 +1307,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "281b7706903247e7ba836fac2a9f0840d3a3d0225226018256ba88a657199d7d": {
+      "seen_at": "2026-10-27T12:50:27.915668+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "281d006db135345680337c18962251bcf03391060558686d9986bdcb87e6b13c": {
       "seen_at": "2026-10-27T06:48:31.538195+00:00",
       "source": "NPR Business",
@@ -1626,6 +1636,11 @@
     "3279a0827776faa3270e10f079ffbee580ff464dcecd5c9066a6a01a7751e193": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "3289b99ef17dba45835e4e92841ab3848aa511f8d42b471c041b3ad926fa81ac": {
+      "seen_at": "2026-10-27T12:50:27.915668+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "329a33b3e560dea053b20cf87d73c40f8c605d4fc2e589453a4f0df541f3691b": {
@@ -2392,6 +2407,11 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "4dc21b7a0991ea54e655228ebcebe9c4aaa3a100249f66aa281cc5a0cec71ef5": {
+      "seen_at": "2026-10-27T12:50:27.915668+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "4dcc678fa02a9eae34e30cdcd5f4638c00f65cd23c3be336c35d5b3e7da77f09": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Rolling Stone Music News",
@@ -2888,6 +2908,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cq1m4zz9e44go?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Bereaved families could face 'unjust' tax bill after civil service pension delays"
+    },
+    "5ffb723b93ee5729e9f55c25db8854e4988498829056bb8e406aa039f66fc630": {
+      "seen_at": "2026-10-27T12:50:27.915668+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
     },
     "604a30c9edf23ab85ed9678648fa71b9b44e2d7dc837a6d253f78c0b13e34748": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
@@ -3407,6 +3432,11 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "6f6bc829e38e30a83840f0fea4ce1536f8cd794d5bfb3d1386cdbb2ee74fb6e8": {
+      "seen_at": "2026-10-27T12:50:27.915668+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "6fd7b356603acc41fdd76f484b451f75051c853f23dbba6eceb60ca2713bb764": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Technology",
@@ -3600,6 +3630,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "7416317299a7a38aa69229116cd9db27526814fa67125769dc46dc4dd98435f6": {
+      "seen_at": "2026-10-27T12:50:27.915668+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "74165c37535ade334c5fc69491782aa5edb5b5477c5532d8f3e1f943ba520792": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
       "source": "Google News World",
@@ -3614,6 +3649,17 @@
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "74b2eceebc7579bac321e9712ad8377dab721991a29534b8800d7d2a1666a27c": {
+      "created_at": "2026-10-27T12:50:27.915668+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755027935511",
+      "source_url": "https://www.bbc.co.uk/news/articles/c3dxwznv4kyyo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "First-time buyer wary of Budget housing loan scheme"
     },
     "74c6f7a73104f9ee8e9953101be0f8c5d9493ca363d300d29eb8a9e6400863e5": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
@@ -3639,6 +3685,11 @@
     "750fac85f1a06ed81727a964945fd1b9c7f195b2d6b095464027da5b4f56eb09": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Variety Music",
+      "status": "skipped_stale"
+    },
+    "7520c4d0df02a945f282d7be8cd6b174a9332907275cd70feb25ca1710291662": {
+      "seen_at": "2026-10-27T12:50:27.915668+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "752ace86c7c776d0ac81cb136a99302b5b8f8defdc4f1c77ea1ff3194db67c9b": {
@@ -4105,6 +4156,11 @@
       "source_url": "https://www.npr.org/2026/10/13/g-s1-147818/france-stolen-renoirs-recovered",
       "status": "draft",
       "title": "DNA and vehicle-tracking help French investigators recover stolen Renoirs"
+    },
+    "842f3b34c2cc681d62066084337c1c43a01ccf347c46f72c36c4380f91a62eb2": {
+      "seen_at": "2026-10-27T12:50:27.915668+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
     },
     "8474ee19e651a8b70c3dd64d1121a51a802698f67d407c5b0efa702beba1b6f4": {
       "seen_at": "2026-10-27T06:48:31.538195+00:00",
@@ -5065,6 +5121,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "a52a1b68adae061f981019b7b54d2db3deab9fbf52c08dbd99ad5789f9c2a05c": {
+      "seen_at": "2026-10-27T12:50:27.915668+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "a52c4f38a7c7aa7feab0c88ddd1ef2378a25026a097fd6b98a1eac005bc118e3": {
       "seen_at": "2026-10-24T18:39:21.262654+00:00",
       "source": "Google News Top Stories",
@@ -5204,6 +5265,11 @@
     },
     "a988fe20fb53cee7f9ef202cb161822d0791686795ae16a41caeb3d93b9bb461": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "a9947f91807e88fb9a0546a37f5d2de31cc862dd09feddfa788f14b866610a51": {
+      "seen_at": "2026-10-27T12:50:27.915668+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
@@ -5394,6 +5460,11 @@
     "b15fb7b3bdba6ff7afecae625487822f2221f0837677a9ef23e0d97e45857418": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "b1a72830981f979ce2b7339611957ff4ba53e9d566ea40e78f89895180b88080": {
+      "seen_at": "2026-10-27T12:50:27.915668+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "b1a74f411bd8882324c92460b3f4100a170b28e2223e63bfae3a0989a31f2ea0": {
@@ -5818,6 +5889,17 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "be36d8aa05a04a0b61089091f76cceea6058e68212715edc720c059911b13446": {
+      "created_at": "2026-10-27T12:50:27.915668+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755027869975",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck78px6glw3lo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Trump administration illegally fired James Comey's daughter, judge rules"
+    },
     "be3d4dc303c7257477d80e07c4a17840e88321f5f5141d1b7a00070775eb3baa": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Google News Technology",
@@ -6067,6 +6149,17 @@
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
       "status": "skipped_stale"
+    },
+    "c7aa78823d5c5a22c1174f4f8a389c291d67463f16e69ec761b3aeea19f31281": {
+      "created_at": "2026-10-27T12:50:27.915668+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755027902743",
+      "source_url": "https://www.bbc.co.uk/news/articles/c62ke84qwl1vo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Scotland's recycling rates fall to lowest level in five years"
     },
     "c7eb37b33cfa459c4e576d5c3c9a73baabbe23a9bc2fb2f9b2a2c2d58c968642": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
@@ -6620,6 +6713,11 @@
     },
     "da7777ccbf4be7a0f8fefd36b35a7bf276583b9500a959d461abf99eb0f496cc": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "da85f002f8d00e8f2f14a3050be816822d3ec9e9d9538d9f6f3801cb37a9a2ba": {
+      "seen_at": "2026-10-27T12:50:27.915668+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
     },
@@ -7389,6 +7487,11 @@
     "f3e5045549b2ca7c3022a2e98d56da4ed428941327846ae0685c3b967b878f74": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "f3fafd3d0e6bffdd1a972f014ccdbd52c7f56c9b0d2f66a1f1196357d4fdc5f5": {
+      "seen_at": "2026-10-27T12:50:27.915668+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "f448ed363d3be8dac160129f40fc1d733a92c7f5ed153250a5d84a4e0ed8cb5e": {
