@@ -616,6 +616,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "1319053b6d3c3b6a2b18d6fdb88622b38a180f9f5af922997efa44c5a3ae755d": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "1319ea6a20f99dabe488ea7bb43d93a024d47a024b516c703c5c4c4d30c42bad": {
       "seen_at": "2026-10-12T06:38:38.333441+00:00",
       "source": "BBC Business",
@@ -1557,6 +1562,11 @@
     "2e02524a2937e2bfe80087f373a52ecc0183b529df20b3638affe10e5b7f0377": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "2e0d31c14023129d11d9503851ae61edf8b9a4f82fa82b1edfb89346955a9792": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "2e3f8fb74e6bb1176bd2c3c68e6f56a5e1d85ce31d449e29c66d87651cc23137": {
@@ -2589,6 +2599,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "4f20c648059ec367766f65ca189e98559e83604cd98781674e49bf064c659482": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
     "4f5083dd20c787d7ef4675c027b5396ce22c0ce7a9654e64b362b9fa8c28615b": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
@@ -2912,6 +2927,11 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "59758e9da3af8b73d4c1a4466663caa99f27951ac0bae9362eabd1e9dc83257e": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "59aadab4505a9d9c6d35e4209ad9a6b316afe76fe73c167bae275c44a60b8082": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Rolling Stone Music News",
@@ -2972,6 +2992,11 @@
       "source_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOX2luakxEaEVyTXo5MTktaTdoVzd4Zk1EX1NoYk8zZGE4bDNoYVpBS3FZeXJnMU1jazRhVkVfT2hSZ3pPY1JmSlotWVY3LWFjcDdGeDV2eU12bHhMM2E3QWI1aVczdmxiYjhBNlhGU1RCeE9hakdKN3hmTlZvTEgwSmxQam1lNVdJOUVFemlueXNwcFVUS3hYckNfb0UwbVJrZ0ticnctYmlueFR0MHRBR0cwZ1ZJc3VlNVFNcGw5SndCczR4VVhrNndabWptMGcwMF9aVQ?oc=5",
       "status": "draft",
       "title": "Trump puts new Russia sanctions passed by Congress on hold amid deepening row with Ukraine - The Guardian"
+    },
+    "5d7065bf2a32e032599882a437c723e8f406b94afe559f4d05ce08fe9a8f3b71": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
     },
     "5d79e83ae560dbe9c106c409ae07a2559d973b86619b531b1f17745e9fd18a78": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
@@ -3068,6 +3093,11 @@
     "60d7070ed4aa9d87dce96aace319344d6a35eaff16238f22105c1420ddbd82e2": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
+    "60ec015fc8d70c672620b4b5f94c8979d0a5e4ac0e0036b037098b88b9bb0b0d": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "614d3ce15a04dbd93f34fa5954eea80cdf725de53e58b3256356b4d980cc9edf": {
@@ -3218,6 +3248,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume"
+    },
+    "652e172ec7955412d81f26b46a585f9b00a2d0b9d68ac5cadd339913b1e955cf": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
     },
     "6563c1b8fad16be9b49756493b3de9b8e49b42d989d7b5b663ef606ce45648d0": {
       "created_at": "2026-10-11T23:18:45.796681+00:00",
@@ -3548,6 +3583,16 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "6d879a7a5c5c91f84d3d7e7ef2cdf548ec7d3834b5ab35edc4d328d66fa0fbe9": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
+    "6d91a815ec0c16f9e0ed8824168957b2cf1b70466de6963ccc7f5011dc4b8f78": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "6d9f325c12b566664a071e57387589fb22078543f233edb937ade7cf27a4d83c": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Technology",
@@ -3576,6 +3621,11 @@
     "6eb7b24ac8776f3783662012605f16d65abb74af5bb3ff77476537da6ce8ce0a": {
       "seen_at": "2026-10-27T06:48:31.538195+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "6ee617086b8cda2a036295c67e024f4aeb14eeddd5ed591b8f7b2522a008a009": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "6efb9f092528a3d021afc95e424d3a492f1a9996a1048bd0859bb544e6e5f10f": {
@@ -3744,6 +3794,11 @@
     "730ae11ebebafd4d7b13b48b576d958a1b38261d56d063e09c731d2dc3f38809": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "732597cd2b171111d791a69e41809df91c91c389c82e1fcd04b64419b19d2211": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "7329e1e809a5ac328c2f5559578a10485c66b6a37be3ba8dbc1ae3fbe7c14b03": {
@@ -3954,6 +4009,11 @@
       "source_url": "https://www.npr.org/2026/10/16/nx-s1-6005201/health-treatment-menopause-hot-flash-night-sweats-insomnia",
       "status": "draft",
       "title": "Hot flashes, night sweats, insomnia \u2013 OB-GYNS set new rules for menopause treatment"
+    },
+    "7909cda8db2ba753006989603f0433dbce403549fd140d48445e17634f4e6207": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
     },
     "791aa81aa1f22c2f02a9789d69cf2f17c868d093d9f5b996b777cf589672ace3": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
@@ -4239,6 +4299,11 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "81f74a5f00c9ba55b2a5b15d95c7219a6ebc51f43b28aa847aa84e3a0240a7f1": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
+    },
     "8202bbb8a64a03ae0dd7314fd89ddecc6c59cd7c7acdfd97cc953d7e6c29411e": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
@@ -4459,6 +4524,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "86ab8caa6eff2ce1a93b4f04cece8c592f9a38348e5f3a95c26c5327ae823f1e": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "86b12a12fa9f95efa10ad82a56165952385ee7917395c4eb2301954e85ecae05": {
       "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "Google News Science",
@@ -4581,6 +4651,17 @@
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News World",
       "status": "skipped_stale"
+    },
+    "8ac36503fe78feb6aa03ea3b2738fe4f31ecca08a5f2f9b0abd795f1c7b4494c": {
+      "created_at": "2026-10-28T12:59:42.364008+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Variety Music",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755042877719",
+      "source_url": "https://variety.com/2026/music/columns/jennifer-lopez-new-single-proof-of-love-song-1236932416",
+      "status": "published",
+      "title": "Jennifer Lopez to Release New Single \u2018Proof of Love\u2019: \u2018It\u2019s a Happy Dance Song\u2019 That Also Addresses \u2018Pain and Grief When"
     },
     "8ac73862c79e893409d4c4f78423389a0c59a2e78c3a1a31b82b1af088b7ae3e": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
@@ -4759,6 +4840,11 @@
     "902bccec0d14ee33ef7678c9c0c06b2f1433288f0cbd92d1d09694b06adcf8a2": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "903612d439ffca9784c74584c3448653b9f750a9b7e9c0b284a6cac4bf1f9491": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "NASA News",
       "status": "skipped_stale"
     },
     "908a7566860e8c1dcbfd029aefb16b98fe809e1417ceccd6853c3d5a81c82ef3": {
@@ -5344,6 +5430,22 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "a4b261057c34a445910a65fe31c60d2e1b1c0119e981a7e5d9060ebb106b7a82": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "a4ce9ac31c1e86c060477c89078110d541987459e4d78a6880646e503eaf9026": {
+      "created_at": "2026-10-28T12:59:42.364008+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Variety Music",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755042844951",
+      "source_url": "https://variety.com/2026/music/news/alan-jacksons-farewell-concert-sets-release-1236932620",
+      "status": "published",
+      "title": "Alan Jackson\u2019s Farewell Concert Sets December Release on NBC"
+    },
     "a4f6937820a5b749e9a4e308bec439d0d71aae957af195bef49b1287064b34e3": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Variety Music",
@@ -5555,6 +5657,11 @@
     "ab569f960f0e16be5af9cd294fc48ed3c70be3ef0f500884004f4dd8461b140c": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "ab7471cafcaaba9fbc09ae62d46b05786e983f91ef21651e1ff57052b7b48d59": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "ab84bd983e39f7403ec17e18882ea7ce5d83a9db059e9a39b4cd846f65c5855f": {
@@ -7149,6 +7256,17 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "dfd0a444a31a944ca1126a4914f7661288a8bca6c734c22b60099cf337500160": {
+      "created_at": "2026-10-28T12:59:42.364008+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755042812183",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmvgxl5kdgrzo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Russell Brand tells court allegations had devastating impact on him"
+    },
     "dfecbaa7cd4849d7851746d73ca8fcd0743e328a78f5f36e6e50b8ec44f19ce7": {
       "seen_at": "2026-10-13T18:35:38.703000+00:00",
       "source": "NASA News",
@@ -7752,6 +7870,11 @@
     "f22299a5858b36f86141f21780f8d21e57c2fc82438087071f0f622b87bdeabf": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "f2471e5f276c9312ffd2c8cc805e7a61a95cbb5c9ebb6a36d6b59e94d2d8d449": {
+      "seen_at": "2026-10-28T12:59:42.364008+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "f293b9c74ff509fad25fb0950652a56500fd249482c899a5155752f6f0094d09": {
