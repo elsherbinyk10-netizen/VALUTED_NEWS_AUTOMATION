@@ -67,6 +67,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "029feaa13e6138cdec91f355ac0e2a7c739a1bb51b30e4044ae141c0f3c16f68": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "02fb2161ad28d8bade28d7172c140b437c396b621fc7e62a26155e8fd01410b6": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "NPR Arts and Entertainment",
@@ -788,6 +793,11 @@
       "status": "draft",
       "title": "Robot factories and hypersonic missiles: JPMorgan Chase\u2019s first $5 billion of defense investments - CNBC"
     },
+    "175fad35e9a91c28d6b80cca6e2368a011482d2c9d4eb0049fed6d4419a8980f": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
+    },
     "178a4d548f348666a1ac9cb0243a53a3402ebbf216e246d40bcd0b317ba3d0ce": {
       "created_at": "2026-10-17T04:58:37.026768+00:00",
       "has_embedded_video": false,
@@ -1039,6 +1049,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "1ff56edfe24c805578cff7b3c36be7f1d4cefd3273b6b2fea28bca6b375c7f04": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
     "2041e46b627cda9507dfe5d6a840b8cd80e716102328d11c3babab100f6aa4e6": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
@@ -1078,6 +1093,11 @@
     "2092090de4aa57900c52858bb9d0600a02eaf85309ce5917f6bab2a21e290862": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
+    "209f58d7db23f775beef44ffd6e1126ec010da972f1e1261d1d74f0ef5614f02": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "210f27843df834e08d64ea5bb571a3051f0e69900b958554ce6f6c41a1399a7d": {
@@ -2416,6 +2436,17 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "4853edc8f012a53b4466dd2ac2d75eabd99880b92dda22038f99b962aa5c01c5": {
+      "created_at": "2026-10-28T18:54:08.851553+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755045368087",
+      "source_url": "https://www.rollingstone.com/music/music-news/beach-boys-pull-out-john-stamos-california-sound-1235649359",
+      "status": "published",
+      "title": "The Beach Boys Canceled Another Show. A John Stamos Spinoff Group Is Taking Their Spot"
+    },
     "48726c8e96bae6628b1b4db1feb263973b4e547159ea1fa52fe049416665f99f": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "BBC Business",
@@ -2967,6 +2998,17 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "5d0ac758588c00d9ce28c93af3f5c9fd15246fbdbf54d36d3c4fb5c58bcb8f22": {
+      "created_at": "2026-10-28T18:54:08.851553+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755045433623",
+      "source_url": "https://www.rollingstone.com/music/music-news/my-morning-jacket-jim-james-memoir-one-wonders-1235649311",
+      "status": "published",
+      "title": "Therapy Helped Jim James So Much, He Wrote a Book About His Breakthroughs"
+    },
     "5d13967c4fb1b7da60bc62defcdc9cd31f911b5fd4b70a9fea89961b1aaff4a9": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Entertainment",
@@ -3218,6 +3260,11 @@
     "63f653617fd94c5d5ab2b89ddb8e229b24026bf2de71c7131ceb3912ec5eb20a": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
+    "64027eaf3624507c439fc96bacfadb7b29a752df91ef03bb493fbf383144ac1f": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "642c34e7eb1fd5c37a9322813ee6345f92ac49ffe7593939b9f088d1e1fb9799": {
@@ -3985,6 +4032,11 @@
       "status": "published",
       "title": "October's full Hunter's Moon to light up night sky this weekend"
     },
+    "77df63124e83957689b0686fad79fad39f15e37d673a426ca3079cd9097c8d88": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
     "782d0eff1df90b4d6f6f62642cf390d13d405d75d4bf24ca295fe0c0c87d4ec2": {
       "seen_at": "2026-10-12T06:38:38.333441+00:00",
       "source": "BBC World",
@@ -4210,6 +4262,11 @@
     "7e0514f47393cb9011658d6128a38df8e548297568b85f5417c5a1685554940b": {
       "seen_at": "2026-10-21T12:35:56.681076+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "7e6477b4c969f34af1441621f03b57cf916e197610a971599f4c8ab4eb04cb91": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "7e7b341d271497a8ccb486dde6227d30b9aac7c9047c302d009f49be49735cbe": {
@@ -4790,9 +4847,19 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "8f05f455eb232a34825ad1ded6bba0d05fb3bc68e4dc6a9dcc5b64a2589d4ec4": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "8f0de9a86c43a43b39785feaf19e18f4bdb7c68346c4f3e2940a37fefda6b5d7": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "8f14a616c4137b7c94ad84c74e33b2b12bd22a6105044a9641ea9c5e688d7456": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "8f17a2801297e8c27f7a524874139bf7a851014f8464f77f1db0f4018f79d6f7": {
@@ -5013,6 +5080,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "95695fd4f9f797a4252cb692ddcc161472e8794e736a94eaaaa1c3c04579c6b2": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "95a265463e7ccfd192be31393fb5a8abc6f8265877bec7ec85be6ac7e2ee3294": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Entertainment",
@@ -5062,6 +5134,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "US inflation rises more than expected ahead of midterm elections"
+    },
+    "97be6f2ecb6b841e3941b247d112534d3826a14e0cd31cc1e6b846986fee3fdc": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
     },
     "97c227bfaa08472768aae88eb116651a3336e351a451a211251500cb04e86c05": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
@@ -5238,6 +5315,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "9d129f05d20e8f52e187f0b564ec315baf4c2d687c5ba725a60eb6d91521f226": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
+    },
     "9d298ee6cccff0bd02b7e0f4c818aee3d1344c66b85c22dd365afe5ba5652124": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "BBC Business",
@@ -5408,6 +5490,11 @@
     "a38f0bbad45d6651efeb6d42e464e8f819efa277d77048ce3bccdc67c87ab556": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "a390a4e1adb2b115b0c3c4aceee21f9dfec217b3d491e711e30dc8f7f8a2d1d0": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "a402c7aef982c63a1d570153ea881328881ae7b81c20aaa7e008fdc04a9028ad": {
@@ -6214,6 +6301,17 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "bcf3ba3672e84a3228e28b06ea37b6d63aa8e49db1d3b672b39e235eb415e9f9": {
+      "created_at": "2026-10-28T18:54:08.851553+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755045400855",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6qjn849ydlno?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Babydoll singer says life will 'never be the same again' after UK number one"
+    },
     "bd0c73bf7f7e0cc3f9cc99e51398ff05b1d754cf7e873eea03374bfca163ab2c": {
       "created_at": "2026-10-20T10:43:29.843909+00:00",
       "has_embedded_video": true,
@@ -6757,6 +6855,11 @@
     "cdfc4fbdb4a4483cc9dea880aaeb6d0f0dfa6e14fc727667731535833df486fd": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "ce05360d5d90600be59775c7e275fecfaf81aa82d7cc6caf8eedea5fb271c893": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "ce10cb21358f1178bac3fbda296b95db3ab34c9b4606cdefe60e7a5a9de011ed": {
@@ -7432,6 +7535,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "e3cba94dba65433fbe540d3bb1018f1e42f3d722ac4cfa30591655038386afe5": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "e3fcc6275db85d92c68046230c6dba820257b8453b11c1d55436a3cb22033b4e": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Technology",
@@ -7552,6 +7660,11 @@
     "e7a765c36abfa4ee490c38730fa3559df1ea028a142f27af2d69ad5fe1c411b7": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "e7aeb28c09d8323b77f7bfc97e155db9e487958909def55e4625d5113303e7f4": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "e7b27eae48a96eae7c528e0710e3758dfc61ae4fcd1e0aad38e9cf96243ffa9e": {
@@ -7892,6 +8005,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "f2f5f7be2ec2229fc3fa9d646eb932816b3b7c33539be34c22f2eeddab6a2684": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "f302ac9cb615f1481b500d8b94be96d3482050abe2da0ef590006e375b6d9085": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Science",
@@ -8056,6 +8174,11 @@
     "f85fd84baf5665c27c82623e7916be36db1955c713dc87fff1bd7ada8bb0c094": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "f8d38d8a8246be7801f9f4c24f358b5a2d01772941118b2a99a8822eaaad84cb": {
+      "seen_at": "2026-10-28T18:54:08.851553+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "f8d57951c8c71704703893b65bdbdce607b35f81c2b4eeb93ec190d91e676a43": {
