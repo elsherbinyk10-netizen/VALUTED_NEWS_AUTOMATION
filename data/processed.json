@@ -393,6 +393,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "0a0b53f3bb6e40349df58d2de48f2d0f563fbbc3e88395c0adc4b50fc96ad7c7": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "0a0fcfe94dd50f7c6c445ada381ec06f698134cb09824cf3b418c92814f56ee1": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "NPR Arts and Entertainment",
@@ -479,6 +484,11 @@
     "0d838052f89589d059ffa98f2b92523772d3abc94694b4bbae08abb07750eff0": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "0d83e12912d47e83e506f8dc88a44dc70596760209c1d41eba41c7ca2c6d3fab": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "0d9a40ba62e30a9e33a913668d1e29ffb26fff8aaa2af72cd766e8442fa2a289": {
@@ -1512,6 +1522,11 @@
       "status": "published",
       "title": "Denmark to ban mink farming in government U-turn"
     },
+    "2b26695c7106e907bc9f59ecdd56a5536aa0b664c636c11d7f3d07d436104786": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "2b3ee3295a2216125e5f5d8f6176003845374722f07b63c41fbfd5176f3687f2": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "BBC Entertainment and Arts",
@@ -1553,9 +1568,19 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "2bdc59cb7e4783d8b6dd17ecb2508a118aee847903738ecca8b8bea98c95fe15": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "2c0bc726fb7577a2ca7761dc2965811914e5ded2f0c91e4c4697bd551650b9e5": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "2c43e290abc0f3c1dd863df7d89198c0792e0ae1407944df98a0e38cac466414": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "2c6e526dc9401fdf4ef79ec7508bbabccc292937ec8415702c4f0f0907a4125f": {
@@ -2360,6 +2385,17 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "42f39578a099e491b65787121d257cc9ef353e8c779ed27a1f8666ab24f23bff": {
+      "created_at": "2026-10-29T13:00:30.022198+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Variety Music",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755061096727",
+      "source_url": "https://variety.com/2026/music/news/ll-cool-j-rock-the-bells-the-residency-las-vegas-2027-1236933800",
+      "status": "published",
+      "title": "LL Cool J Announces \u2018Rock the Bells: The Residency\u2019 for Las Vegas in Spring 2027"
+    },
     "42fa0e0b16fa0d0e47745f059bd70248bce03e10ede9243c81a28f814b24212a": {
       "seen_at": "2026-10-27T06:48:31.538195+00:00",
       "source": "Google News World",
@@ -2540,6 +2576,11 @@
     "4a03c26d21368bc7b002089810af45a2929f87de89faa2042ed0252b62b2ede8": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "4a08641c260a7cdbe4a7d6b3eb125661d97600f5cfbe42dd92a42a7b5a4ae297": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "4a15d81a92fc5ffb2921a963d6be2d1c020619caf6ef411183a1caa214317daa": {
@@ -3079,6 +3120,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "5b8f8fb25754d8013313a097ddb8fe4f4c9aae5419f067f4aade19d3d50ea051": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "5bbefde9c6ab7e24404122b5860175722092ba0a2494bbd56bd2feefc8744a29": {
       "seen_at": "2026-10-24T18:39:21.262654+00:00",
       "source": "Google News Science",
@@ -3107,6 +3153,11 @@
     },
     "5d13967c4fb1b7da60bc62defcdc9cd31f911b5fd4b70a9fea89961b1aaff4a9": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "5d2dc2a0d6e0fdbca442a64f99731e7c7e1bc89a53224195ddd6cf3ee535c6c8": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
@@ -4355,6 +4406,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "7d1451d95373406d6d8345a4ec7a143b5166b58750883a07d91adf5bb6053c05": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "7d160b6cd0ba72c884a53c1b7bcc5054d5d72240d66a8b09416dd0aa9a3d9d94": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
       "source": "Google News Entertainment",
@@ -4541,6 +4597,11 @@
     "832ca8742d0202d670c484f9e1208bb7b862e4f2e2f6b04db2353ffe6bf55367": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "8346efbd8e2d19c7b5e7d8247916b8d43958cdbdeedd4d65e3de088bb567ab17": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "BBC Technology",
       "status": "skipped_stale"
     },
     "8367d6f6f5f92243e3fcfcf4739fbc14d8c4ff37aba1a541f085d4ad1c05387e": {
@@ -4756,6 +4817,11 @@
     "878a08c4f2669c23bc8b73641d6c2b082ecca90f6ce996226a59642bd0b31025": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "8809f12aec96573b710a1196e11b222e261e5974fcd12ab336329e07e1e7ad70": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
     "880a0eaff04e0931abe97941b26141c656972b3995b5a95243075a9bb5204997": {
@@ -5571,6 +5637,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "a0bc56834fe6b3eae79065500cef4b60bdc9cf36af4ebe07fff1831b7e32b1c6": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "a0c0a8274dc209ea8b7f6ce984a781c15cbb38c75988bdaec095dfd5d9ff56fb": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Google News Science",
@@ -5580,6 +5651,17 @@
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
       "status": "skipped_stale"
+    },
+    "a12d256240ecedbecc34b6f03de4211bbb10900da08203d0537fa829ca702a40": {
+      "created_at": "2026-10-29T13:00:30.022198+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755061162263",
+      "source_url": "https://www.bbc.co.uk/news/articles/cky93127nyepo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Russell Brand's wife tells his rape trial he is 'kind and a wonderful father'"
     },
     "a1365c50f71f1cd7c301b03dc14b9e6963cd2e1528eea25024ab153e3d806b8c": {
       "created_at": "2026-10-17T04:04:22.722721+00:00",
@@ -5646,6 +5728,11 @@
     "a390a4e1adb2b115b0c3c4aceee21f9dfec217b3d491e711e30dc8f7f8a2d1d0": {
       "seen_at": "2026-10-28T18:54:08.851553+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "a39abd852b662f1487c4b0ccb9c5586b6f3113e310aae3d2384dba3addb33704": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "a402c7aef982c63a1d570153ea881328881ae7b81c20aaa7e008fdc04a9028ad": {
@@ -7485,6 +7572,11 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "db965a33ee6fe91aeb388605fa9b5d9649767bd405e1a0254cb85f62ac1b6980": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
     "db9f74c815a5ab990d5c8b0d2539b482a8c6a63b7e17b557025495220610b639": {
       "seen_at": "2026-10-21T18:45:36.006025+00:00",
       "source": "Google News World",
@@ -7950,6 +8042,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "e89fe855d4cefb7fb9b231bef9a5c31ecf9879bfaaec288bf70c8cf295cf9f20": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
     "e8d189a85ff1fd34bd7d6e12d92237104fcf3a5af9fc6073444fdba1d56dd9ae": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News World",
@@ -8102,6 +8199,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "ee00bb66692a83b5f3c87b5d413252cd4e6384431d7245a8a8f07571121abfd1": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "ee175ffd2fd8c8a92ce95f03b29878df86dd3b0ec3d1ad9c17d067c17009198c": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Entertainment",
@@ -8116,6 +8218,17 @@
       "seen_at": "2026-10-22T06:37:07.545122+00:00",
       "source": "Google News World",
       "status": "skipped_stale"
+    },
+    "eeba8fc7166bc461e456c5f5ba02a09e120a751fceebd5734b22ab70e7538c59": {
+      "created_at": "2026-10-29T13:00:30.022198+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755061129495",
+      "source_url": "https://www.bbc.co.uk/news/articles/c574p7r0xnvpo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "South West Water given lowest environmental rating"
     },
     "ef624b68b0213a9bd9e04b71ad62210a729841c04190024467016c3e462424b7": {
       "created_at": "2026-10-20T11:47:10.493243+00:00",
@@ -8303,6 +8416,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "f45d49a20f3081eecc9e1c3e1e588f9bbc20207f75f0f3424acc87f7eebf9243": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "f4753496c4043462714f45e2ba05b351697681b7ae644762bc91b94954a01b1f": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "BBC Business",
@@ -8382,6 +8500,11 @@
     "f6c98a0cf9634b9b5f0ac5d4943a71b415ee08138038d72c429bc89aad9a901f": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "f718f5977ae644578274340137b0b40f9c22c3618e00f655930a799a045f9925": {
+      "seen_at": "2026-10-29T13:00:30.022198+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "f72fa532500caca18a61e8eb5ee9b520e484ff56cf57375185c871f863d61b6c": {
