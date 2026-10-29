@@ -197,6 +197,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "056c94bf178aa46c19b6b7414bbe0a9111ccaf8f636c70de51998bda2d7a967e": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "056f4bacd70046a7f1ea802995557b51d0e736ca3e25ddae8418276eedda42ac": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC World",
@@ -225,6 +230,11 @@
     "05f865537d7665109ab9bde958d004f9331fec58224ed0ae6e49d654eb00d326": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "062dc2f9623ace7a0376f8dec477c0ff3f0b35c53012f019ad0eed956da49522": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
     "063ab8557bb8243770c4dc9316101cfbc44ce6f0f30d44268059a70fa90188a8": {
@@ -674,6 +684,11 @@
     "142dbf7d38a85d247b246ca6def2c87a985cfab96ef61400343f0f3cd9f77ade": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "1434c3bfd5f4ad200f424535af4e50cf5195585ccc716e7ed34520e0ca88dcb8": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "143d505ebfa65c61ad6839f3645ab8ff892952b611e55ae68eab5f392b892bb8": {
@@ -1161,6 +1176,11 @@
       "status": "published",
       "title": "Brush fires trigger evacuations in Los Angeles, Orange counties amid Santa Ana winds across SoCal - ABC7 Los Angeles"
     },
+    "235a42022b54d82d81bd11fe1f062e71fbea6094e8f9aab7b7d6bf90ae0d1f81": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "23762474ceded32fb66949007aa91e1eca9134aab45dca4c818cd4f3696cddce": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Science",
@@ -1345,6 +1365,11 @@
     "2792ce4b915938783301ebab5b108d81c5a822149720f29be4237dd8b13040c1": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "27a619195309c0bffad66314d8c4fc9c9ae5c10a91589f986ff1cd817c9d5306": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "27e565231ea632c0ce1e1eedd409ac319014112fcdc86012cbe559ed907f6442": {
@@ -1554,6 +1579,11 @@
       "status": "draft",
       "title": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times'"
     },
+    "2cf46e6f59ec809156d78ceab26f3f2f8f759e8cd8fbc1db0da5451c63af0754": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "2d0c1972c36b2f83c7e4593f8d1a83e844564e40256f7b2c53c84a0a3551af56": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
@@ -1657,6 +1687,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "3063b0a04601884dc7e278d0ca404954e473354275ea296797a5ba3b8b899175": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "30993307ab52b70e5d0ef3ac31451769573f7d0aac533d7a2ca10257879cf730": {
       "seen_at": "2026-10-27T18:49:42.592770+00:00",
       "source": "BBC World",
@@ -1731,6 +1766,11 @@
     "3289b99ef17dba45835e4e92841ab3848aa511f8d42b471c041b3ad926fa81ac": {
       "seen_at": "2026-10-27T12:50:27.915668+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "328f4df9ec62fadff9e2dab4069ffc88cf6d1ef0c7d272d4cff919de7f56862a": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "329a33b3e560dea053b20cf87d73c40f8c605d4fc2e589453a4f0df541f3691b": {
@@ -1933,6 +1973,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "37e399d9c64d67deb3e232b0b639d44c28cdde833a55377d2efbd4373591da0c": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "38579bf2aa521259c31043909429e2f28956d6313e8caebf252fed9ca07a6b49": {
       "seen_at": "2026-10-22T18:45:05.397738+00:00",
       "source": "Google News Science",
@@ -2052,6 +2097,11 @@
     "3b5588db0db1c6fcd4769d9f38aafb86b044fd2b2c0d0bafd4a75977486b84ee": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "3ba316d3f214728d5a853e6fad8330e27c443828b0faaef3a8815c0bda0ff20f": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "3bf02e14e5a1741f19938116e9078ab06c12c60d0a4c8999a776a92cb09bfa49": {
@@ -2225,9 +2275,19 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "410ebe38c13782ba55979aef3aad275ead48c0a0d8ff2b6d91273829f5fe8239": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "412f9ebdecc7f61d6133c1c04a4d436dda09fed4684dff4bf9da3bad8d450ec7": {
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "413419b34994bd5bf196ddd5043548e7180e6a50ce62caab4e6fb98e48b4355c": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "413f6d0285c7eaee37489d22bf86ba8b5d08ee9778c6bb106eb0c5f75ea636b1": {
@@ -2326,6 +2386,16 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "438e61d763f9b557fec819c7ca0daaf3fe529a0997d5686e6818b2b187db47f2": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "4416bcc85093a2243115abc7496367d594659e5935f0b2c117cd2e44f6af8ecc": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
     "443ac21316b31c3c951947be4b6b2029113e84648b8c35c3f14be0cd6d11b42d": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "NPR Business",
@@ -2409,6 +2479,11 @@
     "46c0a2e1eea41727803877267e40125c3d6c39812ac2d6a556062eb04dcc24e5": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "NPR Business",
+      "status": "skipped_stale"
+    },
+    "46d11dd01b815f381f754ee9e40974e4bf01c88dc3f0ca1cb99a1f953dad9fb2": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "47615773cd708c16374e9d4dff9c5e00ce1570844028ef1607176f364282be9a": {
@@ -2814,6 +2889,17 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "554fec26566debde1fda7e18745d4f4a8b71f67aee9df23a5534ef82ae69af75": {
+      "created_at": "2026-10-29T06:59:32.446399+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755057131799",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6kglwxplv1zo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "'We need help for small businesses, not punishment'"
+    },
     "55776cdb85113b8c29695fe8a924e536a6d83115722a7f3097015e28ba0cc024": {
       "seen_at": "2026-10-20T10:37:54.271841+00:00",
       "source": "Google News World",
@@ -2912,6 +2998,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "580f2c2f5f08ba563c559bf3dceb25eb472bd3d4c2acfb384df28248c2829a19": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "5816252d2b4193d6a68c603711402a070ff44c113402cbd7cb37ace8759b1244": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Business",
@@ -2976,6 +3067,11 @@
     "5a4cb931b2e0a9c43653e0288f57c13566f76b48ef92dcc0a02cfa0e23e8927e": {
       "seen_at": "2026-10-23T18:45:13.548852+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "5abd9c3ed8ef5d61353dedcaf83a22ab2a739071f137a89277d9f5f736df588f": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "5aced5eea1241bcb99127e32dfb572f6faf810acf5557b35f8416beb20b90122": {
@@ -3423,6 +3519,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "69adc6dc041ea622d3f5f0736e26839c2888ed7bbbc9b6db0c62b2d512fbf72e": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "69ae216606ddac51608b3559c634db0d32dc4d30d6636f9f3cab3b4e66b43a9c": {
       "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "Google News Technology",
@@ -3563,6 +3664,11 @@
     "6c74bc37416ac683bef639883c80bc438a9f06bddac3e2b5ab80724c41e56def": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "6c7cfcd3ca7bfb7d4fc4aaf0dd4a44bd5484d57e4c991642737db585db94a04c": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "6c82c5600c44bf2018951afa5f150c96c12062a4a27f6438a3c943676658f8a6": {
@@ -3802,6 +3908,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "72a2d33b808a214be974bc22180768aecac89f7fd6b6678cbb65e9eaaaf1d705": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "72ab1f7f05f5cd2e0b601c9c886abd88e52e8e018a1c7ac879d7e719789dca49": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "Google News Science",
@@ -3825,6 +3936,11 @@
     "72fd85f9f64512a08ff0f4a845661dd4d4001254ac0033556cab8bce75c3b944": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "7300148920b33fc84153ffcd1865391158fba791827294d440177df1569843da": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "730a348520838084dfc0074c5225354a427d6fa45528d6778cbfafd871c7903c": {
@@ -4218,6 +4334,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "7cdb1eb82c02769a074c840922d3b8b6bfe972ed34b15611bdacc8e0f21709c6": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "7ce76d9833babb6d603ef30b0cc0b33768ed78b9f7db8dbe385a7c5d5f7b8411": {
       "created_at": "2026-10-20T11:53:48.143603+00:00",
       "has_embedded_video": true,
@@ -4247,6 +4368,11 @@
     "7d643a89f643cd5b84a5b94110ef18e22cfd3d4442bd3708c6c0b31219e7ff2d": {
       "seen_at": "2026-10-19T18:47:42.889839+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "7d909e3f359b36f7df3cdc7321c67bbb92635e0a37ca356c64f1cf66d395ff93": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "7d91f4b191a9248eb1e97e3453290eb80428aaa6d33e4ca95053192968b22c2d": {
@@ -4369,6 +4495,11 @@
     "8235d19de399a3160a334ebcc173b29db4af91899c64cadf600acc464096f807": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "824b1fee4db379ea9834c8bceef64c6ac5fe87435a5d4aa2648eb545a3ca104b": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "8292bba03aed03055c551160473b647fc7797a8b6761002cbee95add13baf01d": {
@@ -4521,6 +4652,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "85890265fbfd8be4804583ffc5ea092ebe3da19195d86bf41908e99cb180bfe7": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "858a145164c4b0536cbb2c0245e9aeea028880ab0e3eab32bb51d14c5df8acb8": {
       "created_at": "2026-10-12T18:32:36.737885+00:00",
       "publisher": "BBC World",
@@ -4601,6 +4737,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cwrkylee5px0o?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Radio presenter's 'wobbles' over Children in Need cycling challenge"
+    },
+    "86caebb5106e410bdff8adc02e9121e4c99e7e7b378858550d49b4cf998a7155": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
     },
     "86e2c5b35787b1a880f081c057f394b6e87ed4c00a5a01af0b2ece2bd1bbc339": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
@@ -4867,6 +5008,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "8f2b046c3d1a5146b1554863669c0fd0de7ba881bdc30991a8baa97ca7e7c454": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "8f2c30cdbb97b7ba9291fe438356fedfa6c116f5c25b53fba63a5e684009802e": {
       "seen_at": "2026-10-25T18:39:34.241726+00:00",
       "source": "Google News Technology",
@@ -4903,6 +5049,11 @@
       "source_url": "https://www.bbc.co.uk/weather/articles/c6m24ln2j43go?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Amber warning issued as Storm Austen threatens UK with strong winds and heavy rain"
+    },
+    "8fd90a747754ffcbc95940cb57ed63ece41fc5a2339a5252abda1fdad7a16e64": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
     },
     "902bccec0d14ee33ef7678c9c0c06b2f1433288f0cbd92d1d09694b06adcf8a2": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
@@ -5624,6 +5775,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "a7352542a0842364ef26dc8762688c7045beae2a53c5f722164cb59cc036c145": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "a737f2eecd870613fb027ce5f150a5d70f5be3dbcb1b4ba3b0811f04be8cabf7": {
       "seen_at": "2026-10-26T18:52:52.237313+00:00",
       "source": "Google News Business",
@@ -5664,6 +5820,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cw5yn5e8mezvo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Suspect arrested after historic town hall set alight during disorder - French media"
+    },
+    "a8b557c74308b442270c6688fbf894813b3056eec312915d70de3ab620c173b4": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
     },
     "a8d6f9b1cfaec7823456f393848e1458e829e3f5c182488550094d175c4d5189": {
       "seen_at": "2026-10-19T11:05:10.544614+00:00",
@@ -5972,6 +6133,11 @@
     "b3b91dadef21f49a802309929d50665d3d3b47edbf034240a16b79aec61314f3": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "b3f722d16dece41948a6a346779489241fd2d907e9822dde68ac32ecfde89894": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "b40d7991507aa0e2f12766ba6627069c775ba7b54535ae6a49224470d4cc0d57": {
@@ -6354,9 +6520,19 @@
       "status": "published",
       "title": "Will a new strategy help protect Northern Ireland's nature?"
     },
+    "bd9a0a2452072bccdb89a4e3804d73a51bb7804c20f6a116a0c9decc63e8ee14": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "bdd83401d77b6e3f91005e39329be9d4279961f96c05f6d66294a5a5171ce246": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
+    "bdf9972b8cc6069fad543a6fe4bb53ec39f153dc7ebdb22e08dcf7ce5d44f6d9": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "be2de1dbf89a3a44747a7bf67a5e9fdc91e9e3d010b004d2e3cec7dafdaba49c": {
@@ -6402,6 +6578,11 @@
     },
     "beb662390d45df6f169a16ba17a4230b84f64a39f0d8d442222855ce3103199d": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "bf253df1a0e7746eef5996d4a43035a1c720e61c5db27c4723e39c41e2fbd00b": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
@@ -6493,6 +6674,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "c317ea8cc92a9f1434d9cbee499084398b43cf5d2d30e45b45782b72c0a93568": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "c323ec5ec0a5b09c4ad0755b8be119055a156370add5c4a416dc241bc8c2369b": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "NPR Business",
@@ -6538,6 +6724,11 @@
     "c402426b653188e4ea5e0baad5d9c09b090ae0b93c8e610c583322112dcb9ee9": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "c42d354c51482f8813d84875ce5858b7d19d6c2f302a22d06eaa0e3474c09109": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "c456ddaf2aec86e4214df358aec6981d6a97227117e14a6ff04e3ef891acf33d": {
@@ -6865,6 +7056,16 @@
     "ce10cb21358f1178bac3fbda296b95db3ab34c9b4606cdefe60e7a5a9de011ed": {
       "seen_at": "2026-10-25T18:39:34.241726+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "ce2337d25b9c741283adf42a3d42672911760fe2d1752bc19dc2e06478178d0c": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "ce36f5af847f2b1a2246c21dc43ef4b46daa60ab630b2109152c411ec434fc02": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "BBC Technology",
       "status": "skipped_stale"
     },
     "ce6857b2c85f1c377b34e9ecb4e93ff1c91baa7e18a13d8bfba9a81bfc91a9ae": {
@@ -7206,6 +7407,11 @@
       "status": "published",
       "title": "Paddy Power cuts 1,400 jobs and blames betting tax rises"
     },
+    "d9e33ebda2557ab04ed12d45a3e982fe3ce9f5ecf13fd93b9cc82bf765be4067": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "d9e40c1e28588cff59b3bc1f5246a1bd37409202919c2c62f731d898d4e1264f": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
@@ -7359,6 +7565,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "dfc8a9c36810a1dc77a86834bc6800b6fb2ef84222b100e8e8b946fe787672b3": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "dfd0a444a31a944ca1126a4914f7661288a8bca6c734c22b60099cf337500160": {
       "created_at": "2026-10-28T12:59:42.364008+00:00",
       "has_embedded_video": true,
@@ -7397,6 +7608,16 @@
     },
     "e053eb7d3d2179af9996eb515730b5874349a04718cc6941f3e7b42ccd58777f": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "e062024f9ddfb80ffcb356c9e38b8a865c8016d4f7430eb3782cdfe64b58769f": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "e07ad7ca36c5af25a3a360959313bbfffc8fa1135ae07c67adaddebbc1c8c6d0": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
     },
@@ -7687,6 +7908,17 @@
       "status": "draft",
       "title": "Burnham says he wants to 'repair bridges' between Ukraine and US"
     },
+    "e813e03937e23bbea3a5c7628209e84f1b722bfd21525dc283b44354af63f230": {
+      "created_at": "2026-10-29T06:59:32.446399+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755057164567",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck9qzdwjp03lo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Haulier blames fuel prices for diesel theft"
+    },
     "e8294c2cb52b5fb3273c8c2c01f176228d6f1bf452d6dbce67bfdc12736991e5": {
       "created_at": "2026-10-17T18:37:15.737884+00:00",
       "has_embedded_video": false,
@@ -7960,6 +8192,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "f18d4b65d9b1444b574b12734ee1dd4daa73cccc94efcadc702fecc91ac812ec": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "f19d8bd0dbb90a12780735aedff128245d249d7f5a966e65243809b8f36a0d3a": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "NPR Business",
@@ -8095,6 +8332,17 @@
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
+    },
+    "f548e165c7085edd2d48a07af97091fe5df8590d43a49bf93a0329b941c5eae9": {
+      "created_at": "2026-10-29T06:59:32.446399+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755057197335",
+      "source_url": "https://www.bbc.co.uk/news/articles/c64g1je3034ko?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "RAF base chemical contamination worst in UK, report says"
     },
     "f5615f18eaa98b5f0d1b40723e26f03f015fb5bda2b4a10fbbd16e4a3ef0d0dc": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
@@ -8248,6 +8496,11 @@
     "fb7cc8f3d7abb95415e23fa2c1bd7891625a36ee330245940f8a339217a624b9": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "fb9cd0d5f3da21017e195d4da1bcfec26b5135242bca800d46e13bc32a0b581a": {
+      "seen_at": "2026-10-29T06:59:32.446399+00:00",
+      "source": "NPR Business",
       "status": "skipped_stale"
     },
     "fbfb9e057e25ec7bbbf71f9726aabd94c81ad18dc080b976c62ca990c57fc16b": {
