@@ -117,6 +117,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "03c9112178fc35e316656699eb98b92888fd303c3bf751aa74ad6f25e06d817a": {
+      "seen_at": "2026-10-29T18:56:14.651709+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "03ceda4a91f51a03c595906f0aab21231dcaf5431e801f959bcfeefb3cb200b2": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Science",
@@ -3135,6 +3140,17 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "5c3380370cf61ae7bb7a4cbe85131ee4a01ae507b013f8331237fe09ea05de5c": {
+      "created_at": "2026-10-29T18:56:14.651709+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "NASA News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755064144151",
+      "source_url": "https://www.nasa.gov/solar-system/planets/mars/nasa-funded-study-details-one-of-oldest-mars-meteorites-ever-found",
+      "status": "published",
+      "title": "NASA-funded Study Details One of Oldest Mars Meteorites Ever Found"
+    },
     "5cfe821513d5c5eec4d209a0bb7630d8aadf9f8c7d9738188cc063f8e1ee2908": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Entertainment and Arts",
@@ -3384,6 +3400,11 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "634ab569c9510778c34e1bd2e45a891fb66a08c2f13a84c84ea822387c8dfdfd": {
+      "seen_at": "2026-10-29T18:56:14.651709+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "635b0b2984593638ef32fce012be54e44dd3949d62a6df9852421ca1eacc8565": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
@@ -3508,6 +3529,17 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cwkgjz3dpyj6o?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Heavy rain warning as Storm Austen sweeps across Scotland"
+    },
+    "672b8bc3b27b5048702f95d06da28ee04373505b8a6a9fcf01b7ecee25c841e2": {
+      "created_at": "2026-10-29T18:56:14.651709+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755064111383",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmr4y51gd5yro?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "George Michael's Faith guitar sells for \u00a3180k after auction row"
     },
     "67bd93061febda86c1bd70214e307b1ea89c9aaf524865c0b280bd57e55bfc07": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
@@ -4864,6 +4896,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "8970449045d00c1d47e64cf8587eaae293cccb43538a2fb3932ffbcf100b895b": {
+      "seen_at": "2026-10-29T18:56:14.651709+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "8979cc9c75ed361780de3e3ced05953306005b7cc620104720ade89701dbf100": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Business",
@@ -5136,6 +5173,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "915324d13eb7a064933cbb64691d28f353b35f53e0212dac2476704e1741e255": {
+      "seen_at": "2026-10-29T18:56:14.651709+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "917e0c7e1d73b2cede29fd005a2cbf7f727ff1e383e0b813be63ec0ed7de5090": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Entertainment",
@@ -5144,6 +5186,11 @@
     "919fca32082e553b3e571a5d4276f09f2beb7964caff8ec4f7c93023cad5a3a7": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "91bc9596a99223f0bcf8f5a137eda0008cbfce4f882ffcbc6bdf14d81afada2d": {
+      "seen_at": "2026-10-29T18:56:14.651709+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "91c49cfb8f6c4b2795da05b4764f8f769c3ad3759d44bdb3ee3544a013be46d0": {
@@ -5413,6 +5460,17 @@
       "seen_at": "2026-10-27T06:48:31.538195+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "990dfab02db2f0c94325258a8d8312808bbc80d1ab2277fb15d47fac14b85a84": {
+      "created_at": "2026-10-29T18:56:14.651709+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755064176919",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm62yle1g2wyo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "The South West reacts to Budget announcements"
     },
     "99b398a27a008d052d789822f5ce59e21c507b424b1e658abb104067e68ba897": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
@@ -7311,6 +7369,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "d46906253826042922dec5ed5dc8bfd3daffa167539fb44abded4272cccd14b2": {
+      "seen_at": "2026-10-29T18:56:14.651709+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "d47390aacd6d8c146016d576c3a55aac467400bbd35b9cc569ac5d1a446bbb9b": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
       "source": "Google News Science",
@@ -7871,6 +7934,11 @@
     "e4f2618d2f0ea3703b2ddc07414aef0091d2a1a16aba84e353ef0845f1fa38c2": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "NASA News",
+      "status": "skipped_stale"
+    },
+    "e5a87b61da729b3e27aed2868eb110b0d21202fa635c3e03f9a67e5a2d70feb6": {
+      "seen_at": "2026-10-29T18:56:14.651709+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "e5cad304e22ba05947df18344641f0bd14b1a669e7cf3ec2c724d85f1a6e4fae": {
@@ -8480,6 +8548,11 @@
     "f5d3d72bcd44f1a69b809c9f15d881cfb371dc70f17ae22eeb1db8f804b64d0c": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "f5dcb8a537917c5b90d125e4194f9074f3d898a62ddd401c19f82c84190c3e19": {
+      "seen_at": "2026-10-29T18:56:14.651709+00:00",
+      "source": "NPR Business",
       "status": "skipped_stale"
     },
     "f5dfed68560c19fc091d8191c6ecbdfafab8d9ec2859d3a7ab922c4b7c16ff7b": {
