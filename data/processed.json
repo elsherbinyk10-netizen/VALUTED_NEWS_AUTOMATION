@@ -182,6 +182,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "0482c752864349b37c781e7a3713280748accada97b1c13a28dcec63c2f7c580": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "048e65d89395393aea2a81ea70a2ac0e43128744479b928218a98185b026b232": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "BBC World",
@@ -532,6 +537,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "0e70037920d4f18493a5862a53f5b434ac55499594a0b377b9dca2e2c454640b": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "0e7581d07aeac6276fcf7de261717faf2eaa5aea5cecd65c114e03ae06b4e9cd": {
       "created_at": "2026-10-20T12:02:02.414878+00:00",
       "has_embedded_video": true,
@@ -841,6 +851,11 @@
     "1714816a65805ea9e5915603cfa7c2aa37ad9fcd246b709658776d93583dce3b": {
       "seen_at": "2026-10-20T10:23:22.154356+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "172511e4d8212d97b340681975e5139c1856a99bb9adac17931f7c5e4fccfcdf": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "174527e0ab0de8a59850cf982fb82295c097f762f88a86486982883da45b9a35": {
@@ -1449,6 +1464,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "27e1dffc3e200fc7e987b3bb4702dcfbcd55f113754129b3d980fdd20b40a571": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "27e565231ea632c0ce1e1eedd409ac319014112fcdc86012cbe559ed907f6442": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -2015,6 +2035,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "35c4cddcb1350792531387016d87beb39cb776741ac6df4c6e3a2aed88108729": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "35fa1923bafe2c269fc1d80ca52026c1f0c56caf4d6cd10a8fde1ac98894a588": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News Technology",
@@ -2063,6 +2088,11 @@
     "3736ed7a05508125bc222b957f3cb47aa3ef2ace2fe504682fe439956c738ff4": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "3762b9b915af0924a6dedcdd5660f59f28e7ed44483435ed72918bb69976769b": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "378b1fe2f80d79e6d30e58e58315dbec17273a8e647c5b1234473be172a9b9df": {
@@ -2385,6 +2415,11 @@
     "410a51ce009c848b49cf0fe15ef06e4832a3cd1635f05cb5837e53bf9926b1a6": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "410dcd7ce11fffcf0cf7087649eb91c02e7eb2f1e88ffcb17c6da40e0a113de5": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "410ebe38c13782ba55979aef3aad275ead48c0a0d8ff2b6d91273829f5fe8239": {
@@ -2885,6 +2920,11 @@
       "status": "draft",
       "title": "Avian flu and costs among reasons for loss of captive birds at Castle Espie"
     },
+    "5077a44db0fc6d20d4df1b1e6859c7fdebe51af26b1f6cbf39ea91d2a39b534b": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "511f99ae5c2048ccc29b34073526a972faa2484b7784c4f3c7523eb6f4403b93": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "Google News Technology",
@@ -3046,6 +3086,11 @@
     "55af3acdc0c6edbdeab3841a4f84e2e8837d62aba7e80665ecc939fa5f75fbec": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "55c0c6060563115750c4c23f02e595c62ff98fc55bfad23fca5548e6280f1608": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "55e37cfe53e391804aa600276aae80d2d21a0df2969f1154983167b6234057f4": {
@@ -3377,6 +3422,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "60380d92da4727adf707378a9ebb981f2b30eedde618933a7e9cd4ef4ff9716b": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "604a30c9edf23ab85ed9678648fa71b9b44e2d7dc837a6d253f78c0b13e34748": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "Google News Technology",
@@ -3574,6 +3624,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "One killed, 11 injured in second Houthi strike on Riyadh airport in two days"
+    },
+    "658b29937f370685297a0eb3a836bdc910f8214b60e71c1af454b0edf7bbfb9f": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
     },
     "6599b96a6ec0c16cbf504b041d6b587fb80e13d0078352f662d1b4d2ec76e913": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
@@ -3949,6 +4004,11 @@
     "6e1142813e707b23d8cce4b06a2b0d4c7ade55016e735b52bd96a126251e2b2d": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "6e3f5d3eea3d556e26ddc0f2238771193aa3ec5fa052d362f9627a85ac94192c": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "6eb7b24ac8776f3783662012605f16d65abb74af5bb3ff77476537da6ce8ce0a": {
@@ -4575,6 +4635,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "7e60f35d072fe31e2d4d93805a72c58a28fcd40b08f446e2b056461fe2e35bee": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "7e6477b4c969f34af1441621f03b57cf916e197610a971599f4c8ab4eb04cb91": {
       "seen_at": "2026-10-28T18:54:08.851553+00:00",
       "source": "BBC Entertainment and Arts",
@@ -4696,6 +4761,11 @@
     "824b1fee4db379ea9834c8bceef64c6ac5fe87435a5d4aa2648eb545a3ca104b": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "824d24ae70515a028d7e4ebedb38a5aab36d06641a5358d6e269698400484f6b": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "8292bba03aed03055c551160473b647fc7797a8b6761002cbee95add13baf01d": {
@@ -5137,6 +5207,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "8cc7ad8277270ba90823359a659eeec807f1dd5d3f8eb6324d3a4f8f2f310b48": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "8cd3bc33d6acae083def39e81646c12a780dbfcaadd753661915518535f67c5d": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "BBC Business",
@@ -5172,6 +5247,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/ckge4vn2rnxgo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Ali G is back. But is the character past its sell-by date?"
+    },
+    "8d9d1ccd049b68c94b762297c1d86a28e36e906a07d09a6206d0a6a97ad5f620": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
     },
     "8e2aa409f0824ff1d73c66caf78701bcb1bb8dd54489539587741a2df25d3b89": {
       "created_at": "2026-10-17T12:41:47.879859+00:00",
@@ -5286,6 +5366,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "91124b3ea1c87698282c4303cfd47ddff7999ab74736e8f73ffe5204bdb67db8": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
     "915324d13eb7a064933cbb64691d28f353b35f53e0212dac2476704e1741e255": {
       "seen_at": "2026-10-29T18:56:14.651709+00:00",
       "source": "BBC Science and Environment",
@@ -5294,6 +5379,11 @@
     "917e0c7e1d73b2cede29fd005a2cbf7f727ff1e383e0b813be63ec0ed7de5090": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "919ba4ffeb7ee3c36f1d5f0631b698ed3af291e391a07295f4ffb1e456601171": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "919fca32082e553b3e571a5d4276f09f2beb7964caff8ec4f7c93023cad5a3a7": {
@@ -5683,6 +5773,11 @@
       "status": "published",
       "title": "'Tone deaf at best' - advice to stock up on essentials worries experts and low-income families"
     },
+    "9b5d89f1a32d8edcd853698d4bbe68f34b8917081f87803ab7da42164cdbc985": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "9b6dde5b76af0fb4aac3741a14b1430cbaee95646b72bca33185c43ad2cb9d6e": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "BBC Business",
@@ -5982,6 +6077,11 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "a54b3f4c2535c443dbb8c45a2085f4f2a6e4d3bab8b4e77931668c5687c9879f": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "a5840e5a42f749a2ff4d292651e05379258b28d3ed6fef35d60f20a91fb12a76": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
@@ -6103,6 +6203,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cw5yn5e8mezvo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Suspect arrested after historic town hall set alight during disorder - French media"
+    },
+    "a8b0af466e9258f752a1927bb97307de46f4a3653bba7c902c4acaa566e5488c": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
     },
     "a8b557c74308b442270c6688fbf894813b3056eec312915d70de3ab620c173b4": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
@@ -6523,6 +6628,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "b65fe483702cbefa44dbe0c0c4c59691e7957df6a11b78d8af2d9421c96893e9": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "b66af08ac468773983e1f24b4771f1b0422c195ecb2b6d0551096536c4b0715e": {
       "seen_at": "2026-10-19T11:05:10.544614+00:00",
       "source": "Google News Science",
@@ -6708,6 +6818,17 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c65yn9p55np2o?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Four ways Labour could raise money in the Budget without hiking income tax"
+    },
+    "bba6317c55d44604767055c523f7d6d74aedeceed3d785f822fe10ea5ad3f0e4": {
+      "created_at": "2026-10-30T12:59:19.385395+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755081281815",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckzd623pldqgo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Yorkshire Water boss resigns after firm downgraded"
     },
     "bbb6ef9da4a052a71524f1011a529584daf16527471d4b157f29c2569c72727d": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
@@ -7633,6 +7754,17 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "d739e6ac886f7d18169f653e3b47ea09e800b4f36f12b6d464488da5a676922a": {
+      "created_at": "2026-10-30T12:59:19.385395+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755081347351",
+      "source_url": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Residents leave devastated Russian-occupied Oleshky as evacuation corridor opens"
+    },
     "d754e289a206b1e0b874c0b4acb8e39fcd93489ef1873bb1d2b551737c7c4d10": {
       "created_at": "2026-10-18T06:43:24.869573+00:00",
       "has_embedded_video": false,
@@ -8124,6 +8256,17 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "e59e29ad7cf95dd9998f4b5180528b5e364b49b5bd173633673b0ea8040ea6c1": {
+      "created_at": "2026-10-30T12:59:19.385395+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755081314583",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck1l32jdlvl1o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Swedish academic says he has been barred from UK over event with Palestine Action founder"
+    },
     "e5a87b61da729b3e27aed2868eb110b0d21202fa635c3e03f9a67e5a2d70feb6": {
       "seen_at": "2026-10-29T18:56:14.651709+00:00",
       "source": "Google News Entertainment",
@@ -8423,6 +8566,11 @@
     "ecbfdd853a708aa6de58db361ed08595e74d21b0bb57b2debfab5c2749a15549": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "ecdebdd7338d38cc0540dd9a05df9e48a9c62b5b5240d39078ba405c5a41b9db": {
+      "seen_at": "2026-10-30T12:59:19.385395+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "ece4dc9e3d2a67fae6e1807a8d189c69afa718e28f44b4ba6f9a6f9d6af8d10e": {
