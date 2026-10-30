@@ -516,6 +516,17 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "0de680b82ffb0bb69267ff1106ada4618572eb04ce3a7d5657e598489cfb5b7b": {
+      "created_at": "2026-10-30T18:52:04.797166+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755086360855",
+      "source_url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "US tech stocks see sharp falls as AI spending nears $1tn"
+    },
     "0dea10406e1d83cc6768ba21da23d0f7c23c9251691d1fd87563421ffe133b78": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC Business",
@@ -980,6 +991,11 @@
     "1b54169ee507fb5e5e35b940112bf2b7851c44ed636b1a71b64501a314c26a20": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "1b5be04323c657f39d44b1345eb32ade83942a381b0f8aec0c7b1ef16124b950": {
+      "seen_at": "2026-10-30T18:52:04.797166+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "1bc48ff58cd1f6ccbfea538a628d0969d4e4e6340d8f84bcc6a85dd1b881857f": {
@@ -1530,6 +1546,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c6ly09v09lnjo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Dame Judi Dench: 'I can't do a play, a film or read any more'"
+    },
+    "29273a5fe6ba277433b51b76ae0e13f0144ee6611de8df9861384f7574587244": {
+      "seen_at": "2026-10-30T18:52:04.797166+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
     },
     "292f0ad7c3763e5d92bf09632500b9ec65fa6df76ebf2686145147a77ad7c715": {
       "created_at": "2026-10-26T06:51:53.293616+00:00",
@@ -2770,6 +2791,11 @@
       "status": "draft",
       "title": "Pope's surgery to remove lump on lung 'concluded successfully', Vatican says"
     },
+    "4c522ff21f6f5d6054b74da512de3f7936529e0ebd11980333b9910a7a801308": {
+      "seen_at": "2026-10-30T18:52:04.797166+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
     "4c611bb93b9187ed3b53d0fd10924451bd1662effdc148d38be0125aaa2c2556": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Entertainment",
@@ -3361,6 +3387,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "5df6c29a484d37d36a298508622b89d9a84ccb6aac252f3e09587e19e127d42d": {
+      "seen_at": "2026-10-30T18:52:04.797166+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "5e1db08ee00a3801e847c9931ea888605bfe5834757afb01af4b4838586d4278": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "Google News Top Stories",
@@ -3891,6 +3922,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "6c55f00ce3231aef76647a6a75424d827ac2abf1475968219c29d8e0c3c76586": {
+      "seen_at": "2026-10-30T18:52:04.797166+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "6c6b1f867124cc160bf609050850c83c9697e18971cebec8e7e52338ead7d4f4": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
       "source": "Google News Science",
@@ -4024,6 +4060,11 @@
     "6efb9f092528a3d021afc95e424d3a492f1a9996a1048bd0859bb544e6e5f10f": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "6f0240bccdc0badf4b3fd8772bfb2829fa2f4bd4d98282fa55b50a2828010abe": {
+      "seen_at": "2026-10-30T18:52:04.797166+00:00",
+      "source": "BBC Technology",
       "status": "skipped_stale"
     },
     "6f6bc829e38e30a83840f0fea4ce1536f8cd794d5bfb3d1386cdbb2ee74fb6e8": {
@@ -5069,6 +5110,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "88dea223e1519921129c0d1426fd2a53929f9f5e4fbc2f38d4a3554ed6ee860f": {
+      "seen_at": "2026-10-30T18:52:04.797166+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "891e2a6d7b48a49a3c979dc0e49cdebfc26b9a537626f3d08f15c1d95f0e51e8": {
       "seen_at": "2026-10-25T18:39:34.241726+00:00",
       "source": "Google News Science",
@@ -5314,6 +5360,17 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "8f46fe2dc3e8f77c97848486bf4ed34b2dea323407b031439706e27e9af7ab3d": {
+      "created_at": "2026-10-30T18:52:04.797166+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755086328087",
+      "source_url": "https://www.bbc.co.uk/news/articles/c98rz4pxm4ymo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "City of London chief tops UK Black Powerlist"
+    },
     "8f6de731ca1d6e3776fbc0e2ef75e68c88ee91b5e3efb4788cfc4417cebc9de8": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "BBC Entertainment and Arts",
@@ -5364,6 +5421,11 @@
     "908a7566860e8c1dcbfd029aefb16b98fe809e1417ceccd6853c3d5a81c82ef3": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "90b30943e65f5a9998baee33a2cd5fd2d46a2727019104930c7f69063d385774": {
+      "seen_at": "2026-10-30T18:52:04.797166+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "91124b3ea1c87698282c4303cfd47ddff7999ab74736e8f73ffe5204bdb67db8": {
@@ -5455,6 +5517,11 @@
     "92b35826394962f9eb30c2e3e7e979641b908aef1c2e261d5b6a51502c76fac2": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "92b98973fbe1b031492fbb851e7029cf44878ec717b6dd81ea4bebc448d787ee": {
+      "seen_at": "2026-10-30T18:52:04.797166+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "92e5858d27de486c20a34931a7acf4cf350596195708a7a308c28fed84edafe0": {
@@ -6125,6 +6192,11 @@
     "a61a50b67478cc12f12e55fa069f0056859eca154303becafa28fca55a3eee4c": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "a630c278905c2ea6425e2c0e126e490df40ccb1a4d250f44d9891fb2c1f9b357": {
+      "seen_at": "2026-10-30T18:52:04.797166+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "a6595739707f9c768fa6885ad12dd1699044b9e11a0c10934a92fe7c24c8d91c": {
@@ -7030,6 +7102,17 @@
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC World",
       "status": "skipped_stale"
+    },
+    "bff19ba67cad6f8861078cd5f950f0a4506154acb4b979cf05e596ccc4a190e0": {
+      "created_at": "2026-10-30T18:52:04.797166+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755086295319",
+      "source_url": "https://www.rollingstone.com/music/music-news/dropkick-murphys-ken-casey-bruce-springsteen-interview-1235650482",
+      "status": "published",
+      "title": "Dropkick Murphys Singer Interviews Bruce Springsteen, Joan Baez, Chuck D for New Video Series"
     },
     "c038aa98247b21af3814f4488fcb0e8d5febbed3524c191347fda97935025e0a": {
       "created_at": "2026-10-21T06:48:19.413657+00:00",
@@ -8124,6 +8207,11 @@
     "e17e8e544f85dae3b97b8772a9f8b34671d42cc4ad7bb0140c39fea45fbda5eb": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "e19bd8c686545cca7af9f3df9a1473bdc7467f9453954570443ac424b1c6f746": {
+      "seen_at": "2026-10-30T18:52:04.797166+00:00",
+      "source": "BBC Technology",
       "status": "skipped_stale"
     },
     "e1b80d64a126f4928dded58f8877d45a1deb6996137d3c6a8928dfc1ff947eb4": {
