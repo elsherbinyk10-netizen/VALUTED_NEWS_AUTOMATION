@@ -122,6 +122,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "03c36afee30f752bb3eb9592babf7a785857ee6a1f5192777627d64d7264a8a6": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "03c9112178fc35e316656699eb98b92888fd303c3bf751aa74ad6f25e06d817a": {
       "seen_at": "2026-10-29T18:56:14.651709+00:00",
       "source": "Google News Science",
@@ -262,6 +267,11 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "06749dabcd35c8e047c7aa2ecd0ce1132b6671e0ac110a873906af2f3fb3b392": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
     "069e96b5aad9b83035805d8cd9b36a65f5c16bebec68f0cb63670597b7b7766a": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
       "source": "Rolling Stone Music News",
@@ -366,6 +376,11 @@
     "0926cc5a84ca851b38f0b69c1f61d31ab17f84be259eb57049f41ddc73af3011": {
       "seen_at": "2026-10-27T06:48:31.538195+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "094c4c0d22bc06bdb5bba0e7f290984b0a82456ffea3f06c2d13f6e3fd2d7b82": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
     },
     "094cb58f9ca35447705a0f775bcf0829fbe65c50f8f6fb1c571650708094d00d": {
@@ -547,6 +562,11 @@
       "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxON3dzSHdVMFVTODdPZXBQcWY5OUplVTcyUFBjd0tZZ0hrUkg0TVc1UTFXVVBsWjlkNmh2cG1PdWU1bDBZbm9JaUVoTHBCUXJBMGU1bVdLWkk5NkdVcV9xSXRvT1plTEFXMTAzMTl4R2pHbm9Ia1NwYmNRWVhmc1E4S1hwRy1Vem1Lc1lhdzc4YWo5Nk1MSm42QWZ1U2hBNkE?oc=5",
       "status": "draft",
       "title": "Barbara Palvin Says It\u2019s \u2018Not That Big of a Deal\u2019 to Walk Victoria\u2019s Secret Catwalk at 6 Weeks Postpartum (Exclusive) -"
+    },
+    "0dfaa39434f6a352d3ff0d6d97bfc93cbf23e8bdd5c4020d5d98256cfa828334": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
     },
     "0e4e8818e9343e503dbc5f0598a74a2fd19ba5845a8aa6ef9cf9e40a78196e83": {
       "seen_at": "2026-10-19T18:47:42.889839+00:00",
@@ -803,6 +823,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "1552fa2bd636fca1899720c124f2718ff0e57852c42992da6c274ff2fd43fe11": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "155f7f5e8c38da2c0cbfd506a86ea12b058fda8d5d4b63f508691b3ad74a5bee": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "BBC World",
@@ -985,6 +1010,11 @@
     "1a9050cff6dfdc717632313359c3ef3ab70482b3337c049fd09d30504af04f7a": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "1a98a5fa313d4a52d4698bd2a4d58bf22c1f911023a103e3c91cb107d0bbd334": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "1a9bb903c0ede7207cef2e1cdd14440443301142a3c3ac1098a7e4d9c7a5d46d": {
@@ -1875,6 +1905,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "2fb1d8aa51276cc4c9dd1488eb1af4534e4613b60abc5bf7a6dfa5ddd6ffee87": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "2ff912ab33e4d97c55b9df860d92e1639b67295426574f04f4c7be543cff02d8": {
       "seen_at": "2026-10-20T18:44:16.994007+00:00",
       "source": "Google News Science",
@@ -1974,6 +2009,11 @@
     "329a33b3e560dea053b20cf87d73c40f8c605d4fc2e589453a4f0df541f3691b": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "32cf8c17da113b68d234a5c4cdc674a65b2a9d228f9fc65901cd931246ff730f": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "32d8556c864135da4f66198b897c2e99e6f322b6af57944f5f8b8e6f59577d93": {
@@ -2236,6 +2276,11 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "3951f222e10fdb2b8328fdb38af41541d74da5043b7faceec0a38da91625fde5": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
     "3958ef79ac127b4f709251231509c79b84d1de8458ce3bdb65688438728cedcd": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
@@ -2473,6 +2518,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "4070a00330e77254d6b54f6f69f820410365d490b2090a509b1a7aac587f7314": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "4074446185b15f0d82f02df8257e6193bd75559e8b028e3f62c0b00a7768ee28": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -2491,6 +2541,11 @@
     "4092a753c1b1f9a60820419e0dc4e7c0bd79b07f38191a211f97fa3af7c95429": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "40b8bb9805b315dac837022f8e44343c0eba397f7c3d432ef69594e5bea9ba40": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "40f7c2ac96fa8d0198f75b71e66263785c7339ea5eeb92e1070b0c9934dec38a": {
@@ -2781,6 +2836,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "492332e2065372ee0288eb5b77f632beb161cb89f4b49f8987420bb01df4f4e4": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "49b34605fae2022e4a11ec6ddc2ae3e9ae532524711016ee0c38bbbd20121bcd": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Google News Science",
@@ -2931,6 +2991,11 @@
     "4e553dd2116e92fd879be776749d51d1cc3b40fe746a4b970f145280c5143764": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "4e707ac90fc5406b50d03d4f4e82e7e5468c0c3f21eda2f1630606f8afd5002a": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "4e76560a44792de6eadcd33bcc383f2fb8db01ed61f904565817a8e4bd903b11": {
@@ -3834,6 +3899,17 @@
       "status": "draft",
       "title": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines"
     },
+    "685a252cf0fdce00542e1626c74fa17fad5ea21e2eb12c7ad458849031469b9c": {
+      "created_at": "2026-10-31T12:52:32.223221+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755095339287",
+      "source_url": "https://www.bbc.co.uk/news/articles/cw4g17z11l45o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Celebrity Traitors comes to a climax in nail-biting final"
+    },
     "686a391ecfec514d7576ec6efffeb5bee3c3f833cf1a1edf20f2acddf15cda6b": {
       "created_at": "2026-10-21T18:45:36.006025+00:00",
       "has_embedded_video": true,
@@ -4350,6 +4426,17 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "736c0e058d642f6b9fa1307506cd0bfde06f7c26c97c41c1c059c2b8648f34d7": {
+      "created_at": "2026-10-31T12:52:32.223221+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755095273751",
+      "source_url": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "US approves sale of 500 Patriot missiles to Ukraine"
+    },
     "7380c158af8ff1c29e4881df47c2485cd24715af6743d9df13d249528e2c014f": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "BBC Entertainment and Arts",
@@ -4534,6 +4621,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "785ec69f9b37d202f147cd775d8467f8b6efcbe8970c1547a7f5d9fddeb60941": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "78863e3eed089e0eb9b0cea50bc8a4192b60f115f57f4964755e40e1865d5a82": {
       "seen_at": "2026-10-19T12:49:09.789011+00:00",
       "source": "Google News World",
@@ -4650,6 +4742,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "7b6e223ed750b55c483b8405b855f79b0118ad7fa80df13d6c85b9998680e731": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "7b789d31ef9fa2cec2cbbcfa19280ddc158dc7f26838a66dce17bc200d0f2ba3": {
       "seen_at": "2026-10-20T18:44:16.994007+00:00",
       "source": "Google News Technology",
@@ -4673,6 +4770,11 @@
     "7bacad8a4d742f52a916dc6666a0b3a7f42faf5b2e5b62a70742beed1e202fd1": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "7baf389fa58c2b8ace3c6f8ff66e225f0e5a57e8df11be2b50f90f016fec6f1a": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "7bafb220f98f86da04653385ab6009cc9d67e25d83c3a5a0429697001b6a450b": {
@@ -5220,6 +5322,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "88b4d9d68ea3fc0325a57bd7cc37cfb120884397c07a04bdf6095b138ce59147": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
     "88bbc92bcd1cb5e124eb109c8b4e00e10293740a33435ea3c87d940944ec83a9": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Technology",
@@ -5609,6 +5716,11 @@
       "status": "published",
       "title": "Eminem\u2019s Former Employee Pleads Guilty to Leaking Rapper\u2019s Unreleased Music"
     },
+    "91d55c1e3c3ce5503e45d5882d09ead7413f4248e45e1ebc7a9539e29e813a54": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "91dd35ca3a37a08bf942593cf9e4b140314d31bbac4fd6804f9e8231d5a6ab32": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "BBC Science and Environment",
@@ -5749,6 +5861,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "95244cd47e7bbcebd7ea48a2634046844ff5d0b975b4fb1e1c3baf5b1e03f866": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "953d39d95191c33058b6835393564a5676300cd046b2fb2d324e8875b34c84fd": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC Business",
@@ -5757,6 +5874,11 @@
     "95695fd4f9f797a4252cb692ddcc161472e8794e736a94eaaaa1c3c04579c6b2": {
       "seen_at": "2026-10-28T18:54:08.851553+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "9574cc03c6de1d7cbc6abefa7391b4ccf99933e3773b4a031b1865b4ae672e66": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "95a265463e7ccfd192be31393fb5a8abc6f8265877bec7ec85be6ac7e2ee3294": {
@@ -6507,6 +6629,11 @@
       "status": "published",
       "title": "Why is Ukraine so reliant on Starlink and can Europe plug the gap?"
     },
+    "aab5d82fc54d70b43d7466ddc60938969aa763d3b0e82309096a756f80b6897e": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "aae56d12b0c0f7a2ebe4cd13d468e70c7733f29d262871960cc31589e473e604": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Variety Music",
@@ -6520,6 +6647,11 @@
     "ab0d42833759b69ca3258ec3a468c55e0cd21829d68b3745d41b78afa7533146": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "ab5555cac8f06295e2a8dd88dd000243428afea6121ba513489695f3d89bb40f": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "ab569f960f0e16be5af9cd294fc48ed3c70be3ef0f500884004f4dd8461b140c": {
@@ -6640,6 +6772,11 @@
       "status": "published",
       "title": "El Ni\u00f1o Then and Now"
     },
+    "af3e060c0161b814a28de2362fa3f1f275e48e9a8f2973db12dfe37e55b9782e": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "af527f7f1e4eb5e66e83d64005c9278a7c18c6b512271bf2cf5ef324a60b4747": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Technology",
@@ -6658,6 +6795,11 @@
     "afb7351cec622ca5837c445ba171277334c8047b2caf8b99e07c19eecc2678e4": {
       "seen_at": "2026-10-21T12:49:02.005600+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "b00a415b62bced13734730714b5a866aba5a5e25eaf0aaa1bd78d07afeee1bf0": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "b00c7929aefe1498241e9e24db0b3dced05f772b4eab0ed485705ee4f099eb6f": {
@@ -6743,6 +6885,11 @@
     "b2b721d93807ad8f5f326dfd48e1521b016df4dccfa059435b8891834cd14930": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
+    "b2bac6bfa9f54c4e16ebce06fd82c44cd996ced3a25f7ab347f461e933eb3fe2": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "b2bb12068553824ee505001f62c579ae42821334ecc9c01dc243124c95339854": {
@@ -7488,6 +7635,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "c546feec3ff82ee7e2c8a34734ecd2180a36d7785192c6947424f012028a61d3": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "c55d20308f75abbe675eb122b732d26f5af2a03a6048b14f3b815fcbd61c4871": {
       "created_at": "2026-10-31T06:55:30.871191+00:00",
       "has_embedded_video": true,
@@ -7826,6 +7978,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "ce658beb5b2145278642734204628a7d26abb18714852d7964e7d9dada9f1ee4": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "ce6857b2c85f1c377b34e9ecb4e93ff1c91baa7e18a13d8bfba9a81bfc91a9ae": {
       "created_at": "2026-10-17T06:49:32.877437+00:00",
       "has_embedded_video": false,
@@ -7967,6 +8124,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "d37f5ead5b4c2d0f92cb9a8a6b3bcb8fcd01aada988253ba16e93a5d57853167": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "d3af5cec0fbba1c6a87ecb9c52d8f67f700ebe60ad90275240b4f3110019543a": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC World",
@@ -8050,6 +8212,11 @@
     "d6871d0535130f899b48193f46c877fc46a343c0b5620b6233dd802bc6dc78fe": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "d6a54f02b35ec8f2c107be257e8430076c9ee9f902354ced3c279b5c6f9d109f": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "d6a7e4a64225ea0e2fc980b6d022d6e85c2cc85023869c77fd3acf098208df1a": {
@@ -8344,6 +8511,17 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "deefa82a83a2bcadfaf0b14c213191b0743cd6782eac6fcc3953858adf857090": {
+      "created_at": "2026-10-31T12:52:32.223221+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755095306519",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Evacuees from Russia-occupied city where residents ate weeds on way to Ukraine"
+    },
     "def1ad7d8feb4a2176337a58e44bb88eabff9fac842c6acfe11b86b2f30acd4b": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "Google News Science",
@@ -8590,6 +8768,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "e492239685a9a16df9299b67bdc759cefb41418578f846a6e2e96ddefe0d25d8": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "e4f2618d2f0ea3703b2ddc07414aef0091d2a1a16aba84e353ef0845f1fa38c2": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "NASA News",
@@ -8641,6 +8824,11 @@
       "source_url": "https://variety.com/2026/music/news/smashing-pumpkins-billy-corgan-marilyn-manson-lawsuits-1236930317",
       "status": "published",
       "title": "Billy Corgan Says He\u2019s Stood by Marilyn Manson Despite Sex Abuse Claims Because He \u2018Didn\u2019t Feel He Was Guilty\u2019: \u2018I Don\u2019t"
+    },
+    "e67b3c3d1c2f45169fee2837c858d29b3e0010ba76ffaec365c2cfe375e48128": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
     },
     "e689e5ff26a2acf5b2b351d4a2581de38d5d6d90ffb9a97b983b804834fc1e5b": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
@@ -9170,6 +9358,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "f3e9ae8c2f1a5665b5827adf56ea86e88d73bb4997482250145e4e88e3a9c3f2": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "f3fafd3d0e6bffdd1a972f014ccdbd52c7f56c9b0d2f66a1f1196357d4fdc5f5": {
       "seen_at": "2026-10-27T12:50:27.915668+00:00",
       "source": "NPR Arts and Entertainment",
@@ -9193,6 +9386,11 @@
     "f4753496c4043462714f45e2ba05b351697681b7ae644762bc91b94954a01b1f": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "f4d3faea9e95a0a27bd247865c89128e8e244efe0df05a75234ac62d9911b7cd": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "f5183f6ff8c05371beffdc7b9d8f8200f79f1477a66aed10fbd1cca63b3bcbfe": {
@@ -9435,6 +9633,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cmly016ep243o?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Trump's tariffs could shutter this Canadian town - its residents are fighting to save it"
+    },
+    "fbb8bf3111c9a7d4f4b9116972142daded32aca1f4a734e618540ddf15c7df2c": {
+      "seen_at": "2026-10-31T12:52:32.223221+00:00",
+      "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
     },
     "fbe52267f739966ad39c779303188d4244278886d05cd5d0979c5dbf5cb21310": {
       "seen_at": "2026-10-30T07:00:00.666940+00:00",
