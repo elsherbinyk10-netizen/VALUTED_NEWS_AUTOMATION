@@ -428,6 +428,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "09fd21d4194b63c10c702685b4a6ce80bcec0dc9ec0a71c5f4785e307133fc65": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "0a0b53f3bb6e40349df58d2de48f2d0f563fbbc3e88395c0adc4b50fc96ad7c7": {
       "seen_at": "2026-10-29T13:00:30.022198+00:00",
       "source": "Google News Entertainment",
@@ -863,6 +868,17 @@
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
+    },
+    "1620a9d27876be6cf1b2c052960d2c7da46789d868216c4a681be379774f558a": {
+      "created_at": "2026-10-31T18:48:49.607226+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755097796887",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack"
     },
     "167d0cdc76e9096617b0887d260bed3a090bcc397ccd3743441b4d14d1326095": {
       "seen_at": "2026-10-11T21:26:28.869298+00:00",
@@ -1746,6 +1762,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "2b83bd1f882efad7ade0434ed3768061b514fc659734a6f8824c6faa3fb5d716": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "2bcc3934feb883fe11735ba8ecbf6dfce22925485713b39ea610595fc132a1b1": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News Science",
@@ -2513,6 +2534,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "40273b59e390562fd8a5f33445e30e2ac788781fc0ab35792960ea1674ab26fd": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "403bcfdcb0f581475d0c699419b764935179d51cc9194bc09137a913c6e09e15": {
       "seen_at": "2026-10-17T05:38:12.339694+00:00",
       "source": "NASA News",
@@ -2785,6 +2811,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "46d07e6855d9c2def1adfb3e585485ffcb646131804c7043f419309952a6b2f4": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "46d11dd01b815f381f754ee9e40974e4bf01c88dc3f0ca1cb99a1f953dad9fb2": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "Google News World",
@@ -2929,6 +2960,11 @@
     "4c611bb93b9187ed3b53d0fd10924451bd1662effdc148d38be0125aaa2c2556": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "4c6bc189ffaa62406d6b30283a49cccff1a5a0d7f849da71aca9cefdbe2ecb7f": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "4c6fc01defe537eb8a2813a052d5284044945fe5aeb21faf93f131f40492a08a": {
@@ -3956,6 +3992,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "69d0692be0cdd9725e0e47784d67ea6a76321c7151e19b888a8d76c3f069c42d": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "6a0bebe65be73dd14147330d62cdaa30b4724f84b711623f551f219b87add8ef": {
       "created_at": "2026-10-24T18:39:21.262654+00:00",
       "has_embedded_video": true,
@@ -4555,6 +4596,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "7639b081a722e4aeeb1385f10d05d78f412b32c0a203d57d79cecbed5fb19de9": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "763b0ab047b750007a81fc6b6fac337b2ee13624ae3c0a9e49ec6a08acbfb530": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Science",
@@ -4843,6 +4889,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "7cf97945aa6283b855de7e1872c35aa41404e23a4111738ea616b3d09e2010a0": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "7d05bd416a02caf5d387afd898cd2d9d0127a4386abf1121268ccdbb133b370c": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "BBC Business",
@@ -4944,6 +4995,17 @@
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "7f90ce4eea86f5bce9bb16a1da3b6d7c4bc84828fbe0f02a7bd9abf80e7a3f5d": {
+      "created_at": "2026-10-31T18:48:49.607226+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755097764119",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm4g18l8l4wgo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "'It's been killing me!' Celebrity Traitors winners relieved the secret is out"
     },
     "800b5314ea9f7962b91dea08a1ac455e1cba00eb82139e4e551abe997225cb26": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
@@ -5513,6 +5575,11 @@
     "8d22fc4debd39ff36343d533ac0fb3f0353a4b47a5b3dd1d072f2a9797ca03b2": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "8d59b9f3c08d9e94b87449dfa6632efdc5a40a6fc45a8917a3bac72d86b7f6a5": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "8d5d21fcefa0d912467f4504708c4853d11e0d752164254ecc9e22e31fd8aa23": {
@@ -6416,6 +6483,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "a5036eccbd99fd7491a1332de2821cb35c91bbb6fa4969263597bdf13f993875": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "a52a1b68adae061f981019b7b54d2db3deab9fbf52c08dbd99ad5789f9c2a05c": {
       "seen_at": "2026-10-27T12:50:27.915668+00:00",
       "source": "BBC Science and Environment",
@@ -6474,6 +6546,11 @@
     "a61a50b67478cc12f12e55fa069f0056859eca154303becafa28fca55a3eee4c": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "a6294a739272fdf6e923f15f9f6409d10e1469a6e9dd9265f620cbaa92cb6629": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "a630c278905c2ea6425e2c0e126e490df40ccb1a4d250f44d9891fb2c1f9b357": {
@@ -6608,6 +6685,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "aa0304dd796dd15dd41fc3f2d1c25c83fe4b1653ee1a1775ddd250046afd154f": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "aa3b1eb486d12cc21ba6f5e3611bf836c272e69695864f87d4d8eff2da89fc14": {
       "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "Google News Science",
@@ -6707,6 +6789,11 @@
     "ad11e6cfb14a5b9663cb419cc048c1a2384fab26a27c0aebeb6c7c567373dd01": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "ad5377914761bf95f2215478c128955e3d3dfec255811222d458db3acedf7140": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "ad5edf811050048753ca45866847c7b2de8935481d528ff0de624cea7e2af752": {
@@ -7060,6 +7147,11 @@
     },
     "b793f315cb33930901733d41815b56a550b901864399f63079360af07501bd1f": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "b7ace2f7fab3ec2afc2daf780b26cedb94d4ec1b8e745b3c3d5650f57f7ac225": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
@@ -7429,6 +7521,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "beef0c73d49300d845eefa69b0c2d256c9fea8bfd06f6e4e87f3d52bf56149dc": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "bf253df1a0e7746eef5996d4a43035a1c720e61c5db27c4723e39c41e2fbd00b": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "Google News Entertainment",
@@ -7522,6 +7619,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cky83vwnyglno?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Zuckerberg wins Meta deal to help him foot bill for possible California billionaire tax"
+    },
+    "c20ab7b2e1bc215c76bc0fd7c0070c150b5ab688fae11d21aba9429cd195d9e9": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
     },
     "c21c01b5864a11b225a25d3e596090c9955bcea149a21fe79b559a12443fe344": {
       "seen_at": "2026-10-27T18:49:42.592770+00:00",
@@ -9687,6 +9789,11 @@
     "fda36180e15e5f676d8c48ea062c098b1774bf095faf604049513dbcee801042": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "fe0a6eb4b6f8b2bdbe31380b9c6608371b5a3c3a72291395e382f6d8ba57ae8e": {
+      "seen_at": "2026-10-31T18:48:49.607226+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "fe1c40f9b39ce3ff33db8b7b349c1362b1cc77f65867b91fa6f00a7cbf2d83cc": {
