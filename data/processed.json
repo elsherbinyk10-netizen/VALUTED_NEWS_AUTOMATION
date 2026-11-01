@@ -338,6 +338,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "0783a78dc33abe0d4e991a1b0d5c8b5f3878f8eb71949bc110379faa05c349fb": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "07bebbba60276f2606b23b2e26c1ac9a0780fe69c511d5921808b47ce44f0ecd": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News World",
@@ -863,6 +868,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "14edd1bc5898e0eed920f4995860d90deb83be890b2c88a4fb7d1f5d141a7c2c": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "1511871a2afac36f3c12dd0c11c04f260a843e7e3db109b3b5c8c56dfdbd5614": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "BBC Entertainment and Arts",
@@ -1027,6 +1037,17 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "189e284fa7d7d78ad4985e8b7b02bc0854a8bc970326eb467d5c35432b04c103": {
+      "created_at": "2026-11-01T18:48:11.579033+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755104973079",
+      "source_url": "https://www.bbc.co.uk/news/articles/c95ynzv88n68o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Democrat endorses Republican candidate in key Michigan Senate race as party spat escalates"
+    },
     "18aae1c92196fc322ee1d35547b2449f82d5951a1207a9bf7121880ab082dd09": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Google News World",
@@ -1159,6 +1180,16 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c59vz71kxxgzo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "\u00a330 rise in payments for crisis-hit households"
+    },
+    "1c9098e4814bbf882c246a2cb1726a484d8f85b16cb498b395f2608285583fdc": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "1ca7ef89f6bed652cb79c2099079039db295ea072652b993f1ce40194954fe3c": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
     },
     "1cb07c245c086d7ce8d18d4485df06caeb6d7b85fe8d30df29f9225b21d7ebe6": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
@@ -2332,6 +2363,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "35d140ce0837c4941a62c985bfbe3ddd96a52d6074ed051462d71b9f8afaace5": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "35fa1923bafe2c269fc1d80ca52026c1f0c56caf4d6cd10a8fde1ac98894a588": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News Technology",
@@ -2692,6 +2728,11 @@
     "3f7fef713852df288c8cfad9aebae49c58b37e9ec661966c7690ccc98b5e716d": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "3f8411010128c674695befd7cf23f169425c99539c4dbac5740c5383f2df26f3": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "3fb7d303f1000fb88fe13ab15fe2b1b0e348423a7b64bc6963f489af4933688b": {
@@ -3794,6 +3835,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "5ddababa627abacfe0071b63b63f1064c1583892cd7bbea235bd18fd7ef75913": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "5df6c29a484d37d36a298508622b89d9a84ccb6aac252f3e09587e19e127d42d": {
       "seen_at": "2026-10-30T18:52:04.797166+00:00",
       "source": "Google News Technology",
@@ -4699,6 +4745,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "71d99abfb3c25ba5da89e6a2a1d9cd786081538d45273fa4174160fd878c9c20": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "720b42ad4da2fa015cfbc1e628c5b63104814dd8239daec7683fe7633f81c6fe": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "NPR Business",
@@ -5013,6 +5064,11 @@
     "782d0eff1df90b4d6f6f62642cf390d13d405d75d4bf24ca295fe0c0c87d4ec2": {
       "seen_at": "2026-10-12T06:38:38.333441+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "784b38b9fc0c99f2290542b8d405bcffe0f3eb9b554ba7c62fe02d39649dc3e8": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "785ec69f9b37d202f147cd775d8467f8b6efcbe8970c1547a7f5d9fddeb60941": {
@@ -6820,6 +6876,11 @@
       "status": "published",
       "title": "France prepares for day of protest a week after nationwide riots"
     },
+    "a1794eefe13088e146ee0a9346721f51772307b086ae6cfbf96d6316b622ac04": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "a17ebdc0cffc8f70ba181cf2156804e477ecbac4fe7ea518a86ea38f0a734576": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
@@ -7219,6 +7280,17 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "ac1ada03b98d3f979e038a6dfd1c227ce85eb1dbe7d431e54459c670e2999ed5": {
+      "created_at": "2026-11-01T18:48:11.579033+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755105005847",
+      "source_url": "https://www.bbc.co.uk/news/articles/cry8317pdp5yo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "'Fascinating' rare beetle found in Wales again after 60 years"
+    },
     "ac70aab17d4d7e8b249700d8af7d07d99614eb0021feb1f899864ea8c7c8a2a0": {
       "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "BBC Entertainment and Arts",
@@ -7247,6 +7319,11 @@
     "ad5edf811050048753ca45866847c7b2de8935481d528ff0de624cea7e2af752": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "ad6ca98f8a01213c4a362b710fe48926c8513d229ddb7e7bebbd5d068c8c327d": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "ad7bbfab8c572e88781d3eae9835ae8c2241c2a4f059fdf941457cca9c24d9a8": {
@@ -7350,6 +7427,11 @@
     "b055a5f2b4d6c2ffbfa8decf910551e318c00829d4c9f14c7a65c685921f1d88": {
       "seen_at": "2026-10-19T12:49:09.789011+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "b0b7c3efd75243fd6b1e49e6f6fb72135645a3a16427c29eeff70a6dfb75cafb": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "b0b8f497d0e11693c727a52b1187d08a07839ad948773b6e814a40eb852c4f41": {
@@ -7767,6 +7849,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "bb4e392fcf4a4af378cb52e4fd337949ad2b493715c5cf6a4b74c0be4e2399fa": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "bb52a18843977ccf1721ae3add7ef6dbf5b3b5e7ebfa08212fb4a3541573dc13": {
       "seen_at": "2026-10-30T07:00:00.666940+00:00",
       "source": "NPR Business",
@@ -8005,6 +8092,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "beee15100173a94578fe4280e8acc5165fdc432d857b7c584c40c7bce5c3692b": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "beef0c73d49300d845eefa69b0c2d256c9fea8bfd06f6e4e87f3d52bf56149dc": {
       "seen_at": "2026-10-31T18:48:49.607226+00:00",
       "source": "BBC Science and Environment",
@@ -8117,6 +8209,11 @@
     "c20ab7b2e1bc215c76bc0fd7c0070c150b5ab688fae11d21aba9429cd195d9e9": {
       "seen_at": "2026-10-31T18:48:49.607226+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "c213f698f56242a87776fcd34af1afbed4358ae82da465bdd0798d41d1b042e6": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "c21c01b5864a11b225a25d3e596090c9955bcea149a21fe79b559a12443fe344": {
@@ -8353,6 +8450,11 @@
       "status": "published",
       "title": "Scotland's recycling rates fall to lowest level in five years"
     },
+    "c7b05c1cd1deaf9ae88ceade902acc8702b7b3e96c0d9e2b822fb2f7c2aeebc7": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "c7eb37b33cfa459c4e576d5c3c9a73baabbe23a9bc2fb2f9b2a2c2d58c968642": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "BBC Science and Environment",
@@ -8554,6 +8656,17 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "cce1a6a01f58ec156d835b2fb4cf504b8fb59b31d88b96632b49866bdf32fc1c": {
+      "created_at": "2026-11-01T18:48:11.579033+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755105038615",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck3r5z3pw928o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Lindsay Clancy is back in court - where will her case go next?"
+    },
     "cd1eb74272bdae2dfb6acadcf2f28bc0f83611be9e8c1baa39acafe8863a46f1": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "BBC World",
@@ -8675,6 +8788,11 @@
       "status": "published",
       "title": "What is PHP and why did it spark a global cyber-security scramble?"
     },
+    "d0797f594979ed60a3571fd9e9a00f4d79108fe10c917307969ac49226340b5f": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "d0fcb50dbf702ea64cd154f423fbb5b352bb20727cb5ffa1c920343326045eba": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "Google News Science",
@@ -8693,6 +8811,11 @@
     "d123befa85be58cc00865097f0c049a2d5f58cc6666bcdef278442277343bf08": {
       "seen_at": "2026-10-27T06:48:31.538195+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "d13e42607d018e9c885a98f00df3032332fc41854ea274865393d72c45ed0fd1": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "BBC Technology",
       "status": "skipped_stale"
     },
     "d14718605bdd1535c21412af8160c20b1fbf80e01d53198a78e9871983e59bb7": {
@@ -9120,6 +9243,11 @@
     "dbe2c676f292a7ef771b8ab74b5b027e0fe20afffa225e826ba810cbedfe37b4": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "dc01b4d32578a863ea99b912e7a87447e3a6c58cc62f577ea407c580553cb37f": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "dc6721115e7b80c6009ca2ca155a8ba81e5110b1c144404fa06796db737a38c5": {
@@ -9973,6 +10101,11 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "f0d89dca8c2627a6cf8b7b934f05f42edd18edd2f52b98b8ac86a8390f60ce55": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "f1315209d972f617ce6525a1ea7ffcbfc874f1f8cf2b924736078c0dc8a67a82": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "BBC Technology",
@@ -10046,6 +10179,11 @@
     "f293b9c74ff509fad25fb0950652a56500fd249482c899a5155752f6f0094d09": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "f2b1c1da7d3551faace04af900f6c401bd44280539973f5f2243b6c62ab31f1a": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "f2cab740b2d39b8626e999039a1b793b72730e951ff9a5629c57170eb01fc633": {
@@ -10314,6 +10452,11 @@
     "f85fd84baf5665c27c82623e7916be36db1955c713dc87fff1bd7ada8bb0c094": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "f88001b283bc30da02bad9f42920a09b83024b71c5d2ef141847a8136f7bbd7f": {
+      "seen_at": "2026-11-01T18:48:11.579033+00:00",
+      "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
     "f8d38d8a8246be7801f9f4c24f358b5a2d01772941118b2a99a8822eaaad84cb": {
