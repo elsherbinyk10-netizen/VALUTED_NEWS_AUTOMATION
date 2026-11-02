@@ -479,15 +479,22 @@ def fetch_article_media(source_url):
                 if image_url:
                     break
 
+        # Restrict video discovery to explicit publisher metadata or embeds inside
+        # the source article/main content. Never scrape site-wide ad/sidebar iframes.
+        article_root = soup.find("article") or soup.find("main") or soup
         video_markup = []
-        for tag in re.findall(r"<meta\b[^>]*>", markup, re.I):
-            is_video = re.search(r"""(?:property|name)\s*=\s*["'](?:og:video(?::url|:secure_url|:type)?|twitter:player)["']""", tag, re.I)
-            if is_video:
-                match = re.search(r"""content\s*=\s*["']([^"']+)["']""", tag, re.I)
-                if match:
-                    video_markup.append('<iframe src="' + html.escape(html.unescape(match.group(1)), quote=True) + '"></iframe>')
-        for match in re.findall(r"""<iframe\b[^>]*\bsrc\s*=\s*["']([^"']+)["'][^>]*>""", markup, re.I):
-            video_markup.append('<iframe src="' + html.escape(html.unescape(match), quote=True) + '"></iframe>')
+        for tag in soup.find_all("meta"):
+            key = str(tag.get("property") or tag.get("name") or "").lower()
+            if key not in {"og:video", "og:video:url", "og:video:secure_url", "twitter:player"}:
+                continue
+            candidate = str(tag.get("content") or "").strip()
+            if candidate:
+                candidate = requests.compat.urljoin(response.url, html.unescape(candidate))
+                video_markup.append('<iframe src="' + html.escape(candidate, quote=True) + '"></iframe>')
+        for iframe in article_root.find_all("iframe", src=True):
+            candidate = requests.compat.urljoin(response.url, str(iframe.get("src") or "").strip())
+            if candidate:
+                video_markup.append('<iframe src="' + html.escape(candidate, quote=True) + '"></iframe>')
         video_html = ""
         for candidate_markup in video_markup[:10]:
             video_html = extract_video_embed({"content": [{"value": candidate_markup}]})
@@ -1060,19 +1067,15 @@ def main():
         if args.dry_run:
             continue
         try:
-            # Resolve article artwork and source text from the publisher page only.
-            # Do not scrape or discover third-party videos automatically: the previous
-            # approach could attach a plausible-looking but unrelated YouTube clip.
-            if not item.get("image_url") or image_url_is_generic(item.get("image_url")) or len(clean_text(item.get("description", "")).split()) < 120:
-                media = fetch_article_media(item["url"])
-                if (not item.get("image_url") or image_url_is_generic(item.get("image_url"))) and media.get("image_url") and not image_url_is_generic(media.get("image_url")):
-                    item["image_url"] = media["image_url"]
-                if len(clean_text(item.get("description", "")).split()) < 120 and len(media.get("article_text", "").split()) >= 120:
-                    item["description"] = media["article_text"]
-                    logging.info("Recovered full source-page text for candidate: %s", item["title"])
-            # News stories may publish without a video. An unrelated video is worse
-            # than no video; add one only after a separate editorially verified workflow.
-            item["video_html"] = ""
+            # Resolve all media from the exact cited publisher page. Publisher-page
+            # video embeds may be used; search-result videos are never attached.
+            media = fetch_article_media(item["url"])
+            if (not item.get("image_url") or image_url_is_generic(item.get("image_url"))) and media.get("image_url") and not image_url_is_generic(media.get("image_url")):
+                item["image_url"] = media["image_url"]
+            if len(clean_text(item.get("description", "")).split()) < 120 and len(clean_text(media.get("article_text", "")).split()) >= 120:
+                item["description"] = media["article_text"]
+                logging.info("Recovered full source-page text for candidate: %s", item["title"])
+            item["video_html"] = media.get("video_html", "")
             block_reasons = auto_publish_block_reasons(item, auto_publish)
             if block_reasons:
                 # Never create an editorial-review placeholder. Leave blocked items out of
