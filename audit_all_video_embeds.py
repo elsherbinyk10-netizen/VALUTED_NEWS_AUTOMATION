@@ -46,8 +46,8 @@ def existing_relevant_credit_video(title, body):
     from urllib.parse import parse_qs, urlparse
 
     match = re.search(
-        r'<p\\b[^>]*class=["\\'][^"\\']*vn-video-credit[^"\\']*["\\'][^>]*>'
-        r'[\\s\\S]*?<a\\b[^>]*href=["\\']([^"\\']+)["\\'][^>]*>(.*?)</a>',
+        r"""<p\\b[^>]*class=["'][^"']*vn-video-credit[^"']*["'][^>]*>"""
+        r"""[\\s\\S]*?<a\\b[^>]*href=["']([^"']+)["'][^>]*>(.*?)</a>""",
         body or "", re.I,
     )
     if not match:
