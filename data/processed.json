@@ -714,6 +714,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "1099564de0d4f96989f150ad972769c677246f0655f4b1840c348612fb3f1707": {
+      "seen_at": "2026-11-02T18:40:23.628595+00:00",
+      "source": "Google News UK Top Stories",
+      "status": "skipped_stale"
+    },
     "109ce3b6dd2539fd02fcd65f38cc6ee1a5928504cd08f6a57d708a871ee4c013": {
       "seen_at": "2026-11-02T07:29:49.590724+00:00",
       "source": "Google News Business",
@@ -10578,6 +10583,17 @@
       "seen_at": "2026-10-27T06:48:31.538195+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "e2f7ef4e89d1cc82bbd929fa5d59f5ef0bfe51dabf24868be4db029bc3156ef4": {
+      "created_at": "2026-11-02T18:40:23.628595+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian Sport",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755119751447",
+      "source_url": "https://www.theguardian.com/football/2026/nov/02/wsl-talking-points-michele-kang-london-city-lionesses-renee-slegers-arsenal",
+      "status": "published",
+      "title": "WSL talking points: Kang could have a problem and how long can Slegers hang on?"
     },
     "e32152202cb4f7ff65fc47d1d21c8940ebd2a40625ab4cadfab106245174289c": {
       "seen_at": "2026-11-01T12:54:22.780534+00:00",
