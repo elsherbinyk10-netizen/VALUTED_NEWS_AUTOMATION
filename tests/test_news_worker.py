@@ -377,6 +377,9 @@ class TrendingNewsRankingTests(unittest.TestCase):
         self.assertEqual(payload["datePublished"], "2026-11-02T12:00:00+00:00")
         self.assertEqual(payload["image"], ["https://images.example.com/moon.jpg"])
         self.assertEqual(payload["publisher"]["name"], "VALUTED NEWS")
+        self.assertEqual(payload["publisher"]["url"], "https://valutednews.com/")
+        self.assertIn("Artemis", payload["keywords"])
+        self.assertIn("Science", payload["keywords"])
 
     @patch.object(worker, "shopify_graphql")
     def test_news_article_includes_concise_seo_metadata(self, graphql_mock):
