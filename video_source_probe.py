@@ -51,5 +51,16 @@ for label, url in TARGETS.items():
         for key in ("videoId", "video_id", "brightcove", "jwplayer", "player.sky"):
             if key.lower() in response.text.lower():
                 print("PAGE_MARKER", key)
+        patterns = (
+            r"players\\.brightcove\\.net/[^\\s\\\"']+",
+            r"videoId\\s*[:=]\\s*[\\\"']([^\\\"']+)",
+            r"accountId\\s*[:=]\\s*[\\\"']([^\\\"']+)",
+            r"\\bvideo_id\\b\\s*[:=]\\s*[\\\"']([^\\\"']+)",
+            r"brightcove[^\\s<>]{0,300}",
+        )
+        for pattern in patterns:
+            matches = re.findall(pattern, response.text, re.I)
+            for match in matches[:12]:
+                print("PLAYER_PATTERN", pattern, match[:600] if isinstance(match, str) else match)
     except requests.RequestException as error:
         print("REQUEST_ERROR", repr(error))
