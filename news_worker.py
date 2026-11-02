@@ -786,6 +786,47 @@ def create_shopify_article(blog_id, title, summary, body, source_url, publisher,
     return result.get("article")
 
 
+TREND_STOP_WORDS = {
+    "the", "and", "with", "for", "from", "that", "this", "after", "over",
+    "under", "into", "about", "says", "said", "report", "reports", "live",
+    "latest", "update", "updates", "world", "news", "today"
+}
+
+def _trend_tokens(value):
+    return {
+        token for token in re.findall(r"[a-z0-9]+", clean_text(value).lower())
+        if len(token) > 2 and token not in TREND_STOP_WORDS
+    }
+
+def rank_trending_news(items, now=None):
+    """Rank fresh news by independent-source corroboration and recency."""
+    now = now or datetime.now(timezone.utc)
+    prepared = []
+    for index, item in enumerate(items):
+        title_tokens = _trend_tokens(item.get("title", ""))
+        corroborating = set()
+        for other_index, other in enumerate(items):
+            if other_index == index:
+                continue
+            overlap = title_tokens & _trend_tokens(other.get("title", ""))
+            publisher = clean_text(other.get("publisher", ""))
+            if len(overlap) >= 2 and publisher and publisher != clean_text(item.get("publisher", "")):
+                corroborating.add(publisher)
+        published = item.get("published")
+        if published and published.tzinfo is None:
+            published = published.replace(tzinfo=timezone.utc)
+        age = max(0.0, (now - published).total_seconds() / 3600) if published else 72.0
+        recency = max(0.0, 24.0 - min(age, 72.0) / 3.0)
+        score = recency + min(len(corroborating), 5) * 8.0
+        prepared.append((score, index, item, len(corroborating)))
+    prepared.sort(key=lambda row: (-row[0], row[1]))
+    for score, _, item, count in prepared:
+        item["trend_score"] = round(score, 2)
+        item["corroborating_sources"] = count
+        logging.info("Trend rank %.2f | corroborating_sources=%d | %s", score, count, item.get("title", ""))
+    return [item for _, _, item, _ in prepared]
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="Fetch feeds without writing to Shopify or state.")
@@ -846,7 +887,8 @@ def main():
         except Exception:
             logging.exception("Feed processing failed: %s", name)
 
-    candidates.sort(key=lambda x: x["published"] or datetime(1970, 1, 1, tzinfo=timezone.utc), reverse=True)
+    # Prioritize fresh stories corroborated by independent publishers.
+    candidates = rank_trending_news(candidates, now)
     candidates = candidates[:max_items * 10]
     logging.info("Found %d candidates to quality-check; publication cap=%d; dry_run=%s; auto_publish=%s", len(candidates), max_items, args.dry_run, auto_publish)
 
