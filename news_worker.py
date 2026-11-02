@@ -686,7 +686,7 @@ def make_editorial(title, publisher, category, description, video_html=""):
 
     return {
         "title": safe_title,
-        "summary": seo_description,
+        "summary": summary[:155],
         "body": body,
         "quality_ok": False,
     }
