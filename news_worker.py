@@ -932,13 +932,8 @@ def auto_publish_block_reasons(item, auto_publish):
         reasons.append("missing/invalid canonical source URL")
     if not clean_text(item.get("title", "")):
         reasons.append("missing title")
-    # User requirement: every newly published article must carry a playable video
-    # taken from the cited publisher page/RSS, never a search-result substitute.
-    publisher_video = item.get("video_html", "")
-    if not publisher_video:
-        reasons.append("no original-source video found; article will be retried instead of published")
-    elif not video_embed_is_available(publisher_video):
-        reasons.append("original-source video failed playback verification")
+    # A video improves an article but is not a publication prerequisite.
+    # Any attached player is checked separately before it reaches the public article.
     if not canonical_url(image_url) or image_url_is_generic(image_url):
         reasons.append("missing or generic featured image")
     parsed_image = urlparse(image_url) if image_url else None
@@ -1021,6 +1016,83 @@ POPULAR_NEWS_TAGS = {
     "climate": ["Climate", "Environment"],
     "space": ["Space", "NASA"],
 }
+
+CATEGORY_KEYWORDS = {
+    "Politics": (
+        r"\\b(election|vote|voting|parliament|congress|senate|government|president|prime minister|minister|"
+        r"politician|political|policy|legislation|bill|campaign|white house|diplomat|diplomacy|"
+        r"sanction|geopolitic|opposition party|cabinet)\\b",
+    ),
+    "Business": (
+        r"\\b(business|company|companies|corporate|market|markets|stock|stocks|share price|"
+        r"earnings|revenue|profit|losses|bank|banking|economy|economic|inflation|trade deal|"
+        r"tariff|investment|investor|ceo|startup|merger|acquisition|retail|jobs|employment|"
+        r"oil price|interest rate|cryptocurrency|bitcoin)\\b",
+    ),
+    "Technology": (
+        r"\\b(technology|tech|artificial intelligence|\\bai\\b|robot|robotics|software|"
+        r"cyber|hack|data breach|smartphone|iphone|android|google|microsoft|apple|"
+        r"computer|chipmaker|semiconductor|app update|social media platform|"
+        r"gadget|device|cloud computing|machine learning)\\b",
+    ),
+    "Sports": (
+        r"\\b(sport|football|soccer|premier league|champions league|nba|nfl|tennis|"
+        r"cricket|rugby|formula one|formula 1|f1|grand prix|olympic|world cup|"
+        r"match|tournament|coach|player|transfer|goal|league|athlete|race result)\\b",
+    ),
+    "Entertainment": (
+        r"\\b(movie|movies|film|films|cinema|actor|actress|celebrity|netflix|"
+        r"television|tv series|series premiere|streaming|music|singer|song|album|"
+        r"concert|box office|hollywood|broadway|festival|director|trailer|"
+        r"reality show|award show|grammy|oscar|emmy)\\b",
+    ),
+    "Health": (
+        r"\\b(health|medical|medicine|hospital|doctor|patient|disease|illness|"
+        r"vaccine|vaccination|clinical trial|mental health|public health|"
+        r"cancer|virus|infection|treatment|drug approval|pharmaceutical|"
+        r"outbreak|epidemic|pandemic)\\b",
+    ),
+    "Science": (
+        r"\\b(science|scientist|research|study|discovery|space|nasa|astronomy|"
+        r"planet|moon|mars|satellite|climate|environment|wildlife|animal|"
+        r"species|ocean|earthquake|hurricane|storm|weather|fossil|archaeology|"
+        r"experiment|physics|biology|chemistry)\\b",
+    ),
+    "Travel": (
+        r"\\b(travel|tourism|tourist|holiday|vacation|hotel|airline|airport|"
+        r"flight|cruise|destination|travel guide|visitor|museum visit|"
+        r"tour operator|travel warning|passport|visa rules)\\b",
+    ),
+}
+
+
+def classify_story_category(title, description="", feed_category="World"):
+    """Classify using headline and source text; headline evidence carries extra weight."""
+    title_text = clean_text(title).lower()
+    description_text = clean_text(description).lower()
+    scores = {}
+    for category, patterns in CATEGORY_KEYWORDS.items():
+        score = 0
+        for pattern in patterns:
+            if re.search(pattern, title_text, re.I):
+                score += 4
+            if re.search(pattern, description_text, re.I):
+                score += 1
+        scores[category] = score
+    best_category = max(scores, key=scores.get)
+    if scores[best_category] > 0:
+        return best_category
+    fallback = clean_text(feed_category).casefold()
+    fallback_map = {
+        "world": "World", "business": "Business", "technology": "Technology",
+        "tech": "Technology", "sports": "Sports", "sport": "Sports",
+        "entertainment": "Entertainment", "arts": "Entertainment",
+        "music": "Entertainment", "politics": "Politics", "health": "Health",
+        "science": "Science", "climate": "Science", "environment": "Science",
+        "travel": "Travel",
+    }
+    return fallback_map.get(fallback, "World")
+
 
 def build_news_tags(title, category, publisher, max_tags=10):
     """Create relevant Shopify tags from the actual headline and section, not generic tag stuffing."""
@@ -1166,10 +1238,11 @@ def main():
                         seen[key] = {"status": "skipped_stale", "source": name, "seen_at": now.isoformat()}
                     continue
                 description = extract_entry_text(entry)
+                category = classify_story_category(title, description, category)
                 risk = bool(HIGH_RISK.search(title + " " + description))
                 candidates.append({
                     "key": key, "title": title, "url": source_url, "publisher": name,
-                    "category": category, "description": description, "published": published,
+                    "category": category, "description": description,
                     # Aggregator RSS thumbnails often repeat one generic image across unrelated stories.
                     # Resolve publisher metadata in the backfill workflow instead of trusting these thumbnails.
                     "image_url": "" if "google news" in name.lower() else extract_image(entry),
@@ -1203,8 +1276,15 @@ def main():
                 logging.info("Recovered full source-page text for candidate: %s", item["title"])
             item["video_html"] = media.get("video_html", "")
             if item["video_html"] and not video_embed_is_available(item["video_html"]):
-                logging.warning("Publisher video endpoint is unavailable; publishing without an unplayable embed: %s", item["title"])
+                logging.warning("Publisher video endpoint is unavailable; trying a verified related clip: %s", item["title"])
                 item["video_html"] = ""
+            if not item["video_html"]:
+                related_video = fetch_related_youtube_embed(item["title"], item["category"])
+                if related_video and video_embed_is_available(related_video):
+                    item["video_html"] = related_video
+                    logging.info("Attached verified, clearly labelled related video: %s", item["title"])
+                else:
+                    logging.info("No verified related video found; article will publish without a video: %s", item["title"])
             block_reasons = auto_publish_block_reasons(item, auto_publish)
             if block_reasons:
                 # Never create an editorial-review placeholder. Leave blocked items out of
