@@ -62,5 +62,15 @@ for label, url in TARGETS.items():
             matches = re.findall(pattern, response.text, re.I)
             for match in matches[:12]:
                 print("PLAYER_PATTERN", pattern, match[:600] if isinstance(match, str) else match)
+        for marker in ("BRIGHTCOVE_ACCOUNTID", "BRIGHTCOVE_ATOMPLAYERID", "BRIGHTCOVE_HUBPLAYERID", "videoId", "brightcove-"):
+            start = 0
+            shown = 0
+            while shown < 5:
+                pos = response.text.lower().find(marker.lower(), start)
+                if pos < 0:
+                    break
+                print("PLAYER_CONTEXT", marker, response.text[max(0,pos-300):pos+700].replace("\\n"," ")[:1000])
+                start = pos + len(marker)
+                shown += 1
     except requests.RequestException as error:
         print("REQUEST_ERROR", repr(error))
