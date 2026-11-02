@@ -674,6 +674,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "104320ee34a698417b99315c4b3df646294e4abc6a48ba7f0200194a662cf8d3": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "106b657c30ff37f732ffa042f435e26cf426131a46e42176337eee9b77452627": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "NASA News",
@@ -2655,6 +2660,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "3b49c5172f82707aec75bd84f685fef3a1d8c7419431b534a963db96d69fad2a": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "3b5588db0db1c6fcd4769d9f38aafb86b044fd2b2c0d0bafd4a75977486b84ee": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "BBC Business",
@@ -3321,6 +3331,11 @@
       "status": "draft",
       "title": "Brazil\u2019s Amazon deforestation hits lowest level on record - Al Jazeera"
     },
+    "4c9a9fe0ddc125dee0c3c550119b2abf29983afbb436be45f47bcf7723dab833": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
     "4d057625a6d6f08871f53e8b6010d2d918bdde2290b83091488073a9b2e55eed": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Top Stories",
@@ -3376,6 +3391,17 @@
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Entertainment",
       "status": "skipped_stale"
+    },
+    "4e6243846207f0605e970b004192dc68c11f1bc418aa02824dd80d7c577ff949": {
+      "created_at": "2026-11-02T13:11:57.143285+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755116376343",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckr5y9m6q4eyo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Outlander celebrated with special Bafta Scotland award"
     },
     "4e707ac90fc5406b50d03d4f4e82e7e5468c0c3f21eda2f1630606f8afd5002a": {
       "seen_at": "2026-10-31T12:52:32.223221+00:00",
@@ -3485,6 +3511,11 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "5181c44ebc2e6416a63eba8c44150feb0906ec7f75de87d748f812a392793111": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "51a3db3f0996c5717be9cd9d995d5ace249a7c4e813106ddcdf4fab27f873e2f": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Google News World",
@@ -3540,6 +3571,11 @@
       "source_url": "https://www.bbc.co.uk/news/videos/ckly4mj1g3n9o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Watch: Did Tesla really just unveil a flying car?"
+    },
+    "52aa324d7c9d25ca8cec49cc58f5a8be8c6dc74dfc23bd6e7b08731d0e1d539a": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
     },
     "52b0d257ff5fdd13a660d43879e6d64a9a4ce5cbdcfb3ce0e2ec453e7b296027": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
@@ -3904,6 +3940,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "5d3c9d8ee48acbe4dc2784064730256808105022714fa9b528ceaa1dba33d9fd": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
     "5d56b4f9f2187d8d084278578bb00907bdec65c03e98bc8d5596face01037f62": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "BBC Entertainment and Arts",
@@ -4019,6 +4060,11 @@
     "5fa3062d63800b1a371dd89070558d593440f58eeb6e8553e8522081c02e111e": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "5fbe63977bb5e9da9708ede1b1f36e50dd748855334ed7ae2583543a9b6465f0": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "5ff1d2988ba277683198e6c152318f7c60145a790d1d6b494b2fc6d88dd74db7": {
@@ -4694,6 +4740,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "6dd2a1a779a8f81f3375230e01219c69f816bdf42a01012c9d71db6b6e884117": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "6e000bbcb515255613d8958906ad348645204c82ed58461de3edb8018881e264": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Technology",
@@ -4742,6 +4793,11 @@
     "6f7a421ef50a3ee20db8241fb0a750f651be5eda6a1409d46b092d588d09d510": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "NPR Business",
+      "status": "skipped_stale"
+    },
+    "6f7b9e0e162b7ca536e74daeba90b7727fc6e6beef68b3d5ec6a7d9d861cfe86": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "6f8ddb97fae9e78d515bd758842d92f84a7ae781f943b72a9291af17755c720a": {
@@ -4834,6 +4890,17 @@
       "seen_at": "2026-10-27T18:49:42.592770+00:00",
       "source": "Google News World",
       "status": "skipped_stale"
+    },
+    "713013fa86f75965def97d487e9dd6b51587d9783d240889744551bc2f7936f8": {
+      "created_at": "2026-11-02T13:11:57.143285+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Variety Music",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755116409111",
+      "source_url": "https://variety.com/2026/music/global/raye-headline-bst-hyde-park-sienna-spiro-1236937285",
+      "status": "published",
+      "title": "Raye to Headline BST Hyde Park With Sienna Spiro Opening"
     },
     "713828fff39602a3e13bbc5bbf14ef451c2b0c65516826e4f0b69d4edf0beb0d": {
       "created_at": "2026-10-20T10:43:29.843909+00:00",
@@ -5408,6 +5475,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "7cba9b13729a2f82ccaf03939e753c5d1593590ecd37b3420e8cb6b34700ebca": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "7cbd4cda4b2a0905cd4650b3cc4a8906164a9aaeeb3a00683385261b10e5ef9b": {
       "seen_at": "2026-10-23T06:47:46.010783+00:00",
       "source": "Google News Business",
@@ -5570,6 +5642,11 @@
     "8059c3997ebc2869d8178ae6016900b326bae2d20983c52edd1351d60cec0e31": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
+    "805d9f96e87ff08d54915821792588c0daae4f9bb587ac29cf03ddc87d59a02a": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "806e4d53c132639bc2260300133cf11943c34e8ba80f45d44fbc0ef2369a10d8": {
@@ -5983,6 +6060,17 @@
       "seen_at": "2026-10-25T18:39:34.241726+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "8926691970afb98aa80d8fbd11b20e214f93352201637ba672d11618eb7ea56d": {
+      "created_at": "2026-11-02T13:11:57.143285+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755116343575",
+      "source_url": "https://www.bbc.co.uk/news/articles/c8zxlqxwed4do?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Uganda begins withdrawing troops from Somalia after 20 years"
     },
     "892f1c6b8038ffe396d99e684598f4b02b56bddece10e632aa3141980f9c65b5": {
       "seen_at": "2026-10-30T07:00:00.666940+00:00",
@@ -6737,6 +6825,11 @@
       "status": "published",
       "title": "Chappell Roan Concludes Benefit Shows With Surprise Duets Featuring PinkPantheress, Lola Young"
     },
+    "99d45539a20f43210c95810e50bf77dde13990399a3f7872b30d0cb4311b8daf": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "9a0002aad3da2b59012c945372c97f4e2a9657ec36915755089d82d0837f7095": {
       "seen_at": "2026-10-19T18:47:42.889839+00:00",
       "source": "Google News Technology",
@@ -6770,6 +6863,11 @@
     "9ad71f211df91fa750c150e512cb826dacecf66299c155c6c4c2187263ad21fb": {
       "seen_at": "2026-10-30T07:00:00.666940+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "9ade850cfb86c336afc0e453af13501407cc6b067c6deececd06f1ecadcc84b7": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "9b03eaab1fd3614f3a68bf5a8fc464150117b3c094f570a72371429745e3e6bb": {
@@ -6969,6 +7067,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "9ff61a3915cfa949f7880a84e5dabf4b3894726dc90766a97887045ec54f0a8e": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "a00a3890ab2e40364c6052209440e8bb2a6bff8ab0c93a43d6ce47f63eec18f9": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "Google News Science",
@@ -7002,6 +7105,11 @@
     "a0e77a89b85a6f25aad7caca5ac7218789c841ca808a4da12163af011ea191f7": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
+    "a0ee2dac3041c140382b812393d29763cfc931a9d71d4c8e2f02e535dc6fa3f0": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "a124adecb19c4073f126fd1fe811390cc88aeec83baae78fd79126fcf15b16c4": {
@@ -7955,6 +8063,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "b898b56d80f2b3c460218a051434f2150f60c53db94bcc8658c5791fe8c0175c": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "b8c6e23cd93b938136ffc8552c4eefdad9a51bb0b3afd13630bb60f7fabfae24": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "BBC Entertainment and Arts",
@@ -8397,6 +8510,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "c1e60918b29464db36106db2216e57f99ecedbdc9a3361e1d1923844b412a801": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "c1ff1ed6121ec7328fbad2ca662501e7959d01c99e65e0cd0824dc2f2796ef76": {
       "created_at": "2026-10-22T18:45:05.397738+00:00",
       "has_embedded_video": true,
@@ -8641,6 +8759,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "c792231110f5157afa647723e2aec73d365ace22c8c14e6d67b92152ff127d23": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "c7aa78823d5c5a22c1174f4f8a389c291d67463f16e69ec761b3aeea19f31281": {
       "created_at": "2026-10-27T12:50:27.915668+00:00",
       "has_embedded_video": true,
@@ -8670,6 +8793,11 @@
     "c82f6c029e0dea73c800369be997027b1318580873814d4aaa2253837fd50d99": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "c832d28bebc5e058799694b8df80f2a3a991511f9eb3344f099c7d759340ef8c": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "c8395bb8966fb90dc0dd826350a77fe9a42f5b699fc5f88563fed8d8ac32f854": {
@@ -9364,6 +9492,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "d9fc988cc4638c1256dedf384c3f27670fe4de94b3500f877f08edc88afc64bc": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "da06580b0f9ba483c273d0dda6320395e80d621bde2801b1ca1dc2c40707bdd0": {
       "seen_at": "2026-10-24T18:39:21.262654+00:00",
       "source": "Google News Entertainment",
@@ -9388,6 +9521,11 @@
     "da85f002f8d00e8f2f14a3050be816822d3ec9e9d9538d9f6f3801cb37a9a2ba": {
       "seen_at": "2026-10-27T12:50:27.915668+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "dabef4fe50e0802115a1d16835094e51736078d5e84f538c12e4ad20e202cf28": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "dadab849ef805e7baf2b5cfe913501c78264d55f726b547735cb0615faf158a4": {
@@ -9599,6 +9737,11 @@
       "status": "draft",
       "title": "Not building third runway would be 'huge missed opportunity', warns Heathrow boss"
     },
+    "e015812667bd44acecc9f82910d0b25af6daf92d791d75de348a2b76dc104c80": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "e043dab69f1f9f76f65ac179931e189c9bd9a45c648e89952ddb53734ff2ed34": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "BBC Science and Environment",
@@ -9667,6 +9810,11 @@
     "e17e8e544f85dae3b97b8772a9f8b34671d42cc4ad7bb0140c39fea45fbda5eb": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "e18c8329afa60035be759eaf4bb993a1b759d9421d08519d6fde4a5efb36cb9a": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "e19bd8c686545cca7af9f3df9a1473bdc7467f9453954570443ac424b1c6f746": {
@@ -9832,6 +9980,11 @@
     "e4f2618d2f0ea3703b2ddc07414aef0091d2a1a16aba84e353ef0845f1fa38c2": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "NASA News",
+      "status": "skipped_stale"
+    },
+    "e5976f38079c1f10eb3e2184b3af72b6b10988da8310aa06e5fa4a139e82127c": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "e59e29ad7cf95dd9998f4b5180528b5e364b49b5bd173633673b0ea8040ea6c1": {
@@ -10828,6 +10981,11 @@
       "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
     },
+    "fbdc4579a9a271e92311b5b9f441c1534c5044fbd1a0401a88a137ad480ec095": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "fbe52267f739966ad39c779303188d4244278886d05cd5d0979c5dbf5cb21310": {
       "seen_at": "2026-10-30T07:00:00.666940+00:00",
       "source": "BBC Entertainment and Arts",
@@ -10906,6 +11064,11 @@
     "fea0e4c50df0b1221416f539326b78106da0f8a63db5f4665a3973651327181a": {
       "seen_at": "2026-10-19T11:09:19.891971+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "fea61251420c3db9599781188b04bfe9fabe5a8ed473ea4091f84b5fd55f489e": {
+      "seen_at": "2026-11-02T13:11:57.143285+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "feb02f92e4ad66a468b60a56268b9f0c97caee7cbce661f623ea35b40803586d": {
