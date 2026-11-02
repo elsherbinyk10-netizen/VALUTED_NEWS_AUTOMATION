@@ -9,7 +9,7 @@ import re
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
-from news_worker import env, shopify_graphql, fetch_related_youtube_embed, fetch_article_media
+from news_worker import env, shopify_graphql, fetch_article_media
 from backfill_media import source_urls
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -154,16 +154,8 @@ def main():
                         break
                 except Exception as source_error:
                     logging.info("Publisher video lookup failed for %s: %s", article.get("title"), source_error)
-            if not embed:
-                embed = fetch_related_youtube_embed(article.get("title", ""), category)
-            if not embed:
-                # Search exact source headline first, then retry with a shorter
-                # entity-rich query. The selector still enforces title/category
-                # overlap before any video can be attached.
-                source_title = article.get("title", "")
-                short_title = re.sub(r"[:|—–-].*$", "", source_title).strip()
-                if short_title and short_title.lower() != source_title.lower():
-                    embed = fetch_related_youtube_embed(short_title, category)
+            # No YouTube search fallback: attach only an embed found on the
+            # article's own cited publisher page. No video is safer than a mismatch.
             if not embed:
                 logging.info("No confident %s video match; leaving article unchanged: %s", category, article.get("title"))
                 continue
