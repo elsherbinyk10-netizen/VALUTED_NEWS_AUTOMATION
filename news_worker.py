@@ -717,7 +717,7 @@ def build_related_internal_links(title, category, related_articles, max_links=3)
             continue
         overlap = len(title_tokens & _trend_tokens(article_title))
         body = str(article.get("body", ""))
-        category_match = bool(category_key and re.search(r"<strong>\\s*" + re.escape(category_key) + r"\\s*</strong>", body, re.I))
+        category_match = bool(category_key and re.search(r"<strong>\s*" + re.escape(category_key) + r"\s*</strong>", body, re.I))
         if overlap < 2 and not (category_match and overlap >= 1):
             continue
         ranked.append((overlap * 3 + (2 if category_match else 0), article_title.casefold(), article_title, url))
