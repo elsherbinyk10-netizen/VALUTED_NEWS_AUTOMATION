@@ -1,0 +1,23 @@
+name: Valuted News Official Video Source Probe
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["video_source_probe.py", ".github/workflows/video-source-probe.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install requests beautifulsoup4
+      - name: Inspect official video providers
+        run: python video_source_probe.py
