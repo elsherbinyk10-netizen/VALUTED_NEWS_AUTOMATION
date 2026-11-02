@@ -221,8 +221,9 @@ class TrendingNewsRankingTests(unittest.TestCase):
             "https://images.example.com/story.jpg",
         )
         payload = graphql_mock.call_args.args[1]["article"]
-        self.assertLessEqual(len(payload["seo"]["title"]), 68)
-        self.assertLessEqual(len(payload["seo"]["description"]), 155)
+        self.assertLessEqual(len(payload["title"]), 120)
+        self.assertLessEqual(len(payload["summary"]), 300)
+        self.assertNotIn("seo", payload)
         self.assertEqual(article["isPublished"], True)
 
 
