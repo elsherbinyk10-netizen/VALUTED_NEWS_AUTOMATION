@@ -465,7 +465,7 @@ def fetch_article_media(source_url):
     try:
         parsed = urlparse(source_url)
         if parsed.scheme not in ("http", "https") or not parsed.hostname:
-            return {"image_url": "", "video_html": ""}
+            return {"image_url": "", "video_html": "", "source_page_ok": False}
         response = requests.get(
             source_url,
             headers={"User-Agent": "VALUTED-NEWS-RSS-Bot/1.0 (+publisher metadata; contact site owner)", "Accept": "text/html,application/xhtml+xml"},
@@ -475,7 +475,7 @@ def fetch_article_media(source_url):
         )
         try:
             if not response.ok or "html" not in response.headers.get("Content-Type", "").lower():
-                return {"image_url": "", "video_html": ""}
+                return {"image_url": "", "video_html": "", "source_page_ok": False}
             chunks = []
             total = 0
             for chunk in response.iter_content(chunk_size=16384):
@@ -578,10 +578,10 @@ def fetch_article_media(source_url):
             seen_paragraphs.add(text_value)
             paragraphs.append(text_value)
         article_text = " ".join(paragraphs)
-        return {"image_url": image_url, "video_html": video_html, "article_text": article_text}
+        return {"image_url": image_url, "video_html": video_html, "article_text": article_text, "source_page_ok": True}
     except Exception as exc:
         logging.debug("Publisher media metadata unavailable for %s: %s", source_url, exc)
-        return {"image_url": "", "video_html": ""}
+        return {"image_url": "", "video_html": "", "source_page_ok": False}
 
 
 def shopify_access_token():
