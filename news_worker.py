@@ -607,7 +607,7 @@ def load_existing_shopify_story_index(blog_id):
     query ExistingNewsStories($id: ID!) {
       blog(id: $id) {
         articles(first: 250, reverse: true) {
-          nodes { title body }
+          nodes { title handle body }
         }
       }
     }
@@ -616,8 +616,12 @@ def load_existing_shopify_story_index(blog_id):
     articles = (data.get("blog") or {}).get("articles", {}).get("nodes", [])
     titles = set()
     sources = set()
+    related_articles = []
+    blog_handle = (data.get("blog") or {}).get("handle", "news")
+    shop_domain = env("SHOPIFY_STORE_DOMAIN").removeprefix("https://").removeprefix("http://").strip("/")
     for article in articles:
-        title_key = normalized_story_title(article.get("title", ""))
+        title = clean_text(article.get("title", ""))
+        title_key = normalized_story_title(title)
         if title_key:
             titles.add(title_key)
         body = article.get("body") or ""
@@ -625,8 +629,14 @@ def load_existing_shopify_story_index(blog_id):
             source_key = canonical_url(html.unescape(raw_url))
             if source_key:
                 sources.add(source_key)
-    logging.info("Loaded existing Shopify duplicate index: %d titles, %d source URLs", len(titles), len(sources))
-    return titles, sources
+        handle = clean_text(article.get("handle", ""))
+        if title and handle and shop_domain:
+            related_articles.append({
+                "title": title, "body": body,
+                "url": f"https://{shop_domain}/blogs/{blog_handle}/{handle}",
+            })
+    logging.info("Loaded existing Shopify duplicate index: %d titles, %d source URLs, %d internal-link targets", len(titles), len(sources), len(related_articles))
+    return titles, sources, related_articles
 
 
 def make_editorial(title, publisher, category, description, video_html=""):
@@ -693,8 +703,58 @@ def make_editorial(title, publisher, category, description, video_html=""):
 
 
 
-def make_public_news_brief(title, publisher, category, description, source_url, image_url="", video_html=""):
-    """Create a clearly attributed, concise news brief without inventing facts."""
+def build_related_internal_links(title, category, related_articles, max_links=3):
+    """Select relevant existing Valuted News articles; never fabricate internal URLs."""
+    title_tokens = _trend_tokens(title)
+    category_key = clean_text(category).casefold()
+    ranked = []
+    current_key = normalized_story_title(title)
+    for article in related_articles or []:
+        article_title = clean_text(article.get("title", ""))
+        url = canonical_url(article.get("url", ""))
+        if not article_title or not url or normalized_story_title(article_title) == current_key:
+            continue
+        overlap = len(title_tokens & _trend_tokens(article_title))
+        body = str(article.get("body", ""))
+        category_match = bool(category_key and re.search(r"<strong>\\s*" + re.escape(category_key) + r"\\s*</strong>", body, re.I))
+        if overlap < 2 and not (category_match and overlap >= 1):
+            continue
+        ranked.append((overlap * 3 + (2 if category_match else 0), article_title.casefold(), article_title, url))
+    ranked.sort(key=lambda row: (-row[0], row[1]))
+    selected = ranked[:max(0, min(int(max_links), 5))]
+    if not selected:
+        return ""
+    links = "".join('<li><a href="' + html.escape(url, quote=True) + '">' + html.escape(label) + '</a></li>' for _, _, label, url in selected)
+    return '<section class="valuted-news-related-coverage"><h2>Related coverage</h2><ul>' + links + '</ul></section>'
+
+
+def build_news_jsonld(title, summary, category, image_url="", published_at=None):
+    """Build factual NewsArticle JSON-LD from known article and publisher metadata."""
+    schema = {
+        "@context": "https://schema.org", "@type": "NewsArticle",
+        "headline": clean_text(title)[:110], "description": clean_text(summary)[:300],
+        "dateModified": datetime.now(timezone.utc).isoformat(),
+        "author": {"@type": "Organization", "name": "Valuted News Desk"},
+        "publisher": {"@type": "Organization", "name": "VALUTED NEWS"},
+        "articleSection": clean_text(category) or "World",
+        "inLanguage": "en", "isAccessibleForFree": True,
+    }
+    if published_at:
+        try:
+            parsed = published_at if isinstance(published_at, datetime) else dateparser.parse(str(published_at))
+            if parsed.tzinfo is None:
+                parsed = parsed.replace(tzinfo=timezone.utc)
+            schema["datePublished"] = parsed.astimezone(timezone.utc).isoformat()
+        except (TypeError, ValueError, OverflowError):
+            pass
+    if canonical_url(image_url):
+        schema["image"] = [canonical_url(image_url)]
+    encoded = json.dumps(schema, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    return '<script type="application/ld+json">' + encoded + '</script>'
+
+
+def make_public_news_brief(title, publisher, category, description, source_url, image_url="", video_html="", related_articles=None, published_at=None):
+    """Create a clearly attributed news brief with relevant internal links and NewsArticle JSON-LD."""
     safe_publisher = html.escape(clean_text(publisher) or "Original publisher")
     safe_category = html.escape(clean_text(category) or "World")
     source_paragraphs = paragraphize_source_text(description)
@@ -711,6 +771,8 @@ def make_public_news_brief(title, publisher, category, description, source_url, 
     )
     if video_html:
         body += '<h2>Related video</h2>' + video_html
+    body += build_related_internal_links(title, category, related_articles)
+    body += build_news_jsonld(title, summary, category, image_url, published_at)
     body += (
         '<p><strong>Source:</strong> ' + safe_publisher + '. '
         '<a href="' + safe_source + '" rel="nofollow noopener noreferrer">Read the original report</a></p>'
@@ -933,7 +995,7 @@ def main():
     auto_publish = env("AUTO_PUBLISH", "false").lower() in {
         "1", "true", "yes", "on"
     }
-    existing_titles, existing_sources = load_existing_shopify_story_index(blog_id) if not args.dry_run else (set(), set())
+    existing_titles, existing_sources, existing_articles = load_existing_shopify_story_index(blog_id) if not args.dry_run else (set(), set(), [])
     candidates = []
     candidate_keys = set()
     trend_signals = fetch_google_trends_signals()
@@ -1022,7 +1084,7 @@ def main():
             editorial = make_public_news_brief(
                 item["title"], item["publisher"], item["category"],
                 item["description"], item["url"], item.get("image_url", ""),
-                item.get("video_html", "")
+                item.get("video_html", ""), existing_articles, item.get("published")
             )
             article = create_shopify_article(
                 blog_id, editorial["title"], editorial["summary"], editorial["body"],
