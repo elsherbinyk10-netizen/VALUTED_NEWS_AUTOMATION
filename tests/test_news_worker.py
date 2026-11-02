@@ -252,9 +252,10 @@ class TrendingNewsRankingTests(unittest.TestCase):
         payload = graphql_mock.call_args.args[1]["article"]
         self.assertLessEqual(len(payload["title"]), 120)
         self.assertLessEqual(len(payload["summary"]), 300)
-        self.assertIn("seo", payload)
-        self.assertLessEqual(len(payload["seo"]["title"]), 70)
-        self.assertLessEqual(len(payload["seo"]["description"]), 155)
+        seo_fields = {item["key"]: item["value"] for item in payload["metafields"]}
+        self.assertLessEqual(len(seo_fields["title_tag"]), 70)
+        self.assertLessEqual(len(seo_fields["description_tag"]), 155)
+        self.assertEqual({item["namespace"] for item in payload["metafields"]}, {"global"})
         self.assertIn("Valuted News", payload["tags"])
         self.assertIn("Science", payload["tags"])
         self.assertIn("Global", payload["tags"])
