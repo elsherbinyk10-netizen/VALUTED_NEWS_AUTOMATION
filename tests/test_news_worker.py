@@ -119,14 +119,14 @@ class VideoEmbedTests(unittest.TestCase):
         response.encoding = "utf-8"
         response.url = "https://publisher.example/story"
         response.iter_content.return_value = [
-            b"<html><body><iframe src='https://www.youtube.com/embed/Sidebar12345'></iframe>"
-            b"<article><h1>Story</h1><iframe src='https://www.youtube.com/embed/StoryVideo123'></iframe>"
+            b"<html><body><iframe src='https://www.youtube.com/embed/SideBar12345'></iframe>"
+            b"<article><h1>Story</h1><iframe src='https://www.youtube.com/embed/StoryVid123'></iframe>"
             b"</article></body></html>"
         ]
         get_mock.return_value = response
         media = worker.fetch_article_media("https://publisher.example/story")
-        self.assertIn("StoryVideo123", media["video_html"])
-        self.assertNotIn("Sidebar12345", media["video_html"])
+        self.assertIn("StoryVid123", media["video_html"])
+        self.assertNotIn("SideBar12345", media["video_html"])
 
     @patch.object(worker.requests, "get")
     def test_publisher_video_extraction_ignores_sitewide_sidebar_iframes(self, get_mock):
