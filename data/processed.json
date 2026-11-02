@@ -6584,6 +6584,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "8bc86289e855bafc5f17eb144fec5917fcae578f265e782d3e68edeff63f29d2": {
+      "seen_at": "2026-11-02T18:59:05.871250+00:00",
+      "source": "Google News UK Top Stories",
+      "status": "skipped_stale"
+    },
     "8bc9b91562509119aca8c15fb4124025b2513f29ff7894274daa75c8dfcec679": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Google News Technology",
@@ -8019,6 +8024,11 @@
     "ab0d42833759b69ca3258ec3a468c55e0cd21829d68b3745d41b78afa7533146": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "ab183f62324d3cb4a0cae056718c74443b7209f1b71d296447d5d2acf8c5354b": {
+      "seen_at": "2026-11-02T18:59:05.871250+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "ab425d8a0fa213e9b9ef46d895632d8e3bbc09eda236fc738d7322746d007616": {
