@@ -1,14 +1,13 @@
-name: Valuted News Translation Automation
+name: Valuted News Translation Automation (manual until Shopify scope is restored)
 
 on:
+  # Hourly scheduling is paused until the Shopify app is reauthorized with read_translations.
   workflow_dispatch:
   push:
     branches: [main]
     paths:
       - "translate_news.py"
       - ".github/workflows/translation-automation.yml"
-  schedule:
-    - cron: "13 * * * *"
 
 permissions:
   contents: write
