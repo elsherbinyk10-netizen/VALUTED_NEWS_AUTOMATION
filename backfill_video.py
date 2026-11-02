@@ -53,7 +53,7 @@ def list_articles():
 def primary_source_url(body):
     """Return only the explicit source link, never an internal related-story link."""
     match = re.search(
-        r'<p[^>]*>\\s*<strong>Source:</strong>[\\s\\S]*?<a[^>]+href=["\\']([^"\\']+)["\\']',
+        r'<p[^>]*>\s*<strong>Source:</strong>[\s\S]*?<a[^>]+href=["\']([^"\']+)["\']',
         body or "",
         re.I,
     )
@@ -70,15 +70,15 @@ def remove_related_video(body):
     """Remove only the article's designated Related video block, preserving story text."""
     original = body or ""
     cleaned = re.sub(
-        r'<section\\b[^>]*class=["\\'][^"\\']*vn-related-video[^"\\']*["\\'][^>]*>[\\s\\S]*?</section>',
+        r'<section\b[^>]*class=["\'][^"\']*vn-related-video[^"\']*["\'][^>]*>[\s\S]*?</section>',
         "",
         original,
         flags=re.I,
     )
     cleaned = re.sub(
-        r'<h2\\b[^>]*>\\s*Related video\\s*</h2>\\s*'
-        r'(?:<div\\b[^>]*class=["\\'][^"\\']*valuted-news-video[^"\\']*["\\'][^>]*>[\\s\\S]*?</div>'
-        r'|<video\\b[\\s\\S]*?</video>)',
+        r'<h2\b[^>]*>\s*Related video\s*</h2>\s*'
+        r'(?:<div\b[^>]*class=["\'][^"\']*valuted-news-video[^"\']*["\'][^>]*>[\s\S]*?</div>'
+        r'|<video\b[\s\S]*?</video>)',
         "",
         cleaned,
         flags=re.I,
@@ -111,7 +111,7 @@ def insert_related_video(body, embed):
         '<section class="vn-related-video" aria-label="Related video">'
         '<h2>Related video</h2>' + embed + '</section>'
     )
-    insert_at = re.search(r"<p[^>]*>\\s*<strong>Sources?:</strong>", body, re.I)
+    insert_at = re.search(r"<p[^>]*>\s*<strong>Sources?:</strong>", body, re.I)
     if insert_at:
         return body[:insert_at.start()] + marker + body[insert_at.start():]
     return body + marker
@@ -151,8 +151,8 @@ def main():
 
             original_body = article.get("body") or ""
             body_without_video = remove_related_video(original_body)
-            current_sources = re.findall(r'<iframe\\b[^>]*src=["\\']([^"\\']+)["\\']', original_body, re.I)
-            candidate_sources = re.findall(r'<iframe\\b[^>]*src=["\\']([^"\\']+)["\\']', candidate, re.I)
+            current_sources = re.findall(r'<iframe\b[^>]*src=["\']([^"\']+)["\']', original_body, re.I)
+            candidate_sources = re.findall(r'<iframe\b[^>]*src=["\']([^"\']+)["\']', candidate, re.I)
 
             if candidate and current_sources == candidate_sources and body_without_video != original_body:
                 unchanged += 1
@@ -183,7 +183,7 @@ def main():
             unverified += 1
             logging.exception("Publisher video audit failed for: %s", title)
 
-    STATE_FILE.write_text(json.dumps(state, indent=2, sort_keys=True) + "\\n")
+    STATE_FILE.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n")
     logging.info(
         "Publisher video audit finished: checked=%d added=%d replaced=%d removed=%d unchanged=%d unverified=%d",
         checked, added, replaced, removed, unchanged, unverified,
