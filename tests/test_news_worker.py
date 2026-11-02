@@ -29,6 +29,27 @@ class VideoEmbedTests(unittest.TestCase):
         })
         self.assertIn("player.vimeo.com/video/123456789", html)
 
+    @patch.object(worker.requests, "get")
+    def test_youtube_video_must_pass_oembed_availability_check(self, get_mock):
+        response = Mock()
+        response.ok = True
+        response.json.return_value = {"title": "Publisher video"}
+        get_mock.return_value = response
+        embed = '<iframe src="https://www.youtube-nocookie.com/embed/AbCdEf12345"></iframe>'
+        self.assertTrue(worker.video_embed_is_available(embed))
+        self.assertEqual(get_mock.call_args.args[0], "https://www.youtube.com/oembed")
+
+    @patch.object(worker.requests, "get")
+    def test_unavailable_youtube_video_is_rejected(self, get_mock):
+        response = Mock()
+        response.ok = False
+        get_mock.return_value = response
+        embed = '<iframe src="https://www.youtube-nocookie.com/embed/AbCdEf12345"></iframe>'
+        self.assertFalse(worker.video_embed_is_available(embed))
+
+    def test_youtube_video_ids_must_be_exactly_eleven_characters(self):
+        self.assertEqual(worker.extract_video_embed({"summary": "https://youtu.be/short"}), "")
+
     def test_direct_video_file_is_responsive(self):
         html = worker.extract_video_embed({
             "enclosures": [{"href": "https://media.example.org/report.mp4", "type": "video/mp4"}]
