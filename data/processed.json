@@ -4790,6 +4790,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "69542d7d964a931f3ca0175e9535eca88b40428607322e168d4e0b58705eae96": {
+      "seen_at": "2026-11-02T20:05:10.204837+00:00",
+      "source": "Google News India Top Stories",
+      "status": "skipped_stale"
+    },
     "69adc6dc041ea622d3f5f0736e26839c2888ed7bbbc9b6db0c62b2d512fbf72e": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "Google News Technology",
