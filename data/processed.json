@@ -3259,6 +3259,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "4628cf072f8d33bd5d9484e3ea3557a3688f0d6355e6634213ce148d6b283991": {
+      "seen_at": "2026-11-02T18:00:08.385896+00:00",
+      "source": "Google News Health",
+      "status": "skipped_stale"
+    },
     "46587d063c12339d9915ad062eea33c47758a82706f34459c14e12a837b2b00b": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "NPR Arts and Entertainment",
@@ -4444,6 +4449,17 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "62fdb0afd8785200877e2999adfc33734bc158c98236c7019694b71e5cd7fc95": {
+      "created_at": "2026-11-02T18:00:08.385896+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755119554839",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwj34gdmnly4o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Binance users withdraw $3.6bn after largest-ever crypto hack"
+    },
     "63084130da2be633a443f0b6e9feeee4059b1fe37009a28a8a8eaa4cabdf0bee": {
       "created_at": "2026-11-01T07:00:28.338527+00:00",
       "has_embedded_video": true,
@@ -4949,6 +4965,11 @@
     "6cf513a2aadcf3b85d612ee814a1c47a27b61992ff3a98f9cbfd720243cb5a45": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "6d008edfcc6a5bd993b5b54d452ef1e3937f834a70d64c837b924ee53e10cf7b": {
+      "seen_at": "2026-11-02T18:00:08.385896+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "6d0fc7a2050cff9ea1853454a92253b1fe4a3a9199bc80b6b4136a377c1fffa2": {
@@ -6650,6 +6671,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "8e480f16a5f54aa9b63e142795f11e21125cf924f0b5f413b275846d1f7de05e": {
+      "seen_at": "2026-11-02T18:00:08.385896+00:00",
+      "source": "Google News UK Top Stories",
+      "status": "skipped_stale"
+    },
     "8e8e4f8e579727c907e622d8ef9aea5040ecb2b86afa29b7bbe34a52ded92cfb": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "BBC Business",
@@ -7013,6 +7039,17 @@
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
+    },
+    "9557f28c29bffb9d03169316080aa4bcacd26c2dbf75a4168924978d662ec298": {
+      "created_at": "2026-11-02T18:00:08.385896+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755119587607",
+      "source_url": "https://www.theguardian.com/environment/2026/nov/02/fast-ferries-threaten-endangered-whales-mediterranean",
+      "status": "published",
+      "title": "\u2018They have schedules to follow\u2019: how fast ferries can threaten endangered whales in the Mediterranean"
     },
     "95591df2616e2be0e2dec4a6cc4cbc424346f79b0685f5d3f3d4c792357a7bb2": {
       "seen_at": "2026-11-01T12:54:22.780534+00:00",
@@ -9974,6 +10011,17 @@
       "seen_at": "2026-10-22T18:45:05.397738+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "d802c71a57c49f9ab2ca526899fd6054bf2ff788eb7c4d36dc6441899c11dff1": {
+      "created_at": "2026-11-02T18:00:08.385896+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian Sport",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755119522071",
+      "source_url": "https://www.theguardian.com/sport/2026/nov/02/toto-wolff-kimi-antonelli-f1-world-champion",
+      "status": "published",
+      "title": "Wolff hails world champion Antonelli as role model in blast at F1\u2019s \u2018entitled moaners\u2019"
     },
     "d8106ee80d8cfb676575338ebd310af56d9867190e1c3a09498e21dfa6a072bc": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
