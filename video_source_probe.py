@@ -48,6 +48,19 @@ for label, url in TARGETS.items():
             print("IFRAME", iframe.get("src"))
         for video in soup.find_all("video"):
             print("VIDEO", video.get("src"), [s.get("src") for s in video.find_all("source", src=True)])
+        if label == "formula1":
+            player_url = "https://players.brightcove.net/6057949432001/k9CLwmWhs_default/index.html?videoId=1880716992673506519"
+            player = requests.get(
+                player_url,
+                headers={"User-Agent": "Mozilla/5.0", "Accept": "text/html,*/*", "Referer": url},
+                timeout=(5, 15),
+                allow_redirects=True,
+            )
+            print("DIRECT_BRIGHTCOVE", player.status_code, player.url,
+                  player.headers.get("Content-Type", ""),
+                  player.headers.get("X-Frame-Options", ""),
+                  player.headers.get("Content-Security-Policy", "")[:400])
+            print("BRIGHTCOVE_PLAYER_TEXT", player.text[:500] if player.ok else player.text[:200])
         for key in ("videoId", "video_id", "brightcove", "jwplayer", "player.sky"):
             if key.lower() in response.text.lower():
                 print("PAGE_MARKER", key)
