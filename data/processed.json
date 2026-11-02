@@ -4144,6 +4144,17 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "616a2746506ab59a6e3156f02f802ce036613e188584843b24f2594aa2e8ee47": {
+      "created_at": "2026-11-02T17:31:51.342642+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Variety Music",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755119161623",
+      "source_url": "https://variety.com/2026/music/news/hunger-games-album-jennifer-lawrence-ella-langley-1236937594",
+      "status": "published",
+      "title": "\u2018Hunger Games\u2019 Companion Album to Feature Jennifer Lawrence, Ella Langley, Tyler Childers, Mckenna Grace and 25 More"
+    },
     "617f834f7172944905093683376e12b6b5a4725a8a5e2cbd1311c2d09760491a": {
       "seen_at": "2026-11-01T12:54:22.780534+00:00",
       "source": "NPR Arts and Entertainment",
