@@ -8,6 +8,16 @@ class PublisherVideoTrustTests(unittest.TestCase):
         self.assertTrue(_trusted_player_url("https://player.vimeo.com/video/123456789"))
         self.assertTrue(_trusted_player_url("https://players.brightcove.net/123/default_default/index.html"))
 
+    def test_accepts_player_hosted_on_the_original_publisher_domain(self):
+        self.assertTrue(_trusted_player_url(
+            "https://video.publisher.example/player/story-123",
+            "publisher.example",
+        ))
+        self.assertFalse(_trusted_player_url(
+            "https://unrelated.example/player/story-123",
+            "publisher.example",
+        ))
+
     def test_rejects_non_player_pages_and_untrusted_hosts(self):
         self.assertFalse(_trusted_player_url("https://www.youtube.com/results?search_query=news"))
         self.assertFalse(_trusted_player_url("https://evil.example/embed/AbCdEf12345"))
