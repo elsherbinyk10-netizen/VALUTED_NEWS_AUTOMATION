@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
-from news_worker import env, shopify_graphql, fetch_article_media, video_embed_is_available
+from news_worker import env, shopify_graphql, fetch_article_media, video_embed_is_available, fetch_related_youtube_embed
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 BLOG_ID = env("SHOPIFY_BLOG_ID", "gid://shopify/Blog/126010065175")
@@ -117,6 +117,26 @@ def insert_related_video(body, embed):
     return body + marker
 
 
+
+def find_verified_related_video(title, tags=None):
+    """Find a clearly labelled, title-matched related clip when the publisher has no player."""
+    category = " ".join(tags or []) if isinstance(tags, (list, tuple)) else str(tags or "")
+    candidate = fetch_related_youtube_embed(title, category)
+    if candidate and video_embed_is_available(candidate):
+        return candidate
+    return ""
+
+
+def existing_related_video_is_playable(body):
+    """Keep a previously embedded related clip if its player still passes playback checks."""
+    match = re.search(
+        r'<section\b[^>]*class=["\'][^"\']*vn-related-video[^"\']*["\'][^>]*>[\s\S]*?</section>',
+        body or "",
+        re.I,
+    )
+    return bool(match and video_embed_is_available(match.group(0)))
+
+
 def main():
     if not env("SHOPIFY_STORE_DOMAIN"):
         raise RuntimeError("Missing SHOPIFY_STORE_DOMAIN.")
@@ -132,24 +152,21 @@ def main():
         article_id = str(article.get("id") or "")
         title = article.get("title") or "(untitled)"
         source_url = primary_source_url(article.get("body", ""))
-        if not source_url:
-            unverified += 1
-            logging.warning("No explicit cited publisher URL; leaving video unchanged: %s", title)
-            continue
         checked += 1
         try:
-            media = fetch_article_media(source_url)
-            if not media.get("source_page_ok"):
-                unverified += 1
-                logging.warning("Publisher page unavailable; leaving existing video unchanged: %s", title)
-                continue
-
+            media = fetch_article_media(source_url) if source_url else {"video_html": "", "source_page_ok": False}
             candidate = media.get("video_html") or ""
             if candidate and not video_embed_is_available(candidate):
                 logging.warning("Publisher video player failed availability check: %s", title)
                 candidate = ""
 
             original_body = article.get("body") or ""
+            # When the cited publisher has no playable player, use a title-matched
+            # clip and label it Related video; never present it as publisher footage.
+            if not candidate:
+                candidate = find_verified_related_video(title, article.get("tags"))
+                if candidate:
+                    logging.info("Found verified title-matched related video: %s", title)
             body_without_video = remove_related_video(original_body)
             current_sources = re.findall(r'<iframe\b[^>]*src=["\']([^"\']+)["\']', original_body, re.I)
             candidate_sources = re.findall(r'<iframe\b[^>]*src=["\']([^"\']+)["\']', candidate, re.I)
@@ -171,12 +188,16 @@ def main():
                     else:
                         added += 1
                         logging.info("Restored verified publisher video: %s", title)
+            elif existing_related_video_is_playable(original_body):
+                unchanged += 1
+                logging.info("Kept existing related video because its player is playable: %s", title)
             elif body_without_video != original_body:
                 update_body(article_id, body_without_video)
                 removed += 1
-                logging.warning("Removed unverified/unplayable video; cited source has no playable video: %s", title)
+                logging.warning("Removed unplayable related video; no verified replacement was found: %s", title)
             else:
                 unchanged += 1
+                logging.warning("No verified publisher or title-matched related video found: %s", title)
 
             attempted[article_id] = now.isoformat()
         except Exception:
