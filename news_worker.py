@@ -12,7 +12,7 @@ from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
 import feedparser
 import requests
 from bs4 import BeautifulSoup
-from publisher_video import fetch_publisher_video
+from publisher_video import fetch_publisher_video, _trusted_player_url
 from dateutil import parser as dateparser
 
 ROOT = Path(__file__).resolve().parent
@@ -260,6 +260,26 @@ def video_embed_is_available(video_html):
                 payload = response.json() if response.ok else {}
                 return bool(response.ok and isinstance(payload, dict) and payload.get("title"))
             except (requests.RequestException, ValueError):
+                return False
+        # Publisher-specific players (Brightcove, JW Player, Dailymotion, Wistia,
+        # Kaltura, etc.) are accepted only when their HTTPS URL is on the strict
+        # allowlist and the player endpoint itself responds with playable HTML/JS.
+        if _trusted_player_url(str(iframe.get("src") or "")):
+            try:
+                response = requests.get(
+                    str(iframe.get("src") or ""),
+                    headers={"User-Agent": "VALUTED-NEWS-Media-Check/1.0", "Accept": "text/html,*/*"},
+                    timeout=(3, 7), allow_redirects=True, stream=True,
+                )
+                try:
+                    content_type = response.headers.get("Content-Type", "").lower()
+                    return bool(response.ok and (
+                        "html" in content_type or "javascript" in content_type
+                        or "json" in content_type
+                    ))
+                finally:
+                    response.close()
+            except requests.RequestException:
                 return False
         return False
 
