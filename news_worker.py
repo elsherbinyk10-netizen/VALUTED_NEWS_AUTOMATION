@@ -12,6 +12,7 @@ from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
 import feedparser
 import requests
 from bs4 import BeautifulSoup
+from publisher_video import fetch_publisher_video
 from dateutil import parser as dateparser
 
 ROOT = Path(__file__).resolve().parent
@@ -562,6 +563,13 @@ def fetch_article_media(source_url):
             video_html = extract_video_embed({"content": [{"value": candidate_markup}]})
             if video_html:
                 break
+        # Restore a missing video only from the original cited publisher's article body.
+        # Never substitute a title-similar or trending third-party search result.
+        if not video_html:
+            video_html = fetch_publisher_video(source_url)
+        if video_html and not video_embed_is_available(video_html):
+            logging.info("Publisher player failed playback validation; leaving video blank: %s", source_url)
+            video_html = ""
 
         # Extract readable reporting from the publisher page when an RSS feed
         # provides only a short teaser. Keep this source text for quality checks;
