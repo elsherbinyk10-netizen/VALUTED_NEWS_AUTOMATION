@@ -1,20 +1,22 @@
 """Extract playable video players directly from a cited publisher article.
 
-Only article-body players from a conservative provider allowlist are accepted.
-No search-result or title-similar videos are substituted for the publisher's own clip.
+Only article-body players or explicit VideoObject/Open Graph video metadata on the
+cited publisher page are accepted. No search-result or title-similar videos are used.
 """
 import html
+import json
 from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
 
-USER_AGENT = "ValutedNewsPublisherMedia/1.0 (+source-attributed video restoration)"
+USER_AGENT = "ValutedNewsPublisherMedia/1.1 (+source-attributed video restoration)"
 PLAYER_HOSTS = (
     "youtube.com", "youtube-nocookie.com", "youtu.be", "vimeo.com",
     "brightcove.net", "jwplayer.com", "jwplatform.com", "dailymotion.com",
     "wistia.net", "wistia.com", "kaltura.com", "theplatform.com",
-    "vidyard.com", "sproutvideo.com", "cloudinary.com", "ooyala.com", "video.ibm.com", "ustream.tv",
+    "vidyard.com", "sproutvideo.com", "cloudinary.com", "ooyala.com",
+    "video.ibm.com", "ustream.tv",
 )
 
 
@@ -24,7 +26,6 @@ def _trusted_player_url(url, source_host=""):
     if parsed.scheme != "https" or not host:
         return False
     trusted = any(host == domain or host.endswith("." + domain) for domain in PLAYER_HOSTS)
-    # Publishers frequently host their own player on a subdomain of the article domain.
     publisher_host = (source_host or "").lower().rstrip(".")
     same_publisher = bool(publisher_host and (host == publisher_host or host.endswith("." + publisher_host)))
     path = parsed.path.lower()
@@ -43,8 +44,27 @@ def _frame(src, title):
     )
 
 
+def _video_object_urls(value):
+    """Yield explicit embed/content URLs only from VideoObject structured data."""
+    if isinstance(value, list):
+        for item in value:
+            yield from _video_object_urls(item)
+    elif isinstance(value, dict):
+        types = value.get("@type", [])
+        if isinstance(types, str):
+            types = [types]
+        if any(str(item).lower() == "videoobject" for item in types):
+            for key in ("embedUrl", "contentUrl"):
+                candidate = value.get(key)
+                if isinstance(candidate, str) and candidate:
+                    yield candidate
+        for child in value.values():
+            if isinstance(child, (dict, list)):
+                yield from _video_object_urls(child)
+
+
 def fetch_publisher_video(source_url, timeout=(4, 10)):
-    """Return a playable player found inside the cited article, or an empty string."""
+    """Return a playable player explicitly published with the cited article, or empty."""
     parsed_source = urlparse(source_url or "")
     if parsed_source.scheme != "https" or not parsed_source.hostname:
         return ""
@@ -57,46 +77,47 @@ def fetch_publisher_video(source_url, timeout=(4, 10)):
         root = soup.find("article") or soup.find("main")
         if root is None:
             return ""
-        # Prefer the publisher's own article-body iframe; ignore ads and page chrome.
+
+        candidates = []
+        # Open Graph / Twitter player metadata is an explicit publisher declaration.
+        for tag in soup.find_all("meta"):
+            key = str(tag.get("property") or tag.get("name") or "").lower()
+            if key in {"og:video", "og:video:url", "og:video:secure_url", "twitter:player"}:
+                value = tag.get("content")
+                if value:
+                    candidates.append((urljoin(response.url, str(value)), str(tag.get("name") or key)))
+
+        # Structured data commonly exposes the exact embedded clip even when the
+        # publisher builds its player client-side and has no iframe in static HTML.
+        for script in soup.find_all("script", type="application/ld+json"):
+            try:
+                payload = json.loads(script.string or script.get_text() or "")
+            except (TypeError, ValueError):
+                continue
+            for value in _video_object_urls(payload):
+                candidates.append((urljoin(response.url, value), "Original publisher video"))
+
+        # Prefer the article body's actual iframe over metadata candidates.
         for iframe in root.find_all("iframe", src=True):
             src = urljoin(response.url, str(iframe.get("src") or "").strip())
-            if not _trusted_player_url(src, urlparse(response.url).hostname or ""):
+            candidates.insert(0, (src, str(iframe.get("title") or "Original publisher video")))
+
+        seen = set()
+        for src, title in candidates:
+            if src in seen or not _trusted_player_url(src, urlparse(response.url).hostname or ""):
                 continue
+            seen.add(src)
             try:
                 check = requests.get(src, headers={"User-Agent": USER_AGENT, "Accept": "text/html,*/*"},
                                      timeout=timeout, allow_redirects=True, stream=True)
                 try:
-                    if check.ok and ("html" in check.headers.get("Content-Type", "").lower()
-                                     or "javascript" in check.headers.get("Content-Type", "").lower()):
-                        return _frame(src, str(iframe.get("title") or "Original publisher video"))
+                    content_type = check.headers.get("Content-Type", "").lower()
+                    if check.ok and ("html" in content_type or "javascript" in content_type or "json" in content_type):
+                        return _frame(src, title)
                 finally:
                     check.close()
             except requests.RequestException:
                 continue
-        # Native HTML5 publisher-hosted video.
-        for video in root.find_all("video"):
-            sources = video.find_all("source", src=True)
-            if not sources and video.get("src"):
-                sources = [video]
-            for source in sources:
-                src = urljoin(response.url, str(source.get("src") or "").strip())
-                parsed = urlparse(src)
-                media_type = str(source.get("type") or "").lower()
-                if parsed.scheme != "https" or not parsed.hostname:
-                    continue
-                if not (media_type.startswith("video/") or parsed.path.lower().endswith((".mp4", ".webm", ".ogg"))):
-                    continue
-                try:
-                    check = requests.get(src, headers={"User-Agent": USER_AGENT, "Range": "bytes=0-0"},
-                                         timeout=timeout, allow_redirects=True, stream=True)
-                    try:
-                        if check.ok and check.headers.get("Content-Type", "").lower().startswith("video/"):
-                            return ('<video controls preload="metadata" playsinline style="display:block;width:100%;height:auto;max-width:100%;margin:24px 0">'
-                                    '<source src="' + html.escape(src, quote=True) + '"></video>')
-                    finally:
-                        check.close()
-                except requests.RequestException:
-                    continue
     except requests.RequestException:
         return ""
     return ""
