@@ -361,7 +361,7 @@ def fetch_related_youtube_embed(story_title, category=""):
         # report merely because its title lacks words like "interview" or "official".
         # Search already uses distinctive headline words; permit one matching
         # term for general news so more archive stories can obtain a relevant clip.
-        min_overlap = 1
+        min_overlap = 2
         for video_url, video_title, channel in video_entries:
             parsed_url = urlparse(video_url)
             video_id = dict(parse_qsl(parsed_url.query)).get("v", "")
@@ -619,7 +619,12 @@ def load_existing_shopify_story_index(blog_id):
     sources = set()
     related_articles = []
     blog_handle = (data.get("blog") or {}).get("handle", "news")
-    shop_domain = env("SHOPIFY_STORE_DOMAIN").removeprefix("https://").removeprefix("http://").strip("/")
+    # Shopify Admin API may be configured with the *.myshopify.com host.
+    # Internal links must use the storefront's canonical public domain instead.
+    public_store_domain = env("PUBLIC_STORE_DOMAIN", "valutednews.com")
+    public_store_domain = public_store_domain.removeprefix("https://").removeprefix("http://").strip("/")
+    if not public_store_domain or "/" in public_store_domain:
+        raise RuntimeError("PUBLIC_STORE_DOMAIN must be a hostname such as valutednews.com.")
     for article in articles:
         title = clean_text(article.get("title", ""))
         title_key = normalized_story_title(title)
@@ -631,10 +636,10 @@ def load_existing_shopify_story_index(blog_id):
             if source_key:
                 sources.add(source_key)
         handle = clean_text(article.get("handle", ""))
-        if title and handle and shop_domain:
+        if title and handle and public_store_domain:
             related_articles.append({
                 "title": title, "body": body,
-                "url": f"https://{shop_domain}/blogs/{blog_handle}/{handle}",
+                "url": f"https://{public_store_domain}/blogs/{blog_handle}/{handle}",
             })
     logging.info("Loaded existing Shopify duplicate index: %d titles, %d source URLs, %d internal-link targets", len(titles), len(sources), len(related_articles))
     return titles, sources, related_articles
@@ -1035,7 +1040,7 @@ def main():
                     # Aggregator RSS thumbnails often repeat one generic image across unrelated stories.
                     # Resolve publisher metadata in the backfill workflow instead of trusting these thumbnails.
                     "image_url": "" if "google news" in name.lower() else extract_image(entry),
-                    "video_html": extract_video_embed(entry), "risk": risk,
+                    "video_html": "", "risk": risk,
                 })
         except Exception:
             logging.exception("Feed processing failed: %s", name)

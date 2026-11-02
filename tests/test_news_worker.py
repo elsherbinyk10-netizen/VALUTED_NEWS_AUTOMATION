@@ -1,4 +1,5 @@
 import unittest
+import os
 import json
 from datetime import datetime, timezone
 from unittest.mock import patch, Mock
@@ -61,6 +62,21 @@ class VideoEmbedTests(unittest.TestCase):
 
     @patch.object(worker.requests, "get")
     @patch.object(worker.feedparser, "parse")
+    @patch.object(worker.requests, "get")
+    @patch.object(worker.feedparser, "parse")
+    def test_single_common_word_overlap_is_not_enough_for_news_video(self, parse_mock, get_mock):
+        response = Mock()
+        response.content = b"<feed></feed>"
+        response.raise_for_status.return_value = None
+        get_mock.return_value = response
+        parse_mock.return_value = Mock(entries=[
+            {"link": "https://www.youtube.com/watch?v=AbCdEf12345",
+             "title": "World news update today",
+             "author": "Generic News"}
+        ])
+        html = worker.fetch_related_youtube_embed("Ferries threaten endangered whales", "Climate")
+        self.assertEqual(html, "")
+
     def test_unrelated_youtube_result_is_not_embedded(self, parse_mock, get_mock):
         response = Mock()
         response.content = b"<feed></feed>"
@@ -247,6 +263,27 @@ class TrendingNewsRankingTests(unittest.TestCase):
         self.assertIn("artemis-lunar-findings", markup)
         self.assertNotIn("football-cup", markup)
         self.assertIn("Related coverage", markup)
+
+    @patch.object(worker, "shopify_graphql")
+    @patch.dict(os.environ, {"SHOPIFY_STORE_DOMAIN": "wzn96t-cc.myshopify.com"}, clear=False)
+    def test_existing_story_internal_links_use_public_domain_not_admin_host(self, graphql_mock):
+        graphql_mock.return_value = {
+            "blog": {
+                "handle": "news",
+                "articles": {"nodes": [
+                    {"title": "Artemis mission reveals new lunar findings",
+                     "handle": "artemis-lunar-findings",
+                     "body": "<strong>Science</strong>"}
+                ]}
+            }
+        }
+        _, _, related = worker.load_existing_shopify_story_index("gid://shopify/Blog/1")
+        self.assertEqual(len(related), 1)
+        self.assertEqual(
+            related[0]["url"],
+            "https://valutednews.com/blogs/news/artemis-lunar-findings",
+        )
+        self.assertNotIn("myshopify.com", related[0]["url"])
 
     def test_news_article_jsonld_contains_required_fields(self):
         markup = worker.build_news_jsonld(
