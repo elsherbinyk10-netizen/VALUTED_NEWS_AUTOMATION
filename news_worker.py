@@ -899,6 +899,13 @@ def auto_publish_block_reasons(item, auto_publish):
         reasons.append("missing/invalid canonical source URL")
     if not clean_text(item.get("title", "")):
         reasons.append("missing title")
+    # User requirement: every newly published article must carry a playable video
+    # taken from the cited publisher page/RSS, never a search-result substitute.
+    publisher_video = item.get("video_html", "")
+    if not publisher_video:
+        reasons.append("no original-source video found; article will be retried instead of published")
+    elif not video_embed_is_available(publisher_video):
+        reasons.append("original-source video failed playback verification")
     if not canonical_url(image_url) or image_url_is_generic(image_url):
         reasons.append("missing or generic featured image")
     parsed_image = urlparse(image_url) if image_url else None
