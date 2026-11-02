@@ -24,6 +24,22 @@ class PublisherVideoTrustTests(unittest.TestCase):
         self.assertFalse(_trusted_player_url("http://www.youtube.com/embed/AbCdEf12345"))
         self.assertFalse(_trusted_player_url("javascript:alert(1)"))
 
+    def test_accepts_allowlisted_publisher_player_when_endpoint_is_playable(self):
+        from unittest.mock import Mock, patch
+        from news_worker import video_embed_is_available
+        response = Mock()
+        response.ok = True
+        response.headers = {"Content-Type": "text/html; charset=utf-8"}
+        response.close.return_value = None
+        markup = '<iframe src="https://players.brightcove.net/123/default_default/index.html"></iframe>'
+        with patch("news_worker.requests.get", return_value=response):
+            self.assertTrue(video_embed_is_available(markup))
+
+    def test_rejects_untrusted_player_host_even_if_http_ok(self):
+        from news_worker import video_embed_is_available
+        markup = '<iframe src="https://evil.example/embed/video123"></iframe>'
+        self.assertFalse(video_embed_is_available(markup))
+
 
 if __name__ == "__main__":
     unittest.main()
