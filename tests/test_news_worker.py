@@ -169,7 +169,7 @@ class VideoEmbedTests(unittest.TestCase):
             item["description"] = "Too short"
             self.assertFalse(worker.should_auto_publish(item, True))
 
-    def test_auto_publish_blocks_article_without_original_source_video(self):
+    def test_auto_publish_allows_quality_article_without_video(self):
         item = {
             "title": "A science discovery announced by NASA",
             "url": "https://example.com/story",
@@ -177,8 +177,22 @@ class VideoEmbedTests(unittest.TestCase):
             "description": "This is a sufficiently detailed source summary with relevant facts, verified context, chronology, named details, and supporting information. " * 30,
             "risk": False,
         }
-        reasons = worker.auto_publish_block_reasons(item, True)
-        self.assertTrue(any("no original-source video" in reason for reason in reasons))
+        self.assertTrue(worker.should_auto_publish(item, True))
+
+    def test_category_classifier_uses_headline_and_source_text(self):
+        self.assertEqual(
+            worker.classify_story_category("Parliament approves new election law", "The government voted today.", "World"),
+            "Politics",
+        )
+        self.assertEqual(
+            worker.classify_story_category("Apple unveils new AI smartphone", "The technology company announced a new device.", "Business"),
+            "Technology",
+        )
+        self.assertEqual(
+            worker.classify_story_category("NASA discovers evidence of lunar ice", "Scientists published new research.", "World"),
+            "Science",
+        )
+        self.assertEqual(worker.classify_story_category("An unusual headline", "", "Climate"), "Science")
 
     def test_feed_text_prefers_longest_content_and_formats_paragraphs(self):
         entry = {
