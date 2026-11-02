@@ -1,0 +1,37 @@
+name: Valuted News Full Article Video Audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["audit_all_video_embeds.py", ".github/workflows/audit-all-article-videos.yml"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: valuted-news-full-video-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      SHOPIFY_STORE_DOMAIN: ${{ secrets.SHOPIFY_STORE_DOMAIN }}
+      SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ADMIN_ACCESS_TOKEN }}
+      SHOPIFY_CLIENT_ID: ${{ secrets.SHOPIFY_CLIENT_ID }}
+      SHOPIFY_CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}
+      SHOPIFY_API_VERSION: "2026-10"
+      SHOPIFY_BLOG_ID: "gid://shopify/Blog/126010065175"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
+      - name: Validate video audit syntax
+        run: python -m py_compile audit_all_video_embeds.py backfill_video.py news_worker.py publisher_video.py
+      - name: Audit every published article and repair verified broken embeds
+        run: python audit_all_video_embeds.py
