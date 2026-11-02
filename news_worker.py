@@ -857,13 +857,15 @@ def build_related_internal_links(title, category, related_articles, max_links=3)
 
 def build_news_jsonld(title, summary, category, image_url="", published_at=None):
     """Build factual NewsArticle JSON-LD from known article and publisher metadata."""
+    keyword_tokens = sorted(_trend_tokens(title) | _trend_tokens(category))
     schema = {
         "@context": "https://schema.org", "@type": "NewsArticle",
         "headline": clean_text(title)[:110], "description": clean_text(summary)[:300],
         "dateModified": datetime.now(timezone.utc).isoformat(),
-        "author": {"@type": "Organization", "name": "Valuted News Desk"},
-        "publisher": {"@type": "Organization", "name": "VALUTED NEWS"},
+        "author": {"@type": "Organization", "name": "Valuted News Desk", "url": "https://valutednews.com/"},
+        "publisher": {"@type": "Organization", "name": "VALUTED NEWS", "url": "https://valutednews.com/"},
         "articleSection": clean_text(category) or "World",
+        "keywords": ", ".join(keyword_tokens[:12]),
         "inLanguage": "en", "isAccessibleForFree": True,
     }
     if published_at:
