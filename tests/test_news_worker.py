@@ -195,6 +195,35 @@ class TrendingNewsRankingTests(unittest.TestCase):
         self.assertEqual(ranked[0]["publisher"], "BBC")
         self.assertGreater(ranked[0]["trend_score"], ranked[-1]["trend_score"])
 
+    def test_google_trends_interest_boosts_relevant_headline(self):
+        now = datetime(2026, 11, 2, 12, 0, tzinfo=timezone.utc)
+        items = [
+            {"title": "New Artemis moon mission update", "publisher": "NASA", "published": now},
+            {"title": "Local museum opens new exhibit", "publisher": "Local", "published": now},
+        ]
+        signals = [{"text": "Artemis moon mission", "geo": "US", "source": "google_trends"}]
+        ranked = worker.rank_trending_news(items, now, signals)
+        self.assertEqual(ranked[0]["title"], "New Artemis moon mission update")
+        self.assertEqual(ranked[0]["google_trends_matches"], 1)
+
+    def test_news_seo_and_tags_are_relevant_and_bounded(self):
+        seo_title, description = worker.build_news_seo(
+            "NASA Artemis mission discovers lunar ice",
+            "NASA reports new evidence of lunar ice in the Artemis mission.",
+            "Science"
+        )
+        tags = worker.build_news_tags(
+            "NASA Artemis mission discovers lunar ice",
+            "Science",
+            "NASA"
+        )
+        self.assertLessEqual(len(seo_title), 70)
+        self.assertLessEqual(len(description), 155)
+        self.assertIn("Science", seo_title)
+        self.assertIn("NASA", tags)
+        self.assertIn("Artemis", tags)
+        self.assertLessEqual(len(tags), 10)
+
     def test_tie_break_is_stable(self):
         now = datetime(2026, 11, 2, 12, 0, tzinfo=timezone.utc)
         items = [
@@ -223,7 +252,12 @@ class TrendingNewsRankingTests(unittest.TestCase):
         payload = graphql_mock.call_args.args[1]["article"]
         self.assertLessEqual(len(payload["title"]), 120)
         self.assertLessEqual(len(payload["summary"]), 300)
-        self.assertNotIn("seo", payload)
+        self.assertIn("seo", payload)
+        self.assertLessEqual(len(payload["seo"]["title"]), 70)
+        self.assertLessEqual(len(payload["seo"]["description"]), 155)
+        self.assertIn("Valuted News", payload["tags"])
+        self.assertIn("Science", payload["tags"])
+        self.assertIn("Global", payload["tags"])
         self.assertEqual(article["isPublished"], True)
 
 

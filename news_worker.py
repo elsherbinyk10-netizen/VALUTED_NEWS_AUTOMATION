@@ -771,12 +771,14 @@ def create_shopify_article(blog_id, title, summary, body, source_url, publisher,
     seo_description = re.sub(r"\s+", " ", clean_text(summary or title))
     if len(seo_description) > 155:
         seo_description = seo_description[:152].rsplit(" ", 1)[0].rstrip(" ,;:") + "..."
+    seo_title, seo_description = build_news_seo(title, summary, category)
     article = {
         "blogId": blog_id,
         "title": title[:120],
         "body": body_with_credit,
         "summary": summary[:300],
-        "tags": ["Valuted News", category, publisher],
+        "seo": {"title": seo_title, "description": seo_description},
+        "tags": build_news_tags(title, category, publisher),
         "author": {"name": "Valuted News Desk"},
         "isPublished": bool(publish),
         "image": {"url": image_url, "altText": title[:250]} if image_url else None
@@ -801,7 +803,79 @@ def _trend_tokens(value):
         if len(token) > 2 and token not in TREND_STOP_WORDS
     }
 
-def rank_trending_news(items, now=None):
+POPULAR_NEWS_TAGS = {
+    "technology": ["Technology", "Tech News", "Innovation"],
+    "ai": ["Artificial Intelligence", "AI News"],
+    "business": ["Business News", "Markets", "Economy"],
+    "finance": ["Finance", "Markets", "Economy"],
+    "sports": ["Sports News", "Sports"],
+    "health": ["Health News", "Health"],
+    "science": ["Science News", "Research"],
+    "entertainment": ["Entertainment News", "Celebrity News"],
+    "music": ["Music News", "Entertainment"],
+    "politics": ["Politics", "World Politics"],
+    "climate": ["Climate", "Environment"],
+    "space": ["Space", "NASA"],
+}
+
+def build_news_tags(title, category, publisher, max_tags=10):
+    """Create relevant Shopify tags from the actual headline and section, not generic tag stuffing."""
+    title_text = clean_text(title)
+    category_text = clean_text(category)
+    publisher_text = clean_text(publisher)
+    tags = ["Valuted News", category_text, publisher_text]
+    category_key = category_text.lower()
+    tags.extend(POPULAR_NEWS_TAGS.get(category_key, []))
+    tokens = [
+        token for token in re.findall(r"[A-Za-z][A-Za-z0-9-]{2,}", title_text)
+        if token.lower() not in TREND_STOP_WORDS
+    ]
+    # Headline entities/subjects become searchable tags; retain readable title casing.
+    tags.extend(tokens[:5])
+    result = []
+    seen = set()
+    for tag in tags:
+        tag = clean_text(tag)[:40]
+        key = tag.casefold()
+        if tag and key not in seen:
+            seen.add(key)
+            result.append(tag)
+        if len(result) >= max_tags:
+            break
+    return result
+
+def build_news_seo(title, summary, category):
+    """Build concise, factual SEO fields without adding claims or unsupported popularity terms."""
+    clean_title = clean_text(title)
+    section = clean_text(category)
+    seo_title = clean_title
+    if section and section.casefold() not in seo_title.casefold():
+        seo_title = f"{seo_title} | {section}"
+    seo_title = seo_title[:70].rstrip(" |:-")
+    description = clean_text(summary) or clean_title
+    if section and section.casefold() not in description.casefold():
+        description = f"{section}: {description}"
+    if len(description) > 155:
+        description = description[:152].rsplit(" ", 1)[0].rstrip(" ,;:") + "..."
+    return seo_title, description
+
+def fetch_google_trends_signals():
+    """Collect public Google Trends RSS topics for major search markets; failures are non-fatal."""
+    signals = []
+    for geo in ("US", "GB", "IN", "CA", "AU", "EG"):
+        url = f"https://trends.google.com/trending/rss?geo={geo}"
+        try:
+            parsed = feedparser.parse(url)
+            for entry in parsed.entries[:30]:
+                query = clean_text(entry.get("title", ""))
+                if query:
+                    signals.append({"text": query, "geo": geo, "source": "google_trends"})
+        except Exception as error:
+            logging.info("Google Trends RSS unavailable for %s: %s", geo, error)
+    logging.info("Loaded %d public Google Trends search signals across 6 markets", len(signals))
+    return signals
+
+def rank_trending_news(items, now=None, trend_signals=None):
     """Rank fresh news by independent-source corroboration and recency."""
     now = now or datetime.now(timezone.utc)
     prepared = []
@@ -820,7 +894,16 @@ def rank_trending_news(items, now=None):
             published = published.replace(tzinfo=timezone.utc)
         age = max(0.0, (now - published).total_seconds() / 3600) if published else 72.0
         recency = max(0.0, 24.0 - min(age, 72.0) / 3.0)
-        score = recency + min(len(corroborating), 5) * 8.0
+        trend_matches = 0
+        for signal in trend_signals or []:
+            signal_tokens = _trend_tokens(signal.get("text", ""))
+            if len(title_tokens & signal_tokens) >= 2:
+                trend_matches += 1
+        # Search-interest corroboration boosts relevant topics, but recency and
+        # independent publisher coverage remain the primary ranking signals.
+        trend_boost = min(trend_matches, 5) * 3.0
+        score = recency + min(len(corroborating), 5) * 8.0 + trend_boost
+        item["google_trends_matches"] = trend_matches
         prepared.append((score, index, item, len(corroborating)))
     prepared.sort(key=lambda row: (-row[0], row[1]))
     for score, _, item, count in prepared:
@@ -850,6 +933,7 @@ def main():
     existing_titles, existing_sources = load_existing_shopify_story_index(blog_id) if not args.dry_run else (set(), set())
     candidates = []
     candidate_keys = set()
+    trend_signals = fetch_google_trends_signals()
 
     for config in feeds:
         name, url, category = config["name"], config["url"], config["category"]
@@ -891,7 +975,7 @@ def main():
             logging.exception("Feed processing failed: %s", name)
 
     # Prioritize fresh stories corroborated by independent publishers.
-    candidates = rank_trending_news(candidates, now)
+    candidates = rank_trending_news(candidates, now, trend_signals)
     candidates = candidates[:max_items * 10]
     logging.info("Found %d candidates to quality-check; publication cap=%d; dry_run=%s; auto_publish=%s", len(candidates), max_items, args.dry_run, auto_publish)
 
