@@ -130,6 +130,18 @@ class VideoEmbedTests(unittest.TestCase):
         }
         self.assertFalse(worker.should_auto_publish(item, True))
 
+    def test_public_news_brief_without_verified_video_has_no_iframe(self):
+        brief = worker.make_public_news_brief(
+            "Mediterranean ferries threaten endangered whales",
+            "Example Publisher",
+            "Environment",
+            "A detailed source report with enough context for a meaningful article summary.",
+            "https://example.com/whales",
+            "https://images.example.com/whales.jpg",
+        )
+        self.assertNotIn("<iframe", brief["body"].lower())
+        self.assertNotIn("<video", brief["body"].lower())
+
     def test_public_brief_is_attributed_and_has_no_editorial_hold_notice(self):
         brief = worker.make_public_news_brief(
             "Science discovery announced", "NASA", "Science",
