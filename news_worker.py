@@ -567,10 +567,6 @@ def fetch_article_media(source_url):
         # Never substitute a title-similar or trending third-party search result.
         if not video_html:
             video_html = fetch_publisher_video(source_url)
-        if video_html and not video_embed_is_available(video_html):
-            logging.info("Publisher player failed playback validation; leaving video blank: %s", source_url)
-            video_html = ""
-
         # Extract readable reporting from the publisher page when an RSS feed
         # provides only a short teaser. Keep this source text for quality checks;
         # the published brief remains attributed and links to the original.
