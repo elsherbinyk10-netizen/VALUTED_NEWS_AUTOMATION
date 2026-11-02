@@ -241,16 +241,26 @@ def openverse_image(title, excluded_identities=None):
 
 def list_articles():
     query = """
-    query BackfillArticles($id: ID!) {
+    query BackfillArticles($id: ID!, $after: String) {
       blog(id: $id) {
-        articles(first: 250, reverse: true) {
+        articles(first: 250, reverse: true, after: $after) {
           nodes { id title handle body isPublished image { url altText } }
+          pageInfo { hasNextPage endCursor }
         }
       }
     }
     """
-    data = shopify_graphql(query, {"id": BLOG_ID})
-    return (data.get("blog") or {}).get("articles", {}).get("nodes", [])
+    articles = []
+    cursor = None
+    while True:
+        data = shopify_graphql(query, {"id": BLOG_ID, "after": cursor})
+        connection = (data.get("blog") or {}).get("articles", {})
+        articles.extend(connection.get("nodes", []))
+        page_info = connection.get("pageInfo") or {}
+        if not page_info.get("hasNextPage") or not page_info.get("endCursor"):
+            break
+        cursor = page_info["endCursor"]
+    return articles
 
 
 def update_article(article, image_url, alt_text, credit=""):

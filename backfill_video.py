@@ -1,22 +1,21 @@
-"""Backfill category-matched YouTube videos into published Valuted News articles.
+"""Verify and repair live Valuted News videos against each article's cited publisher.
 
-Videos are optional: articles are updated only when the RSS search returns a title-matched
-video appropriate to the story category. Existing embeds are preserved.
+Only videos present on the cited publisher page and whose player endpoint responds with
+valid metadata are embedded. Stale/unrelated embeds are removed after a successful
+publisher-page check; inaccessible source pages are left untouched for safety.
 """
 import json
 import logging
 import re
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
-from news_worker import env, shopify_graphql, fetch_article_media
-from backfill_media import source_urls
+from news_worker import env, shopify_graphql, fetch_article_media, video_embed_is_available
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 BLOG_ID = env("SHOPIFY_BLOG_ID", "gid://shopify/Blog/126010065175")
 STATE_FILE = Path("data/video_backfill.json")
-# Retry unresolved articles every scheduled run so the whole archive is rechecked.
-RETRY_DAYS = 0
 
 
 def load_state():
@@ -40,7 +39,6 @@ def list_articles():
     """
     articles = []
     cursor = None
-    # Read every page in the blog archive; Shopify caps each page at 250.
     while True:
         data = shopify_graphql(query, {"id": BLOG_ID, "after": cursor})
         connection = (data.get("blog") or {}).get("articles", {})
@@ -49,14 +47,50 @@ def list_articles():
         if not page_info.get("hasNextPage") or not page_info.get("endCursor"):
             break
         cursor = page_info["endCursor"]
-    return articles
+    return [article for article in articles if article.get("isPublished")]
+
+
+def primary_source_url(body):
+    """Return only the explicit source link, never an internal related-story link."""
+    match = re.search(
+        r'<p[^>]*>\s*<strong>Source:</strong>[\s\S]*?<a[^>]+href=["\']([^"\']+)["\']',
+        body or "",
+        re.I,
+    )
+    if not match:
+        return ""
+    url = match.group(1).replace("&amp;", "&")
+    parsed = urlparse(url)
+    if parsed.scheme not in {"http", "https"} or not parsed.hostname:
+        return ""
+    return url
+
+
+def remove_related_video(body):
+    """Remove only the article's designated Related video block, preserving story text."""
+    original = body or ""
+    cleaned = re.sub(
+        r'<section\b[^>]*class=["\'][^"\']*vn-related-video[^"\']*["\'][^>]*>[\s\S]*?</section>',
+        "",
+        original,
+        flags=re.I,
+    )
+    cleaned = re.sub(
+        r'<h2\b[^>]*>\s*Related video\s*</h2>\s*'
+        r'(?:<div\b[^>]*class=["\'][^"\']*valuted-news-video[^"\']*["\'][^>]*>[\s\S]*?</div>'
+        r'|<video\b[\s\S]*?</video>)',
+        "",
+        cleaned,
+        flags=re.I,
+    )
+    return cleaned
 
 
 def update_body(article_id, body):
     mutation = """
-    mutation AddRelatedVideo($id: ID!, $article: ArticleUpdateInput!) {
+    mutation VerifyAndRepairRelatedVideo($id: ID!, $article: ArticleUpdateInput!) {
       articleUpdate(id: $id, article: $article) {
-        article { id title handle isPublished }
+        article { id title handle isPublished body }
         userErrors { field message }
       }
     }
@@ -66,34 +100,21 @@ def update_body(article_id, body):
     errors = result.get("userErrors") or []
     if errors:
         raise RuntimeError(str(errors))
-    return result.get("article")
+    article = result.get("article")
+    if not article:
+        raise RuntimeError("Shopify returned no updated article.")
+    return article
 
 
-def infer_category(article):
-    tags = " ".join(article.get("tags") or []).lower()
-    title = (article.get("title") or "").lower()
-    body = article.get("body") or ""
-    combined = tags + " " + title
-
-    # Prefer the explicit editorial section in RSS-derived drafts.
-    # This avoids treating general news about TV networks as entertainment.
-    section = re.search(r"<strong>\\s*Section:\\s*</strong>\\s*([^<]+)", body, re.I)
-    if section:
-        section_name = section.group(1).strip().lower()
-        section_map = {
-            "business": "Business", "world": "World", "politics": "Politics",
-            "technology": "Technology", "science": "Science", "sports": "Sports",
-            "health": "Health", "entertainment": "Entertainment", "music": "Music",
-            "movies": "Movies", "news": "News"
-        }
-        if section_name in section_map:
-            return section_map[section_name]
-
-    if re.search(r"\\b(movie|movies|film|films|cinema|streaming|trailer)\\b", combined):
-        return "Movies"
-    if re.search(r"\\b(music|song|songs|album|albums|singer|singers|concert|concerts|tour|tours|music video)\\b", combined):
-        return "Music"
-    return next((x.title() for x in ("technology", "science", "business", "sports", "world", "politics", "health", "entertainment") if x in combined), "News")
+def insert_related_video(body, embed):
+    marker = (
+        '<section class="vn-related-video" aria-label="Related video">'
+        '<h2>Related video</h2>' + embed + '</section>'
+    )
+    insert_at = re.search(r"<p[^>]*>\s*<strong>Sources?:</strong>", body, re.I)
+    if insert_at:
+        return body[:insert_at.start()] + marker + body[insert_at.start():]
+    return body + marker
 
 
 def main():
@@ -103,78 +124,70 @@ def main():
     state = load_state()
     attempted = state.setdefault("attempted", {})
     now = datetime.now(timezone.utc)
-    cutoff = now - timedelta(days=RETRY_DAYS)
-    limit = max(1, min(250, int(env("VIDEO_BACKFILL_LIMIT", "250"))))
     articles = list_articles()
-    eligible = []
-    for article in articles:
-        body = article.get("body") or ""
-        if any(marker in body.lower() for marker in ("youtube-nocookie.com/embed/", "youtube.com/embed/", "player.vimeo.com/video/", "<video")):
-            continue
-        key = str(article.get("id") or "")
-        stamp = attempted.get(key, "")
-        try:
-            last_attempt = datetime.fromisoformat(stamp.replace("Z", "+00:00")) if stamp else None
-        except ValueError:
-            last_attempt = None
-        # Retry unresolved videos after the cooldown so the archive can be processed in batches,
-        # while still allowing later runs to find videos newly indexed by search providers.
-        if last_attempt and last_attempt > cutoff:
-            continue
-        eligible.append(article)
+    logging.info("Published Valuted News articles queued for publisher/player verification: %d", len(articles))
+    checked = added = replaced = removed = unchanged = unverified = 0
 
-    # Process never-attempted articles first, then the oldest attempts. This prevents
-    # unresolved early articles from starving the rest of a large archive.
-    eligible.sort(key=lambda article: attempted.get(str(article.get("id") or ""), ""))
-    logging.info("Articles checked (published + drafts)=%d; missing video=%d; batch limit=%d", len(articles), len(eligible), limit)
-    processed = 0
-    added = 0
-    for article in eligible:
-        if processed >= limit:
-            break
-        processed += 1
-        key = str(article["id"])
-        attempted[key] = now.isoformat()
+    for article in articles:
+        article_id = str(article.get("id") or "")
+        title = article.get("title") or "(untitled)"
+        source_url = primary_source_url(article.get("body", ""))
+        if not source_url:
+            unverified += 1
+            logging.warning("No explicit cited publisher URL; leaving video unchanged: %s", title)
+            continue
+        checked += 1
         try:
-            category = infer_category(article)
-            # Prefer a video embedded on the article's own cited publisher page.
-            # Only fall back to public video search when source-page metadata has no video.
-            embed = ""
-            source_candidates = list(source_urls(article.get("body", "")))[:5]
-            for source_url in source_candidates:
-                try:
-                    media = fetch_article_media(source_url)
-                    candidate_embed = media.get("video_html", "")
-                    if candidate_embed and any(host in candidate_embed.lower() for host in (
-                        "youtube-nocookie.com/embed/", "youtube.com/embed/",
-                        "player.vimeo.com/video/", "<video"
-                    )):
-                        embed = candidate_embed
-                        logging.info("Found publisher-page video for: %s", article.get("title"))
-                        break
-                except Exception as source_error:
-                    logging.info("Publisher video lookup failed for %s: %s", article.get("title"), source_error)
-            # No YouTube search fallback: attach only an embed found on the
-            # article's own cited publisher page. No video is safer than a mismatch.
-            if not embed:
-                logging.info("No confident %s video match; leaving article unchanged: %s", category, article.get("title"))
+            media = fetch_article_media(source_url)
+            if not media.get("source_page_ok"):
+                unverified += 1
+                logging.warning("Publisher page unavailable; leaving existing video unchanged: %s", title)
                 continue
-            body = article.get("body") or ""
-            marker = '<section class="vn-related-video" aria-label="Related video"><h2>Related video</h2>' + embed + '</section>'
-            insert_at = re.search(r"<p[^>]*>\s*<strong>Sources?:</strong>", body, re.I)
-            if insert_at:
-                body = body[:insert_at.start()] + marker + body[insert_at.start():]
+
+            candidate = media.get("video_html") or ""
+            if candidate and not video_embed_is_available(candidate):
+                logging.warning("Publisher video player failed availability check: %s", title)
+                candidate = ""
+
+            original_body = article.get("body") or ""
+            body_without_video = remove_related_video(original_body)
+            current_sources = re.findall(r'<iframe\b[^>]*src=["\']([^"\']+)["\']', original_body, re.I)
+            candidate_sources = re.findall(r'<iframe\b[^>]*src=["\']([^"\']+)["\']', candidate, re.I)
+
+            if candidate and current_sources and current_sources == candidate_sources:
+                unchanged += 1
+                attempted[article_id] = now.isoformat()
+                continue
+
+            if candidate:
+                new_body = insert_related_video(body_without_video, candidate)
+                if new_body == original_body:
+                    unchanged += 1
+                else:
+                    update_body(article_id, new_body)
+                    if current_sources:
+                        replaced += 1
+                        logging.info("Replaced old embed with verified publisher video: %s", title)
+                    else:
+                        added += 1
+                        logging.info("Restored verified publisher video: %s", title)
+            elif body_without_video != original_body:
+                update_body(article_id, body_without_video)
+                removed += 1
+                logging.warning("Removed unverified/unplayable video; cited source has no playable video: %s", title)
             else:
-                body += marker
-            result = update_body(article["id"], body)
-            if not result:
-                raise RuntimeError("Shopify returned no updated article.")
-            added += 1
-            logging.info("Added category-matched video to: %s (%s)", article.get("title"), category)
+                unchanged += 1
+
+            attempted[article_id] = now.isoformat()
         except Exception:
-            logging.exception("Video backfill failed for: %s", article.get("title"))
+            unverified += 1
+            logging.exception("Publisher video audit failed for: %s", title)
+
     STATE_FILE.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n")
-    logging.info("Video backfill finished: processed=%d added=%d", processed, added)
+    logging.info(
+        "Publisher video audit finished: checked=%d added=%d replaced=%d removed=%d unchanged=%d unverified=%d",
+        checked, added, replaced, removed, unchanged, unverified,
+    )
 
 
 if __name__ == "__main__":

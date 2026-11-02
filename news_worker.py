@@ -210,7 +210,7 @@ def extract_video_embed(entry):
                     video_id = dict(parse_qsl(parsed.query)).get("v", "")
                 elif path_lower.startswith(("/embed/", "/shorts/")):
                     video_id = path.split("/")[2] if len(path.split("/")) > 2 else ""
-                if re.fullmatch(r"[A-Za-z0-9_-]{6,20}", video_id):
+                if re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id):
                     return f'<div class="valuted-news-video" style="position:relative;width:100%;aspect-ratio:16/9;margin:24px 0"><iframe src="https://www.youtube-nocookie.com/embed/{video_id}" title="Related news video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>'
             if host in ("vimeo.com", "www.vimeo.com", "player.vimeo.com"):
                 video_id = path.strip("/").split("/")[-1]
@@ -222,6 +222,68 @@ def extract_video_embed(entry):
         except Exception:
             continue
     return ""
+
+
+
+def video_embed_is_available(video_html):
+    """Check that a supported publisher video endpoint still exposes playable metadata."""
+    soup = BeautifulSoup(str(video_html or ""), "html.parser")
+    iframe = soup.find("iframe", src=True)
+    if iframe:
+        parsed = urlparse(str(iframe.get("src") or ""))
+        host = (parsed.hostname or "").lower()
+        parts = [part for part in parsed.path.split("/") if part]
+        if host in {"youtube-nocookie.com", "www.youtube-nocookie.com", "youtube.com", "www.youtube.com"} and len(parts) >= 2 and parts[0] == "embed":
+            video_id = parts[1]
+            if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id):
+                return False
+            try:
+                response = requests.get(
+                    "https://www.youtube.com/oembed",
+                    params={"url": f"https://www.youtube.com/watch?v={video_id}", "format": "json"},
+                    headers={"User-Agent": "VALUTED-NEWS-Media-Check/1.0"},
+                    timeout=(3, 7),
+                )
+                payload = response.json() if response.ok else {}
+                return bool(response.ok and isinstance(payload, dict) and payload.get("title"))
+            except (requests.RequestException, ValueError):
+                return False
+        if host in {"player.vimeo.com"} and len(parts) >= 2 and parts[0] == "video" and parts[1].isdigit():
+            try:
+                response = requests.get(
+                    "https://vimeo.com/api/oembed.json",
+                    params={"url": f"https://vimeo.com/{parts[1]}"},
+                    headers={"User-Agent": "VALUTED-NEWS-Media-Check/1.0"},
+                    timeout=(3, 7),
+                )
+                payload = response.json() if response.ok else {}
+                return bool(response.ok and isinstance(payload, dict) and payload.get("title"))
+            except (requests.RequestException, ValueError):
+                return False
+        return False
+
+    video = soup.find("video")
+    source = video.find("source", src=True) if video else None
+    if source:
+        url = str(source.get("src") or "")
+        parsed = urlparse(url)
+        if parsed.scheme not in {"http", "https"}:
+            return False
+        try:
+            response = requests.get(
+                url,
+                headers={"Range": "bytes=0-0", "User-Agent": "VALUTED-NEWS-Media-Check/1.0"},
+                stream=True,
+                timeout=(3, 7),
+            )
+            try:
+                content_type = response.headers.get("Content-Type", "").lower()
+                return bool(response.ok and content_type.startswith("video/"))
+            finally:
+                response.close()
+        except requests.RequestException:
+            return False
+    return False
 
 
 def fetch_related_youtube_embed(story_title, category=""):
@@ -403,7 +465,7 @@ def fetch_article_media(source_url):
     try:
         parsed = urlparse(source_url)
         if parsed.scheme not in ("http", "https") or not parsed.hostname:
-            return {"image_url": "", "video_html": ""}
+            return {"image_url": "", "video_html": "", "source_page_ok": False}
         response = requests.get(
             source_url,
             headers={"User-Agent": "VALUTED-NEWS-RSS-Bot/1.0 (+publisher metadata; contact site owner)", "Accept": "text/html,application/xhtml+xml"},
@@ -413,7 +475,7 @@ def fetch_article_media(source_url):
         )
         try:
             if not response.ok or "html" not in response.headers.get("Content-Type", "").lower():
-                return {"image_url": "", "video_html": ""}
+                return {"image_url": "", "video_html": "", "source_page_ok": False}
             chunks = []
             total = 0
             for chunk in response.iter_content(chunk_size=16384):
@@ -516,10 +578,10 @@ def fetch_article_media(source_url):
             seen_paragraphs.add(text_value)
             paragraphs.append(text_value)
         article_text = " ".join(paragraphs)
-        return {"image_url": image_url, "video_html": video_html, "article_text": article_text}
+        return {"image_url": image_url, "video_html": video_html, "article_text": article_text, "source_page_ok": True}
     except Exception as exc:
         logging.debug("Publisher media metadata unavailable for %s: %s", source_url, exc)
-        return {"image_url": "", "video_html": ""}
+        return {"image_url": "", "video_html": "", "source_page_ok": False}
 
 
 def shopify_access_token():
@@ -1076,6 +1138,9 @@ def main():
                 item["description"] = media["article_text"]
                 logging.info("Recovered full source-page text for candidate: %s", item["title"])
             item["video_html"] = media.get("video_html", "")
+            if item["video_html"] and not video_embed_is_available(item["video_html"]):
+                logging.warning("Publisher video endpoint is unavailable; publishing without an unplayable embed: %s", item["title"])
+                item["video_html"] = ""
             block_reasons = auto_publish_block_reasons(item, auto_publish)
             if block_reasons:
                 # Never create an editorial-review placeholder. Leave blocked items out of

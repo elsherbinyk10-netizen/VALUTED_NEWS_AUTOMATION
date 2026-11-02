@@ -29,6 +29,27 @@ class VideoEmbedTests(unittest.TestCase):
         })
         self.assertIn("player.vimeo.com/video/123456789", html)
 
+    @patch.object(worker.requests, "get")
+    def test_youtube_video_must_pass_oembed_availability_check(self, get_mock):
+        response = Mock()
+        response.ok = True
+        response.json.return_value = {"title": "Publisher video"}
+        get_mock.return_value = response
+        embed = '<iframe src="https://www.youtube-nocookie.com/embed/AbCdEf12345"></iframe>'
+        self.assertTrue(worker.video_embed_is_available(embed))
+        self.assertEqual(get_mock.call_args.args[0], "https://www.youtube.com/oembed")
+
+    @patch.object(worker.requests, "get")
+    def test_unavailable_youtube_video_is_rejected(self, get_mock):
+        response = Mock()
+        response.ok = False
+        get_mock.return_value = response
+        embed = '<iframe src="https://www.youtube-nocookie.com/embed/AbCdEf12345"></iframe>'
+        self.assertFalse(worker.video_embed_is_available(embed))
+
+    def test_youtube_video_ids_must_be_exactly_eleven_characters(self):
+        self.assertEqual(worker.extract_video_embed({"summary": "https://youtu.be/short"}), "")
+
     def test_direct_video_file_is_responsive(self):
         html = worker.extract_video_embed({
             "enclosures": [{"href": "https://media.example.org/report.mp4", "type": "video/mp4"}]
@@ -98,14 +119,14 @@ class VideoEmbedTests(unittest.TestCase):
         response.encoding = "utf-8"
         response.url = "https://publisher.example/story"
         response.iter_content.return_value = [
-            b"<html><body><iframe src='https://www.youtube.com/embed/Sidebar12345'></iframe>"
-            b"<article><h1>Story</h1><iframe src='https://www.youtube.com/embed/StoryVideo123'></iframe>"
+            b"<html><body><iframe src='https://www.youtube.com/embed/SideBr12345'></iframe>"
+            b"<article><h1>Story</h1><iframe src='https://www.youtube.com/embed/StoryVid123'></iframe>"
             b"</article></body></html>"
         ]
         get_mock.return_value = response
         media = worker.fetch_article_media("https://publisher.example/story")
-        self.assertIn("StoryVideo123", media["video_html"])
-        self.assertNotIn("Sidebar12345", media["video_html"])
+        self.assertIn("StoryVid123", media["video_html"])
+        self.assertNotIn("SideBr12345", media["video_html"])
 
     @patch.object(worker.requests, "get")
     def test_publisher_video_extraction_ignores_sitewide_sidebar_iframes(self, get_mock):
