@@ -405,5 +405,36 @@ class TrendingNewsRankingTests(unittest.TestCase):
         self.assertEqual(article["isPublished"], True)
 
 
+
+
+class YouTubeEmbedPlaybackTests(unittest.TestCase):
+    @patch("news_worker.requests.get")
+    def test_rejects_embed_when_youtube_player_says_video_unavailable(self, get_mock):
+        import news_worker
+        metadata = Mock(ok=True)
+        metadata.json.return_value = {"title": "Test video"}
+        player = Mock(ok=True, text="Video unavailable")
+        get_mock.side_effect = [metadata, player]
+        self.assertFalse(news_worker.youtube_embed_is_available("AbCdEf12345"))
+
+    @patch("news_worker.requests.get")
+    def test_accepts_embed_when_metadata_and_player_are_available(self, get_mock):
+        import news_worker
+        metadata = Mock(ok=True)
+        metadata.json.return_value = {"title": "Test video"}
+        player = Mock(ok=True, text="<html><body>yt player</body></html>")
+        get_mock.side_effect = [metadata, player]
+        self.assertTrue(news_worker.youtube_embed_is_available("AbCdEf12345"))
+
+    @patch("news_worker.requests.get")
+    def test_rejects_embed_when_metadata_is_unavailable(self, get_mock):
+        import news_worker
+        metadata = Mock(ok=False)
+        get_mock.return_value = metadata
+        self.assertFalse(news_worker.youtube_embed_is_available("AbCdEf12345"))
+
+
+
+
 if __name__ == "__main__":
     unittest.main()
