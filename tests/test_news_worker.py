@@ -205,5 +205,26 @@ class TrendingNewsRankingTests(unittest.TestCase):
         self.assertEqual([item["publisher"] for item in ranked], ["A", "B"])
 
 
+
+    @patch.object(worker, "shopify_graphql")
+    def test_news_article_includes_concise_seo_metadata(self, graphql_mock):
+        graphql_mock.return_value = {"articleCreate": {"article": {"id": "gid://shopify/Article/1", "title": "Global science breakthrough", "handle": "global-science-breakthrough", "isPublished": True}, "userErrors": []}}
+        article = worker.create_shopify_article(
+            "gid://shopify/Blog/1",
+            "Global science breakthrough",
+            "Researchers announced a new discovery with significant implications.",
+            "<p>Source-attributed reporting text.</p>",
+            "https://example.com/story",
+            "Example Publisher",
+            "Science",
+            True,
+            "https://images.example.com/story.jpg",
+        )
+        payload = graphql_mock.call_args.args[1]["article"]
+        self.assertLessEqual(len(payload["seo"]["title"]), 68)
+        self.assertLessEqual(len(payload["seo"]["description"]), 155)
+        self.assertEqual(article["isPublished"], True)
+
+
 if __name__ == "__main__":
     unittest.main()
