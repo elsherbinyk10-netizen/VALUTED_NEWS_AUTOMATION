@@ -31,13 +31,17 @@ class VideoEmbedTests(unittest.TestCase):
 
     @patch.object(worker.requests, "get")
     def test_youtube_video_must_pass_oembed_availability_check(self, get_mock):
-        response = Mock()
-        response.ok = True
-        response.json.return_value = {"title": "Publisher video"}
-        get_mock.return_value = response
+        metadata = Mock()
+        metadata.ok = True
+        metadata.json.return_value = {"title": "Publisher video"}
+        player = Mock()
+        player.ok = True
+        player.text = "<html><body>yt player</body></html>"
+        get_mock.side_effect = [metadata, player]
         embed = '<iframe src="https://www.youtube-nocookie.com/embed/AbCdEf12345"></iframe>'
         self.assertTrue(worker.video_embed_is_available(embed))
-        self.assertEqual(get_mock.call_args.args[0], "https://www.youtube.com/oembed")
+        self.assertEqual(get_mock.call_args_list[0].args[0], "https://www.youtube.com/oembed")
+        self.assertEqual(get_mock.call_args_list[1].args[0], "https://www.youtube.com/embed/AbCdEf12345")
 
     @patch.object(worker.requests, "get")
     def test_unavailable_youtube_video_is_rejected(self, get_mock):
