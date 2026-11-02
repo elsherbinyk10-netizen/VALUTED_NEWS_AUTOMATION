@@ -361,7 +361,7 @@ def fetch_related_youtube_embed(story_title, category=""):
         # report merely because its title lacks words like "interview" or "official".
         # Search already uses distinctive headline words; permit one matching
         # term for general news so more archive stories can obtain a relevant clip.
-        min_overlap = 1
+        min_overlap = 2
         for video_url, video_title, channel in video_entries:
             parsed_url = urlparse(video_url)
             video_id = dict(parse_qsl(parsed_url.query)).get("v", "")
@@ -1040,7 +1040,7 @@ def main():
                     # Aggregator RSS thumbnails often repeat one generic image across unrelated stories.
                     # Resolve publisher metadata in the backfill workflow instead of trusting these thumbnails.
                     "image_url": "" if "google news" in name.lower() else extract_image(entry),
-                    "video_html": extract_video_embed(entry), "risk": risk,
+                    "video_html": "", "risk": risk,
                 })
         except Exception:
             logging.exception("Feed processing failed: %s", name)
