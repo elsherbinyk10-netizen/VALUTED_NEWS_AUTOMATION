@@ -1,4 +1,5 @@
 import unittest
+from datetime import datetime, timezone
 from unittest.mock import patch, Mock
 
 import feedparser
@@ -180,6 +181,28 @@ class VideoEmbedTests(unittest.TestCase):
         result = worker.fetch_related_youtube_embed("Spider-Man Brand New Day", "Movies")
         self.assertIn("youtube-nocookie.com/embed/AbCdEf12345", result)
         self.assertEqual(get_mock.call_count, 3)
+
+
+class TrendingNewsRankingTests(unittest.TestCase):
+    def test_multi_publisher_story_ranks_above_single_source_story(self):
+        now = datetime(2026, 11, 2, 12, 0, tzinfo=timezone.utc)
+        items = [
+            {"title": "Scientists discover major ocean breakthrough", "publisher": "BBC", "published": now},
+            {"title": "Major ocean breakthrough discovered by researchers", "publisher": "NPR", "published": now},
+            {"title": "Local museum announces weekend opening", "publisher": "Local", "published": now},
+        ]
+        ranked = worker.rank_trending_news(items, now)
+        self.assertEqual(ranked[0]["publisher"], "BBC")
+        self.assertGreater(ranked[0]["trend_score"], ranked[-1]["trend_score"])
+
+    def test_tie_break_is_stable(self):
+        now = datetime(2026, 11, 2, 12, 0, tzinfo=timezone.utc)
+        items = [
+            {"title": "Single source art exhibition", "publisher": "A", "published": now},
+            {"title": "Single source sports exhibition", "publisher": "B", "published": now},
+        ]
+        ranked = worker.rank_trending_news(items, now)
+        self.assertEqual([item["publisher"] for item in ranked], ["A", "B"])
 
 
 if __name__ == "__main__":
