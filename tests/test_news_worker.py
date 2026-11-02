@@ -62,8 +62,6 @@ class VideoEmbedTests(unittest.TestCase):
 
     @patch.object(worker.requests, "get")
     @patch.object(worker.feedparser, "parse")
-    @patch.object(worker.requests, "get")
-    @patch.object(worker.feedparser, "parse")
     def test_single_common_word_overlap_is_not_enough_for_news_video(self, parse_mock, get_mock):
         response = Mock()
         response.content = b"<feed></feed>"
@@ -77,6 +75,8 @@ class VideoEmbedTests(unittest.TestCase):
         html = worker.fetch_related_youtube_embed("Ferries threaten endangered whales", "Climate")
         self.assertEqual(html, "")
 
+    @patch.object(worker.requests, "get")
+    @patch.object(worker.feedparser, "parse")
     def test_unrelated_youtube_result_is_not_embedded(self, parse_mock, get_mock):
         response = Mock()
         response.content = b"<feed></feed>"
@@ -129,6 +129,18 @@ class VideoEmbedTests(unittest.TestCase):
             "risk": False,
         }
         self.assertFalse(worker.should_auto_publish(item, True))
+
+    def test_public_news_brief_without_verified_video_has_no_iframe(self):
+        brief = worker.make_public_news_brief(
+            "Mediterranean ferries threaten endangered whales",
+            "Example Publisher",
+            "Environment",
+            "A detailed source report with enough context for a meaningful article summary.",
+            "https://example.com/whales",
+            "https://images.example.com/whales.jpg",
+        )
+        self.assertNotIn("<iframe", brief["body"].lower())
+        self.assertNotIn("<video", brief["body"].lower())
 
     def test_public_brief_is_attributed_and_has_no_editorial_hold_notice(self):
         brief = worker.make_public_news_brief(
