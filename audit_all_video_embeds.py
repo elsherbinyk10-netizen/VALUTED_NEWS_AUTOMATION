@@ -12,6 +12,16 @@ from backfill_video import primary_source_url, update_body, insert_related_video
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 BLOG_ID = env("SHOPIFY_BLOG_ID", "gid://shopify/Blog/126010065175")
 
+VIDEO_SEARCH_ALIASES = {
+    "whales in the mediterranean": "Mediterranean sperm whales ferry collisions Pelagos Sanctuary Tethys",
+    "rok solid recognition": "Slovenian astronomer asteroid Dr Rok Nezic Armagh Observatory",
+    "zebra-striped bee": "sea aster mining bee Steart Marshes Somerset",
+    "ai litter tracker": "Roadside Litter app Robin Bennett AI dashcam Shropshire",
+    "arrested as clashes": "France protests police clashes Paris Marseille tear gas",
+    "fires char new guinea": "Papua New Guinea wildfires satellite smoke NASA",
+}
+
+
 
 def list_all_published_articles():
     query = """
@@ -155,7 +165,9 @@ def main():
                     candidate_kind = "previously selected related"
                 if not candidate:
                     category = " ".join(article.get("tags") or [])
-                    candidate = fetch_related_youtube_embed(title, category) or ""
+                    alias = next((value for key, value in VIDEO_SEARCH_ALIASES.items() if key in title.lower()), "")
+                    search_title = (alias + " " + title).strip()
+                    candidate = fetch_related_youtube_embed(search_title, category) or ""
                     candidate_kind = "title-matched related"
                     if candidate and not video_embed_is_available(candidate):
                         candidate = ""
