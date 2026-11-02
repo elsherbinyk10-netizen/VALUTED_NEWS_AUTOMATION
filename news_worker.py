@@ -1021,47 +1021,47 @@ CATEGORY_KEYWORDS = {
     "Politics": (
         r"\b(election|vote|voting|parliament|congress|senate|government|president|prime minister|minister|"
         r"politician|political|policy|legislation|bill|campaign|white house|diplomat|diplomacy|"
-        r"sanction|geopolitic|opposition party|cabinet)\\b",
+        r"sanction|geopolitic|opposition party|cabinet)\b",
     ),
     "Business": (
         r"\b(business|company|companies|corporate|market|markets|stock|stocks|share price|"
         r"earnings|revenue|profit|losses|bank|banking|economy|economic|inflation|trade deal|"
         r"tariff|investment|investor|ceo|startup|merger|acquisition|retail|jobs|employment|"
-        r"oil price|interest rate|cryptocurrency|bitcoin)\\b",
+        r"oil price|interest rate|cryptocurrency|bitcoin)\b",
     ),
     "Technology": (
         r"\b(technology|tech|artificial intelligence|\bai\b|robot|robotics|software|"
         r"cyber|hack|data breach|smartphone|iphone|android|google|microsoft|apple|"
         r"computer|chipmaker|semiconductor|app update|social media platform|"
-        r"gadget|device|cloud computing|machine learning)\\b",
+        r"gadget|device|cloud computing|machine learning)\b",
     ),
     "Sports": (
         r"\b(sport|football|soccer|premier league|champions league|nba|nfl|tennis|"
         r"cricket|rugby|formula one|formula 1|f1|grand prix|olympic|world cup|"
-        r"match|tournament|coach|player|transfer|goal|league|athlete|race result)\\b",
+        r"match|tournament|coach|player|transfer|goal|league|athlete|race result)\b",
     ),
     "Entertainment": (
         r"\b(movie|movies|film|films|cinema|actor|actress|celebrity|netflix|"
         r"television|tv series|series premiere|streaming|music|singer|song|album|"
         r"concert|box office|hollywood|broadway|festival|director|trailer|"
-        r"reality show|award show|grammy|oscar|emmy)\\b",
+        r"reality show|award show|grammy|oscar|emmy)\b",
     ),
     "Health": (
         r"\b(health|medical|medicine|hospital|doctor|patient|disease|illness|"
         r"vaccine|vaccination|clinical trial|mental health|public health|"
         r"cancer|virus|infection|treatment|drug approval|pharmaceutical|"
-        r"outbreak|epidemic|pandemic)\\b",
+        r"outbreak|epidemic|pandemic)\b",
     ),
     "Science": (
         r"\b(science|scientist|research|study|discovery|space|nasa|astronomy|"
         r"planet|moon|mars|satellite|climate|environment|wildlife|animal|"
         r"species|ocean|earthquake|hurricane|storm|weather|fossil|archaeology|"
-        r"experiment|physics|biology|chemistry)\\b",
+        r"experiment|physics|biology|chemistry)\b",
     ),
     "Travel": (
         r"\b(travel|tourism|tourist|holiday|vacation|hotel|airline|airport|"
         r"flight|cruise|destination|travel guide|visitor|museum visit|"
-        r"tour operator|travel warning|passport|visa rules)\\b",
+        r"tour operator|travel warning|passport|visa rules)\b",
     ),
 }
 
