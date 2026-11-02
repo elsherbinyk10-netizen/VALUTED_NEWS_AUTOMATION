@@ -1,4 +1,5 @@
 import unittest
+import json
 from datetime import datetime, timezone
 from unittest.mock import patch, Mock
 
@@ -234,6 +235,32 @@ class TrendingNewsRankingTests(unittest.TestCase):
         self.assertEqual([item["publisher"] for item in ranked], ["A", "B"])
 
 
+
+    def test_related_internal_links_only_use_relevant_existing_articles(self):
+        markup = worker.build_related_internal_links(
+            "NASA Artemis mission discovers lunar ice", "Science",
+            [
+                {"title": "Artemis mission reveals new lunar findings", "url": "https://valutednews.com/blogs/news/artemis-lunar-findings", "body": "<strong>Science</strong>"},
+                {"title": "Football club wins local cup", "url": "https://valutednews.com/blogs/news/football-cup", "body": "<strong>Sports</strong>"},
+            ],
+        )
+        self.assertIn("artemis-lunar-findings", markup)
+        self.assertNotIn("football-cup", markup)
+        self.assertIn("Related coverage", markup)
+
+    def test_news_article_jsonld_contains_required_fields(self):
+        markup = worker.build_news_jsonld(
+            "NASA Artemis mission discovers lunar ice",
+            "NASA reports evidence of lunar ice.", "Science",
+            "https://images.example.com/moon.jpg",
+            datetime(2026, 11, 2, 12, 0, tzinfo=timezone.utc),
+        )
+        self.assertIn('type="application/ld+json"', markup)
+        payload = json.loads(markup.split(">", 1)[1].rsplit("</script>", 1)[0])
+        self.assertEqual(payload["@type"], "NewsArticle")
+        self.assertEqual(payload["datePublished"], "2026-11-02T12:00:00+00:00")
+        self.assertEqual(payload["image"], ["https://images.example.com/moon.jpg"])
+        self.assertEqual(payload["publisher"]["name"], "VALUTED NEWS")
 
     @patch.object(worker, "shopify_graphql")
     def test_news_article_includes_concise_seo_metadata(self, graphql_mock):
