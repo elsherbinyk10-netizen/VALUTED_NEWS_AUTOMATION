@@ -686,7 +686,7 @@ def make_editorial(title, publisher, category, description, video_html=""):
 
     return {
         "title": safe_title,
-        "summary": summary[:300],
+        "summary": seo_description,
         "body": body,
         "quality_ok": False,
     }
@@ -768,7 +768,6 @@ def create_shopify_article(blog_id, title, summary, body, source_url, publisher,
         + f'<hr><p><strong>Source:</strong> {publisher_safe}. '
           f'<a href="{source}" rel="nofollow noopener">Read the original report</a></p>'
     )
-    seo_title = re.sub(r"\s+", " ", clean_text(title))[:68].rstrip(" -|:")
     seo_description = re.sub(r"\s+", " ", clean_text(summary or title))
     if len(seo_description) > 155:
         seo_description = seo_description[:152].rsplit(" ", 1)[0].rstrip(" ,;:") + "..."
