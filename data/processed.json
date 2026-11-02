@@ -529,6 +529,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "0baf2d52ebb873da5a83e3813133390135c234195fc77ad6644a9ee9d86144ef": {
+      "seen_at": "2026-11-02T17:21:20.934989+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "0bd739884dcd06f2ef3cf6804cb4fc93daf9c29c68c905a004d6217478c082e6": {
       "seen_at": "2026-10-19T11:26:42.322929+00:00",
       "source": "Google News Business",
@@ -2131,6 +2136,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "2f944b65765bdecda2c6a35048ff5810bce361bd3f0e66e4014c3353e27cd8b9": {
+      "seen_at": "2026-11-02T17:21:20.934989+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "2f953910c20328395f4138f7994cac2ea19ca0dd271ea98270acacea508cd068": {
       "created_at": "2026-10-20T18:44:16.994007+00:00",
       "has_embedded_video": true,
@@ -2634,6 +2644,11 @@
       "source_url": "https://variety.com/2026/music/news/thai-pop-star-jeff-satur-universal-music-1236918438",
       "status": "published",
       "title": "Thai Pop Star Jeff Satur Signs With Universal Music Southeast Asia, Sets 2027 Album and World Tour"
+    },
+    "3ae45d6b2f8cda94a812d7a106f5a97ed641b0f3390a2bbd257971a58f9740e7": {
+      "seen_at": "2026-11-02T17:21:20.934989+00:00",
+      "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
     },
     "3aff6ff8e13cd6da99a44caa4ff68af361efac7728c0e0a992a52eca340649d6": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
@@ -3253,6 +3268,11 @@
     "4abaeb6dcc1c5cf61a8e086cebf661fe23af2e775e3614d5d232dd1806e8e873": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "4abe4a6302b176fd1f33751514a142713f710335397454d77d3103a47a7e1a2f": {
+      "seen_at": "2026-11-02T17:21:20.934989+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "4ae65b5b3c6ab033edf8b1886557e47a1973d891d95745bdeb2534adfc2c2a21": {
@@ -4188,6 +4208,11 @@
       "status": "published",
       "title": "US citizen Stephen Hubbard freed by Russia as Trump envoy meets Putin"
     },
+    "6282c8806b5ea38c1b8222e3b85a89f5f6d68f92ec7c29df7c065fe2bf5e7c89": {
+      "seen_at": "2026-11-02T17:21:20.934989+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "6283720af3d660dc41e4e8cb8e6494f8e2ad67e5241d2e091884fdff5fbabccf": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Entertainment",
@@ -4424,6 +4449,11 @@
     "67fdbb80abd027eb3ce1c6c47400687b2f735df1d97bd57f7a17d1213de64e36": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "680ac47223b35710bc8e29f13ddd4bd59f0d0fb6b922647dfa6549b71be66bae": {
+      "seen_at": "2026-11-02T17:21:20.934989+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "681dcee3dafd58819402168d0591bb3d49665d805bc2429cba455824d1b9143e": {
@@ -4683,6 +4713,11 @@
     "6cf513a2aadcf3b85d612ee814a1c47a27b61992ff3a98f9cbfd720243cb5a45": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "6d0fc7a2050cff9ea1853454a92253b1fe4a3a9199bc80b6b4136a377c1fffa2": {
+      "seen_at": "2026-11-02T17:21:20.934989+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "6d12cfb1794b37251406f80c511c6d3e0190c7a3e791d93999752bab40e4e393": {
@@ -5393,6 +5428,11 @@
     "7b2f61289be0378930150cc700302824b2e02dfddc4d2a89e4f164929bc3cf4f": {
       "seen_at": "2026-11-02T07:29:49.590724+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "7b620b8ee23e792e1f6a889fc74922fe2d9e9c2db4d8e35c1744ffa574d399a5": {
+      "seen_at": "2026-11-02T17:21:20.934989+00:00",
+      "source": "NASA News",
       "status": "skipped_stale"
     },
     "7b6e223ed750b55c483b8405b855f79b0118ad7fa80df13d6c85b9998680e731": {
@@ -6720,6 +6760,17 @@
       "seen_at": "2026-10-30T07:00:00.666940+00:00",
       "source": "Google News Entertainment",
       "status": "skipped_stale"
+    },
+    "97484297c8c94a4b95c9ae9cffbfafa6bb065897e22a83f6a964b3aeb0c2202b": {
+      "created_at": "2026-11-02T17:21:20.934989+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "NASA News",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755119096087",
+      "source_url": "https://science.nasa.gov/image-article/apod-2026-november-2-a-long-cloud-on-mars",
+      "status": "published",
+      "title": "APOD: 2026 November 2 \u2013 A Long Cloud on Mars"
     },
     "97be6f2ecb6b841e3941b247d112534d3826a14e0cd31cc1e6b846986fee3fdc": {
       "seen_at": "2026-10-28T18:54:08.851553+00:00",
@@ -8118,6 +8169,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "ba8f0baf87edff9476b1492af8597adcac3f683aacb244fd70c3ecc1f4cff05f": {
+      "seen_at": "2026-11-02T17:21:20.934989+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "ba91862b3236d67b7e2cc3b5c140f12652aadd172c0b1d136dbe2044043b0655": {
       "created_at": "2026-10-23T18:45:13.548852+00:00",
       "has_embedded_video": true,
@@ -8986,6 +9042,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "ccdc8fb6c7ee9119ad5a175e5de7024922160230710b0082853739275a366652": {
+      "seen_at": "2026-11-02T17:21:20.934989+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "cce1a6a01f58ec156d835b2fb4cf504b8fb59b31d88b96632b49866bdf32fc1c": {
       "created_at": "2026-11-01T18:48:11.579033+00:00",
       "has_embedded_video": true,
@@ -9653,6 +9714,11 @@
     "de6d65e3030fdaab6c9c36b0e24eae79fb2aea87fb66cf71ef489ded3c07dd0a": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "NASA News",
+      "status": "skipped_stale"
+    },
+    "de7377484e8d562198bd25e8ae83a802a1ac63e46833752e77ef5f22a934775f": {
+      "seen_at": "2026-11-02T17:21:20.934989+00:00",
+      "source": "BBC Technology",
       "status": "skipped_stale"
     },
     "de953614ca9adb36adddfd4c311ec28e25db9d1506105a7ab5f50ea109d16ac7": {
@@ -10625,6 +10691,11 @@
     "f3424c162f20adc38286ba434e8ee00adebd0967efd37df1d63336a046d19793": {
       "seen_at": "2026-10-20T10:14:51.554768+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "f34345de782fe1111b3a12ff6f9f896c37ee4f012c6bccf2cdd9392e7b43ec1f": {
+      "seen_at": "2026-11-02T17:21:20.934989+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "f36fcf60bca61b147785399ecfac79b9101341a1de6300cedc13dbce4feb5c2e": {
