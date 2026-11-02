@@ -62,8 +62,6 @@ class VideoEmbedTests(unittest.TestCase):
 
     @patch.object(worker.requests, "get")
     @patch.object(worker.feedparser, "parse")
-    @patch.object(worker.requests, "get")
-    @patch.object(worker.feedparser, "parse")
     def test_single_common_word_overlap_is_not_enough_for_news_video(self, parse_mock, get_mock):
         response = Mock()
         response.content = b"<feed></feed>"
@@ -77,6 +75,8 @@ class VideoEmbedTests(unittest.TestCase):
         html = worker.fetch_related_youtube_embed("Ferries threaten endangered whales", "Climate")
         self.assertEqual(html, "")
 
+    @patch.object(worker.requests, "get")
+    @patch.object(worker.feedparser, "parse")
     def test_unrelated_youtube_result_is_not_embedded(self, parse_mock, get_mock):
         response = Mock()
         response.content = b"<feed></feed>"
