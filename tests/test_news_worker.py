@@ -201,7 +201,7 @@ class TrendingNewsRankingTests(unittest.TestCase):
             {"title": "Single source art exhibition", "publisher": "A", "published": now},
             {"title": "Single source sports exhibition", "publisher": "B", "published": now},
         ]
-        ranked = news_worker.rank_trending_news(items, now)
+        ranked = worker.rank_trending_news(items, now)
         self.assertEqual([item["publisher"] for item in ranked], ["A", "B"])
 
 
