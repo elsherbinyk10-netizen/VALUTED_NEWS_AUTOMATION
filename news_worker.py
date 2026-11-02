@@ -1060,24 +1060,19 @@ def main():
         if args.dry_run:
             continue
         try:
-            # If RSS omits artwork/video metadata, check only the publisher's public page metadata.
-            if not item.get("image_url") or not item.get("video_html"):
+            # Resolve article artwork and source text from the publisher page only.
+            # Do not scrape or discover third-party videos automatically: the previous
+            # approach could attach a plausible-looking but unrelated YouTube clip.
+            if not item.get("image_url") or image_url_is_generic(item.get("image_url")) or len(clean_text(item.get("description", "")).split()) < 120:
                 media = fetch_article_media(item["url"])
                 if (not item.get("image_url") or image_url_is_generic(item.get("image_url"))) and media.get("image_url") and not image_url_is_generic(media.get("image_url")):
                     item["image_url"] = media["image_url"]
-                if not item.get("video_html") and media.get("video_html"):
-                    item["video_html"] = media["video_html"]
                 if len(clean_text(item.get("description", "")).split()) < 120 and len(media.get("article_text", "").split()) >= 120:
                     item["description"] = media["article_text"]
                     logging.info("Recovered full source-page text for candidate: %s", item["title"])
-            if not item.get("video_html"):
-                item["video_html"] = fetch_related_youtube_embed(item["title"], item.get("category", ""))
-            # Published articles must have an actual story-matched video embed.
-            # If no confident video can be found, leave this story unprocessed so a later
-            # scheduled run can retry instead of publishing a video-less article.
-            if not item.get("video_html"):
-                logging.warning("Skipped: no relevant embeddable video found; will retry later: %s", item["title"])
-                continue
+            # News stories may publish without a video. An unrelated video is worse
+            # than no video; add one only after a separate editorially verified workflow.
+            item["video_html"] = ""
             block_reasons = auto_publish_block_reasons(item, auto_publish)
             if block_reasons:
                 # Never create an editorial-review placeholder. Leave blocked items out of
