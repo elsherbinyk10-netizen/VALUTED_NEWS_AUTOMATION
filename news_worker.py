@@ -226,6 +226,47 @@ def extract_video_embed(entry):
 
 
 
+def youtube_embed_is_available(video_id):
+    """Verify metadata and the actual YouTube embed response, rejecting blocked/private videos."""
+    if not re.fullmatch(r"[A-Za-z0-9_-]{11}", str(video_id or "")):
+        return False
+    try:
+        metadata = requests.get(
+            "https://www.youtube.com/oembed",
+            params={"url": f"https://www.youtube.com/watch?v={video_id}", "format": "json"},
+            headers={"User-Agent": "VALUTED-NEWS-Media-Check/1.0"},
+            timeout=(3, 7),
+        )
+        payload = metadata.json() if metadata.ok else {}
+        if not (metadata.ok and isinstance(payload, dict) and payload.get("title")):
+            return False
+        # oEmbed alone returns metadata even when embedding is disabled. Probe the
+        # actual iframe endpoint and reject known player-side unavailable messages.
+        player = requests.get(
+            f"https://www.youtube.com/embed/{video_id}",
+            headers={
+                "User-Agent": "Mozilla/5.0 (compatible; ValutedNewsMedia/1.0)",
+                "Accept": "text/html,application/xhtml+xml",
+                "Referer": "https://valutednews.com/",
+            },
+            timeout=(4, 9),
+            allow_redirects=True,
+        )
+        if not player.ok:
+            return False
+        markup = str(getattr(player, "text", "") or "").lower()
+        blocked_markers = (
+            "video unavailable", "this video is unavailable", "private video",
+            "embedding this video is disabled", "embedding disabled",
+            "playback on other websites has been disabled",
+            "uploader has not made this video available",
+            "video is not available in your country",
+        )
+        return not any(marker in markup for marker in blocked_markers)
+    except (requests.RequestException, ValueError):
+        return False
+
+
 def video_embed_is_available(video_html):
     """Check that a supported publisher video endpoint still exposes playable metadata."""
     soup = BeautifulSoup(str(video_html or ""), "html.parser")
@@ -235,20 +276,7 @@ def video_embed_is_available(video_html):
         host = (parsed.hostname or "").lower()
         parts = [part for part in parsed.path.split("/") if part]
         if host in {"youtube-nocookie.com", "www.youtube-nocookie.com", "youtube.com", "www.youtube.com"} and len(parts) >= 2 and parts[0] == "embed":
-            video_id = parts[1]
-            if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id):
-                return False
-            try:
-                response = requests.get(
-                    "https://www.youtube.com/oembed",
-                    params={"url": f"https://www.youtube.com/watch?v={video_id}", "format": "json"},
-                    headers={"User-Agent": "VALUTED-NEWS-Media-Check/1.0"},
-                    timeout=(3, 7),
-                )
-                payload = response.json() if response.ok else {}
-                return bool(response.ok and isinstance(payload, dict) and payload.get("title"))
-            except (requests.RequestException, ValueError):
-                return False
+            return youtube_embed_is_available(parts[1])
         if host in {"player.vimeo.com"} and len(parts) >= 2 and parts[0] == "video" and parts[1].isdigit():
             try:
                 response = requests.get(
