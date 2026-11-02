@@ -158,6 +158,22 @@ def main():
     if not SHOP:
         raise RuntimeError("Missing SHOPIFY_STORE_DOMAIN.")
     resources = list_resources()
+    # Preflight the required Shopify translation scope once before processing a batch.
+    if resources:
+        try:
+            get_resource(resources[0]["id"])
+        except Exception as error:
+            message = str(error)
+            if "read_translations" in message or "translatableResource" in message or "Access denied" in message:
+                raise SystemExit(
+                    "Shopify translation is blocked: the Admin API app token lacks "
+                    "the read_translations access scope. Add read_translations to the "
+                    "Valuted News Shopify app, save the app configuration, reinstall/"
+                    "reauthorize the app, update GitHub Actions credentials if changed, "
+                    "then rerun this workflow. No translations were registered. Original error: "
+                    + message
+                ) from error
+            raise
     # Persist queue progress across runs. New/updated resources are rechecked every run.
     from pathlib import Path
     state_path = Path(__file__).resolve().parent / "data" / "translation_state.json"
