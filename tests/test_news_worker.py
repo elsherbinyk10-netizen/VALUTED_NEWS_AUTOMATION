@@ -150,18 +150,31 @@ class VideoEmbedTests(unittest.TestCase):
             "url": "https://example.com/story",
             "image_url": "https://images.example.com/story.jpg",
             "description": "This is a sufficiently detailed source summary with relevant facts, verified context, chronology, named details, and supporting information. " * 30,
+            "video_html": '<iframe src="https://www.youtube-nocookie.com/embed/AbCdEf12345"></iframe>',
             "risk": False,
         }
-        self.assertTrue(worker.should_auto_publish(item, True))
-        item["image_url"] = ""
-        self.assertFalse(worker.should_auto_publish(item, True))
-        item["image_url"] = "https://images.example.com/story.jpg"
-        self.assertFalse(worker.should_auto_publish(item, False))
-        item["risk"] = True
-        self.assertFalse(worker.should_auto_publish(item, True))
-        item["risk"] = False
-        item["description"] = "Too short"
-        self.assertFalse(worker.should_auto_publish(item, True))
+        with patch.object(worker, "video_embed_is_available", return_value=True):
+            self.assertTrue(worker.should_auto_publish(item, True))
+            item["image_url"] = ""
+            self.assertFalse(worker.should_auto_publish(item, True))
+            item["image_url"] = "https://images.example.com/story.jpg"
+            self.assertFalse(worker.should_auto_publish(item, False))
+            item["risk"] = True
+            self.assertFalse(worker.should_auto_publish(item, True))
+            item["risk"] = False
+            item["description"] = "Too short"
+            self.assertFalse(worker.should_auto_publish(item, True))
+
+    def test_auto_publish_blocks_article_without_original_source_video(self):
+        item = {
+            "title": "A science discovery announced by NASA",
+            "url": "https://example.com/story",
+            "image_url": "https://images.example.com/story.jpg",
+            "description": "This is a sufficiently detailed source summary with relevant facts, verified context, chronology, named details, and supporting information. " * 30,
+            "risk": False,
+        }
+        reasons = worker.auto_publish_block_reasons(item, True)
+        self.assertTrue(any("no original-source video" in reason for reason in reasons))
 
     def test_feed_text_prefers_longest_content_and_formats_paragraphs(self):
         entry = {
