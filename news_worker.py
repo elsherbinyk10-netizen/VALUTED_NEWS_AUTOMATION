@@ -768,11 +768,16 @@ def create_shopify_article(blog_id, title, summary, body, source_url, publisher,
         + f'<hr><p><strong>Source:</strong> {publisher_safe}. '
           f'<a href="{source}" rel="nofollow noopener">Read the original report</a></p>'
     )
+    seo_title = re.sub(r"\s+", " ", clean_text(title))[:68].rstrip(" -|:")
+    seo_description = re.sub(r"\s+", " ", clean_text(summary or title))
+    if len(seo_description) > 155:
+        seo_description = seo_description[:152].rsplit(" ", 1)[0].rstrip(" ,;:") + "..."
     article = {
         "blogId": blog_id,
         "title": title[:120],
         "body": body_with_credit,
         "summary": summary[:300],
+        "seo": {"title": seo_title, "description": seo_description},
         "tags": ["Valuted News", category, publisher],
         "author": {"name": "Valuted News Desk"},
         "isPublished": bool(publish),
