@@ -8134,6 +8134,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "b904d7c4698a86bdf29484513fe4f27620a4284e954c6656def04caba27bf98c": {
+      "seen_at": "2026-11-02T17:28:15.417756+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "b90fcd30380e8b6ea68f06560016100cf558bfaba89898f48b79aeec0b07c0c9": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Rolling Stone Music News",
