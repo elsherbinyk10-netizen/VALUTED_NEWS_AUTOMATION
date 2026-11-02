@@ -20,6 +20,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "011662a6775c12286f2cc4dae52c6e275cf7069e289494bbac833f82a0708127": {
+      "seen_at": "2026-11-02T19:21:49.233918+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "0119f0ea458e702750d19929ba71fdeed2232518472fd04028a931d4b7909998": {
       "seen_at": "2026-10-17T04:37:20.456657+00:00",
       "source": "Google News Technology",
@@ -1913,6 +1918,11 @@
       "source_url": "https://www.rollingstone.com/music/music-news/john-mayer-tom-and-jerry-new-single-1235645973",
       "status": "published",
       "title": "John Mayer Recruits Dream Team of Musicians for New Song \u2018Tom and Jerry\u2019"
+    },
+    "28e5bd867724afa7369a373d6e95a312aa7b4d5f37ef0eda1e89c6f142b4f6e9": {
+      "seen_at": "2026-11-02T19:21:49.233918+00:00",
+      "source": "Google News Health",
+      "status": "skipped_stale"
     },
     "28f059c34403f29bfdb8c9c4e1100a24771a1995d7458fffe96e37b8464d367c": {
       "created_at": "2026-10-22T06:37:07.545122+00:00",
@@ -7525,6 +7535,11 @@
     },
     "9fa73e238996484ab012065368fdea5a46a72c07a536d6699d4daded22ddd5a7": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "9fdd859de5445198a141ff8f31f0d5aeb8960798d1029b90f90f541a774df6ce": {
+      "seen_at": "2026-11-02T19:21:49.233918+00:00",
       "source": "BBC World",
       "status": "skipped_stale"
     },
