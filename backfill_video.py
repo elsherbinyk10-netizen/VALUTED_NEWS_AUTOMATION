@@ -154,7 +154,7 @@ def main():
             current_sources = re.findall(r'<iframe\b[^>]*src=["\']([^"\']+)["\']', original_body, re.I)
             candidate_sources = re.findall(r'<iframe\b[^>]*src=["\']([^"\']+)["\']', candidate, re.I)
 
-            if candidate and current_sources == candidate_sources and body_without_video != original_body:
+            if candidate and current_sources and current_sources == candidate_sources:
                 unchanged += 1
                 attempted[article_id] = now.isoformat()
                 continue
