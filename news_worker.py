@@ -857,7 +857,10 @@ def build_related_internal_links(title, category, related_articles, max_links=3)
 
 def build_news_jsonld(title, summary, category, image_url="", published_at=None):
     """Build factual NewsArticle JSON-LD from known article and publisher metadata."""
-    keyword_tokens = sorted(_trend_tokens(title) | _trend_tokens(category))
+    keyword_tokens = []
+    for token in re.findall(r"[A-Za-z0-9][A-Za-z0-9'-]{1,}", clean_text(title) + " " + clean_text(category)):
+        if token.casefold() not in {value.casefold() for value in keyword_tokens}:
+            keyword_tokens.append(token)
     schema = {
         "@context": "https://schema.org", "@type": "NewsArticle",
         "headline": clean_text(title)[:110], "description": clean_text(summary)[:300],
