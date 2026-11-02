@@ -606,6 +606,7 @@ def load_existing_shopify_story_index(blog_id):
     query = """
     query ExistingNewsStories($id: ID!) {
       blog(id: $id) {
+        handle
         articles(first: 250, reverse: true) {
           nodes { title handle body }
         }
