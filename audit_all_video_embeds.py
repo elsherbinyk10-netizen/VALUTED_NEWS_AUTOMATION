@@ -74,7 +74,7 @@ def main():
     if not env("SHOPIFY_STORE_DOMAIN"):
         raise RuntimeError("Missing SHOPIFY_STORE_DOMAIN.")
     articles = list_all_published_articles()
-    checked = broken_total = replaced = healthy = unresolved = errors = 0
+    checked = broken_total = replaced = added = healthy = unresolved = errors = 0
     logging.info(
         "Starting full video playback audit across %d published Valuted News articles.",
         len(articles),
@@ -95,9 +95,34 @@ def main():
                 if sources:
                     healthy += 1
                     logging.info("VIDEO_OK: %s (%d iframe(s))", title, len(sources))
+                    continue
+
+                # Missing-video articles must go through the same safe recovery
+                # path as broken players: first inspect the cited publisher page,
+                # then accept only a title-matched related clip whose player responds.
+                logging.warning("VIDEO_MISSING: no embedded video found; searching verified replacements: %s", title)
+                source_url = primary_source_url(body)
+                media = fetch_article_media(source_url) if source_url else {"video_html": ""}
+                candidate = media.get("video_html") or ""
+                candidate_kind = "publisher"
+                if candidate and not video_embed_is_available(candidate):
+                    candidate = ""
+
+                if not candidate:
+                    category = " ".join(article.get("tags") or [])
+                    candidate = fetch_related_youtube_embed(title, category) or ""
+                    candidate_kind = "title-matched related"
+                    if candidate and not video_embed_is_available(candidate):
+                        candidate = ""
+
+                if candidate:
+                    updated = insert_related_video(body, candidate)
+                    update_body(str(article["id"]), updated)
+                    added += 1
+                    logging.info("VIDEO_ADDED: inserted verified %s video: %s", candidate_kind, title)
                 else:
-                    logging.warning("VIDEO_MISSING: no embedded video found: %s", title)
                     unresolved += 1
+                    logging.error("VIDEO_UNRESOLVED: no verified replacement found: %s", title)
                 continue
 
             broken_total += len(broken)
@@ -144,9 +169,9 @@ def main():
             logging.exception("VIDEO_AUDIT_ERROR: %s", title)
 
     logging.info(
-        "FULL VIDEO AUDIT SUMMARY: checked=%d healthy_articles=%d broken_iframes=%d "
-        "repaired=%d unresolved=%d errors=%d at=%s",
-        checked, healthy, broken_total, replaced, unresolved, errors,
+        "FULL VIDEO AUDIT SUMMARY: checked=%d healthy_articles=%d missing_video_added=%d "
+        "broken_iframes=%d repaired=%d unresolved=%d errors=%d at=%s",
+        checked, healthy, added, broken_total, replaced, unresolved, errors,
         datetime.now(timezone.utc).isoformat(),
     )
     if errors:
