@@ -5991,6 +5991,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "7f44fc4d1722eb16e32edd65fa9ab4434c566c413f92876745705a0af8a232fc": {
+      "seen_at": "2026-11-02T19:40:38.146832+00:00",
+      "source": "Google News India Top Stories",
+      "status": "skipped_stale"
+    },
     "7f46da1880e7ae746b58fb1b2054dda8395c7b912a8d8f339adc457111bcb351": {
       "seen_at": "2026-10-19T18:47:42.889839+00:00",
       "source": "Google News Technology",
@@ -11231,6 +11236,11 @@
     "ef96175331f33598955ada750461212d41f7363fb30f3bd070e0c0e1a1e3c412": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "effa95e94a715bfb67f5bc609b64b3813dd7e2d3ea5bb37b0fcdcd4940049e13": {
+      "seen_at": "2026-11-02T19:40:38.146832+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "f0081231c7988dffe7c996a2d225c20e99e06447db8c4b2e0edddd92018e5e3b": {
