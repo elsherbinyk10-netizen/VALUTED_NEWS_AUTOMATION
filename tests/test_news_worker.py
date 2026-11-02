@@ -107,6 +107,22 @@ class VideoEmbedTests(unittest.TestCase):
         self.assertIn("StoryVideo123", media["video_html"])
         self.assertNotIn("Sidebar12345", media["video_html"])
 
+    @patch.object(worker.requests, "get")
+    def test_publisher_video_extraction_ignores_sitewide_sidebar_iframes(self, get_mock):
+        response = Mock()
+        response.ok = True
+        response.url = "https://publisher.example/story"
+        response.encoding = "utf-8"
+        response.headers = {"Content-Type": "text/html; charset=utf-8"}
+        response.iter_content.return_value = [
+            b'<html><body><article><h1>Story</h1><iframe src="https://www.youtube.com/embed/AbCdEf12345"></iframe></article><aside><iframe src="https://player.vimeo.com/video/987654321"></iframe></aside></body></html>'
+        ]
+        response.close.return_value = None
+        get_mock.return_value = response
+        media = worker.fetch_article_media("https://publisher.example/story")
+        self.assertIn("youtube-nocookie.com/embed/AbCdEf12345", media["video_html"])
+        self.assertNotIn("987654321", media["video_html"])
+
     def test_auto_publish_requires_flag_low_risk_summary_and_news_image(self):
         item = {
             "title": "A science discovery announced by NASA",
