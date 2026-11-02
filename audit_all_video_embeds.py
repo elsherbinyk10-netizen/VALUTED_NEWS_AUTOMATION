@@ -40,6 +40,48 @@ def iframe_sources(body):
     return re.findall(r"""<iframe\b[^>]*src=["']([^"']+)["']""", body or "", re.I)
 
 
+def existing_relevant_credit_video(title, body):
+    """Restore a previously selected related YouTube link only when its title matches."""
+    import html
+    from urllib.parse import parse_qs, urlparse
+
+    match = re.search(
+        r'<p\\b[^>]*class=["\\'][^"\\']*vn-video-credit[^"\\']*["\\'][^>]*>'
+        r'[\\s\\S]*?<a\\b[^>]*href=["\\']([^"\\']+)["\\'][^>]*>(.*?)</a>',
+        body or "", re.I,
+    )
+    if not match:
+        return ""
+    url = html.unescape(match.group(1))
+    label = re.sub(r"<[^>]+>", " ", html.unescape(match.group(2)))
+    parsed = urlparse(url)
+    video_id = parse_qs(parsed.query).get("v", [""])[0]
+    if parsed.hostname not in {"www.youtube.com", "youtube.com"} or parsed.path != "/watch":
+        return ""
+    if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id):
+        return ""
+
+    stop = {"about", "after", "before", "could", "their", "there", "these", "those",
+            "what", "when", "where", "will", "from", "with", "into", "over", "news",
+            "video", "official", "report", "story", "latest", "youngest", "world"}
+    title_terms = {w for w in re.findall(r"[a-zA-Z0-9]{3,}", title.lower()) if w not in stop}
+    label_terms = {w for w in re.findall(r"[a-zA-Z0-9]{3,}", label.lower()) if w not in stop}
+    if len(title_terms & label_terms) < 2:
+        return ""
+
+    safe_title = html.escape(label or "Related video", quote=True)
+    candidate = (
+        '<div class="valuted-news-video" style="position:relative;width:100%;aspect-ratio:16/9;margin:24px 0">'
+        '<iframe src="https://www.youtube-nocookie.com/embed/' + video_id +
+        '" title="' + safe_title + '" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" '
+        'allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" '
+        'allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>'
+        '<p class="vn-video-credit">Related video: <a href="https://www.youtube.com/watch?v=' +
+        video_id + '" target="_blank" rel="noopener noreferrer">' + safe_title + '</a> · YouTube</p>'
+    )
+    return candidate if video_embed_is_available(candidate) else ""
+
+
 def strip_broken_iframes(body, broken):
     cleaned = body or ""
     for source in broken:
@@ -108,6 +150,9 @@ def main():
                 if candidate and not video_embed_is_available(candidate):
                     candidate = ""
 
+                if not candidate:
+                    candidate = existing_relevant_credit_video(title, body)
+                    candidate_kind = "previously selected related"
                 if not candidate:
                     category = " ".join(article.get("tags") or [])
                     candidate = fetch_related_youtube_embed(title, category) or ""
