@@ -1,4 +1,5 @@
 import unittest
+from datetime import datetime, timezone
 from unittest.mock import patch, Mock
 
 import feedparser
@@ -190,7 +191,7 @@ class TrendingNewsRankingTests(unittest.TestCase):
             {"title": "Major ocean breakthrough discovered by researchers", "publisher": "NPR", "published": now},
             {"title": "Local museum announces weekend opening", "publisher": "Local", "published": now},
         ]
-        ranked = news_worker.rank_trending_news(items, now)
+        ranked = worker.rank_trending_news(items, now)
         self.assertEqual(ranked[0]["publisher"], "BBC")
         self.assertGreater(ranked[0]["trend_score"], ranked[-1]["trend_score"])
 
