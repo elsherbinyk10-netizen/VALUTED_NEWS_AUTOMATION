@@ -14,19 +14,22 @@ PLAYER_HOSTS = (
     "youtube.com", "youtube-nocookie.com", "youtu.be", "vimeo.com",
     "brightcove.net", "jwplayer.com", "jwplatform.com", "dailymotion.com",
     "wistia.net", "wistia.com", "kaltura.com", "theplatform.com",
-    "vidyard.com", "sproutvideo.com", "cloudinary.com",
+    "vidyard.com", "sproutvideo.com", "cloudinary.com", "ooyala.com", "video.ibm.com", "ustream.tv",
 )
 
 
-def _trusted_player_url(url):
+def _trusted_player_url(url, source_host=""):
     parsed = urlparse(url or "")
     host = (parsed.hostname or "").lower().rstrip(".")
     if parsed.scheme != "https" or not host:
         return False
     trusted = any(host == domain or host.endswith("." + domain) for domain in PLAYER_HOSTS)
+    # Publishers frequently host their own player on a subdomain of the article domain.
+    publisher_host = (source_host or "").lower().rstrip(".")
+    same_publisher = bool(publisher_host and (host == publisher_host or host.endswith("." + publisher_host)))
     path = parsed.path.lower()
-    return trusted and ("/embed" in path or "/player" in path or "/video" in path
-                        or "/iframe" in path or host.startswith(("player.", "players.", "embed.")))
+    player_path = any(part in path for part in ("/embed", "/player", "/video", "/iframe", "/media"))
+    return (trusted and (player_path or host.startswith(("player.", "players.", "embed.")))) or (same_publisher and player_path)
 
 
 def _frame(src, title):
@@ -57,7 +60,7 @@ def fetch_publisher_video(source_url, timeout=(4, 10)):
         # Prefer the publisher's own article-body iframe; ignore ads and page chrome.
         for iframe in root.find_all("iframe", src=True):
             src = urljoin(response.url, str(iframe.get("src") or "").strip())
-            if not _trusted_player_url(src):
+            if not _trusted_player_url(src, urlparse(response.url).hostname or ""):
                 continue
             try:
                 check = requests.get(src, headers={"User-Agent": USER_AGENT, "Accept": "text/html,*/*"},
