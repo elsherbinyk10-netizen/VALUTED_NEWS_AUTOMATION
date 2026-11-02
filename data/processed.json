@@ -2278,6 +2278,11 @@
       "status": "published",
       "title": "Meta fined $25bn for 'lies' over user data privacy"
     },
+    "2f97c5a553335ef71fdef94c478d6514aaeaddd99c5438c689810058779ff46d": {
+      "seen_at": "2026-11-02T19:37:16.641470+00:00",
+      "source": "Google News India Top Stories",
+      "status": "skipped_stale"
+    },
     "2fa2c9ea33362800af6fc2dda847dacacc0d52db05aa0098b552c6c9f4aa5cee": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "BBC Business",
@@ -7186,6 +7191,17 @@
       "source_url": "https://science.nasa.gov/image-article/apod-2026-november-2-a-long-cloud-on-mars",
       "status": "published",
       "title": "APOD: 2026 November 2 \u2013 A Long Cloud on Mars"
+    },
+    "97a771eca7c9937b477425be755ec9450571cfa70c75281986d81835fcacf7ae": {
+      "created_at": "2026-11-02T19:37:16.641470+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian Sport",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755120177431",
+      "source_url": "https://www.theguardian.com/football/2026/nov/02/jack-grealish-left-out-everton-squad-newcastle-premier-league-david-moyes",
+      "status": "published",
+      "title": "Jack Grealish left out of Everton squad again for Premier League trip to Newcastle"
     },
     "97be6f2ecb6b841e3941b247d112534d3826a14e0cd31cc1e6b846986fee3fdc": {
       "seen_at": "2026-10-28T18:54:08.851553+00:00",
