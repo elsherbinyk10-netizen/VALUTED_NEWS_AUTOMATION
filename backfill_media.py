@@ -393,6 +393,18 @@ def main():
         return not url or generic or repeated_aggregator_art or below_minimum
 
     missing = [a for a in articles if needs_real_image(a)]
+    # Fix the seven severe failures (missing or below 500x300) before routine
+    # large-but-sub-1200 image refreshes, which can otherwise consume the run cap.
+    missing.sort(
+        key=lambda article: (
+            0 if (
+                not (article.get("image") or {}).get("url")
+                or int((article.get("image") or {}).get("width") or 0) < 500
+                or int((article.get("image") or {}).get("height") or 0) < 300
+            ) else 1,
+            str(article.get("title", "")).casefold(),
+        )
+    )
     limit = max(1, min(100, int(env("MEDIA_BACKFILL_LIMIT", "100"))))
     fixed = 0
     unresolved = []
