@@ -7,7 +7,7 @@ publisher-page check; inaccessible source pages are left untouched for safety.
 import json
 import logging
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -31,7 +31,7 @@ def list_articles():
     query PublishedArticlesForVideoBackfill($id: ID!, $after: String) {
       blog(id: $id) {
         articles(first: 250, reverse: true, after: $after) {
-          nodes { id title handle body isPublished tags }
+          nodes { id title handle body isPublished tags updatedAt }
           pageInfo { hasNextPage endCursor }
         }
       }
@@ -137,6 +137,29 @@ def existing_related_video_is_playable(body):
     return bool(match and video_embed_is_available(match.group(0)))
 
 
+def _parse_iso_datetime(value):
+    if not value:
+        return None
+    try:
+        parsed = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+        return parsed if parsed.tzinfo else parsed.replace(tzinfo=timezone.utc)
+    except (TypeError, ValueError, OverflowError):
+        return None
+
+
+def should_recheck_article(article, attempted_at, now, interval_hours=168):
+    """Recheck new/changed articles promptly; skip unchanged articles for one week."""
+    last_checked = _parse_iso_datetime(attempted_at)
+    if not last_checked:
+        return True
+    if now - last_checked > timedelta(hours=interval_hours):
+        return True
+    article_updated = _parse_iso_datetime(article.get("updatedAt"))
+    if article_updated and article_updated > last_checked + timedelta(minutes=5):
+        return True
+    return False
+
+
 def main():
     if not env("SHOPIFY_STORE_DOMAIN"):
         raise RuntimeError("Missing SHOPIFY_STORE_DOMAIN.")
@@ -148,9 +171,13 @@ def main():
     logging.info("Published Valuted News articles queued for publisher/player verification: %d", len(articles))
     checked = added = replaced = removed = unchanged = unverified = 0
 
+    recheck_hours = max(1, int(env("VIDEO_RECHECK_HOURS", "168")))
     for article in articles:
         article_id = str(article.get("id") or "")
         title = article.get("title") or "(untitled)"
+        if not should_recheck_article(article, attempted.get(article_id), now, recheck_hours):
+            unchanged += 1
+            continue
         source_url = primary_source_url(article.get("body", ""))
         checked += 1
         try:
