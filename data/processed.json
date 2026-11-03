@@ -2924,6 +2924,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "3976f82113785ba208d1ba7344d3d93da3be2b93263b4b726911105306ee0ff8": {
+      "seen_at": "2026-11-03T14:38:37.681620+00:00",
+      "source": "Google News Health",
+      "status": "skipped_stale"
+    },
     "39939f47f08a67643c23cc12141f796bb5926f2d04c059fd4388bba3cb5cdfbd": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News World",
@@ -6582,6 +6587,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "82ebdc6ed66324f06197cd2f3e634b30ba5a8ec080e2c787e2b29ca4da5db168": {
+      "seen_at": "2026-11-03T14:38:37.681620+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "82fbdd27e64a27c45387f141126b7a7ef811b352256c74fb76c1b952e5755891": {
       "seen_at": "2026-10-14T12:48:42.226493+00:00",
       "source": "BBC Business",
@@ -8897,6 +8907,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "b052532f7e3759250b61dd1d4978b120475ee5e8b8f552a397e934594e00871c": {
+      "seen_at": "2026-11-03T14:38:37.681620+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "b055a5f2b4d6c2ffbfa8decf910551e318c00829d4c9f14c7a65c685921f1d88": {
       "seen_at": "2026-10-19T12:49:09.789011+00:00",
       "source": "Google News Technology",
@@ -9988,6 +10003,17 @@
       "status": "published",
       "title": "Live Nation Defends My Chemical Romance\u2019s Dallas Cowboys Cheerleaders Lookalikes: It Was \u2018Parody\u2019"
     },
+    "c5713532d0c0b478542253f1bb7b326d49c144269c6ccb552cda10dafb613965": {
+      "created_at": "2026-11-03T14:38:37.681620+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755130106135",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwy8lm1m59mvo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Europe on alert after supermarket freezers hit by cyber-attacks in 10 countries"
+    },
     "c588cd195cf7ccdd404b350c4b77867de43aa8276a43d89684c3a4340ce0a983": {
       "seen_at": "2026-10-22T06:48:44.728366+00:00",
       "source": "Google News Entertainment",
@@ -10713,6 +10739,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "d62aa5eecca4a995a9a842d8e0138ea05c03effbc1e9679301fd73eb47a3e9b1": {
+      "seen_at": "2026-11-03T14:38:37.681620+00:00",
+      "source": "Google News Sports",
+      "status": "skipped_stale"
+    },
     "d64e80c26203100f74bb5fe51e0c9c1c6762f0210d6906084905db26ad970377": {
       "created_at": "2026-10-15T12:51:01.714381+00:00",
       "has_publisher_artwork": true,
@@ -11351,6 +11382,17 @@
       "status": "published",
       "title": "Astronaut surprise video leaves pupils starstruck"
     },
+    "e21111a5b1d5b415e35f43e467f25e89bbd5520e321e03e3a8c1770498f888a0": {
+      "created_at": "2026-11-03T14:38:37.681620+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian Technology",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755130138903",
+      "source_url": "https://www.theguardian.com/technology/2026/nov/03/uk-meat-processing-firms-fridges-heat-up-cyber-attacks",
+      "status": "published",
+      "title": "UK meat processing firms\u2019 fridges heat up after cyber-attacks"
+    },
     "e25fc3cbe1b38360e21bb09de742436a5a035ba5f60d65b98848aa87842dc893": {
       "created_at": "2026-10-20T10:37:54.271841+00:00",
       "has_embedded_video": false,
@@ -11508,6 +11550,11 @@
     "e5cad304e22ba05947df18344641f0bd14b1a669e7cf3ec2c724d85f1a6e4fae": {
       "seen_at": "2026-10-20T18:44:16.994007+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "e5f87abdf3f8f2e20d8b1f497a8cdc97f669d713aadee5ee663a27e99459d0f6": {
+      "seen_at": "2026-11-03T14:38:37.681620+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "e6166c36b36bd8b2a990a503129cb1c70aa63df7552b6620e1ce27a3a127c511": {
@@ -12830,6 +12877,11 @@
     "ffa15348f9ca8276bd998e4453e8fed7387c34dc3e0c3383c8a9fe3816e3cec5": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "ffcbc70cb2e451d7d5303d4a9c16c2d451593d712fae2c4db705356644023db0": {
+      "seen_at": "2026-11-03T14:38:37.681620+00:00",
+      "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
     },
     "ffdb7d794cdf358c239a8fdf8cb8fdd1dcdbd552a06b3b0702eddb1b73cec7a5": {
