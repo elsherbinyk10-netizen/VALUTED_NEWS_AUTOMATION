@@ -586,6 +586,11 @@
       "source": "Google News Politics",
       "status": "skipped_stale"
     },
+    "0b8d9af5ada392513107638573907d0ff3c8fb97690c215e1fa262e52c1410ee": {
+      "seen_at": "2026-11-03T08:41:11.273156+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "0ba23f8c47befbea8c8215df606f194c955f79da48c3080c3009a8a93abc4352": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Science",
@@ -5151,6 +5156,11 @@
       "status": "draft",
       "title": "Toxic algorithms wouldn't let them go - now Australia wants an off switch"
     },
+    "6a983277fab14e27d27f27e0c7c2e12c1d79368e86b4e0f9a83cb680fdfd6250": {
+      "seen_at": "2026-11-03T08:41:11.273156+00:00",
+      "source": "Google News Health",
+      "status": "skipped_stale"
+    },
     "6adaf39de44f82fae13f19e75e69faae8dcd4fd9b2a5f625e321eede13325c3f": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Variety Music",
@@ -6945,6 +6955,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "8af2461495c6076cd32e4bf56d6a81a28cbd1b2e27ccfc4de7ea5d3b9cd57cfa": {
+      "seen_at": "2026-11-03T08:41:11.273156+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "8afc06e671fe07c92001a0a73c02122ce617e345a096ec16c2630b34efbdfb57": {
       "seen_at": "2026-10-20T10:14:51.554768+00:00",
       "source": "Google News Technology",
@@ -7699,6 +7714,11 @@
       "status": "published",
       "title": "The South West reacts to Budget announcements"
     },
+    "991e23bd936f581c6d3ac24409546f36e5cac62b1dd58ca2a23d224a84cea5af": {
+      "seen_at": "2026-11-03T08:41:11.273156+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "99b398a27a008d052d789822f5ce59e21c507b424b1e658abb104067e68ba897": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "Google News Science",
@@ -8156,6 +8176,11 @@
       "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
+    "a3f425719cd1db66b923567b020d0088b6c32a8693b1a1906bf242ce4587e407": {
+      "seen_at": "2026-11-03T08:41:11.273156+00:00",
+      "source": "Google News Health",
+      "status": "skipped_stale"
+    },
     "a402c7aef982c63a1d570153ea881328881ae7b81c20aaa7e008fdc04a9028ad": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "BBC World",
@@ -8565,6 +8590,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "abf625b31ee74b02207d9190883c502430c4167fcbccaaed76e41f69751b8b21": {
+      "seen_at": "2026-11-03T08:41:11.273156+00:00",
+      "source": "Google News Politics",
+      "status": "skipped_stale"
+    },
     "ac1082f7012aded73e510d6e0e82625e9553263901b1787683fc9d09fafd8183": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Google News Business",
@@ -8787,6 +8817,11 @@
     "b114b0162d6fb9682a29a92108d7975c52ad3aca017ca24bfe5d35b304387b25": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "b120a70d72b0fc4a0735bec1c5cf6007bec9bec056e85673c0dd841acfed1428": {
+      "seen_at": "2026-11-03T08:41:11.273156+00:00",
+      "source": "Google News UK Top Stories",
       "status": "skipped_stale"
     },
     "b15fb7b3bdba6ff7afecae625487822f2221f0837677a9ef23e0d97e45857418": {
@@ -9644,6 +9679,11 @@
     "c16a95453c1771355251ef28fa3483b1c784d2bd09379c7a36dfb81140c8153b": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "c1daccc6e9516163761d30e5c321bdde2801b5287f3d3f53d3c86f30aa75e2ac": {
+      "seen_at": "2026-11-03T08:41:11.273156+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "c1e60918b29464db36106db2216e57f99ecedbdc9a3361e1d1923844b412a801": {
@@ -11771,6 +11811,17 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "ed08a0256a77de2b48d5d389ace6254a32e74573f5265ed77a6da45d43602bb1": {
+      "created_at": "2026-11-03T08:41:11.273156+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian Technology",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755125944599",
+      "source_url": "https://www.theguardian.com/technology/2026/nov/02/apple-third-quarter-revenue-earnings",
+      "status": "published",
+      "title": "Apple posts stronger-than-expected revenue in first earnings report for new CEO John Ternus"
+    },
     "ed114f73d3dc57a49a20e359e6d75f71d8c481732d1237f376164acd2d04b233": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
       "source": "Google News Health",
@@ -12293,6 +12344,11 @@
     "f811f7369d2c45e0ae16c7a7705cde1e588148374f6dab3cdc9c83f74233ee8d": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "f812bb0314350423d0149c5b94f10fe6506bcdf23ea81429db4becc57141530d": {
+      "seen_at": "2026-11-03T08:41:11.273156+00:00",
+      "source": "Google News Politics",
       "status": "skipped_stale"
     },
     "f817acfd4e8da2e9079d89b91ca879ffdb4067f7651a081f02f846e1a95af36a": {
