@@ -5478,7 +5478,7 @@
       "status": "skipped_stale"
     },
     "6fbe29fcc6990e566f70a39e736eab85bc943526d04261cc8e215fb9f6135665": {
-      "seen_at": "2026-11-03T11:24:55.770845+00:00",
+      "seen_at": "2026-11-03T11:36:05.892944+00:00",
       "source": "Google News Health",
       "status": "skipped_stale"
     },
@@ -6990,6 +6990,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "8ae3047fe38dd494b2a29dd4951eb61b0b34e7fc7bcf1089cea817248cd98304": {
+      "seen_at": "2026-11-03T11:36:05.892944+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "8af2461495c6076cd32e4bf56d6a81a28cbd1b2e27ccfc4de7ea5d3b9cd57cfa": {
       "seen_at": "2026-11-03T08:41:11.273156+00:00",
       "source": "Google News World",
@@ -7614,6 +7619,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "9684048f592d4e16c6207e33b373679049f283aabd775d5a5b95484bbc93daa3": {
+      "seen_at": "2026-11-03T11:36:05.892944+00:00",
+      "source": "Google News India Top Stories",
+      "status": "skipped_stale"
+    },
     "96a1d05f6574f4f54ed7eba4c0f9e30b30da13d4279208823c416fb2a56413b2": {
       "seen_at": "2026-10-20T11:53:48.143603+00:00",
       "source": "BBC World",
@@ -7895,6 +7905,11 @@
     "9c651271bf18e544bff8e4897c95342bc1bdeee695100a425db68415a938a191": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "9c7b7023c483cf3bbd37bb1758352557a4b0f0ade1f5570e802efad0d0b31fb4": {
+      "seen_at": "2026-11-03T11:36:05.892944+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "9c898c14b66fbfa86465b6870237a10f10ae1eb3c4120127710d55fff977fb40": {
@@ -9897,6 +9912,11 @@
     "c51c712d07df2f4261b908ce79ebdbdee53442215b117eb45a5d527d88334d89": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "c5350b600e30be7c325c67b4a663163325a79ef5eca68f8bc3ee424219e4556b": {
+      "seen_at": "2026-11-03T11:36:05.892944+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "c546feec3ff82ee7e2c8a34734ecd2180a36d7785192c6947424f012028a61d3": {
@@ -12029,7 +12049,7 @@
       "status": "skipped_stale"
     },
     "f0a84d9b86bbe8d8b91153bd21b36d7b61f63603591bbd29e587358b7d51d9b2": {
-      "seen_at": "2026-11-03T11:24:55.770845+00:00",
+      "seen_at": "2026-11-03T11:36:05.892944+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
@@ -12438,7 +12458,7 @@
       "status": "skipped_stale"
     },
     "f8aa221527d8f25c7979a41ac8b76d1863dcee28f40f860950cfb84b97ba8d06": {
-      "seen_at": "2026-11-03T11:24:55.770845+00:00",
+      "seen_at": "2026-11-03T11:36:05.892944+00:00",
       "source": "The Guardian World",
       "status": "skipped_stale"
     },
