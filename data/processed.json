@@ -12298,6 +12298,17 @@
       "source": "The Guardian World",
       "status": "skipped_stale"
     },
+    "f1b76784ddc820a77909065584a48998e1e0a5b509235a6a99fbad881bac4251": {
+      "created_at": "2026-11-03T16:47:55.955986+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian Culture",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755131449623",
+      "source_url": "https://www.theguardian.com/culture/2026/nov/03/spain-poet-lorca-gay-icon-la-bola-negra",
+      "status": "published",
+      "title": "\u2018His voice was too queer \u2013 so they silenced him\u2019: how Spain\u2019s national poet Lorca finally became a gay icon"
+    },
     "f1d7134978766797023aa5f4194cc866ddc1746f61b65117b29a5dc765d86c67": {
       "seen_at": "2026-10-24T18:39:21.262654+00:00",
       "source": "Google News Technology",
