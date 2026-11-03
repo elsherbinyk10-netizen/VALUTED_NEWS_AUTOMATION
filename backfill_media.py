@@ -302,7 +302,7 @@ def update_article(article, image_url, alt_text, credit=""):
 def youtube_video_thumbnail(title, body, excluded_identities=None):
     """Use a matching article-embedded video's verified 1280x720 thumbnail as fallback."""
     video_ids = list(dict.fromkeys(re.findall(
-        r"(?:youtube\.com/(?:embed/|watch\?v=)|youtu\.be/)([A-Za-z0-9_-]{11})",
+        r"(?:youtube(?:-nocookie)?\.com/(?:embed/|watch\?v=)|youtu\.be/)([A-Za-z0-9_-]{11})",
         str(body or ""),
     )))
     expected = set(re.findall(r"[a-z0-9]{3,}", str(title or "").lower()))
@@ -318,7 +318,7 @@ def youtube_video_thumbnail(title, body, excluded_identities=None):
             response.raise_for_status()
             video_title = clean_text(str(response.json().get("title") or ""))
             observed = set(re.findall(r"[a-z0-9]{3,}", video_title.lower())) - stop
-            if len(expected & observed) < 2:
+            if len(expected & observed) < (1 if len(expected) <= 3 else 2):
                 logging.info("Skipping unrelated embedded video thumbnail for %s: %s", title, video_title)
                 continue
             image_url = "https://img.youtube.com/vi/" + video_id + "/maxresdefault.jpg"
@@ -472,7 +472,7 @@ def main():
             illustration = wikimedia_image(article["title"], excluded_image_identities)
             if not illustration:
                 illustration = {
-                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Front_of_server_racks_at_NERSC.jpg/2560px-Front_of_server_racks_at_NERSC.jpg",
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Front_of_server_racks_at_NERSC.jpg/1280px-Front_of_server_racks_at_NERSC.jpg",
                     "alt": "Illustrative data-center server racks for a technology news guide (not a depiction of a specific event)",
                     "credit": "Image credit: Wikimedia Commons — Front of server racks at NERSC.jpg by Derrick Coetzee · CC0 1.0 · https://commons.wikimedia.org/wiki/File:Front_of_server_racks_at_NERSC.jpg",
                 }
