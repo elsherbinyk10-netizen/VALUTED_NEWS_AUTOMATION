@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - "news_worker.py"
+      - "article_quality.py"
       - "publisher_video.py"
       - "backfill_media.py"
       - "backfill_video.py"
@@ -74,6 +75,9 @@ jobs:
 
       - name: Test video embed and editorial safety
         run: python -m unittest discover -s tests -v
+
+      - name: Run article text-integrity checks
+        run: python -m unittest tests/test_article_quality.py -v
 
       - name: Run RSS collector
         run: python news_worker.py
