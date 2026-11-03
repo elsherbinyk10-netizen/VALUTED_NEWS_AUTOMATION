@@ -2,7 +2,7 @@
 import re
 from html import unescape
 
-MOJIBAKE_MARKERS = ("Ã", "Â", "â€", "ï¿½", "�")
+MOJIBAKE_MARKERS = ("Ã", "Â", "â€", "â\x80", "â\x81", "ï¿½", "�")
 
 
 def repair_mojibake(value):
