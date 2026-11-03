@@ -297,7 +297,7 @@ def update_article(article, image_url, alt_text, credit=""):
 def youtube_video_thumbnail(title, body, excluded_identities=None):
     """Use a matching article-embedded video's verified 1280x720 thumbnail as fallback."""
     video_ids = list(dict.fromkeys(re.findall(
-        r"(?:youtube\\.com/(?:embed/|watch\\?v=)|youtu\\.be/)([A-Za-z0-9_-]{11})",
+        r"(?:youtube\.com/(?:embed/|watch\?v=)|youtu\.be/)([A-Za-z0-9_-]{11})",
         str(body or ""),
     )))
     expected = set(re.findall(r"[a-z0-9]{3,}", str(title or "").lower()))
