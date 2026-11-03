@@ -15,7 +15,9 @@ on:
       - "feeds.json"
       - ".github/workflows/news-collector.yml"
   schedule:
-    - cron: "17 6,12,18 * * *" # Recovery trigger requested on 2026-10-22
+    - cron: "17 6,12,18 * * *" # Primary publishing windows
+    # Independent recovery checks roughly 90 minutes after each primary run.
+    - cron: "47 7,13,19 * * *"
 
 permissions:
   contents: write
