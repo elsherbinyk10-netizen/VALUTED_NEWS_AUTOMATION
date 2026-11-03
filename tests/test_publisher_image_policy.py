@@ -24,6 +24,18 @@ class PublisherImagePolicyTests(unittest.TestCase):
         self.assertTrue(result["ok"])
         self.assertEqual(result["publisher_host"], "publisher.example")
 
+    def test_accepts_source_headline_variant_with_two_strong_matching_terms(self):
+        page = PAGE.replace(
+            "NASA discovers new moon around distant planet",
+            "A surreal night in Paris: Looting, selfies and terrace drinks",
+        )
+        result = inspect_publisher_page(
+            "https://publisher.example/story/one", page,
+            "Looting and damage reported in Paris as unrest hits shops and restaurants",
+            "2026-11-02T10:00:00Z",
+        )
+        self.assertTrue(result["ok"])
+
     def test_rejects_unrelated_publisher_page(self):
         result = inspect_publisher_page(
             "https://publisher.example/story/one", PAGE,
