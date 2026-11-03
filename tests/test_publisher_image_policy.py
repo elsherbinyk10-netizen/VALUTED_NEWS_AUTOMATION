@@ -75,6 +75,31 @@ class PublisherImagePolicyTests(unittest.TestCase):
         self.assertFalse(result["ok"])
         self.assertEqual(result["reason"], "publisher-date-outside-article-window")
 
+    def test_rejects_article_update_when_publisher_has_no_modified_date(self):
+        page = PAGE.replace(
+            '<meta property="article:modified_time" content="2026-11-02T12:00:00Z">', ""
+        )
+        result = inspect_publisher_page(
+            "https://publisher.example/story/one", page,
+            "NASA discovers new moon around distant planet",
+            "2026-11-02T10:00:00Z", "2026-11-03T10:00:00Z",
+        )
+        self.assertFalse(result["ok"])
+        self.assertEqual(result["reason"], "publisher-update-date-missing")
+
+    def test_rejects_mismatched_publisher_update_date(self):
+        page = PAGE.replace(
+            'content="2026-11-02T12:00:00Z"',
+            'content="2026-11-02T12:00:00Z"',
+        )
+        result = inspect_publisher_page(
+            "https://publisher.example/story/one", page,
+            "NASA discovers new moon around distant planet",
+            "2026-11-02T10:00:00Z", "2026-11-20T10:00:00Z",
+        )
+        self.assertFalse(result["ok"])
+        self.assertEqual(result["reason"], "publisher-update-date-mismatch")
+
 
 if __name__ == "__main__":
     unittest.main()
