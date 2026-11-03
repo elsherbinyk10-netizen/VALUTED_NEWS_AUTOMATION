@@ -1,4 +1,4 @@
-"""Find published articles with absent, placeholder, or suspiciously reused featured art and repair them.
+"""Find published articles with absent, placeholder, or suspiciously reused featured art.
 
 This script deliberately errs on the side of review: it only requeues clear failures
 (missing/generic image, dead image URL, or one identical image used for unrelated
@@ -78,7 +78,7 @@ def main():
                             continue
                         verdict = verify_publisher_image(
                             page.url, page.text, article.get("title", ""), url,
-                            article.get("publishedAt"),
+                            article.get("publishedAt"), article.get("updatedAt"),
                         )
                     finally:
                         page.close()
@@ -115,7 +115,7 @@ def main():
         logging.info("No obvious image failures detected.")
         return
 
-    # Reuse the existing source-metadata/licensed-Commons repair logic for only flagged rows.
+    # Requeue only candidates through the strict publisher-only repair path.
     targeted = []
     for article, reason in flagged.values():
         row = dict(article)
