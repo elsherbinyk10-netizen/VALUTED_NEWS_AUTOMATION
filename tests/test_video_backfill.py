@@ -6,6 +6,19 @@ import backfill_media
 
 
 class PublisherVideoBackfillTests(unittest.TestCase):
+    def test_skips_articles_with_valid_youtube_nocookie_embed(self):
+        now = backfill_video.datetime(2026, 11, 3, 12, 0, tzinfo=backfill_video.timezone.utc)
+        article = {
+            "body": '<iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"></iframe>',
+            "updatedAt": "2026-11-03T11:59:00Z",
+        }
+        self.assertFalse(backfill_video.should_recheck_article(article, None, now))
+
+    def test_rechecks_articles_without_valid_embedded_player(self):
+        now = backfill_video.datetime(2026, 11, 3, 12, 0, tzinfo=backfill_video.timezone.utc)
+        article = {"body": '<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Video</a>'}
+        self.assertTrue(backfill_video.should_recheck_article(article, None, now))
+
     def test_skips_recently_checked_unchanged_articles(self):
         now = backfill_video.datetime(2026, 11, 3, 12, 0, tzinfo=backfill_video.timezone.utc)
         article = {"updatedAt": "2026-11-02T12:00:00Z"}
