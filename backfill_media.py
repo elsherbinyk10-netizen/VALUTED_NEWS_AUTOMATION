@@ -80,9 +80,14 @@ def source_urls(body):
 
 
 def find_publisher_source(title):
-    """Search Google News RSS for the exact story, then resolve to the publisher URL.
-    Google News is used only to discover a source URL, never as an image source.
-    """
+    """Return a known exact publisher URL, otherwise discover it via Google News RSS."""
+    overrides = {
+        "rep. ilhan omar’s lawyers say authorities ignored judge’s restrictions on home search - the washington post":
+            "https://www.washingtonpost.com/national-security/2026/10/16/rep-ilhan-omars-lawyers-say-authorities-ignored-judges-restrictions-home-search/",
+    }
+    override = overrides.get(str(title or "").casefold())
+    if override:
+        return override
     endpoint = "https://news.google.com/rss/search?q=" + quote_plus('"' + title + '"') + "&hl=en-US&gl=US&ceid=US:en"
     try:
         response = requests.get(endpoint, headers=HEADERS, timeout=(5, 12), allow_redirects=True)
@@ -466,19 +471,11 @@ def main():
         if not chosen and article["title"] == "How to Follow Technology News: AI, Cybersecurity, Gadgets and Digital Trends":
             illustration = wikimedia_image(article["title"], excluded_image_identities)
             if not illustration:
-                illustration = wikimedia_image(
-                    "computer cybersecurity network server", excluded_image_identities
-                )
-                if illustration:
-                    illustration["alt"] = (
-                        "Illustrative image related to: " + article["title"]
-                        + " (not necessarily depicting a specific event)"
-                    )
-            if not illustration:
-                try:
-                    illustration = openverse_image(article["title"], excluded_image_identities)
-                except requests.RequestException as exc:
-                    logging.warning("Openverse fallback unavailable for evergreen technology guide: %s", exc)
+                illustration = {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Front_of_server_racks_at_NERSC.jpg/2560px-Front_of_server_racks_at_NERSC.jpg",
+                    "alt": "Illustrative data-center server racks for a technology news guide (not a depiction of a specific event)",
+                    "credit": "Image credit: Wikimedia Commons — Front of server racks at NERSC.jpg by Derrick Coetzee · CC0 1.0 · https://commons.wikimedia.org/wiki/File:Front_of_server_racks_at_NERSC.jpg",
+                }
             if illustration:
                 chosen = {
                     "url": illustration["url"],
