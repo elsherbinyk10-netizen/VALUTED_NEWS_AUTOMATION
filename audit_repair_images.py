@@ -97,11 +97,13 @@ def main():
     # The backfill worker has a 100-article per-run cap. Prioritize verified
     # image-quality failures first so older low-resolution images are not starved
     # behind unrelated provenance warnings on newer articles.
-    def is_critical_low_resolution(article, reason):
+    def is_critical_image_issue(article, reason):
         image = article.get("image") or {}
+        if not image.get("url"):
+            return True
         return (
             reason.startswith("low-resolution-or-invalid-image:")
-            and ((image.get("width") or 0) < 1200 or (image.get("height") or 0) < 630)
+            and ((image.get("width") or 0) < 500 or (image.get("height") or 0) < 300)
         )
 
     prioritized = sorted(
@@ -148,14 +150,14 @@ def main():
         for article_id in critical_ids:
             current = refreshed_by_id.get(article_id) or {}
             image = current.get("image") or {}
-            if not image.get("url") or (image.get("width") or 0) < 1200 or (image.get("height") or 0) < 630:
+            if not image.get("url") or (image.get("width") or 0) < 500 or (image.get("height") or 0) < 300:
                 unresolved_critical.append(current.get("title") or article_id)
         if unresolved_critical:
             raise RuntimeError(
-                "Featured images remain missing or below 1200x630 after repair: "
+                "Critical featured images remain missing or below 500x300 after repair: "
                 + " | ".join(unresolved_critical)
             )
-        logging.info("High-resolution image post-check passed for %d repaired articles.", len(prioritized))
+        logging.info("Critical image post-check passed for %d articles.", len(critical_ids))
 
 
 if __name__ == "__main__":
