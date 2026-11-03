@@ -12,6 +12,7 @@ from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
 import feedparser
 import requests
 from bs4 import BeautifulSoup
+from image_quality import inspect_image_url
 from publisher_video import fetch_publisher_video, _trusted_player_url
 from dateutil import parser as dateparser
 
@@ -590,6 +591,13 @@ def fetch_article_media(source_url):
                 if image_url:
                     break
 
+        # Enforce real source dimensions; reject tiny thumbnails rather than enlarging them.
+        if image_url:
+            quality = inspect_image_url(image_url)
+            if not quality.get("ok"):
+                logging.info("Rejected publisher image for %s: %s (%sx%s)", source_url, quality.get("reason"), quality.get("width", "?"), quality.get("height", "?"))
+                image_url = ""
+
         # Restrict video discovery to explicit publisher metadata or embeds inside
         # the source article/main content. Never scrape site-wide ad/sidebar iframes.
         article_root = soup.find("article") or soup.find("main") or soup
@@ -936,6 +944,8 @@ def auto_publish_block_reasons(item, auto_publish):
     # Any attached player is checked separately before it reaches the public article.
     if not canonical_url(image_url) or image_url_is_generic(image_url):
         reasons.append("missing or generic featured image")
+    elif not inspect_image_url(image_url).get("ok"):
+        reasons.append("featured image failed high-resolution image validation")
     parsed_image = urlparse(image_url) if image_url else None
     image_host = (parsed_image.hostname or "").lower() if parsed_image else ""
     if image_host in {"valutednews.com", "www.valutednews.com", "skyvalutsweather.space", "solepick.site", "valutedmovies.online", "pdfdownloader.online", "news.google.com", "google.com", "www.google.com"}:
@@ -1269,6 +1279,9 @@ def main():
             # Resolve all media from the exact cited publisher page. Publisher-page
             # video embeds may be used; search-result videos are never attached.
             media = fetch_article_media(item["url"])
+            if item.get("image_url") and not inspect_image_url(item["image_url"]).get("ok"):
+                logging.info("RSS thumbnail below quality threshold; replacing from publisher metadata: %s", item["title"])
+                item["image_url"] = ""
             if (not item.get("image_url") or image_url_is_generic(item.get("image_url"))) and media.get("image_url") and not image_url_is_generic(media.get("image_url")):
                 item["image_url"] = media["image_url"]
             if len(clean_text(item.get("description", "")).split()) < 120 and len(clean_text(media.get("article_text", "")).split()) >= 120:
