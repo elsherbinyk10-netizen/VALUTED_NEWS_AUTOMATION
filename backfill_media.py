@@ -401,7 +401,7 @@ def main():
                         "alt": article["title"],
                         "credit": "",
                     }
-                    source = provenance["publisher_host"] + " (" + provenance["source_date"] + ")"
+                    source = provenance["publisher_host"] + " (" + provenance["published_date"] + ")"
                     break
                 if chosen:
                     break
