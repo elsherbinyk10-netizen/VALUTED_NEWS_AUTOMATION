@@ -412,7 +412,19 @@ def main():
         if not chosen and article["title"] == "How to Follow Technology News: AI, Cybersecurity, Gadgets and Digital Trends":
             illustration = wikimedia_image(article["title"], excluded_image_identities)
             if not illustration:
-                illustration = openverse_image(article["title"], excluded_image_identities)
+                illustration = wikimedia_image(
+                    "computer cybersecurity network server", excluded_image_identities
+                )
+                if illustration:
+                    illustration["alt"] = (
+                        "Illustrative image related to: " + article["title"]
+                        + " (not necessarily depicting a specific event)"
+                    )
+            if not illustration:
+                try:
+                    illustration = openverse_image(article["title"], excluded_image_identities)
+                except requests.RequestException as exc:
+                    logging.warning("Openverse fallback unavailable for evergreen technology guide: %s", exc)
             if illustration:
                 chosen = {
                     "url": illustration["url"],
