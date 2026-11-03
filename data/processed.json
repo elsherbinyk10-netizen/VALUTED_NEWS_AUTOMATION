@@ -627,6 +627,17 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "0c99334a12ae9024e559e1e0a61af244faa1397f3a1cd1af75063bbef8a56134": {
+      "created_at": "2026-11-03T13:06:39.552925+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755129549079",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/ck62yvz046pjo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Tenerife striker De Miguel dies after on-field collision"
+    },
     "0caeab95bb6afe294a6ed6d9323bad831bddef0d3a8b7fc8c095659b06da206b": {
       "seen_at": "2026-10-13T12:38:01.277096+00:00",
       "source": "BBC World",
@@ -799,6 +810,11 @@
     "10bbcd3bda521a62367e7d51f529c972f9faf41e10085363c1d93499c888d715": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "10d284bcb2ac5c07a4e71e7c4076d4f237c16837039c29db69e0026e0e51b149": {
+      "seen_at": "2026-11-03T13:06:39.552925+00:00",
+      "source": "Google News Business",
       "status": "skipped_stale"
     },
     "10e10868c7619ed023e34ca8e4c1ba9f6c2ec48aa08d5cd42d8b1dcc43b7ee5e": {
@@ -3960,6 +3976,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "512466500427ca0a53177c899cdb181317dfaead4067d6e3833b8048a77dd3aa": {
+      "seen_at": "2026-11-03T13:06:39.552925+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "513f1eb735ce887f1851408afbd229749c19d9beef37250b8649cc6fe1b612b4": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News Business",
@@ -4071,6 +4092,17 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "5363d8e3e5fd82fc16cfe9971ea03bc932a5886b9c13c63035c9878abaa70fa8": {
+      "created_at": "2026-11-03T13:06:39.552925+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian Sport",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755129483543",
+      "source_url": "https://www.theguardian.com/sport/2026/nov/03/24-year-old-woman-dies-after-collapasing-in-final-stages-of-new-york-city-marathon",
+      "status": "published",
+      "title": "24-year-old woman dies after collapsing in final stages of New York City Marathon"
+    },
     "5379a7850f7824400438407a1e165b3ffd70fe8b6b045227de2abd65503a73ef": {
       "seen_at": "2026-10-21T12:49:02.005600+00:00",
       "source": "Google News World",
@@ -4090,6 +4122,17 @@
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
+    },
+    "54568b7a5a45d621064121b663c182dbe28a2030248f17342dc9ad96fa44690d": {
+      "created_at": "2026-11-03T13:06:39.552925+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian Sport",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755129516311",
+      "source_url": "https://www.theguardian.com/football/2026/nov/03/tenerife-footballer-jesus-de-miguel-hospital-collision",
+      "status": "published",
+      "title": "Tenerife footballer Jes\u00fas de Miguel dies aged 30 after on-pitch collision"
     },
     "54778564ae55e2b5f9187adc99d5266b8e0010c7462ec0cc7f9ff6e6c97af69a": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
@@ -4389,6 +4432,11 @@
     },
     "5bbefde9c6ab7e24404122b5860175722092ba0a2494bbd56bd2feefc8744a29": {
       "seen_at": "2026-10-24T18:39:21.262654+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "5bead4839453129180bfe47bf3c1145becb0dc41eadc4beece8667f052cda264": {
+      "seen_at": "2026-11-03T13:06:39.552925+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
     },
@@ -12163,6 +12211,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "f2c76e11bcdcca9c9bf699ef647345752acf094e33ebe5a74a28be3fe3d379dc": {
+      "seen_at": "2026-11-03T13:06:39.552925+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "f2cab740b2d39b8626e999039a1b793b72730e951ff9a5629c57170eb01fc633": {
       "seen_at": "2026-10-17T05:12:33.395349+00:00",
       "source": "Google News World",
@@ -12176,6 +12229,11 @@
     "f2f5f7be2ec2229fc3fa9d646eb932816b3b7c33539be34c22f2eeddab6a2684": {
       "seen_at": "2026-10-28T18:54:08.851553+00:00",
       "source": "NASA News",
+      "status": "skipped_stale"
+    },
+    "f2f80723a80f2a106011b071465716e25bb8c9e7108673147256e1ad2e2fc3f2": {
+      "seen_at": "2026-11-03T13:06:39.552925+00:00",
+      "source": "Google News Health",
       "status": "skipped_stale"
     },
     "f302ac9cb615f1481b500d8b94be96d3482050abe2da0ef590006e375b6d9085": {
@@ -12601,6 +12659,11 @@
     "fbe52267f739966ad39c779303188d4244278886d05cd5d0979c5dbf5cb21310": {
       "seen_at": "2026-10-30T07:00:00.666940+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "fbf8c85af7062315d1aaf4b2e2ac6954f3a524a120188b8024a58380611fea65": {
+      "seen_at": "2026-11-03T13:06:39.552925+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "fbfb9e057e25ec7bbbf71f9726aabd94c81ad18dc080b976c62ca990c57fc16b": {
