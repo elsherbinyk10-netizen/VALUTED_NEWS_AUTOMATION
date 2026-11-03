@@ -97,7 +97,7 @@ def main():
     # The backfill worker has a 100-article per-run cap. Prioritize verified
     # image-quality failures first so older low-resolution images are not starved
     # behind unrelated provenance warnings on newer articles.
-    def is_critical_image_issue(article, reason):
+    def is_critical_low_resolution(article, reason):
         image = article.get("image") or {}
         if not image.get("url"):
             return True
@@ -109,14 +109,14 @@ def main():
     prioritized = sorted(
         flagged.values(),
         key=lambda item: (
-            0 if is_critical_image_issue(item[0], item[1]) else
+            0 if is_critical_low_resolution(item[0], item[1]) else
             1 if item[1].startswith("low-resolution-or-invalid-image:") else 2,
             str(item[0].get("title", "")).casefold(),
         ),
     )
     critical_ids = {
         article["id"] for article, reason in prioritized
-        if is_critical_image_issue(article, reason)
+        if is_critical_low_resolution(article, reason)
     }
     targeted = []
     for article, reason in prioritized:
