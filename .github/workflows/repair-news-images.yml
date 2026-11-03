@@ -9,6 +9,7 @@ on:
       - "backfill_media.py"
       - "audit_repair_images.py"
       - "image_quality.py"
+      - "publisher_image_policy.py"
       - "requirements.txt"
       - "tests/**"
 
@@ -49,7 +50,7 @@ jobs:
           test -n "$SHOPIFY_ADMIN_ACCESS_TOKEN" || { test -n "$SHOPIFY_CLIENT_ID" || { echo "Missing Shopify Admin API credentials"; exit 1; }; test -n "$SHOPIFY_CLIENT_SECRET" || { echo "Missing SHOPIFY_CLIENT_SECRET"; exit 1; }; }
       - name: Validate syntax and safety tests
         run: |
-          python -m py_compile news_worker.py image_quality.py backfill_media.py audit_repair_images.py
+          python -m py_compile news_worker.py image_quality.py publisher_image_policy.py backfill_media.py audit_repair_images.py
           python -m unittest discover -s tests -v
       - name: Repair missing, generic, and low-resolution featured images
         run: python backfill_media.py
