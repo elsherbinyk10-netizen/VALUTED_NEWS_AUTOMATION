@@ -342,7 +342,11 @@ def main():
         ))
         body = (article.get("body") or "").lower()
         repeated_aggregator_art = ("google news top stories" in body and identity_counts[media_identity(article)] > 1) if media_identity(article) else False
-        return not url or generic or repeated_aggregator_art
+        below_minimum = bool(url) and (
+            int(image.get("width") or 0) < 1200
+            or int(image.get("height") or 0) < 630
+        )
+        return not url or generic or repeated_aggregator_art or below_minimum
 
     missing = [a for a in articles if needs_real_image(a)]
     limit = max(1, min(100, int(env("MEDIA_BACKFILL_LIMIT", "100"))))
