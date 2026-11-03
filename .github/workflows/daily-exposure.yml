@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - "google_performance.py"
+      - "site_discovery_audit.py"
       - "exposure_pack.py"
       - ".github/workflows/daily-exposure.yml"
   schedule:
@@ -36,6 +37,11 @@ jobs:
           python-version: "3.12"
       - name: Install project dependencies
         run: python -m pip install --disable-pip-version-check -r requirements.txt
+      - name: Run technical Google discovery audit (robots, sitemaps, canonical, metadata, JSON-LD)
+        env:
+          SITE_URL: "https://valutednews.com"
+          SITEMAP_URL: "https://valutednews.com/sitemap.xml"
+        run: python site_discovery_audit.py
       - name: Install Google reporting dependencies
         run: python -m pip install --disable-pip-version-check google-api-python-client google-auth google-analytics-data
       - name: Validate exposure generator
