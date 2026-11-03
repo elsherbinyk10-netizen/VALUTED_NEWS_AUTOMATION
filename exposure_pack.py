@@ -17,7 +17,7 @@ class Text(HTMLParser):
         self.headings = 0
 
     def handle_data(self, data):
-        value = re.sub(r"\\s+", " ", data).strip()
+        value = re.sub(r"\s+", " ", data).strip()
         if value:
             self.parts.append(value)
 
@@ -31,7 +31,7 @@ class Text(HTMLParser):
 def inspect(value):
     parser = Text()
     parser.feed(str(value or ""))
-    text = re.sub(r"\\s+", " ", html.unescape(" ".join(parser.parts))).strip()
+    text = re.sub(r"\s+", " ", html.unescape(" ".join(parser.parts))).strip()
     return text, parser.links, parser.headings
 
 
@@ -139,7 +139,7 @@ def main():
         "## Important limitation",
         "The automation reads published Shopify content and creates this report. It does not modify SEO metafields, submit URLs to search engines, or publish social posts."
     ]
-    (out / "valuted-news-growth-plan.md").write_text("\\n".join(lines), encoding="utf-8")
+    (out / "valuted-news-growth-plan.md").write_text("\n".join(lines), encoding="utf-8")
     tracker = out / "monthly-performance-tracker.csv"
     if not tracker.exists():
         with tracker.open("w", newline="", encoding="utf-8") as handle:
