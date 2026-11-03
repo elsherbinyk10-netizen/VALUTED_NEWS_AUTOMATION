@@ -15,6 +15,7 @@ import requests
 
 import backfill_media
 from image_quality import inspect_image_url
+from publisher_image_policy import verify_publisher_image
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 HEADERS = {"User-Agent": "ValutedNewsImageAudit/1.0"}
@@ -65,6 +66,29 @@ def main():
         alt = str(image.get("altText") or "")
         combined = (url + " " + alt).lower()
         reason = None
+        if url and not reason:
+            # Existing large images are not automatically trusted: re-check the cited
+            # publisher page, title match, publication/update date and exact declared image.
+            for source_url in list(backfill_media.source_urls(article.get("body", "")))[:3]:
+                try:
+                    page = requests.get(source_url, headers={**HEADERS, "Accept": "text/html"},
+                                        timeout=(5, 12), allow_redirects=True)
+                    try:
+                        if not page.ok or "html" not in page.headers.get("Content-Type", "").lower():
+                            continue
+                        verdict = verify_publisher_image(
+                            page.url, page.text, article.get("title", ""), url,
+                            article.get("publishedAt"),
+                        )
+                    finally:
+                        page.close()
+                    if verdict.get("ok"):
+                        break
+                    reason = "publisher-provenance-or-freshness-failed: " + verdict.get("reason", "unknown")
+                except requests.RequestException:
+                    reason = "publisher-page-verification-failed"
+            else:
+                reason = reason or "original-publisher-source-not-found"
         if not url or any(term in combined for term in (
             "google news", "google-news", "google_news", "valuted news", "valuted-news",
             "valuted_news", "placeholder", "default-thumbnail", "generic poster", "favicon"
