@@ -7,8 +7,12 @@ class ArticleQualityTests(unittest.TestCase):
         self.assertEqual(repair_mojibake("AndrÃ© and El NiÃ±o cost Â£5"), "André and El Niño cost £5")
         self.assertEqual(repair_mojibake("The challenge was difficult."), "The challenge was difficult.")
 
+    def test_repairs_mixed_windows_1252_punctuation_sequences(self):
+        self.assertEqual(repair_mojibake("MNF-U â Ukraine and âreadinessâ"), "MNF-U – Ukraine and “readiness”")
+
     def test_does_not_guess_when_repair_is_not_reversible(self):
         self.assertEqual(repair_mojibake("Ã broken"), "Ã broken")
+        self.assertEqual(repair_mojibake("â"), "â")
 
     def test_flags_known_truncation_and_encoding_errors(self):
         self.assertIn("possible_mojibake_or_replacement_character",
