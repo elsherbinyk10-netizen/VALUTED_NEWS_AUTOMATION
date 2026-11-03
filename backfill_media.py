@@ -306,7 +306,11 @@ def main():
             "google news", "google-news", "google_news", "valuted news", "valuted-news",
             "valuted_news", "placeholder", "generic poster", "default thumbnail"
         ))
-        return not url or generic
+        below_minimum = bool(url) and (
+            int(image.get("width") or 0) < 1200
+            or int(image.get("height") or 0) < 630
+        )
+        return not url or generic or below_minimum
     def media_identity(article):
         image = article.get("image") or {}
         url = str(image.get("url") or "")
