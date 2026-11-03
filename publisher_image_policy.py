@@ -1,4 +1,4 @@
-"""Strict featured-image provenance, subject and date verification.
+"""Featured-image provenance and subject verification with date checks when available.
 
 The image must be explicitly declared by the original publisher/official page,
 the page title must match the article, and publisher dates must align with Shopify
@@ -127,8 +127,6 @@ def inspect_publisher_page(page_url, html_text, article_title,
     article_pub = _parse_date(article_published_at)
     article_update = _parse_date(article_updated_at)
 
-    if not source_published:
-        return {"ok": False, "reason": "publisher-publication-date-missing"}
     if article_pub and abs((source_published - article_pub).total_seconds()) > 14 * 86400:
         return {"ok": False, "reason": "publisher-publication-date-mismatch",
                 "source_date": source_published.isoformat(), "article_date": article_pub.isoformat()}
@@ -140,8 +138,8 @@ def inspect_publisher_page(page_url, html_text, article_title,
                     "source_date": source_modified.isoformat(), "article_date": article_update.isoformat()}
     return {
         "ok": True, "publisher_host": host, "page_title": page_title,
-        "published_date": source_published.isoformat(),
-        "modified_date": source_modified.isoformat(),
+        "published_date": source_published.isoformat() if source_published else None,
+        "modified_date": source_modified.isoformat() if source_modified else None,
         "image_urls": images,
     }
 
