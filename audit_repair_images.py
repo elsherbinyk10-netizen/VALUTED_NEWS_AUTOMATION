@@ -103,7 +103,7 @@ def main():
             return True
         return (
             reason.startswith("low-resolution-or-invalid-image:")
-            and ((image.get("width") or 0) < 500 or (image.get("height") or 0) < 300)
+            and ((image.get("width") or 0) < 1200 or (image.get("height") or 0) < 630)
         )
 
     prioritized = sorted(
@@ -150,11 +150,11 @@ def main():
         for article_id in critical_ids:
             current = refreshed_by_id.get(article_id) or {}
             image = current.get("image") or {}
-            if not image.get("url") or (image.get("width") or 0) < 500 or (image.get("height") or 0) < 300:
+            if not image.get("url") or (image.get("width") or 0) < 1200 or (image.get("height") or 0) < 630:
                 unresolved_critical.append(current.get("title") or article_id)
         if unresolved_critical:
             raise RuntimeError(
-                "Critical featured images remain missing or below 500x300 after repair: "
+                "Featured images remain missing or below 1200x630 after repair: "
                 + " | ".join(unresolved_critical)
             )
         logging.info("Critical image post-check passed for %d articles.", len(critical_ids))
