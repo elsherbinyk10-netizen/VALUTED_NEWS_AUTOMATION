@@ -607,7 +607,7 @@
       "status": "skipped_stale"
     },
     "0c0d3ea3c895792f00b8c8980d0e5e7f0de8f6e969800061040bfc9943903d54": {
-      "seen_at": "2026-11-03T09:59:24.224331+00:00",
+      "seen_at": "2026-11-03T10:22:46.950392+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
     },
@@ -2759,6 +2759,11 @@
       "status": "published",
       "title": "Faisal Islam: Inflation and borrowing figures illustrate chancellor's Budget challenge"
     },
+    "364272081dcf2285c88e3db603d79661919b2c3a10b5458027bffd551bc16f9e": {
+      "seen_at": "2026-11-03T10:22:46.950392+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "3644295442adbcbca23e19fcd2b5df0db633ba66c49e8830c566ef659be6724d": {
       "seen_at": "2026-11-01T12:54:22.780534+00:00",
       "source": "Google News Business",
@@ -2787,6 +2792,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c2l9vvj097lo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Car finance compensation payments delayed until next year"
+    },
+    "36f31fd286a26aedab88770c34f51a90cd6778828464bdc5433d135960f7b554": {
+      "seen_at": "2026-11-03T10:22:46.950392+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
     },
     "36f5b1da8a89da4db89fde15a4e04cb53ef26be29661a88781002c1ef5db97fe": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
@@ -3367,7 +3377,7 @@
       "status": "skipped_stale"
     },
     "431dfd13fb41f5646ca86abaecf2efc11c520e7e95a31b2c53bc8178cc4d293a": {
-      "seen_at": "2026-11-03T09:59:24.224331+00:00",
+      "seen_at": "2026-11-03T10:22:46.950392+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
     },
@@ -5086,7 +5096,7 @@
       "status": "skipped_stale"
     },
     "692caffcfcdeb6f4cf299d3edb7d6e4676389609d551b865a87115345f3636e6": {
-      "seen_at": "2026-11-03T09:59:24.224331+00:00",
+      "seen_at": "2026-11-03T10:22:46.950392+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
@@ -7288,7 +7298,7 @@
       "status": "skipped_stale"
     },
     "9140ef865ada44375b054344741cd27985b779299ce15e59ca804145fef9bcda": {
-      "seen_at": "2026-11-03T09:59:24.224331+00:00",
+      "seen_at": "2026-11-03T10:22:46.950392+00:00",
       "source": "Google News Health",
       "status": "skipped_stale"
     },
@@ -11655,6 +11665,11 @@
     "e956e75a1deed6c7590902c58d65f578511d817dd8881b0793b9baf0a36b8073": {
       "seen_at": "2026-10-19T18:47:42.889839+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "e98665c9cb94a9013d112bcf20a57008e437c5c8fae03f20cf0d39c6134b4409": {
+      "seen_at": "2026-11-03T10:22:46.950392+00:00",
+      "source": "Google News Health",
       "status": "skipped_stale"
     },
     "e98ec61e135845556d951b039d1bd2d4004c0b18a2f04281c8778563cd950ae7": {
