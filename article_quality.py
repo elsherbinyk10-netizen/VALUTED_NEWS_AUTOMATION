@@ -38,7 +38,7 @@ def repair_mojibake(value):
     text = str(value or "")
     # A stray Windows-1252 control byte (0x81) appears in some scraped snippets
     # between otherwise valid words; it is not printable punctuation and is safe to drop.
-    text = re.sub(r"â\\x81(?=\\s)", "", text)
+    text = re.sub(r"â\x81(?=\s)", "", text)
     # Repeated passes handle double-encoded text (e.g. ÃƒÂ© -> é).
     for _ in range(3):
         repaired = _repair_utf8_sequences(text)
