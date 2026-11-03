@@ -252,6 +252,17 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "04e8f100cd83342d90f0dd35ef1bd60bdb3254a1c9412bf2c769a805035c5ce9": {
+      "created_at": "2026-11-03T07:23:48.758713+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755125190935",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck79py02p1jlo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Legal challenge to Australia's social media ban to start in High Court"
+    },
     "050796415448db8363b13d814bc9146a22c57131b80cf66d9f75e6327db46e19": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Google News World",
@@ -959,6 +970,17 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "144f4fa0ba71ad1308d70f77daa217fbc1e14fb72537c12a61071d055df075cb": {
+      "created_at": "2026-11-03T07:23:48.758713+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755125125399",
+      "source_url": "https://www.theguardian.com/australia-news/2026/nov/03/reddit-under-16s-social-media-ban-australia-high-court",
+      "status": "published",
+      "title": "Australia\u2019s social media ban \u2018ill-thought-out\u2019, Reddit argues in high court challenge"
+    },
     "148a4d6f99a46efc94b706a64fd757f5de85a75e97d01d8ad39a1f2b06a3dc00": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Technology",
@@ -1268,6 +1290,11 @@
     "1a2318f6a66a96fc2182cbc4876be7bc29702dba0f672bc9cd3a42c3f52b7520": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "1a3949e825ee1d827cb7d401a3d66c62377951e6d5c82ab7aa5aa08604cddfe8": {
+      "seen_at": "2026-11-03T07:23:48.758713+00:00",
+      "source": "Google News India Top Stories",
       "status": "skipped_stale"
     },
     "1a454b4cb386db80a512ef25d93e8b0abcdaeaab12fa9262a7a7c3bb727c001e": {
@@ -10396,6 +10423,17 @@
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Business",
       "status": "skipped_stale"
+    },
+    "d2c46b2b8fc092eece21303e3fe55076d9edc97882fa41cab70b413f27c5b151": {
+      "created_at": "2026-11-03T07:23:48.758713+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian Sport",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755125158167",
+      "source_url": "https://www.theguardian.com/sport/2026/nov/02/lions-give-positive-update-on-jack-campbell-after-scary-neck-injury-sends-linebacker-to-hospital",
+      "status": "published",
+      "title": "Lions\u2019 Jack Campbell remains hospitalized after \u2018scary\u2019 neck injury but initial signs are positive"
     },
     "d2d7b61cc233cf702eaa3d26bb632397eaef227ae98efe3b3ff49205db012691": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
