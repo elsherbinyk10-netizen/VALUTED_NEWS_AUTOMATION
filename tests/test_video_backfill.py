@@ -65,6 +65,29 @@ class PublisherVideoBackfillTests(unittest.TestCase):
             "https://img.youtube.com/vi/dQw4w9WgXcQ/hq720.jpg",
         )
 
+    def test_video_thumbnail_falls_back_to_sddefault_when_higher_variants_are_missing(self):
+        body = '<iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"></iframe>'
+        with patch("backfill_media.requests.get") as get, patch(
+            "backfill_media.inspect_image_url",
+            side_effect=[
+                {"ok": False, "reason": "missing"},
+                {"ok": False, "reason": "missing"},
+                {"ok": True},
+            ],
+        ):
+            get.return_value.json.return_value = {
+                "title": "The Child Official Trailer | Netflix"
+            }
+            result = backfill_media.youtube_video_thumbnail(
+                "Netflix’s The Child Trailer: Cast, Release Date and the Story Behind the Film",
+                body,
+                set(),
+            )
+        self.assertEqual(
+            result["url"],
+            "https://img.youtube.com/vi/dQw4w9WgXcQ/sddefault.jpg",
+        )
+
     def test_under_siege_accepts_the_official_spanish_title_alias(self):
         body = '<iframe src="https://www.youtube-nocookie.com/embed/Ne6IZUhglv4"></iframe>'
         with patch("backfill_media.requests.get") as get, patch(
