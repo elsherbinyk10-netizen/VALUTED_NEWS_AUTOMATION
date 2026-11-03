@@ -248,7 +248,7 @@ def list_articles():
     query BackfillArticles($id: ID!, $after: String) {
       blog(id: $id) {
         articles(first: 250, reverse: true, after: $after) {
-          nodes { id title handle body isPublished publishedAt image { url altText } }
+          nodes { id title handle body isPublished publishedAt updatedAt image { url altText } }
           pageInfo { hasNextPage endCursor }
         }
       }
@@ -268,9 +268,7 @@ def list_articles():
 
 
 def update_article(article, image_url, alt_text, credit=""):
-    body = article.get("body") or ""
-    if credit and credit not in body:
-        body += '<p class="vn-image-credit">' + html.escape(credit) + '</p>'
+    """Update only featured image fields; never modify article body or publishing metadata."""
     mutation = """
     mutation BackfillNewsImage($id: ID!, $article: ArticleUpdateInput!) {
       articleUpdate(id: $id, article: $article) {
@@ -281,17 +279,13 @@ def update_article(article, image_url, alt_text, credit=""):
     """
     data = shopify_graphql(mutation, {
         "id": article["id"],
-        "article": {
-            "image": {"url": image_url, "altText": alt_text[:250]},
-            **({"body": body} if credit else {}),
-        },
+        "article": {"image": {"url": image_url, "altText": alt_text[:250]}},
     })
     result = data.get("articleUpdate") or {}
     errors = result.get("userErrors") or []
     if errors:
         raise RuntimeError(str(errors))
     return result.get("article")
-
 
 def main():
     if not env("SHOPIFY_STORE_DOMAIN"):
@@ -378,7 +372,7 @@ def main():
                 for image_url in dict.fromkeys(candidates):
                     provenance = verify_publisher_image(
                         final_page_url, page_html, article["title"], image_url,
-                        article.get("publishedAt"),
+                        article.get("publishedAt"), article.get("updatedAt"),
                     )
                     if not provenance.get("ok"):
                         logging.info("Publisher image rejected for %s: %s", article["title"], provenance.get("reason"))
