@@ -977,8 +977,8 @@ def create_shopify_article(blog_id, title, summary, body, source_url, publisher,
     # Public briefs already include this exact source link in the article body.
     # Add the fallback footer only when the source link is not already present.
     source_link_pattern = (
-        r'href=["\\']' + re.escape(source)
-        + r'["\\'][^>]*>\\s*Read the original report\\s*</a>'
+        r"href=[\"']" + re.escape(source)
+        + r"[\"'][^>]*>\\s*Read the original report\\s*</a>"
     )
     body_with_credit = body if re.search(source_link_pattern, body, re.I) else (
         body
