@@ -14,6 +14,7 @@ from urllib.parse import urlparse
 import requests
 
 import backfill_media
+from image_quality import inspect_image_url
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 HEADERS = {"User-Agent": "ValutedNewsImageAudit/1.0"}
@@ -25,14 +26,7 @@ def image_url_ok(url):
     parsed = urlparse(url)
     if parsed.scheme not in ("http", "https") or not parsed.hostname:
         return False
-    try:
-        response = requests.get(url, headers=HEADERS, stream=True, timeout=(4, 8), allow_redirects=True)
-        try:
-            return response.ok and response.headers.get("Content-Type", "").lower().startswith("image/")
-        finally:
-            response.close()
-    except requests.RequestException:
-        return False
+    return inspect_image_url(url).get("ok", False)
 
 
 def normalized_title(title):
@@ -77,7 +71,8 @@ def main():
         )):
             reason = "missing-or-placeholder"
         elif not url_health.get(url, False):
-            reason = "image-url-unavailable-or-not-image"
+            quality = inspect_image_url(url)
+            reason = "low-resolution-or-invalid-image: " + str(quality.get("reason", "unknown"))
         else:
             identity = normalized_image_identity(url)
             siblings = by_image[identity]
