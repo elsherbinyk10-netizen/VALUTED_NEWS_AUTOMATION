@@ -16,6 +16,7 @@ from urllib.parse import urlparse, urlencode, quote_plus
 import requests
 from news_worker import env, shopify_graphql, fetch_article_media, canonical_url, clean_text
 from image_quality import inspect_image_url
+from publisher_image_policy import verify_publisher_image
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 BLOG_ID = env("SHOPIFY_BLOG_ID", "gid://shopify/Blog/126010065175")
@@ -247,7 +248,7 @@ def list_articles():
     query BackfillArticles($id: ID!, $after: String) {
       blog(id: $id) {
         articles(first: 250, reverse: true, after: $after) {
-          nodes { id title handle body isPublished image { url altText } }
+          nodes { id title handle body isPublished publishedAt image { url altText } }
           pageInfo { hasNextPage endCursor }
         }
       }
@@ -356,46 +357,57 @@ def main():
         if discovered and discovered not in source_candidates:
             source_candidates.insert(0, discovered)
         for url in source_candidates[:6]:
-            media = fetch_article_media(url)
-            candidate = media.get("image_url", "")
-            if image_is_valid(candidate) and normalized_image_identity(candidate) not in excluded_image_identities:
-                chosen = {"url": candidate, "alt": article["title"], "credit": "Image source: " + url}
-                source = url
-                break
-        # Licensed, title-matched Commons artwork is a fallback for current stories too.
-        # If it may not depict the exact event, the image alt text explicitly says illustrative.
-        if not chosen:
             try:
-                candidate = wikimedia_image(article["title"], excluded_image_identities)
-                if candidate:
-                    chosen = candidate
+                page_response = requests.get(
+                    url, headers={**HEADERS, "Accept": "text/html,application/xhtml+xml"},
+                    timeout=(5, 15), allow_redirects=True,
+                )
+                try:
+                    if not page_response.ok or "html" not in page_response.headers.get("Content-Type", "").lower():
+                        continue
+                    page_html = page_response.text
+                    final_page_url = page_response.url
+                finally:
+                    page_response.close()
+                soup = __import__("bs4").BeautifulSoup(page_html, "html.parser")
+                candidates = []
+                for attrs in ({"property": "og:image"}, {"name": "twitter:image"}, {"name": "twitter:image:src"}):
+                    node = soup.find("meta", attrs=attrs)
+                    if node and node.get("content"):
+                        candidates.append(node["content"])
+                for image_url in dict.fromkeys(candidates):
+                    provenance = verify_publisher_image(
+                        final_page_url, page_html, article["title"], image_url,
+                        article.get("publishedAt"),
+                    )
+                    if not provenance.get("ok"):
+                        logging.info("Publisher image rejected for %s: %s", article["title"], provenance.get("reason"))
+                        continue
+                    quality = inspect_image_url(provenance["image_url"])
+                    if not quality.get("ok"):
+                        logging.info("Publisher image failed dimensions/integrity for %s: %s", article["title"], quality.get("reason"))
+                        continue
+                    if normalized_image_identity(provenance["image_url"]) in excluded_image_identities:
+                        continue
+                    chosen = {
+                        "url": provenance["image_url"],
+                        "alt": article["title"],
+                        "credit": "",
+                    }
+                    source = provenance["publisher_host"] + " (" + provenance["source_date"] + ")"
+                    break
+                if chosen:
+                    break
             except Exception as exc:
-                logging.info("Commons lookup failed for %s: %s", article["title"], exc)
-        if not chosen:
-            try:
-                candidate = openverse_image(article["title"], excluded_image_identities)
-                if candidate:
-                    chosen = candidate
-                    source = "Openverse"
-            except Exception as exc:
-                logging.info("Openverse lookup failed for %s: %s", article["title"], exc)
-        if not chosen:
-            try:
-                broad_terms = re.findall(r"[a-z0-9]{4,}", article["title"].lower())
-                broad_terms = [term for term in broad_terms if term not in {"news","latest","update","what","when","where","from","with","about","today","2026","says","after","under","behind","release","date","cast","story","guide","report"}]
-                if broad_terms:
-                    candidate = openverse_image(" ".join(broad_terms[:5]) + " photograph", excluded_image_identities)
-                    if candidate:
-                        chosen = candidate
-                        source = "Openverse broader search"
-            except Exception as exc:
-                logging.info("Openverse broader search failed for %s: %s", article["title"], exc)
+                logging.info("Strict publisher-image verification failed for %s at %s: %s", article["title"], url, exc)
+        # Current-news artwork must come from the cited original publisher page.
+        # Wikimedia/Openverse and broad keyword fallbacks are deliberately disabled.
         if not chosen:
             unresolved.append(article["title"])
             logging.warning("No verified image found; leaving image blank: %s", article["title"])
             continue
         try:
-            result = update_article(article, chosen["url"], chosen.get("alt", article["title"]), chosen.get("credit", ""))
+            result = update_article(article, chosen["url"], chosen.get("alt", article["title"]), "")
             if not result:
                 raise RuntimeError("Shopify returned no updated article.")
             fixed += 1
