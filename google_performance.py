@@ -11,7 +11,7 @@ def write_status(status, message, **extra):
     (out / "google-performance.json").write_text(
         json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    with (out / "growth-plan.md").open("a", encoding="utf-8") as handle:
+    with (out / "valuted-news-growth-plan.md").open("a", encoding="utf-8") as handle:
         handle.write("\n\n## Google performance data\n")
         handle.write(f"- Status: {status}\n- {message}\n")
         for key, value in extra.items():
@@ -152,7 +152,7 @@ def main():
     (out / "google-performance.json").write_text(
         json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    with (out / "growth-plan.md").open("a", encoding="utf-8") as handle:
+    with (out / "valuted-news-growth-plan.md").open("a", encoding="utf-8") as handle:
         handle.write("\n\n## Google Search Console and GA4 — last 28 days\n")
         handle.write(f"- Search Console clicks: {result['search_console']['total_clicks']}\n")
         handle.write(f"- Search Console impressions: {result['search_console']['total_impressions']}\n")
