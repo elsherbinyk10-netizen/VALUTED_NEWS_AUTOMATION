@@ -1819,7 +1819,7 @@
       "status": "skipped_stale"
     },
     "2414db8fc77f497f7c35650ec6beff9a9e3315c891653c0e720a837ae1909275": {
-      "seen_at": "2026-11-03T14:57:07.320709+00:00",
+      "seen_at": "2026-11-03T15:14:31.690679+00:00",
       "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
@@ -3349,6 +3349,11 @@
     "42623b24a2d0e45f39cbcafdfbb3b9ad87ab4b963b8dd2ed80570d272aadf630": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "427b93f78223cfe9fa68157e852fe60d0d0e5ea3b2931ac2d439bee924a62836": {
+      "seen_at": "2026-11-03T15:14:31.690679+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "427bd94667dcb0e2d7abbd04073b5ef204c8b9588875cb42cfeaaab12ab72a02": {
@@ -6174,6 +6179,11 @@
     "7ad84d0adb1e3fda1a85d5d2be340d72d2551dcd32e5f09a7ff4954e05ad8a55": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "7ad8f1eb72847040cc60cd229a766927fc4ec00bc0f37f0102b2b27441e3f640": {
+      "seen_at": "2026-11-03T15:14:31.690679+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "7ae1aeb5ffe3a23f6ceb972d1ca36b350ba9af2d3af5c3a65602089fa6775088": {
@@ -9151,6 +9161,17 @@
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Variety Music",
       "status": "skipped_stale"
+    },
+    "b5bdef6ed1c8f5ef8e664ddba4382c80300e0700ba2d2caa15ffa765bfc1af53": {
+      "created_at": "2026-11-03T15:14:31.690679+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian Culture",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755131056407",
+      "source_url": "https://www.theguardian.com/stage/2026/nov/03/well-see-play-midterm-elections",
+      "status": "published",
+      "title": "\u2018We\u2019re all on constantly shifting sands\u2019: the play capturing life during the US midterm elections"
     },
     "b5c109cca896d75505a2a24a764651550f5f62520e1eb3951b7fa98227fa59fc": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
