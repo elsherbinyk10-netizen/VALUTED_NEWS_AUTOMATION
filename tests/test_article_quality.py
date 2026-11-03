@@ -10,6 +10,10 @@ class ArticleQualityTests(unittest.TestCase):
     def test_repairs_mixed_windows_1252_punctuation_sequences(self):
         self.assertEqual(repair_mojibake("MNF-U â Ukraine and âreadinessâ"), "MNF-U – Ukraine and “readiness”")
 
+    def test_removes_nonprinting_windows_1252_control_artifact(self):
+        self.assertEqual(repair_mojibake("awful â\x81 lot"), "awful lot")
+        self.assertEqual(repair_mojibake("focused â\x81 on Hubbard"), "focused on Hubbard")
+
     def test_does_not_guess_when_repair_is_not_reversible(self):
         self.assertEqual(repair_mojibake("Ã broken"), "Ã broken")
         self.assertEqual(repair_mojibake("â"), "â")
