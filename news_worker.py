@@ -12,6 +12,7 @@ from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
 import feedparser
 import requests
 from bs4 import BeautifulSoup
+from article_quality import repair_mojibake, text_integrity_issues, seo_description
 from image_quality import inspect_image_url
 from publisher_video import fetch_publisher_video, _trusted_player_url
 from dateutil import parser as dateparser
@@ -32,7 +33,8 @@ def env(name, default=""):
 
 
 def clean_text(value):
-    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]*>", " ", value or ""))).strip()
+    text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]*>", " ", value or ""))).strip()
+    return repair_mojibake(text)
 
 
 def canonical_url(url):
@@ -927,6 +929,9 @@ def auto_publish_block_reasons(item, auto_publish):
     """Return explicit reasons a feed item must remain a draft."""
     reasons = []
     description = clean_text(item.get("description", ""))
+    text_issues = text_integrity_issues(item.get("title", ""), "", description)
+    if text_issues:
+        reasons.extend(text_issues)
     image_url = item.get("image_url", "")
     if not auto_publish:
         reasons.append("AUTO_PUBLISH disabled")
@@ -1138,7 +1143,7 @@ def build_news_seo(title, summary, category):
     if section and section.casefold() not in seo_title.casefold():
         seo_title = f"{seo_title} | {section}"
     seo_title = seo_title[:70].rstrip(" |:-")
-    description = clean_text(summary) or clean_title
+    description = seo_description(summary, clean_title, 155)
     if section and section.casefold() not in description.casefold():
         description = f"{section}: {description}"
     if len(description) > 155:
