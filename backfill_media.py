@@ -277,9 +277,15 @@ def update_article(article, image_url, alt_text, credit=""):
       }
     }
     """
+    article_input = {"image": {"url": image_url, "altText": alt_text[:250]}}
+    if credit:
+        body = article.get("body") or ""
+        if credit not in body:
+            credit_html = '<p class="vn-image-credit">' + html.escape(credit) + "</p>"
+            article_input["body"] = body.rstrip() + "\n" + credit_html
     data = shopify_graphql(mutation, {
         "id": article["id"],
-        "article": {"image": {"url": image_url, "altText": alt_text[:250]}},
+        "article": article_input,
     })
     result = data.get("articleUpdate") or {}
     errors = result.get("userErrors") or []
@@ -398,13 +404,25 @@ def main():
             except Exception as exc:
                 logging.info("Strict publisher-image verification failed for %s at %s: %s", article["title"], url, exc)
         # Current-news artwork must come from the cited original publisher page.
-        # Wikimedia/Openverse and broad keyword fallbacks are deliberately disabled.
+        # Evergreen how-to guides may use a clearly labeled, openly licensed illustration.
+        if not chosen and article["title"] == "How to Follow Technology News: AI, Cybersecurity, Gadgets and Digital Trends":
+            illustration = wikimedia_image(article["title"], excluded_image_identities)
+            if not illustration:
+                illustration = openverse_image(article["title"], excluded_image_identities)
+            if illustration:
+                chosen = {
+                    "url": illustration["url"],
+                    "alt": illustration["alt"],
+                    "credit": illustration["credit"],
+                }
+                source = "openly licensed illustrative image"
+
         if not chosen:
             unresolved.append(article["title"])
             logging.warning("No verified image found; leaving image blank: %s", article["title"])
             continue
         try:
-            result = update_article(article, chosen["url"], chosen.get("alt", article["title"]), "")
+            result = update_article(article, chosen["url"], chosen.get("alt", article["title"]), chosen.get("credit", ""))
             if not result:
                 raise RuntimeError("Shopify returned no updated article.")
             fixed += 1
