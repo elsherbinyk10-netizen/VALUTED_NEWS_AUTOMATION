@@ -393,8 +393,8 @@ def main():
         body = (article.get("body") or "").lower()
         repeated_aggregator_art = ("google news top stories" in body and identity_counts[media_identity(article)] > 1) if media_identity(article) else False
         below_minimum = bool(url) and (
-            int(image.get("width") or 0) < 1200
-            or int(image.get("height") or 0) < 630
+            int(image.get("width") or 0) < 500
+            or int(image.get("height") or 0) < 300
         )
         return not url or generic or repeated_aggregator_art or below_minimum
 
