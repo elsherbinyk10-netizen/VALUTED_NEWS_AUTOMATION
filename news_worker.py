@@ -757,7 +757,7 @@ def load_existing_shopify_story_index(blog_id):
             if source_key:
                 sources.add(source_key)
         handle = clean_text(article.get("handle", ""))
-        if article.get("isPublished") and title and handle and public_store_domain:
+        if article.get("isPublished", True) and title and handle and public_store_domain:
             related_articles.append({
                 "title": title, "body": body,
                 "url": f"https://{public_store_domain}/blogs/{blog_handle}/{handle}",
