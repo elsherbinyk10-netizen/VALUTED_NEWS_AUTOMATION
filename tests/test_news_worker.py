@@ -157,7 +157,7 @@ class VideoEmbedTests(unittest.TestCase):
             "video_html": '<iframe src="https://www.youtube-nocookie.com/embed/AbCdEf12345"></iframe>',
             "risk": False,
         }
-        with patch.object(worker, "video_embed_is_available", return_value=True):
+        with patch.object(worker, "video_embed_is_available", return_value=True), patch.object(worker, "inspect_image_url", return_value={"ok": True}):
             self.assertTrue(worker.should_auto_publish(item, True))
             item["image_url"] = ""
             self.assertFalse(worker.should_auto_publish(item, True))
@@ -177,7 +177,8 @@ class VideoEmbedTests(unittest.TestCase):
             "description": "This is a sufficiently detailed source summary with relevant facts, verified context, chronology, named details, and supporting information. " * 30,
             "risk": False,
         }
-        self.assertTrue(worker.should_auto_publish(item, True))
+        with patch.object(worker, "inspect_image_url", return_value={"ok": True}):
+            self.assertTrue(worker.should_auto_publish(item, True))
 
     def test_category_classifier_uses_headline_and_source_text(self):
         self.assertEqual(
