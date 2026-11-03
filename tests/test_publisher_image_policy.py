@@ -78,7 +78,7 @@ class PublisherImagePolicyTests(unittest.TestCase):
         self.assertFalse(result["ok"])
         self.assertEqual(result["reason"], "image-not-declared-by-publisher-page")
 
-    def test_rejects_missing_source_date(self):
+    def test_accepts_exact_publisher_image_when_source_date_metadata_is_missing(self):
         page = PAGE.replace(
             '<meta property="article:published_time" content="2026-11-02T10:00:00Z">',
             "",
@@ -90,8 +90,8 @@ class PublisherImagePolicyTests(unittest.TestCase):
             "https://publisher.example/story/one", page,
             "NASA discovers new moon around distant planet", "2026-11-02T10:00:00Z",
         )
-        self.assertFalse(result["ok"])
-        self.assertEqual(result["reason"], "publisher-publication-date-missing")
+        self.assertTrue(result["ok"])
+        self.assertIsNone(result["published_date"])
 
     def test_accepts_publisher_image_when_article_is_republished_within_two_weeks(self):
         page = PAGE.replace(
