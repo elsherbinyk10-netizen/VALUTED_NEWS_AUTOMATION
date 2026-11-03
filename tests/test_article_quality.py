@@ -1,5 +1,5 @@
 import unittest
-from article_quality import repair_mojibake, text_integrity_issues, seo_description
+from article_quality import repair_mojibake, text_integrity_issues, seo_description, final_article_integrity_issues
 
 
 class ArticleQualityTests(unittest.TestCase):
@@ -15,6 +15,23 @@ class ArticleQualityTests(unittest.TestCase):
                       text_integrity_issues("Title", "", "AndrÃ©"))
         self.assertIn("known_truncated_or_malformed_phrase",
                       text_integrity_issues("Title", "", "sent of for his challe"))
+
+    def test_final_article_gate_blocks_corrupted_body_and_seo(self):
+        issues = final_article_integrity_issues(
+            "Match report", "A complete summary", "<p>AndrÃ© was sent off for his challe</p>",
+            "Match report | Sports", "Sports: AndrÃ© was sent off for his challe"
+        )
+        self.assertTrue(any("possible_mojibake" in issue for issue in issues))
+        self.assertTrue(any("known_truncated" in issue for issue in issues))
+
+    def test_final_article_gate_allows_clean_article(self):
+        self.assertEqual(
+            final_article_integrity_issues(
+                "Match report", "A complete summary", "<p>The player completed his challenge.</p>",
+                "Match report | Sports", "Sports: The player completed his challenge."
+            ),
+            [],
+        )
 
     def test_seo_description_truncates_at_word_boundary(self):
         result = seo_description("This is a complete sentence about his challenge and the result.", "Title", 30)
