@@ -12,7 +12,7 @@ from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
 import feedparser
 import requests
 from bs4 import BeautifulSoup
-from article_quality import repair_mojibake, text_integrity_issues, seo_description
+from article_quality import repair_mojibake, text_integrity_issues, seo_description, final_article_integrity_issues
 from image_quality import inspect_image_url
 from publisher_video import fetch_publisher_video, _trusted_player_url
 from dateutil import parser as dateparser
@@ -1317,6 +1317,20 @@ def main():
                 item["description"], item["url"], item.get("image_url", ""),
                 item.get("video_html", ""), existing_articles, item.get("published")
             )
+            seo_title, seo_description_text = build_news_seo(
+                editorial["title"], editorial["summary"], item["category"]
+            )
+            final_text_issues = final_article_integrity_issues(
+                editorial["title"], editorial["summary"], editorial["body"],
+                seo_title, seo_description_text
+            )
+            if final_text_issues:
+                logging.warning(
+                    "Held article back; final article text-integrity check failed: %s — %s",
+                    item["title"], "; ".join(final_text_issues)
+                )
+                # Do not mark blocked stories as processed; a later scheduled run can retry.
+                continue
             article = create_shopify_article(
                 blog_id, editorial["title"], editorial["summary"], editorial["body"],
                 item["url"], item["publisher"], item["category"], True,
