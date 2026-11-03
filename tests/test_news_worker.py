@@ -297,6 +297,26 @@ class VideoEmbedTests(unittest.TestCase):
         self.assertEqual(get_mock.call_count, 3)
 
 
+
+    @patch.object(worker, "shopify_graphql")
+    def test_related_coverage_index_excludes_unpublished_articles(self, graphql_mock):
+        graphql_mock.return_value = {
+            "blog": {
+                "handle": "news",
+                "articles": {"nodes": [
+                    {"title": "NASA Artemis lunar mission update", "handle": "artemis-update",
+                     "body": "<p><strong>Science</strong></p>", "isPublished": True},
+                    {"title": "NASA Artemis lunar mission background", "handle": "artemis-draft",
+                     "body": "<p><strong>Science</strong></p>", "isPublished": False},
+                ]}
+            }
+        }
+        titles, sources, related = worker.load_existing_shopify_story_index("gid://shopify/Blog/1")
+        self.assertEqual(len(related), 1)
+        self.assertEqual(related[0]["title"], "NASA Artemis lunar mission update")
+        self.assertIn("https://valutednews.com/blogs/news/artemis-update", related[0]["url"])
+        self.assertNotIn("artemis-draft", " ".join(item["url"] for item in related))
+
 class TrendingNewsRankingTests(unittest.TestCase):
     def test_multi_publisher_story_ranks_above_single_source_story(self):
         now = datetime(2026, 11, 2, 12, 0, tzinfo=timezone.utc)
