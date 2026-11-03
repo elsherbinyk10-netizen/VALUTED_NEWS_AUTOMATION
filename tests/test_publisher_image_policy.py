@@ -93,6 +93,19 @@ class PublisherImagePolicyTests(unittest.TestCase):
         self.assertFalse(result["ok"])
         self.assertEqual(result["reason"], "publisher-publication-date-missing")
 
+    def test_accepts_publisher_image_when_article_is_republished_within_two_weeks(self):
+        page = PAGE.replace(
+            "2026-11-02T10:00:00Z", "2026-10-06T00:00:00Z"
+        ).replace(
+            "2026-11-02T12:00:00Z", "2026-10-06T00:00:00Z"
+        )
+        result = inspect_publisher_page(
+            "https://publisher.example/story/one", page,
+            "NASA discovers new moon around distant planet",
+            "2026-10-13T14:00:00Z",
+        )
+        self.assertTrue(result["ok"])
+
     def test_rejects_source_date_outside_article_window(self):
         result = inspect_publisher_page(
             "https://publisher.example/story/one", PAGE,
