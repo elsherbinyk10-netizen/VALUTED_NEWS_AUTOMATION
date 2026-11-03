@@ -325,7 +325,7 @@ def youtube_video_thumbnail(title, body, excluded_identities=None):
             if len(expected & observed) < (1 if len(expected) <= 3 else 2):
                 logging.info("Skipping unrelated embedded video thumbnail for %s: %s", title, video_title)
                 continue
-            for variant in ("maxresdefault.jpg", "hq720.jpg"):
+            for variant in ("maxresdefault.jpg", "hq720.jpg", "sddefault.jpg"):
                 image_url = "https://img.youtube.com/vi/" + video_id + "/" + variant
                 if normalized_image_identity(image_url) in (excluded_identities or set()):
                     continue
@@ -357,8 +357,8 @@ def main():
             "valuted_news", "placeholder", "generic poster", "default thumbnail"
         ))
         below_minimum = bool(url) and (
-            int(image.get("width") or 0) < 1200
-            or int(image.get("height") or 0) < 630
+            int(image.get("width") or 0) < 500
+            or int(image.get("height") or 0) < 300
         )
         return not url or generic or below_minimum
     def media_identity(article):
