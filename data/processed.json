@@ -2018,6 +2018,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "27a5e46eda9ed7a751fbe43839f3eb84e6a41ff1f265a87c1d1ff024972dd742": {
+      "seen_at": "2026-11-03T17:07:40.495903+00:00",
+      "source": "The Guardian Business",
+      "status": "skipped_stale"
+    },
     "27a619195309c0bffad66314d8c4fc9c9ae5c10a91589f986ff1cd817c9d5306": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "Google News Science",
@@ -2066,6 +2071,11 @@
     "28713c2b0bca04eee62a94811bd7f2e345bee3fd84a8b8d2e80edc62fc7eab91": {
       "seen_at": "2026-10-20T18:44:16.994007+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "2873666d6f8f61e1a874115b9c2f3fe296401b8a3e4fbeb454b4559312db1afe": {
+      "seen_at": "2026-11-03T17:07:40.495903+00:00",
+      "source": "The Guardian Business",
       "status": "skipped_stale"
     },
     "28804ac7a7b1a0f29afe4fb10ccf7284bc482324ab3f646b80e7df58e5efaf15": {
@@ -2262,6 +2272,11 @@
     "2b83bd1f882efad7ade0434ed3768061b514fc659734a6f8824c6faa3fb5d716": {
       "seen_at": "2026-10-31T18:48:49.607226+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "2ba662b6d23309a6dca96c66c6cbd954a0d5e03f35e89d2e022ca97504cb7692": {
+      "seen_at": "2026-11-03T17:07:40.495903+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "2bcc3934feb883fe11735ba8ecbf6dfce22925485713b39ea610595fc132a1b1": {
@@ -3270,6 +3285,11 @@
     "40b8bb9805b315dac837022f8e44343c0eba397f7c3d432ef69594e5bea9ba40": {
       "seen_at": "2026-10-31T12:52:32.223221+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "40e76b348e8208ea26ea1a0160738582afec52f45b59107ba12331892b3334aa": {
+      "seen_at": "2026-11-03T17:07:40.495903+00:00",
+      "source": "The Guardian Business",
       "status": "skipped_stale"
     },
     "40f7c2ac96fa8d0198f75b71e66263785c7339ea5eeb92e1070b0c9934dec38a": {
@@ -5152,6 +5172,11 @@
       "status": "draft",
       "title": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines"
     },
+    "6844c5c2c67eb8fb2779dd3f3238b6c63b56c92c7d2eca28fc9879baa060358c": {
+      "seen_at": "2026-11-03T17:07:40.495903+00:00",
+      "source": "The Guardian Sport",
+      "status": "skipped_stale"
+    },
     "685a252cf0fdce00542e1626c74fa17fad5ea21e2eb12c7ad458849031469b9c": {
       "created_at": "2026-10-31T12:52:32.223221+00:00",
       "has_embedded_video": true,
@@ -5839,6 +5864,11 @@
     "7396a6123994023d6bd5591a9b0ef61b65919b664560b75ef68e3d726e49f913": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "73b4180fc21f2f32ebece7d9d9e93d67703247979e5373ccd86588d81a31023a": {
+      "seen_at": "2026-11-03T17:07:40.495903+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "73dce97cf4c27e36665cb2d77dc956096c486b9da4b98b68113e33265111d47b": {
@@ -6767,6 +6797,11 @@
     "84b1fe0ec474891cbb0793fa06ec38beacc0287c0165fe430128e2ed0174d1fe": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "84bb318d5552f862083b76df751da7086a735a1ee0c8ad6ca9a919c86799ae0d": {
+      "seen_at": "2026-11-03T17:07:40.495903+00:00",
+      "source": "The Guardian Business",
       "status": "skipped_stale"
     },
     "84c497a0e8f15aaa9004013b7977dcf65b4da6afac21c2c5493249878da78b90": {
@@ -11299,6 +11334,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "df6539a91679732cc82e693fd359897cff9ac276d4ad499b265f4c5b4b995b53": {
+      "seen_at": "2026-11-03T17:07:40.495903+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "dfbbff184799bb2a99b63ee5c8e411fe200f910cff72e61ed82cd739c7626076": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News World",
@@ -11888,6 +11928,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "e8fa5bda2fdb1b6b85cd725608a4ad480e578e3be31b3ca0d9eadd51c48ca16c": {
+      "seen_at": "2026-11-03T17:07:40.495903+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "e94285ae6a966886918e259f55837be1ebab7f0d5b0082f646607ce2c2af3558": {
       "seen_at": "2026-11-01T12:54:22.780534+00:00",
       "source": "Google News Entertainment",
@@ -12334,6 +12379,17 @@
       "seen_at": "2026-11-02T07:29:49.590724+00:00",
       "source": "BBC World",
       "status": "skipped_stale"
+    },
+    "f1eab8161a7e256e659b713ec8f4d2a12a7ac974cf727592f34a9093bc15ade8": {
+      "created_at": "2026-11-03T17:07:40.495903+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755131580695",
+      "source_url": "https://www.theguardian.com/music/2026/nov/03/climate-crisis-charlotte-church-flow-collective",
+      "status": "published",
+      "title": "\u2018Music is the most powerful way of connecting to what\u2019s happening\u2019: can this album change your mind about the climate cr"
     },
     "f1fb5e7a2d7150e4a719a23f194d4c34b99742b3ecfd5582763a8b8e27d7982a": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
@@ -12889,6 +12945,11 @@
     "fda69498612eb7affe39749c50b8ffdb9c161bb90879e5b3d8309f276d99f3ee": {
       "seen_at": "2026-11-01T12:54:22.780534+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "fddd4d28ef90acbbe170578ada5425b27954372ee42c33cfe2fb4aa6236b5537": {
+      "seen_at": "2026-11-03T17:07:40.495903+00:00",
+      "source": "Google News India Top Stories",
       "status": "skipped_stale"
     },
     "fe01e4934507b524571b1def9d6b3f6e87f1da9ce845382da0160189b657c15f": {
