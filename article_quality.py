@@ -66,7 +66,7 @@ def final_article_integrity_issues(title, summary, body, seo_title="", seo_descr
         issues.append("missing_article_body")
     # JSON-LD descriptions are part of the rendered article and must pass too.
     for match in re.finditer(
-        r'<script[^>]*type=["\\']application/ld\\+json["\\'][^>]*>(.*?)</script>',
+        r"<script[^>]*type=['\\"]application/ld\\+json['\\"][^>]*>(.*?)</script>",
         str(body or ""),
         re.I | re.S,
     ):
