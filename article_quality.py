@@ -66,7 +66,7 @@ def final_article_integrity_issues(title, summary, body, seo_title="", seo_descr
         issues.append("missing_article_body")
     # JSON-LD descriptions are part of the rendered article and must pass too.
     for match in re.finditer(
-        r"<script[^>]*type=['\\"]application/ld\\+json['\\"][^>]*>(.*?)</script>",
+        r"""<script[^>]*type=["']application/ld\\+json["'][^>]*>(.*?)</script>""",
         str(body or ""),
         re.I | re.S,
     ):
@@ -79,4 +79,20 @@ def final_article_integrity_issues(title, summary, body, seo_title="", seo_descr
         description = data.get("description", "") if isinstance(data, dict) else ""
         for issue in text_integrity_issues("", "", description):
             issues.append(f"JSON-LD description:{issue}")
+    # Detect common publisher-snippet cutoffs at the end of a field. This is
+    # deliberately conservative: only known incomplete word stems are blocked.
+    terminal_fragments = {
+        "challe", "challeng", "becaus", "governmen", "accordi", "whethe",
+        "throug", "betwee", "anothe", "includ", "followin", "expecte",
+        "announc", "reportin", "propos", "continu", "investigat",
+        "developmen", "releas", "presiden", "ministe", "companie",
+        "officia", "statemen", "emergen", "approache", "disruptio",
+        "remai", "withou", "howeve", "althoug", "despit", "significan",
+        "possibl", "severa", "percentag", "internationa",
+    }
+    for label, value in fields:
+        plain = re.sub(r"<[^>]+>", " ", unescape(str(value or "")))
+        tokens = re.findall(r"[A-Za-z]+", plain.lower())
+        if tokens and tokens[-1] in terminal_fragments:
+            issues.append(f"{label}:possible_mid_word_truncation")
     return sorted(set(issues))
