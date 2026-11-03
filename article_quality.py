@@ -11,16 +11,27 @@ _CORRUPT_UTF8 = re.compile(
 
 
 def _repair_utf8_sequences(value):
+    def to_byte(char):
+        codepoint = ord(char)
+        if codepoint <= 0xFF:
+            return codepoint
+        encoded = char.encode("cp1252", errors="strict")
+        if len(encoded) != 1:
+            raise ValueError("not a single Windows-1252 byte")
+        return encoded[0]
+
     def decode_match(match):
         candidate = match.group(0)
         try:
-            decoded = bytes(ord(char) for char in candidate).decode("utf-8")
+            decoded = bytes(to_byte(char) for char in candidate).decode("utf-8")
         except (UnicodeEncodeError, UnicodeDecodeError, ValueError):
             return candidate
         return decoded
 
-    return _CORRUPT_UTF8.sub(decode_match, value)
-
+    # The third character in strings such as â may already have been
+    # decoded as a Windows-1252 punctuation character (en dash, curly quote).
+    pattern = re.compile(r"â.{1,2}|[ÃÂ][\\x80-\\xBF]", re.S)
+    return pattern.sub(decode_match, value)
 
 def repair_mojibake(value):
     """Repair complete reversible UTF-8-as-Latin-1 sequences, including mixed Unicode."""
