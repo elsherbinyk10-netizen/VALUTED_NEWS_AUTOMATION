@@ -1,7 +1,7 @@
 import unittest
 
 from article_quality import normalize_article_summary, repair_mojibake
-from audit_repair_articles import repair_article_fields
+from audit_repair_articles import repair_article_fields, _has_duplicate_external_source
 from news_worker import make_public_news_brief, paragraphize_source_text
 
 
@@ -19,6 +19,32 @@ class ExistingArticleRepairTests(unittest.TestCase):
         result = repair_article_fields({"title": "Clean", "summary": "Summary", "body": body})
         self.assertEqual(result["body"], body[:body.index("</article>") + len("</article>")])
 
+    def test_removes_duplicate_footer_even_when_image_credit_follows(self):
+        body = (
+            '<article><p>Report.</p><p><strong>Source:</strong> BBC. '
+            '<a href="https://bbc.example/story">Read the original report</a></p></article>'
+            '<hr><p><strong>Source:</strong> BBC. '
+            '<a href="https://bbc.example/story">Read the original report</a></p>'
+            '<p class="vn-image-credit">Image source: https://images.example/photo.jpg</p>'
+        )
+        changes = repair_article_fields({"title": "Clean", "summary": "Summary", "body": body})
+        self.assertNotIn("<hr>", changes["body"])
+        self.assertIn('class="vn-image-credit"', changes["body"])
+        self.assertIn("https://images.example/photo.jpg", changes["body"])
+
+    def test_keeps_distinct_external_source_footer(self):
+        body = (
+            '<article><p>Report.</p><p><strong>Source:</strong> BBC. '
+            '<a href="https://bbc.example/story">Read the original report</a></p></article>'
+            '<hr><p><strong>Source:</strong> Syndicated partner. '
+            '<a href="https://partner.example/story">Read the original report</a></p>'
+        )
+        self.assertFalse(_has_duplicate_external_source(body))
+        self.assertEqual(
+            repair_article_fields({"title": "Clean", "summary": "Summary", "body": body}),
+            {},
+        )
+
     def test_keeps_single_source_link_and_unrelated_body(self):
         body = '<article><p>Report.</p><a href="https://bbc.example/story">Read the original report</a></article>'
         self.assertEqual(repair_article_fields({"title": "Clean", "summary": "Summary", "body": body}), {})
@@ -33,7 +59,6 @@ class ExistingArticleRepairTests(unittest.TestCase):
         self.assertEqual(changes["title"], "A – B")
         self.assertEqual(changes["body"], "<article><p>Text – here.</p></article>")
         self.assertNotIn("summary", changes)
-
 
     def test_normalizes_cut_off_excerpt_without_splitting_a_word(self):
         summary = "A spate of cyber-attacks hit supermarket chains across Europe and officials warned of disruption to the food supply chain " + ("across several regions " * 8)
