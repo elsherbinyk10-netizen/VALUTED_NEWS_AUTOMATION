@@ -63,14 +63,14 @@ def sitemap_locs(xml_text):
 
 def main():
     report = {"site": BASE, "checked_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "robots": {}, "sitemaps": [], "pages_checked": [], "issues": []}
-    status, final, body, _ = get(ROBOTS_URL)
-    report["robots"] = {"url": ROBOTS_URL, "http_status": status, "final_url": final, "has_sitemap_directive": bool(re.search(r"(?im)^\\s*sitemap\\s*:", body)), "body_excerpt": body[:6000]}
-    if status != 200: report["issues"].append("robots_txt_not_200")
+    robots_status, robots_final, body, _ = get(ROBOTS_URL)
+    report["robots"] = {"url": ROBOTS_URL, "http_status": robots_status, "final_url": robots_final, "has_sitemap_directive": bool(re.search(r"(?im)^\s*sitemap\s*:, body)), "body_excerpt": body[:6000]}
+    if robots_status != 200: report["issues"].append("robots_txt_not_200")
     if not report["robots"]["has_sitemap_directive"]: report["issues"].append("robots_txt_missing_sitemap_directive")
-    status, final, xml, _ = get(SITEMAP_URL)
-    kind, locs = sitemap_locs(xml) if status == 200 else ("unavailable", [])
-    report["sitemaps"].append({"url": SITEMAP_URL, "http_status": status, "type": kind, "entries": len(locs)})
-    if status != 200 or not locs: report["issues"].append("sitemap_unavailable_or_empty")
+    sitemap_status, sitemap_final, xml, _ = get(SITEMAP_URL)
+    kind, locs = sitemap_locs(xml) if sitemap_status == 200 else ("unavailable", [])
+    report["sitemaps"].append({"url": SITEMAP_URL, "http_status": sitemap_status, "final_url": sitemap_final, "type": kind, "entries": len(locs)})
+    if sitemap_status != 200 or not locs: report["issues"].append("sitemap_unavailable_or_empty")
     urls = []
     if kind == "sitemapindex":
         for child in locs[:30]:
@@ -104,9 +104,9 @@ def main():
     report["sample_size"] = len(sample)
     report["note"] = "A sampled technical audit only; it does not guarantee Google indexing or ranking. Search Console remains the source of truth for indexed status."
     (OUT / "site-discovery-audit.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-    lines = [f"# Site discovery audit — {BASE}", "", f"- Robots HTTP: {status}", f"- Sitemap URLs discovered: {len(urls)}", f"- Pages sampled: {len(sample)}", f"- Flags: {len(report['issues'])}", "", "## Issues"]
+    lines = [f"# Site discovery audit — {BASE}", "", f"- Robots HTTP: {robots_status}", f"- Sitemap URLs discovered: {len(urls)}", f"- Pages sampled: {len(sample)}", f"- Flags: {len(report['issues'])}", "", "## Issues"]
     lines += ["- " + x for x in report["issues"]] or ["- No sampled technical issues detected."]
     lines += ["", "## Sitemap summary"] + [f"- {x['url']}: HTTP {x['http_status']}, {x['entries']} entries ({x['type']})" for x in report["sitemaps"]]
-    (OUT / "site-discovery-audit.md").write_text("\\n".join(lines), encoding="utf-8")
+    (OUT / "site-discovery-audit.md").write_text("\n".join(lines), encoding="utf-8")
     print(f"Audited {len(sample)} sitemap pages on {BASE}; {len(report['issues'])} flags.")
 if __name__ == "__main__": main()
