@@ -77,7 +77,7 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: Run article text-integrity checks
-        run: python -m unittest tests/test_article_quality.py -v
+        run: python -m unittest discover -s tests -p 'test_article_quality.py' -v
 
       - name: Run RSS collector
         run: python news_worker.py
