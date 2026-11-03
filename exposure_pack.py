@@ -144,7 +144,7 @@ def main():
     if not tracker.exists():
         with tracker.open("w", newline="", encoding="utf-8") as handle:
             writer = csv.writer(handle)
-            writer.writerow(["month", "site", "sessions", "pageviews", "search_clicks", "search_impressions", "ad_revenue_usd", "affiliate_revenue_usd", "other_revenue_usd", "notes"])
+            writer.writerow(["month", "site", "search_clicks", "search_impressions", "ad_revenue_usd", "affiliate_revenue_usd", "other_revenue_usd", "notes"])
     print(f"Audited {len(packs)} published Valuted News articles; report and tracker generated.")
 
 
