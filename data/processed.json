@@ -2780,6 +2780,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "3590619ebcdb10e7e4b0bdda288b495ced6e853baff1e9d2a393d118f13b0c33": {
+      "seen_at": "2026-11-03T18:57:45.640600+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "35c47e02c57dc36f1559cfb001b89dde5e2b1ad1a7324dfe1d549a8f929cdd0e": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "NASA News",
@@ -3212,6 +3217,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "3f6f583f13aa7c8fbcec9d3ca2ff85f745531c900986ada330a10087f6940e8a": {
+      "seen_at": "2026-11-03T18:57:45.640600+00:00",
+      "source": "Google News India Top Stories",
+      "status": "skipped_stale"
+    },
     "3f7fef713852df288c8cfad9aebae49c58b37e9ec661966c7690ccc98b5e716d": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "NPR Arts and Entertainment",
@@ -3605,6 +3615,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "46cd8cbd30cb382316b40b8ec5c79046deafabfa341f0d5d4c09534e082443a0": {
+      "seen_at": "2026-11-03T18:57:45.640600+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "46d07e6855d9c2def1adfb3e585485ffcb646131804c7043f419309952a6b2f4": {
       "seen_at": "2026-10-31T18:48:49.607226+00:00",
       "source": "BBC World",
@@ -3968,6 +3983,11 @@
     "4f5083dd20c787d7ef4675c027b5396ce22c0ce7a9654e64b362b9fa8c28615b": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "4f714a389edc9ed16908a5904a7e80637f1ce6c39d0f4d199464a9c7d4756d91": {
+      "seen_at": "2026-11-03T18:57:45.640600+00:00",
+      "source": "Google News Health",
       "status": "skipped_stale"
     },
     "4f93c7aa39632aab41e05ae37a654b413eba8cc06dea5b98a2342999634dfc0f": {
@@ -8761,6 +8781,11 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "ab42a30e6f71c0174919586c564bd47798978fa13d73c546244af5ecd715b7f2": {
+      "seen_at": "2026-11-03T18:57:45.640600+00:00",
+      "source": "Google News Health",
+      "status": "skipped_stale"
+    },
     "ab5555cac8f06295e2a8dd88dd000243428afea6121ba513489695f3d89bb40f": {
       "seen_at": "2026-10-31T12:52:32.223221+00:00",
       "source": "Google News World",
@@ -9154,6 +9179,17 @@
       "seen_at": "2026-10-24T18:39:21.262654+00:00",
       "source": "BBC World",
       "status": "skipped_stale"
+    },
+    "b3922c87fbdbf45c63f3a1f388de8ba4d1fe8c0ce75d99be488398ca4d9e0a9b": {
+      "created_at": "2026-11-03T18:57:45.640600+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755131973911",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6x2wd4v04eeo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Seven flights across Europe targeted by suspected bomb threats"
     },
     "b3b91dadef21f49a802309929d50665d3d3b47edbf034240a16b79aec61314f3": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
@@ -11365,6 +11401,11 @@
       "status": "published",
       "title": "Russell Brand tells court allegations had devastating impact on him"
     },
+    "dfe3ddb2f6f0a5473175d6c18773ece2c3e0c6135a41fd540061795912c39a1d": {
+      "seen_at": "2026-11-03T18:57:45.640600+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "dfecbaa7cd4849d7851746d73ca8fcd0743e328a78f5f36e6e50b8ec44f19ce7": {
       "seen_at": "2026-10-13T18:35:38.703000+00:00",
       "source": "NASA News",
@@ -11620,6 +11661,11 @@
     "e3ed8fe7978250f97448fe990034e9a84f327196f4df95873c55ed75e8431572": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "e3fa89265477feb96fda163c35421b8c942aaa62be639a347300812ea4cd14de": {
+      "seen_at": "2026-11-03T18:57:45.640600+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "e3fc7b4dacc7c3d78c1eb9dcf706e7d30c72a009a22ab68d3a6b36ac92ec3eb2": {
@@ -12935,6 +12981,11 @@
     "fd1bc1421536f42c3fa94ba612b1bd927dc454ec1f3e9a6607c0b4ff05366ff8": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "fd7ccc161cd05c8c8cca3b35b5572f58bd80e366859c87e17646f87816396b92": {
+      "seen_at": "2026-11-03T18:57:45.640600+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "fda36180e15e5f676d8c48ea062c098b1774bf095faf604049513dbcee801042": {
