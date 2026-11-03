@@ -455,6 +455,17 @@ def main():
                     break
             except Exception as exc:
                 logging.info("Strict publisher-image verification failed for %s at %s: %s", article["title"], url, exc)
+        # If the Washington Post page is temporarily inaccessible to the runner,
+        # use a clearly labeled public-domain official portrait rather than a
+        # low-resolution crop or an unrelated stock image.
+        if not chosen and article["title"] == "Rep. Ilhan Omar’s lawyers say authorities ignored judge’s restrictions on home search - The Washington Post":
+            chosen = {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Ilhan_Omar%2C_official_portrait%2C_116th_Congress_%28square%29.jpg",
+                "alt": "Official public-domain portrait of Rep. Ilhan Omar from 2018; illustrative image, not a photo of the search described in this report",
+                "credit": "Image: official portrait of Rep. Ilhan Omar by Kristie Boyd, U.S. House Office of Photography · Public domain · https://commons.wikimedia.org/wiki/File:Ilhan_Omar,_official_portrait,_116th_Congress_(square).jpg",
+            }
+            source = "public-domain U.S. House portrait via Wikimedia Commons"
+
         # If the source page does not expose a usable hero image, a matching
         # embedded-video thumbnail is an article-specific fallback. Require the
         # YouTube oEmbed title to match before accepting its 1280x720 image.
