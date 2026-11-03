@@ -2,36 +2,49 @@
 import re
 from html import unescape
 
-MOJIBAKE_MARKERS = ("Ã", "Â", "â€", "â\x80", "â\x81", "ï¿½", "�")
+MOJIBAKE_MARKERS = ("Ã", "Â", "â€", "â\\x80", "â\\x81", "ï¿½", "�")
+# UTF-8 bytes that were decoded as Latin-1/Windows-1252. Repair only complete
+# byte sequences; leave standalone accented letters and ambiguous fragments alone.
+_CORRUPT_UTF8 = re.compile(
+    r"(?:Ã[\\x80-\\xBF]|Â[\\x80-\\xBF]|â[\\x80-\\xBF]{1,2})"
+)
+
+
+def _repair_utf8_sequences(value):
+    def decode_match(match):
+        candidate = match.group(0)
+        try:
+            decoded = bytes(ord(char) for char in candidate).decode("utf-8")
+        except (UnicodeEncodeError, UnicodeDecodeError, ValueError):
+            return candidate
+        return decoded
+
+    return _CORRUPT_UTF8.sub(decode_match, value)
 
 
 def repair_mojibake(value):
-    """Repair only strings that round-trip from Latin-1 bytes into valid UTF-8."""
+    """Repair complete reversible UTF-8-as-Latin-1 sequences, including mixed Unicode."""
     text = str(value or "")
-    if not any(marker in text for marker in MOJIBAKE_MARKERS):
-        return text
-    try:
-        repaired = text.encode("latin-1").decode("utf-8")
-    except (UnicodeEncodeError, UnicodeDecodeError):
-        return text
-    # Require a clear reduction in known corruption markers; never guess at text.
-    before = sum(text.count(marker) for marker in MOJIBAKE_MARKERS)
-    after = sum(repaired.count(marker) for marker in MOJIBAKE_MARKERS)
-    return repaired if after < before else text
+    # Repeated passes handle double-encoded text (e.g. ÃƒÂ© -> é).
+    for _ in range(3):
+        repaired = _repair_utf8_sequences(text)
+        if repaired == text:
+            break
+        text = repaired
+    return text
 
 
 def text_integrity_issues(title, summary, body):
-    """Return deterministic defects; avoid guessing whether a valid short word is a typo."""
+    """Flag actual malformed UTF-8 byte sequences and replacement characters."""
     combined = unescape(" ".join((str(title or ""), str(summary or ""), str(body or ""))))
     issues = []
-    if any(marker in combined for marker in MOJIBAKE_MARKERS):
+    if _CORRUPT_UTF8.search(combined) or "�" in combined or "ï¿½" in combined:
         issues.append("possible_mojibake_or_replacement_character")
-    if re.search(r"(?i)\b(?:challe|challeng|sent\s+of)\b", combined):
+    if re.search(r"(?i)\\b(?:challe|challeng|sent\\s+of)\\b", combined):
         issues.append("known_truncated_or_malformed_phrase")
-    if re.search(r"(?i)\b(?:[a-z]{2,})(?:\uFFFD|\?{2,})\b", combined):
+    if re.search(r"(?i)\\b(?:[a-z]{2,})(?:\\uFFFD|\\?{2,})\\b", combined):
         issues.append("possible_missing_characters")
     return issues
-
 
 def normalize_article_summary(summary, title="", limit=240):
     """Keep article excerpts readable: never end on a clipped word or sentence fragment."""
