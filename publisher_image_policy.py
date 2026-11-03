@@ -154,8 +154,12 @@ def verify_publisher_image(page_url, html_text, article_title, candidate_url,
     if not result.get("ok"):
         return result
     candidate = urljoin(page_url, str(candidate_url or ""))
-    if urlparse(candidate).scheme != "https" or _host(candidate) != result["publisher_host"]:
-        return {"ok": False, "reason": "image-not-hosted-by-original-publisher"}
+    # Publishers commonly serve their own article hero images from a separate CDN.
+    # Accept a CDN host only when the exact HTTPS image URL is explicitly declared by
+    # the verified canonical publisher page (og:image, Twitter image, or JSON-LD image).
+    # This does not permit arbitrary third-party or search-result image URLs.
+    if urlparse(candidate).scheme != "https":
+        return {"ok": False, "reason": "image-url-not-https"}
     approved = {_normalize_url(x) for x in result["image_urls"]}
     if _normalize_url(candidate) not in approved:
         return {"ok": False, "reason": "image-not-declared-by-publisher-page"}
