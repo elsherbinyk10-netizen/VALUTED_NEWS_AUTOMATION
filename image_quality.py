@@ -10,8 +10,8 @@ import requests
 from PIL import Image, UnidentifiedImageError
 
 HEADERS = {"User-Agent": "ValutedNewsImageQuality/1.0"}
-MIN_WIDTH = 1200
-MIN_HEIGHT = 630
+MIN_WIDTH = 500
+MIN_HEIGHT = 300
 MIN_ASPECT = 1.25
 MAX_ASPECT = 2.4
 MAX_BYTES = 18 * 1024 * 1024
