@@ -1818,6 +1818,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "2414db8fc77f497f7c35650ec6beff9a9e3315c891653c0e720a837ae1909275": {
+      "seen_at": "2026-11-03T14:57:07.320709+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "244ffc3b821d4ad760d149a59a365247fda0de94fa0c79b2b9ac46b889ec65fd": {
       "created_at": "2026-10-17T04:04:22.722721+00:00",
       "has_embedded_video": false,
@@ -9896,6 +9901,17 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "c380716d7c1b2ad5783596bbe3ec2c323e2959efc8664ee11839a5b62b9ba1b1": {
+      "created_at": "2026-11-03T14:57:07.320709+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755130925335",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm3wv085ne6po?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Thousands of European troops to rehearse Ukraine deployment in event of peace"
+    },
     "c38ef049da3e19d3fbb2e3aa6987436982f4eadc542e011c7eafef03c32fb694": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "BBC Science and Environment",
@@ -10522,6 +10538,17 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "What is PHP and why did it spark a global cyber-security scramble?"
+    },
+    "d04196ce05d6b26cb2bea30873f69cd8fa8137cf9f20427edffb1c2735ffbce5": {
+      "created_at": "2026-11-03T14:57:07.320709+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755130892567",
+      "source_url": "https://www.bbc.co.uk/news/articles/cw23d5z87drpo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "'Quiet quitting' could be hitting the economy - here's why"
     },
     "d0797f594979ed60a3571fd9e9a00f4d79108fe10c917307969ac49226340b5f": {
       "seen_at": "2026-11-01T18:48:11.579033+00:00",
