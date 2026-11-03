@@ -33,6 +33,20 @@ def text_integrity_issues(title, summary, body):
     return issues
 
 
+def normalize_article_summary(summary, title="", limit=240):
+    """Keep article excerpts readable: never end on a clipped word or sentence fragment."""
+    text = re.sub(r"\s+", " ", unescape(str(summary or title or ""))).strip()
+    if len(text) <= limit:
+        return text
+    prefix = text[:limit + 1]
+    sentence_ends = list(re.finditer(r"""[.!?]["'”’)]*(?=\s|$)""", prefix))
+    usable = [match.end() for match in sentence_ends if match.end() >= max(70, int(limit * 0.35))]
+    if usable:
+        return text[:usable[-1]].strip()
+    shortened = text[:limit - 1].rsplit(" ", 1)[0].rstrip(" ,;:-")
+    return (shortened or text[:limit - 1].rstrip()) + "…"
+
+
 def seo_description(summary, title, limit=155):
     """Build a readable SEO description, truncating only at a word boundary."""
     text = re.sub(r"\s+", " ", unescape(str(summary or title or ""))).strip()

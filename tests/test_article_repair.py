@@ -1,7 +1,8 @@
 import unittest
 
-from article_quality import repair_mojibake
+from article_quality import normalize_article_summary, repair_mojibake
 from audit_repair_articles import repair_article_fields
+from news_worker import make_public_news_brief, paragraphize_source_text
 
 
 class ExistingArticleRepairTests(unittest.TestCase):
@@ -32,6 +33,30 @@ class ExistingArticleRepairTests(unittest.TestCase):
         self.assertEqual(changes["title"], "A – B")
         self.assertEqual(changes["body"], "<article><p>Text – here.</p></article>")
         self.assertNotIn("summary", changes)
+
+
+    def test_normalizes_cut_off_excerpt_without_splitting_a_word(self):
+        summary = "A spate of cyber-attacks hit supermarket chains across Europe and officials warned of disruption to the food supply chain " + ("across several regions " * 8)
+        normalized = normalize_article_summary(summary, "Europe on alert")
+        self.assertLessEqual(len(normalized), 241)
+        self.assertTrue(normalized.endswith("…") or normalized.endswith((".", "!", "?")))
+        self.assertNotRegex(normalized, r"[A-Za-z]…")
+
+    def test_paragraphizer_splits_sentences_into_readable_paragraphs(self):
+        text = "First sentence explains the development. Second sentence gives the immediate context. Third sentence adds the impact. Fourth sentence explains what happens next."
+        paragraphs = paragraphize_source_text(text, max_sentences=2)
+        self.assertEqual(len(paragraphs), 2)
+        self.assertIn("Second sentence", paragraphs[0])
+        self.assertIn("Fourth sentence", paragraphs[1])
+
+    def test_new_articles_use_semantic_article_structure_and_safe_excerpt(self):
+        story = "First complete sentence describes the report. Second complete sentence adds context. " + ("Additional reporting detail supports the story. " * 35)
+        article = make_public_news_brief("Test headline", "BBC", "World", story, "https://bbc.example/story")
+        self.assertIn('<article class="valuted-news-article">', article["body"])
+        self.assertIn('class="vn-news-category"', article["body"])
+        self.assertIn('class="vn-article-lead"', article["body"])
+        self.assertLessEqual(len(article["summary"]), 240)
+        self.assertNotRegex(article["summary"], r"[A-Za-z]…")
 
 
 if __name__ == "__main__":

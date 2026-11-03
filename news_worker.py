@@ -12,7 +12,7 @@ from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
 import feedparser
 import requests
 from bs4 import BeautifulSoup
-from article_quality import repair_mojibake, text_integrity_issues, seo_description, final_article_integrity_issues
+from article_quality import repair_mojibake, text_integrity_issues, seo_description, final_article_integrity_issues, normalize_article_summary
 from image_quality import inspect_image_url
 from publisher_video import fetch_publisher_video, _trusted_player_url
 from dateutil import parser as dateparser
@@ -123,7 +123,7 @@ def paragraphize_source_text(value, max_sentences=4):
     text = clean_text(value)
     if not text:
         return []
-    sentences = re.split(r"(?<=[.!?])\\s+(?=[A-Z0-9“‘\"'])", text)
+    sentences = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9“‘\"'])", text)
     paragraphs = []
     current = []
     for sentence in sentences:
@@ -903,13 +903,19 @@ def make_public_news_brief(title, publisher, category, description, source_url, 
     safe_paragraphs = [html.escape(paragraph) for paragraph in source_paragraphs]
     safe_description = html.escape(clean_text(description)[:12000])
     safe_source = html.escape(canonical_url(source_url), quote=True)
-    summary = clean_text(description)[:300] or clean_text(title)[:200]
+    summary = normalize_article_summary(description, title) or clean_text(title)[:200]
     # Render the complete feed-supplied story text as readable paragraphs; do not invent filler.
-    paragraphs_html = "".join(f"<p>{paragraph}</p>" for paragraph in safe_paragraphs)
+    paragraphs_html = ""
+    if safe_paragraphs:
+        paragraphs_html = f'<p class="vn-article-lead">{safe_paragraphs[0]}</p>'
+        paragraphs_html += "".join(f"<p>{paragraph}</p>" for paragraph in safe_paragraphs[1:])
     body = (
         '<article class="valuted-news-article">'
+        '<header class="vn-article-header">'
         f'<p class="vn-news-category"><strong>{safe_category}</strong></p>'
-        f'<h2>What the report says</h2>{paragraphs_html}'
+        '</header>'
+        '<section class="vn-article-content" aria-label="Article text">'
+        f'<h2>What the report says</h2>{paragraphs_html}</section>'
     )
     if video_html:
         body += '<h2>Related video</h2>' + video_html
@@ -978,7 +984,7 @@ def create_shopify_article(blog_id, title, summary, body, source_url, publisher,
     # Add the fallback footer only when the source link is not already present.
     source_link_pattern = (
         r"href=[\"']" + re.escape(source)
-        + r"[\"'][^>]*>\\s*Read the original report\\s*</a>"
+        + r"[\"'][^>]*>\s*Read the original report\s*</a>"
     )
     body_with_credit = body if re.search(source_link_pattern, body, re.I) else (
         body

@@ -3,7 +3,7 @@ import logging
 import re
 import time
 
-from article_quality import repair_mojibake
+from article_quality import normalize_article_summary, repair_mojibake
 from news_worker import env, shopify_graphql
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -44,7 +44,7 @@ def repair_article_fields(article):
     original_summary = article.get("summary", "") or ""
     original_body = article.get("body", "") or ""
     title = repair_mojibake(original_title)
-    summary = repair_mojibake(original_summary)
+    summary = normalize_article_summary(repair_mojibake(original_summary), title or original_title)
     body = repair_mojibake(original_body)
 
     if body.lower().count("read the original report") > 1:
