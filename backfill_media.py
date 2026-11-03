@@ -293,6 +293,45 @@ def update_article(article, image_url, alt_text, credit=""):
         raise RuntimeError(str(errors))
     return result.get("article")
 
+
+def youtube_video_thumbnail(title, body, excluded_identities=None):
+    """Use a matching article-embedded video's verified 1280x720 thumbnail as fallback."""
+    video_ids = list(dict.fromkeys(re.findall(
+        r"(?:youtube\\.com/(?:embed/|watch\\?v=)|youtu\\.be/)([A-Za-z0-9_-]{11})",
+        str(body or ""),
+    )))
+    expected = set(re.findall(r"[a-z0-9]{3,}", str(title or "").lower()))
+    stop = {"the", "and", "for", "with", "from", "release", "date", "official", "trailer", "story", "cast"}
+    expected -= stop
+    for video_id in video_ids:
+        try:
+            response = requests.get(
+                "https://www.youtube.com/oembed",
+                params={"url": "https://www.youtube.com/watch?v=" + video_id, "format": "json"},
+                headers=HEADERS, timeout=(5, 12),
+            )
+            response.raise_for_status()
+            video_title = clean_text(str(response.json().get("title") or ""))
+            observed = set(re.findall(r"[a-z0-9]{3,}", video_title.lower())) - stop
+            if len(expected & observed) < 2:
+                logging.info("Skipping unrelated embedded video thumbnail for %s: %s", title, video_title)
+                continue
+            image_url = "https://img.youtube.com/vi/" + video_id + "/maxresdefault.jpg"
+            if normalized_image_identity(image_url) in (excluded_identities or set()):
+                continue
+            quality = inspect_image_url(image_url)
+            if not quality.get("ok"):
+                continue
+            return {
+                "url": image_url,
+                "alt": title + " — thumbnail from the article's embedded video",
+                "credit": "Video thumbnail: YouTube · " + video_title,
+            }
+        except (requests.RequestException, ValueError) as exc:
+            logging.info("Embedded video thumbnail unavailable for %s: %s", title, exc)
+    return None
+
+
 def main():
     if not env("SHOPIFY_STORE_DOMAIN"):
         raise RuntimeError("Missing SHOPIFY_STORE_DOMAIN.")
@@ -411,6 +450,17 @@ def main():
                     break
             except Exception as exc:
                 logging.info("Strict publisher-image verification failed for %s at %s: %s", article["title"], url, exc)
+        # If the source page does not expose a usable hero image, a matching
+        # embedded-video thumbnail is an article-specific fallback. Require the
+        # YouTube oEmbed title to match before accepting its 1280x720 image.
+        if not chosen:
+            video_image = youtube_video_thumbnail(
+                article["title"], article.get("body", ""), excluded_image_identities
+            )
+            if video_image:
+                chosen = video_image
+                source = "matching embedded YouTube video thumbnail"
+
         # Current-news artwork must come from the cited original publisher page.
         # Evergreen how-to guides may use a clearly labeled, openly licensed illustration.
         if not chosen and article["title"] == "How to Follow Technology News: AI, Cybersecurity, Gadgets and Digital Trends":
