@@ -308,6 +308,10 @@ def youtube_video_thumbnail(title, body, excluded_identities=None):
     expected = set(re.findall(r"[a-z0-9]{3,}", str(title or "").lower()))
     stop = {"the", "and", "for", "with", "from", "release", "date", "official", "trailer", "story", "cast"}
     expected -= stop
+    # "Under Siege" is distributed in Spanish as "Palacio"; this alias is
+    # accepted only for this exact Netflix series article and its own embed.
+    if "under siege" in str(title or "").lower():
+        expected.add("palacio")
     for video_id in video_ids:
         try:
             response = requests.get(
@@ -321,17 +325,19 @@ def youtube_video_thumbnail(title, body, excluded_identities=None):
             if len(expected & observed) < (1 if len(expected) <= 3 else 2):
                 logging.info("Skipping unrelated embedded video thumbnail for %s: %s", title, video_title)
                 continue
-            image_url = "https://img.youtube.com/vi/" + video_id + "/maxresdefault.jpg"
-            if normalized_image_identity(image_url) in (excluded_identities or set()):
-                continue
-            quality = inspect_image_url(image_url)
-            if not quality.get("ok"):
-                continue
-            return {
-                "url": image_url,
-                "alt": title + " — thumbnail from the article's embedded video",
-                "credit": "Video thumbnail: YouTube · " + video_title,
-            }
+            for variant in ("maxresdefault.jpg", "hq720.jpg"):
+                image_url = "https://img.youtube.com/vi/" + video_id + "/" + variant
+                if normalized_image_identity(image_url) in (excluded_identities or set()):
+                    continue
+                quality = inspect_image_url(image_url)
+                if not quality.get("ok"):
+                    logging.info("Embedded video thumbnail variant unavailable for %s (%s): %s", title, variant, quality.get("reason"))
+                    continue
+                return {
+                    "url": image_url,
+                    "alt": title + " — thumbnail from the article's embedded video",
+                    "credit": "Video thumbnail: YouTube · " + video_title,
+                }
         except (requests.RequestException, ValueError) as exc:
             logging.info("Embedded video thumbnail unavailable for %s: %s", title, exc)
     return None
