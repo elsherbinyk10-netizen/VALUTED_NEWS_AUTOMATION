@@ -148,7 +148,15 @@ def _parse_iso_datetime(value):
 
 
 def should_recheck_article(article, attempted_at, now, interval_hours=168):
-    """Recheck new/changed articles promptly; skip unchanged articles for one week."""
+    """Recheck articles without a valid YouTube embed; skip already-embedded stories."""
+    body = str(article.get("body") or "")
+    valid_embed = re.search(
+        r"""<iframe\b[^>]*\bsrc=["']https?://(?:www\.)?youtube(?:-nocookie)?\.com/embed/[A-Za-z0-9_-]{11}""",
+        body,
+        re.I,
+    )
+    if valid_embed:
+        return False
     last_checked = _parse_iso_datetime(attempted_at)
     if not last_checked:
         return True
