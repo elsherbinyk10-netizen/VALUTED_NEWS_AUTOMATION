@@ -129,7 +129,7 @@ def inspect_publisher_page(page_url, html_text, article_title,
 
     if not source_published:
         return {"ok": False, "reason": "publisher-publication-date-missing"}
-    if article_pub and abs((source_published - article_pub).total_seconds()) > 7 * 86400:
+    if article_pub and abs((source_published - article_pub).total_seconds()) > 14 * 86400:
         return {"ok": False, "reason": "publisher-publication-date-mismatch",
                 "source_date": source_published.isoformat(), "article_date": article_pub.isoformat()}
     if article_update and article_pub and abs((article_update - article_pub).total_seconds()) > 86400:
