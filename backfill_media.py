@@ -50,8 +50,6 @@ def image_is_valid(url):
         finally:
             response.close()
         return inspect_image_url(url).get("ok", False)
-        finally:
-            response.close()
     except requests.RequestException:
         return False
 
