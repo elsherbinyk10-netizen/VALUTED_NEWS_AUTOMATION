@@ -444,7 +444,7 @@ def main():
                         "alt": article["title"],
                         "credit": "",
                     }
-                    source = provenance["publisher_host"] + " (" + provenance["published_date"] + ")"
+                    source = provenance["publisher_host"] + " (" + (provenance.get("published_date") or "publisher date not supplied") + ")"
                     break
                 if chosen:
                     break
