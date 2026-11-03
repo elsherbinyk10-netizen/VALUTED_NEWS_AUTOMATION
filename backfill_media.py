@@ -370,9 +370,12 @@ def main():
                     if node and node.get("content"):
                         candidates.append(node["content"])
                 for image_url in dict.fromkeys(candidates):
+                    # Shopify updatedAt changes when we repair article fields or images;
+                    # it is not the publisher's editorial update date. Verify against the
+                    # original article publication date only.
                     provenance = verify_publisher_image(
                         final_page_url, page_html, article["title"], image_url,
-                        article.get("publishedAt"), article.get("updatedAt"),
+                        article.get("publishedAt"),
                     )
                     if not provenance.get("ok"):
                         logging.info("Publisher image rejected for %s: %s", article["title"], provenance.get("reason"))
