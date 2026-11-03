@@ -2,8 +2,9 @@
 import logging
 import re
 import time
+from html import unescape
 
-from article_quality import normalize_article_summary, repair_mojibake
+from article_quality import normalize_article_summary, repair_mojibake, text_integrity_issues
 from news_worker import env, shopify_graphql
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -29,17 +30,34 @@ mutation RepairNewsArticle($id: ID!, $article: ArticleUpdateInput!) {
 }
 """
 
-# The legacy create path appended this footer after the closing article tag,
-# even when the article body already had its own source attribution.
-DUPLICATE_TRAILING_SOURCE = re.compile(
-    r"</article>\s*<hr>\s*<p><strong>Source:</strong>.*?"
-    r"Read the original report</a></p>\s*$",
+# Legacy publisher output appended a second source block after </article>.
+# Do not anchor this to end-of-string: image-credit markup can follow the block.
+DUPLICATE_EXTERNAL_SOURCE = re.compile(
+    r"(?P<close></article>)\\s*<hr>\\s*"
+    r"(?P<footer><p[^>]*>\\s*<strong>\\s*Source:\\s*</strong>.*?"
+    r"Read the original report</a>\\s*</p>)",
     re.I | re.S,
 )
 
 
+def _has_duplicate_external_source(body):
+    """True only when a source footer after </article> duplicates an in-article source link."""
+    match = DUPLICATE_EXTERNAL_SOURCE.search(body or "")
+    if not match:
+        return False
+    inside = (body or "")[:match.start()]
+    footer = match.group("footer")
+    inside_links = re.findall(r'<a\\b[^>]*href=["\\']([^"\\']+)["\\'][^>]*>Read the original report</a>', inside, re.I)
+    footer_links = re.findall(r'<a\\b[^>]*href=["\\']([^"\\']+)["\\'][^>]*>Read the original report</a>', footer, re.I)
+    if inside_links and footer_links:
+        return inside_links[-1].strip() == footer_links[-1].strip()
+    inside_sources = re.findall(r"<strong>\\s*Source:\\s*</strong>\\s*([^.<]+)", inside, re.I)
+    footer_sources = re.findall(r"<strong>\\s*Source:\\s*</strong>\\s*([^.<]+)", footer, re.I)
+    return bool(inside_sources and footer_sources and inside_sources[-1].strip().casefold() == footer_sources[0].strip().casefold())
+
+
 def repair_article_fields(article):
-    """Repair reversible encoding only; remove only the known trailing duplicate footer."""
+    """Repair reversible encoding and remove only a confirmed duplicated external source footer."""
     original_title = article.get("title", "") or ""
     original_summary = article.get("summary", "") or ""
     original_body = article.get("body", "") or ""
@@ -47,8 +65,8 @@ def repair_article_fields(article):
     summary = normalize_article_summary(repair_mojibake(original_summary), title or original_title)
     body = repair_mojibake(original_body)
 
-    if body.lower().count("read the original report") > 1:
-        body, count = DUPLICATE_TRAILING_SOURCE.subn("</article>", body, count=1)
+    if _has_duplicate_external_source(body):
+        body = DUPLICATE_EXTERNAL_SOURCE.sub(lambda m: m.group("close"), body, count=1)
 
     changes = {}
     if title != original_title:
@@ -62,7 +80,7 @@ def repair_article_fields(article):
 
 def main():
     after = None
-    scanned = repaired = 0
+    scanned = repaired = residual_encoding = residual_duplicate = 0
     while True:
         data = shopify_graphql(LIST_QUERY, {"blogId": BLOG_ID, "after": after})
         connection = ((data.get("blog") or {}).get("articles") or {})
@@ -73,22 +91,31 @@ def main():
         for article in nodes:
             scanned += 1
             changes = repair_article_fields(article)
-            if not changes:
-                continue
-            result = shopify_graphql(
-                UPDATE_MUTATION,
-                {"id": article["id"], "article": changes},
-            ).get("articleUpdate") or {}
-            errors = result.get("userErrors") or []
-            if errors:
-                raise RuntimeError(
-                    "Shopify rejected repair for "
-                    + str(article.get("title", article["id"]))
-                    + ": " + str(errors)
-                )
-            repaired += 1
-            logging.info("Repaired article %s (%s)", article["id"], ", ".join(changes))
-            time.sleep(0.25)
+            if changes:
+                result = shopify_graphql(
+                    UPDATE_MUTATION,
+                    {"id": article["id"], "article": changes},
+                ).get("articleUpdate") or {}
+                errors = result.get("userErrors") or []
+                if errors:
+                    raise RuntimeError(
+                        "Shopify rejected repair for "
+                        + str(article.get("title", article["id"]))
+                        + ": " + str(errors)
+                    )
+                repaired += 1
+                logging.info("Repaired article %s (%s)", article["id"], ", ".join(changes))
+                time.sleep(0.25)
+
+            final_title = changes.get("title", article.get("title", "") or "")
+            final_summary = changes.get("summary", article.get("summary", "") or "")
+            final_body = changes.get("body", article.get("body", "") or "")
+            if text_integrity_issues(final_title, final_summary, final_body):
+                residual_encoding += 1
+                logging.error("Unresolved text-integrity issue: %s", article.get("title"))
+            if _has_duplicate_external_source(final_body):
+                residual_duplicate += 1
+                logging.error("Unresolved duplicate source footer: %s", article.get("title"))
 
         page = connection.get("pageInfo") or {}
         if not page.get("hasNextPage"):
@@ -97,7 +124,15 @@ def main():
         if not after:
             raise RuntimeError("Shopify pagination returned hasNextPage without an endCursor.")
 
-    logging.info("Existing article repair complete: scanned=%d repaired=%d", scanned, repaired)
+    logging.info(
+        "Existing article repair complete: scanned=%d repaired=%d residual_encoding=%d residual_duplicate_source=%d",
+        scanned, repaired, residual_encoding, residual_duplicate,
+    )
+    if residual_encoding or residual_duplicate:
+        raise RuntimeError(
+            f"Article quality gate failed: {residual_encoding} encoding issues and "
+            f"{residual_duplicate} duplicate source footers remain."
+        )
 
 
 if __name__ == "__main__":
