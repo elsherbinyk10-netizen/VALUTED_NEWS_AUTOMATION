@@ -94,7 +94,7 @@ def inspect_publisher_page(page_url, html_text, article_title,
     if not page_title and soup.title:
         page_title = soup.title.get_text(" ", strip=True)
     expected, observed = _tokens(article_title), _tokens(page_title)
-    if len(expected) < 2 or len(expected & observed) < min(3, len(expected)):
+    if len(expected) < 2 or len(expected & observed) < min(2, len(expected)):
         return {"ok": False, "reason": "publisher-page-title-mismatch", "page_title": page_title}
 
     images, published, modified = [], [], []
