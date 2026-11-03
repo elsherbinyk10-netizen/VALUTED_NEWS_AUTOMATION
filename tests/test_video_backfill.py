@@ -5,6 +5,27 @@ import backfill_video
 
 
 class PublisherVideoBackfillTests(unittest.TestCase):
+    def test_skips_recently_checked_unchanged_articles(self):
+        now = backfill_video.datetime(2026, 11, 3, 12, 0, tzinfo=backfill_video.timezone.utc)
+        article = {"updatedAt": "2026-11-02T12:00:00Z"}
+        self.assertFalse(backfill_video.should_recheck_article(
+            article, "2026-11-03T10:00:00+00:00", now
+        ))
+
+    def test_rechecks_article_when_shopify_content_changed(self):
+        now = backfill_video.datetime(2026, 11, 3, 12, 0, tzinfo=backfill_video.timezone.utc)
+        article = {"updatedAt": "2026-11-03T11:00:00Z"}
+        self.assertTrue(backfill_video.should_recheck_article(
+            article, "2026-11-03T09:00:00+00:00", now
+        ))
+
+    def test_rechecks_article_after_one_week(self):
+        now = backfill_video.datetime(2026, 11, 3, 12, 0, tzinfo=backfill_video.timezone.utc)
+        article = {"updatedAt": "2026-10-20T12:00:00Z"}
+        self.assertTrue(backfill_video.should_recheck_article(
+            article, "2026-10-26T12:00:00+00:00", now
+        ))
+
     def test_primary_source_url_ignores_internal_related_story_links(self):
         body = ('<a href="https://valutednews.com/blogs/news/related-story">Related</a>'
                 '<p><strong>Source:</strong> Publisher. '
