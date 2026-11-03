@@ -248,7 +248,7 @@ def list_articles():
     query BackfillArticles($id: ID!, $after: String) {
       blog(id: $id) {
         articles(first: 250, reverse: true, after: $after) {
-          nodes { id title handle body isPublished publishedAt updatedAt image { url altText } }
+          nodes { id title handle body isPublished publishedAt updatedAt image { url altText width height } }
           pageInfo { hasNextPage endCursor }
         }
       }
