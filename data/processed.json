@@ -1746,6 +1746,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "22050ad7e109b51c8fd67f794706d625a2df6411f5d1af8bdd9299adc5e41108": {
+      "seen_at": "2026-11-03T20:29:47.097687+00:00",
+      "source": "Google News Health",
+      "status": "skipped_stale"
+    },
     "222c8484567cfa0ba3ef45238ac2916d57d5bcac20517e7a35b14f2bfabf52f1": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Technology",
@@ -1996,6 +2001,11 @@
     "26e935d8577370c68d867787ea4504ede6ee7340d373e58165a48ed9d95b6052": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "270879205b536562567a812284606b26377ab504b84dadeb5c62d184a5eda76f": {
+      "seen_at": "2026-11-03T20:29:47.097687+00:00",
+      "source": "Google News Health",
       "status": "skipped_stale"
     },
     "27179cdad45769a749c54439784333d8c1f6a088c7f21e7d7c24c7a36ae58c45": {
@@ -2360,6 +2370,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "2d91ebf0909fe3fb7c508ac9714c7324d4edc3f4fda944e469d54360c4f80edb": {
+      "seen_at": "2026-11-03T20:29:47.097687+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "2dcdee8cb4e15480f41cfa8a6f6a0ae83cbf7e487543f308863ac977e68c9744": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News World",
@@ -2708,6 +2723,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c5vgj8xwyj1zo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "New weather warnings as third storm set to hit Scotland"
+    },
+    "341861224b167185029caf05abb849e575a378ccaa1f5235e0e477a0f18e9e32": {
+      "seen_at": "2026-11-03T20:29:47.097687+00:00",
+      "source": "The Guardian Sport",
+      "status": "skipped_stale"
     },
     "3491781589dd05a93807ad1daf73c17f5c0ea963288f139de046ed9044cd8baf": {
       "seen_at": "2026-10-22T18:45:05.397738+00:00",
@@ -3074,6 +3094,11 @@
     "3ba56f3fae090328f881411b1c7df7e40127ccd3651c50ac92323b83c754dbaa": {
       "seen_at": "2026-11-03T07:14:01.426928+00:00",
       "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
+    "3bcb98389910707f9642f3b5c5467f994f83b8ef69962d12c104ddeb4f29b70b": {
+      "seen_at": "2026-11-03T20:29:47.097687+00:00",
+      "source": "Google News Politics",
       "status": "skipped_stale"
     },
     "3bf02e14e5a1741f19938116e9078ab06c12c60d0a4c8999a776a92cb09bfa49": {
@@ -3613,6 +3638,11 @@
     "46c0a2e1eea41727803877267e40125c3d6c39812ac2d6a556062eb04dcc24e5": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "NPR Business",
+      "status": "skipped_stale"
+    },
+    "46c532c1d39873f923c2acdbd64025e7a44dfc4d5eec8124bdb36e16f1a95898": {
+      "seen_at": "2026-11-03T20:29:47.097687+00:00",
+      "source": "Google News UK Top Stories",
       "status": "skipped_stale"
     },
     "46cd8cbd30cb382316b40b8ec5c79046deafabfa341f0d5d4c09534e082443a0": {
@@ -4545,6 +4575,11 @@
     "5c456d0f3af0ba315c18d962095c2393b5319e10bf54c066be08a9e8b414613a": {
       "seen_at": "2026-11-02T18:26:59.867692+00:00",
       "source": "Google News Health",
+      "status": "skipped_stale"
+    },
+    "5c5e896839608f17fa42b4abc8c4f10515980169aa84957449131a25afe3aa1b": {
+      "seen_at": "2026-11-03T20:29:47.097687+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "5cab76d7a8f5891ae97644d27415014c87f4466c9b540f0e2fe42f052f0dd0f3": {
@@ -9251,6 +9286,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "b4a7d9d60ca3aa0cc5d5cb7f2539a1f084143a5de592ccc96f2c52c57f613acd": {
+      "seen_at": "2026-11-03T20:29:47.097687+00:00",
+      "source": "Google News Politics",
+      "status": "skipped_stale"
+    },
     "b4b13e50a9e3dbff6f203d9ea1a30cc2d227210afde801a810f42d7faa5e5198": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian World",
@@ -12824,6 +12864,11 @@
     "fa5c9268009290c62f0fac11dc8a09196fdf4007a12e7148ed6fd417057be4b3": {
       "seen_at": "2026-10-24T18:39:21.262654+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "fa64c586da5698ed36f98c75b613c61738216d0302e204ecbc6e6b9db87cc414": {
+      "seen_at": "2026-11-03T20:29:47.097687+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "fa6b4c5a0a790a342621e05373cd554b25e82affb62ea2ba4c5ed9928a3a4589": {
