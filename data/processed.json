@@ -752,6 +752,17 @@
       "source": "The Guardian Business",
       "status": "skipped_stale"
     },
+    "0f51a66c73a0f411bb0d37a8da874ce1f0f3d4e893d90eb1fb07b60574be99e6": {
+      "created_at": "2026-11-03T16:31:36.882369+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian Culture",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755131416855",
+      "source_url": "https://www.theguardian.com/music/2026/nov/03/rnb-star-ashanti-10-chaotic-questions",
+      "status": "published",
+      "title": "Ashanti: \u2018I\u2019ve had a bodysuit snap off on stage. That was not my coolest moment\u2019"
+    },
     "0f708fa441cec6433d7c1c4f194b4b20e26418757983901f8f08f0bf1e796d9e": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Variety Music",
@@ -6536,6 +6547,17 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "81a8947b20870df8e0baf9146bec8dcf44c575856e9259793529db026a14e875": {
+      "created_at": "2026-11-03T16:31:36.882369+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755131351319",
+      "source_url": "https://www.theguardian.com/politics/live/2026/nov/03/shabana-mahmood-migration-brexit-eu-labour-andy-burnham-kemi-badenoch-king-charles-commonwealth-uk-politics-latest-news",
+      "status": "published",
+      "title": "King tells Commonwealth leaders that Britain\u2019s role in slave trade was \u2018shameful\u2019 but stops short of apology \u2013 UK politi"
+    },
     "81dbce41592d2f3e52f97a4ee850c443bb603bc24cdb29bb7b4ea3a5a00fbae6": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Google News Science",
@@ -7090,6 +7112,11 @@
     },
     "8afc06e671fe07c92001a0a73c02122ce617e345a096ec16c2630b34efbdfb57": {
       "seen_at": "2026-10-20T10:14:51.554768+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "8b2a114e56c9250a8c4197f6ba2b16275c580586198a478357d727179d8d8723": {
+      "seen_at": "2026-11-03T16:31:36.882369+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
@@ -12729,6 +12756,17 @@
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "fb526a34f1be4832adf36285a3d42ab7df776259d6f5f1754edff798cfbb731f": {
+      "created_at": "2026-11-03T16:31:36.882369+00:00",
+      "has_embedded_video": false,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755131384087",
+      "source_url": "https://www.theguardian.com/environment/2026/nov/03/garden-climate-assessment-tool-drought-gardening",
+      "status": "published",
+      "title": "New tool will help gardeners move away from thirsty English classics to drought-resistant plants"
     },
     "fb7cc8f3d7abb95415e23fa2c1bd7891625a36ee330245940f8a339217a624b9": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
