@@ -42,7 +42,21 @@ class PublisherImagePolicyTests(unittest.TestCase):
         self.assertFalse(result["ok"])
         self.assertEqual(result["reason"], "image-not-declared-by-publisher-page")
 
-    def test_rejects_image_host_outside_publisher(self):
+    def test_accepts_exact_publisher_declared_cdn_image(self):
+        page = PAGE.replace(
+            "https://publisher.example/images/nasa-moon.jpg",
+            "https://images.publisher-cdn.example/nasa-moon.jpg",
+        )
+        result = verify_publisher_image(
+            "https://publisher.example/story/one", page,
+            "NASA discovers new moon around distant planet",
+            "https://images.publisher-cdn.example/nasa-moon.jpg",
+            "2026-11-02T10:00:00Z",
+        )
+        self.assertTrue(result["ok"])
+        self.assertEqual(result["publisher_host"], "publisher.example")
+
+    def test_rejects_undeclared_third_party_image(self):
         result = verify_publisher_image(
             "https://publisher.example/story/one", PAGE,
             "NASA discovers new moon around distant planet",
@@ -50,7 +64,7 @@ class PublisherImagePolicyTests(unittest.TestCase):
             "2026-11-02T10:00:00Z",
         )
         self.assertFalse(result["ok"])
-        self.assertEqual(result["reason"], "image-not-hosted-by-original-publisher")
+        self.assertEqual(result["reason"], "image-not-declared-by-publisher-page")
 
     def test_rejects_missing_source_date(self):
         page = PAGE.replace(
