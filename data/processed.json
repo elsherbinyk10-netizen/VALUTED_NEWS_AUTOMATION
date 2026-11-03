@@ -5477,6 +5477,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "6fbe29fcc6990e566f70a39e736eab85bc943526d04261cc8e215fb9f6135665": {
+      "seen_at": "2026-11-03T11:24:55.770845+00:00",
+      "source": "Google News Health",
+      "status": "skipped_stale"
+    },
     "6fd7b356603acc41fdd76f484b451f75051c853f23dbba6eceb60ca2713bb764": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Technology",
@@ -5913,6 +5918,11 @@
     "76785cc60a2f16b19633cfa20a405fdd3106b6dd7f97e38eb9bdfac9233ec7b7": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
       "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
+    "769c80b37a9887382ea0547ef6d372ba8f02d81804abd6114be81844af288946": {
+      "seen_at": "2026-11-03T11:24:55.770845+00:00",
+      "source": "Google News India Top Stories",
       "status": "skipped_stale"
     },
     "76ac965f5c723a2654f21d67a8988045680d7afabd5f98292654254f124477de": {
@@ -11988,6 +11998,11 @@
       "status": "draft",
       "title": "Fridges in French supermarkets hit by cyber attack"
     },
+    "f031c012a0cb20309063cc965b094cb6f9d1453af66a6e36da67b430f2e33e88": {
+      "seen_at": "2026-11-03T11:24:55.770845+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "f03ed81c684966cb093f3a07904355b8f6b3e9280b60b4b5b4310d6f10584a66": {
       "seen_at": "2026-10-17T05:38:12.339694+00:00",
       "source": "BBC World",
@@ -12011,6 +12026,11 @@
     "f09674eb91dbd779ee0f9a2205ae1fe645ce34d0114b773f694451c84c012ac7": {
       "seen_at": "2026-10-24T18:39:21.262654+00:00",
       "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
+    "f0a84d9b86bbe8d8b91153bd21b36d7b61f63603591bbd29e587358b7d51d9b2": {
+      "seen_at": "2026-11-03T11:24:55.770845+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "f0d89dca8c2627a6cf8b7b934f05f42edd18edd2f52b98b8ac86a8390f60ce55": {
@@ -12415,6 +12435,11 @@
     "f88001b283bc30da02bad9f42920a09b83024b71c5d2ef141847a8136f7bbd7f": {
       "seen_at": "2026-11-01T18:48:11.579033+00:00",
       "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
+    "f8aa221527d8f25c7979a41ac8b76d1863dcee28f40f860950cfb84b97ba8d06": {
+      "seen_at": "2026-11-03T11:24:55.770845+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "f8d38d8a8246be7801f9f4c24f358b5a2d01772941118b2a99a8822eaaad84cb": {
