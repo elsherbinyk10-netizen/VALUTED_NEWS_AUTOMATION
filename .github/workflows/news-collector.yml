@@ -71,13 +71,16 @@ jobs:
           test -f feeds.json || { echo "feeds.json is missing"; exit 1; }
 
       - name: Validate Python syntax
-        run: python -m py_compile news_worker.py image_quality.py publisher_video.py backfill_video.py backfill_media.py audit_repair_images.py
+        run: python -m py_compile news_worker.py article_quality.py image_quality.py publisher_video.py backfill_video.py backfill_media.py audit_repair_images.py audit_repair_articles.py
 
       - name: Test video embed and editorial safety
         run: python -m unittest discover -s tests -v
 
       - name: Run article text-integrity checks
         run: python -m unittest discover -s tests -p 'test_article_quality.py' -v
+
+      - name: Repair reversible text corruption and duplicate source footers in existing articles
+        run: python audit_repair_articles.py
 
       - name: Run RSS collector
         run: python news_worker.py
