@@ -40,7 +40,8 @@ class ExistingArticleRepairTests(unittest.TestCase):
         normalized = normalize_article_summary(summary, "Europe on alert")
         self.assertLessEqual(len(normalized), 241)
         self.assertTrue(normalized.endswith("…") or normalized.endswith((".", "!", "?")))
-        self.assertNotRegex(normalized, r"[A-Za-z]…") if normalized.endswith("…") is False else self.assertRegex(normalized, r"\s…$")
+        self.assertTrue(normalized.endswith("…"))
+        self.assertTrue(normalized[:-1].endswith("regions"))
 
     def test_paragraphizer_splits_sentences_into_readable_paragraphs(self):
         text = "First sentence explains the development. Second sentence gives the immediate context. Third sentence adds the impact. Fourth sentence explains what happens next."
