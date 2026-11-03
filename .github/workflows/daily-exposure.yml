@@ -2,6 +2,12 @@ name: Valuted News Daily Exposure Pack
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "google_performance.py"
+      - "exposure_pack.py"
+      - ".github/workflows/daily-exposure.yml"
   schedule:
     - cron: "30 17 * * *" # 19:30 Cairo during UTC+2
 
@@ -30,10 +36,18 @@ jobs:
           python-version: "3.12"
       - name: Install project dependencies
         run: python -m pip install --disable-pip-version-check -r requirements.txt
+      - name: Install Google reporting dependencies
+        run: python -m pip install --disable-pip-version-check google-api-python-client google-auth google-analytics-data
       - name: Validate exposure generator
         run: python -m py_compile exposure_pack.py news_worker.py
       - name: Build SEO audit and social-ready copy for latest published articles
         run: python exposure_pack.py --limit 10
+      - name: Import Google Search Console and GA4 performance (skips safely until connected)
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ vars.GSC_SITE_URL }}
+          GA4_PROPERTY_ID: ${{ vars.GA4_PROPERTY_ID }}
+        run: python google_performance.py
       - name: Upload daily exposure pack
         uses: actions/upload-artifact@v4
         with:
