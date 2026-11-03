@@ -2,11 +2,11 @@
 import re
 from html import unescape
 
-MOJIBAKE_MARKERS = ("Ã", "Â", "â€", "â\\x80", "â\\x81", "ï¿½", "�")
+MOJIBAKE_MARKERS = ("Ã", "Â", "â€", "â\x80", "â\x81", "ï¿½", "�")
 # UTF-8 bytes that were decoded as Latin-1/Windows-1252. Repair only complete
 # byte sequences; leave standalone accented letters and ambiguous fragments alone.
 _CORRUPT_UTF8 = re.compile(
-    r"(?:Ã[\\x80-\\xBF]|Â[\\x80-\\xBF]|â[\\x80-\\xBF]{1,2})"
+    r"(?:Ã[\x80-\xBF]|Â[\x80-\xBF]|â[\x80-\xBF]{1,2})"
 )
 
 
@@ -30,7 +30,7 @@ def _repair_utf8_sequences(value):
 
     # The third character in strings such as â may already have been
     # decoded as a Windows-1252 punctuation character (en dash, curly quote).
-    pattern = re.compile(r"â.{1,2}|[ÃÂ][\\x80-\\xBF]", re.S)
+    pattern = re.compile(r"â.{1,2}|[ÃÂ][\x80-\xBF]", re.S)
     return pattern.sub(decode_match, value)
 
 def repair_mojibake(value):
@@ -51,9 +51,9 @@ def text_integrity_issues(title, summary, body):
     issues = []
     if _CORRUPT_UTF8.search(combined) or "�" in combined or "ï¿½" in combined:
         issues.append("possible_mojibake_or_replacement_character")
-    if re.search(r"(?i)\\b(?:challe|challeng|sent\\s+of)\\b", combined):
+    if re.search(r"(?i)\b(?:challe|challeng|sent\s+of)\b", combined):
         issues.append("known_truncated_or_malformed_phrase")
-    if re.search(r"(?i)\\b(?:[a-z]{2,})(?:\\uFFFD|\\?{2,})\\b", combined):
+    if re.search(r"(?i)\b(?:[a-z]{2,})(?:\uFFFD|\?{2,})\b", combined):
         issues.append("possible_missing_characters")
     return issues
 
