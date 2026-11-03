@@ -65,7 +65,7 @@ class PublisherImagePolicyTests(unittest.TestCase):
             "NASA discovers new moon around distant planet", "2026-11-02T10:00:00Z",
         )
         self.assertFalse(result["ok"])
-        self.assertEqual(result["reason"], "publisher-date-missing")
+        self.assertEqual(result["reason"], "publisher-publication-date-missing")
 
     def test_rejects_source_date_outside_article_window(self):
         result = inspect_publisher_page(
@@ -73,7 +73,7 @@ class PublisherImagePolicyTests(unittest.TestCase):
             "NASA discovers new moon around distant planet", "2025-01-01T10:00:00Z",
         )
         self.assertFalse(result["ok"])
-        self.assertEqual(result["reason"], "publisher-date-outside-article-window")
+        self.assertEqual(result["reason"], "publisher-publication-date-mismatch")
 
     def test_rejects_article_update_when_publisher_has_no_modified_date(self):
         page = PAGE.replace(
@@ -82,7 +82,7 @@ class PublisherImagePolicyTests(unittest.TestCase):
         result = inspect_publisher_page(
             "https://publisher.example/story/one", page,
             "NASA discovers new moon around distant planet",
-            "2026-11-02T10:00:00Z", "2026-11-03T10:00:00Z",
+            "2026-11-02T10:00:00Z", "2026-11-04T10:00:00Z",
         )
         self.assertFalse(result["ok"])
         self.assertEqual(result["reason"], "publisher-update-date-missing")
