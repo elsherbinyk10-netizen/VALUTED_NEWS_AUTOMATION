@@ -76,9 +76,10 @@ def main():
                     try:
                         if not page.ok or "html" not in page.headers.get("Content-Type", "").lower():
                             continue
+                        # Shopify updatedAt may reflect a repair, not a publisher edit.
                         verdict = verify_publisher_image(
                             page.url, page.text, article.get("title", ""), url,
-                            article.get("publishedAt"), article.get("updatedAt"),
+                            article.get("publishedAt"),
                         )
                     finally:
                         page.close()
