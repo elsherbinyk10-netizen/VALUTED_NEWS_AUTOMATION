@@ -15,6 +15,7 @@ from urllib.parse import urlparse, urlencode, quote_plus
 
 import requests
 from news_worker import env, shopify_graphql, fetch_article_media, canonical_url, clean_text
+from image_quality import inspect_image_url
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 BLOG_ID = env("SHOPIFY_BLOG_ID", "gid://shopify/Blog/126010065175")
@@ -44,7 +45,11 @@ def image_is_valid(url):
     try:
         response = requests.get(url, headers=HEADERS, stream=True, timeout=(4, 8), allow_redirects=True)
         try:
-            return response.ok and response.headers.get("Content-Type", "").lower().startswith("image/")
+            if not (response.ok and response.headers.get("Content-Type", "").lower().startswith("image/")):
+                return False
+        finally:
+            response.close()
+        return inspect_image_url(url).get("ok", False)
         finally:
             response.close()
     except requests.RequestException:
