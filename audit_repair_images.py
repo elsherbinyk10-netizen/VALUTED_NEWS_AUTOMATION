@@ -116,8 +116,18 @@ def main():
         return
 
     # Requeue only candidates through the strict publisher-only repair path.
+    # The backfill worker has a 100-article per-run cap. Prioritize verified
+    # image-quality failures first so older low-resolution images are not starved
+    # behind unrelated provenance warnings on newer articles.
+    prioritized = sorted(
+        flagged.values(),
+        key=lambda item: (
+            0 if item[1].startswith("low-resolution-or-invalid-image:") else 1,
+            str(item[0].get("title", "")).casefold(),
+        ),
+    )
     targeted = []
-    for article, reason in flagged.values():
+    for article, reason in prioritized:
         row = dict(article)
         row["image"] = None
         targeted.append(row)
