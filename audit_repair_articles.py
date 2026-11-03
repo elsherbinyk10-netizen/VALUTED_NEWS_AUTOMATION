@@ -2,7 +2,6 @@
 import logging
 import re
 import time
-from html import unescape
 
 from article_quality import normalize_article_summary, repair_mojibake, text_integrity_issues
 from news_worker import env, shopify_graphql
@@ -31,33 +30,39 @@ mutation RepairNewsArticle($id: ID!, $article: ArticleUpdateInput!) {
 """
 
 # Legacy publisher output appended a second source block after </article>.
-# Do not anchor this to end-of-string: image-credit markup can follow the block.
+# Match it even when image-credit markup follows; preserve all in-article content.
 DUPLICATE_EXTERNAL_SOURCE = re.compile(
-    r"(?P<close></article>)\\s*<hr>\\s*"
-    r"(?P<footer><p[^>]*>\\s*<strong>\\s*Source:\\s*</strong>.*?"
-    r"Read the original report</a>\\s*</p>)",
+    r"""(?P<close></article>)\s*<hr>\s*(?P<footer><p[^>]*>\s*<strong>\s*Source:\s*</strong>.*?Read the original report</a>\s*</p>)""",
     re.I | re.S,
 )
 
 
 def _has_duplicate_external_source(body):
-    """True only when a source footer after </article> duplicates an in-article source link."""
+    """True only when a post-article footer repeats the in-article source URL."""
     match = DUPLICATE_EXTERNAL_SOURCE.search(body or "")
     if not match:
         return False
     inside = (body or "")[:match.start()]
     footer = match.group("footer")
-    inside_links = re.findall(r'<a\\b[^>]*href=["\\']([^"\\']+)["\\'][^>]*>Read the original report</a>', inside, re.I)
-    footer_links = re.findall(r'<a\\b[^>]*href=["\\']([^"\\']+)["\\'][^>]*>Read the original report</a>', footer, re.I)
+    link_pattern = re.compile(
+        r"""<a\b[^>]*href=["']([^"']+)["'][^>]*>Read the original report</a>""",
+        re.I,
+    )
+    inside_links = link_pattern.findall(inside)
+    footer_links = link_pattern.findall(footer)
     if inside_links and footer_links:
         return inside_links[-1].strip() == footer_links[-1].strip()
-    inside_sources = re.findall(r"<strong>\\s*Source:\\s*</strong>\\s*([^.<]+)", inside, re.I)
-    footer_sources = re.findall(r"<strong>\\s*Source:\\s*</strong>\\s*([^.<]+)", footer, re.I)
-    return bool(inside_sources and footer_sources and inside_sources[-1].strip().casefold() == footer_sources[0].strip().casefold())
+    source_pattern = re.compile(r"<strong>\s*Source:\s*</strong>\s*([^.<]+)", re.I)
+    inside_sources = source_pattern.findall(inside)
+    footer_sources = source_pattern.findall(footer)
+    return bool(
+        inside_sources and footer_sources
+        and inside_sources[-1].strip().casefold() == footer_sources[0].strip().casefold()
+    )
 
 
 def repair_article_fields(article):
-    """Repair reversible encoding and remove only a confirmed duplicated external source footer."""
+    """Repair reversible encoding and remove only a confirmed duplicate source footer."""
     original_title = article.get("title", "") or ""
     original_summary = article.get("summary", "") or ""
     original_body = article.get("body", "") or ""
