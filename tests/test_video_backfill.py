@@ -2,6 +2,7 @@ import unittest
 from unittest.mock import patch
 
 import backfill_video
+import backfill_media
 
 
 class PublisherVideoBackfillTests(unittest.TestCase):
@@ -25,6 +26,25 @@ class PublisherVideoBackfillTests(unittest.TestCase):
         self.assertTrue(backfill_video.should_recheck_article(
             article, "2026-10-26T12:00:00+00:00", now
         ))
+
+    def test_video_thumbnail_fallback_reads_youtube_nocookie_embeds(self):
+        body = '<iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"></iframe>'
+        with patch("backfill_media.requests.get") as get, patch(
+            "backfill_media.inspect_image_url", return_value={"ok": True}
+        ):
+            get.return_value.json.return_value = {
+                "title": "The Child Official Trailer | Netflix"
+            }
+            result = backfill_media.youtube_video_thumbnail(
+                "Netflix’s The Child Trailer: Cast, Release Date and the Story Behind the Film",
+                body,
+                set(),
+            )
+        self.assertIsNotNone(result)
+        self.assertEqual(
+            result["url"],
+            "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+        )
 
     def test_primary_source_url_ignores_internal_related_story_links(self):
         body = ('<a href="https://valutednews.com/blogs/news/related-story">Related</a>'
