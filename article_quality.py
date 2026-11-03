@@ -42,3 +42,41 @@ def seo_description(summary, title, limit=155):
         return text[:limit]
     shortened = text[:limit - 3].rsplit(" ", 1)[0].rstrip(" ,;:-")
     return (shortened or text[:limit - 3]).rstrip() + "..."
+
+
+
+def final_article_integrity_issues(title, summary, body, seo_title="", seo_description_text=""):
+    """Block publication when the finished article or SEO fields contain known text defects."""
+    issues = []
+    fields = (
+        ("title", title),
+        ("summary", summary),
+        ("body", body),
+        ("SEO title", seo_title),
+        ("SEO description", seo_description_text),
+    )
+    for label, value in fields:
+        for issue in text_integrity_issues("", "", value):
+            issues.append(f"{label}:{issue}")
+    if not str(title or "").strip():
+        issues.append("missing_title")
+    if not str(summary or "").strip():
+        issues.append("missing_summary")
+    if not str(body or "").strip():
+        issues.append("missing_article_body")
+    # JSON-LD descriptions are part of the rendered article and must pass too.
+    for match in re.finditer(
+        r'<script[^>]*type=["\\']application/ld\\+json["\\'][^>]*>(.*?)</script>',
+        str(body or ""),
+        re.I | re.S,
+    ):
+        try:
+            import json
+            data = json.loads(match.group(1))
+        except (ValueError, TypeError):
+            issues.append("body:invalid_json_ld")
+            continue
+        description = data.get("description", "") if isinstance(data, dict) else ""
+        for issue in text_integrity_issues("", "", description):
+            issues.append(f"JSON-LD description:{issue}")
+    return sorted(set(issues))
