@@ -46,6 +46,43 @@ class PublisherVideoBackfillTests(unittest.TestCase):
             "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
         )
 
+    def test_video_thumbnail_falls_back_to_hq720_when_maxres_is_unavailable(self):
+        body = '<iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"></iframe>'
+        with patch("backfill_media.requests.get") as get, patch(
+            "backfill_media.inspect_image_url",
+            side_effect=[{"ok": False, "reason": "missing"}, {"ok": True}],
+        ):
+            get.return_value.json.return_value = {
+                "title": "The Child Official Trailer | Netflix"
+            }
+            result = backfill_media.youtube_video_thumbnail(
+                "Netflix’s The Child Trailer: Cast, Release Date and the Story Behind the Film",
+                body,
+                set(),
+            )
+        self.assertEqual(
+            result["url"],
+            "https://img.youtube.com/vi/dQw4w9WgXcQ/hq720.jpg",
+        )
+
+    def test_under_siege_accepts_the_official_spanish_title_alias(self):
+        body = '<iframe src="https://www.youtube-nocookie.com/embed/Ne6IZUhglv4"></iframe>'
+        with patch("backfill_media.requests.get") as get, patch(
+            "backfill_media.inspect_image_url", return_value={"ok": True}
+        ):
+            get.return_value.json.return_value = {
+                "title": "Palacio | Tráiler oficial | Netflix"
+            }
+            result = backfill_media.youtube_video_thumbnail(
+                "Under Siege: Netflix’s Palace of Justice Series — Release Date, Cast and Historical Context",
+                body,
+                set(),
+            )
+        self.assertEqual(
+            result["url"],
+            "https://img.youtube.com/vi/Ne6IZUhglv4/maxresdefault.jpg",
+        )
+
     def test_primary_source_url_ignores_internal_related_story_links(self):
         body = ('<a href="https://valutednews.com/blogs/news/related-story">Related</a>'
                 '<p><strong>Source:</strong> Publisher. '
