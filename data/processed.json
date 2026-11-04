@@ -127,6 +127,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "0368c5d46264a4fc19637b605faa57ef5a3a79aacd90b795893155fb5352b4f1": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "03708d20b3bf537e7147bcd88a23e3589ac71d468c11a6bc7d2bff7e3ac472cf": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "Google News Science",
@@ -601,6 +606,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "0bd2d47a6d6698b340cbe6e9aeda45c30b65f8ca5117250a61cdc63c875780f4": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "0bd739884dcd06f2ef3cf6804cb4fc93daf9c29c68c905a004d6217478c082e6": {
       "seen_at": "2026-10-19T11:26:42.322929+00:00",
       "source": "Google News Business",
@@ -751,6 +761,22 @@
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
       "source": "The Guardian Business",
       "status": "skipped_stale"
+    },
+    "0ea6360602e0518530ebb97a770111b14d15abeb7015a1c25c48a2ae957e9d4e": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "0f0ab228cafb4d56349cb6583b9414397f47e4bdbdb2776bd971eceb8e51bcf3": {
+      "created_at": "2026-11-04T07:21:09.092237+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "The Guardian Technology",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755139772695",
+      "source_url": "https://www.theguardian.com/australia-news/2026/nov/04/canva-layoffs-job-cuts-restructure",
+      "status": "published",
+      "title": "Canva layoffs: design giant to cut or relocate more than 1,200 jobs in major restructure"
     },
     "0f51a66c73a0f411bb0d37a8da874ce1f0f3d4e893d90eb1fb07b60574be99e6": {
       "created_at": "2026-11-03T16:31:36.882369+00:00",
@@ -922,6 +948,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "12b79a7cb07da164538cd5e8201a2eaca90896dcd13782f4f358aabfe3c33b45": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
+    },
     "12e654d5611beb9ba68cbf466bf362abce33a1b52a37911b696defe458dfaf46": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "BBC Entertainment and Arts",
@@ -960,6 +991,11 @@
     "13adf989d803b1d36da53a40a93aba73eae452ef438857074b10e67865d73333": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "13b6e9767ee297a33e21217de2f678ae5a14d87de49a20a5a0bb7832737983f4": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "140ae27f1f0d89fcfbc313644a6bd8413872f5b5e7f167e6b4f1ddd034e9800b": {
@@ -1344,6 +1380,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "1a4ac084089b96af45773447905e24b3014e3380a8869f84ea4f7f03622cafab": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "1a4add21b245fda29830f99ac601c08ff4cecf12fa9f593f182744c01ff01811": {
       "seen_at": "2026-10-20T10:37:54.271841+00:00",
       "source": "Google News Science",
@@ -1531,6 +1572,11 @@
     "1dd4da0097d331d994d92d86b7971e96ed8c859fc5104760e5605c1b0c5de3da": {
       "seen_at": "2026-11-01T12:54:22.780534+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "1dff96957ba23953cb0a551cc1f8eaf24f2f5924f60c18abc958324a8fceb267": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "1e3382b17a9c6b7982ce0ac80078198c77bfed229f7c112456a7eb2e1b605017": {
@@ -1736,6 +1782,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "21dbb0a8a08d52024f06787b26c4c93f67a8fb40145aeb49e16264b509a7b794": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "21edbce795b45cb035dc9130802cac707304d260f54c865543bbe51bfa43f713": {
       "seen_at": "2026-10-17T05:12:33.395349+00:00",
       "source": "Google News Entertainment",
@@ -1790,6 +1841,11 @@
     "235a42022b54d82d81bd11fe1f062e71fbea6094e8f9aab7b7d6bf90ae0d1f81": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "236bcf664ce4711f0e6cf2ae36fcf65e8fe014edc16a430e2b07c202e92c70d7": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News UK Top Stories",
       "status": "skipped_stale"
     },
     "23762474ceded32fb66949007aa91e1eca9134aab45dca4c818cd4f3696cddce": {
@@ -2125,6 +2181,11 @@
       "status": "published",
       "title": "Dame Judi Dench: 'I can't do a play, a film or read any more'"
     },
+    "290881d11cce06e5cc255b33383b97ac81e327852262a29e46cc9217fa6a5515": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "29273a5fe6ba277433b51b76ae0e13f0144ee6611de8df9861384f7574587244": {
       "seen_at": "2026-10-30T18:52:04.797166+00:00",
       "source": "Google News Science",
@@ -2179,6 +2240,11 @@
     "2a00e825095109564ac93d93965311f61deaf82fa432066ac2f63d78bc04f2fe": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "2a03dd2719dd3d9929a3b5dda9dbf96b89632ae57eea4fbca0d93d2a2ef02757": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "2a0e3f9876ce2f34e6d9a2bd6dee9f27208e0c99f5d61953a56040104a93dda4": {
@@ -2314,6 +2380,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "2c24ad8ed1bdfe7f79c216d718b0769775278c5ffd055da3b4706f1236544de2": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "2c3d4095c492e827c2645db582041d44fe2cf827d0a1608bddc6535a742f333d": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "Google News Business",
@@ -2434,6 +2505,11 @@
     "2eced5b9b09d88190f57c849b3e99b1a84b5a6b25466087d7ea25f8aeb525734": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "2f024cbb1e07942b2a8ecbac419d0c8439cc0a009f31d21229f92dbe78d39696": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "2f2ae99120e4452443b6c871e5e60dfde9a40a3a1b954d98714b7cf709894572": {
@@ -2729,6 +2805,11 @@
       "source": "The Guardian Sport",
       "status": "skipped_stale"
     },
+    "347c7b9ce21aa28d419f59ce34bab885a8469bd0dabbe31ec3b54816c311dd65": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "3491781589dd05a93807ad1daf73c17f5c0ea963288f139de046ed9044cd8baf": {
       "seen_at": "2026-10-22T18:45:05.397738+00:00",
       "source": "Google News Science",
@@ -2737,6 +2818,11 @@
     "34afc9c798c8617cd58de37975e8b474c028d2566cb7d0af004801df25bb32fb": {
       "seen_at": "2026-10-17T06:08:06.057590+00:00",
       "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
+    "34b0f3c77c2110df0a73e7ee22527f1404032530e400e291cbd45eae71958890": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Health",
       "status": "skipped_stale"
     },
     "34bbb019ff3e7bba19c97879c19c22b658cb109c6e3e3bb8306b624b97097258": {
@@ -3136,6 +3222,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "3c923a817ff69b72b7b35dd12939a6b9b097ea6734a92564a7d99991faef4d81": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "3cab64b6c4fba08f40059f2488b6ad1db984d6a33d3a489c151bd15a1f5846eb": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Business",
@@ -3186,9 +3277,19 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "3e4ae7fa4ed20d6b0af53d3baabe3c6a2e0e3b5993cb5b44536fc1e49d30e1ad": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
     "3e4ce4c076b7d00c37904f14b5dfc62535072b54970955175d8faf758f1db4bd": {
       "seen_at": "2026-10-27T18:49:42.592770+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "3e58ff883dd03a6f556f7b89565ef3874a096afd91b8560dd2033b71a9910650": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "3e5b7c8aed74a316f70758bbd5194e45402ee06690884b997ee14ffa5f80898f": {
@@ -3370,6 +3471,11 @@
     "415e36e2825b6fb83db7a04e21e90cdb8f6a0380d6ce94d61754494dc003be76": {
       "seen_at": "2026-10-21T18:45:36.006025+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "417e2d94baf3c9b2337eae1aa081847ffadf0ad1ac829cf772089fcf90003ee8": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "417e8ea5f8739dd61880d2bc65d0186ddc3b9df12e8d794747bcaaaf3c650292": {
@@ -3731,6 +3837,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "49a61d60d576f35eee3fdc19bb882cbfc1f5787811632c42187cad261d2e0e9b": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "49b34605fae2022e4a11ec6ddc2ae3e9ae532524711016ee0c38bbbd20121bcd": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Google News Science",
@@ -3887,6 +3998,11 @@
       "status": "draft",
       "title": "Brazil\u2019s Amazon deforestation hits lowest level on record - Al Jazeera"
     },
+    "4c990a8c90c6ed90da791d5d1b9b44a4fcd53b17c55b7dd83f4e12cede445b3c": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Health",
+      "status": "skipped_stale"
+    },
     "4c9a9fe0ddc125dee0c3c550119b2abf29983afbb436be45f47bcf7723dab833": {
       "seen_at": "2026-11-02T13:11:57.143285+00:00",
       "source": "Google News Top Stories",
@@ -3995,6 +4111,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "4ef4d216a0d18803e9fd5933efb744f9dde7ea3ac97d8042f69ccea38e78bfb4": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "The Guardian Business",
+      "status": "skipped_stale"
+    },
     "4f006da794eb83125de7ff6846be6ea09c9bef868a019dffba8371e31f3fc738": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Top Stories",
@@ -4023,6 +4144,11 @@
     "4f93c7aa39632aab41e05ae37a654b413eba8cc06dea5b98a2342999634dfc0f": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "4f982d9c4732710193c8a3a5704b1e8ef24005aee83324b50c0b3832b9909566": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Health",
       "status": "skipped_stale"
     },
     "4fcaed5d838074b6d2313097d4fbad84474c9a6b1b6a7ddb244e0b7dbd8df093": {
@@ -4070,6 +4196,11 @@
     "508b3ef01f940cda2a5d53be9ae036a449187d85914485c67569d0f3b7493ea6": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "Google News Health",
+      "status": "skipped_stale"
+    },
+    "50a5888cd58c445ff9690bd228e3fc84b964785486ea566007af860ad8ced7c0": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "511f99ae5c2048ccc29b34073526a972faa2484b7784c4f3c7523eb6f4403b93": {
@@ -4176,6 +4307,11 @@
     "52b0d257ff5fdd13a660d43879e6d64a9a4ce5cbdcfb3ce0e2ec453e7b296027": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
+    "52b0db1a9e3e7edc9c4979a955cb36e446a4c22961af467a41190c61caffd67d": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "52e95f71193f3c56e712fd91bd1a5722b7233e9f447bb9b2c839b7f5150d3166": {
@@ -4491,6 +4627,11 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "59474c65960e2b955716d5706acfe1ef04927dc513e2fa9c4d16151fd86e1f7d": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Politics",
+      "status": "skipped_stale"
+    },
     "59758e9da3af8b73d4c1a4466663caa99f27951ac0bae9362eabd1e9dc83257e": {
       "seen_at": "2026-10-28T12:59:42.364008+00:00",
       "source": "BBC Business",
@@ -4531,9 +4672,19 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "5b444bdb4012622a241e7600d37880d5e886a060fc5be044a218a15bc15432cc": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "5b8f8fb25754d8013313a097ddb8fe4f4c9aae5419f067f4aade19d3d50ea051": {
       "seen_at": "2026-10-29T13:00:30.022198+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "5b9f2f37879a136ac279dd4ee9eec7383f7a1fa3c8e90c8aae682429ce71c4ce": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "BBC Technology",
       "status": "skipped_stale"
     },
     "5bbefde9c6ab7e24404122b5860175722092ba0a2494bbd56bd2feefc8744a29": {
@@ -4812,6 +4963,11 @@
       "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
     },
+    "60d8e73fd48125e9eb66ea1146d99de4465c7391d4b4dedaf358cdddcb53d75b": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
+    },
     "60ec015fc8d70c672620b4b5f94c8979d0a5e4ac0e0036b037098b88b9bb0b0d": {
       "seen_at": "2026-10-28T12:59:42.364008+00:00",
       "source": "Variety Music",
@@ -5039,6 +5195,17 @@
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
+    },
+    "644d6479773719fbb61784f52df2bc862a0539789d12b5c9cbe0e80bc9d511b0": {
+      "created_at": "2026-11-04T07:21:09.092237+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755139805463",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6n8dnn09jg7o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "James Talarico becomes first Democrat to win Texas Senate seat since 1988"
     },
     "645cfb424c5956249bfe7070c44f369720e027a08661239fa76d3415598d53dd": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
@@ -5380,6 +5547,17 @@
       "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5GYnoxd1dncFRldUlCNW5vMDEydGR3U1VpY1RtQVNQdGJGTlItUVpoR1U2dUwyNVNoQU1uQzBDNU5LWUl2UTc2REswb3QzQjVpcFlEVGZhOWxJd3J0RTlIbU4xeUN2RmtIU1IyLWxaaGctZw?oc=5",
       "status": "draft",
       "title": "Huge Riots and Anti-Government Protests in France: What to Know - The New York Times"
+    },
+    "6b6c7100781c3e9dc6f09bdb748b3b03f8ebc59ced04989ca2d05bc94cc97e47": {
+      "created_at": "2026-11-04T07:21:09.092237+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755139707159",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Binance says fake job interviews used as part of $6.3bn crypto hack"
     },
     "6b6ff484cbb3b693a4fea65a375cfd4bf312e50e3934f054ba4f2c56d1f1687d": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
@@ -5807,6 +5985,11 @@
     "722431dd92219a02258c301f3ad3899ba7e940b3661ecb5e6e7e34824f07ab47": {
       "seen_at": "2026-10-21T18:45:36.006025+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "7270bf63fc1354032964836b339b8bb9e9993cb10cf5842cb0afdec905940120": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "The Guardian Business",
       "status": "skipped_stale"
     },
     "7296b2556b1cacc5135cbf35c969a06cafb855f2546e5b07b14f2834214ae5a0": {
@@ -6277,6 +6460,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "7a2cc010f0b31600b74afa3b6346bea7ca0fe2b94e9ef9534a6ddaf9bf6d24ce": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "7a5fbd5b1f7c67167e41ac90d434d18979112b1f3db6980588367dc2bf63fc83": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News Science",
@@ -6508,6 +6696,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "7e8630e3c9f3368867f462c8aebca1638633b0f8333952fca48c962b1201b1df": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Health",
+      "status": "skipped_stale"
+    },
     "7e98d3f9d55b358fa3d0729a31b6c74f887a88ed314227051a6ff8cca34d9bbe": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
       "source": "Google News Science",
@@ -6582,6 +6775,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "800ef3d908e71018d9707c891288782108b721cb3c0dab5a3acd6844d37d5b64": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "80443cab35d1a4233d2ed682b8ed1b016339f143b2bcc0771f9aa09677ff55cb": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Top Stories",
@@ -6625,6 +6823,11 @@
     "80d2dff99eda67adeb2b41ab494120a0db4a3abc7140d0f29e1a00c6cc07d240": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "80dd54c409cefded9e7508ca1f3c9382d3b7f0ca3cdf234147856c406755b197": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "NPR Business",
       "status": "skipped_stale"
     },
     "81911a4b12d39b08a65f3c6f0023001d7ccbca13c70828c3fd1287ecbe7cf739": {
@@ -6784,6 +6987,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "83a9fe8251007fa6799635d33621aeab29dc46433de6552d416caab89b2235fd": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Health",
+      "status": "skipped_stale"
+    },
     "83aea1cd7983f5f658c19e00a4c9b33dae6855cf89fffdc82d895290ae775f32": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
       "source": "The Guardian Sport",
@@ -6812,6 +7020,11 @@
       "source_url": "https://www.npr.org/2026/10/13/g-s1-147818/france-stolen-renoirs-recovered",
       "status": "draft",
       "title": "DNA and vehicle-tracking help French investigators recover stolen Renoirs"
+    },
+    "83f9b7f4ae34ad1fdebc8dd8aee660af8e074cf650d50258a51482d02632cb16": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
     },
     "84013e278ede03a80a21406d3a3e7cc7398ffb1d9e29cc581c4b19da2eca8a22": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
@@ -6922,6 +7135,22 @@
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "NASA News",
       "status": "skipped_stale"
+    },
+    "8604e68b462933d86e2fd7bcbb456aecb97b8386347ed239f7befde7f2f41ac1": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "The Guardian Sport",
+      "status": "skipped_stale"
+    },
+    "860a0e7c55bab7738d64409cdb793c81f36f4cf1b9209be1a574db3b8aaf40ae": {
+      "created_at": "2026-11-04T07:21:09.092237+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755139838231",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6rey4v53exgo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "North Korea denies being behind record $6.3bn Binance hack"
     },
     "860afb8685ecdcdd030c4084c88db3126e1f97a2e03802ff6eefbd093e8ea304": {
       "seen_at": "2026-10-17T06:08:31.417343+00:00",
@@ -7034,6 +7263,11 @@
     "8813c69bae9e41cec97207a1558f12d435724e4daf7db0ec5e3a31980b9f7da3": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
       "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
+    "882d23b504510f56cc290a249a6cf6d3e306cb6f8a46798e805a96719a054280": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Politics",
       "status": "skipped_stale"
     },
     "88386493be35012956f71b20c335da7e0acadc81c30f202e4f09b68075d4d25f": {
@@ -7285,6 +7519,16 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "8ceb4deed47a274883ee89b7231991f54de362b3f4cf3c559d29240977dd376e": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "8d080aba4f45e7af98a6f72e66e6ab1e7d6b9a9ec8727d33439f65babc1b44a8": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Health",
+      "status": "skipped_stale"
+    },
     "8d22fc4debd39ff36343d533ac0fb3f0353a4b47a5b3dd1d072f2a9797ca03b2": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "BBC Business",
@@ -7461,6 +7705,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "902a1d46c27955115d31a0b6c4d8ccea479931cb2ec02eaccaf983a9886a1213": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Politics",
+      "status": "skipped_stale"
+    },
     "902bccec0d14ee33ef7678c9c0c06b2f1433288f0cbd92d1d09694b06adcf8a2": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Google News Science",
@@ -7521,6 +7770,11 @@
     "90f2d7c183c9a635f08d01c2e7b474d9cea38adb071912bf31f4366e9824bd03": {
       "seen_at": "2026-11-03T03:55:58.146882+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "910a34b75b15987dfdb1386eb583d554b2add921b27e6a917f52433e5abb9564": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Technology",
       "status": "skipped_stale"
     },
     "91124b3ea1c87698282c4303cfd47ddff7999ab74736e8f73ffe5204bdb67db8": {
@@ -7662,6 +7916,11 @@
     "933e6d4859ebbaaa10803321fe025c8544173bfeb189e09f5ae7d877a7800188": {
       "seen_at": "2026-10-27T18:49:42.592770+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "93472c210db202bdee6870f154f855be8b0cb6fa97f199efdd2c662dea6740da": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "93590db6a53c7325cb17ff90e32f4e744e921c2074e87c6927aef983733c529d": {
@@ -7868,6 +8127,11 @@
     "97170223ec593732c42c3431d3b08d7c5442247543acd2b498496c4982d2b704": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "Variety Music",
+      "status": "skipped_stale"
+    },
+    "9726e1409c0c3885439c2e5f07803bdb755da06ab4387e070df583c9cf982b2b": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Health",
       "status": "skipped_stale"
     },
     "9744827581aa4d432795e5af0e16e3e31ac2a5ec98ff25a78317f8a30df60012": {
@@ -8188,6 +8452,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "9d74394428aff34b1b63526b3bd499b49e89f9b7871731de2ff0278f7ceeb975": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "9d765bf45a0b88ea797bbcb290faab6a20af11330de5de3efa4c5179af02fb7b": {
       "seen_at": "2026-10-19T11:26:42.322929+00:00",
       "source": "Google News Entertainment",
@@ -8366,6 +8635,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "a18e42c9cfdc20c24427979da1493f5f08de319b25ec1541b04159d0a4f7698f": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "a208a1e534514af1a15622449edb033a43164ce39a966c5f6855b2d354673bfc": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian World",
@@ -8516,6 +8790,11 @@
     "a54b3f4c2535c443dbb8c45a2085f4f2a6e4d3bab8b4e77931668c5687c9879f": {
       "seen_at": "2026-10-30T12:59:19.385395+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "a559bb7ed1a71489dd4f8988c0fadeca30a14fee63a02d596f4dccc482962dcf": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "a5840e5a42f749a2ff4d292651e05379258b28d3ed6fef35d60f20a91fb12a76": {
@@ -8905,6 +9184,11 @@
     "acaae57ef0857db566b81a43293a1456fe29a94de4af6e4b56215ef8fc5f8397": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
+    "acb3b920710888ac15f0c5ce2ca48041d1b7e9ff8fa68aff69fa74f0382eccaa": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Politics",
       "status": "skipped_stale"
     },
     "acdf91ab146529f559efae3dffc1ff7d5cb8673064ccaa1cab65ecaff6ad4f22": {
@@ -9321,6 +9605,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "b596c72c111737767bb1d9d7c7de6c5d005271805982efe9c40fd1b957a15490": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Health",
+      "status": "skipped_stale"
+    },
     "b5bdef6ed1c8f5ef8e664ddba4382c80300e0700ba2d2caa15ffa765bfc1af53": {
       "created_at": "2026-11-03T15:14:31.690679+00:00",
       "has_embedded_video": true,
@@ -9406,6 +9695,11 @@
     "b6dec1af6d693c4be3058ebfe18dcfe40187a3f3eefcc5578a73b1d1c7f758b9": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
+    "b6e6022f064e27b84045a03384e43ebe2d38f339e5b616ca5fa3de8fa816bcc1": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "NASA News",
       "status": "skipped_stale"
     },
     "b793f315cb33930901733d41815b56a550b901864399f63079360af07501bd1f": {
@@ -9519,6 +9813,11 @@
     "b99482615aa422c7d298411ea86cd51827f404ac57de5681921ba5aa94f3e8ba": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "b9ac585d42a76d26af6908704c307a3ebd4967561806a8c454b985fa164aebbc": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "b9d25523f0b4726ead37ab18a94964a0fa2fc66853a2442c6b6150f656cde925": {
@@ -9820,6 +10119,11 @@
       "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
+    "be03e246d17112d5c6bfc8909a0564be502ca1b5dc379bf97c9a9da16db317b5": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Health",
+      "status": "skipped_stale"
+    },
     "be2de1dbf89a3a44747a7bf67a5e9fdc91e9e3d010b004d2e3cec7dafdaba49c": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Google News Science",
@@ -9841,6 +10145,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "be3f6b23817305074f1e4c1f159e3237b359903290c29411b4ad5d04f7b8bb76": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "The Guardian Business",
+      "status": "skipped_stale"
+    },
     "be5e986e3230912e7dd1226887002ae99cbbb912be140b07dc4973acd6045e04": {
       "seen_at": "2026-10-22T07:25:24.220805+00:00",
       "source": "Google News Technology",
@@ -9859,6 +10168,11 @@
     "be86330ee52cc08019ca7840f9e023ded5b7ffd0e496f4004a20788ea3396158": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "be894ed9c5e6f22420df97ea4a0bd6581b80b6240d15af7899e6581a931e4cad": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "bea0fd1c63c652eb999058ca7dca8c624f3faad8593ccd566cee5688a411e507": {
@@ -9994,6 +10308,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "c1e3520c3b16789e8af8689c4d3f1d004c49c839b74dbfc8315546e91befe08b": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "c1e60918b29464db36106db2216e57f99ecedbdc9a3361e1d1923844b412a801": {
       "seen_at": "2026-11-02T13:11:57.143285+00:00",
       "source": "BBC World",
@@ -10048,6 +10367,11 @@
     "c27cf7e621acbc08d2bff7ed00eeaa3f83f22306933189cc60ab38bbd876efa4": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "c27dd7ab5cbce73aa4c60513533c6d366537c14eaefe45b858ba1409bc06870a": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "The Guardian Sport",
       "status": "skipped_stale"
     },
     "c2d5c21b657a1ac4b508135b8dd49d37fad6c8d694024c0e36b2e2c8dac30f47": {
@@ -10298,6 +10622,11 @@
     "c6f3094a5a72db8a760e8fd5049475b5f09a0cf80bcb00d5c5f34bf9604386c6": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "c73861d4a4ef3e06d699f14c50e89851c8572ead1b88bbdd97f5148ea504d0c1": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News World",
       "status": "skipped_stale"
     },
     "c7449f15aa48e67840182ac19b0e33bdb8bb9c42ad0e0dc9d3f5964304abaa08": {
@@ -11125,6 +11454,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "d93859ae588cbd74a02cc3ac6790b461ed37349cbececa5c1c594b32a69b3402": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "d93c6142062b4ec27b29e2e79200fc4c2b0196c4036752d4ecff44f7942a10ec": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "NPR Business",
@@ -11349,6 +11683,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "de0ecc1d2b13e9346e81fed7bc8800b0e98c317782334e096ae6f54fd5cf4db8": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "de4d9afe05c498e2baf939e3a0deb7e8f0fbca97aad33d3e21a22c70f26122e4": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Science",
@@ -11363,6 +11702,17 @@
       "seen_at": "2026-11-02T17:21:20.934989+00:00",
       "source": "BBC Technology",
       "status": "skipped_stale"
+    },
+    "de8616af94f83aa17ddc60204652a15640187c531bccf67d2d32b1058b601c24": {
+      "created_at": "2026-11-04T07:21:09.092237+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755139870999",
+      "source_url": "https://www.bbc.co.uk/news/articles/cr62yv02zwxwo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Prince William says UK faces terrifying risk of more wildfires due to climate change"
     },
     "de953614ca9adb36adddfd4c311ec28e25db9d1506105a7ab5f50ea109d16ac7": {
       "seen_at": "2026-11-01T12:54:22.780534+00:00",
@@ -11657,6 +12007,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "e2daf1859cdc2051bc6bfa0393416a285d9d704ac3494d1d60667bd4c6d2aff7": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Politics",
+      "status": "skipped_stale"
+    },
     "e2f7ef4e89d1cc82bbd929fa5d59f5ef0bfe51dabf24868be4db029bc3156ef4": {
       "created_at": "2026-11-02T18:40:23.628595+00:00",
       "has_embedded_video": false,
@@ -11698,6 +12053,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "e3e438ed6692305af132e68369945de50acbdf78315f92be2d2d715640adda21": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "e3ed8fe7978250f97448fe990034e9a84f327196f4df95873c55ed75e8431572": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Science",
@@ -11721,6 +12081,11 @@
     "e3ff4e2d72b7e23e7c58ef1cac11da717c9062b7fc099fa1c387dcec9133b8c3": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "e40b49e980e3997be56a8d5cbb72c64ffd1102697b208623e8ce123f9cf2527e": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "e43025f9a3ce3ae984fcf358d279d63c2d6f84c0ca73ad900439314595ebfc9f": {
@@ -12126,6 +12491,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "eba43ef0d5e8030dfb43195a9d38e7ca4e44a8f732cdef9b22bc257c6b960c6d": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Science",
+      "status": "skipped_stale"
+    },
     "ebc55d4cf9740aa51f64ed340c3429ef850352764b0d4e4573956f465c461d25": {
       "created_at": "2026-10-21T12:49:02.005600+00:00",
       "has_embedded_video": true,
@@ -12244,6 +12614,11 @@
       "source": "The Guardian Business",
       "status": "skipped_stale"
     },
+    "ed8ef8ef2d1b33768daaf023cce2674035a41f4ccc2c3810d09c55c89d08b3cf": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Politics",
+      "status": "skipped_stale"
+    },
     "ed9cbc1269ba9db404b4e6a4b805b1abdccddf7bd522f2f90ee7a9ce2b77301c": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "NPR Business",
@@ -12262,6 +12637,11 @@
     "edbc4cf10a5a91768bcea7a86d9412458567d0a106983fc1145cc4a2cafaf5b3": {
       "seen_at": "2026-11-02T07:29:49.590724+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "edeac959040ec3b50fd729926db8a373b65c6668609e559d69d02c15968bb867": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "ee00bb66692a83b5f3c87b5d413252cd4e6384431d7245a8a8f07571121abfd1": {
@@ -12299,6 +12679,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "ee5b5602d104f9f8d2e0d6e50f907ffac5875a73de085bd75b7c6ba7874cc5e8": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "eeba8fc7166bc461e456c5f5ba02a09e120a751fceebd5734b22ab70e7538c59": {
       "created_at": "2026-10-29T13:00:30.022198+00:00",
       "has_embedded_video": true,
@@ -12329,6 +12714,11 @@
     "ef96175331f33598955ada750461212d41f7363fb30f3bd070e0c0e1a1e3c412": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "efb5e46ff25eb37594fecdc5f5e25827c349e0bbaf7b23743f4c545aa261199f": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "effa95e94a715bfb67f5bc609b64b3813dd7e2d3ea5bb37b0fcdcd4940049e13": {
@@ -12527,6 +12917,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "f2de8e72f98519e1197ee1099e9fcde0e10f3f522c44dd630429a01004272e60": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "f2f5f7be2ec2229fc3fa9d646eb932816b3b7c33539be34c22f2eeddab6a2684": {
       "seen_at": "2026-10-28T18:54:08.851553+00:00",
       "source": "NASA News",
@@ -12540,6 +12935,11 @@
     "f302ac9cb615f1481b500d8b94be96d3482050abe2da0ef590006e375b6d9085": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "f33896c74ecb881309feefb56099070a6ea3caf1ecae43d49b0868bb4b05a467": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Health",
       "status": "skipped_stale"
     },
     "f33927dd3c4953eafe0c31edf676ce4b5a67bdbc0ea39fd7356d435025a0554d": {
@@ -12724,6 +13124,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "f7030ce7d2a2f87fc8c09e952b13b7cbc7b47e9124b05110a9dc7cbecbf12b33": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Health",
+      "status": "skipped_stale"
+    },
     "f718b14583f1af97f8ed3c923d37123b4de1e00490fbdf4ed4f3899ae66c3b19": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "Google News Technology",
@@ -12831,6 +13236,11 @@
       "source": "The Guardian World",
       "status": "skipped_stale"
     },
+    "f8b60b033bf4cbd479ef3c0603d337355f0385e4c5803c36fda8307dd88fba06": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "Google News Politics",
+      "status": "skipped_stale"
+    },
     "f8d38d8a8246be7801f9f4c24f358b5a2d01772941118b2a99a8822eaaad84cb": {
       "seen_at": "2026-10-28T18:54:08.851553+00:00",
       "source": "Google News Science",
@@ -12854,6 +13264,11 @@
     "f94ba36e89b1df14402ed11383339ac88889355539c11276829b8c89badcd24e": {
       "seen_at": "2026-10-30T07:00:00.666940+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "f956819c709825a6e15b4103ed75eaf8ec4e7afd0ea38eac424570d18c792294": {
+      "seen_at": "2026-11-04T07:21:09.092237+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "f9fafe921d858bf1f3c3797b60e9f4268741addcc6b7ec514a22f848e78c1ab0": {
