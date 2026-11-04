@@ -91,7 +91,15 @@ def main():
         connection = ((data.get("blog") or {}).get("articles") or {})
         nodes = connection.get("nodes") or []
         if data.get("blog") is None:
-            raise RuntimeError(f"Shopify blog {BLOG_ID} was not found; refusing to audit or publish to an unknown destination.")
+            identity = shopify_graphql("query { shop { name myshopifyDomain primaryDomain { host } } }", {})
+            shop = identity.get("shop") or {}
+            raise RuntimeError(
+                f"Configured Shopify destination blog {BLOG_ID} was not found on "
+                f"connected store {shop.get('name', 'unknown')} "
+                f"({shop.get('myshopifyDomain', 'unknown')}; primary domain "
+                f"{(shop.get('primaryDomain') or {}).get('host', 'unknown')}). "
+                "Check SHOPIFY_STORE_DOMAIN and the Shopify app credentials; refusing to publish to another store."
+            )
         if not nodes and scanned == 0:
             logging.warning("The verified News blog exists but currently contains zero articles. Archive restoration is still required; continuing so fresh eligible stories can be collected.")
             break
