@@ -8,6 +8,7 @@ on:
       - "news_worker.py"
       - "article_quality.py"
       - "publisher_video.py"
+      - "official_channel_video.py"
       - "backfill_media.py"
       - "backfill_video.py"
       - "audit_repair_images.py"
@@ -107,7 +108,7 @@ jobs:
           test -f feeds.json || { echo "feeds.json is missing"; exit 1; }
 
       - name: Validate Python syntax
-        run: python -m py_compile news_worker.py article_quality.py image_quality.py publisher_video.py backfill_video.py backfill_media.py audit_repair_images.py audit_repair_articles.py restore_news_archive.py
+        run: python -m py_compile news_worker.py article_quality.py image_quality.py publisher_video.py official_channel_video.py backfill_video.py backfill_media.py audit_repair_images.py audit_repair_articles.py restore_news_archive.py
 
       - name: Test video embed and editorial safety
         run: python -m unittest discover -s tests -v
