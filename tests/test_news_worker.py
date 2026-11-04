@@ -169,7 +169,7 @@ class VideoEmbedTests(unittest.TestCase):
             item["description"] = "Too short"
             self.assertFalse(worker.should_auto_publish(item, True))
 
-    def test_auto_publish_allows_quality_article_without_video(self):
+    def test_auto_publish_blocks_article_without_verified_video(self):
         item = {
             "title": "A science discovery announced by NASA",
             "url": "https://example.com/story",
@@ -178,7 +178,12 @@ class VideoEmbedTests(unittest.TestCase):
             "risk": False,
         }
         with patch.object(worker, "inspect_image_url", return_value={"ok": True}):
-            self.assertTrue(worker.should_auto_publish(item, True))
+            self.assertFalse(worker.should_auto_publish(item, True))
+            item["video_html"] = '<iframe src="https://www.youtube-nocookie.com/embed/AbCdEf12345"></iframe>'
+            with patch.object(worker, "video_embed_is_available", return_value=True):
+                self.assertTrue(worker.should_auto_publish(item, True))
+            with patch.object(worker, "video_embed_is_available", return_value=False):
+                self.assertFalse(worker.should_auto_publish(item, True))
 
     def test_category_classifier_uses_headline_and_source_text(self):
         self.assertEqual(
