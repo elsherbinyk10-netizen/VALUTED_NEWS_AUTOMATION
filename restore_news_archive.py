@@ -180,6 +180,7 @@ def main():
     remaining = sum(
         1 for value in records.values()
         if value.get("status") == "published" and not value.get("restored_shopify_article_id")
+        and value.get("restore_status") != "already_present_in_shopify"
     )
     logging.info(
         "ARCHIVE RESTORE REPORT: restored=%d skipped=%d failed=%d remaining=%d total_historical_published=%d",
