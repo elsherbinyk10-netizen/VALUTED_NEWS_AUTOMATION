@@ -14,7 +14,7 @@ from urllib.parse import urlparse
 from news_worker import env, shopify_graphql, fetch_article_media, video_embed_is_available, fetch_related_youtube_embed
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
-BLOG_ID = env("SHOPIFY_BLOG_ID", "gid://shopify/Blog/126010065175")
+BLOG_ID = env("SHOPIFY_BLOG_ID", "gid://shopify/Blog/107387158765")
 STATE_FILE = Path("data/video_backfill.json")
 
 
