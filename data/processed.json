@@ -6017,7 +6017,7 @@
       "status": "skipped_stale"
     },
     "6f18a8b8f639c6615c1a4fa02a84ea0e0d899f4a8b658baf34de2b0467a6d3e0": {
-      "seen_at": "2026-11-04T13:06:51.181945+00:00",
+      "seen_at": "2026-11-04T13:08:52.187245+00:00",
       "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
@@ -9149,6 +9149,19 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "a57e01296f1d3283b069f8c6bccf9aeba596b41cdd0640e53acb2e5c84dc9f22": {
+      "created_at": "2026-11-04T13:08:52.187245+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-04T13:10:38.580282+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669174759661",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwz0v5lv30lyo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Anthony Zurcher: Democrats push deep into Trump heartland on historic night"
+    },
     "a5840e5a42f749a2ff4d292651e05379258b28d3ed6fef35d60f20a91fb12a76": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
@@ -9677,6 +9690,19 @@
       "source_url": "https://science.nasa.gov/earth/earth-observatory/el-nino-then-and-now",
       "status": "published",
       "title": "El Ni\u00f1o Then and Now"
+    },
+    "af3a117a67ec5a299b4f3c9360ec82cf07484ff49ac4ee1abee1d5856905b667": {
+      "created_at": "2026-11-04T13:08:52.187245+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-04T13:10:38.580282+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669174792429",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6073l9y15xxo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Trump takes aim at Republicans but says Democrats did a 'good job'"
     },
     "af3e060c0161b814a28de2362fa3f1f275e48e9a8f2973db12dfe37e55b9782e": {
       "seen_at": "2026-10-31T12:52:32.223221+00:00",
@@ -10356,6 +10382,19 @@
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
+    },
+    "bbc10e21f9f20d3006bf98c44f22aa2115cf6c00bf2ebf98d6f9d707c6df9469": {
+      "created_at": "2026-11-04T13:08:52.187245+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-04T13:10:38.580282+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669174726893",
+      "source_url": "https://www.bbc.co.uk/news/articles/c893z55pxrewo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Left-wing Democrat Abdul El-Sayed wins in Michigan to become first Muslim senator"
     },
     "bbfd72c7e959fc3e1efbee32fc1f50b236c4a489c14453e3b18dcd7fdb95271e": {
       "created_at": "2026-10-16T12:49:27.685790+00:00",
