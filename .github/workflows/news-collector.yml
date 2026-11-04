@@ -11,6 +11,7 @@ on:
       - "backfill_media.py"
       - "backfill_video.py"
       - "audit_repair_images.py"
+      - "audit_repair_articles.py"
       - "restore_news_archive.py"
       - "image_quality.py"
       - "tests/**"
@@ -35,7 +36,7 @@ jobs:
     timeout-minutes: 45
 
     env:
-      SHOPIFY_STORE_DOMAIN: ${{ secrets.SHOPIFY_STORE_DOMAIN }}
+      SHOPIFY_STORE_DOMAIN: "5xd8ae-md.myshopify.com"
       SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ADMIN_ACCESS_TOKEN }}
       SHOPIFY_CLIENT_ID: ${{ secrets.SHOPIFY_CLIENT_ID }}
       SHOPIFY_CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}
