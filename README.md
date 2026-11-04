@@ -3,7 +3,7 @@
 This folder is arranged with the correct GitHub Actions workflow and state-file paths.
 
 ## Safety defaults
-- `AUTO_PUBLISH=true`: creates Shopify drafts, not live posts.
+- `AUTO_PUBLISH=true`: allows publication only when every automated quality gate passes; high-risk or incomplete stories are skipped.
 - Stories publish only when the source text, high-resolution article image, SEO fields, and relevant playable embedded video all pass automated checks. High-risk stories and any item that fails a gate are skipped or retained as drafts.
 - Starter RSS feeds are examples; verify publisher terms and permitted use.
 - The optional OpenAI key is stored only as a GitHub Actions secret, never in files.
@@ -43,4 +43,4 @@ Repository → Settings → Secrets and variables → Actions → Variables:
 - `OPENAI_MODEL` = `gpt-4.1-mini`
 
 ## Run
-The workflow is scheduled three times daily (06:17, 12:17, and 18:17 UTC) and can also be started from Actions → **Valuted News RSS Automation** → Run workflow. It deduplicates by canonical source URL, skips old feed entries, and creates Shopify review drafts. Confirm the first run succeeds and check the draft article image/source before considering publication. A scheduled workflow only runs when required repository secrets are configured.
+The workflow is scheduled three times daily (06:17, 12:17, and 18:17 UTC) and can also be started from Actions → **Valuted News RSS Automation** → Run workflow. It deduplicates by canonical source URL, skips old feed entries, restores eligible archived stories from saved RSS records, and publishes only when all quality gates pass. Confirm the first run succeeds and check the draft article image/source before considering publication. A scheduled workflow only runs when required repository secrets are configured.
