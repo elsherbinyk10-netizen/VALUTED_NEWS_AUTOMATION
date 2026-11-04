@@ -2268,6 +2268,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "2a66a8ea5668cf4d6d15f2ec52c8455af40531a00c48daa909cdb91a61f291c0": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "2aa9217ba353bb4e037bc5b8f9756026138544368da27de79ee3e9447a04c1ae": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Environment",
@@ -2416,6 +2421,11 @@
       "status": "draft",
       "title": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times'"
     },
+    "2ce8150d180c8e5d04442c127f367c0b7c34751294b332148e1ff1895029be08": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "Google News World",
+      "status": "skipped_stale"
+    },
     "2cf46e6f59ec809156d78ceab26f3f2f8f759e8cd8fbc1db0da5451c63af0754": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "BBC Entertainment and Arts",
@@ -2444,6 +2454,11 @@
     "2d91ebf0909fe3fb7c508ac9714c7324d4edc3f4fda944e469d54360c4f80edb": {
       "seen_at": "2026-11-03T20:29:47.097687+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "2d95c3528a0799d3ba3b9a85986dbfedcbe01cc92d97f85c003d69a2102d1287": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "Google News Health",
       "status": "skipped_stale"
     },
     "2dcdee8cb4e15480f41cfa8a6f6a0ae83cbf7e487543f308863ac977e68c9744": {
@@ -3680,6 +3695,17 @@
       "seen_at": "2026-10-17T06:44:04.013453+00:00",
       "source": "Google News Business",
       "status": "skipped_stale"
+    },
+    "45b1b0bb0686ebc9a6a4524232e1ed14f578107976f629fdcdc4afcdc9261ff7": {
+      "created_at": "2026-11-04T08:40:52.307503+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/755140133143",
+      "source_url": "https://www.bbc.co.uk/news/articles/cxvgd4drmevro?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Why Kim Kardashian came back to 'the worst TV drama ever'"
     },
     "45bd0486d646e0526466f52eb74b4c5f6bf2a262f3523eb1d40efd21fef8af95": {
       "seen_at": "2026-10-22T07:25:24.220805+00:00",
@@ -6681,6 +6707,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "7e11bc53798969052b753eb9a34b7386d043c722e2185a361b7c3e39a29830ab": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "Google News Politics",
+      "status": "skipped_stale"
+    },
     "7e60f35d072fe31e2d4d93805a72c58a28fcd40b08f446e2b056461fe2e35bee": {
       "seen_at": "2026-10-30T12:59:19.385395+00:00",
       "source": "Google News Science",
@@ -8367,6 +8398,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "9be636d8ee69dcb21d2bfa08afd6e7b84c54f697ff824069b8dee98960187a27": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "Google News Politics",
+      "status": "skipped_stale"
+    },
     "9bfd988d614e4a13421c54df41bb5825664b8fe2158d2f6cc06b60934d977d63": {
       "seen_at": "2026-10-30T07:00:00.666940+00:00",
       "source": "NPR Arts and Entertainment",
@@ -8736,6 +8772,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "a43fb56176e1e1d75e4e12e9939d57570b5b9eacba1e927ff485d61fa7435352": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "The Guardian Sport",
+      "status": "skipped_stale"
+    },
     "a4702e76b2a8f50f44198505b040e37d7819f973ac392fdac03b492f99b2848c": {
       "seen_at": "2026-10-13T12:38:01.277096+00:00",
       "source": "BBC Business",
@@ -8913,6 +8954,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "a727989a69b537f36522f637363f7ef2af94472c1c2e244c257851c7d9fc91b4": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
     "a7352542a0842364ef26dc8762688c7045beae2a53c5f722164cb59cc036c145": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "BBC Science and Environment",
@@ -8941,6 +8987,11 @@
     "a814e655ef43ac12ffebd82737dc37ceaa2d707240cf590c891e343922feba0c": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
+    "a822e84c52e6690dd786cb40e2abd426952bdc3071b9fcb8799ae243ad62e75a": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "Google News Politics",
       "status": "skipped_stale"
     },
     "a8335421abcc6a5016bc6d8a1f8371c29babd9307249f296d225df76de88e092": {
@@ -9775,6 +9826,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "b8893b4c75febfd0532d79d6aa1c8c10b59eedb2152e2209ca28d42f5815555b": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "Google News Business",
+      "status": "skipped_stale"
+    },
     "b898b56d80f2b3c460218a051434f2150f60c53db94bcc8658c5791fe8c0175c": {
       "seen_at": "2026-11-02T13:11:57.143285+00:00",
       "source": "Google News Entertainment",
@@ -9825,6 +9881,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "b9de2b92c7468dbc7e124ebe51fbd929e93eb060590369e731bbddd0b964a0cd": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "ba482738f51de2b98af4a793b2b602108d301a521ecf546e5d16f3475291db87": {
       "seen_at": "2026-11-02T07:29:49.590724+00:00",
       "source": "Variety Music",
@@ -9833,6 +9894,11 @@
     "ba4921a2d7847128a75f7e131cc2e27ea3dfb766b49e62f89358779c65afda10": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "ba63d5a2b783277200798f3dbd278081bd620d112baf23f38d18481ad2f3ba14": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "Google News Science",
       "status": "skipped_stale"
     },
     "ba68ceec0c2bf11e40a7de8c0f13c20e1aba9b042e99896324cffbdd55594075": {
@@ -11124,6 +11190,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "d1d2d026357d7e4cb7e6f08ea8d3dab7c8f8a6846346b927dac786253818f13f": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
     "d24611e38228c8512c7bb48da15c6ce2e10e8128e0dead9f57380d8bf2265923": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
       "source": "The Guardian Technology",
@@ -11198,6 +11269,11 @@
     "d37f5ead5b4c2d0f92cb9a8a6b3bcb8fcd01aada988253ba16e93a5d57853167": {
       "seen_at": "2026-10-31T12:52:32.223221+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "d3a3d1e06668ac747ce7636c07a5de0830fd2d56d53d555cd4fcf8770b568040": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
     "d3af5cec0fbba1c6a87ecb9c52d8f67f700ebe60ad90275240b4f3110019543a": {
@@ -12108,6 +12184,11 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "e49ee13751a37d533104d1ac148cd3c7033b8dec0ed43e24b3e6c58c7ecfe839": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
     "e4bf13507596fc08a5ead70abdc6c066afdd443031b0b266ab11d990fc958ebd": {
       "seen_at": "2026-11-02T17:40:24.045708+00:00",
       "source": "Google News World",
@@ -12721,6 +12802,11 @@
       "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
+    "efcf159d56e3e089b86afb1a5ca0c9f5177252ad08dd67e55f88c009ffbfa9a1": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "Google News Health",
+      "status": "skipped_stale"
+    },
     "effa95e94a715bfb67f5bc609b64b3813dd7e2d3ea5bb37b0fcdcd4940049e13": {
       "seen_at": "2026-11-02T19:40:38.146832+00:00",
       "source": "Google News Entertainment",
@@ -12840,6 +12926,11 @@
       "source_url": "https://www.theguardian.com/culture/2026/nov/03/spain-poet-lorca-gay-icon-la-bola-negra",
       "status": "published",
       "title": "\u2018His voice was too queer \u2013 so they silenced him\u2019: how Spain\u2019s national poet Lorca finally became a gay icon"
+    },
+    "f1cb57d26febcab7daaf77639b5a25d6f54a40ede92de5d6a4541ca558744036": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "Google News Entertainment",
+      "status": "skipped_stale"
     },
     "f1d7134978766797023aa5f4194cc866ddc1746f61b65117b29a5dc765d86c67": {
       "seen_at": "2026-10-24T18:39:21.262654+00:00",
@@ -13456,6 +13547,11 @@
     "fda69498612eb7affe39749c50b8ffdb9c161bb90879e5b3d8309f276d99f3ee": {
       "seen_at": "2026-11-01T12:54:22.780534+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "fda864e0f96d6b4d5147129540d523c1f761071e1c1f49ed44822d47eb8a0ad5": {
+      "seen_at": "2026-11-04T08:40:52.307503+00:00",
+      "source": "Google News Health",
       "status": "skipped_stale"
     },
     "fddd4d28ef90acbbe170578ada5425b27954372ee42c33cfe2fb4aa6236b5537": {
