@@ -1160,6 +1160,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "1552a70f0afd391d93ac33e174a64978bf8734531ba1404946b8e24430646e56": {
+      "seen_at": "2026-11-04T20:35:26.881998+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
+    },
     "1552fa2bd636fca1899720c124f2718ff0e57852c42992da6c274ff2fd43fe11": {
       "seen_at": "2026-10-31T12:52:32.223221+00:00",
       "source": "Google News World",
@@ -1921,6 +1926,11 @@
     "23762474ceded32fb66949007aa91e1eca9134aab45dca4c818cd4f3696cddce": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "239e38c83e02a3a3fcf2eeb7e1e8867bc1be1888c02b56600168c2746adf3a42": {
+      "seen_at": "2026-11-04T20:35:26.881998+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "23bf0a98653887e7bc0e43a1f7f2eec24dc666648844577f6d3aeb292d91fc7a": {
@@ -6330,6 +6340,11 @@
       "status": "draft",
       "title": "Spain's rush to clear Ceuta migrant backlog raises rights concerns - Reuters"
     },
+    "730a40887ffe8e99e4d6573a84a43089ad3573945b1980c04932bc449ad05ac7": {
+      "seen_at": "2026-11-04T20:35:26.881998+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "730ae11ebebafd4d7b13b48b576d958a1b38261d56d063e09c731d2dc3f38809": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Entertainment",
@@ -6495,6 +6510,11 @@
     "74da31eddbb7c532f4d7e747d5ba1634772d663c9bedbe0c5d5ec858e0634e5d": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "NASA News",
+      "status": "skipped_stale"
+    },
+    "74eb36cdafe1bd2912151c12160e45fe99b31e8f469382dbbca4f357365affa3": {
+      "seen_at": "2026-11-04T20:35:26.881998+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "750fac85f1a06ed81727a964945fd1b9c7f195b2d6b095464027da5b4f56eb09": {
