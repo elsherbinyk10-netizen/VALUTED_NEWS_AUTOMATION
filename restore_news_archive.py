@@ -9,7 +9,7 @@ import json
 import logging
 import os
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 import news_worker as worker
@@ -87,6 +87,18 @@ def main():
             break
         title = worker.clean_text(record.get("title") or "")
         source_url = worker.canonical_url(record.get("source_url") or "")
+        last_attempt = record.get("restore_attempted_at")
+        if last_attempt and record.get("restore_status") not in {"restored_and_verified", "already_present_in_shopify"}:
+            try:
+                attempted_at = datetime.fromisoformat(str(last_attempt).replace("Z", "+00:00"))
+                if attempted_at.tzinfo is None:
+                    attempted_at = attempted_at.replace(tzinfo=timezone.utc)
+                if now - attempted_at < timedelta(hours=24):
+                    skipped += 1
+                    continue
+            except (TypeError, ValueError, OverflowError):
+                pass
+
         if not title or not source_url or record.get("risk_flag"):
             record["restore_status"] = "blocked_missing_metadata_or_high_risk"
             record["restore_attempted_at"] = now.isoformat()
