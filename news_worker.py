@@ -974,7 +974,7 @@ def should_auto_publish(item, auto_publish):
     return not auto_publish_block_reasons(item, auto_publish)
 
 
-def create_shopify_article(blog_id, title, summary, body, source_url, publisher, category, publish, image_url=''):
+def create_shopify_article(blog_id, title, summary, body, source_url, publisher, category, publish, image_url='', publish_date=None):
     mutation = """
     mutation CreateNewsArticle($article: ArticleCreateInput!) {
       articleCreate(article: $article) {
@@ -1014,6 +1014,8 @@ def create_shopify_article(blog_id, title, summary, body, source_url, publisher,
         "isPublished": bool(publish),
         "image": {"url": image_url, "altText": title[:250]} if image_url else None
     }
+    if publish_date:
+        article["publishDate"] = str(publish_date)
     data = shopify_graphql(mutation, {"article": article})
     result = data.get("articleCreate") or {}
     errors = result.get("userErrors") or []
