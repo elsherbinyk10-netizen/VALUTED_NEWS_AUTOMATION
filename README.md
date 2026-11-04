@@ -37,7 +37,8 @@ Repository → Settings → Secrets and variables → Actions → Variables:
 - `SHOPIFY_API_VERSION` = `2026-10`
 - `SHOPIFY_BLOG_ID` = `gid://shopify/Blog/107387158765`
 - `AUTO_PUBLISH` = `true`
-- `MAX_ARTICLES_PER_RUN` = `3`
+- `MAX_ARTICLES_PER_RUN` = `5`
+- `ARCHIVE_RESTORE_PER_RUN` = `15` (the workflow default; up to 25 is supported)
 - `MAX_AGE_HOURS` = `36`
 - `MIN_WORDS_FOR_PUBLISH` = `180`
 - `OPENAI_MODEL` = `gpt-4.1-mini`
