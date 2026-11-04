@@ -47,6 +47,16 @@ def canonical_url(url):
     except Exception:
         return ""
 
+TRUSTED_PUBLISHER_DOMAINS = (
+    "bbc.co.uk", "bbc.com", "npr.org", "nasa.gov", "theguardian.com",
+    "variety.com", "rollingstone.com", "billboard.com",
+)
+
+def is_trusted_publisher_url(url):
+    """Only accept direct article URLs from the configured high-authority publisher set."""
+    host = (urlparse(canonical_url(url)).hostname or "").lower().removeprefix("www.")
+    return any(host == domain or host.endswith("." + domain) for domain in TRUSTED_PUBLISHER_DOMAINS)
+
 
 def story_key(url, title):
     return hashlib.sha256((canonical_url(url) or clean_text(title).lower()).encode("utf-8")).hexdigest()
@@ -1266,9 +1276,17 @@ def main():
                 logging.warning("Feed unavailable: %s (%s)", name, parsed.bozo_exception)
                 continue
             for entry in parsed.entries[:40]:
+                # Google News aggregator feeds are discovery signals only, never the
+                # attributed source for a published story. Publish only direct URLs from
+                # the explicitly approved publisher set below.
+                if "google news" in name.lower():
+                    continue
                 title = clean_text(entry.get("title", ""))
                 source_url = canonical_url(entry.get("link", ""))
                 if not title or not source_url:
+                    continue
+                if not is_trusted_publisher_url(source_url):
+                    logging.info("Skipping non-approved publisher URL from %s: %s", name, source_url)
                     continue
                 # The state file is the first guard; Shopify itself is the source of truth
                 # after manual runs, old failed commits, or previously created draft duplicates.
@@ -1326,15 +1344,10 @@ def main():
                 logging.info("Recovered full source-page text for candidate: %s", item["title"])
             item["video_html"] = media.get("video_html", "")
             if item["video_html"] and not video_embed_is_available(item["video_html"]):
-                logging.warning("Publisher video endpoint is unavailable; trying a verified related clip: %s", item["title"])
+                logging.warning("The cited publisher's own video player is unavailable; holding the story: %s", item["title"])
                 item["video_html"] = ""
             if not item["video_html"]:
-                related_video = fetch_related_youtube_embed(item["title"], item["category"])
-                if related_video and video_embed_is_available(related_video):
-                    item["video_html"] = related_video
-                    logging.info("Attached verified, clearly labelled related video: %s", item["title"])
-                else:
-                    logging.info("No verified related video found; article will publish without a video: %s", item["title"])
+                logging.info("No playable video embedded by the cited publisher was verified; holding the story instead of attaching an unrelated clip: %s", item["title"])
             block_reasons = auto_publish_block_reasons(item, auto_publish)
             if block_reasons:
                 # Never create an editorial-review placeholder. Leave blocked items out of
