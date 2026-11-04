@@ -68,8 +68,6 @@ class VideoEmbedTests(unittest.TestCase):
         })
         self.assertEqual(html, "")
 
-    @patch.object(worker.requests, "get")
-    @patch.object(worker.feedparser, "parse")
     def test_only_approved_primary_publishers_are_eligible(self):
         self.assertTrue(worker.is_trusted_publisher_url("https://www.bbc.co.uk/news/world-123"))
         self.assertTrue(worker.is_trusted_publisher_url("https://www.npr.org/2026/11/04/story"))
@@ -77,6 +75,8 @@ class VideoEmbedTests(unittest.TestCase):
         self.assertFalse(worker.is_trusted_publisher_url("https://news.google.com/rss/articles/example"))
         self.assertFalse(worker.is_trusted_publisher_url("https://unknown-news.example/story"))
 
+    @patch.object(worker.requests, "get")
+    @patch.object(worker.feedparser, "parse")
     def test_related_youtube_search_requires_title_overlap(self, parse_mock, get_mock):
         response = Mock()
         response.content = b"<feed></feed>"
