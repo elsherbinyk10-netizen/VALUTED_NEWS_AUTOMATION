@@ -7,7 +7,7 @@ from article_quality import normalize_article_summary, repair_mojibake, text_int
 from news_worker import env, shopify_graphql
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
-BLOG_ID = env("SHOPIFY_BLOG_ID", "gid://shopify/Blog/126010065175")
+BLOG_ID = env("SHOPIFY_BLOG_ID", "gid://shopify/Blog/107387158765")
 
 LIST_QUERY = """
 query AuditNewsArticles($blogId: ID!, $after: String) {
@@ -90,8 +90,11 @@ def main():
         data = shopify_graphql(LIST_QUERY, {"blogId": BLOG_ID, "after": after})
         connection = ((data.get("blog") or {}).get("articles") or {})
         nodes = connection.get("nodes") or []
+        if data.get("blog") is None:
+            raise RuntimeError(f"Shopify blog {BLOG_ID} was not found; refusing to audit or publish to an unknown destination.")
         if not nodes and scanned == 0:
-            raise RuntimeError("Shopify returned no articles; refusing to report a successful audit.")
+            logging.warning("The verified News blog exists but currently contains zero articles. Archive restoration is still required; continuing so fresh eligible stories can be collected.")
+            break
 
         for article in nodes:
             scanned += 1
