@@ -11,6 +11,7 @@ on:
       - "backfill_media.py"
       - "backfill_video.py"
       - "audit_repair_images.py"
+      - "restore_news_archive.py"
       - "image_quality.py"
       - "tests/**"
       - "requirements.txt"
@@ -71,7 +72,7 @@ jobs:
           test -f feeds.json || { echo "feeds.json is missing"; exit 1; }
 
       - name: Validate Python syntax
-        run: python -m py_compile news_worker.py article_quality.py image_quality.py publisher_video.py backfill_video.py backfill_media.py audit_repair_images.py audit_repair_articles.py
+        run: python -m py_compile news_worker.py article_quality.py image_quality.py publisher_video.py backfill_video.py backfill_media.py audit_repair_images.py audit_repair_articles.py restore_news_archive.py
 
       - name: Test video embed and editorial safety
         run: python -m unittest discover -s tests -v
@@ -84,6 +85,11 @@ jobs:
 
       - name: Run RSS collector
         run: python news_worker.py
+
+      - name: Restore historical articles from verified RSS and publisher media
+        env:
+          ARCHIVE_RESTORE_PER_RUN: '15'
+        run: python restore_news_archive.py
 
       - name: Add relevant videos to published articles
         env:
