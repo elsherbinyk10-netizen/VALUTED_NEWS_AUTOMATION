@@ -19,7 +19,7 @@ from image_quality import inspect_image_url
 from publisher_image_policy import verify_publisher_image
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
-BLOG_ID = env("SHOPIFY_BLOG_ID", "gid://shopify/Blog/126010065175")
+BLOG_ID = env("SHOPIFY_BLOG_ID", "gid://shopify/Blog/107387158765")
 HEADERS = {"User-Agent": "ValutedNewsMediaBackfill/1.0 (editorial media metadata; contact site owner)"}
 BAD_IMAGE_TERMS = ("google-news", "google_news", "valuted-news-placeholder", "valuted_news_placeholder", "logo", "favicon", "default-thumbnail")
 
