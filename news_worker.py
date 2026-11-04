@@ -733,48 +733,57 @@ def normalized_story_title(title):
 
 
 def load_existing_shopify_story_index(blog_id):
-    """Read existing blog headlines and source links so reruns don't create duplicate drafts."""
+    """Read every page of existing blog headlines and source links to prevent duplicates."""
     query = """
-    query ExistingNewsStories($id: ID!) {
+    query ExistingNewsStories($id: ID!, $after: String) {
       blog(id: $id) {
         handle
-        articles(first: 250, reverse: true) {
+        articles(first: 250, after: $after, reverse: true) {
           nodes { title handle body isPublished }
+          pageInfo { hasNextPage endCursor }
         }
       }
     }
     """
-    data = shopify_graphql(query, {"id": blog_id})
-    articles = (data.get("blog") or {}).get("articles", {}).get("nodes", [])
     titles = set()
     sources = set()
     related_articles = []
-    blog_handle = (data.get("blog") or {}).get("handle", "news")
-    # Shopify Admin API may be configured with the *.myshopify.com host.
-    # Internal links must use the storefront's canonical public domain instead.
-    public_store_domain = env("PUBLIC_STORE_DOMAIN", "valutednews.com")
-    public_store_domain = public_store_domain.removeprefix("https://").removeprefix("http://").strip("/")
-    if not public_store_domain or "/" in public_store_domain:
-        raise RuntimeError("PUBLIC_STORE_DOMAIN must be a hostname such as valutednews.com.")
-    for article in articles:
-        title = clean_text(article.get("title", ""))
-        title_key = normalized_story_title(title)
-        if title_key:
-            titles.add(title_key)
-        body = article.get("body") or ""
-        for raw_url in re.findall(r"""href=["'](https?://[^"'<> ]+)["']""", body, re.I):
-            source_key = canonical_url(html.unescape(raw_url))
-            if source_key:
-                sources.add(source_key)
-        handle = clean_text(article.get("handle", ""))
-        if article.get("isPublished", True) and title and handle and public_store_domain:
-            related_articles.append({
-                "title": title, "body": body,
-                "url": f"https://{public_store_domain}/blogs/{blog_handle}/{handle}",
-            })
-    logging.info("Loaded existing Shopify duplicate index: %d titles, %d source URLs, %d internal-link targets", len(titles), len(sources), len(related_articles))
+    cursor = None
+    blog_handle = "news"
+    while True:
+        data = shopify_graphql(query, {"id": blog_id, "after": cursor})
+        blog = data.get("blog")
+        if blog is None:
+            raise RuntimeError(f"Shopify News blog {blog_id} was not found; refusing to publish.")
+        blog_handle = blog.get("handle", blog_handle)
+        connection = blog.get("articles") or {}
+        for article in connection.get("nodes", []):
+            title = clean_text(article.get("title", ""))
+            title_key = normalized_story_title(title)
+            if title_key:
+                titles.add(title_key)
+            body = article.get("body") or ""
+            for raw_url in re.findall(r"""href=["'](https?://[^"'<> ]+)["']""", body, re.I):
+                source_key = canonical_url(html.unescape(raw_url))
+                if source_key:
+                    sources.add(source_key)
+            handle = clean_text(article.get("handle", ""))
+            if article.get("isPublished", True) and title and handle:
+                related_articles.append({
+                    "title": title, "body": body,
+                    "url": f"https://valutednews.com/blogs/{blog_handle}/{handle}",
+                })
+        page_info = connection.get("pageInfo") or {}
+        if not page_info.get("hasNextPage"):
+            break
+        cursor = page_info.get("endCursor")
+        if not cursor:
+            raise RuntimeError("Shopify article pagination returned hasNextPage without an endCursor.")
+    logging.info(
+        "Loaded complete Shopify duplicate index: %d titles, %d source URLs, %d internal-link targets",
+        len(titles), len(sources), len(related_articles),
+    )
     return titles, sources, related_articles
-
 
 def make_editorial(title, publisher, category, description, video_html=""):
     """Create a professionally structured, source-attributed review draft."""
