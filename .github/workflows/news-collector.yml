@@ -38,8 +38,6 @@ jobs:
     env:
       SHOPIFY_STORE_DOMAIN: "5xd8ae-md.myshopify.com"
       SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ADMIN_ACCESS_TOKEN }}
-      SHOPIFY_CLIENT_ID: ${{ secrets.SHOPIFY_CLIENT_ID }}
-      SHOPIFY_CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}
       
       SHOPIFY_API_VERSION: "2026-10"
       AUTO_PUBLISH: 'true'
@@ -69,7 +67,7 @@ jobs:
         shell: bash
         run: |
           test -n "$SHOPIFY_STORE_DOMAIN" || { echo "Missing repository secret SHOPIFY_STORE_DOMAIN"; exit 1; }
-          test -n "$SHOPIFY_ADMIN_ACCESS_TOKEN" || { test -n "$SHOPIFY_CLIENT_ID" || { echo "Missing SHOPIFY_ADMIN_ACCESS_TOKEN or SHOPIFY_CLIENT_ID"; exit 1; }; test -n "$SHOPIFY_CLIENT_SECRET" || { echo "Missing SHOPIFY_CLIENT_SECRET"; exit 1; }; }
+          test -n "$SHOPIFY_ADMIN_ACCESS_TOKEN" || { echo "Missing SHOPIFY_ADMIN_ACCESS_TOKEN. Add an Admin API access token created for 5xd8ae-md.myshopify.com with read_content and write_content scopes."; exit 1; }
           test -f feeds.json || { echo "feeds.json is missing"; exit 1; }
 
       - name: Validate Python syntax
