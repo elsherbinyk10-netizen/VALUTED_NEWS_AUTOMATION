@@ -951,8 +951,13 @@ def auto_publish_block_reasons(item, auto_publish):
         reasons.append("missing/invalid canonical source URL")
     if not clean_text(item.get("title", "")):
         reasons.append("missing title")
-    # A video improves an article but is not a publication prerequisite.
-    # Any attached player is checked separately before it reaches the public article.
+    # Every automatically published story must contain a relevant, verified, playable embed.
+    # If no suitable player can be confirmed, keep the story out of the public archive.
+    video_html = str(item.get("video_html", "") or "").strip()
+    if not video_html:
+        reasons.append("missing verified embedded video")
+    elif not video_embed_is_available(video_html):
+        reasons.append("embedded video failed playback availability check")
     if not canonical_url(image_url) or image_url_is_generic(image_url):
         reasons.append("missing or generic featured image")
     elif not inspect_image_url(image_url).get("ok"):
