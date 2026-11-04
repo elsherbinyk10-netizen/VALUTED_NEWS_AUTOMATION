@@ -49,7 +49,7 @@ class ImageQualityTests(unittest.TestCase):
         from PIL import Image
         from io import BytesIO
         buf = BytesIO()
-        Image.new("RGB", (900, 1600)).save(buf, format="JPEG")
+        Image.new("RGB", (1600, 2400)).save(buf, format="JPEG")
         get.return_value = FakeResponse(buf.getvalue())
         result = inspect_image_url("https://cdn.example.com/portrait.jpg")
         self.assertFalse(result["ok"])
