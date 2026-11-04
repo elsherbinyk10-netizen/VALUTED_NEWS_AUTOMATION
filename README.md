@@ -3,15 +3,15 @@
 This folder is arranged with the correct GitHub Actions workflow and state-file paths.
 
 ## Safety defaults
-- `AUTO_PUBLISH=false`: creates Shopify drafts, not live posts.
-- Keep stories in draft until a human checks the facts, source link, headline, and article body.
+- `AUTO_PUBLISH=true`: creates Shopify drafts, not live posts.
+- Stories publish only when the source text, high-resolution article image, SEO fields, and relevant playable embedded video all pass automated checks. High-risk stories and any item that fails a gate are skipped or retained as drafts.
 - Starter RSS feeds are examples; verify publisher terms and permitted use.
 - The optional OpenAI key is stored only as a GitHub Actions secret, never in files.
 
 ## Shopify details
 - Store domain: `valutednews.com`
 - Blog: `VALUTED NEWS`
-- Blog GID: `gid://shopify/Blog/126010065175`
+- Blog GID: `gid://shopify/Blog/107387158765`
 
 ## Upload to GitHub
 Extract this ZIP and upload its contents to the repository root, preserving folders. The key paths must be:
@@ -35,8 +35,8 @@ Never paste your Shopify token into chat or commit it into the repository.
 ## Required Actions variables
 Repository → Settings → Secrets and variables → Actions → Variables:
 - `SHOPIFY_API_VERSION` = `2026-10`
-- `SHOPIFY_BLOG_ID` = `gid://shopify/Blog/126010065175`
-- `AUTO_PUBLISH` = `false`
+- `SHOPIFY_BLOG_ID` = `gid://shopify/Blog/107387158765`
+- `AUTO_PUBLISH` = `true`
 - `MAX_ARTICLES_PER_RUN` = `3`
 - `MAX_AGE_HOURS` = `36`
 - `MIN_WORDS_FOR_PUBLISH` = `180`
