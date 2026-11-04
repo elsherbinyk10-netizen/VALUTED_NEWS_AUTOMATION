@@ -19,12 +19,12 @@ class ImageQualityTests(unittest.TestCase):
         from PIL import Image
         from io import BytesIO
         buf = BytesIO()
-        Image.new("RGB", (320, 180)).save(buf, format="JPEG")
+        Image.new("RGB", (800, 450)).save(buf, format="JPEG")
         get.return_value = FakeResponse(buf.getvalue())
         result = inspect_image_url("https://cdn.example.com/small.jpg")
         self.assertFalse(result["ok"])
         self.assertEqual(result["reason"], "below-minimum-resolution")
-        self.assertEqual(result["width"], 320)
+        self.assertEqual(result["width"], 800)
 
     @patch("image_quality.requests.get")
     def test_accepts_large_landscape_image(self, get):
