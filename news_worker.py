@@ -750,6 +750,10 @@ def load_existing_shopify_story_index(blog_id):
     related_articles = []
     cursor = None
     blog_handle = "news"
+    public_store_domain = env("PUBLIC_STORE_DOMAIN", "valutednews.com")
+    public_store_domain = public_store_domain.removeprefix("https://").removeprefix("http://").strip("/")
+    if not public_store_domain or "/" in public_store_domain:
+        raise RuntimeError("PUBLIC_STORE_DOMAIN must be a hostname such as valutednews.com.")
     while True:
         data = shopify_graphql(query, {"id": blog_id, "after": cursor})
         blog = data.get("blog")
@@ -771,7 +775,7 @@ def load_existing_shopify_story_index(blog_id):
             if article.get("isPublished", True) and title and handle:
                 related_articles.append({
                     "title": title, "body": body,
-                    "url": f"https://valutednews.com/blogs/{blog_handle}/{handle}",
+                    "url": f"https://{public_store_domain}/blogs/{blog_handle}/{handle}",
                 })
         page_info = connection.get("pageInfo") or {}
         if not page_info.get("hasNextPage"):
