@@ -523,7 +523,7 @@ def fetch_related_youtube_embed(story_title, category=""):
         return ""
 
 
-def fetch_article_media(source_url):
+def fetch_article_media(source_url, story_title=""):
     """Read only public Open Graph/Twitter media metadata from the publisher page."""
     try:
         parsed = urlparse(source_url)
@@ -640,10 +640,7 @@ def fetch_article_media(source_url):
         # publisher's fixed official channel (BBC News or NASA). The helper
         # requires headline relevance and successful oEmbed + iframe playback checks.
         if not video_html:
-            video_html = fetch_official_channel_video(
-                clean_text(soup.title.get_text(" ", strip=True) if soup.title else ""),
-                source_url,
-            )
+            video_html = fetch_official_channel_video(story_title, source_url)
         # Extract readable reporting from the publisher page when an RSS feed
         # provides only a short teaser. Keep this source text for quality checks;
         # the published brief remains attributed and links to the original.
@@ -1342,7 +1339,7 @@ def main():
         try:
             # Resolve all media from the exact cited publisher page. Publisher-page
             # video embeds may be used; search-result videos are never attached.
-            media = fetch_article_media(item["url"])
+            media = fetch_article_media(item["url"], item["title"])
             if item.get("image_url") and not inspect_image_url(item["image_url"]).get("ok"):
                 logging.info("RSS thumbnail below quality threshold; replacing from publisher metadata: %s", item["title"])
                 item["image_url"] = ""
