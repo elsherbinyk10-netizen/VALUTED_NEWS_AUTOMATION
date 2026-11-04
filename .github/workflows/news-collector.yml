@@ -73,9 +73,9 @@ jobs:
 
           if ! printf '%s' "$response" | jq -e '
             (.scope // "" | split(",") | map(gsub("^\\s+|\\s+$"; ""))) as $scopes
-            | (["read_content", "write_content"] - $scopes | length) == 0
+            | ($scopes | index("write_content")) != null
           ' >/dev/null; then
-            echo "Shopify token is missing required read_content and/or write_content scopes."
+            echo "Shopify token is missing the required write_content scope (which also grants content read access)."
             echo "Granted scopes: ${scope:-not returned}"
             exit 1
           fi
