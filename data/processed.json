@@ -1263,6 +1263,11 @@
       "status": "published",
       "title": "How did AI discover the internet's massive cyber-security risk?"
     },
+    "16c7feffce38adf000fb240b9c5c9942e8417bcfee0582fd713d20b96562fbe4": {
+      "seen_at": "2026-11-04T19:00:14.056214+00:00",
+      "source": "The Guardian Sport",
+      "status": "skipped_stale"
+    },
     "170a1e86c36382b9a4fa38e37244259e2d20f5fde1b8f3ebb9a7391b51873d49": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Top Stories",
@@ -4799,6 +4804,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "589ab00bb3ff9ab96d79e9d3b3fa9c9d01f691b727a9a95059e5fb160827720e": {
+      "seen_at": "2026-11-04T19:00:14.056214+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "58a5ee9ebf4c96c9bc2902a6ab9e7bc26dbb72291022dcac5422df8e2f3f43ad": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
       "source": "Google News Politics",
@@ -4865,6 +4875,11 @@
     "5b3ff5bb0fc843d2e73544b7dd470108bf31d02cd4d32133f346567d50b2e58a": {
       "seen_at": "2026-11-03T07:14:01.426928+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "5b406d102842be72f7eebc8cb2f156e46ccdcc3b6101284963f78a89c5a7b8c4": {
+      "seen_at": "2026-11-04T19:00:14.056214+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "5b444bdb4012622a241e7600d37880d5e886a060fc5be044a218a15bc15432cc": {
@@ -4944,6 +4959,19 @@
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
+    },
+    "5d000570d3259a7547adfaa3edc96f59ed48a11c70e7ddf80ea7d21bc5f98a6f": {
+      "created_at": "2026-11-04T19:00:14.056214+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-04T19:02:20.098144+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669177184493",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqev3mw3e0kdo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "US midterm results a 'victory' for Canadians hopeful of tariff relief"
     },
     "5d0ac758588c00d9ce28c93af3f5c9fd15246fbdbf54d36d3c4fb5c58bcb8f22": {
       "created_at": "2026-10-28T18:54:08.851553+00:00",
@@ -5033,6 +5061,11 @@
     "5ddababa627abacfe0071b63b63f1064c1583892cd7bbea235bd18fd7ef75913": {
       "seen_at": "2026-11-01T18:48:11.579033+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "5ddd38b520a91cc01a1b856e4f9bf6c811fc98ab9a053f46fc428e9b076308e8": {
+      "seen_at": "2026-11-04T19:00:14.056214+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "5df6c29a484d37d36a298508622b89d9a84ccb6aac252f3e09587e19e127d42d": {
@@ -10176,6 +10209,11 @@
       "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
+    "b82092e9f0e8a60503be00fa50f395819b5e018577342bf842b3c7d746f7f3b8": {
+      "seen_at": "2026-11-04T19:00:14.056214+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "b834943421e7140596eb342d96c7c69ed0273c926a6a4453e6ded7af6257db51": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News World",
@@ -10319,6 +10357,11 @@
       "source_url": "https://science.nasa.gov/solar-system/skywatching/whats-up-november-2026-skywatching-tips-from-nasa",
       "status": "published",
       "title": "What\u2019s Up: November 2026 Skywatching Tips from NASA"
+    },
+    "baae2b77d41d44f4dd88b1399f66203ef1f952a55cdbc6f5909acbcbd56a7aa6": {
+      "seen_at": "2026-11-04T19:00:14.056214+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
     },
     "bab92507de4e3d58998147264dafc65bcba385a4b115cb7354a225053f6f6982": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
@@ -11147,6 +11190,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "c798f178b7b656b27d951d0c48ef2e3c2a8fcfe9987fc539e32ce20ea1ad1e53": {
+      "seen_at": "2026-11-04T19:00:14.056214+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "c7aa78823d5c5a22c1174f4f8a389c291d67463f16e69ec761b3aeea19f31281": {
       "created_at": "2026-10-27T12:50:27.915668+00:00",
       "has_embedded_video": true,
@@ -11912,6 +11960,11 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "d7809c711bfd960664b00b86132b3d2b13374cb017ad4874e0919622f6cc8fb9": {
+      "seen_at": "2026-11-04T19:00:14.056214+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "d79df436939aac352f84f3b02f173cae28889e6d21f1268d061d05f1cda92395": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Science",
@@ -12000,6 +12053,11 @@
     "d95e8cf2e148b2de9540fc1b3e09ba7782252cd66bbdb68d5cc6b0bf25842e06": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
+    "d9604cdd571e11deee714253e5c56e789406c209f550c56fb4ae1c0455727f7b": {
+      "seen_at": "2026-11-04T19:00:14.056214+00:00",
+      "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
     "d969e1731fd072c5487e490cbb833f240c10e4bb34fb75ce60783709470b916c": {
@@ -14208,6 +14266,11 @@
     "ffdb7d794cdf358c239a8fdf8cb8fdd1dcdbd552a06b3b0702eddb1b73cec7a5": {
       "seen_at": "2026-10-24T18:39:21.262654+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "ffdfb14507659efc79abf846fa2a13c70be23c68708236a1885f488fe5ffd8b0": {
+      "seen_at": "2026-11-04T19:00:14.056214+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "ffe4ac4dcb268d592f8bf8fedf5f696966085d9b3a9da3f72e062d904a28c516": {
