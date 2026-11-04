@@ -15,6 +15,7 @@ from bs4 import BeautifulSoup
 from article_quality import repair_mojibake, text_integrity_issues, seo_description, final_article_integrity_issues, normalize_article_summary
 from image_quality import inspect_image_url
 from publisher_video import fetch_publisher_video, _trusted_player_url
+from official_channel_video import fetch_official_channel_video
 from dateutil import parser as dateparser
 
 ROOT = Path(__file__).resolve().parent
@@ -635,6 +636,14 @@ def fetch_article_media(source_url):
         # Never substitute a title-similar or trending third-party search result.
         if not video_html:
             video_html = fetch_publisher_video(source_url)
+        # If the original article has no embedded clip, search only the cited
+        # publisher's fixed official channel (BBC News or NASA). The helper
+        # requires headline relevance and successful oEmbed + iframe playback checks.
+        if not video_html:
+            video_html = fetch_official_channel_video(
+                clean_text(soup.title.get_text(" ", strip=True) if soup.title else ""),
+                source_url,
+            )
         # Extract readable reporting from the publisher page when an RSS feed
         # provides only a short teaser. Keep this source text for quality checks;
         # the published brief remains attributed and links to the original.
