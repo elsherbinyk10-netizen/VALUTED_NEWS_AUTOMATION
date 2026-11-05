@@ -4755,6 +4755,19 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "56b9ffa8fd550eb4bd92fd4623e5b5757ffe577ac73993f265388bce25dc88cb": {
+      "created_at": "2026-11-05T08:42:23.024876+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-05T08:44:10.408925+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669180756205",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq1kdgnn2xdeo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "What Democrats can and can't do with their new power after taking Congress"
+    },
     "56e185745856c194c37419534b5669aebc32e4212398ad3fd2a1b67f4b82caad": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "BBC Technology",
@@ -8624,6 +8637,11 @@
       "status": "published",
       "title": "APOD: 2026 November 2 \u2013 A Long Cloud on Mars"
     },
+    "974b9860edd3eb70b66f7f605b07fe721d8717b592d1dcf24c6d6190a9d8e3c1": {
+      "seen_at": "2026-11-05T08:42:23.024876+00:00",
+      "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
     "97a771eca7c9937b477425be755ec9450571cfa70c75281986d81835fcacf7ae": {
       "created_at": "2026-11-02T19:37:16.641470+00:00",
       "has_embedded_video": false,
@@ -9983,6 +10001,19 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cqgm09xvlvjeo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Why some have no choice but to pay costly oil prices"
+    },
+    "b1a7a3701a98056437744a2b1a00fdff9f5294f1ace7325efd5974c3bebf4c80": {
+      "created_at": "2026-11-05T08:42:23.024876+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-05T08:44:10.408925+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669180723437",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwp9g3rlp8jlo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Joshua Wong, face of Hong Kong's pro-democracy protests, jailed for 10 years"
     },
     "b1c1acb563f872a26281ea59f268f4ec86241b68d432fa9ca1f16de929f1ae2f": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
