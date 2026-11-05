@@ -567,6 +567,11 @@
       "status": "published",
       "title": "Tate McRae Beats Taylor Swift, Olivia Rodrigo in Billboard Hot 100 Race for \u2026 Number Two"
     },
+    "0b07673914f5cfa843e40e6209ee9902e8ac5a10834af5f1c6634df739e08ce9": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "0b28be7298fc2a3b734a6a9fe4361615be5c35b8e5c5b40e226bca726ad96426": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
@@ -966,6 +971,11 @@
     "121db043e0229197c70b8e6f3c823c909d7e2175de9d4b8da5fdf6ec277d54b5": {
       "seen_at": "2026-10-19T11:05:10.544614+00:00",
       "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
+    "123330adc58a44e08ee9b9cdaf4f967b5c13e7cc3f8361f95f11c0bd88055b62": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "123f715457c06110bf64e12e834020c35c16ba690fad048ee2f7507530325106": {
@@ -1633,6 +1643,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "1dc8d127887001aeb5e68bbdc8f81c2275263851d935754cea7999a792ef3bcc": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
+    },
     "1dcac26d1607aba4e605cf8457065f5dbc8b89ca49e0122e0fea8d4cfea02734": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Google News Science",
@@ -2073,6 +2088,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "2581e3c1be7247d31cc8ea4aae940f4efcabe5f2dfb9d671c2ff7462c05db364": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
     "259735d12ef70ca91dd452ba3b78747d551df022161604db68743bf18be0db64": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Business",
@@ -2319,6 +2339,11 @@
     "297fe3313676c79775a58f895556eb55619b17599d80a25d5502a2d70cb0606c": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "2987fd8a3aba1f68354679e3a8ea4215cfe41a44e039d111fdea2634c8c0b52a": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "29945be214d80c948fbe635aaaa875cec10ade79fe35c590690e1635edd59ea4": {
@@ -2899,6 +2924,11 @@
       "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
     },
+    "33d1a53fa02fc4963d64e17b042f149082ec795e5933e78d08f4ae4dce78e07c": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "33e041539c4c62c9c9117d69bb4f2c1a7861f4fc0ba678460116c4e51a7c5cf4": {
       "created_at": "2026-10-23T06:47:46.010783+00:00",
       "has_embedded_video": true,
@@ -2939,6 +2969,11 @@
     "341861224b167185029caf05abb849e575a378ccaa1f5235e0e477a0f18e9e32": {
       "seen_at": "2026-11-03T20:29:47.097687+00:00",
       "source": "The Guardian Sport",
+      "status": "skipped_stale"
+    },
+    "34784b9f316b7e883a522d194a2302231973d824cfe96397de81d12ab5f41bb8": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "347c7b9ce21aa28d419f59ce34bab885a8469bd0dabbe31ec3b54816c311dd65": {
@@ -3652,6 +3687,16 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "41b0e0ce45aadbf6b5c03a45b82c367270dc8cda221ec5642efc857caf736744": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
+    "41f71d8dd03f86d4c98218e836c7f65c2f065cb999172ee705966498ae9f00a7": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "The Guardian Sport",
+      "status": "skipped_stale"
+    },
     "4203f02c58c4f3e5d5515f6cd5728c50ab6995427ed150c0e0dc437bb71e075b": {
       "created_at": "2026-10-15T06:49:10.880730+00:00",
       "has_publisher_artwork": true,
@@ -3661,6 +3706,11 @@
       "source_url": "https://www.bbc.co.uk/news/videos/cq398xnyx4gyo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Thousands of NI workers to get pay bump as Real Living Wage rises"
+    },
+    "421050a981f43901afc06262959c018f459036367bc69da61892b5c9b450a7a5": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
     },
     "421ee4efaeb991266220826313bdd8506f66f0e7875626512fbfa01ee523d96a": {
       "seen_at": "2026-10-27T18:49:42.592770+00:00",
@@ -5158,6 +5208,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "5fe2af1f6ee407f92c575bd80c5ab80d7b18388c4e734a2fb7c9f3775e24adab": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "5ff1d2988ba277683198e6c152318f7c60145a790d1d6b494b2fc6d88dd74db7": {
       "created_at": "2026-10-20T12:49:14.255050+00:00",
       "has_embedded_video": true,
@@ -5355,6 +5410,11 @@
       "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
     },
+    "62f63d270bdd0ebb3f09869706434061207a966d5ae1fcd07772e8667a1575ca": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "The Guardian Sport",
+      "status": "skipped_stale"
+    },
     "62fdb0afd8785200877e2999adfc33734bc158c98236c7019694b71e5cd7fc95": {
       "created_at": "2026-11-02T18:00:08.385896+00:00",
       "has_embedded_video": true,
@@ -5550,6 +5610,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "661f7cba25c7352c47898bb48661650f6911f0ca26d22164a1e0467d98c2e55f": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "664049bc3a66e86396f9a73bb5aa8c30fc1a17d4246fbd5a7b612e80b416ef42": {
       "seen_at": "2026-10-17T05:20:12.934883+00:00",
       "source": "BBC Business",
@@ -5586,6 +5651,11 @@
     "668b9f39c0b352b58648842a8ec2d8489220f3f4dbe934b6f22789f27f5ce959": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
+    "66c8f3115df62163b87e2e9add678e857e6803684216d12b97302399e293a22c": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "66f3aee84ab98000f5bccc9de54c52f92f20a6abdc978e2cc8a112f20e05a0f7": {
@@ -6057,6 +6127,11 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "6ecd0e14a1389cad17f3ddaba43b2eff388e8232b2b807f368d9a0d37f296f26": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "6ee617086b8cda2a036295c67e024f4aeb14eeddd5ed591b8f7b2522a008a009": {
       "seen_at": "2026-10-28T12:59:42.364008+00:00",
       "source": "Google News Entertainment",
@@ -6428,6 +6503,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "740845b30cbe1b263817c2dc596ea94e284f50e9ce3611b2e24ad9b4c170c5cc": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "7416317299a7a38aa69229116cd9db27526814fa67125769dc46dc4dd98435f6": {
       "seen_at": "2026-10-27T12:50:27.915668+00:00",
       "source": "Google News World",
@@ -6515,6 +6595,11 @@
     "74eb36cdafe1bd2912151c12160e45fe99b31e8f469382dbbca4f357365affa3": {
       "seen_at": "2026-11-04T20:35:26.881998+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "74ecce8615d5a0c32a99d1a8807d149d54aec6ed58d2d1e7cedb4f65fdce359a": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "750fac85f1a06ed81727a964945fd1b9c7f195b2d6b095464027da5b4f56eb09": {
@@ -7597,6 +7682,11 @@
     "878a08c4f2669c23bc8b73641d6c2b082ecca90f6ce996226a59642bd0b31025": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "87efcfd56daab67ae8660f49b24e91a83b0726d6e4f267e7695c024db54dae2e": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "8809f12aec96573b710a1196e11b222e261e5974fcd12ab336329e07e1e7ad70": {
@@ -8875,6 +8965,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "9da12d45db340b6735451a96bb68a32aa08d4ec59b918e4f80eeb3365c5cfa55": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
     "9dc82ab4d7ddc7fa245b56789e90f7a70d9131f95e07b72640f916778dd83b3b": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Science",
@@ -9160,6 +9255,11 @@
     "a43fb56176e1e1d75e4e12e9939d57570b5b9eacba1e927ff485d61fa7435352": {
       "seen_at": "2026-11-04T08:40:52.307503+00:00",
       "source": "The Guardian Sport",
+      "status": "skipped_stale"
+    },
+    "a4648347bec45e1a793c9c338f9405db665737b959ba869e9f5d758ab27aac5c": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "BBC Technology",
       "status": "skipped_stale"
     },
     "a4702e76b2a8f50f44198505b040e37d7819f973ac392fdac03b492f99b2848c": {
@@ -10170,6 +10270,11 @@
       "status": "draft",
       "title": "Trump waives several Russia sanctions as new US law takes effect"
     },
+    "b6a013b23ae15cdea4bc5df68f0ada09288442f5d3b3675b91c0c886095fb34d": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "b6a03f453a2ed7057c2945c6e980fdb4425f8dd1af35cf8321e8bceac2629c24": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Variety Music",
@@ -10280,6 +10385,11 @@
     "b8c6e23cd93b938136ffc8552c4eefdad9a51bb0b3afd13630bb60f7fabfae24": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "b8d6892b16acd51917cf672112fecce2a17ad5521d8cc032697ef8a848a9bb56": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "b8e9b61a18859af0ddefa18353797c005184e48c4a058d6b94b09c1b5ee10469": {
@@ -10773,6 +10883,11 @@
       "source_url": "https://www.rollingstone.com/music/music-news/dropkick-murphys-ken-casey-bruce-springsteen-interview-1235650482",
       "status": "published",
       "title": "Dropkick Murphys Singer Interviews Bruce Springsteen, Joan Baez, Chuck D for New Video Series"
+    },
+    "c005d735cc40009a169c16e3165198756b817dd64c0b8dbdc9a6bb31ffd81587": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
     },
     "c038aa98247b21af3814f4488fcb0e8d5febbed3524c191347fda97935025e0a": {
       "created_at": "2026-10-21T06:48:19.413657+00:00",
@@ -11389,6 +11504,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "cb6bf998e46838c1ca959e2497bd738a9f3d1e19067ed0d0f5d32d66a41aa64c": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "cb84490500c30fbbd7454c021b697ff2886cccecb6c22e59f3726eb2b266da9f": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Top Stories",
@@ -11512,6 +11632,11 @@
     "cd93edbc81876d58833d0f1cedac30516f0241b83164457172916917c9f35584": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "cdcab20cb84be521b86566282b986c9fe138b61df713b2e648771beeb0cc5617": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "cdfc4fbdb4a4483cc9dea880aaeb6d0f0dfa6e14fc727667731535833df486fd": {
@@ -11710,6 +11835,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "d220c468e4f8c95cbbac6c4596f0fb2077b5f908673a27375bdaa3baaa2e9215": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
+    },
     "d24611e38228c8512c7bb48da15c6ce2e10e8128e0dead9f57380d8bf2265923": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
       "source": "The Guardian Technology",
@@ -11751,6 +11881,11 @@
     "d2df30a0913707b93b3b23ea37d79c08adfe08d448e7d099c34d6a0fd7f950c8": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
       "source": "The Guardian Sport",
+      "status": "skipped_stale"
+    },
+    "d2e10b7851555962021a3d56a8e6f7ce1a8a7fa858b2593e9bba8ff18d62c01d": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "d2f08bc4bcc7ea7f197cb1494b6d490869172a71173b9e13d8dc8b64711f1e97": {
@@ -12220,6 +12355,11 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "db8eb61a08b707994acf1df7c02ac12f2768bd1c95fedb6e6e9f01991b39fa69": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "db965a33ee6fe91aeb388605fa9b5d9649767bd405e1a0254cb85f62ac1b6980": {
       "seen_at": "2026-10-29T13:00:30.022198+00:00",
       "source": "NPR Arts and Entertainment",
@@ -12492,6 +12632,11 @@
     "e12e4919bf957a7f6384582d12637c4066e8ddbf5fd5503799dc53ebf5515499": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
+    "e13a4c662e12c62cdacdd0581535c4072b31eb28e0d9572139d9afe1df976427": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "e1695b068220179f39aed7852fef08bba587c4d47bf861b2d3da89d0d85301a5": {
@@ -12867,6 +13012,11 @@
     "e6dc47c77304d1a4b0bdc38e5d9d93f95ef9c4f1c3a4c3b2dc952e7a0b0ab1b9": {
       "seen_at": "2026-10-23T18:45:13.548852+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "e6fafbcf435ceb81aab4e14610af3a716e6b8789ad8ca1fc90d05adf58879c5b": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "e6fef7c36f5e40963d117a6e33950168a44cfe498dc6cb4b08aad08d03cb95bc": {
@@ -13359,6 +13509,11 @@
       "status": "published",
       "title": "South West Water given lowest environmental rating"
     },
+    "eed4327bc1e2b09b69d2f61e23456d3f6a143ee2d390a9cee9ed73ab8f8bc061": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "The Guardian Sport",
+      "status": "skipped_stale"
+    },
     "ef0ffe86feaea1bc76a2b4b1b9c1beddd06e843cec5b0673c42ffa3be54a08db": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
       "source": "The Guardian Sport",
@@ -13681,6 +13836,11 @@
     "f448ed363d3be8dac160129f40fc1d733a92c7f5ed153250a5d84a4e0ed8cb5e": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "f44b9135783edd361afa82d80d4d65605f75ae88161d5e62254607aaed247fbc": {
+      "seen_at": "2026-11-05T07:23:49.954377+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "f44de0338672cf3b8deac19ee122599a41b45c8e3df1a972e5e49e23120c001b": {
