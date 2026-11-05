@@ -279,6 +279,11 @@
       "status": "published",
       "title": "Legal challenge to Australia's social media ban to start in High Court"
     },
+    "050466970501e3e0d1280d9edd812ff780c0d212f5494b9e477d2558ea49e6f3": {
+      "seen_at": "2026-11-05T18:59:01.479043+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "050796415448db8363b13d814bc9146a22c57131b80cf66d9f75e6327db46e19": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Google News World",
@@ -3434,6 +3439,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "3d3df0497f285ac408c7501f68d56c9dc89cdfc0a5818d83636d49021f9f35ef": {
+      "seen_at": "2026-11-05T18:59:01.479043+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "3d47ea36867c6f273c2868607a189e10a807d35a2449bdf3d9a0d00c682c5dcf": {
       "seen_at": "2026-10-17T05:29:56.024014+00:00",
       "source": "Google News Science",
@@ -4610,7 +4620,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Business",
-      "restore_attempted_at": "2026-11-04T14:44:43.118407+00:00",
+      "restore_attempted_at": "2026-11-05T19:01:05.798126+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669175546093",
@@ -6894,6 +6904,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "79d8a4e50f13c9fb96b0c8eadf9576dadd8b044a37e0b03f9803d9b7468d04cb": {
+      "seen_at": "2026-11-05T18:59:01.479043+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "7a0ed471691e116b5dd4062f9b87d18e64ab34f11ec0a6ae9224415698c03b5e": {
       "created_at": "2026-10-17T05:29:56.024014+00:00",
       "has_embedded_video": false,
@@ -7292,6 +7307,19 @@
       "seen_at": "2026-11-04T07:21:09.092237+00:00",
       "source": "NPR Business",
       "status": "skipped_stale"
+    },
+    "810a0152e7cb5c72fffc0b81bb67cec44723c824488176187cde219a510448c7": {
+      "created_at": "2026-11-05T18:59:01.479043+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "restore_attempted_at": "2026-11-05T19:01:05.798126+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669200613613",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckyvrze96y70o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Russell Brand found guilty of rape and sexual assault"
     },
     "81911a4b12d39b08a65f3c6f0023001d7ccbca13c70828c3fd1287ecbe7cf739": {
       "seen_at": "2026-11-02T07:29:49.590724+00:00",
@@ -9895,6 +9923,19 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "ae9bf546f0069cf0d33235d9f9c1b4735b882ab9a34b5cfbcb64784b319a15e0": {
+      "created_at": "2026-11-05T18:59:01.479043+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Variety Music",
+      "restore_attempted_at": "2026-11-05T19:01:05.798126+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669200711917",
+      "source_url": "https://variety.com/2026/music/news/pink-floyd-animals-boxed-set-50th-anniversary-1236940516",
+      "status": "published",
+      "title": "Pink Floyd\u2019s \u2018Animals\u2019 to Get 50th Anniversary Boxed Set With Unreleased Studio and Live Material"
+    },
     "aecc960e934c04c0aae7f934709f21600274e97ac8dceea9d21c81e44ea17b9c": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Environment",
@@ -11286,6 +11327,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "c55bcd61500bb10e5207b6e9b77a7175368f9e2ed0beeb01df580b380f602147": {
+      "seen_at": "2026-11-05T18:59:01.479043+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "c55d20308f75abbe675eb122b732d26f5af2a03a6048b14f3b815fcbd61c4871": {
       "created_at": "2026-10-31T06:55:30.871191+00:00",
       "has_embedded_video": true,
@@ -11528,6 +11574,19 @@
       "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Td2ZsbFdISWxWS2JJcWMxUjhBUVdqb1RzWXRIeUxubjhnMUhQTVpCcnMtd1YwU3ZoZjJ3UkYxTlhVUDEyMVg3Vmo2T2ZNNHVJOHZxMGpXUHNHRlE?oc=5",
       "status": "draft",
       "title": "Three men jailed for 158 years each for murdering Australian and US surfers in Mexico - BBC"
+    },
+    "c8daf99589f7732f2d6378bba3b1f277fdc44f946bc8e36cba14d5ae25c93210": {
+      "created_at": "2026-11-05T18:59:01.479043+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "restore_attempted_at": "2026-11-05T19:01:05.798126+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669200646381",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwvgdjyg6qrqo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "The Russell Brand I saw in court was not the flamboyant character most people will know"
     },
     "c90d5a4dd6fdc5bf2296344e84df5ab4937fccdc8579315ac505c6872d134c8e": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
@@ -11889,6 +11948,19 @@
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "d1175aa63bac5e5e3a250dc815d3ed85f53b6c3a36b1b0aff7db1960c0a49a64": {
+      "created_at": "2026-11-05T18:59:01.479043+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-05T19:01:05.798126+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669200679149",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmpqg08nz3pqo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Hoax bomb threats target European airlines and airports for second time in a week"
     },
     "d118c8dbd5e91811f4b965cc9bc4541c06342e97dd346e334fe1cc6bbca98f9a": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
@@ -14220,6 +14292,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "f875a86fe186ff30c7b50917d781f222d881d11618bae47b911e7b17671192d3": {
+      "seen_at": "2026-11-05T18:59:01.479043+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "f88001b283bc30da02bad9f42920a09b83024b71c5d2ef141847a8136f7bbd7f": {
       "seen_at": "2026-11-01T18:48:11.579033+00:00",
       "source": "Rolling Stone Music News",
@@ -14259,6 +14336,19 @@
       "seen_at": "2026-10-30T07:00:00.666940+00:00",
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
+    },
+    "f953b6a930afde6285b1fc78408f5e485c45cdd81ea9e31baf05cf1e232a77e1": {
+      "created_at": "2026-11-05T18:59:01.479043+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-05T19:01:05.798126+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669200580845",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6vgx8q09gg4o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Russell Brand is being investigated over two new rape complaints, police say"
     },
     "f956819c709825a6e15b4103ed75eaf8ec4e7afd0ea38eac424570d18c792294": {
       "seen_at": "2026-11-04T07:21:09.092237+00:00",
