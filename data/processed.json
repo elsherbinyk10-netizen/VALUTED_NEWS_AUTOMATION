@@ -2272,6 +2272,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "2869ea102a91551cf269d63a80599c7eaaf9d26d0e2831e075ec0ab99f76f482": {
+      "seen_at": "2026-11-06T08:39:56.254222+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "28713c2b0bca04eee62a94811bd7f2e345bee3fd84a8b8d2e80edc62fc7eab91": {
       "seen_at": "2026-10-20T18:44:16.994007+00:00",
       "source": "BBC World",
@@ -3147,6 +3152,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "365962c5fac31a37e41a6aa12b2bbb6c1874320a6179dfadc9072f8ca41af276": {
+      "seen_at": "2026-11-06T08:39:56.254222+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "36a97af61bfd634daf28a0673a36d5fff32b1226e072222cdbd8e5ce6e710e52": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News Top Stories",
@@ -3422,6 +3432,11 @@
     "3c3c7578ee03208af71de5267e322ca1c038903699b57310ca3d2c6208242c51": {
       "seen_at": "2026-11-03T03:55:58.146882+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "3c604011f3361a3ad94795091e7bea82db8a502d091e9fa202e71a585c1168f6": {
+      "seen_at": "2026-11-06T08:39:56.254222+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "3c60679ac32fa95253580f75037cdb21761a9fa9f1d2409b340876f1a5324735": {
@@ -12060,6 +12075,11 @@
     "d0cfd23bd2632071aeb3edcb276f7ef415172ed4c97ca3416cc6f3db9114b560": {
       "seen_at": "2026-11-03T15:55:12.765905+00:00",
       "source": "Google News Health",
+      "status": "skipped_stale"
+    },
+    "d0f5a4eb4cff2cb8d10a3935da934c29a5a3221d08338014783828a16f0724f4": {
+      "seen_at": "2026-11-06T08:39:56.254222+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "d0fcb50dbf702ea64cd154f423fbb5b352bb20727cb5ffa1c920343326045eba": {
