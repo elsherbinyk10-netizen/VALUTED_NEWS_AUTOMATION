@@ -871,6 +871,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "1016637b7869d8260c2f6cf5dc9f8eb80c7a0dc78af39f23f68db74dbea5b012": {
+      "seen_at": "2026-11-06T13:09:28.119828+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "104320ee34a698417b99315c4b3df646294e4abc6a48ba7f0200194a662cf8d3": {
       "seen_at": "2026-11-02T13:11:57.143285+00:00",
       "source": "BBC Entertainment and Arts",
@@ -1356,6 +1361,11 @@
       "source_url": "https://science.nasa.gov/image-article/apod-2026-october-17-3d-67p",
       "status": "published",
       "title": "APOD: 2026 October 17 \u2013 3D 67P"
+    },
+    "17a93f731a4a1724c1a992833eaef0123563ad06a7e7df6c78eda642bd336914": {
+      "seen_at": "2026-11-06T13:09:28.119828+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
     },
     "17cfaccf3746d4c7bcbdc9c483dbf9bc3eeb7f2a31218cbfcfb7c8eaaf9a2552": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
@@ -4843,8 +4853,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-05T08:44:10.408925+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-06T13:11:21.550058+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669180756205",
       "source_url": "https://www.bbc.co.uk/news/articles/cq1kdgnn2xdeo?at_medium=RSS&at_campaign=rss",
@@ -5580,6 +5590,11 @@
     "6396acff03c0254a3aa002d4807073ebc264cd96bc96c98fc1d020d0c266ae11": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "63b80da325130f73a469effcda32eafbd72f6df0a271c955427b5c18f1e8a2b1": {
+      "seen_at": "2026-11-06T13:09:28.119828+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "63bd8200de37ea2d0b27b0116174b1fb0d22ad4112b10b80294217f91c2cb266": {
@@ -7318,6 +7333,19 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "7f806f4d6ebc196f3a39fdee2f431c31ca87c3a4406b4c6fa6d1f3081c11b7a9": {
+      "created_at": "2026-11-06T13:09:28.119828+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "restore_attempted_at": "2026-11-06T13:11:21.550058+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669211951341",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Global stocks plunge as fears over US AI slowdown spread to Asia and Europe"
+    },
     "7f90ce4eea86f5bce9bb16a1da3b6d7c4bc84828fbe0f02a7bd9abf80e7a3f5d": {
       "created_at": "2026-10-31T18:48:49.607226+00:00",
       "has_embedded_video": true,
@@ -8747,6 +8775,19 @@
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
+    },
+    "96423959387163081c8940b341ec7d64e927d7049860759af1f91ee2821b7cd1": {
+      "created_at": "2026-11-06T13:09:28.119828+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "restore_attempted_at": "2026-11-06T13:11:21.550058+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669211984109",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmly00r44jgvo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Met chief says he wouldn't be surprised if more allegations made about Brand after rape conviction"
     },
     "9664c27d40099e09339f9b390e18081f6c7511a3a7f269e0f1e01b499bd7f702": {
       "seen_at": "2026-10-23T18:45:13.548852+00:00",
@@ -10232,8 +10273,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-05T08:44:10.408925+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-06T13:11:21.550058+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669180723437",
       "source_url": "https://www.bbc.co.uk/news/articles/cwp9g3rlp8jlo?at_medium=RSS&at_campaign=rss",
@@ -11430,6 +11471,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "c50a5b1fcf8db321ac96450d517fe8eabe1f36e5106b6b1a081e68c8e297618b": {
+      "seen_at": "2026-11-06T13:09:28.119828+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "c510265f2c2c6ed5dcd8945715baec6bd0e9d2cd8bf9c3ddbd916ad25f1c4976": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "Google News Technology",
@@ -11760,6 +11806,19 @@
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
+    },
+    "ca5031a28a3ec12396b0e58d1a144b31c7c0b5c281f0f30084b00856284b1a86": {
+      "created_at": "2026-11-06T13:09:28.119828+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-06T13:11:21.550058+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669212016877",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm2d66n0lx1yo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Russian extremist group denies sending hoax bomb threats"
     },
     "ca515d9c8c4f32dcb575525ad0b0a37ed1a07cacad756744d4fd1873a558e7a3": {
       "seen_at": "2026-10-22T06:37:07.545122+00:00",
@@ -14208,6 +14267,19 @@
       "source_url": "https://www.bbc.co.uk/weather/articles/ck5yn68mj88vo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Why hasn't the UK had any named storms yet?"
+    },
+    "f3ad61dd440e1bea49a8cb5a65b1251b31e75a50f1d0789dbd11d32ef25d1144": {
+      "created_at": "2026-11-06T13:09:28.119828+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "restore_attempted_at": "2026-11-06T13:11:21.550058+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669212049645",
+      "source_url": "https://www.rollingstone.com/music/music-news/olivia-rodrigo-cynthia-nixon-christmas-song-1235651368",
+      "status": "published",
+      "title": "Olivia Rodrigo, Noted \u2018Sex and the City\u2019 Fan, Recruits Cynthia Nixon For Christmas Video"
     },
     "f3c5d65e8d18277d7ffb9fd7a53ee4a0661cf1eb2d9ce82869a45090afc0f6a7": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
