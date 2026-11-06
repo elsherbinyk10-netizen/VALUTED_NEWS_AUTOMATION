@@ -706,6 +706,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "0cb6a43a3e92516d2e7761d39d4dbdbb210a7e477bf907833ddaf2707cb83ee5": {
+      "seen_at": "2026-11-06T18:57:04.713217+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "0cc58a0c3807bde720d410b882875b63a3cd62ed2270dfd92a887ccfd5bbb990": {
       "seen_at": "2026-10-17T04:37:20.456657+00:00",
       "source": "Google News Technology",
@@ -3063,6 +3068,19 @@
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
       "source": "The Guardian Technology",
       "status": "skipped_stale"
+    },
+    "34d4405ea33c4cf327ffb8f18ec7cc90fb5364a54fb3d45c23aeb046ada500b4": {
+      "created_at": "2026-11-06T18:57:04.713217+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "restore_attempted_at": "2026-11-06T18:59:09.519196+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669213950189",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm4g1jqwylvgo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "How 2000s lad culture helped Russell Brand to hide in plain sight"
     },
     "34d8a5d5057c7e0b09cbc3e062e984bdfe352861b23fb4f84e9d942a452dd40f": {
       "seen_at": "2026-11-03T07:14:01.426928+00:00",
@@ -6401,6 +6419,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "70aad3303bf3bdd1a4b85386bdba1a594eafb45a6b61ffc8f4ff1b6e50a7a7b1": {
+      "seen_at": "2026-11-06T18:57:04.713217+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "70e9b9b09a888a11e7a15a1ce0ee81800523a8ce1209de77ab967a1683ff91e9": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "NASA News",
@@ -7394,9 +7417,19 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "8069ec729be7e6b33894dc945265933876bbe4b737224029ab43bee5841e050c": {
+      "seen_at": "2026-11-06T18:57:04.713217+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "806e4d53c132639bc2260300133cf11943c34e8ba80f45d44fbc0ef2369a10d8": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "806fd4811804d7b24b4013b6dc43a49f21f68deb987da70378a3636ff8cbd5af": {
+      "seen_at": "2026-11-06T18:57:04.713217+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "807e852193649d30dae1fe721fcc741a0d65568ba37331cb710070a1f042f597": {
@@ -8332,6 +8365,11 @@
     "8f6de731ca1d6e3776fbc0e2ef75e68c88ee91b5e3efb4788cfc4417cebc9de8": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "8f73d19c713edd8561f16afc5eaf9283b26c9cb5f3dccf942bbaf4be737b47f5": {
+      "seen_at": "2026-11-06T18:57:04.713217+00:00",
+      "source": "NASA News",
       "status": "skipped_stale"
     },
     "8f8c3a0cac9c7d4fb6af524a8501a15b426fa1a4b238069c7f84ded7ff1defa2": {
