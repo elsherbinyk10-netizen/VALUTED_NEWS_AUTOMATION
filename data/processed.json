@@ -1708,6 +1708,19 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "1e0192d1cca6c958750cb0ea0b8f2f6910e5bc1cd1382a37991a3becb1bcc62d": {
+      "created_at": "2026-11-06T20:30:37.392609+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "restore_attempted_at": "2026-11-06T20:33:13.308390+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669214310637",
+      "source_url": "https://www.bbc.co.uk/news/articles/c33zdz2m1e2o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "How does it affect me if share prices fall?"
+    },
     "1e3382b17a9c6b7982ce0ac80078198c77bfed229f7c112456a7eb2e1b605017": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Business",
@@ -2152,6 +2165,19 @@
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
+    },
+    "25cd541ca2207ece4c1d3c09dc52d5efaf32cec2f812b558c376c726793e1594": {
+      "created_at": "2026-11-06T20:30:37.392609+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-06T20:33:13.308390+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669214277869",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq1j33w7d232o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Elon Musk appears to signal the end of the road for Cybertruck"
     },
     "25ebdf6749dec3d473ed06f524a1c1008833fdc25a8bf7e10ae1ac7406e6e83b": {
       "created_at": "2026-10-19T10:50:30.417663+00:00",
@@ -3344,6 +3370,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "39c786a51ec4aad778221364b98ce2825146c56b4f8622c671a4590270b33ca2": {
+      "seen_at": "2026-11-06T20:30:37.392609+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "39df93b3612b787d3459860b764223573cd6af6ffdce450e122cc9d3212577fa": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
       "source": "Google News Science",
@@ -3908,6 +3939,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c8y56vp10075o?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Sir Tom Jones mentors Cardiff singer to victory on The Voice UK"
+    },
+    "433bc681e04b06aa0d07a3ae012d35314902f94340fe15161a5cef895e9d72a0": {
+      "seen_at": "2026-11-06T20:30:37.392609+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
     },
     "434e6ab8d35887d0810dbc9046aa55396bda58f0cf5613df27a860c2d3acf0a1": {
       "seen_at": "2026-11-02T07:29:49.590724+00:00",
@@ -4698,7 +4734,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Business",
-      "restore_attempted_at": "2026-11-05T19:01:05.798126+00:00",
+      "restore_attempted_at": "2026-11-06T20:33:13.308390+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669175546093",
@@ -4858,8 +4894,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-05T20:32:48.462640+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-06T20:33:13.308390+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669200875757",
       "source_url": "https://www.bbc.co.uk/news/articles/cx8dzzjg3g9zo?at_medium=RSS&at_campaign=rss",
@@ -5154,7 +5190,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-05T20:32:48.462640+00:00",
+      "restore_attempted_at": "2026-11-06T20:33:13.308390+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669177184493",
@@ -7462,8 +7498,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Entertainment and Arts",
-      "restore_attempted_at": "2026-11-05T19:01:05.798126+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-06T20:33:13.308390+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669200613613",
       "source_url": "https://www.bbc.co.uk/news/articles/ckyvrze96y70o?at_medium=RSS&at_campaign=rss",
@@ -10135,7 +10171,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Variety Music",
-      "restore_attempted_at": "2026-11-05T19:01:05.798126+00:00",
+      "restore_attempted_at": "2026-11-06T20:33:13.308390+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669200711917",
@@ -10841,6 +10877,11 @@
     "bab92507de4e3d58998147264dafc65bcba385a4b115cb7354a225053f6f6982": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "baba656d6de419fc88c465ef147f8ce0bab6bbbcb557fae8d94045bdc09a5cfe": {
+      "seen_at": "2026-11-06T20:30:37.392609+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "bac47cf804415cd8cf5ec1ffe597a64c7d800cbe9fae23255b14c20d09299cac": {
@@ -11792,7 +11833,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Entertainment and Arts",
-      "restore_attempted_at": "2026-11-05T19:01:05.798126+00:00",
+      "restore_attempted_at": "2026-11-06T20:33:13.308390+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669200646381",
@@ -12194,8 +12235,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-05T19:01:05.798126+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-06T20:33:13.308390+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669200679149",
       "source_url": "https://www.bbc.co.uk/news/articles/cmpqg08nz3pqo?at_medium=RSS&at_campaign=rss",
@@ -12842,7 +12883,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Entertainment and Arts",
-      "restore_attempted_at": "2026-11-05T20:32:48.462640+00:00",
+      "restore_attempted_at": "2026-11-06T20:33:13.308390+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669200908525",
@@ -14666,8 +14707,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-05T19:01:05.798126+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-06T20:33:13.308390+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669200580845",
       "source_url": "https://www.bbc.co.uk/news/articles/c6vgx8q09gg4o?at_medium=RSS&at_campaign=rss",
