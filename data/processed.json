@@ -2558,6 +2558,19 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "2b267bfcba0409632e6e1a9c23514477f171c7b0834b34b48862782add48e139": {
+      "created_at": "2026-11-07T18:50:01.624706+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "restore_attempted_at": "2026-11-07T18:52:08.641551+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669217587437",
+      "source_url": "https://www.rollingstone.com/music/music-news/richard-lloyd-television-guitarist-dead-obituary-1235614110",
+      "status": "published",
+      "title": "Richard Lloyd, Television\u2019s Virtuoso Guitarist, Dead at 75"
+    },
     "2b3ee3295a2216125e5f5d8f6176003845374722f07b63c41fbfd5176f3687f2": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "BBC Entertainment and Arts",
@@ -3308,6 +3321,11 @@
     "378b1fe2f80d79e6d30e58e58315dbec17273a8e647c5b1234473be172a9b9df": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "37970870da4aa5a2a5d659cb2236ccbaa86139e60361dd76173a339c3691e635": {
+      "seen_at": "2026-11-07T18:50:01.624706+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "37d969c79866b8f41c6c4c00df74f1de7dd4a05fc72e3a798d75cf52d345e53d": {
@@ -4156,6 +4174,11 @@
     "46b61016050d5d2f736f94c740ab0c4f899ad51a8a7cafa42bbea8ab5057e30c": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
+    "46b7465cdfaae4c4ceb6e0708cc83042619e676b1d7e3e6ae07c5674558b364f": {
+      "seen_at": "2026-11-07T18:50:01.624706+00:00",
+      "source": "NASA News",
       "status": "skipped_stale"
     },
     "46c0a2e1eea41727803877267e40125c3d6c39812ac2d6a556062eb04dcc24e5": {
@@ -5124,6 +5147,11 @@
       "source": "Google News Politics",
       "status": "skipped_stale"
     },
+    "58baebef2c52a55d41f2cf2d1b67ed0d83d8a26e345807192135429f7c2a6c35": {
+      "seen_at": "2026-11-07T18:50:01.624706+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "58ffabe5759b21c1f7a77fe0f1624a63150b463f7f351ff10179ae5e8b763875": {
       "created_at": "2026-10-25T12:44:03.153981+00:00",
       "has_embedded_video": true,
@@ -6041,6 +6069,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cw99zpmnxzmjo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines"
+    },
+    "68321539ccea6372920de826de47d536d72e51557e8d810577db431ab9264e4c": {
+      "seen_at": "2026-11-07T18:50:01.624706+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
     },
     "6844c5c2c67eb8fb2779dd3f3238b6c63b56c92c7d2eca28fc9879baa060358c": {
       "seen_at": "2026-11-03T17:07:40.495903+00:00",
@@ -8225,6 +8258,11 @@
       "status": "draft",
       "title": "Call for more food funding due to high living cost"
     },
+    "89a92c97d83383c64d650db097d6350c8b63c387c4159c54194e46ff3c45808f": {
+      "seen_at": "2026-11-07T18:50:01.624706+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "89aabbf032dac622db804b47a60fd8bac4b3640ebc0105c1c79b609312dcf729": {
       "seen_at": "2026-11-06T07:20:31.183807+00:00",
       "source": "The Guardian Technology",
@@ -8414,6 +8452,11 @@
     "8d22fc4debd39ff36343d533ac0fb3f0353a4b47a5b3dd1d072f2a9797ca03b2": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "8d25eddd3446219d7eda1b860b41b692bb07196ffb5128f3ef57c9645fb9d1da": {
+      "seen_at": "2026-11-07T18:50:01.624706+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "8d59b9f3c08d9e94b87449dfa6632efdc5a40a6fc45a8917a3bac72d86b7f6a5": {
@@ -12226,6 +12269,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "ccb67d959929d050167cbf2ad83036f8313fb2b4430ab88f5afdce7e448560e2": {
+      "seen_at": "2026-11-07T18:50:01.624706+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
     "ccbd23d16b6874a9059445b40880ba745190e90022a8f6989026fad53a4f7ad0": {
       "created_at": "2026-10-20T18:44:16.994007+00:00",
       "has_embedded_video": true,
@@ -14787,6 +14835,11 @@
     "f62ac42d83fdfc3987819849cab1d7e6bcd222353585ba77f80b1d31568fe74a": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "f62d5e6011ac9bb108ee48d7c968207ce7b52060ceef32a9ec20b46ec2696ca0": {
+      "seen_at": "2026-11-07T18:50:01.624706+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "f68449c7c292c55ed42942c077a9f07830a4e636681dde351b5fb271ac5af8fd": {
