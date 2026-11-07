@@ -266,6 +266,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "049dad61a4297a73774877854d4b3d26c6bbafea984c96d44477d356a45bad36": {
+      "seen_at": "2026-11-07T12:55:20.001147+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
     "04da432b5f6b8a4a3410f3d49d2644c9aab2b6fb4307d2319b64aed46d22bf45": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
@@ -799,6 +804,11 @@
     "0dfaa39434f6a352d3ff0d6d97bfc93cbf23e8bdd5c4020d5d98256cfa828334": {
       "seen_at": "2026-10-31T12:52:32.223221+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "0e4d5fd14ceb040c60251476d1dd1fc7b0a1964f56abdcc80ad3a2fdee4119d7": {
+      "seen_at": "2026-11-07T12:55:20.001147+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "0e4e8818e9343e503dbc5f0598a74a2fd19ba5845a8aa6ef9cf9e40a78196e83": {
@@ -2495,6 +2505,11 @@
       "status": "published",
       "title": "UK working to identify exposure after global cyber-security warning"
     },
+    "2a46dc0a00e65778f5885b92e8b5a202e1c62b7a1a08324a3c3160b987daac8b": {
+      "seen_at": "2026-11-07T12:55:20.001147+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "2a52f7bb3050fda34e01b4a010ed74b0e790b9711603a86a74c03d5a60d5db11": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "NPR Business",
@@ -3313,6 +3328,11 @@
     "385ea6c487f0222b803bf0e742f2cc94b142ba9080b280dd82b5b96b9c8ec45a": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "3880731809dbbf5e7ad5887f8aa87270ec3feb44879c00c2234c8fb913adc140": {
+      "seen_at": "2026-11-07T12:55:20.001147+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "3893efae03d4d01bca69a18855cfa67b918c0b57b42c33cc99f1929bd4a4019a": {
@@ -5428,6 +5448,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "5f752c40998fcbb94b32282ea4cdbb49ca439bb3d56b26b5df3e20bae5f3cd9c": {
+      "seen_at": "2026-11-07T12:55:20.001147+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "5f88f7b78ef3d7e1654b5ff7d18bb678c776cdfae610727aa24d21fbf949e83b": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "NPR Arts and Entertainment",
@@ -7517,6 +7542,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cm4g18l8l4wgo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "'It's been killing me!' Celebrity Traitors winners relieved the secret is out"
+    },
+    "7fad102e05c0094d89794c1e9b2bd2ae24936ff42f1cf12daaa4137e4b4c9a9a": {
+      "seen_at": "2026-11-07T12:55:20.001147+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
     },
     "7fc28c04213e8df8fdafb4ab55c2f99e08aec59597709e617ac082dcd26d9a85": {
       "seen_at": "2026-11-07T07:01:38.843423+00:00",
@@ -10631,6 +10661,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "b42358685635ec5619a57737832ff89ab6de82b88bbf138fe7ca414837943e83": {
+      "seen_at": "2026-11-07T12:55:20.001147+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "b44463ca822eaa82a67753e199d4ba9ac4706c657bdd20b8408b993c8a639e28": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "Google News Business",
@@ -11126,6 +11161,11 @@
     "bbfe71c8354f941737f4e6f6dbfc3dcb2162f8a87ddb44dc05c081e3c449b5fd": {
       "seen_at": "2026-10-30T07:00:00.666940+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "bc07d81b418351fe3b4a704814a92e0fee8a5e90d67b8d02705bb4545b994b75": {
+      "seen_at": "2026-11-07T12:55:20.001147+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "bc3fb02f00ae214a3f230248528f97917f200df3d7886987a6b13623518b4442": {
@@ -11859,6 +11899,11 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "c6edd30851b19a66fa5759e872a10aa96e31b7e74745baba323ce8b402262168": {
+      "seen_at": "2026-11-07T12:55:20.001147+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "c6f3094a5a72db8a760e8fd5049475b5f09a0cf80bcb00d5c5f34bf9604386c6": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
@@ -12302,6 +12347,11 @@
     "cf4371881cc66060ff1b040d8619fad9825927dc89fe4d5bee3a91535ab2d6dd": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "cf6a238773ad656793437dfc1a4427cd03db3dbe0fb797b239d5ac54bb11802e": {
+      "seen_at": "2026-11-07T12:55:20.001147+00:00",
+      "source": "NPR Business",
       "status": "skipped_stale"
     },
     "cf88497e84253ebb60211b36f810ef7ec476aa90e4c64635b12caebcc285d81e": {
