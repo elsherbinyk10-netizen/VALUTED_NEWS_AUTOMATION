@@ -4997,7 +4997,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-06T13:11:21.550058+00:00",
+      "restore_attempted_at": "2026-11-07T14:29:57.707600+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669180756205",
@@ -5518,6 +5518,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cve8rp085zzjo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "'Mogging' is Collins' word of the year... but do you know what it means?"
+    },
+    "6050192b65fb2d16a51d6f61858b9ce2b19e1cb714ca97549a8dc8afb0d705ae": {
+      "seen_at": "2026-11-07T14:27:41.637071+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
     },
     "6051a59784aaab81619050b3f14e9a25f2f650e858a33947c2b042988fa5e3ec": {
       "seen_at": "2026-10-12T06:38:38.333441+00:00",
@@ -7522,7 +7527,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Business",
-      "restore_attempted_at": "2026-11-06T13:11:21.550058+00:00",
+      "restore_attempted_at": "2026-11-07T14:29:57.707600+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669211951341",
@@ -9000,7 +9005,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Entertainment and Arts",
-      "restore_attempted_at": "2026-11-06T13:11:21.550058+00:00",
+      "restore_attempted_at": "2026-11-07T14:29:57.707600+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669211984109",
@@ -10507,7 +10512,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-06T13:11:21.550058+00:00",
+      "restore_attempted_at": "2026-11-07T14:29:57.707600+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669180723437",
@@ -12091,7 +12096,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-06T13:11:21.550058+00:00",
+      "restore_attempted_at": "2026-11-07T14:29:57.707600+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669212016877",
@@ -13753,6 +13758,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "e6a7f87131132d4cf550187fce2053f123a6e6807b950831227dd4cf3003a980": {
+      "seen_at": "2026-11-07T14:27:41.637071+00:00",
+      "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
     "e6da576f1b1a6c97a0c0e365f638f79204bd8f1de959b89b599aa7edf082d379": {
       "created_at": "2026-10-31T06:55:30.871191+00:00",
       "has_embedded_video": true,
@@ -14605,8 +14615,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Rolling Stone Music News",
-      "restore_attempted_at": "2026-11-06T13:11:21.550058+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-07T14:29:57.707600+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669212049645",
       "source_url": "https://www.rollingstone.com/music/music-news/olivia-rodrigo-cynthia-nixon-christmas-song-1235651368",
