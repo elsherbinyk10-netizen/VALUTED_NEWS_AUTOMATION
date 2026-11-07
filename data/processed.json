@@ -2492,6 +2492,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "2a0fae46c21e70da47443f5fe48e837d6f91d432a3890c793072ed8a50a829a2": {
+      "seen_at": "2026-11-07T20:19:01.218307+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "2a375ccbde887f9c949e6da35bb48ab8e81ffa4409ad49071bf1e32357c47003": {
       "created_at": "2026-10-22T06:29:51.905141+00:00",
       "has_embedded_video": true,
@@ -2927,6 +2932,11 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "31adc23e7927ac16b69e745446bf7deb93a569767952d70f7c785fb7f2c9f139": {
+      "seen_at": "2026-11-07T20:19:01.218307+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "31b0bbc87fbaf890651269d759d777b9eb418f978ee3f8abedd87584f98ec053": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
       "source": "Variety Music",
@@ -3158,7 +3168,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Entertainment and Arts",
-      "restore_attempted_at": "2026-11-06T18:59:09.519196+00:00",
+      "restore_attempted_at": "2026-11-07T20:20:58.990866+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669213950189",
@@ -5369,6 +5379,19 @@
       "seen_at": "2026-10-28T12:59:42.364008+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "5d7427350e81f87516f4543ff6caf46a50281a692a4143fa0c6629722fe004a7": {
+      "created_at": "2026-11-07T20:19:01.218307+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "restore_attempted_at": "2026-11-07T20:20:58.990866+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669217751277",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmd9343z3zw2o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "PM tells firms to publish salaries in job adverts ahead of new law"
     },
     "5d79e83ae560dbe9c106c409ae07a2559d973b86619b531b1f17745e9fd18a78": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
@@ -8442,6 +8465,11 @@
     "8ceb4deed47a274883ee89b7231991f54de362b3f4cf3c559d29240977dd376e": {
       "seen_at": "2026-11-04T07:21:09.092237+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "8d0760264f59afe3b04c653d3010f1b4170390f9eae3a40a55c4d4092e28194a": {
+      "seen_at": "2026-11-07T20:19:01.218307+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "8d080aba4f45e7af98a6f72e66e6ab1e7d6b9a9ec8727d33439f65babc1b44a8": {
@@ -14457,6 +14485,11 @@
     "f09674eb91dbd779ee0f9a2205ae1fe645ce34d0114b773f694451c84c012ac7": {
       "seen_at": "2026-10-24T18:39:21.262654+00:00",
       "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
+    "f09c6e88d19576b52830007822394d2f4410d37f93ffa46cd2e160268c48d5c4": {
+      "seen_at": "2026-11-07T20:19:01.218307+00:00",
+      "source": "The Guardian Sport",
       "status": "skipped_stale"
     },
     "f0a84d9b86bbe8d8b91153bd21b36d7b61f63603591bbd29e587358b7d51d9b2": {
