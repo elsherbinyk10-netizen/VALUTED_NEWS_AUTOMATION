@@ -89,7 +89,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          payload=$(curl --fail --silent --show-error -X POST "https://$SHOPIFY_STORE_DOMAIN/admin/api/$SHOPIFY_API_VERSION/graphql.json" -H "X-Shopify-Access-Token: $SHOPIFY_ADMIN_ACCESS_TOKEN" -H "Content-Type: application/json" --data '{"query":"query ValutedNewsPreflight { shop { myshopifyDomain } blog(id: \\"gid://shopify/Blog/107387158765\\") { id title } }"}')
+          query='query ValutedNewsPreflight { shop { myshopifyDomain } blog(id: "gid://shopify/Blog/107387158765") { id title } }'
+          request_body=$(jq -n --arg query "$query" '{query: $query}')
+          payload=$(curl --fail --silent --show-error -X POST "https://$SHOPIFY_STORE_DOMAIN/admin/api/$SHOPIFY_API_VERSION/graphql.json" -H "X-Shopify-Access-Token: $SHOPIFY_ADMIN_ACCESS_TOKEN" -H "Content-Type: application/json" --data "$request_body")
           printf '%s' "$payload" | jq -e '(.errors | not) and .data.shop.myshopifyDomain == "5xd8ae-md.myshopify.com" and .data.blog.id == "gid://shopify/Blog/107387158765" and .data.blog.title == "VALUTED NEWS"' >/dev/null || {
             echo "Shopify preflight failed: token, store identity, permissions, or VALUTED NEWS blog ID is incorrect."
             exit 1
