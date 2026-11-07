@@ -38,7 +38,7 @@ jobs:
 
     env:
       SHOPIFY_STORE_DOMAIN: ${{ secrets.SHOPIFY_STORE_DOMAIN }}
-      
+      SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ADMIN_ACCESS_TOKEN }}
       SHOPIFY_API_VERSION: "2026-10"
       AUTO_PUBLISH: 'true'
       SHOPIFY_BLOG_ID: "gid://shopify/Blog/107387158765"
@@ -48,43 +48,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-
-      - name: Obtain temporary Shopify Admin API token
-        env:
-          SHOPIFY_API_KEY: ${{ secrets.SHOPIFY_API_KEY }}
-          SHOPIFY_API_SECRET: ${{ secrets.SHOPIFY_API_SECRET }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          test -n "$SHOPIFY_STORE_DOMAIN" || { echo "Missing repository secret SHOPIFY_STORE_DOMAIN"; exit 1; }
-          test "$SHOPIFY_STORE_DOMAIN" = "5xd8ae-md.myshopify.com" || { echo "SHOPIFY_STORE_DOMAIN must be exactly 5xd8ae-md.myshopify.com"; exit 1; }
-          test -n "$SHOPIFY_API_KEY" || { echo "Missing repository secret SHOPIFY_API_KEY"; exit 1; }
-          test -n "$SHOPIFY_API_SECRET" || { echo "Missing repository secret SHOPIFY_API_SECRET"; exit 1; }
-
-          response=$(curl --fail --silent --show-error \
-            -X POST "https://${SHOPIFY_STORE_DOMAIN}/admin/oauth/access_token" \
-            -H "Content-Type: application/x-www-form-urlencoded" \
-            --data-urlencode "grant_type=client_credentials" \
-            --data-urlencode "client_id=${SHOPIFY_API_KEY}" \
-            --data-urlencode "client_secret=${SHOPIFY_API_SECRET}")
-
-          token=$(printf '%s' "$response" | jq -er '.access_token')
-          expires=$(printf '%s' "$response" | jq -er '.expires_in')
-          scope=$(printf '%s' "$response" | jq -r '.scope // ""')
-
-          if ! printf '%s' "$response" | jq -e '
-            (.scope // "" | split(",") | map(gsub("^\\s+|\\s+$"; ""))) as $scopes
-            | ($scopes | index("write_content")) != null
-          ' >/dev/null; then
-            echo "Shopify token is missing the required write_content scope (which also grants content read access)."
-            echo "Granted scopes: ${scope:-not returned}"
-            exit 1
-          fi
-
-          echo "::add-mask::$token"
-          echo "SHOPIFY_ADMIN_ACCESS_TOKEN=$token" >> "$GITHUB_ENV"
-          echo "Temporary Shopify token obtained. Expires in ${expires} seconds."
-          echo "Required content scopes verified."
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -104,8 +67,28 @@ jobs:
         shell: bash
         run: |
           test "$SHOPIFY_STORE_DOMAIN" = "5xd8ae-md.myshopify.com" || { echo "SHOPIFY_STORE_DOMAIN must be exactly 5xd8ae-md.myshopify.com"; exit 1; }
-          test -n "$SHOPIFY_ADMIN_ACCESS_TOKEN" || { echo "Temporary Shopify token was not provided to the publishing job."; exit 1; }
+          test -n "$SHOPIFY_ADMIN_ACCESS_TOKEN" || { echo "Missing repository secret SHOPIFY_ADMIN_ACCESS_TOKEN."; exit 1; }
           test -f feeds.json || { echo "feeds.json is missing"; exit 1; }
+
+      - name: Verify Shopify store, Admin API access, and target blog
+        shell: bash
+        run: |
+          set -euo pipefail
+          payload=$(curl --fail --silent --show-error \\
+            -X POST "https://$SHOPIFY_STORE_DOMAIN/admin/api/$SHOPIFY_API_VERSION/graphql.json" \\
+            -H "X-Shopify-Access-Token: $SHOPIFY_ADMIN_ACCESS_TOKEN" \\
+            -H "Content-Type: application/json" \\
+            --data '{"query":"query ValutedNewsPreflight { shop { myshopifyDomain } blog(id: \\\"gid://shopify/Blog/107387158765\\\") { id title } }"}')
+          printf '%s' "$payload" | jq -e '
+            (.errors | not) and
+            .data.shop.myshopifyDomain == "5xd8ae-md.myshopify.com" and
+            .data.blog.id == "gid://shopify/Blog/107387158765" and
+            .data.blog.title == "VALUTED NEWS"
+          ' >/dev/null || {
+            echo "Shopify preflight failed: token, store identity, permissions, or VALUTED NEWS blog ID is incorrect."
+            exit 1
+          }
+          echo "Shopify Admin API and VALUTED NEWS blog identity verified."
 
       - name: Validate Python syntax
         run: python -m py_compile news_worker.py article_quality.py image_quality.py publisher_video.py official_channel_video.py backfill_video.py backfill_media.py audit_repair_images.py audit_repair_articles.py restore_news_archive.py
