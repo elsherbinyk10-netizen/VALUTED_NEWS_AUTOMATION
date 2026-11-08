@@ -364,6 +364,19 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "062a70b67af36c2c56d773d8c117b7643011b78dbb64d821444aa02bd673b6b8": {
+      "created_at": "2026-11-08T12:55:50.653866+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-08T12:58:04.015089+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669220700397",
+      "source_url": "https://www.bbc.co.uk/news/articles/c9kgjj206nzpo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "UK cannot 'cherry pick' EU single market deal, Barnier tells BBC"
+    },
     "062dc2f9623ace7a0376f8dec477c0ff3f0b35c53012f019ad0eed956da49522": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "Google News Top Stories",
@@ -417,6 +430,11 @@
     "06dd76803e8b9715c50769198cafda26957670070c68552e392ea691a9228b03": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Business",
+      "status": "skipped_stale"
+    },
+    "071e734722d9fa9061e997991ed5727a89300bd95103abb120a6166846356a58": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "07291cc6c6aa29dd04166fc3bb7aa9a77b5d03bd94d1a6bcd5f842244fd8b1b8": {
@@ -2003,6 +2021,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "20e5ea8a8d5139236251f1e8103949460dc1dca1550dc3e9bdb35034926757a4": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "20ff82f2da07c0e4b1c3da5d50aea2425e0cd2bc97d4a622fd38eef543cc3856": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Technology",
@@ -2081,6 +2104,11 @@
     "222c8484567cfa0ba3ef45238ac2916d57d5bcac20517e7a35b14f2bfabf52f1": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "22509161daff3c1d944fc9e719adf478e814b1a53a97816713e230dfe867169c": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "2274b55088bcc3914c05fcfa484b3339798904d7cf0b28b8d18163ef1532f66d": {
@@ -3321,6 +3349,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "358c61084baa4890242bdf85f68cfe41bbdb0af8643ff9776d23133122b86535": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "358c6c9b9b4c791387bc076bf4a78344299bdeb5223156dc7671568a6d27acc3": {
       "seen_at": "2026-11-06T07:20:31.183807+00:00",
       "source": "The Guardian Culture",
@@ -3867,6 +3900,11 @@
     "3fc41226621ed0132ddf62e1eefcdcba9caf5dee5a13fd8af0111585c0ac987d": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Variety Music",
+      "status": "skipped_stale"
+    },
+    "3fd2b960fa614ee50e37a2ecff182793f9467fb84b1a518c58ab474c53e4295d": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
     "4009bdf4f4fc138b7f7524ea2b22cd9a507daa1b2fcf96a69b5280336b2fbeb3": {
@@ -4620,7 +4658,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-08T08:34:29.695845+00:00",
+      "restore_attempted_at": "2026-11-08T12:58:04.015089+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220045037",
@@ -4834,6 +4872,11 @@
     "50a5888cd58c445ff9690bd228e3fc84b964785486ea566007af860ad8ced7c0": {
       "seen_at": "2026-11-04T07:21:09.092237+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "50d3ed228b2bef5f0a94c7068c812d12c3511596be8e63b52c3044bc80c772a2": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "The Guardian Sport",
       "status": "skipped_stale"
     },
     "511f99ae5c2048ccc29b34073526a972faa2484b7784c4f3c7523eb6f4403b93": {
@@ -6342,6 +6385,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "6918e8874575f88f916b75ea494e57e7ad4efda88eb39f74fa145af3552ecfcd": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "692caffcfcdeb6f4cf299d3edb7d6e4676389609d551b865a87115345f3636e6": {
       "seen_at": "2026-11-03T10:22:46.950392+00:00",
       "source": "Google News Technology",
@@ -6769,6 +6817,11 @@
       "source": "Google News Health",
       "status": "skipped_stale"
     },
+    "6fcd07f7abfc34b52116f352be64e7b0f0bfed135c227582be0912d564aaf7a6": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "6fd7b356603acc41fdd76f484b451f75051c853f23dbba6eceb60ca2713bb764": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Technology",
@@ -6944,6 +6997,11 @@
     "7270bf63fc1354032964836b339b8bb9e9993cb10cf5842cb0afdec905940120": {
       "seen_at": "2026-11-04T07:21:09.092237+00:00",
       "source": "The Guardian Business",
+      "status": "skipped_stale"
+    },
+    "728988fc29fadf139baed6f515106a09d9e41e2a80f7c174f2e8b9ae38effd60": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "7296b2556b1cacc5135cbf35c969a06cafb855f2546e5b07b14f2834214ae5a0": {
@@ -7245,6 +7303,11 @@
     "75dd3d2ec795e1f6bbf6748ce4efcffd2acc1ddcbc77c1b3c83a8bb4343bd28b": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "76226ce2a8ec7a52263b6e6eede666d8c56e1b11bd08ef9d0f59716e9d3a3734": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "7639b081a722e4aeeb1385f10d05d78f412b32c0a203d57d79cecbed5fb19de9": {
@@ -7840,6 +7903,19 @@
       "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
+    "7fccb3522d0d3bf297a7f6e80647e72a48b7914f2d9dbc6627052d21faa20f75": {
+      "created_at": "2026-11-08T12:55:50.653866+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "NASA News",
+      "restore_attempted_at": "2026-11-08T12:58:04.015089+00:00",
+      "restore_status": "already_present_in_shopify",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669220733165",
+      "source_url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects",
+      "status": "published",
+      "title": "NASA Awards Moon Base Transportation, Technology, Science Projects"
+    },
     "800b5314ea9f7962b91dea08a1ac455e1cba00eb82139e4e551abe997225cb26": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Variety Music",
@@ -8002,6 +8078,11 @@
     "824d24ae70515a028d7e4ebedb38a5aab36d06641a5358d6e269698400484f6b": {
       "seen_at": "2026-10-30T12:59:19.385395+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "827c57a5298a70cbc9a06ab1af144988605082f0cc0cfae0b72416a340e78969": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "8292bba03aed03055c551160473b647fc7797a8b6761002cbee95add13baf01d": {
@@ -8462,6 +8543,11 @@
     },
     "8912c5f59fbe8772de825514f328825249e02b7eae1d038648419cb373aa35bd": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
+    "8918f50849b90e539181d7091dd858e6fe43a2240c79a06c9a3ead4ee9b51812": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
       "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
@@ -9193,6 +9279,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "941eb1948f8137f1b8d4211104b0662bd864f057f51adf32bea67ee3d70e813d": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "The Guardian Sport",
+      "status": "skipped_stale"
+    },
     "9425c6a29215c5ea624710f9a168610054f9642caca610abce01056077a2bf4c": {
       "created_at": "2026-10-11T23:18:45.796681+00:00",
       "publisher": "BBC World",
@@ -9841,7 +9932,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-08T08:34:29.695845+00:00",
+      "restore_attempted_at": "2026-11-08T12:58:04.015089+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220077805",
@@ -10319,6 +10410,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "a77442616d23ec077509817ea976c4ca78ce1e2ab358fb382ba5346e3dfc87be": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
     "a78524245ccecf633b6efbb2f5fbcf0ea3387848318163873290261e2ce1577b": {
       "seen_at": "2026-10-19T12:49:09.789011+00:00",
       "source": "Google News Entertainment",
@@ -10778,6 +10874,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "af5f7972d4ede8f25a7570c6e415a481f753f5a18f2e7074150f83553c6650b7": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "The Guardian Sport",
+      "status": "skipped_stale"
+    },
     "af80216b1691b3d705b45d61d01ef1216450badec5c9944b960802975418a8b9": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Technology",
@@ -10861,6 +10962,11 @@
     "b15fb7b3bdba6ff7afecae625487822f2221f0837677a9ef23e0d97e45857418": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "b1a069528ee33590c6678b1f33515fef0ce9b5b76cadda6d20645f17bafa280d": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "NPR Business",
       "status": "skipped_stale"
     },
     "b1a72830981f979ce2b7339611957ff4ba53e9d566ea40e78f89895180b88080": {
@@ -10966,6 +11072,11 @@
     "b2d307115dacb4d88167bebb988b89e8b17998c83f6e23c518395ac4e324c8b2": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "b2db9e9be96fbc01fa439833431f09504ff00f679b73db6c809a8775be9d95a3": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "b32c3a17d5264a50ded804fc75c0f078430163c851a69ebee7c5348048f641b8": {
@@ -11229,6 +11340,11 @@
     "b75c1ede5f4219c392f9c3c397855bc30194a4a9dd466ec739b11bc85bd17372": {
       "seen_at": "2026-11-08T07:04:06.879708+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "b791e6f1cf28c266c879731cda0e88b41dfe08b1b8bbbcf58609a229b0c294c4": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "The Guardian Sport",
       "status": "skipped_stale"
     },
     "b793f315cb33930901733d41815b56a550b901864399f63079360af07501bd1f": {
@@ -13480,6 +13596,19 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "db559fb332acc86803509505cdda1645f5eab1868bba91334d8abfd00aa04c7d": {
+      "created_at": "2026-11-08T12:55:50.653866+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "NASA News",
+      "restore_attempted_at": "2026-11-08T12:58:04.015089+00:00",
+      "restore_status": "already_present_in_shopify",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669220765933",
+      "source_url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps",
+      "status": "published",
+      "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps"
+    },
     "db5be4c10593a2e8fd6621b6b9e7bf0e1b7dca4c0523d255300ab14db5d5ad0e": {
       "created_at": "2026-10-26T06:51:53.293616+00:00",
       "has_embedded_video": true,
@@ -13622,6 +13751,11 @@
     "ddb8c99291d2f1de81600f3005d49314410cae9b0463a4e8a1428047934050aa": {
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "de0c28c9953fb6e77af413b2b7893692baed7cc3c9e782dd9c40ba1683f9d4c8": {
+      "seen_at": "2026-11-08T12:55:50.653866+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "de0ecc1d2b13e9346e81fed7bc8800b0e98c317782334e096ae6f54fd5cf4db8": {
