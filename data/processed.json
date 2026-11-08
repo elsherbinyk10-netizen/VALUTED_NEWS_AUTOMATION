@@ -823,6 +823,11 @@
       "source": "The Guardian Business",
       "status": "skipped_stale"
     },
+    "0dc29ddb8b7e8c5e011836374670222231d5e463deab722849d31761c109334e": {
+      "seen_at": "2026-11-08T20:19:33.298863+00:00",
+      "source": "The Guardian Sport",
+      "status": "skipped_stale"
+    },
     "0ddc7fb7baed08e754ef9d53a2edb5a0a5d8f79cbf0df1fdca77c74820f06cad": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Technology",
@@ -2719,7 +2724,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Rolling Stone Music News",
-      "restore_attempted_at": "2026-11-07T18:52:08.641551+00:00",
+      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669217587437",
@@ -3324,7 +3329,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Entertainment and Arts",
-      "restore_attempted_at": "2026-11-07T20:20:58.990866+00:00",
+      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669213950189",
@@ -4115,6 +4120,11 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "42531dc9299c2c06d47d845c873203d8f338d3e89cf81a08ae99440e0011dc47": {
+      "seen_at": "2026-11-08T20:19:33.298863+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "42623b24a2d0e45f39cbcafdfbb3b9ad87ab4b963b8dd2ed80570d272aadf630": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Entertainment and Arts",
@@ -4696,7 +4706,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-08T18:51:57.549366+00:00",
+      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220045037",
@@ -5226,6 +5236,11 @@
       "status": "published",
       "title": "Biographies of John Williams and Bernard Herrmann Among Honored Works in ASCAP\u2019s Awards for Music Writing and Broadcasts"
     },
+    "55e3db745181cc1d839fa883d08a857c7ab0e27b75dd81514cba270cea639a07": {
+      "seen_at": "2026-11-08T20:19:33.298863+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "55e778132a079bc9498e60de7d0bcec878eb3335b47a573a383ba51fe978dd1b": {
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
       "source": "BBC Entertainment and Arts",
@@ -5639,7 +5654,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Business",
-      "restore_attempted_at": "2026-11-07T20:20:58.990866+00:00",
+      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669217751277",
@@ -6421,6 +6436,11 @@
     "68d1483b3beb217b9f9b54278949c7f36639db4b930e486f60191e091abba950": {
       "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "68f798da31acd99fca6e5422c4ae21df684aa5a6d6f6351f9c1cc87b709f9ead": {
+      "seen_at": "2026-11-08T20:19:33.298863+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "6904f520087f2dce2961f347ddc9d1b55278b53529e10d2e4ec9da591b27c65d": {
@@ -7803,6 +7823,11 @@
       "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
+    "7ddc1659b9313d0b8b05a5cd8fcaf3a3760ca82fb39cb10937c5641bb8839c03": {
+      "seen_at": "2026-11-08T20:19:33.298863+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "7de8a389f844e38d06b13302b08d13acc404a138cb9b270e3f805128ed4409c7": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Google News Science",
@@ -7851,6 +7876,11 @@
     "7e98d3f9d55b358fa3d0729a31b6c74f887a88ed314227051a6ff8cca34d9bbe": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "7ec4b19be3283c20a693b2664197598fad48121d35f2fbbd3bafa402d1758e27": {
+      "seen_at": "2026-11-08T20:19:33.298863+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "7ed2284d4f7f16ded6b314fd37daee545986644bb6ef829978b0f96a51ac1d52": {
@@ -7951,7 +7981,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-08T18:51:57.549366+00:00",
+      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220733165",
@@ -8292,7 +8322,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-08T18:51:57.549366+00:00",
+      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669221650669",
@@ -8943,6 +8973,19 @@
       "seen_at": "2026-11-02T18:00:08.385896+00:00",
       "source": "Google News UK Top Stories",
       "status": "skipped_stale"
+    },
+    "8e707da0470975f9d32b82c0dfbf048fb7cfc7cf0beddf06b21d1c9330de5e95": {
+      "created_at": "2026-11-08T20:19:33.298863+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669221748973",
+      "source_url": "https://www.rollingstone.com/music/music-news/del-casher-guitarist-invented-wah-wah-pedal-dead-obituary-1235654482",
+      "status": "published",
+      "title": "Del Casher, Guitarist Who Invented the Wah-Wah Pedal, Dead at 88"
     },
     "8e8e4f8e579727c907e622d8ef9aea5040ecb2b86afa29b7bbe34a52ded92cfb": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
@@ -9993,7 +10036,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-08T18:51:57.549366+00:00",
+      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220077805",
@@ -11013,6 +11056,11 @@
     "b114b0162d6fb9682a29a92108d7975c52ad3aca017ca24bfe5d35b304387b25": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "b117f698b1dd7a0d31faea0f860735b4bcb135e1966611f912c26ca9db201504": {
+      "seen_at": "2026-11-08T20:19:33.298863+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "b120a70d72b0fc4a0735bec1c5cf6007bec9bec056e85673c0dd841acfed1428": {
@@ -13348,6 +13396,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "d68fc0e7c9f142a35f87beb4b83e2cf720c7ef144475f6a04eebe559dd547eb7": {
+      "seen_at": "2026-11-08T20:19:33.298863+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "d6a54f02b35ec8f2c107be257e8430076c9ee9f902354ced3c279b5c6f9d109f": {
       "seen_at": "2026-10-31T12:52:32.223221+00:00",
       "source": "Google News Business",
@@ -13672,7 +13725,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-08T18:51:57.549366+00:00",
+      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220765933",
@@ -14677,6 +14730,19 @@
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
+    },
+    "e9ed9122640b1e4d454403528991998397f9f579901cd10e54b302db13efa68b": {
+      "created_at": "2026-11-08T20:19:33.298863+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669221814509",
+      "source_url": "https://www.rollingstone.com/music/music-news/snl-watch-the-strokes-perform-lonely-future-going-shopping-1235654344",
+      "status": "published",
+      "title": "\u2018SNL\u2019: Watch The Strokes Perform \u2018Lonely in the Future,\u2019 \u2018Going Shopping\u2019"
     },
     "e9ef5b7d6602e78c24ca56d77e98e31ce5ad8edc7aabee6d06c8725ae1906f10": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
@@ -15922,6 +15988,19 @@
       "seen_at": "2026-11-03T17:07:40.495903+00:00",
       "source": "Google News India Top Stories",
       "status": "skipped_stale"
+    },
+    "fdfd3489ab20293521383fb268dfc3f76315b1f085bff7d3aa81eda7378802f0": {
+      "created_at": "2026-11-08T20:19:33.298863+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669221781741",
+      "source_url": "https://www.rollingstone.com/music/music-news/justin-timberlake-what-goes-around-comes-around-britney-spears-1235654443",
+      "status": "published",
+      "title": "Justin Timberlake Reveals \u2018What Goes Around\u2026 Comes Around\u2019 Is Not About Britney Spears"
     },
     "fe01e4934507b524571b1def9d6b3f6e87f1da9ce845382da0160189b657c15f": {
       "created_at": "2026-11-03T03:55:58.146882+00:00",
