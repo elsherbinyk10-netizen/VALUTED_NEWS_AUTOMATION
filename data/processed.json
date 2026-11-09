@@ -96,7 +96,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
+      "restore_attempted_at": "2026-11-09T13:19:27.886408+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669225451757",
@@ -382,7 +382,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-08T12:58:04.015089+00:00",
+      "restore_attempted_at": "2026-11-09T13:19:27.886408+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220700397",
@@ -3855,6 +3855,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "3d868371b5a44de048ac14d0c171c921e0579bd5a4a5b7f158236cc32ae8a743": {
+      "seen_at": "2026-11-09T13:17:58.177345+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "3dc6f12e33fbdf3fcc36693b643638696988e870a919d9e38500bacc200c1bc9": {
       "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "BBC Business",
@@ -4767,7 +4772,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
+      "restore_attempted_at": "2026-11-09T13:19:27.886408+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220045037",
@@ -8057,7 +8062,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
+      "restore_attempted_at": "2026-11-09T13:19:27.886408+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220733165",
@@ -8408,7 +8413,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
+      "restore_attempted_at": "2026-11-09T13:19:27.886408+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669221650669",
@@ -10155,7 +10160,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
+      "restore_attempted_at": "2026-11-09T13:19:27.886408+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220077805",
@@ -12224,6 +12229,11 @@
       "status": "draft",
       "title": "Katie Zacharia leaves White House role less than a week after starting - BBC"
     },
+    "bfc9de20b05fdeebb2176673affcf3daed24dc3fdd479bacddaf4476f7ccbe23": {
+      "seen_at": "2026-11-09T13:17:58.177345+00:00",
+      "source": "The Guardian Sport",
+      "status": "skipped_stale"
+    },
     "bfe81a720fc1b903efbbd8379bbd0139cc8654d0a76932f4111212b0437c09e5": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC World",
@@ -12525,6 +12535,11 @@
     "c4a003ccd94de0140d611b6e77ae5b9f266a532f9960adde669175af4402b055": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "c4c648932b3d7ff19108f28fd9ffcfe36b011c419bbcdff07b9bb160e2241a40": {
+      "seen_at": "2026-11-09T13:17:58.177345+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "c4cf199d1f4cdad4fec653b9724a2cf30795b8d8fe9fc8a46937c6a0520be72e": {
@@ -13897,7 +13912,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
+      "restore_attempted_at": "2026-11-09T13:19:27.886408+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220765933",
@@ -14484,6 +14499,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "e3d6f99e0ff04bc765ea2d85d63072396091bc1a21534bc0f7f7f03390e502ec": {
+      "seen_at": "2026-11-09T13:17:58.177345+00:00",
+      "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
     "e3e438ed6692305af132e68369945de50acbdf78315f92be2d2d715640adda21": {
       "seen_at": "2026-11-04T07:21:09.092237+00:00",
       "source": "The Guardian Technology",
@@ -14822,6 +14842,19 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cwp8gynk13rro?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Drop-off charges at UK airports to be reviewed after sharp increase"
+    },
+    "e869dd4c2eff543382104bf7d7153fbe1e7c4ebd08423203da2672635a1686bf": {
+      "created_at": "2026-11-09T13:17:58.177345+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-09T13:19:27.886408+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669246357741",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckgel338xql3o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "What we know so far about Jensen Huang's affair with suspected Chinese spy"
     },
     "e8879178bd5385f9f34e303a4861f234221bea97d521d4272c803ac12f329f51": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
@@ -15237,6 +15270,11 @@
     "eed4327bc1e2b09b69d2f61e23456d3f6a143ee2d390a9cee9ed73ab8f8bc061": {
       "seen_at": "2026-11-05T07:23:49.954377+00:00",
       "source": "The Guardian Sport",
+      "status": "skipped_stale"
+    },
+    "eef14a3beae1692081a2b5f765b6bb1767e6e3f0b209203832bf908c81bc1b91": {
+      "seen_at": "2026-11-09T13:17:58.177345+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "ef0ffe86feaea1bc76a2b4b1b9c1beddd06e843cec5b0673c42ffa3be54a08db": {
@@ -15958,6 +15996,11 @@
       "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
+    "f9ce569d6615b2e5a37fe8790d0520ba1c1368ab8e67bf7a55b45df0f9d25e8d": {
+      "seen_at": "2026-11-09T13:17:58.177345+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "f9fafe921d858bf1f3c3797b60e9f4268741addcc6b7ec514a22f848e78c1ab0": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Business",
@@ -16290,6 +16333,11 @@
     "ff8ae56fc01f76eba79fd9a4f1395d5a6bdc55ed494287c24eea7b4e3d61dc08": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "NPR Business",
+      "status": "skipped_stale"
+    },
+    "ff8dac294fc817cb92fae5f08344e12936356d81900bf83f144b1b0ebce82b20": {
+      "seen_at": "2026-11-09T13:17:58.177345+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "ffa15348f9ca8276bd998e4453e8fed7387c34dc3e0c3383c8a9fe3816e3cec5": {
