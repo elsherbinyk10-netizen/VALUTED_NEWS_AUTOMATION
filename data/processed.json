@@ -96,7 +96,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T19:00:47.821325+00:00",
+      "restore_attempted_at": "2026-11-09T20:38:51.575038+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669225451757",
@@ -1599,6 +1599,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "18fca4318d698b4a6acce839b83bd6f13c3e94e8940d5bd5235a88abac62fd20": {
+      "seen_at": "2026-11-09T20:37:09.874400+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "1914877e88945b6ec8eff1cc11a65eb29277c34fe4fb74201cd655d58faefca5": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Environment",
@@ -1751,6 +1756,11 @@
     "1bc48ff58cd1f6ccbfea538a628d0969d4e4e6340d8f84bcc6a85dd1b881857f": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "NPR Business",
+      "status": "skipped_stale"
+    },
+    "1bf3de5d437f5ff562d8930f24197adfc6acb9f4a078975ee96c72d4dbb9cde4": {
+      "seen_at": "2026-11-09T20:37:09.874400+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "1c0a28c71f388243671549df1885b7258039db2850c92a1356625b02e12cebb9": {
@@ -2772,8 +2782,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Rolling Stone Music News",
-      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-09T20:38:51.575038+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669217587437",
       "source_url": "https://www.rollingstone.com/music/music-news/richard-lloyd-television-guitarist-dead-obituary-1235614110",
@@ -3382,7 +3392,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Entertainment and Arts",
-      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
+      "restore_attempted_at": "2026-11-09T20:38:51.575038+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669213950189",
@@ -4800,8 +4810,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T19:00:47.821325+00:00",
-      "restore_status": "already_present_in_shopify",
+      "restore_attempted_at": "2026-11-09T20:38:51.575038+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220045037",
       "source_url": "https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor",
@@ -5753,7 +5763,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Business",
-      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
+      "restore_attempted_at": "2026-11-09T20:38:51.575038+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669217751277",
@@ -8451,8 +8461,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T19:00:47.821325+00:00",
-      "restore_status": "already_present_in_shopify",
+      "restore_attempted_at": "2026-11-09T20:38:51.575038+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669221650669",
       "source_url": "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge",
@@ -9113,7 +9123,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Rolling Stone Music News",
-      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
+      "restore_attempted_at": "2026-11-09T20:38:51.575038+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669221748973",
@@ -9815,6 +9825,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cmy56q2n1veqo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Lights will stay on this winter, grid operator says after concerns"
+    },
+    "987516c0a83f4e363599222ffba7d3924c2c68e8bf54d7ccdbd8e6e860d34834": {
+      "seen_at": "2026-11-09T20:37:09.874400+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
     },
     "98765c2e876bcd43c141711634149ff91fa2b4b8096f2828dba0aa3be5b7895b": {
       "created_at": "2026-10-25T12:44:03.153981+00:00",
@@ -15033,8 +15048,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Rolling Stone Music News",
-      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-09T20:38:51.575038+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669221814509",
       "source_url": "https://www.rollingstone.com/music/music-news/snl-watch-the-strokes-perform-lonely-future-going-shopping-1235654344",
@@ -16321,8 +16336,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Rolling Stone Music News",
-      "restore_attempted_at": "2026-11-08T20:21:51.809121+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-09T20:38:51.575038+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669221781741",
       "source_url": "https://www.rollingstone.com/music/music-news/justin-timberlake-what-goes-around-comes-around-britney-spears-1235654443",
