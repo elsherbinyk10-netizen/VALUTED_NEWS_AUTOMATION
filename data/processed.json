@@ -91,6 +91,19 @@
       "source": "The Guardian World",
       "status": "skipped_stale"
     },
+    "026599d1fc59a624221a9aff6bbdc17927ffa9ba4c2ea83234e1454424f34c29": {
+      "created_at": "2026-11-09T08:52:25.680905+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "NASA News",
+      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
+      "restore_status": "already_present_in_shopify",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669225451757",
+      "source_url": "https://science.nasa.gov/image-article/apod-2026-november-9-rigel-and-the-witch-head-nebula",
+      "status": "published",
+      "title": "APOD: 2026 November 9 \u2013 Rigel and the Witch Head Nebula"
+    },
     "0294d081a781e08fb155ddfbc529e17af4bd6a655885a135aa3b3d323d406ff0": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
       "source": "Google News Science",
@@ -4309,6 +4322,19 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "444d01e4a7698420294eb13c9e3fee245a3013d43c2e9706695f6e8e3f98abca": {
+      "created_at": "2026-11-09T08:52:25.680905+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669225353453",
+      "source_url": "https://www.bbc.co.uk/news/articles/c3dxw10rjn9no?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Nvidia launches investigation into CEO's affair with suspected Chinese spy"
+    },
     "445d3edbb78bdeba9b7892b9aefd6a6c37f633725f6bb8652943c644068542f2": {
       "seen_at": "2026-11-07T07:01:38.843423+00:00",
       "source": "BBC Business",
@@ -4741,7 +4767,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T07:33:10.153507+00:00",
+      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220045037",
@@ -8031,7 +8057,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T07:33:10.153507+00:00",
+      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220733165",
@@ -8382,7 +8408,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T07:33:10.153507+00:00",
+      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669221650669",
@@ -9195,6 +9221,19 @@
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News World",
       "status": "skipped_stale"
+    },
+    "90b23b1d03a122e8cb9aa5c97d609174c8df9721ea1548b1771211dad3a007d4": {
+      "created_at": "2026-11-09T08:52:25.680905+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669225418989",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq62y01r2313o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Inside the French drug gangs recruiting children to kill"
     },
     "90b30943e65f5a9998baee33a2cd5fd2d46a2727019104930c7f69063d385774": {
       "seen_at": "2026-10-30T18:52:04.797166+00:00",
@@ -10116,7 +10155,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T07:33:10.153507+00:00",
+      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220077805",
@@ -11713,6 +11752,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "ba84036a0a06fb5cdec0e5cb28cb6d3a553cef11e7306cf88eff6598b883cc95": {
+      "seen_at": "2026-11-09T08:52:25.680905+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "ba8f0baf87edff9476b1492af8597adcac3f683aacb244fd70c3ecc1f4cff05f": {
       "seen_at": "2026-11-02T17:21:20.934989+00:00",
       "source": "Google News Technology",
@@ -12110,6 +12154,19 @@
       "seen_at": "2026-11-04T07:21:09.092237+00:00",
       "source": "Google News Science",
       "status": "skipped_stale"
+    },
+    "be8dfc01ba47e804324fe1e791d2175cdf7c97e54af89bc3e94f31bdcb8c8cc8": {
+      "created_at": "2026-11-09T08:52:25.680905+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669225386221",
+      "source_url": "https://www.bbc.co.uk/news/articles/ck79p0lev47po?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "James Bond: What we know so far about the next 007 film"
     },
     "bea0fd1c63c652eb999058ca7dca8c624f3faad8593ccd566cee5688a411e507": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
@@ -13840,7 +13897,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T07:33:10.153507+00:00",
+      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220765933",
