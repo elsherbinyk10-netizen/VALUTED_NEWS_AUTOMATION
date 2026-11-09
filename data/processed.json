@@ -96,7 +96,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T13:19:27.886408+00:00",
+      "restore_attempted_at": "2026-11-09T14:42:36.508683+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669225451757",
@@ -1380,6 +1380,11 @@
     "1571ae1e3f7fb8504c8ce16fc36b6337a5f22696034ebcd0b6dd046474e8550d": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "15abbe35f387e019cb2171f944388c8d2647172246ba600f96ee57b13bcf8cdb": {
+      "seen_at": "2026-11-09T14:41:08.029232+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "15b395860b33ecc31a81a325ebcc15c2e63fa17d9199d460e5510d97df997305": {
@@ -4772,7 +4777,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T13:19:27.886408+00:00",
+      "restore_attempted_at": "2026-11-09T14:42:36.508683+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220045037",
@@ -7173,6 +7178,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "72c147d1f97854bf38f26cd51e8a225dca73199117b8525b091057b4fda5e5e3": {
+      "seen_at": "2026-11-09T14:41:08.029232+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "72d26854d5856676c869bd7165f44f94202bee567e4a0c895586a34e0c94f474": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Science",
@@ -7662,6 +7672,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "79ea67570baaf8b1402ecee4e22a235db522953989550e7c780d91a745c7fc4b": {
+      "seen_at": "2026-11-09T14:41:08.029232+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "7a0ed471691e116b5dd4062f9b87d18e64ab34f11ec0a6ae9224415698c03b5e": {
       "created_at": "2026-10-17T05:29:56.024014+00:00",
       "has_embedded_video": false,
@@ -8062,7 +8077,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T13:19:27.886408+00:00",
+      "restore_attempted_at": "2026-11-09T14:42:36.508683+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220733165",
@@ -8413,7 +8428,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T13:19:27.886408+00:00",
+      "restore_attempted_at": "2026-11-09T14:42:36.508683+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669221650669",
@@ -10160,7 +10175,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T13:19:27.886408+00:00",
+      "restore_attempted_at": "2026-11-09T14:42:36.508683+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220077805",
@@ -13380,6 +13395,19 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "d2b9303010106a593acaefde86547d951968afb39a49ad461a0c67d2fda99ae2": {
+      "created_at": "2026-11-09T14:41:08.029232+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-09T14:42:36.508683+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669246849261",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm70pdwz122ro?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Homes and temples glow across India to mark Diwali"
+    },
     "d2c46b2b8fc092eece21303e3fe55076d9edc97882fa41cab70b413f27c5b151": {
       "created_at": "2026-11-03T07:23:48.758713+00:00",
       "has_embedded_video": true,
@@ -13406,6 +13434,11 @@
     "d2e10b7851555962021a3d56a8e6f7ce1a8a7fa858b2593e9bba8ff18d62c01d": {
       "seen_at": "2026-11-05T07:23:49.954377+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "d2e6dcf01b2cdd6e4bb54df4ea241d1e924185a314715ffe251bb9caf1a27b1c": {
+      "seen_at": "2026-11-09T14:41:08.029232+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "d2f08bc4bcc7ea7f197cb1494b6d490869172a71173b9e13d8dc8b64711f1e97": {
@@ -13912,7 +13945,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-09T13:19:27.886408+00:00",
+      "restore_attempted_at": "2026-11-09T14:42:36.508683+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220765933",
