@@ -160,13 +160,26 @@ def draft_story(item):
     return {"title":title,"handle":handle,"body":body,"seo_title":result.get("seo_title",title)[:70],
         "seo_description":result.get("seo_description",result.get("summary",""))[:320],"tags":sorted(set(tags))}
 
-def existing_source(blog_id, source_url):
-    q="""query Existing($id:ID!) { blog(id:$id) { articles(first:100, reverse:true) { edges { node { id handle title body } } } } }"""
-    edges=gql(q,{"id":blog_id})["blog"]["articles"]["edges"]
-    return any(source_url in (e["node"].get("body") or "") for e in edges)
+def existing_source(blog_id, source_url, handle=None):
+    # Walk every page so older stories cannot be duplicated after the newest 100.
+    q="""query Existing($id:ID!,$after:String) {
+      blog(id:$id) { articles(first:250, reverse:true, after:$after) {
+        edges { node { id handle body } }
+        pageInfo { hasNextPage endCursor }
+      } }
+    }"""
+    cursor=None
+    while True:
+        page=gql(q,{"id":blog_id,"after":cursor})["blog"]["articles"]
+        for edge in page["edges"]:
+            node=edge["node"]
+            if source_url in (node.get("body") or "") or (handle and node.get("handle")==handle):
+                return True
+        info=page["pageInfo"]
+        if not info["hasNextPage"]: return False
 
 def publish(blog_id, item, article):
-    if existing_source(blog_id,item["url"]):
+    if existing_source(blog_id,item["url"],article["handle"]):
         log(f"DUPLICATE SKIP: {article['title']}"); return
     if not AUTO_PUBLISH:
         log(f"DRY RUN (AUTO_PUBLISH=false): {article['title']}"); return
