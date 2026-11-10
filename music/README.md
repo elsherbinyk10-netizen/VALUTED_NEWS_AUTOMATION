@@ -12,7 +12,7 @@ This is a separately configured workflow in the GitHub account. It does not reus
 ## Mandatory GitHub Actions secrets
 Repository → Settings → Secrets and variables → Actions:
 - `VALUTED_MUSIC_SHOPIFY_ADMIN_ACCESS_TOKEN`: Shopify Admin API token for the VALUTED MUSIC shop only, with `read_content` and `write_content` scopes.
-- `OPENAI_API_KEY`: used only to draft original copy from the retrieved live publisher page text.
+- `OPENAI_API_KEY`: used only to draft original copy from the retrieved live publisher page text.\n\nRepository → Settings → Secrets and variables → Actions → Variables:\n- `VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN`: the exact VALUTED MUSIC shop’s `*.myshopify.com` Admin API host. The script separately verifies that its primary public domain is `valutedmusic.site`.
 
 Never put tokens in source files, workflow YAML, issues, or chat. Do not reuse the VALUTED NEWS store token.
 
