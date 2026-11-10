@@ -4387,8 +4387,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Business",
-      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-10T13:08:21.337547+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669225353453",
       "source_url": "https://www.bbc.co.uk/news/articles/c3dxw10rjn9no?at_medium=RSS&at_campaign=rss",
@@ -5495,6 +5495,19 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "5798b318045a2b820b2833eb9671a8e213fffa94f8afa6fe41820f1f7ae8cb27": {
+      "created_at": "2026-11-10T13:06:56.643378+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "restore_attempted_at": "2026-11-10T13:08:21.337547+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669267132653",
+      "source_url": "https://www.bbc.co.uk/news/articles/c95ynylr8j6xo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Jemima Goldsmith accuses Russell Brand of violence and abuse against her"
+    },
     "57cf5089002c495527bba36fb861eb5f6ba34d0c387be226a03bd93cba5a331c": {
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
       "source": "Google News Business",
@@ -6013,7 +6026,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-10T08:42:50.108524+00:00",
+      "restore_attempted_at": "2026-11-10T13:08:21.337547+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669254123757",
@@ -7540,9 +7553,19 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "75d7c1d3103357666966ca41ec6a8a550c9865b10e1dbcf41d6ce87f8c3dc687": {
+      "seen_at": "2026-11-10T13:06:56.643378+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
+    },
     "75dd3d2ec795e1f6bbf6748ce4efcffd2acc1ddcbc77c1b3c83a8bb4343bd28b": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "75eee0dcbc87b091d46a1879c6055b0c9abf39c3de1934eb3441ed0ee44da841": {
+      "seen_at": "2026-11-10T13:06:56.643378+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "76226ce2a8ec7a52263b6e6eede666d8c56e1b11bd08ef9d0f59716e9d3a3734": {
@@ -8509,6 +8532,11 @@
       "source": "The Guardian Business",
       "status": "skipped_stale"
     },
+    "84827892163628febd4f3a2f8a532e967d95db0b2bd585822b86ca6ca4439c2a": {
+      "seen_at": "2026-11-10T13:06:56.643378+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
+    },
     "84847d386bb7b82a06dea2de95e6cc8d5e020bf94f563b9570f8881fcc11797d": {
       "seen_at": "2026-11-08T07:04:06.879708+00:00",
       "source": "The Guardian World",
@@ -9343,7 +9371,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
+      "restore_attempted_at": "2026-11-10T13:08:21.337547+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669225418989",
@@ -10828,6 +10856,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "a844e7157a3aeff9ec461ac2765a271c314278a1b651ba5d37aa023c57b47892": {
+      "seen_at": "2026-11-10T13:06:56.643378+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "a84568e8afbac1e9c0b005f2215bb17f3f1573757e3bb4fa60f1c05ef9da12e3": {
       "seen_at": "2026-11-03T03:55:58.146882+00:00",
       "source": "Google News Health",
@@ -10915,6 +10948,19 @@
       "seen_at": "2026-11-03T07:14:01.426928+00:00",
       "source": "BBC World",
       "status": "skipped_stale"
+    },
+    "a9cd9fd7d34595d41ff65f50ab36a1fef2120cb9ac41b420be2ba713e8bdd402": {
+      "created_at": "2026-11-10T13:06:56.643378+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "restore_attempted_at": "2026-11-10T13:08:21.337547+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669267067117",
+      "source_url": "https://www.rollingstone.com/music/music-news/nick-cannon-eminem-mariah-carey-feud-defense-1235655048",
+      "status": "published",
+      "title": "Nick Cannon Defends Feud With Eminem Over Mariah Carey: \u2018You Can\u2019t Come at My Wife\u2019"
     },
     "a9e2a9b894951b98e6724e9c800edf68ab094e224e6644ff253f218068e209b2": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
@@ -12353,7 +12399,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Entertainment and Arts",
-      "restore_attempted_at": "2026-11-09T08:53:28.871947+00:00",
+      "restore_attempted_at": "2026-11-10T13:08:21.337547+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669225386221",
@@ -13180,6 +13226,11 @@
     "cc01790517156830ad0f1f530eab4f87a5d055b55dc2a35c485ea3287257ff32": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "cc0a7a228952539d7302ed33029af4c2471a555fceed83f3b26597945ccecda2": {
+      "seen_at": "2026-11-10T13:06:56.643378+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "cc15dd1892258f28e3562d4c17d9ec72027c462e08a34a3566c4b88e0c0adb11": {
@@ -16116,6 +16167,19 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "f77740da44f45c322f083c09d51dee6ce1b03b485e64b38a04d89570ecf9bbb9": {
+      "created_at": "2026-11-10T13:06:56.643378+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "restore_attempted_at": "2026-11-10T13:08:21.337547+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669267099885",
+      "source_url": "https://www.bbc.co.uk/news/articles/cvwy7ydg4264o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Met Police investigate several reports on Russell Brand following his conviction"
+    },
     "f7a18772190c370c3be3dbd12e3acd776c438976bdafc7db636279b25e6c3434": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Technology",
@@ -16406,6 +16470,11 @@
     "fbfb9e057e25ec7bbbf71f9726aabd94c81ad18dc080b976c62ca990c57fc16b": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "fc02bbd89b1139cdf1b582ad292517817f42e3b0c258a70a674a252958d6f47c": {
+      "seen_at": "2026-11-10T13:06:56.643378+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "fc2568292034cd4579957b15338527612f2e5af18841a7b0e29a52ef5fd671c9": {
