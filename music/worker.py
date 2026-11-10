@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 EXPECTED_NAME = "VALUTED MUSIC"
 EXPECTED_HOST = "valutedmusic.site"
 API_VERSION = os.getenv("SHOPIFY_API_VERSION", "2026-10")
-SHOP = os.getenv("SHOPIFY_SHOP_DOMAIN", "valutedmusic.site")
+SHOP = os.getenv("SHOPIFY_ADMIN_DOMAIN", "").strip()
 TOKEN = os.getenv("SHOPIFY_ADMIN_ACCESS_TOKEN", "")
 OPENAI_KEY = os.getenv("OPENAI_API_KEY", "")
 MAX_ARTICLES = min(5, max(0, int(os.getenv("MAX_ARTICLES_PER_RUN", "5"))))
@@ -67,7 +67,9 @@ def gql(query, variables=None):
     return data["data"]
 
 def shop_guard_and_audit():
-    if not TOKEN: raise RuntimeError("Missing SHOPIFY_ADMIN_ACCESS_TOKEN")
+    if not TOKEN: raise RuntimeError("Missing VALUTED_MUSIC_SHOPIFY_ADMIN_ACCESS_TOKEN")
+    if not SHOP or not SHOP.endswith(".myshopify.com"):
+        raise RuntimeError("Missing/invalid VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN Actions variable; expected the store-specific .myshopify.com host. No writes.")
     q="""query Guard { shop { name myshopifyDomain primaryDomain { host url } } themes(first:50) { edges { node { id name role } } } }"""
     d=gql(q); s=d["shop"]
     host=(s.get("primaryDomain") or {}).get("host","").lower()
