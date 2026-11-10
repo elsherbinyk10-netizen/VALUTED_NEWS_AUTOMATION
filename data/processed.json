@@ -787,6 +787,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "0c919dfdcbaa175e3ec2c6605e7e456c05a8b342d0d4cc1dd9cd93638352647f": {
+      "seen_at": "2026-11-10T18:58:12.608846+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "0c99334a12ae9024e559e1e0a61af244faa1397f3a1cd1af75063bbef8a56134": {
       "created_at": "2026-11-03T13:06:39.552925+00:00",
       "has_embedded_video": true,
@@ -3203,6 +3208,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c50me4w4x1vyo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Chancellor rejects calls to raise Capital Gains Tax in Budget"
+    },
+    "320b1aff00f627c3cc7a7d0e948d7acf85d9ccc5aa265dd9199f5d20115cbd7c": {
+      "seen_at": "2026-11-10T18:58:12.608846+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
     },
     "320b4cdc5e3328aa01861d89e965149519078f11608730f7776bc539b8f1edd5": {
       "seen_at": "2026-10-23T05:45:26.319124+00:00",
@@ -6026,7 +6036,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-10T14:38:26.036610+00:00",
+      "restore_attempted_at": "2026-11-10T18:59:38.978828+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669254123757",
@@ -6494,6 +6504,11 @@
     "6700a98b6b621ba3fa1a5ea2b7aef370e22e09bdc85d327a78f9046d2961b89b": {
       "seen_at": "2026-11-08T07:04:06.879708+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "6723e08a6a5b2c0e36057c932b0715426c61ae001eaaca7f042560a2424cc60e": {
+      "seen_at": "2026-11-10T18:58:12.608846+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "672b8bc3b27b5048702f95d06da28ee04373505b8a6a9fcf01b7ecee25c841e2": {
@@ -8624,6 +8639,11 @@
     "8560aa33eacd8979841c71f542143d3a0486b402e79c1babe04a595e06519086": {
       "seen_at": "2026-10-12T06:38:38.333441+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "8583ff59fb1d6ee89ee62494f276c9473e29cc383f3f8c3e1a6ac124efddd9ad": {
+      "seen_at": "2026-11-10T18:58:12.608846+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "85890265fbfd8be4804583ffc5ea092ebe3da19195d86bf41908e99cb180bfe7": {
@@ -10954,6 +10974,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "a9b71661addb0e224e95ac3c745212731a74e18269a755e11919bdde35655486": {
+      "seen_at": "2026-11-10T18:58:12.608846+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "a9cd9fd7d34595d41ff65f50ab36a1fef2120cb9ac41b420be2ba713e8bdd402": {
       "created_at": "2026-11-10T13:06:56.643378+00:00",
       "has_embedded_video": true,
@@ -11281,6 +11306,19 @@
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Business",
       "status": "skipped_stale"
+    },
+    "af1eb0f1fbea412d956fc40b97a9002ca23852e21a7ad5c7322c7ec85459f442": {
+      "created_at": "2026-11-10T18:58:12.608846+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-10T18:59:38.978828+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669270212845",
+      "source_url": "https://www.bbc.co.uk/news/articles/cw4g1g4ll5m1o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Board of Peace says Israel's aid response after Gaza floods 'insufficent'"
     },
     "af1f23177d7a6f21cfafcd9a25d27e08f632f15b7b331d8f0416d3adf7627b13": {
       "created_at": "2026-10-23T05:45:26.319124+00:00",
@@ -12519,6 +12557,19 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "c05d5fb1f0463660e0f1ffbc90b73431a7e882346980fb511e4a0aabe33100c7": {
+      "created_at": "2026-11-10T18:58:12.608846+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "restore_attempted_at": "2026-11-10T18:59:38.978828+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669270180077",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6d7q98z1yz3o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "David Walliams' career and controversies including Britain's Got Talent and Little Britain"
+    },
     "c0684d84577fe7cccdc1b34bb5981870bd74e49784537120a4a473cc6dd70470": {
       "seen_at": "2026-10-30T07:00:00.666940+00:00",
       "source": "BBC Entertainment and Arts",
@@ -13170,6 +13221,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "c9e8be921c9e89a5431ae52b954e884452618f29020bb14d36daa41fa1163912": {
+      "seen_at": "2026-11-10T18:58:12.608846+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "ca5031a28a3ec12396b0e58d1a144b31c7c0b5c281f0f30084b00856284b1a86": {
       "created_at": "2026-11-06T13:09:28.119828+00:00",
       "has_embedded_video": true,
@@ -13241,6 +13297,11 @@
     "cc0a7a228952539d7302ed33029af4c2471a555fceed83f3b26597945ccecda2": {
       "seen_at": "2026-11-10T13:06:56.643378+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "cc141a18c6d5970b7f6cb1e9b6ea4c31335425e9e4e22c4ddaf920fa7a5f4010": {
+      "seen_at": "2026-11-10T18:58:12.608846+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "cc15dd1892258f28e3562d4c17d9ec72027c462e08a34a3566c4b88e0c0adb11": {
@@ -13670,8 +13731,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-09T14:42:36.508683+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-10T18:59:38.978828+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669246849261",
       "source_url": "https://www.bbc.co.uk/news/articles/cm70pdwz122ro?at_medium=RSS&at_campaign=rss",
