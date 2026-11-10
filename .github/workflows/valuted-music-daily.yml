@@ -32,7 +32,7 @@ jobs:
 
       - name: Verify target configuration and publish
         env:
-          SHOPIFY_SHOP_DOMAIN: valutedmusic.site
+          SHOPIFY_ADMIN_DOMAIN: ${{ vars.VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN }}
           SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.VALUTED_MUSIC_SHOPIFY_ADMIN_ACCESS_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           SHOPIFY_API_VERSION: "2026-10"
