@@ -382,8 +382,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-09T13:19:27.886408+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-10T14:38:26.036610+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220700397",
       "source_url": "https://www.bbc.co.uk/news/articles/c9kgjj206nzpo?at_medium=RSS&at_campaign=rss",
@@ -6026,7 +6026,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-10T13:08:21.337547+00:00",
+      "restore_attempted_at": "2026-11-10T14:38:26.036610+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669254123757",
@@ -7438,6 +7438,11 @@
       "source_url": "https://www.theguardian.com/sport/2026/nov/01/new-york-city-marathon-andreas-almgren-wins-on-debut-as-sheila-chepkirui-reclaims-crown",
       "status": "published",
       "title": "New York City Marathon: Andreas Almgren wins on debut as Sheila Chepkirui reclaims crown"
+    },
+    "7456130039a4b2ccf0aa93203f1d0f7369b7b20f060b3993029bfed098ba3165": {
+      "seen_at": "2026-11-10T14:36:51.919288+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
     },
     "745a6c62c19c910d8533c5d20939aba12222b8b70b11cd892d4a2909c8264e32": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
@@ -11343,6 +11348,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "afda19fa17aea4d9161d944e94eaf2e5e9ddeae337a9db182f04cba11c41ca00": {
+      "seen_at": "2026-11-10T14:36:51.919288+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "afdc6ec15c3be9fd1f75ee00feee118c4a757b2866d3179ce4bf6132cc259074": {
       "created_at": "2026-11-10T08:41:00.571507+00:00",
       "has_embedded_video": true,
@@ -13453,6 +13463,19 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "cf6e8a467b708ab136ab4ae2fddb5a67afcf8a0014b7e30b2491fd999c98cee7": {
+      "created_at": "2026-11-10T14:36:51.919288+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-10T14:38:26.036610+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669267427565",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqr7y7myer53o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "'Cruise for life' ship seized in Singapore"
+    },
     "cf88497e84253ebb60211b36f810ef7ec476aa90e4c64635b12caebcc285d81e": {
       "seen_at": "2026-10-21T18:45:36.006025+00:00",
       "source": "Google News World",
@@ -15138,7 +15161,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-09T13:19:27.886408+00:00",
+      "restore_attempted_at": "2026-11-10T14:38:26.036610+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669246357741",
