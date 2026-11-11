@@ -392,7 +392,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-10T14:38:26.036610+00:00",
+      "restore_attempted_at": "2026-11-11T15:40:16.717543+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220700397",
@@ -690,6 +690,11 @@
       "source_url": "https://www.rollingstone.com/music/music-news/tate-mcrae-billboard-hot-100-number-two-olivia-rodrigo-1235645932",
       "status": "published",
       "title": "Tate McRae Beats Taylor Swift, Olivia Rodrigo in Billboard Hot 100 Race for \u2026 Number Two"
+    },
+    "0afa2143f712e4f6c6884651d6881d68012878f6071955454a167f7d8acaefb3": {
+      "seen_at": "2026-11-11T15:38:48.305480+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
     },
     "0b07673914f5cfa843e40e6209ee9902e8ac5a10834af5f1c6634df739e08ce9": {
       "seen_at": "2026-11-05T07:23:49.954377+00:00",
@@ -3752,6 +3757,19 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "3a0b6122a2ac65d016b632a7c7727c14fe8ea42de32fbba1d0c48549e74cee35": {
+      "created_at": "2026-11-11T15:38:48.305480+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-11T15:40:16.717543+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669284565229",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Spain sees widespread disruption in first general strike for 14 years"
+    },
     "3a411ea5e3414a5be7c514f35371602a889d1e1086f772472d76e6d17f3e7d15": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "BBC Business",
@@ -6081,7 +6099,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-11T14:16:40.621203+00:00",
+      "restore_attempted_at": "2026-11-11T15:40:16.717543+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669254123757",
@@ -7168,6 +7186,11 @@
     "6fee9cd54ab9f4dde29333378b2ae67ade6a81c68a15789c27c6eaf6b488b7dd": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "6ff2a9f50c6e6a057e722bb8ceacffa8d7ecea30eeae8c23465089dc3828b2d8": {
+      "seen_at": "2026-11-11T15:38:48.305480+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "6ff6fd996e06136d9df381e5716e9f5c562915ea1b18d5395bb7ac872a54556a": {
@@ -9441,6 +9464,11 @@
     "8f91e888dbba28fcb4a56ad0cb141e2673fdd6dbf63483fa299793da6ffb5189": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "8f931ab7b6c161f6e11ad7a0676e7469deebdfc6358727eff478316a0b0e4f24": {
+      "seen_at": "2026-11-11T15:38:48.305480+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "8f9b546ec811f6c302124118daf72260d5a3f3df57efbc8bfd3a7740672f1b8b": {
@@ -13731,8 +13759,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-10T14:38:26.036610+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-11T15:40:16.717543+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669267427565",
       "source_url": "https://www.bbc.co.uk/news/articles/cqr7y7myer53o?at_medium=RSS&at_campaign=rss",
@@ -15457,7 +15485,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-10T14:38:26.036610+00:00",
+      "restore_attempted_at": "2026-11-11T15:40:16.717543+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669246357741",
@@ -16255,6 +16283,11 @@
     "f386653fd1a3aece8b3aa1d9a7854b64829f1ad4941f6b7e9519918d3bd4c07e": {
       "seen_at": "2026-11-10T07:13:55.903933+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "f3957bc9f46278e8e5d9a7c97eb4453804fbda1751d8485b754d11b4bae2d9c2": {
+      "seen_at": "2026-11-11T15:38:48.305480+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "f3a72496ba3397ea8ea5ed37caf3c872b602f2c821d83d7a792408927edf0af4": {
