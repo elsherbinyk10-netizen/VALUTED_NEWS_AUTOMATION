@@ -678,6 +678,19 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "0a0baea00a59cb9ef2984067cbaa35d5046c596cf715a3d39f4854870e1a60a3": {
+      "created_at": "2026-11-12T01:42:01.206310+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "restore_attempted_at": "2026-11-12T01:44:03.341421+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669287055597",
+      "source_url": "https://www.rollingstone.com/music/music-news/fall-out-boy-mall-pop-up-show-1235655817",
+      "status": "published",
+      "title": "See Fall Out Boy Rock an L.A. Mall Ahead of Stadium Tour"
+    },
     "0a0fcfe94dd50f7c6c445ada381ec06f698134cb09824cf3b418c92814f56ee1": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "NPR Arts and Entertainment",
@@ -3226,6 +3239,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "31cf92d75ae2e5de941b482695e3d41b5c843f1465df07ea98b0a666951fdf4d": {
+      "seen_at": "2026-11-12T01:42:01.206310+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "31d1f60e8479f112303b8d656c072f638e644930bbd873b7ec0d05d0a73b68e8": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Environment",
@@ -4249,6 +4267,11 @@
     "419366bf8ca04bfe3f2d329b0a8d0fd49191dd3b41ee0df652eaa9c2f1818237": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
+    "41a0f772447991ae2cb1646380bbd03bc58946a82d3e71c657bc7b7b286ee0e9": {
+      "seen_at": "2026-11-12T01:42:01.206310+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "41acbb34bf1dd78d09de16b115ff11391e7342147243f531ec21ec80c75c3a40": {
@@ -6124,7 +6147,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-12T00:39:50.950187+00:00",
+      "restore_attempted_at": "2026-11-12T01:44:03.341421+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669254123757",
@@ -6621,6 +6644,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cmr4y51gd5yro?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "George Michael's Faith guitar sells for \u00a3180k after auction row"
+    },
+    "676660f80babe08cfe7f4d4de50ff4d747dae06963913d082dbfdf409274c1c3": {
+      "seen_at": "2026-11-12T01:42:01.206310+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
     },
     "67bd93061febda86c1bd70214e307b1ea89c9aaf524865c0b280bd57e55bfc07": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
@@ -8925,6 +8953,11 @@
     "8660bcdf866d08010e0049615cfbebebc9a48c548ffd73e32f06b85f20fe4d8b": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "8661eee6a6e893bab665d6f6cda210b851b46b89c20303f5a64bc32975013dea": {
+      "seen_at": "2026-11-12T01:42:01.206310+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "868b338b316d0765386fee19bb725f6fc7da84187fa4c0df308a9f151ab340e6": {
@@ -11714,6 +11747,11 @@
     "b055a5f2b4d6c2ffbfa8decf910551e318c00829d4c9f14c7a65c685921f1d88": {
       "seen_at": "2026-10-19T12:49:09.789011+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "b086d3b7e223c1fef8c015979f27179272ab28748c39227bea1c9f6f514bbabe": {
+      "seen_at": "2026-11-12T01:42:01.206310+00:00",
+      "source": "The Guardian Business",
       "status": "skipped_stale"
     },
     "b0a70a808d62a650a85368c12e8e21aabd5e2fdb5e89aac38e4153b1acf50784": {
@@ -16540,6 +16578,11 @@
     "f519ea6c86918f5854ae69b00d1c73993c12e3f86708ea7daf32ea53d6042af0": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "f51f655fd9505321d477b93e66562efe42bf962f57a9cbfd6d004fdc7f1df116": {
+      "seen_at": "2026-11-12T01:42:01.206310+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "f526b656164117091ae3d3ecdf24de0aad5bbc9cc819e0e957687235ad459a05": {
