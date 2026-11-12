@@ -99,6 +99,11 @@
       "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
+    "01e0d15111ea62cf991e4841ded9770255d18d88ae853eb79f5de2b172926315": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "022ad7569a85a72f5446fcf84de20814633831a326b44309bfc2f464b5106284": {
       "seen_at": "2026-10-20T11:53:48.143603+00:00",
       "source": "BBC Business",
@@ -428,6 +433,11 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "062f08284c31e40c70609cd927ea96b17ca39935d447b48bc8a0a9a2137ddb45": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "063ab8557bb8243770c4dc9316101cfbc44ce6f0f30d44268059a70fa90188a8": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Rolling Stone Music News",
@@ -649,6 +659,11 @@
     },
     "0950815151edb81dc1601506a73712bc7d5a7972073c82955f8a5981b9221362": {
       "seen_at": "2026-11-09T18:59:08.667366+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
+    "0965b7b55b280e8fcfd3132ded403cec8707ccff3bc685aadc329f9ae0dd8288": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
       "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
@@ -1119,6 +1134,11 @@
     "10a48ee2befc8800765de4293b68f36a5d90b068c4632003f4cf61c1bdb7f6fd": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "10aeabd22f2eb00a43226e0b46b64715945eba9eb917773b126750fb57420418": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "10bbcd3bda521a62367e7d51f529c972f9faf41e10085363c1d93499c888d715": {
@@ -2016,6 +2036,11 @@
       "status": "published",
       "title": "How does it affect me if share prices fall?"
     },
+    "1e0a7ae7209d696d1d34984c716b1095a72f3273f19c2b87902935f59ffce1ca": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
+      "source": "The Guardian Business",
+      "status": "skipped_stale"
+    },
     "1e3382b17a9c6b7982ce0ac80078198c77bfed229f7c112456a7eb2e1b605017": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Business",
@@ -2494,6 +2519,11 @@
     "2554deac31f8536bae3567f88cd6fc39f3b4dcac7f6b674ebe1d8e5da77ef115": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "25569875ec85d73b280fae388fbb99d77d5d1549ed4542b8c72b60a25c194b64": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "255d6ef68c0e44cf42c2614d524f0231b2ec0d640e920a19e0adf6846c0e30fd": {
@@ -3698,6 +3728,19 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "376d5a6f39d9f86fdb75e70231af99d6e878db897bf4e7f67aabbf487f1d0723": {
+      "created_at": "2026-11-12T23:34:59.272434+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Technology",
+      "restore_attempted_at": "2026-11-12T23:36:26.150609+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669305635053",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq5y13819gpjo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "How AI visionary Jensen Huang was undone by his own bad decisions"
+    },
     "378b1fe2f80d79e6d30e58e58315dbec17273a8e647c5b1234473be172a9b9df": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "Google News Science",
@@ -4088,6 +4131,19 @@
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Business",
       "status": "skipped_stale"
+    },
+    "3e745240a6dc7bb33232926c3a8094c2ec6196dec67db4562dab8033a1b17216": {
+      "created_at": "2026-11-12T23:34:59.272434+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "restore_attempted_at": "2026-11-12T23:36:26.150609+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669305667821",
+      "source_url": "https://www.bbc.co.uk/news/articles/crgqwgzxeexno?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "How much art does your council own and is it locked away or on display?"
     },
     "3e81e6eaad4c8477df78ad278c818271d5799e53f156f942b0094b76fa95f8be": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
@@ -4888,6 +4944,11 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "4b2ba019d6dfe8b3e9679aed92ed4a94806af5d3ac41443256517a70c3c8d110": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "4b31a65269f1add9289cca2be3cafe5ad8450bafc5f240bb1b7ab26ce89cf0fc": {
       "seen_at": "2026-10-17T06:08:31.417343+00:00",
       "source": "NASA News",
@@ -5238,6 +5299,11 @@
     "513f1eb735ce887f1851408afbd229749c19d9beef37250b8649cc6fe1b612b4": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "514a71d7a0b2cf65699b2bbe42a7d1f086d3062da7c35c790b6fd36f08721b1d": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "5176aed3c8dc012f398185f45e5e4b2b8d873b071aa0c097375b034c1078f152": {
@@ -6220,6 +6286,19 @@
       "source_url": "https://science.nasa.gov/image-article/apod-2026-november-10-saturn-behind-the-moon",
       "status": "published",
       "title": "APOD: 2026 November 10 \u2013 Saturn Behind the Moon"
+    },
+    "607d4d7557c40807b113b56e8b70270c8071df379712739abc31add4f41cae3e": {
+      "created_at": "2026-11-12T23:34:59.272434+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Technology",
+      "restore_attempted_at": "2026-11-12T23:36:26.150609+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669305602285",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Scandal-hit Nvidia CEO Jensen Huang quits, plunging AI chipmaking giant into turmoil"
     },
     "60828c4283b84d16efb4ed2fda196abde1c5c3f9d7a9562b2892679fa7585b03": {
       "seen_at": "2026-11-11T14:14:28.111405+00:00",
@@ -8238,6 +8317,19 @@
       "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
     },
+    "7c670ec87508ee71ac28654e8893f8a2c94ec6c98e0d91f335fe67cc84b883c6": {
+      "created_at": "2026-11-12T23:34:59.272434+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-12T23:36:26.150609+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669305700589",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says"
+    },
     "7c75f62d99ae4fad1b7ce3c06061c546f3299aae40d3cd9d83fe8138662bd269": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News Science",
@@ -8486,6 +8578,11 @@
     },
     "7fad102e05c0094d89794c1e9b2bd2ae24936ff42f1cf12daaa4137e4b4c9a9a": {
       "seen_at": "2026-11-07T12:55:20.001147+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
+    "7fb9f6eae1261ec268fe2edfd08e3563a3f6dd8902f7e647a9557ee6a0a6c785": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
       "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
@@ -12983,6 +13080,11 @@
       "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
+    "befd511ebec770b0786f536231313a481f12bc2b61d3835db71ada368a64ccfb": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
     "bf00398dda4dd22d85151a40b2905e26d1f5c283def45271054d882c90b359de": {
       "seen_at": "2026-11-07T07:01:38.843423+00:00",
       "source": "Variety Music",
@@ -13204,6 +13306,11 @@
     "c23711d422505606e80700b872e163357f08458a0999dade8c143b1524a227c9": {
       "seen_at": "2026-11-03T03:55:58.146882+00:00",
       "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
+    "c273b9fd9591e959b12745a4b3fd67bd6164f2835de2711f07f5e3bd871fa3f7": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "c27860e09086867cb69bcbcdd7995ca98f029e1eefa84d6ee570ce766463afaa": {
@@ -13597,6 +13704,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "c7a8ed42ce85c6c90ec3be770f6d2d549f2caa93357f9d26efb3dd018b96dbaf": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "c7aa78823d5c5a22c1174f4f8a389c291d67463f16e69ec761b3aeea19f31281": {
       "created_at": "2026-10-27T12:50:27.915668+00:00",
       "has_embedded_video": true,
@@ -13638,6 +13750,11 @@
     "c8395bb8966fb90dc0dd826350a77fe9a42f5b699fc5f88563fed8d8ac32f854": {
       "seen_at": "2026-10-21T18:45:36.006025+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "c839609cf08ce50b7ce1647624c7509fd4bd0ab3a113e7a6c281b3dea56d72e8": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "c85d70cd1e15bc1003a062505e638c8b826c8a37219a5c50a732338f824dd7dc": {
@@ -14088,6 +14205,11 @@
       "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
+    "cfbcbf1e586c5435db7bba3e0f0ef069541aada23dcb06df38c4504f54c128bb": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "cfc2ce1e5dc2ef1035994ca64cb4267326794acaa0dc7dd93cacf41d3250dc51": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Business",
@@ -14263,6 +14385,11 @@
     "d259c68ea1bd8d2dfd869f1a5f6efb9e972e9f21fe353032d4c219fbda6afa1f": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "d26867dc6a1fbe97bcddaef154ec632c596b754df9a528a9776c9f7c4c3667b6": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
+      "source": "The Guardian Business",
       "status": "skipped_stale"
     },
     "d2699c175228c3d0e7147736ac276417ef9fb0c8d55760841f49c4665c337f23": {
@@ -14853,6 +14980,11 @@
     "db22077a16dd1f4b33b4c1d115370ac7e272ea27061ebecdff4b44c9e9cfe6b7": {
       "seen_at": "2026-11-02T07:29:49.590724+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "db54524d5e99b1c6703ac9cb15980eb77966f5db8478fd2a204f864f823a43ce": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
+      "source": "NASA News",
       "status": "skipped_stale"
     },
     "db559fb332acc86803509505cdda1645f5eab1868bba91334d8abfd00aa04c7d": {
@@ -16528,6 +16660,19 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "f20d6cfc2c4e59afd8f45d121ae0a19ed7c24e2da0b6c8fa66363b23f06fe0fa": {
+      "created_at": "2026-11-12T23:34:59.272434+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "NASA News",
+      "restore_attempted_at": "2026-11-12T23:36:26.150609+00:00",
+      "restore_status": "already_present_in_shopify",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669305733357",
+      "source_url": "https://www.nasa.gov/general/nasa-ames-stars-of-the-month-november-2026",
+      "status": "published",
+      "title": "NASA Ames Stars of the Month: November 2026"
+    },
     "f21119db9c071d9567a25836562ea4829cb3058e7b7ce7f1dffd5308f33cd03c": {
       "created_at": "2026-11-11T14:14:28.111405+00:00",
       "has_embedded_video": true,
@@ -16559,6 +16704,11 @@
     "f251d5f73defe63118c190ef4540136c965e19580d2a5e0ba1c222ad11fb27fd": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "f2638f7d630ee77c1a693e06b517594b632f6fd63e2dc38fe9f2a4ae10f91fd2": {
+      "seen_at": "2026-11-12T23:34:59.272434+00:00",
+      "source": "BBC Technology",
       "status": "skipped_stale"
     },
     "f293b9c74ff509fad25fb0950652a56500fd249482c899a5155752f6f0094d09": {
@@ -17032,7 +17182,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-12T16:22:00.993673+00:00",
+      "restore_attempted_at": "2026-11-12T23:36:26.150609+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669302980845",
