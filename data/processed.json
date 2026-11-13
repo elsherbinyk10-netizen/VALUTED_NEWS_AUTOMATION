@@ -420,7 +420,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-12T16:22:00.993673+00:00",
+      "restore_attempted_at": "2026-11-13T23:31:58.472714+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220700397",
@@ -762,6 +762,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "0b26e0c016c7e981a62668becc45790e1b32d1ac24f45f73605a641b97c4f7f7": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "0b28be7298fc2a3b734a6a9fe4361615be5c35b8e5c5b40e226bca726ad96426": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
@@ -911,6 +916,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/ckd6d2l3dz4xo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Kenya pastor accused of ordering parents to starve their children to death faces verdict"
+    },
+    "0d54d67e927990b90f53355dfc8ef78bfe59bf3075bdc363fe76e65c40653d95": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
     },
     "0d5fde50150fd8a0b7bee38514607ed0459a124430161b68d5570761d6400748": {
       "seen_at": "2026-11-10T07:13:55.903933+00:00",
@@ -1677,6 +1687,11 @@
       "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
+    "18994e5ed28405d131b2aef11eeb97a1529351cae960e28aacbaeccc62c1f1cf": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "189e284fa7d7d78ad4985e8b7b02bc0854a8bc970326eb467d5c35432b04c103": {
       "created_at": "2026-11-01T18:48:11.579033+00:00",
       "has_embedded_video": true,
@@ -1846,6 +1861,11 @@
     },
     "1aff4bf29ee2a8bdccd232627290e4c58fcea1d55b390cc9cc2627e91a9ef19f": {
       "seen_at": "2026-10-14T06:49:18.901185+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "1b127e2f67ca793c7cd9a0ae20561b2829e381b49fd2be481bf79ae21f441cb4": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
     },
@@ -2593,6 +2613,11 @@
     "26198e1f3b823d9d86662e01ff4c2fb7489b0ed0d23f8dbb33cf518c1ee13c3b": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
+    "26207d66f26332f677758737e2d1029b500197e13665bdc6da8dee4f373a2e67": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "26642edca61eefe9f39f190984ff0b63233047b27c17548af40ac493c2159815": {
@@ -3425,6 +3450,19 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "334ebcca23065263348a0865f4f3fc44e3475fe30ad3608bff3af065bc13e0a6": {
+      "created_at": "2026-11-13T23:30:17.556858+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-13T23:31:58.472714+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669320151277",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Microsoft 'deeply sorry' for global outage after almost 24 hours of disruption"
+    },
     "3350b81653d6dc7139dff657fe90b5d2756bb8ede3c980c67caad4a11f6ad245": {
       "created_at": "2026-10-23T05:44:00.850403+00:00",
       "has_embedded_video": true,
@@ -3596,6 +3634,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "3519de8795face3c22fca72465d951a8bf24afefa3e5d04f4cc0c0bca655d597": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "353033d77773e1d38ac1ba8b830c9de309b55596b34f8cbda1ddac2b2aae119e": {
       "seen_at": "2026-11-08T14:26:14.682851+00:00",
       "source": "BBC Entertainment and Arts",
@@ -3644,6 +3687,11 @@
     "3590619ebcdb10e7e4b0bdda288b495ced6e853baff1e9d2a393d118f13b0c33": {
       "seen_at": "2026-11-03T18:57:45.640600+00:00",
       "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
+    "3594e753a58e11989af190156aa6b2c1ea37ccee01d6349223cfcd226fac07c8": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "35c47e02c57dc36f1559cfb001b89dde5e2b1ad1a7324dfe1d549a8f929cdd0e": {
@@ -3901,7 +3949,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-12T16:22:00.993673+00:00",
+      "restore_attempted_at": "2026-11-13T23:31:58.472714+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669284565229",
@@ -3932,6 +3980,11 @@
     "3a836a3e16e885f9db58157f31e4e2a2ee721c224fd41004f8c884a874002e24": {
       "seen_at": "2026-11-10T07:13:55.903933+00:00",
       "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
+    "3aa89ba53715ee665b0924dc57d90fd85d48366e5b9376ecf0be3bb488500103": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "The Guardian Business",
       "status": "skipped_stale"
     },
     "3ad0ec2a8debdf50650c7055330d9cf8f4a285a2fc51378aaaf9fe524fcf39a8": {
@@ -6125,8 +6178,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-12T16:22:00.993673+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-13T23:31:58.472714+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669303242989",
       "source_url": "https://www.bbc.co.uk/news/articles/cmde1y19g19do?at_medium=RSS&at_campaign=rss",
@@ -6486,6 +6539,11 @@
     "6271bef94c80eeb022bd6618ddcef4bd695498cdb8f3443e256be564ad9e98d1": {
       "seen_at": "2026-11-08T07:04:06.879708+00:00",
       "source": "The Guardian Business",
+      "status": "skipped_stale"
+    },
+    "62739605962a31f1f4f5842542b4e2408a7d22b8e46e00a9fc7a573b6eebed7e": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "628236b1f71bbc8d1307c53118e2228debb492420d259e5105fa0b326ade62bc": {
@@ -6992,6 +7050,19 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "691a4e74f9e6dd4e51480d5540bbf15ace08ee376c21bc0802f0f083350c359f": {
+      "created_at": "2026-11-13T23:30:17.556858+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "restore_attempted_at": "2026-11-13T23:31:58.472714+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669320216813",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqy43zk3kk04o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Heat pumps: How much heat does your home really need?"
+    },
     "692caffcfcdeb6f4cf299d3edb7d6e4676389609d551b865a87115345f3636e6": {
       "seen_at": "2026-11-03T10:22:46.950392+00:00",
       "source": "Google News Technology",
@@ -7375,6 +7446,11 @@
     "6e3f5d3eea3d556e26ddc0f2238771193aa3ec5fa052d362f9627a85ac94192c": {
       "seen_at": "2026-10-30T12:59:19.385395+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "6e4b04539e890f89c2e45c4fa7a86f99f4eba2d83352c91580f8a4977953358b": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "6e711ee81d8445b2aa43e77b05d1978127484a59d892f68dc8ff6444b0b46917": {
@@ -8476,6 +8552,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "7d8d7c5726b58acf93a5db3a304e19036d490385b89800c495aeeb3fd9da612e": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "7d909e3f359b36f7df3cdc7321c67bbb92635e0a37ca356c64f1cf66d395ff93": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "BBC Science and Environment",
@@ -9406,6 +9487,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "88e3fde42e28ded3980579820ce7e0928faad745867648f7f7e32a09ab934fb6": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "88fd9e5b6be26d2450d185cfadb587c9778f5940926be98728ed8456dece892b": {
       "seen_at": "2026-11-12T00:38:06.876272+00:00",
       "source": "The Guardian Technology",
@@ -9700,6 +9786,19 @@
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "Google News Entertainment",
       "status": "skipped_stale"
+    },
+    "8d60a78443995909073353437f0a04f4025569699cf9fb48b1cc6f443967c91c": {
+      "created_at": "2026-11-13T23:30:17.556858+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "restore_attempted_at": "2026-11-13T23:31:58.472714+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669320282349",
+      "source_url": "https://www.rollingstone.com/music/music-news/idk-eminem-j-dilla-new-song-welcome-1235657529",
+      "status": "published",
+      "title": "IDK Brings Together Eminem and J Dilla for First Time on New Song \u2018Welcome\u2019"
     },
     "8d787f1efae63ab8869c347e08b197fb8264957a740d2a1379cbd3aee70c4537": {
       "seen_at": "2026-10-18T12:53:00.593654+00:00",
@@ -10654,6 +10753,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "99f127fbd6f5ecdc903f2c8d9ee054e8688fb4213079796cb095dea7269310b7": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "9a0002aad3da2b59012c945372c97f4e2a9657ec36915755089d82d0837f7095": {
       "seen_at": "2026-10-19T18:47:42.889839+00:00",
       "source": "Google News Technology",
@@ -10945,6 +11049,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "9f04938368cd338eb5ff492ce1b63b3e91e435212ec6e9c2d0c97ba478b84447": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "9f1aba68d4a47499981e156c9748702f88ba2dfbab440954cc9b296fdfaf2129": {
       "seen_at": "2026-11-08T08:32:43.086208+00:00",
       "source": "NPR Arts and Entertainment",
@@ -11141,6 +11250,11 @@
     "a20db8c134bc2054f83f74198dcb35ee29920a818ad6497dafb9cced0aa494a0": {
       "seen_at": "2026-11-04T12:52:22.945231+00:00",
       "source": "NASA News",
+      "status": "skipped_stale"
+    },
+    "a23b3fa109d489462de6fb92808a975b901ad8f793b7d11037fcba3e9fff002d": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "a26253c45ffad9dd23a819de72a39640a70c8ff0fdc740c9e1267fe10d3eaec1": {
@@ -12708,6 +12822,11 @@
       "source": "The Guardian World",
       "status": "skipped_stale"
     },
+    "b9c79e7a2e9a6ed7ec0c8f3e8e8edfeb0ca2258a197ac3dc6a870380f60a370c": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "b9d25523f0b4726ead37ab18a94964a0fa2fc66853a2442c6b6150f656cde925": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Science",
@@ -13186,6 +13305,19 @@
       "seen_at": "2026-11-08T07:04:06.879708+00:00",
       "source": "The Guardian Technology",
       "status": "skipped_stale"
+    },
+    "bed6a5c82a145d5323a64531fd316187d20c6b74b5284cfd3200a3ba10b3a236": {
+      "created_at": "2026-11-13T23:30:17.556858+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "restore_attempted_at": "2026-11-13T23:31:58.472714+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669320249581",
+      "source_url": "https://www.bbc.co.uk/news/articles/cvkg5jkpl2pno?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Schools, libraries and parents face 'difficult decision' over David Walliams books"
     },
     "beee15100173a94578fe4280e8acc5165fdc432d857b7c584c40c7bce5c3692b": {
       "seen_at": "2026-11-01T18:48:11.579033+00:00",
@@ -13904,6 +14036,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "c87b75c6bcc1555f29ff31b330aea7c573d9e9ed9e32823772bbdda6c463ff01": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "c889760de5d37b05595536662ef2552cbb5a3648924d522c3f8323fe1fe0cee2": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian World",
@@ -14254,6 +14391,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "ce5e1fa823cbaec20cf97d98a0e7ad209b2a120ef339b739721980ed04149064": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "ce658beb5b2145278642734204628a7d26abb18714852d7964e7d9dada9f1ee4": {
       "seen_at": "2026-10-31T12:52:32.223221+00:00",
       "source": "BBC Business",
@@ -14319,7 +14461,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-12T16:22:00.993673+00:00",
+      "restore_attempted_at": "2026-11-13T23:31:58.472714+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669267427565",
@@ -14655,6 +14797,19 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "d3bc368f2c827e78ee59f671c6e872da0038d5f86dcbdf8217a3a24d89c616b6": {
+      "created_at": "2026-11-13T23:30:17.556858+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Technology",
+      "restore_attempted_at": "2026-11-13T23:31:58.472714+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669320184045",
+      "source_url": "https://www.bbc.co.uk/news/articles/cxzd9171m51qo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Microsoft outage 'stark reminder' of how much we rely on tech"
+    },
     "d3c64c35277245ab3d247d268d0f1e71c267cfc9e0006af3e61624b924684f98": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "NPR Business",
@@ -14923,6 +15078,11 @@
     "d8221dfff38834d8f9dd2c677483bfa243de1d7ea5304a9963a616bae0801f20": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
+    "d841daab374a52f22ec77a04be6bc2a4a98149cea91199460a11e81159199cd1": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "d843f6ca0686a65a0df8359b2b0e5c72f0237bca3c95d6722a73d1fd9916b0b8": {
@@ -16120,13 +16280,18 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-12T16:22:00.993673+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-13T23:31:58.472714+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669246357741",
       "source_url": "https://www.bbc.co.uk/news/articles/ckgel338xql3o?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "What we know so far about Jensen Huang's affair with suspected Chinese spy"
+    },
+    "e87aacabb74e4e98fb120a777d90d02b874e85bdacd527662b23a4eac8abd6c3": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
     },
     "e8879178bd5385f9f34e303a4861f234221bea97d521d4272c803ac12f329f51": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
@@ -16378,6 +16543,11 @@
     "ec4b91abeca9251c58a02e58bc79d6ad24d729f475f2665c146b7958105c9787": {
       "seen_at": "2026-11-03T07:14:01.426928+00:00",
       "source": "Google News Health",
+      "status": "skipped_stale"
+    },
+    "ec5779d245b0e314c816ee3316e75a2f616bb0b95a0ee170e71b75337ca0ffc1": {
+      "seen_at": "2026-11-13T23:30:17.556858+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "ec608c124b52bd3063b1e403889972cada5dc89c7c511db9732b94aca131266a": {
@@ -16817,7 +16987,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-13T15:45:04.977481+00:00",
+      "restore_attempted_at": "2026-11-13T23:31:58.472714+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669305733357",
