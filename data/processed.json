@@ -721,8 +721,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Rolling Stone Music News",
-      "restore_attempted_at": "2026-11-12T01:44:03.341421+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-13T14:32:21.221245+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669287055597",
       "source_url": "https://www.rollingstone.com/music/music-news/fall-out-boy-mall-pop-up-show-1235655817",
@@ -1672,6 +1672,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "18901bd334b387ef90b43e628e6b9b36eadbf48671ecc372a606e525915a2aad": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "189e284fa7d7d78ad4985e8b7b02bc0854a8bc970326eb467d5c35432b04c103": {
       "created_at": "2026-11-01T18:48:11.579033+00:00",
       "has_embedded_video": true,
@@ -2469,6 +2474,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "2487502ed7655fd16cdfc3bc96bf5af3a7689f7c8dd0a3f744401672ee0778d8": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "24b9634a1e2343bb991adc27f7b370ce1ba14a81bacd96052393014591b454ae": {
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
       "source": "BBC Business",
@@ -2873,6 +2883,11 @@
     "2a52f7bb3050fda34e01b4a010ed74b0e790b9711603a86a74c03d5a60d5db11": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "NPR Business",
+      "status": "skipped_stale"
+    },
+    "2a551477860af7118e2f06c9c9dc798e8ddc46a92fc6ecbd4ff13381316421fd": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "2a66a8ea5668cf4d6d15f2ec52c8455af40531a00c48daa909cdb91a61f291c0": {
@@ -3759,6 +3774,11 @@
     "37e399d9c64d67deb3e232b0b639d44c28cdde833a55377d2efbd4373591da0c": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "3836116fc02ef8a79e719ef81a5e6c54fdb4156e561bb80f7a7e3f82131627b7": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "38579bf2aa521259c31043909429e2f28956d6313e8caebf252fed9ca07a6b49": {
@@ -5212,6 +5232,11 @@
       "source": "Google News Health",
       "status": "skipped_stale"
     },
+    "4f8d35969b8d4e1bb560e92693396c4acdad088b5f4f04e6995c4b2e47857a63": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
     "4f93c7aa39632aab41e05ae37a654b413eba8cc06dea5b98a2342999634dfc0f": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Science",
@@ -5894,6 +5919,11 @@
     "5b574101b0057c8f1fb6a9de2b95f08185b9c09c939705082e69b507bd2cbe6c": {
       "seen_at": "2026-11-12T00:38:06.876272+00:00",
       "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
+    "5b7b324595a60f0b1c2783b606a3b87a8f4dc9b71f3b8d269d4a5b7694abbabc": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "5b8f8fb25754d8013313a097ddb8fe4f4c9aae5419f067f4aade19d3d50ea051": {
@@ -6638,6 +6668,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cm78pwdp3n5qo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Healey must find up to \u00a335bn to meet spending plans, says think tank"
+    },
+    "64cb458074bc19a852a2ea24a6775cac5f05514ee97983917e834cd11f82998b": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
     },
     "64cc4e22bcb7567c65d023af0083c8cb39e8aa5dded03038178f679de98466cd": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
@@ -8073,6 +8108,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "789e4b945179c05f9999677e6593405dc7250414c802282d7645139efc834264": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "78b46bc9c11fceaaec5805bc458aa4e6e3914573bae6e84c1849788c050a2ca7": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Variety Music",
@@ -8249,6 +8289,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "7ba0cb86cd02fda00475d09028c35f15bfa6b70be5afc73f29ffcf659441a960": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "7baa83ec53b300a880b7c0ee5149d7731093e6c50a573b102b59f884f35a706c": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
@@ -8397,6 +8442,19 @@
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
       "source": "Google News Entertainment",
       "status": "skipped_stale"
+    },
+    "7d226533f769fbf1fe914fb60cc42f1127892bdf550cb4365b3e71b4ef3bc279": {
+      "created_at": "2026-11-13T14:30:18.966092+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Technology",
+      "restore_attempted_at": "2026-11-13T14:32:21.221245+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669316448493",
+      "source_url": "https://www.bbc.co.uk/news/articles/c5gm3g9ldz8xo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Global Microsoft outage affecting tens of thousands of users"
     },
     "7d3c176324224f271125312264bf38a311da1f808024f7403b8ced321a8475e5": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
@@ -10084,6 +10142,11 @@
       "source": "The Guardian Business",
       "status": "skipped_stale"
     },
+    "932a3a95ec2d87b9ca4bdaf6a3e2972cfe885a879b84fc05ab6cdb6c23710e49": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "933e6d4859ebbaaa10803321fe025c8544173bfeb189e09f5ae7d877a7800188": {
       "seen_at": "2026-10-27T18:49:42.592770+00:00",
       "source": "Google News World",
@@ -10103,6 +10166,19 @@
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Entertainment",
       "status": "skipped_stale"
+    },
+    "938c3e3c199878a4ea78452fed6ad784e79bc0be2bdd7b1ef9c2d89841e64675": {
+      "created_at": "2026-11-13T14:30:18.966092+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Technology",
+      "restore_attempted_at": "2026-11-13T14:32:21.221245+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669316415725",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6vg2ljjpj32o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "GPs, police and pharmacies among UK services affected by Microsoft outage"
     },
     "939e1b3d725718d0ebe46a71eb29698f6db9c3b44aca8a10394b119c8b0963ed": {
       "seen_at": "2026-11-11T14:14:28.111405+00:00",
@@ -10789,6 +10865,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "9d9f3ad80701ab8ed72ed70f86a67828f6d8f2272474e600ac34f05cc7258dfd": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "9da12d45db340b6735451a96bb68a32aa08d4ec59b918e4f80eeb3365c5cfa55": {
       "seen_at": "2026-11-05T07:23:49.954377+00:00",
       "source": "BBC Technology",
@@ -10908,6 +10989,19 @@
       "seen_at": "2026-11-11T14:14:28.111405+00:00",
       "source": "The Guardian Technology",
       "status": "skipped_stale"
+    },
+    "a0628153bd91e08fcae7ad0da5cb418df123d060cc56862e50c191e18b063163": {
+      "created_at": "2026-11-13T14:30:18.966092+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "restore_attempted_at": "2026-11-13T14:32:21.221245+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669316481261",
+      "source_url": "https://www.rollingstone.com/music/music-news/ron-wood-solo-concert-beacon-theatre-1235657068",
+      "status": "published",
+      "title": "Ron Wood to Play Rare U.S. Solo Concert at New York\u2019s Beacon Theatre"
     },
     "a06797f3d253aec3882ed218405acbc30477d049b21a2a6eade01063efbca2d0": {
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
@@ -11187,6 +11281,11 @@
       "source_url": "https://variety.com/2026/music/news/alan-jacksons-farewell-concert-sets-release-1236932620",
       "status": "published",
       "title": "Alan Jackson\u2019s Farewell Concert Sets December Release on NBC"
+    },
+    "a4d5b660789a8e8b53a0649dfc13dd7ff82bfb2010fffab647f33a94dda98f9e": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
     },
     "a4f6937820a5b749e9a4e308bec439d0d71aae957af195bef49b1287064b34e3": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
@@ -13100,6 +13199,11 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "bf4147c118d804b1be0da101a13155ced1e5162fbef75c56139bae299ab9f072": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "bf679c28a6a5a75d27f0de840edfcb2d9d0619021671ecb5075367da7f128bd7": {
       "seen_at": "2026-11-12T00:38:06.876272+00:00",
       "source": "The Guardian Technology",
@@ -14167,6 +14271,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "cf2fc89481231d9afe39197c43e677cbfc262e659ecb13455a43350bb47ef8f8": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "cf3c859b74bb78765332d69c796ae48c916221e3229a790db4fc1cf5f4e76a62": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
       "source": "Google News World",
@@ -14274,6 +14383,11 @@
     "d0cfd23bd2632071aeb3edcb276f7ef415172ed4c97ca3416cc6f3db9114b560": {
       "seen_at": "2026-11-03T15:55:12.765905+00:00",
       "source": "Google News Health",
+      "status": "skipped_stale"
+    },
+    "d0e44bf4a1773f0197ccc8ba4cd630e6569a8f1be4fb5d8d1588bddfa6edd35e": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "NPR Business",
       "status": "skipped_stale"
     },
     "d0f5a4eb4cff2cb8d10a3935da934c29a5a3221d08338014783828a16f0724f4": {
@@ -15253,6 +15367,11 @@
     "df6539a91679732cc82e693fd359897cff9ac276d4ad499b265f4c5b4b995b53": {
       "seen_at": "2026-11-03T17:07:40.495903+00:00",
       "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
+    "df88d11513903bfa2c584b72b876c5cc67a31af0317a2d796e461e31e8a7d78e": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "The Guardian Business",
       "status": "skipped_stale"
     },
     "dfb7c585a47464e2b612e8934a2e24bb125852113c4ebccfd4f4c1cae9d72ff5": {
@@ -16394,6 +16513,11 @@
       "source": "The Guardian Business",
       "status": "skipped_stale"
     },
+    "ee3e2230d4a86a240e91524e655b2d9f7f4f7604a4a7d614880bf43defaf0fa8": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "ee48fcc71e41601894cd878c226d888c124ce8bf17b6f61ad667148abadd7709": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Business",
@@ -16670,7 +16794,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-13T00:45:24.009028+00:00",
+      "restore_attempted_at": "2026-11-13T14:32:21.221245+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669305733357",
@@ -17154,6 +17278,19 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "f83f812563eb29b623dc7ac7cce173b3605fb2e746b2034b5c70b440c72d238d": {
+      "created_at": "2026-11-13T14:30:18.966092+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-13T14:32:21.221245+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669316382957",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "What we know about the global Microsoft outage"
+    },
     "f845da07825410f4870fccb86b23776cadef79c810b1f7ab4739e18d19b3830a": {
       "created_at": "2026-11-01T07:00:28.338527+00:00",
       "has_embedded_video": true,
@@ -17187,8 +17324,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-13T00:45:24.009028+00:00",
-      "restore_status": "already_present_in_shopify",
+      "restore_attempted_at": "2026-11-13T14:32:21.221245+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669302980845",
       "source_url": "https://science.nasa.gov/image-article/apod-2026-november-11-ngc-4449-small-galaxy-big-impact",
@@ -17653,6 +17790,11 @@
     "ffe4ac4dcb268d592f8bf8fedf5f696966085d9b3a9da3f72e062d904a28c516": {
       "seen_at": "2026-10-23T18:45:13.548852+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "ffea957c41531bf29ac4c19cc259f7c8b286283321efe874c4668e877bd8b9dc": {
+      "seen_at": "2026-11-13T14:30:18.966092+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "fffca23b7e6027005d317c8ed94c19b3d6541f5dfe8cef6ec5b06866ef15dbb3": {
