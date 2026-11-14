@@ -3110,6 +3110,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "2d2f35a0f231b6a72ab3582877bed2c981f6a44d53936c7890dc4d2206ba0ee2": {
+      "seen_at": "2026-11-14T00:29:55.176193+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "2d5868aaf7a930cab94f5c811503cd5de4ea253e0d8cb12874ad885b3426456e": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Variety Music",
@@ -3796,8 +3801,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Technology",
-      "restore_attempted_at": "2026-11-12T23:36:26.150609+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-14T00:32:10.576414+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669305635053",
       "source_url": "https://www.bbc.co.uk/news/articles/cq5y13819gpjo?at_medium=RSS&at_campaign=rss",
@@ -4210,7 +4215,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Entertainment and Arts",
-      "restore_attempted_at": "2026-11-12T23:36:26.150609+00:00",
+      "restore_attempted_at": "2026-11-14T00:32:10.576414+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669305667821",
@@ -6385,7 +6390,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Technology",
-      "restore_attempted_at": "2026-11-12T23:36:26.150609+00:00",
+      "restore_attempted_at": "2026-11-14T00:32:10.576414+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669305602285",
@@ -8453,8 +8458,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-12T23:36:26.150609+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-14T00:32:10.576414+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669305700589",
       "source_url": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
@@ -10029,6 +10034,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "904f2a0a1841c34671ac739acc813f4f3c4be0693342f0175eecf6865ceabef8": {
+      "seen_at": "2026-11-14T00:29:55.176193+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "905d0b79f57be89e213bf2b79917c788881a6c795cc689506ae8dbc918409005": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "BBC Science and Environment",
@@ -10301,6 +10311,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c6vg2ljjpj32o?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "GPs, police and pharmacies among UK services affected by Microsoft outage"
+    },
+    "939bd1df4d1d1e01c9346bc7070ec4425daac22aa674fc2adc03cc6a7e9ef315": {
+      "seen_at": "2026-11-14T00:29:55.176193+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
     },
     "939e1b3d725718d0ebe46a71eb29698f6db9c3b44aca8a10394b119c8b0963ed": {
       "seen_at": "2026-11-11T14:14:28.111405+00:00",
@@ -16987,7 +17002,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-13T23:31:58.472714+00:00",
+      "restore_attempted_at": "2026-11-14T00:32:10.576414+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669305733357",
