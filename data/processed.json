@@ -15881,6 +15881,11 @@
       "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
+    "dee2f2534f2d86201e71d04c24091d3a0362a0f59ddd6eebab019099d2b3bea3": {
+      "seen_at": "2026-11-14T23:25:55.232523+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "dee8666c86012a0c6541299f856e6e309f13cc2fbaa0cebdf86994e790d1d4e4": {
       "seen_at": "2026-11-03T03:55:58.146882+00:00",
       "source": "BBC Entertainment and Arts",
@@ -17374,7 +17379,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-14T22:21:48.850911+00:00",
+      "restore_attempted_at": "2026-11-14T23:27:33.051820+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669305733357",
