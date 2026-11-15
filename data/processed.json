@@ -94,6 +94,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "01953ccb7b50e5406d373dc6ad75b0f452d7df1a4c06bd3b1528c59c41ed76db": {
+      "seen_at": "2026-11-15T23:33:46.756764+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "01b35b28994ba93bb2ac12ae233c5c411a31a60abf6f01212c8118e472c03f14": {
       "seen_at": "2026-11-11T14:14:28.111405+00:00",
       "source": "The Guardian Technology",
@@ -8204,6 +8209,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "735993b21a18dc6693dd3e2d3617aea3a6842c2d86e7056c3d7559c884d677e7": {
+      "seen_at": "2026-11-15T23:33:46.756764+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "736c0e058d642f6b9fa1307506cd0bfde06f7c26c97c41c1c059c2b8648f34d7": {
       "created_at": "2026-10-31T12:52:32.223221+00:00",
       "has_embedded_video": true,
@@ -12520,6 +12530,19 @@
       "source": "Google News Politics",
       "status": "skipped_stale"
     },
+    "acc0fd9899f74453f21ee11ec8994871350ee333487add3b5c5fb45b67e0b4a0": {
+      "created_at": "2026-11-15T23:33:46.756764+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "restore_attempted_at": "2026-11-15T23:35:37.759290+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669348888813",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm3rgx9p583zo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Alleged Russell Brand rape victim wants age of consent law changed"
+    },
     "acdf91ab146529f559efae3dffc1ff7d5cb8673064ccaa1cab65ecaff6ad4f22": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
       "source": "The Guardian Technology",
@@ -14177,6 +14200,11 @@
     "c23711d422505606e80700b872e163357f08458a0999dade8c143b1524a227c9": {
       "seen_at": "2026-11-03T03:55:58.146882+00:00",
       "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
+    "c2672bafa47d34cad76f3ca0143a7b561a1265a7dbb38b710f2ad658176a875f": {
+      "seen_at": "2026-11-15T23:33:46.756764+00:00",
+      "source": "BBC Technology",
       "status": "skipped_stale"
     },
     "c27285778da4b00dd6a13695117a3038c2b606c6e2bb21e9c8f6af35283fc9ef": {
@@ -17752,7 +17780,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-15T22:48:10.269523+00:00",
+      "restore_attempted_at": "2026-11-15T23:35:37.759290+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669305733357",
