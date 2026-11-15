@@ -726,7 +726,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Rolling Stone Music News",
-      "restore_attempted_at": "2026-11-14T14:35:51.295587+00:00",
+      "restore_attempted_at": "2026-11-15T15:01:49.573047+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669287055597",
@@ -3612,6 +3612,11 @@
     "332e46e6181ac73989691093bc722d4ce91d6b1b2e511d58118c23e8bf700706": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "332f7fa7e6f224cf35dcc253a91b6d5bc6265e1c5fc90d29015a6ed3bad7ee2d": {
+      "seen_at": "2026-11-15T14:59:50.827229+00:00",
+      "source": "BBC Technology",
       "status": "skipped_stale"
     },
     "334ebcca23065263348a0865f4f3fc44e3475fe30ad3608bff3af065bc13e0a6": {
@@ -8873,7 +8878,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Technology",
-      "restore_attempted_at": "2026-11-14T14:35:51.295587+00:00",
+      "restore_attempted_at": "2026-11-15T15:01:49.573047+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669316448493",
@@ -10694,7 +10699,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Technology",
-      "restore_attempted_at": "2026-11-14T14:35:51.295587+00:00",
+      "restore_attempted_at": "2026-11-15T15:01:49.573047+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669316415725",
@@ -11484,6 +11489,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "9e951f502f90fa5f7bb80fa2ce53b2421bdd86ef1c5b1f812d21741eb1369aa8": {
+      "seen_at": "2026-11-15T14:59:50.827229+00:00",
+      "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
     "9f04938368cd338eb5ff492ce1b63b3e91e435212ec6e9c2d0c97ba478b84447": {
       "seen_at": "2026-11-13T23:30:17.556858+00:00",
       "source": "NASA News",
@@ -11572,8 +11582,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Rolling Stone Music News",
-      "restore_attempted_at": "2026-11-14T14:35:51.295587+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-15T15:01:49.573047+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669316481261",
       "source_url": "https://www.rollingstone.com/music/music-news/ron-wood-solo-concert-beacon-theatre-1235657068",
@@ -13563,6 +13573,11 @@
     "bc3fb02f00ae214a3f230248528f97917f200df3d7886987a6b13623518b4442": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "bc4fc00955f7d88d7c03427cfbc78c9f52186096091bc17c362aaa41c210c53e": {
+      "seen_at": "2026-11-15T14:59:50.827229+00:00",
+      "source": "The Guardian Business",
       "status": "skipped_stale"
     },
     "bc6bff0ecf02cafe2a099656e8247cd0d242438a8d629e6e2d92d80413226161": {
@@ -17665,7 +17680,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-15T13:55:10.115063+00:00",
+      "restore_attempted_at": "2026-11-15T15:01:49.573047+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669305733357",
@@ -18169,7 +18184,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-14T14:35:51.295587+00:00",
+      "restore_attempted_at": "2026-11-15T15:01:49.573047+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669316382957",
@@ -18210,7 +18225,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-14T14:35:51.295587+00:00",
+      "restore_attempted_at": "2026-11-15T15:01:49.573047+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669302980845",
