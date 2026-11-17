@@ -492,3 +492,60 @@ class YouTubeEmbedPlaybackTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class NewsTagTaxonomyTests(unittest.TestCase):
+    def test_music_publisher_gets_music_hub_tags(self):
+        tags = worker.build_news_tags(
+            "Julien Baker Reveals a New Album",
+            "Entertainment",
+            "Rolling Stone Music News",
+        )
+        self.assertIn("Music", tags)
+        self.assertIn("Music News", tags)
+        self.assertNotIn("Movies & Trailers", tags)
+
+    def test_movie_headline_gets_movies_hub_tag(self):
+        tags = worker.build_news_tags(
+            "James Bond: What We Know About the Next 007 Film",
+            "Entertainment",
+            "BBC Entertainment and Arts",
+        )
+        self.assertIn("Movies & Trailers", tags)
+
+    def test_streaming_headline_gets_tv_hub_tag(self):
+        tags = worker.build_news_tags(
+            "Netflix Announces a New Series",
+            "Entertainment",
+            "BBC Entertainment and Arts",
+        )
+        self.assertIn("Streaming & TV", tags)
+
+    def test_ai_headline_gets_ai_hub_tags(self):
+        tags = worker.build_news_tags(
+            "New AI Model Raises Questions",
+            "Technology",
+            "BBC Technology",
+        )
+        self.assertIn("AI News", tags)
+        self.assertIn("Artificial Intelligence", tags)
+
+    def test_general_entertainment_does_not_get_false_music_or_movie_tags(self):
+        tags = worker.build_news_tags(
+            "Celebrity Discusses a Personal Milestone",
+            "Entertainment",
+            "BBC Entertainment and Arts",
+        )
+        self.assertIn("Entertainment News", tags)
+        self.assertNotIn("Music", tags)
+        self.assertNotIn("Movies & Trailers", tags)
+
+    def test_arbitrary_headline_words_are_not_created_as_tags(self):
+        tags = worker.build_news_tags(
+            "How a New Report Could Change the Future",
+            "World",
+            "BBC World",
+        )
+        self.assertNotIn("How", tags)
+        self.assertNotIn("Future", tags)
+        self.assertNotIn("Could", tags)
