@@ -1130,22 +1130,15 @@ CATEGORY_KEYWORDS = {
 
 
 def classify_story_category(title, description="", feed_category="World"):
-    """Classify using headline and source text; headline evidence carries extra weight."""
+    """Classify from strong headline evidence; use the feed's section when the headline is ambiguous.
+
+    Descriptions often mention unrelated subjects in context. They may support a
+    headline classification, but must never override a clear feed category by
+    themselves. This prevents unrelated stories being routed into Sports,
+    Health, Travel, or Technology hubs because of one incidental word.
+    """
     title_text = clean_text(title).lower()
     description_text = clean_text(description).lower()
-    scores = {}
-    for category, patterns in CATEGORY_KEYWORDS.items():
-        score = 0
-        for pattern in patterns:
-            if re.search(pattern, title_text, re.I):
-                score += 4
-            if re.search(pattern, description_text, re.I):
-                score += 1
-        scores[category] = score
-    best_category = max(scores, key=scores.get)
-    if scores[best_category] > 0:
-        return best_category
-    fallback = clean_text(feed_category).casefold()
     fallback_map = {
         "world": "World", "business": "Business", "technology": "Technology",
         "tech": "Technology", "sports": "Sports", "sport": "Sports",
@@ -1154,7 +1147,23 @@ def classify_story_category(title, description="", feed_category="World"):
         "science": "Science", "climate": "Science", "environment": "Science",
         "travel": "Travel",
     }
-    return fallback_map.get(fallback, "World")
+    feed_value = fallback_map.get(clean_text(feed_category).casefold(), "World")
+    scores = {}
+    for category, patterns in CATEGORY_KEYWORDS.items():
+        title_hits = sum(1 for pattern in patterns if re.search(pattern, title_text, re.I))
+        description_hits = sum(1 for pattern in patterns if re.search(pattern, description_text, re.I))
+        scores[category] = (title_hits * 5) + min(description_hits, 2)
+
+    best_score = max(scores.values(), default=0)
+    if best_score < 5:
+        return feed_value
+
+    leaders = [category for category, score in scores.items() if score == best_score]
+    # When the headline genuinely supports multiple sections, keep the trusted
+    # source feed's section rather than relying on dictionary order.
+    if feed_value in leaders:
+        return feed_value
+    return leaders[0]
 
 
 def build_news_tags(title, category, publisher, max_tags=10):
