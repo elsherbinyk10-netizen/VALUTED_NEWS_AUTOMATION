@@ -967,6 +967,11 @@
       "source": "The Guardian Business",
       "status": "skipped_stale"
     },
+    "0dbfcd6f03a0d2f3ed02487db777861c31f9d0c1f6efd620061e4f58e6d33eb4": {
+      "seen_at": "2026-11-17T19:44:56.139339+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "0dc29ddb8b7e8c5e011836374670222231d5e463deab722849d31761c109334e": {
       "seen_at": "2026-11-08T20:19:33.298863+00:00",
       "source": "The Guardian Sport",
@@ -5443,6 +5448,19 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "4c41059aab1950cda6a796c2826eb7fa7448096c14d00837f20cea3f14bcb8de": {
+      "created_at": "2026-11-17T19:44:56.139339+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-17T19:46:36.012164+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669403971821",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq7825234lgmo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "'It was really scary': Mother describes sheltering during Russia strikes on Kyiv bridge"
+    },
     "4c4f3673e6e39a252ec6b393a19d0133ee1ae09fcfc67f44813f0bb428eb1897": {
       "created_at": "2026-10-13T18:35:38.703000+00:00",
       "has_publisher_artwork": true,
@@ -5550,6 +5568,11 @@
     "4dc21b7a0991ea54e655228ebcebe9c4aaa3a100249f66aa281cc5a0cec71ef5": {
       "seen_at": "2026-10-27T12:50:27.915668+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "4dc5ceb9bbe4f62f1b99647fc30e66a49b9fa5821e49ff4272df12ebd1023b61": {
+      "seen_at": "2026-11-17T19:44:56.139339+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "4dcc678fa02a9eae34e30cdcd5f4638c00f65cd23c3be336c35d5b3e7da77f09": {
@@ -5695,6 +5718,11 @@
     "4f20c648059ec367766f65ca189e98559e83604cd98781674e49bf064c659482": {
       "seen_at": "2026-10-28T12:59:42.364008+00:00",
       "source": "Google News Top Stories",
+      "status": "skipped_stale"
+    },
+    "4f34f128a81de74f07ff1525d0ae92121f36d56d8a540b98e2fbf7a6815a180d": {
+      "seen_at": "2026-11-17T19:44:56.139339+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "4f5083dd20c787d7ef4675c027b5396ce22c0ce7a9654e64b362b9fa8c28615b": {
@@ -5959,6 +5987,11 @@
       "source_url": "https://www.theguardian.com/sport/2026/nov/03/24-year-old-woman-dies-after-collapasing-in-final-stages-of-new-york-city-marathon",
       "status": "published",
       "title": "24-year-old woman dies after collapsing in final stages of New York City Marathon"
+    },
+    "5364652c0d17f83c5f10759f07021ecc8a0b87334f447ff786eff672b82733d2": {
+      "seen_at": "2026-11-17T19:44:56.139339+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
     },
     "5379a7850f7824400438407a1e165b3ffd70fe8b6b045227de2abd65503a73ef": {
       "seen_at": "2026-10-21T12:49:02.005600+00:00",
