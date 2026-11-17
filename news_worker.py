@@ -1083,7 +1083,7 @@ POPULAR_NEWS_TAGS = {
 CATEGORY_KEYWORDS = {
     "Politics": (
         r"\b(election|vote|voting|parliament|congress|senate|government|president|prime minister|minister|"
-        r"politician|political|policy|legislation|bill|campaign|white house|diplomat|diplomacy|"
+        r"politician|political|senator|senators|policy|legislation|bill|campaign|white house|diplomat|diplomacy|"
         r"sanction|geopolitic|opposition party|cabinet)\b",
     ),
     "Business": (
@@ -1101,7 +1101,8 @@ CATEGORY_KEYWORDS = {
     "Sports": (
         r"\b(sport|football|soccer|premier league|champions league|nba|nfl|tennis|"
         r"cricket|rugby|formula one|formula 1|f1|grand prix|olympic|world cup|"
-        r"match|tournament|coach|player|transfer|goal|league|athlete|race result)\b",
+        r"tournament|athlete|championship|playoff|basketball|baseball|golf|boxing|"
+        r"mma|wimbledon|uefa|fifa|goalkeeper|striker)\b",
     ),
     "Entertainment": (
         r"\b(movie|movies|film|films|cinema|actor|actress|celebrity|netflix|"
