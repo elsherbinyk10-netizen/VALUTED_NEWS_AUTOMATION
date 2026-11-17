@@ -1168,19 +1168,48 @@ def classify_story_category(title, description="", feed_category="World"):
 
 
 def build_news_tags(title, category, publisher, max_tags=10):
-    """Create relevant Shopify tags from the actual headline and section, not generic tag stuffing."""
+    """Build a small, consistent topic taxonomy; do not turn arbitrary headline words into tags."""
     title_text = clean_text(title)
     category_text = clean_text(category)
     publisher_text = clean_text(publisher)
-    tags = ["Valuted News", category_text, publisher_text]
-    category_key = category_text.lower()
-    tags.extend(POPULAR_NEWS_TAGS.get(category_key, []))
-    tokens = [
-        token for token in re.findall(r"[A-Za-z][A-Za-z0-9-]{2,}", title_text)
-        if token.lower() not in TREND_STOP_WORDS
-    ]
-    # Headline entities/subjects become searchable tags; retain readable title casing.
-    tags.extend(tokens[:5])
+    combined = (title_text + " " + publisher_text).casefold()
+    category_key = category_text.casefold()
+
+    tags = ["Valuted News"]
+    if category_text:
+        tags.append(category_text)
+
+    if category_key == "entertainment":
+        # Music feeds are explicitly scoped by their publisher. Do not infer music
+        # from incidental words in a celebrity headline.
+        if re.search(r"\b(rolling stone music news|variety music|billboard pro music business)\b", publisher_text, re.I) or re.search(
+            r"\b(album|song|singer|musician|music video|concert|tour|guitarist|band|record label)\b",
+            title_text, re.I
+        ):
+            tags.extend(["Music", "Music News"])
+        elif re.search(
+            r"\b(movie|movies|film|films|trailer|cinema|box office|james bond|007|actor|actress|director|cast)\b",
+            title_text, re.I
+        ):
+            tags.append("Movies & Trailers")
+        elif re.search(
+            r"\b(netflix|streaming|television|tv series|series premiere|episode|reality show)\b",
+            title_text, re.I
+        ):
+            tags.append("Streaming & TV")
+        else:
+            tags.append("Entertainment News")
+    else:
+        tags.extend(POPULAR_NEWS_TAGS.get(category_key, []))
+        if category_key == "technology" and re.search(
+            r"\b(ai|artificial intelligence|machine learning|generative ai|chatgpt|openai|large language model)\b",
+            title_text, re.I
+        ):
+            tags.extend(["AI News", "Artificial Intelligence"])
+
+    if publisher_text:
+        tags.append(publisher_text)
+
     result = []
     seen = set()
     for tag in tags:
@@ -1189,7 +1218,7 @@ def build_news_tags(title, category, publisher, max_tags=10):
         if tag and key not in seen:
             seen.add(key)
             result.append(tag)
-        if len(result) >= max_tags:
+        if len(result) >= max(1, min(int(max_tags), 10)):
             break
     return result
 
