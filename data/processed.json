@@ -2390,6 +2390,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "209090d497c3c1f70c1b56819588f446a256e53d9ef4c02ba89656a6d0977137": {
+      "seen_at": "2026-11-17T17:06:46.005497+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "2092090de4aa57900c52858bb9d0600a02eaf85309ce5917f6bab2a21e290862": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Billboard Pro Music Business",
@@ -2403,6 +2408,11 @@
     "20e5ea8a8d5139236251f1e8103949460dc1dca1550dc3e9bdb35034926757a4": {
       "seen_at": "2026-11-08T12:55:50.653866+00:00",
       "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
+    "20f0cb52d943168e7e9077c15821a911727c50e670b83e13562b2707f841d03d": {
+      "seen_at": "2026-11-17T17:06:46.005497+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "20ff82f2da07c0e4b1c3da5d50aea2425e0cd2bc97d4a622fd38eef543cc3856": {
@@ -5598,6 +5608,19 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "4e565bc80203a41b5cfbaa6e3401450593a8acdfed7712a22dc79e02caee0d7e": {
+      "created_at": "2026-11-17T17:06:46.005497+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "restore_attempted_at": "2026-11-17T17:08:29.573359+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669403676909",
+      "source_url": "https://www.rollingstone.com/music/music-news/julien-baker-new-album-this-world-or-the-next-hound-1235659222",
+      "status": "published",
+      "title": "Julien Baker Reveals \u2018This World or the Next,\u2019 Their First New Album in Six Years"
+    },
     "4e6243846207f0605e970b004192dc68c11f1bc418aa02824dd80d7c577ff949": {
       "created_at": "2026-11-02T13:11:57.143285+00:00",
       "has_embedded_video": true,
@@ -7494,6 +7517,19 @@
       "status": "published",
       "title": "Just Eat apologises for AI food mistakes after social media ridicule"
     },
+    "686dbbbd6ac557cb44761a824494e99156fe21568855dd9b969983381e99528b": {
+      "created_at": "2026-11-17T17:06:46.005497+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "restore_attempted_at": "2026-11-17T17:08:29.573359+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669403644141",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm7024p1ded3o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Brand moved from Wandsworth to category C prison, his wife confirms on podcast"
+    },
     "68d1483b3beb217b9f9b54278949c7f36639db4b930e486f60191e091abba950": {
       "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "BBC Business",
@@ -7974,6 +8010,19 @@
       "seen_at": "2026-11-05T07:23:49.954377+00:00",
       "source": "The Guardian World",
       "status": "skipped_stale"
+    },
+    "6ee50e1fb72448780efb0c667d5ec93e60aec9a8072504ddac62ceca56876399": {
+      "created_at": "2026-11-17T17:06:46.005497+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "restore_attempted_at": "2026-11-17T17:08:29.573359+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669403611373",
+      "source_url": "https://www.bbc.co.uk/news/articles/cw3djdjk5d7ko?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Where are the most jobs for 18-24 year-olds?"
     },
     "6ee617086b8cda2a036295c67e024f4aeb14eeddd5ed591b8f7b2522a008a009": {
       "seen_at": "2026-10-28T12:59:42.364008+00:00",
@@ -9766,6 +9815,11 @@
     "84995e1b01f0c1db80a80d9d6027aedc171363411f196aab20cbdaa730404ab5": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "849b24f49711b21368151b94e0a5e5b2fb72957a89a123908803001dbfe6dbfb": {
+      "seen_at": "2026-11-17T17:06:46.005497+00:00",
+      "source": "The Guardian Business",
       "status": "skipped_stale"
     },
     "84ad818f071a5f51d56049547a03ee37f0a9c7f6d788ebad31ae083167df8c06": {
