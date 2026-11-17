@@ -490,10 +490,6 @@ class YouTubeEmbedPlaybackTests(unittest.TestCase):
 
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 class NewsTagTaxonomyTests(unittest.TestCase):
     def test_music_publisher_gets_music_hub_tags(self):
         tags = worker.build_news_tags(
@@ -549,3 +545,9 @@ class NewsTagTaxonomyTests(unittest.TestCase):
         self.assertNotIn("How", tags)
         self.assertNotIn("Future", tags)
         self.assertNotIn("Could", tags)
+
+
+if __name__ == "__main__":
+    unittest.main()
+
+
