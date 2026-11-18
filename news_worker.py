@@ -1201,6 +1201,13 @@ def build_news_tags(title, category, publisher, max_tags=10):
             tags.append("Entertainment News")
     else:
         tags.extend(POPULAR_NEWS_TAGS.get(category_key, []))
+        if category_key == "science":
+            # Keep high-signal science topics that readers may search for,
+            # without promoting arbitrary headline words into taxonomy tags.
+            if re.search(r"\bglobal\b", title_text, re.I):
+                tags.append("Global")
+            if re.search(r"\bartemis\b", title_text, re.I):
+                tags.append("Artemis")
         if category_key == "technology" and re.search(
             r"\b(ai|artificial intelligence|machine learning|generative ai|chatgpt|openai|large language model)\b",
             title_text, re.I
