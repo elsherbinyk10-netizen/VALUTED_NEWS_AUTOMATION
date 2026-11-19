@@ -8455,6 +8455,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "719a7a4473fb616fbda670ce745344d1bbc745a38cc696f8cc4c3fc4026e74ae": {
+      "seen_at": "2026-11-19T16:50:44.105021+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "71a3bc5bc6e56008cf24443f5e74c00dd88393bece0b3a78aec5b7dd558dbf3a": {
       "seen_at": "2026-10-20T10:37:54.271841+00:00",
       "source": "Google News Top Stories",
@@ -18419,6 +18424,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-19T16:52:11.891521+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669443391725",
       "source_url": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&at_campaign=rss",
@@ -19150,6 +19157,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Entertainment and Arts",
+      "restore_attempted_at": "2026-11-19T16:52:11.891521+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669443358957",
       "source_url": "https://www.bbc.co.uk/news/articles/c6m25ver32rpo?at_medium=RSS&at_campaign=rss",
