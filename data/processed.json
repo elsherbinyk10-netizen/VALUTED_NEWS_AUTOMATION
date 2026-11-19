@@ -697,6 +697,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "098c59b5a3134666ddafaec907bf02d9326fc4b9e745536abcfcd72a73af6beb": {
+      "seen_at": "2026-11-19T00:19:41.256598+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "09cec1f6e809608c5b20ff9b79517d3d459f8f21563bde39bd5b844cc48b6197": {
       "created_at": "2026-10-11T23:19:02.490549+00:00",
       "publisher": "BBC World",
@@ -2581,6 +2586,11 @@
       "status": "published",
       "title": "Brush fires trigger evacuations in Los Angeles, Orange counties amid Santa Ana winds across SoCal - ABC7 Los Angeles"
     },
+    "233a92b8e7cf9d40bc120513cc4f3fb06e1df9d416225c615e43f3c59b997d95": {
+      "seen_at": "2026-11-19T00:19:41.256598+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "235a42022b54d82d81bd11fe1f062e71fbea6094e8f9aab7b7d6bf90ae0d1f81": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "BBC Entertainment and Arts",
@@ -3239,6 +3249,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "2b4aebc655461a30de9471ce28072b242ed9a55f6c922cfcd02013338b00cf2a": {
+      "seen_at": "2026-11-19T00:19:41.256598+00:00",
+      "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
     "2b4f73d92a228a5b3f8afa6acf3b9d7e54fa1801f3fe65be6b54198c2c41387d": {
       "seen_at": "2026-11-02T18:26:59.867692+00:00",
       "source": "Google News Health",
@@ -3362,6 +3377,19 @@
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
       "status": "skipped_stale"
+    },
+    "2d20c91af3ce8bf68240c35ad161783c01dcf87320273d1992712a6029156f12": {
+      "created_at": "2026-11-19T00:19:41.256598+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "restore_attempted_at": "2026-11-19T00:21:22.904478+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669418881261",
+      "source_url": "https://www.bbc.co.uk/news/articles/c5vg23g92rj4o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "As Trump and Xi meet, China's AI dreams face an unexpected hurdle: the Nvidia spy scandal"
     },
     "2d20e4e8513f1be4f672c251ebb6ebc3a35692a534452272a54ea82606eaaab5": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
@@ -5605,6 +5633,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "4d6ef5db6b63f205d0bf4d13ecf730cb60f6169a53dbf696a7d9f88f733408ae": {
+      "seen_at": "2026-11-19T00:19:41.256598+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "4d9900ed973395a65b74727bd29e448012962f243b34def8a562fca5c7263064": {
       "seen_at": "2026-11-16T15:38:31.458477+00:00",
       "source": "BBC Entertainment and Arts",
@@ -6840,6 +6873,11 @@
     "5f41991d5bed7345798f8170c50f4bc8131d0da0e9007c2b602df66c0d39b38e": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "5f57c7bb8c1ca28617e94a9d290875a73053c4a92bbab6e91eaa931c58ef4374": {
+      "seen_at": "2026-11-19T00:19:41.256598+00:00",
+      "source": "NPR Business",
       "status": "skipped_stale"
     },
     "5f5e56f511bf9330e82c9f8e1ae5d1a54595c93ea8e801017b5d3e3ca736fab7": {
@@ -8851,6 +8889,19 @@
       "status": "published",
       "title": "October's full Hunter's Moon to light up night sky this weekend"
     },
+    "7799beccb6801acccb86662dd9ddef178a31cc716d0c3e127c09fcb67e075369": {
+      "created_at": "2026-11-19T00:19:41.256598+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "restore_attempted_at": "2026-11-19T00:21:22.904478+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669418815725",
+      "source_url": "https://www.bbc.co.uk/news/articles/crwy4w381nlpo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Harry Styles, Billie Eilish, Sam Fender and Cher to headline Glastonbury 2027"
+    },
     "77be400b70f0468ad3cc58b48d90c46c1db99040fcb56d201aed26ffc4742b91": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Entertainment",
@@ -10473,6 +10524,11 @@
     "8b821bca7cc8bd92f27cc81dec276eb4eeb42ab2e08bcad8c38f60aaf74631ec": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "8b9fb8f49fc6f9455c47cd91a4a2727288aea67411a0ddf4fded5d68f994f2cd": {
+      "seen_at": "2026-11-19T00:19:41.256598+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "8ba3bd46be05f686c43250c3abd3fcfa1b3486d6a22a61578e273146487486ba": {
@@ -12862,6 +12918,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "ab6e057e740f6ca5c537e756b0f4caf7194efad9b58de15ddee47da278e5eac2": {
+      "seen_at": "2026-11-19T00:19:41.256598+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "ab7471cafcaaba9fbc09ae62d46b05786e983f91ef21651e1ff57052b7b48d59": {
       "seen_at": "2026-10-28T12:59:42.364008+00:00",
       "source": "Google News Technology",
@@ -13503,6 +13564,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "b43b3cb4ca5a78791f8f0088eeda8430adbbab9378b6fb9f82b5f1b0dc0cfb17": {
+      "seen_at": "2026-11-19T00:19:41.256598+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "b44463ca822eaa82a67753e199d4ba9ac4706c657bdd20b8408b993c8a639e28": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "Google News Business",
@@ -13853,6 +13919,11 @@
     "b93423fcf928cc5ec33d294d1bcdf14d5e6ac25c3ccad0e96e29043dc40bb1bb": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "b9433f77441f4ba91a207d5ff196d12383d829cf9f381275778f723374cc8499": {
+      "seen_at": "2026-11-19T00:19:41.256598+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "b993692bc29b28b5e8fb928ada60e540bcaf06b15d0dd87e3e698cce3c5e34af": {
@@ -14456,6 +14527,11 @@
     "bf00398dda4dd22d85151a40b2905e26d1f5c283def45271054d882c90b359de": {
       "seen_at": "2026-11-07T07:01:38.843423+00:00",
       "source": "Variety Music",
+      "status": "skipped_stale"
+    },
+    "bf1b52248997328da7b1548568acd9a715cf956332013a676a1be00940c5f704": {
+      "seen_at": "2026-11-19T00:19:41.256598+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "bf253df1a0e7746eef5996d4a43035a1c720e61c5db27c4723e39c41e2fbd00b": {
@@ -15063,6 +15139,11 @@
       "source": "The Guardian World",
       "status": "skipped_stale"
     },
+    "c6674173cc67e8db0b214080858d56e6b0dbe58de2cc4530eb34405cc8889e1a": {
+      "seen_at": "2026-11-19T00:19:41.256598+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "c66bb1043643921f182ca1418db87a1691d18595c38b95e245cb2c468699d4ad": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "Google News Technology",
@@ -15289,6 +15370,19 @@
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Technology",
       "status": "skipped_stale"
+    },
+    "c9225e5cee2bd86065ddbb6fbe9ef4edd1278a6d15c8c7eabd799131579207c9": {
+      "created_at": "2026-11-19T00:19:41.256598+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-19T00:21:22.904478+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669418848493",
+      "source_url": "https://www.bbc.co.uk/news/articles/cq62ped2ypy4o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "William and Kate meet PM Modi as they wrap up India tour"
     },
     "c94caeff94a36b1ac23d3379602f50e4e374425b67aa1989ef62973bb2d872fb": {
       "seen_at": "2026-10-20T18:44:16.994007+00:00",
@@ -15791,6 +15885,11 @@
     "d055458032f2558ea20fc80e68eb5c3f172c28997a320f60d1f74e47df3b6f59": {
       "seen_at": "2026-11-15T13:53:13.942811+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "d06a93581d98b0eb3d74a6c44651b2de84738c3adce037649dde8e3c88be719e": {
+      "seen_at": "2026-11-19T00:19:41.256598+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "d06edf1dc5fc00e79caf0268129a4fce2b596d7b89448bad653fdef2b3a0d106": {
