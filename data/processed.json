@@ -6578,6 +6578,11 @@
       "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
+    "5b7a44f046c8994b35859e86ac370098ed46121df85b791797c74b3fe07fe826": {
+      "seen_at": "2026-11-19T01:32:03.657404+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "5b7b324595a60f0b1c2783b606a3b87a8f4dc9b71f3b8d269d4a5b7694abbabc": {
       "seen_at": "2026-11-13T14:30:18.966092+00:00",
       "source": "The Guardian Technology",
@@ -12059,6 +12064,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "9fccbe9a4ce051607e7abf4fd2abc3f6ab4d1a53d4b8cf15678b62998f498fd5": {
+      "seen_at": "2026-11-19T01:32:03.657404+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "9fdd859de5445198a141ff8f31f0d5aeb8960798d1029b90f90f541a774df6ce": {
       "seen_at": "2026-11-02T19:21:49.233918+00:00",
       "source": "BBC World",
@@ -13914,6 +13924,11 @@
     "b90fcd30380e8b6ea68f06560016100cf558bfaba89898f48b79aeec0b07c0c9": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
+    "b92fff2b679086157b8d040ef3b673f7d59b8ec6871810e53c2efb5bb8751d48": {
+      "seen_at": "2026-11-19T01:32:03.657404+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "b93423fcf928cc5ec33d294d1bcdf14d5e6ac25c3ccad0e96e29043dc40bb1bb": {
@@ -16335,6 +16350,11 @@
     "d6871d0535130f899b48193f46c877fc46a343c0b5620b6233dd802bc6dc78fe": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "d68fbcfda0b96375dba055f52a5df2e08763f7af9884b528cf859fd7957b0717": {
+      "seen_at": "2026-11-19T01:32:03.657404+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "d68fc0e7c9f142a35f87beb4b83e2cf720c7ef144475f6a04eebe559dd547eb7": {
