@@ -3395,6 +3395,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "2b7e66a3cbc379a3c66f296137ad87fd3c42a370b77626ae7bf412aae42874f5": {
+      "seen_at": "2026-11-20T16:26:02.165375+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "2b83bd1f882efad7ade0434ed3768061b514fc659734a6f8824c6faa3fb5d716": {
       "seen_at": "2026-10-31T18:48:49.607226+00:00",
       "source": "BBC Business",
@@ -12680,6 +12685,11 @@
     "a39fca9c907a71fb15903c772c83382f15848fec1cbf913d0a728bf13c68f4cf": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "Google News Politics",
+      "status": "skipped_stale"
+    },
+    "a3a3c62f130cb8a869b335d65eba67b2ec6a0973bb1240e45b1a6724ddaa1e3f": {
+      "seen_at": "2026-11-20T16:26:02.165375+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "a3b712a302f58f75dbefa63e0c8388a065af40fd8a9375e9e78b9a79d3550800": {
