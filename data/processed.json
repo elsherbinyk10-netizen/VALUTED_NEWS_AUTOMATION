@@ -43,6 +43,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "0108746f3e45d6f152a0264896efb226a73d952bd5f11f5ce69d9772124db00f": {
+      "seen_at": "2026-11-20T01:27:43.321254+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "010b3a1c8069f2a8cbf13210361b507dde464843360e6bc3e1f3485c86ae1d72": {
       "seen_at": "2026-11-19T15:40:40.175868+00:00",
       "source": "BBC Business",
@@ -637,6 +642,11 @@
     "0890c113dc11298dc42e3e3e7323ebe086889639c2421ef411dbf8feb4e12529": {
       "seen_at": "2026-10-20T10:43:29.843909+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "08a6226e73776bd3f5f21dbd937615cccb07fa0dfbf599fd8d4c3bdfcd533caa": {
+      "seen_at": "2026-11-20T01:27:43.321254+00:00",
+      "source": "BBC Technology",
       "status": "skipped_stale"
     },
     "08bc62272064cfc6ad8c5774370aece1bb25cf6405e058b1cf50efea0a14167c": {
@@ -1571,6 +1581,11 @@
     "152c8a08acff17391754db50125646018dec73817101656ec660e34615c530c3": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "152cc750e88c2a761a0f2153e83c2122071058b06f89f2629c01b592662d2430": {
+      "seen_at": "2026-11-20T01:27:43.321254+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "154e756ef60b6e2bca877bc3d04ec5af90115d4092fa3d0b4810e936305fd1fb": {
@@ -5243,6 +5258,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "45966e9c93e8891118292f236ad70d1a79b3b511a5474e1df3634a5d71aa8cc1": {
+      "seen_at": "2026-11-20T01:27:43.321254+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "459b0b2071c356e83562110f101ee9dcb979cfb5b13c17fa4c28dddc91dc987a": {
       "seen_at": "2026-11-14T22:19:49.798488+00:00",
       "source": "BBC Entertainment and Arts",
@@ -7758,6 +7778,11 @@
       "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
+    "68393aec5555647665a875a38859096571d46416c85218df4523f78b4fabdf0b": {
+      "seen_at": "2026-11-20T01:27:43.321254+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "6844c5c2c67eb8fb2779dd3f3238b6c63b56c92c7d2eca28fc9879baa060358c": {
       "seen_at": "2026-11-03T17:07:40.495903+00:00",
       "source": "The Guardian Sport",
@@ -9794,6 +9819,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/ckyvrze96y70o?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Russell Brand found guilty of rape and sexual assault"
+    },
+    "815730ca205ba1083cd44c6553e28dd53b2eef1819ec9c2885a41c38ad06b586": {
+      "seen_at": "2026-11-20T01:27:43.321254+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
     },
     "8171ef7fcac0ab7b64de0d7ca76f2e01ee7026bc4bef871353aa2c5239f0a3fb": {
       "seen_at": "2026-11-08T07:04:06.879708+00:00",
@@ -12739,6 +12769,11 @@
     "a5adb4e1f5c543fc0796dd12577c9b55acf6403c1f676754ce788cef64e7012c": {
       "seen_at": "2026-10-21T18:45:36.006025+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "a5e680b868848854d76dbe35041fc10281800666a6115b8d3a65d0a98eef4004": {
+      "seen_at": "2026-11-20T01:27:43.321254+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "a5fed4ab8db135e72608ef9618c347546a43b7836fcf168394c12da2f7ca5b13": {
