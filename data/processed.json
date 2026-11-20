@@ -860,6 +860,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "0b9b589fc0e4fed459f6bfd1b1d5298d5d0913260ba29b9363d9f1894b9e6231": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
     "0ba23f8c47befbea8c8215df606f194c955f79da48c3080c3009a8a93abc4352": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News Science",
@@ -1251,6 +1256,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "10dd14adf0567dfdeef3921fc50627f280f88d48dc444ba07b145c86f3bb8ce7": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
     "10e10868c7619ed023e34ca8e4c1ba9f6c2ec48aa08d5cd42d8b1dcc43b7ee5e": {
       "created_at": "2026-10-30T07:00:00.666940+00:00",
       "has_embedded_video": true,
@@ -1263,6 +1273,11 @@
       "source_url": "https://www.bbc.co.uk/weather/articles/c6ly075l742ro?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Hazardous driving conditions for Friday as fog warning issued by Met Office"
+    },
+    "10e302fb34c3ddf5d8527cc82ce4b50d85ae295fb9231f516872ac98e770217b": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
     },
     "1100ad95619cea4be25fb0266bfcadd887999fe1c324623a26cb445455c662c0": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
@@ -2038,6 +2053,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "1afc5cfbd72f76ba12b408d3edfa2799a1d08774656b821f72321bad5de3db2d": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "1aff4bf29ee2a8bdccd232627290e4c58fcea1d55b390cc9cc2627e91a9ef19f": {
       "seen_at": "2026-10-14T06:49:18.901185+00:00",
       "source": "BBC Business",
@@ -2198,6 +2218,11 @@
     "1d2074db1a3e5ae0a3fa8b1b90c830c8f6a5cbae35f0ed0757e1060aad2eff74": {
       "seen_at": "2026-11-08T14:26:14.682851+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "1d23156725b579620f1d580075c919edfefdaa93423070e6af6601d611460137": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "1d605c32c4c62cbf5a2046653b4eb1fd82f00849a2251c2209faec112604758f": {
@@ -3191,6 +3216,11 @@
     "29b14ce082896dbd223951139be58e56a436c36bfad9ee26620ba8b41fcb1cb5": {
       "seen_at": "2026-10-24T18:39:21.262654+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "29b5a72bda03c9b5c2b51748c3ac89289209a9662e34dc2170a7c457ccea2edf": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "2a00e825095109564ac93d93965311f61deaf82fa432066ac2f63d78bc04f2fe": {
@@ -4730,6 +4760,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "3ea197cddb17b6bc09edce1ce8e97748e111be101136ca228c4f2993fd020289": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "3ea648847ef5a93a2b766d93632123f06ff7d621ac667d9df1374dcf5f62ecd0": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Billboard Pro Music Business",
@@ -5167,6 +5202,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "43aaa38ea1841c95fb3cbccaea36ceaa6a92fb5c213c9798054409e427060545": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "43d3c4ff1e9f08c7ee05c636087cad01a8db9ce8d1d50176e82bab1392b4ef66": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "BBC Science and Environment",
@@ -5454,6 +5494,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "4890d4f9638ab71db643be083b005fcee82fba6bb15e6fdd12fca5cf6ec92374": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "48f249f7b2003d1dfb74d9bcad949dcb5e9c317d54bf29e508ac6f6a24a470cb": {
       "seen_at": "2026-11-08T08:32:43.086208+00:00",
       "source": "The Guardian Technology",
@@ -5685,6 +5730,11 @@
     "4c860996f2c4916a037453937aa45923f21056c907a0c7f8a624f8ef97632629": {
       "seen_at": "2026-11-14T13:27:15.188339+00:00",
       "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
+    "4c8aeede10ce74e4fc929f26f4b00042482e185f56c6fa10371644a7285538ba": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "4c8dfa85708bb0689baaf4b0897a46399ceef08660570646da29105bf426124e": {
@@ -6706,6 +6756,11 @@
       "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
+    "5b76b8d80d91a94330fa82c900a5c633075a45563e9f2c85bde9da2d57df8008": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "5b7a44f046c8994b35859e86ac370098ed46121df85b791797c74b3fe07fe826": {
       "seen_at": "2026-11-19T01:32:03.657404+00:00",
       "source": "The Guardian Technology",
@@ -7385,6 +7440,11 @@
     "63117dc94f2a80cf631c681f8ff21392a57a5fa15528632c36b4ce55255e766b": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "NPR Business",
+      "status": "skipped_stale"
+    },
+    "63124bfacd9a194f630abc037ef583dd90b4c7b52913f860ab8957dfcc0c4ff6": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
     },
     "6313753e936b75f15b79b09a7a7d78436e4d99d193081a361e3e60e548033dab": {
@@ -9183,6 +9243,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "797b3025dfd8885bee782f70a818d7a2d9ae3b3f7d8cd2c28ffa7edb9f4f2e6c": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "7989c20cb6f2def8507ea030f46f211577932e2a3161047c0b79f3c5eaee2ad1": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
@@ -9807,6 +9872,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "80df74927baeedaca5e6bbde97be3b1479a8fe3fe971816de8ff9e0c1c304db7": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "The Guardian Business",
+      "status": "skipped_stale"
+    },
     "810a0152e7cb5c72fffc0b81bb67cec44723c824488176187cde219a510448c7": {
       "created_at": "2026-11-05T18:59:01.479043+00:00",
       "has_embedded_video": true,
@@ -10426,6 +10496,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "877afe82f192b0c861e9598fd2c66570f4db14e38e9a18eb74f240ff2a68611d": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "87864c47464093bb7da1e55384ebba667c5a99798ebf6fb0083ecfe4a578142e": {
       "created_at": "2026-11-02T17:41:57.122272+00:00",
       "has_embedded_video": true,
@@ -10565,6 +10640,11 @@
     "892f1c6b8038ffe396d99e684598f4b02b56bddece10e632aa3141980f9c65b5": {
       "seen_at": "2026-10-30T07:00:00.666940+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "89463a15fdb11f74eee28b8a0b64a1a5f2631db14053fdc13d92293950a883ae": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "8970449045d00c1d47e64cf8587eaae293cccb43538a2fb3932ffbcf100b895b": {
@@ -11446,6 +11526,11 @@
     "93d4a5772dc692ab531c41a03b99a397709bb757775fe18b0bd31527053074b7": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "93d5ed52214d635593267cd3168f94640df5bd461a996c70239815ecd5a74790": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "93dd49c5c54274e4d6b892da926ab869fc588437fef7cf08c79da1055b4eceb5": {
@@ -12824,6 +12909,19 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "a6322da124324731344acd8829b1aad9f6e9282146b7a9aa83508b68114e3d07": {
+      "created_at": "2026-11-20T15:22:57.268874+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "restore_attempted_at": "2026-11-20T15:24:51.006213+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669464494317",
+      "source_url": "https://www.bbc.co.uk/news/articles/c8xgdv9e007o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "What are heat pumps and how much do they cost?"
+    },
     "a63fe58e0bae833f7310bc3ad078a137c3473e440e5b8c328478808564ef3e01": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Technology",
@@ -13704,6 +13802,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cm9d7pe8y559o?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Russell Brand prison message 'appalling' and being investigated, No 10 says"
+    },
+    "b26cadd589f47e4664691e145be16f675f1dfd75b46bb1a2281a114421c54af8": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
     },
     "b27b05f75e597f31bb12d1d2e364c21b82c2dce7baab834d08163c069bf86da5": {
       "seen_at": "2026-10-30T07:00:00.666940+00:00",
@@ -14848,6 +14951,11 @@
       "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
+    "bf67027a655d4dbfcbca3ac43aefe4d4233043afda68911c1e414b302aeb74ac": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "bf679c28a6a5a75d27f0de840edfcb2d9d0619021671ecb5075367da7f128bd7": {
       "seen_at": "2026-11-12T00:38:06.876272+00:00",
       "source": "The Guardian Technology",
@@ -15206,6 +15314,11 @@
       "status": "published",
       "title": "DJ Pikachu: Pok\u00e9mon Goes EDM With Lasers, Battles and Marshmello in 30th Anniversary Concert at Intuit Dome"
     },
+    "c3b22e300a070dce905a7a3efc08bafc31774be844de44d48517980f29f01ffa": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "c3c3cd3ede0654f8c6b26362c89650f6ca9fb4ad57cf2df235d6ae566161134c": {
       "seen_at": "2026-11-16T15:38:31.458477+00:00",
       "source": "The Guardian Technology",
@@ -15341,6 +15454,11 @@
       "source_url": "https://www.rollingstone.com/music/music-news/live-nation-my-chemical-romance-dallas-cowboys-cheerleaders-1235650825",
       "status": "published",
       "title": "Live Nation Defends My Chemical Romance\u2019s Dallas Cowboys Cheerleaders Lookalikes: It Was \u2018Parody\u2019"
+    },
+    "c55ecb0e520145d1afa1b356a04be9e6205e7d3eadc21ac34b291297b6067757": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
     },
     "c5713532d0c0b478542253f1bb7b326d49c144269c6ccb552cda10dafb613965": {
       "created_at": "2026-11-03T14:38:37.681620+00:00",
@@ -15669,6 +15787,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cwvgdjyg6qrqo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "The Russell Brand I saw in court was not the flamboyant character most people will know"
+    },
+    "c909e9e5ddfbe53ddd0505f9f6f475cda16491cc186d8ac520bd8c2b987ed533": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
     },
     "c90d5a4dd6fdc5bf2296344e84df5ab4937fccdc8579315ac505c6872d134c8e": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
@@ -17588,6 +17711,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "e21013ce30051f64d2a00d5387c8075d9a246070bb8dbc0b0d92994e0e1cc205": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
     "e21111a5b1d5b415e35f43e467f25e89bbd5520e321e03e3a8c1770498f888a0": {
       "created_at": "2026-11-03T14:38:37.681620+00:00",
       "has_embedded_video": true,
@@ -17782,6 +17910,19 @@
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "BBC World",
       "status": "skipped_stale"
+    },
+    "e4411f3969e7ca604a110bef0e4f7998b58d446a84db878b22d1a21d1c420036": {
+      "created_at": "2026-11-20T15:22:57.268874+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "restore_attempted_at": "2026-11-20T15:24:51.006213+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669464527085",
+      "source_url": "https://www.rollingstone.com/music/music-news/the-beatles-celebrate-liverpool-new-video-in-my-life-1235661140",
+      "status": "published",
+      "title": "The Beatles Celebrate Liverpool in New Video for \u2018In My Life\u2019"
     },
     "e4900f9241d01ec4810d302bb096da8804f85e719e70c04f34e398a0b1a5f12a": {
       "seen_at": "2026-11-07T07:01:38.843423+00:00",
@@ -18498,6 +18639,11 @@
       "status": "published",
       "title": "Apple posts stronger-than-expected revenue in first earnings report for new CEO John Ternus"
     },
+    "ed0d9e58f9996e4a175bb7698556e6ca4e08a186ff5f0d9b6683dc67c24d6bc3": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
+    },
     "ed114f73d3dc57a49a20e359e6d75f71d8c481732d1237f376164acd2d04b233": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
       "source": "Google News Health",
@@ -18739,6 +18885,11 @@
     "f063ceae6ff751ba9d7c0016577e4d21789ec447aebba83a0f25d33648ac7e4f": {
       "seen_at": "2026-11-03T03:55:58.146882+00:00",
       "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
+    "f076e31fc5e3654f5814fac91af22c174c17fdcfabadd6097b8849316e837ebf": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "NPR Business",
       "status": "skipped_stale"
     },
     "f07f8294f68786d697d5bcb45c9ecd6c28b6c2235fe751964c8edcec26f112e3": {
@@ -19516,6 +19667,11 @@
       "source": "The Guardian World",
       "status": "skipped_stale"
     },
+    "f9ed3e7bd8190f5b9066a8466f6641032d083e83016c40b4c366d7b8cd5c8326": {
+      "seen_at": "2026-11-20T15:22:57.268874+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "f9fafe921d858bf1f3c3797b60e9f4268741addcc6b7ec514a22f848e78c1ab0": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Business",
@@ -19907,6 +20063,19 @@
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
+    },
+    "ff5afed7ad5ce55282c2b8365d9729c5d704bcd28f6a46c36a46e8456c96f71a": {
+      "created_at": "2026-11-20T15:22:57.268874+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-20T15:24:51.006213+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669464428781",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm3vgw1xevvwo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "South Korea catches 111 students with new measures against exam cheating"
     },
     "ff7a77c67f666e0fd74aaf70858751ade3de19d9585a0451b8030a331623a7d3": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
