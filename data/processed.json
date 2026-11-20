@@ -1181,6 +1181,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "1003cd7da12c85aacfc84b7edf44746a8796f353fe10837fb6875284578db528": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "100cfd4b98b9121cdaba46574935643b7856db13182a80bdecec77e7f363a366": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Business",
@@ -1823,6 +1828,11 @@
     "183eb1d84eabbe9c2cee9fd0f766087d4eb364600bc00858a9f16ed6cfee6556": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
+    "1853e3faa5a44ae9be30b538117558d4138c1b9524d1b71202539f343c42be6e": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "The Guardian Business",
       "status": "skipped_stale"
     },
     "18766d30b268d13165da04882c36466845ecc4edcb64e5c43bbee58dfdae4746": {
@@ -2982,6 +2992,11 @@
     "26c6561f57040b4464afc7bfe625e190f3f76b3a2036f1c7da3d5b83d42cdf6b": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "26dd7f196d1ebee4d3279f0668fce07d4922596faf25f4091438eba020e1ac8f": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "26dfc0024c6b91a0d2e2ff5ff42fc3d4a6af83d8f3e7305d6d8f6d5723d22b41": {
@@ -5890,6 +5905,11 @@
       "status": "published",
       "title": "Julien Baker Reveals \u2018This World or the Next,\u2019 Their First New Album in Six Years"
     },
+    "4e59aaf9f98704759d462390ed7d84f8b68f0ad7321ee2acb44372a7aa95ee55": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "4e6243846207f0605e970b004192dc68c11f1bc418aa02824dd80d7c577ff949": {
       "created_at": "2026-11-02T13:11:57.143285+00:00",
       "has_embedded_video": true,
@@ -6729,6 +6749,11 @@
     "5a688db7d35efff2015070f2c5773ed284a1d6698673c2a6900fb3cc6bebaff9": {
       "seen_at": "2026-11-03T03:55:58.146882+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "5a9cd3303a442ab6cd0447e5d0ff5fe0bf7e0e5071d2923efd7a62245c37c2db": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "5abd9c3ed8ef5d61353dedcaf83a22ab2a739071f137a89277d9f5f736df588f": {
@@ -9168,6 +9193,11 @@
     "785ec69f9b37d202f147cd775d8467f8b6efcbe8970c1547a7f5d9fddeb60941": {
       "seen_at": "2026-10-31T12:52:32.223221+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "787733c1e61a9fd41a8fbe4910696c74d8728b8d3d14ef72528fdb4d196a253c": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "787ec3ea015eb548f2dfe5d1c308c8ab5252786c6175dbf2b1b02649481a80c5": {
@@ -12077,6 +12107,11 @@
       "status": "published",
       "title": "Chappell Roan Invites Christina Aguilera for \u2018Coffee,\u2019 and Fully Manages \u2018Expectations,\u2019 in First Night of Benefits at L"
     },
+    "9b1c7689e22553b5f8ab75ee38fb24fe64de90edc288699427a92cf6e5a0a378": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "9b40997214d176abae7f958765cbbf72b860699d01c2a0be33507ad342b04b4a": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Google News Business",
@@ -12304,6 +12339,11 @@
     "9df32ecd69d40b66c21d09cc27202d10f45800b65716e0a577cf573cda6e22fe": {
       "seen_at": "2026-11-20T00:35:18.911518+00:00",
       "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
+    "9e02f20077d512e98fae06165d13108a13e3a26a4d1620ae3dd617dc400a8684": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "9e03930a6513f8cb9d94e67bb2553feacdaa2e4d4172c49c7aca9d3cddffa8f5": {
@@ -13533,6 +13573,11 @@
       "status": "published",
       "title": "Ukraine says Starlink connection 'now stable' after network limits"
     },
+    "af1600252bab7bcd6917ae00c0e162a6f2b1b6d198e4c84341007740e4bc9220": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "af1b8e16f648553faf2571dacaa820187ce7ab709da5418005c8f05c9e5c3375": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Business",
@@ -13985,6 +14030,19 @@
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Business",
       "status": "skipped_stale"
+    },
+    "b489ac03011e847af2dfdc1b7b562ccf6ac08b8eeff2ebe3278cca3e5e4bd3a9": {
+      "created_at": "2026-11-20T23:58:21.164284+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-20T23:59:54.784337+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669508370669",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6jreyqgw4e9o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "UK to explore even closer ties with EU after agreeing deal, says Burnham"
     },
     "b48e446a31821e64501c220ee31071bed3f364fab74ef6149b5d03de4b0bc915": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
@@ -14870,6 +14928,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "be89cc4e6a92f33c362cb9cf6e50e0e4ca67d05e712bf768b5ca49db78efd6d9": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "be8dfc01ba47e804324fe1e791d2175cdf7c97e54af89bc3e94f31bdcb8c8cc8": {
       "created_at": "2026-11-09T08:52:25.680905+00:00",
       "has_embedded_video": true,
@@ -14959,6 +15022,11 @@
     "bf4147c118d804b1be0da101a13155ced1e5162fbef75c56139bae299ab9f072": {
       "seen_at": "2026-11-13T14:30:18.966092+00:00",
       "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
+    "bf4a35a1103d479389497811194ba33571416862bc0bbbfdf563068ccf9ec6e8": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
     },
     "bf67027a655d4dbfcbca3ac43aefe4d4233043afda68911c1e414b302aeb74ac": {
@@ -15387,6 +15455,11 @@
     "c4a003ccd94de0140d611b6e77ae5b9f266a532f9960adde669175af4402b055": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "c4b3d55d773b14949438babb33b62f65448ae6016d79ca9a69f3544c772d6c33": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "c4bc507025bdc22cd4a82cf4438620fb09f60af8d435cd4b64d8589c273443b3": {
@@ -16103,6 +16176,11 @@
     "cd11548c1166b85adf24d1f464fb0d5c7347092fef342c81954a52249912f36c": {
       "seen_at": "2026-11-08T07:04:06.879708+00:00",
       "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
+    "cd1cc82e314257f6a9a15c2695b7e9e66c843b705421596db554acff09ab742b": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "cd1eb74272bdae2dfb6acadcf2f28bc0f83611be9e8c1baa39acafe8863a46f1": {
@@ -17537,6 +17615,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "e021e7270166e91ae21a78ac519dbfeb980625528a9526058458e9b5f916fb45": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "e043dab69f1f9f76f65ac179931e189c9bd9a45c648e89952ddb53734ff2ed34": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "BBC Science and Environment",
@@ -17557,6 +17640,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "e079575437a76ace10bc16bb9a06d6b4c7d724ce46c79a7c04e15c8c3b163ca9": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "e07ad7ca36c5af25a3a360959313bbfffc8fa1135ae07c67adaddebbc1c8c6d0": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "Google News Science",
@@ -17575,6 +17663,11 @@
     "e0ab0469ae57bae6cecc5d22efd52aa254c8d914b765bd1c15aaee4ee6e94477": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "e0b9233a5e949fb582aff2ee792304a3b464046f4c976e7c86c7c5139c70286b": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "e0d76b8e43b043e67bf0b31bf533b156c6ca2726b02d3c4d2b621edf38594999": {
@@ -17985,6 +18078,11 @@
     "e4daeae01fcb09e73a31eef47ad3f40db69551306b9a265ade6ede10fd5cd553": {
       "seen_at": "2026-11-05T13:15:18.266721+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "e4e6fe1eb25c6234ecfc804c52e854db55e46878772afec66e52f9037f00cbb2": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "e4f2618d2f0ea3703b2ddc07414aef0091d2a1a16aba84e353ef0845f1fa38c2": {
@@ -18759,13 +18857,18 @@
       "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
+    "eea6bf0a0681aa2cd42de90aa58feeb4bf5979e89bce061324ee57a60bf3b4cc": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
+    },
     "eeaf96b77ff1efc7bf10cb328af2ffbecccfbcd7957b6d60377a33d7867e7466": {
       "created_at": "2026-11-19T15:40:40.175868+00:00",
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-19T16:52:11.891521+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-20T23:59:54.784337+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669443391725",
       "source_url": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&at_campaign=rss",
@@ -19502,7 +19605,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Entertainment and Arts",
-      "restore_attempted_at": "2026-11-19T16:52:11.891521+00:00",
+      "restore_attempted_at": "2026-11-20T23:59:54.784337+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669443358957",
@@ -19888,6 +19991,11 @@
     "fcdee5de1875209fbb0d75173f0b761635d95d72474fd1c3b4547b0741f848da": {
       "seen_at": "2026-10-16T12:49:27.685790+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "fce4e37f1d10ad80e96a5ce2660b5595e14f7304fbc2e0b1dfc7dc65bc37683d": {
+      "seen_at": "2026-11-20T23:58:21.164284+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "fcf2e7da91e68f35d3ffb7857f6979ab5dcf51182155a00104124e65cb65188e": {
