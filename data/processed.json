@@ -15,6 +15,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "006ff5a2995eb9499afe293f6729103dfb7d836db08e92a665d277943c458493": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "00916c7a76a8c68ab29af465cd7812713ab00f5da922223541f29814c7f0b07d": {
       "created_at": "2026-11-12T15:07:36.142313+00:00",
       "has_embedded_video": true,
@@ -362,6 +367,19 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "04d6e4f4006f92dafec2e4622e8256f362ee43be71ddf9c936c0a65290858526": {
+      "created_at": "2026-11-21T23:11:19.093182+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "NASA News",
+      "restore_attempted_at": "2026-11-21T23:13:34.803912+00:00",
+      "restore_status": "already_present_in_shopify",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669522559213",
+      "source_url": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune",
+      "status": "published",
+      "title": "APOD: 2026 November 21 \u2013 Voyager\u2019s Neptune"
+    },
     "04da432b5f6b8a4a3410f3d49d2644c9aab2b6fb4307d2319b64aed46d22bf45": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
@@ -481,6 +499,11 @@
     "063ab8557bb8243770c4dc9316101cfbc44ce6f0f30d44268059a70fa90188a8": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
+    "0650b0415999f05713dc06221e88afd34dc3f32740b996891108f4e3786f3dbd": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "066e844cded50c26d49cfdda8404e53814515558b442acd961beeae1e4fdb536": {
@@ -612,6 +635,11 @@
     "07f2b2b4dfbe27f11a206b153a1b6d6ff396deb44114803799c972bedc5ddc01": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "07fa03897d2f5c4be859b2bd7b4d201319ae4acf5bd62f5417270879d868d1bc": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "0806518b307ca7a2ee1ec294810550ab8d55d13fe4e686b5db1d0f0dfde6a545": {
@@ -1099,6 +1127,11 @@
     "0e4e8818e9343e503dbc5f0598a74a2fd19ba5845a8aa6ef9cf9e40a78196e83": {
       "seen_at": "2026-10-19T18:47:42.889839+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "0e5fc9b767a7b5122cc1fd26a6519a3913c33b216b20851902dfcc2e7c385fe0": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "0e70037920d4f18493a5862a53f5b434ac55499594a0b377b9dca2e2c454640b": {
@@ -2482,6 +2515,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "1f976da0286cea6c66cf371908b14ef1fe2ef7ab77b5f9eda319f2b54da95d02": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "1fa1407d0f18e26e4a48760ee229aaf9fadfd731af478f2013a1a1a60b5de01a": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Business",
@@ -3079,6 +3117,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "27a36da23bccab2312f8913f3c4e1cc8a34eea262d9e7c51ee7bdf7bd46a9c80": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "27a5e46eda9ed7a751fbe43839f3eb84e6a41ff1f265a87c1d1ff024972dd742": {
       "seen_at": "2026-11-03T17:07:40.495903+00:00",
       "source": "The Guardian Business",
@@ -3122,6 +3165,11 @@
     "27f6260d427cafc846a4b7e8ff94789c67f576143bfcf3e26e57b07a197fae33": {
       "seen_at": "2026-10-20T11:53:48.143603+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "27fc5802fd1bbae96633ea3e766c81d8ee670ce2750456029d418f88b98821ee": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "281b7706903247e7ba836fac2a9f0840d3a3d0225226018256ba88a657199d7d": {
@@ -4171,6 +4219,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "3531622859d71206b1dfe7ed87f525728289eae2edf9d6165b698ebe8fbfd56a": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "3532a4e0aa8a23b13573a55ef1848cd824e16a0f7bfa955fa0254db7d187d0f8": {
       "seen_at": "2026-11-14T22:19:49.798488+00:00",
       "source": "BBC Science and Environment",
@@ -4489,6 +4542,11 @@
     "3969611ac9a5be0ecfcce8ac6a19c26c1051227a7d1cc04fbe31603c8df9673d": {
       "seen_at": "2026-11-14T13:27:15.188339+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "396a59b623e7f669c093aafb8469987b5f7565b76c173e0f52b2319af3632c7f": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "3973f4fd41e710826cddf2389fbd6d4a4bd2bfdacb954dd567c1578716d4854f": {
@@ -5297,6 +5355,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "43adb832c5ababdd6ccf7c33af9c7acc4c2d38a7c53980e60d3ee332b6f35958": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "43d3c4ff1e9f08c7ee05c636087cad01a8db9ce8d1d50176e82bab1392b4ef66": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "BBC Science and Environment",
@@ -5881,6 +5944,16 @@
     "4c9f9c4ecfe39237a19face2c2cc137da9af84147fbac16e437ff55307401aef": {
       "seen_at": "2026-11-03T03:55:58.146882+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "4cbea02f2f1beed2530c4f012fee18095e4758415f1a6fb1942f379d65876c15": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "4cc002903d38147051de10ad942f12627f838d6864fad4aa85cdae5cce70bf66": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "4ccd1aa0a4d5150142d9a36c3a27862406a8b7536e8e7f88d5457a59ee8d11b9": {
@@ -6664,6 +6737,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "5734dccee736867c5f75f6dc14df2f37b55a27dfb07c5e3425282f677801bd17": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "573a2b2f2f8b6156dbe8aebcc04f5bd0102a0b986f25d05d898601023b2248f3": {
       "created_at": "2026-10-22T06:37:07.545122+00:00",
       "has_embedded_video": true,
@@ -6718,6 +6796,11 @@
     "57f3a3d36dfa1845bdb564798b95b2aa9f601184b6a6c7c502b7409d140d9db9": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "NASA News",
+      "status": "skipped_stale"
+    },
+    "57f5b4720823cfffc4787854676e44036ade103c971e1b158c3d4e1af069fba2": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "580f2c2f5f08ba563c559bf3dceb25eb472bd3d4c2acfb384df28248c2829a19": {
@@ -7173,6 +7256,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "5e59deb687efbcc0f9de5522b2f36a7f4701aa0beba58ce782eb46a78574f5ab": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "5e5c2822a097a5604c4e4f1be67755f3daed3b18156200022963ead08a2c0683": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian World",
@@ -7186,6 +7274,11 @@
     "5e95281cff0e2d8d8b16018db7bbcbc8fbc1fc98472a3193f5795064a6f0cc45": {
       "seen_at": "2026-11-10T07:13:55.903933+00:00",
       "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
+    "5ebce6e0e150aa02f651486b62814170da9cd499badb4938c8490173e1a28d21": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "The Guardian Business",
       "status": "skipped_stale"
     },
     "5ef8bed8a71649f3ea824fab269fd2c4ade59bc82307985578cf8cde7e5a961b": {
@@ -7625,6 +7718,11 @@
     "635b0b2984593638ef32fce012be54e44dd3949d62a6df9852421ca1eacc8565": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "637c8225ad86c76875eebf330ded48db1ffb3082b775735fffb2e68cb181d24e": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "6396acff03c0254a3aa002d4807073ebc264cd96bc96c98fc1d020d0c266ae11": {
@@ -8093,9 +8191,24 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "69465d17130aefc94ee137fef8d446a7b89cccbe0d649e1aebc5f4b6b5fabe66": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "69542d7d964a931f3ca0175e9535eca88b40428607322e168d4e0b58705eae96": {
       "seen_at": "2026-11-02T20:05:10.204837+00:00",
       "source": "Google News India Top Stories",
+      "status": "skipped_stale"
+    },
+    "6959df2e1d4fc09d83fa6f4754ca114e40dee04686f54178ff39c1e08da43f8f": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "696ad5a3a8e22dd2dfec810d0b380b6780493f9a4d7b679d69954808a4e54f78": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
     "69adc6dc041ea622d3f5f0736e26839c2888ed7bbbc9b6db0c62b2d512fbf72e": {
@@ -9630,6 +9743,11 @@
       "status": "published",
       "title": "Russian strikes wound nine and damage Ukraine's power network ahead of talks"
     },
+    "7c022c77fefde74147b44c4c22bbb73d8f91a15f493315e02d0bd47ad6cf3a68": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
     "7c1a59a768ce6a6689c798b74a689037ee3d9261d8c1b6256a2e4398a2a3b3ac": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Technology",
@@ -10912,6 +11030,11 @@
       "status": "published",
       "title": "Journey Go Their Separate Ways With Longtime Drummer"
     },
+    "8a72b3ec544802aaf8c830bbc9966aeb6c4d248e69bd26ed0a641998147961c5": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "8a7ccafdf35ccaeb93a39545c93df09e35e358f9d44250cf3b3598188aec48a6": {
       "seen_at": "2026-11-07T07:01:38.843423+00:00",
       "source": "The Guardian Culture",
@@ -11898,6 +12021,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "95e1b8e14af6b170386a41ca021683d7341915b0d9c563c4782d399a64c44248": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "95ecc6f97a9f1bc8198a7fb70e738b2369ccd60b191172449b77ae8411cac7e6": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Google News World",
@@ -11949,6 +12077,11 @@
     "96a1d05f6574f4f54ed7eba4c0f9e30b30da13d4279208823c416fb2a56413b2": {
       "seen_at": "2026-10-20T11:53:48.143603+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "96a7709ff83f79385aea5d73c347ecc7abd3600c82a2214d3031efbc1b35e910": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "96b29deef1400ca4a691adc7859d45648e3d0b0a33fe42e05dbed475cb967197": {
@@ -13352,6 +13485,11 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "a92cc23a668bfe4b397d68bda61deee81a28977c97da17850de73a278000fe5b": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "a940a01565c7c8bb6092f8abc50ee6bb21698b0c7c69cb7a18908d381e10c22d": {
       "seen_at": "2026-10-17T04:19:20.871064+00:00",
       "source": "Google News Science",
@@ -14346,6 +14484,11 @@
       "source": "Google News Health",
       "status": "skipped_stale"
     },
+    "b61c837a3ac8b3815af00b187d826986e3f59f57c59c0e1557430db72fd92053": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "b61d386f88d150c791faca0ab3a35f85a7a75f9ac3b40a7910147c4f43fa1c7b": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
       "source": "Google News World",
@@ -14412,6 +14555,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "b6973fc351e5f01d481682a3cec13bfcd413418f752e0cc3a45b503126086346": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "b6a013b23ae15cdea4bc5df68f0ada09288442f5d3b3675b91c0c886095fb34d": {
       "seen_at": "2026-11-05T07:23:49.954377+00:00",
       "source": "BBC Business",
@@ -14455,6 +14603,11 @@
     "b7ace2f7fab3ec2afc2daf780b26cedb94d4ec1b8e745b3c3d5650f57f7ac225": {
       "seen_at": "2026-10-31T18:48:49.607226+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "b7b004b7fdf15a0c6cb55cac129c1d46e5f4fe543e5ddfb0c03445e5654f80e6": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "b7cab3ee8afd0bca9278588a483eec6df39f67be8254c92d732d189c2c2ac65a": {
@@ -14853,6 +15006,11 @@
     "bbcba1608024b9f13b3823f8135048dca18a23566d612c2490e4b60e4f69da21": {
       "seen_at": "2026-11-09T07:31:55.827789+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "bbd988e5aece13622ed5f8c950ccbaa83f8a0cfd0afc1d80460128a3350fb91a": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "bbfd72c7e959fc3e1efbee32fc1f50b236c4a489c14453e3b18dcd7fdb95271e": {
@@ -15418,6 +15576,11 @@
     "c1b3a32ffab2200b4b7d11532a8153f83f7dfaec5b822f7cb7e406674afe5eaa": {
       "seen_at": "2026-11-11T14:14:28.111405+00:00",
       "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
+    "c1c4abb28a31401638c79505ebce3ef8bf9553e06886e01833e81860b597b4af": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "NASA News",
       "status": "skipped_stale"
     },
     "c1daccc6e9516163761d30e5c321bdde2801b5287f3d3f53d3c86f30aa75e2ac": {
@@ -16005,6 +16168,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "c7fca71aad0183a7566787cfbe2670fcec066ed593dc0df3e947693edd2f82ff": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "c8149d1569dfffbc230bd207954dafe703b6019d5002c6dce68b03e103f81aa4": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Entertainment",
@@ -16554,6 +16722,11 @@
     "cf3c859b74bb78765332d69c796ae48c916221e3229a790db4fc1cf5f4e76a62": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "cf3caef10eb550cc6cbb9a8f47112d57dc881c8b4706ba7fabeb984fd8e25695": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "cf4371881cc66060ff1b040d8619fad9825927dc89fe4d5bee3a91535ab2d6dd": {
@@ -18082,6 +18255,11 @@
       "status": "published",
       "title": "Astronaut surprise video leaves pupils starstruck"
     },
+    "e203ddb1634ad990955e5308ff46c867e6ef0287815dcf06b40c1c68cfbc8780": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
     "e20cf5e31880fcb846805d57ff5f4fbb271c159d44a43d2218fe3a8df19dc71d": {
       "seen_at": "2026-11-19T15:40:40.175868+00:00",
       "source": "BBC World",
@@ -18648,6 +18826,11 @@
       "source_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOeGhYWFhIdFdCRnFmd2FTQUFrRjZSUHo0VldwQVpfY2xwNWtUVjFJQlp5UEdZTnZUYjRXSy1sdkFOVFVVaXlLbFk2TnZPcE4xcmlpS3c3T1lpWTdXY1JWNko0cjhRTTR4NnJ3dENVd090NzB3TF9HNUdqX2xkLTZzbjNXRW1KTXFISkdVUUk2ejdJRGV6STZhN010aEtqTlpP?oc=5",
       "status": "draft",
       "title": "Pope Leo leaves hospital after lung cancer operation - The Washington Post"
+    },
+    "e82d380a21676abe5ff25db7a7d4abdc30e282b1f13dccdd0e842ac69f8429af": {
+      "seen_at": "2026-11-21T23:11:19.093182+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
     },
     "e8602edea19ee0dce7c4f25c5a771bba306568638fe787500c06ee5e49e5cb2e": {
       "created_at": "2026-10-14T18:47:56.856276+00:00",
