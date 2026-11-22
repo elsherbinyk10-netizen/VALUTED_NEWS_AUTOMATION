@@ -382,7 +382,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-22T15:43:46.413490+00:00",
+      "restore_attempted_at": "2026-11-22T23:36:47.235836+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669522559213",
@@ -888,6 +888,11 @@
     "0b26e0c016c7e981a62668becc45790e1b32d1ac24f45f73605a641b97c4f7f7": {
       "seen_at": "2026-11-13T23:30:17.556858+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "0b289d41d6e24f316d57f7e0c36cd19c90ff359316db1302d484bccb2540e7bf": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "NPR Business",
       "status": "skipped_stale"
     },
     "0b28be7298fc2a3b734a6a9fe4361615be5c35b8e5c5b40e226bca726ad96426": {
@@ -3277,6 +3282,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "28b35cb3d8833b3ee835c26d1c59f48f56ebab95f5238f370b913da5fe4aba1a": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "28dee48124e645dc1b4b863551b5c8d82db8d0801491d607fd76f47e4f5922aa": {
       "created_at": "2026-10-23T12:47:40.686991+00:00",
       "has_embedded_video": true,
@@ -4053,6 +4063,11 @@
     "329a33b3e560dea053b20cf87d73c40f8c605d4fc2e589453a4f0df541f3691b": {
       "seen_at": "2026-10-11T19:53:31.030806+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "329f75fde5afedc310db73d0741099f70b4077f336aff7bd37b967c17691a518": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "32b37ac6f0f1162d352a81a2b0faf94b33669ccf9acbaf5ad4660778cc2f9656": {
@@ -5632,6 +5647,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "461272fa19c963ba68b5b031d5903e58cf70b1dbb992eb8c236c546e83d32c8f": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "4622d2787fa68d19a67d8fe06e79ce059eb023a66e9409980c5270acb7a4317b": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
       "source": "The Guardian Culture",
@@ -6449,6 +6469,11 @@
     "5181c44ebc2e6416a63eba8c44150feb0906ec7f75de87d748f812a392793111": {
       "seen_at": "2026-11-02T13:11:57.143285+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "51823041dbdc3f1d92453c4479e733ac65c344197fe705c9b117171037440e60": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "NPR Business",
       "status": "skipped_stale"
     },
     "51a3db3f0996c5717be9cd9d995d5ace249a7c4e813106ddcdf4fab27f873e2f": {
@@ -10394,6 +10419,11 @@
       "status": "published",
       "title": "Russell Brand found guilty of rape and sexual assault"
     },
+    "81231055e0a0be4281ba98ecc9fbd50a6eeedc1871e23d621315ce691d9f62e0": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "815730ca205ba1083cd44c6553e28dd53b2eef1819ec9c2885a41c38ad06b586": {
       "seen_at": "2026-11-20T01:27:43.321254+00:00",
       "source": "BBC World",
@@ -11374,6 +11404,11 @@
     "8bd2558ebeb2f73698e1b818d316c0d8d27afe382c0bbefb0b77a1982fa1c52a": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "8bd28aa954d3604bf83d4edec3ab0e7cc1f7d07505184cc0b5683cbce3fb104d": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "8c194b6e16ec3131909cbad06e51a829a2acebf485da5a256bdf3d14c98299d0": {
@@ -12699,6 +12734,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "9bc8a6e38b5a853ede9b2e4d8d71371aafc6b8c18242228c8a6352ad66eee93d": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "9be4da8e39c7fd84c348089fe5a5c21e769f8877a5d07cd533d190193810d88d": {
       "seen_at": "2026-11-09T07:31:55.827789+00:00",
       "source": "Variety Music",
@@ -12830,6 +12870,11 @@
     "9d66547f431bb5a6b36364ed7fdb6fdcf47b9a5c6a749ae3968bcd4f94ccc31c": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "9d73a58cb838c3e8b54bc7070c02ed70fa826e3c5861d858d6462b359ff0d338": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "9d74394428aff34b1b63526b3bd499b49e89f9b7871731de2ff0278f7ceeb975": {
@@ -14221,6 +14266,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "af47ee0d34111d8389b6305fe357f7a86928c949433db2cc11334d8e6981ffb7": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "af527f7f1e4eb5e66e83d64005c9278a7c18c6b512271bf2cf5ef324a60b4747": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Technology",
@@ -14414,6 +14464,11 @@
     "b1ec56d4f3bf48b64460b777428a80c0412ff056264565b0c6b2a1ecfe8f8768": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "b1f71ecf5401624c5404002b38357588405fc03166bc06342d4abbb1e3d609ba": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "b1fd16c8275afd9693b3c470caf615ad16328e09213dfdd09e647ddb7c6e9bbb": {
@@ -15489,6 +15544,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "bdbb801d5b8cbaebc5123b45b006f8ff51adcf6fbe6accb1e4f94a7ea168105b": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "bdd83401d77b6e3f91005e39329be9d4279961f96c05f6d66294a5a5171ce246": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Billboard Pro Music Business",
@@ -15758,6 +15818,11 @@
     "c04125a7c90a499a16c2e5def9242b89fdadd401f0ba5adf354a4d86845f72fa": {
       "seen_at": "2026-11-01T12:54:22.780534+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "c04736f66c046ddc6f35905c1ae8a3a82d82a7d1fee52f283f0385f93a5b9f7c": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "c05d5fb1f0463660e0f1ffbc90b73431a7e882346980fb511e4a0aabe33100c7": {
@@ -16182,6 +16247,11 @@
     "c51c712d07df2f4261b908ce79ebdbdee53442215b117eb45a5d527d88334d89": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "c520d2a1ddb57e76c867a9ef0ce426eb5354f0cf1aeef26094c1fa7735e5424f": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "c5350b600e30be7c325c67b4a663163325a79ef5eca68f8bc3ee424219e4556b": {
@@ -16727,6 +16797,11 @@
     "cbaf37ad257bc4769e94128e409ac06d54c6bafc8082159da51d6ff6c0efb307": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "cbe100ea1806b07541f92df76dc1052f08e0d757071b2b9a7866c0946c2601dc": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "cc01790517156830ad0f1f530eab4f87a5d055b55dc2a35c485ea3287257ff32": {
@@ -17547,6 +17622,11 @@
     "d573eb1805cab5c46b16a2a16cad18f5c1c5ea1d2ca485874375ce68e5b915dd": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "d57730fd271415f097a3402f8e1767b8aad931afb4fe52cc3d77d2691b76db24": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "d57bd6600ec1ddf5f9b90fb610dd5439054ff3a640c8b28a8d8baa64359a86df": {
@@ -18872,6 +18952,19 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "e4dc3fa8f4ea0ce67434f82c4bccd5c668d93c62806d9904d3aa911a6eab554c": {
+      "created_at": "2026-11-22T23:35:09.678949+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-22T23:36:47.235836+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669529145581",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "COP31 fails to reach major climate deal as talks expose deep divisions"
+    },
     "e4e6fe1eb25c6234ecfc804c52e854db55e46878772afec66e52f9037f00cbb2": {
       "seen_at": "2026-11-20T23:58:21.164284+00:00",
       "source": "The Guardian Technology",
@@ -19850,6 +19943,11 @@
       "source": "The Guardian Sport",
       "status": "skipped_stale"
     },
+    "f09caa55001952db3f6ac0c303be0747af7e2d20732dc4209264ba22dfc62bea": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "f0a84d9b86bbe8d8b91153bd21b36d7b61f63603591bbd29e587358b7d51d9b2": {
       "seen_at": "2026-11-03T11:36:05.892944+00:00",
       "source": "Google News Technology",
@@ -20216,6 +20314,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "f46ca9a79cba57f0c3899c4a9e87cd4c818e129c8bff40fcea880f10833a6367": {
+      "seen_at": "2026-11-22T23:35:09.678949+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "f4753496c4043462714f45e2ba05b351697681b7ae644762bc91b94954a01b1f": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "BBC Business",
@@ -20329,7 +20432,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-22T15:43:46.413490+00:00",
+      "restore_attempted_at": "2026-11-22T23:36:47.235836+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669527736557",
