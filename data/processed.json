@@ -382,7 +382,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-22T14:31:15.656939+00:00",
+      "restore_attempted_at": "2026-11-22T15:43:46.413490+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669522559213",
@@ -1049,6 +1049,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/ckd6d2l3dz4xo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Kenya pastor accused of ordering parents to starve their children to death faces verdict"
+    },
+    "0d418a2b85489d76d8e2a15107a19ceb067d45ef19c959996428b98786ef1e26": {
+      "seen_at": "2026-11-22T15:42:53.911024+00:00",
+      "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
     },
     "0d485e0dfc8d69ca83636983a47bd92cb7a424b097b2fd243ee7efc1da523a02": {
       "seen_at": "2026-11-22T14:29:58.270998+00:00",
@@ -6849,6 +6854,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "56e333c8187b42fb7985e2c38a8d0577d8cd486fc7a736db3597ce60ab55c45a": {
+      "seen_at": "2026-11-22T15:42:53.911024+00:00",
+      "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
     "56fcc685ac2dfe168991d96592f94b56e3b2f5f4f54c697f9c791e44ae86eaad": {
       "created_at": "2026-10-17T06:08:06.057590+00:00",
       "has_embedded_video": false,
@@ -7772,6 +7782,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "628c65d2aca9721bf0ba5fa0f008c43439b848e797d38681ed281533380d18bb": {
+      "seen_at": "2026-11-22T15:42:53.911024+00:00",
+      "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
     "628da26915880cc72596cd02de570b901556d01a7c07e89ba7ad70aaf111bff5": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Technology",
@@ -8649,6 +8664,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "6cdcd0899ee37d521a917a4d5b999982dda39ddfa7cb558e82a24c6bfb4b57d5": {
+      "seen_at": "2026-11-22T15:42:53.911024+00:00",
+      "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
     "6ce54feb62955b2bd569bb18fc37256ec312d44c622575e8511a708f25301483": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "Google News Science",
@@ -9129,7 +9149,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Rolling Stone Music News",
-      "restore_attempted_at": "2026-11-21T14:37:32.223706+00:00",
+      "restore_attempted_at": "2026-11-22T15:43:46.413490+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669521871085",
@@ -13513,7 +13533,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Science and Environment",
-      "restore_attempted_at": "2026-11-21T15:41:49.099436+00:00",
+      "restore_attempted_at": "2026-11-22T15:43:46.413490+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669464494317",
@@ -18786,7 +18806,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Rolling Stone Music News",
-      "restore_attempted_at": "2026-11-21T15:41:49.099436+00:00",
+      "restore_attempted_at": "2026-11-22T15:43:46.413490+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669464527085",
@@ -20309,7 +20329,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-22T14:31:15.656939+00:00",
+      "restore_attempted_at": "2026-11-22T15:43:46.413490+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669527736557",
@@ -20400,6 +20420,11 @@
     "f73179a3b9b2a7a94cbcf91fedc6e5ac3f92aa2e57300391b3de868e98383c0f": {
       "seen_at": "2026-10-28T06:58:10.773401+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "f75515bab2368ba2244b65039b5df25bc30a02c4341e2707cd78af3c766462ac": {
+      "seen_at": "2026-11-22T15:42:53.911024+00:00",
+      "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
     },
     "f75fe93c884c9732472a3a843baa88d5f233e3ed7f6a1596b5f2dc4e1ca92952": {
@@ -21045,7 +21070,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-21T15:41:49.099436+00:00",
+      "restore_attempted_at": "2026-11-22T15:43:46.413490+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669464428781",
