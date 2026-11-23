@@ -387,7 +387,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-23T18:01:08.243190+00:00",
+      "restore_attempted_at": "2026-11-23T19:32:13.129102+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669522559213",
@@ -2859,6 +2859,11 @@
       "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQazI1VEs4Znc2ZFNraUhjbGs0NnFPc2o0MlVJV2NMdDd3a1oxLTh0d05JOU1MQ1JNV0hJc1dSOEhYcEYyRG5vanQwdTlUbTk0WTZQQm9LQnpLTHg1VDg1aXVyRUJoYkFfZGVtYVFaTzd4TGNERmFocU5qX3oxQU1LdXBfWVNYd0J2WXdxZGZWeFN5QzhWeUpRbFlKX19laG81aW5tN0liVUY?oc=5",
       "status": "published",
       "title": "Brush fires trigger evacuations in Los Angeles, Orange counties amid Santa Ana winds across SoCal - ABC7 Los Angeles"
+    },
+    "232c6748d5ebcf90a115abf090efe66222228b27165e6fdb1f67bf8683000322": {
+      "seen_at": "2026-11-23T19:30:42.354106+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
     },
     "2335cf9411b5bed636681d996c3bce98a3393b71b69c7aa3e387473aac848db8": {
       "seen_at": "2026-11-20T00:35:18.911518+00:00",
@@ -12469,6 +12474,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "9681545d43c7a6e03e1975ef98ebf0f69ec939a8578bcb00a3e7ef3a1e9c50b6": {
+      "seen_at": "2026-11-23T19:30:42.354106+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "96837e201fa5d9edea2ab12bb97278897f338ad014d629f6632dfd64b2e16dd4": {
       "seen_at": "2026-10-18T12:53:00.593654+00:00",
       "source": "Google News Science",
@@ -16959,6 +16969,19 @@
       "source": "The Guardian Business",
       "status": "skipped_stale"
     },
+    "cb29a20e38ef835b166a4d395353ae86504ae35fb2f596a0ef1919dcacfac8d4": {
+      "created_at": "2026-11-23T19:30:42.354106+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-23T19:32:13.129102+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669550379245",
+      "source_url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Russian warship hit by Ukrainian drones in Libya, Zelensky says"
+    },
     "cb414429a60fc27c5756924a6c3d01ae9042ddf9abc15feb1b4e9d4488176ae6": {
       "seen_at": "2026-10-18T12:53:00.593654+00:00",
       "source": "Google News World",
@@ -17017,6 +17040,11 @@
       "source_url": "https://www.bbc.co.uk/news/videos/cmy56nzd6y69o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Who are the Houthis, and why are they so hard to fight?"
+    },
+    "cc5e8f65eaaca95a6325d110ef9a771637269515c3403de933e712bae836bfe4": {
+      "seen_at": "2026-11-23T19:30:42.354106+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
     },
     "cc639461fc851fb44ce6a4f664c2d1af7782f5f269337d7b394d57c4973f8213": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
@@ -18392,6 +18420,11 @@
       "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
+    "dc62efa3e552133449f101e22e3b7b4709f5a44588babeae69ea72169c9d44d7": {
+      "seen_at": "2026-11-23T19:30:42.354106+00:00",
+      "source": "The Guardian Business",
+      "status": "skipped_stale"
+    },
     "dc6721115e7b80c6009ca2ca155a8ba81e5110b1c144404fa06796db737a38c5": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Billboard Pro Music Business",
@@ -19673,6 +19706,11 @@
       "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
+    "ea9526b5723a2b32cbc4599a87c25f370a7ce09bf92db072e9f2667d83f2367b": {
+      "seen_at": "2026-11-23T19:30:42.354106+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "eabcd42a819b6b051dc4a597dfd61ae097b64a6e57b451b00e7447419c0c0744": {
       "created_at": "2026-10-15T06:49:10.880730+00:00",
       "has_publisher_artwork": true,
@@ -20642,7 +20680,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-23T18:01:08.243190+00:00",
+      "restore_attempted_at": "2026-11-23T19:32:13.129102+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669527736557",
