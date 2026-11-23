@@ -223,3 +223,4 @@ jobs:
           done
           echo "Unable to push merged processing state after 3 attempts."
           exit 1
+# 2026-11-23 guarded same-day retry: recheck fresh RSS and verified publisher videos without weakening media gates.
