@@ -382,7 +382,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-22T23:36:47.235836+00:00",
+      "restore_attempted_at": "2026-11-23T00:31:34.040294+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669522559213",
@@ -1249,6 +1249,11 @@
       "source_url": "https://www.theguardian.com/australia-news/2026/nov/04/canva-layoffs-job-cuts-restructure",
       "status": "published",
       "title": "Canva layoffs: design giant to cut or relocate more than 1,200 jobs in major restructure"
+    },
+    "0f1499d4e2cc6a1f7201b2fcdbc76d112e8a9791aa457e24ea7973f7986a4de4": {
+      "seen_at": "2026-11-23T00:30:03.310923+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
     },
     "0f51a66c73a0f411bb0d37a8da874ce1f0f3d4e893d90eb1fb07b60574be99e6": {
       "created_at": "2026-11-03T16:31:36.882369+00:00",
@@ -5767,6 +5772,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "482148d540b9baa130eb9c67490c6106235fcf7c4d3b47f6b5ce12ea4744f8d9": {
+      "seen_at": "2026-11-23T00:30:03.310923+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "484cc01c1854e70036127f0e254ed36ee41943ffce51f5c5b6eb550dbdfeb858": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "Google News Health",
@@ -7095,6 +7105,11 @@
     "59aadab4505a9d9c6d35e4209ad9a6b316afe76fe73c167bae275c44a60b8082": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
+    "59cd0acb4f26f3f08a6d824880cf3e7c2a8e10f3e68a581c0a8c96c481c97eec": {
+      "seen_at": "2026-11-23T00:30:03.310923+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "59d35bd98e0729bd173c9d2e43c481111d83442488511a722c2ef74e49e55de5": {
@@ -10321,6 +10336,11 @@
       "status": "published",
       "title": "NASA Awards Moon Base Transportation, Technology, Science Projects"
     },
+    "7fdcb21b496aa9f8af78af7ceeb4a2c25af383d750015e078bade9fc00eb9e75": {
+      "seen_at": "2026-11-23T00:30:03.310923+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "7ff7d4f7546961ea09571028698512fc9c7c060f44629296913763f4683485a8": {
       "seen_at": "2026-11-11T14:14:28.111405+00:00",
       "source": "The Guardian Culture",
@@ -13227,6 +13247,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "a21c293310493f3d268d964709f83006e20f0b465e6db803a7892ef490c2c09b": {
+      "seen_at": "2026-11-23T00:30:03.310923+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "a23b3fa109d489462de6fb92808a975b901ad8f793b7d11037fcba3e9fff002d": {
       "seen_at": "2026-11-13T23:30:17.556858+00:00",
       "source": "The Guardian Environment",
@@ -13435,6 +13460,11 @@
     "a4db15e2b4ef120fafee883d5814b06faaf0659e8d1609ad86a54ee2a2f82038": {
       "seen_at": "2026-11-15T13:53:13.942811+00:00",
       "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
+    "a4eeca19666ee1344b25e3e1f0e8c41f3b9ecd4c32e7c560ca1120e1865d1e70": {
+      "seen_at": "2026-11-23T00:30:03.310923+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "a4f6937820a5b749e9a4e308bec439d0d71aae957af195bef49b1287064b34e3": {
@@ -20432,7 +20462,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-22T23:36:47.235836+00:00",
+      "restore_attempted_at": "2026-11-23T00:31:34.040294+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669527736557",
