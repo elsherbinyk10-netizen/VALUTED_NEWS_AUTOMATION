@@ -387,7 +387,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-23T17:13:12.171909+00:00",
+      "restore_attempted_at": "2026-11-23T18:01:08.243190+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669522559213",
@@ -1957,6 +1957,19 @@
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Culture",
       "status": "skipped_stale"
+    },
+    "17eac4eb1153e4b4030a3cfd87bc67d78c4fc3fd5d9870fe7fabeb9318375bf2": {
+      "created_at": "2026-11-23T17:59:28.827973+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "restore_attempted_at": "2026-11-23T18:01:08.243190+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669549592813",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckr5g8edl94eo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Faisal Islam: Why Jensen Huang proved too big to fire"
     },
     "183e669d93df89be7f7e5115fe8b0a75e4373b4b78d15c5146d91717c5b10c81": {
       "seen_at": "2026-11-03T07:14:01.426928+00:00",
@@ -20629,7 +20642,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-23T17:13:12.171909+00:00",
+      "restore_attempted_at": "2026-11-23T18:01:08.243190+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669527736557",
