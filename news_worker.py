@@ -1338,8 +1338,20 @@ def main():
 
     for config in feeds:
         name, url, category = config["name"], config["url"], config["category"]
+        # Aggregator feeds are not publishable sources and their entries are
+        # intentionally discarded below. Skip the network request entirely;
+        # trend discovery is handled independently by fetch_google_trends_signals().
+        if "google news" in name.lower():
+            logging.info("Skipping discovery-only aggregator feed: %s", name)
+            continue
         try:
-            parsed = feedparser.parse(url)
+            response = requests.get(
+                url,
+                headers={"User-Agent": "VALUTED-NEWS-RSS-Bot/1.0", "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml"},
+                timeout=(4, 12),
+            )
+            response.raise_for_status()
+            parsed = feedparser.parse(response.content)
             if parsed.bozo and not parsed.entries:
                 logging.warning("Feed unavailable: %s (%s)", name, parsed.bozo_exception)
                 continue
@@ -1347,8 +1359,6 @@ def main():
                 # Google News aggregator feeds are discovery signals only, never the
                 # attributed source for a published story. Publish only direct URLs from
                 # the explicitly approved publisher set below.
-                if "google news" in name.lower():
-                    continue
                 title = clean_text(entry.get("title", ""))
                 source_url = canonical_url(entry.get("link", ""))
                 if not title or not source_url:
