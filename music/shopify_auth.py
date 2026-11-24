@@ -25,7 +25,7 @@ def main() -> None:
     client_id = os.environ.get("SHOPIFY_CLIENT_ID", "").strip()
     client_secret = os.environ.get("SHOPIFY_CLIENT_SECRET", "").strip()
 
-    if not re.fullmatch(r"[a-z0-9][a-z0-9-]*\.myshopify\.com", domain):
+    if not re.fullmatch(r"[a-z0-9][a-z0-9-]*\\.myshopify\\.com", domain):
         fail("SHOPIFY_ADMIN_DOMAIN must be a valid *.myshopify.com host.")
     if not client_id or not client_secret:
         fail("Set SHOPIFY_CLIENT_ID and SHOPIFY_CLIENT_SECRET in the environment.")
@@ -55,21 +55,21 @@ def main() -> None:
         fail("Shopify returned an unreadable token response.")
 
     token = data.get("access_token")
-    scopes = set((data.get("scope") or "").split(","))
-    required = {"read_content", "write_content"}
-    missing = required - scopes
+    scopes = {scope.strip() for scope in (data.get("scope") or "").split(",") if scope.strip()}
+    # Shopify's content write scope includes the read capability; the token
+    # response may therefore list write_content without a separate read_content.
     if not isinstance(token, str) or not token:
         fail("Shopify response did not contain an access token.")
-    if missing:
-        fail("The installed app is missing required scopes: " + ", ".join(sorted(missing)))
+    if "write_content" not in scopes:
+        fail("The installed app is missing the required write_content scope.")
 
     github_env = os.environ.get("GITHUB_ENV")
     if not github_env:
         fail("GITHUB_ENV is not set. Run this helper inside a GitHub Actions step.")
     with open(github_env, "a", encoding="utf-8") as env_file:
-        env_file.write(f"SHOPIFY_ADMIN_ACCESS_TOKEN={token}\n")
+        env_file.write(f"SHOPIFY_ADMIN_ACCESS_TOKEN={token}\\n")
     print("Shopify authentication succeeded; a short-lived token is ready for the next workflow step.")
-    print(f"Granted content scopes verified: {', '.join(sorted(required))}.")
+    print("Granted content scope verified: write_content (includes content read access).")
     print(f"Token lifetime reported by Shopify: {data.get('expires_in', 'not supplied')} seconds.")
 
 
