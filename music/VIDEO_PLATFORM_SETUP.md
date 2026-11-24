@@ -32,21 +32,27 @@ Required Actions variable:
 
 The workflow schedule is 9:00 PM Cairo (19:00 UTC), maximum five videos/run, maximum age 72 hours. Scheduled runs are discovery-only dry runs. Manual dispatch has a publish checkbox that defaults off.
 
-## 2. Music catalogue expansion
+## 2. Music-news editorial workflow
+Workflow: .github/workflows/valuted-music-daily.yml
+Worker: music/worker.py
+
+The existing RSS-based music-news workflow remains separate from the official-video and catalogue modules. It uses the Music-only Shopify credentials and OPENAI_API_KEY. It is scheduled daily at 9:00 PM Cairo, up to five recent source-attributed stories, and now runs in dry-run mode by default. Manual dispatch has a publish checkbox that defaults off.
+
+## 3. Music catalogue expansion
 Workflow: .github/workflows/valuted-music-catalog-daily.yml
 Worker: music/catalog_worker.py
 
 Uses the public MusicBrainz search API to discover artist, album/release-group and recording metadata, with source links and stable MBID tags. Maximum 15 entries per run. It does not create invented video links, audio streams or claims of music rights. Scheduled runs are dry-run by default; a manual dispatch can explicitly enable publishing.
 
-## 3. VALUTED Radar — no recognition API
+## 4. VALUTED Radar — no recognition API
 App: music/radar-browser/
 
 Radar performs microphone capture or audio-file upload, audio decoding, fingerprint generation and matching entirely in the browser. It uses no AudD, AcoustID, Shazam, Spotify, Apple Music or other recognition API; no VPS or recognition backend is required. A static HTTPS host serves the app and shared JSON fingerprint catalogue only.
 
 The shared library.json starts empty. The owner must create fingerprints from audio they are authorized to process, export the JSON catalogue and publish the reviewed catalogue. Radar recognizes only tracks in that library; it is not a worldwide music database, does not recognize humming/singing and remains experimental pending iOS Safari and noisy-recording tests.
 
-## 4. Theme and launch boundary
+## 5. Theme and launch boundary
 The static Radar app still needs to be hosted and embedded in a duplicate/unpublished Shopify theme. No live theme, navigation, domain or storefront changes are part of this automation build. Do not publish a theme without separate explicit approval.
 
-## 5. Credentials and activation
+## 6. Credentials and activation
 Never store credentials in source code. Configure the Music-only GitHub secrets/variable above. The draft PR is not merged; its schedules are not active on the default branch. Keep automatic publishing off until dry-run candidates, credentials, tests and a manual publish test have all passed.
