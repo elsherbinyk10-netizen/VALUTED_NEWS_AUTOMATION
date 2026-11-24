@@ -44,3 +44,27 @@ class MusicVideoWorkerTests(unittest.TestCase):
         self.assertIn("description_tag",keys)
 
 if __name__=="__main__": unittest.main()
+
+
+class ExistingVideoSeoRetrofitTests(unittest.TestCase):
+    def test_extract_youtube_embed_id(self):
+        from music.video_seo_audit import video_id_from_body
+        self.assertEqual(video_id_from_body('<iframe src="https://www.youtube-nocookie.com/embed/abcdefghijk"></iframe>'),"abcdefghijk")
+        self.assertEqual(video_id_from_body('<a href="https://www.youtube.com/watch?v=abcdefghijk">Watch</a>'),"abcdefghijk")
+        self.assertIsNone(video_id_from_body('<iframe src="https://example.com/embed/abcdefghijk"></iframe>'))
+
+    def test_page_seo_adds_schema_and_correct_video_kind(self):
+        from music.video_seo_audit import page_seo
+        article={"handle":"artist-song","body":"<p>Existing editorial copy</p>"}
+        video={"id":"abcdefghijk","title":"Artist - Song (Official Lyrics Video)",
+          "description":"Official lyrics video release with verified source information and credits.",
+          "channel":"Official Label","published":"2026-11-24T10:00:00Z",
+          "duration":"PT3M20S","thumbnail":"https://i.ytimg.com/vi/abcdefghijk/hqdefault.jpg",
+          "embed":"https://www.youtube-nocookie.com/embed/abcdefghijk",
+          "watch":"https://www.youtube.com/watch?v=abcdefghijk"}
+        body,metafields=page_seo(article,video)
+        self.assertIn("VideoObject",body)
+        self.assertIn("Watch the official lyrics video",body)
+        self.assertIn("youtube-nocookie.com/embed/abcdefghijk",body)
+        keys={x["key"] for x in metafields}
+        self.assertTrue({"title_tag","description_tag","video_id","video_thumbnail","video_upload_date","video_duration"}.issubset(keys))
