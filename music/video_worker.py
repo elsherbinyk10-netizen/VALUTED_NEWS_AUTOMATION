@@ -100,6 +100,30 @@ def verify_embed(url):
     except requests.RequestException:
         return False
 
+def public_player_duration(page, expected_video_id, expected_channel_id):
+    """Return duration only when YouTube's public player confirms the exact public video and channel."""
+    match=re.search(r"ytInitialPlayerResponse\\s*=\\s*(\\{.*?\\})\\s*;",page or "",re.S)
+    if not match:
+        return 0
+    try:
+        player=json.loads(match.group(1))
+    except (TypeError,ValueError):
+        return 0
+    details=player.get("videoDetails") or {}
+    status=(player.get("playabilityStatus") or {}).get("status")
+    if status!="OK" or details.get("videoId")!=expected_video_id:
+        return 0
+    if details.get("channelId")!=expected_channel_id or details.get("isPrivate") is True:
+        return 0
+    if details.get("isLiveContent") is True:
+        return 0
+    try:
+        duration=int(details.get("lengthSeconds") or 0)
+    except (TypeError,ValueError):
+        return 0
+    return duration if duration>=60 else 0
+
+
 def is_official_music_video(title,description="",duration=""):
     title=html.unescape(title or "").strip()
     description=html.unescape(description or "").strip()
@@ -127,6 +151,12 @@ def collect(channels,now=None):
             if not kind:continue
             watch=f"https://www.youtube.com/watch?v={vid}"
             try:
+                watch_page=SESSION.get(watch,timeout=20,headers={"User-Agent":"Mozilla/5.0"})
+                watch_page.raise_for_status()
+                duration=public_player_duration(watch_page.text,vid,channel["channel_id"])
+                if not duration:
+                    log(f"HOLD video {vid}: public player did not confirm a full-length public upload from the allowlisted channel")
+                    continue
                 response=SESSION.get("https://www.youtube.com/oembed",
                     params={"url":watch,"format":"json"},timeout=20)
                 response.raise_for_status()
@@ -134,6 +164,9 @@ def collect(channels,now=None):
                 thumbnail=meta.get("thumbnail_url","")
                 if not meta.get("title") or not meta.get("author_name"):continue
                 if html.unescape(meta.get("title","")).strip()!=title:continue
+                if not is_official_music_video(title,entry.get("summary",""),f"PT{duration}S"):
+                    log(f"HOLD video {vid}: title or duration did not pass the official full-length video gate")
+                    continue
                 if not verify_thumbnail(thumbnail):continue
                 embed_url=f"https://www.youtube-nocookie.com/embed/{vid}"
                 if not verify_embed(embed_url):
@@ -144,7 +177,8 @@ def collect(channels,now=None):
                     "description":BeautifulSoup(entry.get("summary",""),"html.parser").get_text(" ",strip=True)[:1800],
                     "channel_id":channel["channel_id"],"channel_title":meta["author_name"][:255],
                     "thumbnail":thumbnail,"published":published,"embed_url":embed_url,
-                    "watch_url":watch,"video_type":kind,"verification":"allowlisted RSS + oEmbed + reachable image + player endpoint"})
+                    "watch_url":watch,"video_type":kind,"duration":f"PT{duration}S",
+                    "verification":"allowlisted channel RSS + public player channel/id/duration check + oEmbed + reachable image + embed endpoint"})
             except Exception as error:
                 log(f"HOLD video {vid}: no-key metadata check failed ({error})")
     return sorted(results,key=lambda x:x["published"],reverse=True)
@@ -175,6 +209,7 @@ def build_article(video):
     schema={"@context":"https://schema.org","@type":"VideoObject","name":video["title"],
       "description":description[:1000],"thumbnailUrl":[video["thumbnail"]],
       "uploadDate":video["published"].date().isoformat(),
+      "duration":video.get("duration"),
       "embedUrl":video["embed_url"],"publisher":{"@type":"Organization","name":video["channel_title"]},
       "mainEntityOfPage":canonical}
     schema_json=json.dumps(schema,ensure_ascii=False,separators=(",",":")).replace("<","\\u003c")
@@ -195,6 +230,7 @@ def build_article(video):
       {"namespace":"custom","key":"video_thumbnail","type":"url","value":video["thumbnail"]},
       {"namespace":"custom","key":"video_channel","type":"single_line_text_field","value":video["channel_title"][:255]},
       {"namespace":"custom","key":"video_upload_date","type":"date_time","value":video["published"].isoformat()},
+      {"namespace":"custom","key":"video_duration","type":"single_line_text_field","value":video.get("duration","")},
       {"namespace":"custom","key":"video_description","type":"single_line_text_field","value":description[:255]}]
     return {"author":{"name":"VALUTED MUSIC Video Desk"},"title":video["title"][:255],
       "handle":handle,"body":body,"summary":summary,
@@ -212,7 +248,7 @@ def create_draft(blog_id,video):
     result=gql(mutation,{"article":dict(build_article(video),blogId=blog_id)})["articleCreate"]
     if result["userErrors"]:raise RuntimeError("Shopify article creation rejected: "+json.dumps(result["userErrors"]))
     created=result["article"]
-    expected={"video_id","video_embed_url","video_thumbnail","video_channel","video_upload_date","video_description","title_tag","description_tag"}
+    expected={"video_id","video_embed_url","video_thumbnail","video_channel","video_upload_date","video_duration","video_description","title_tag","description_tag"}
     actual={e["node"]["key"] for e in created["metafields"]["edges"]}
     if not expected.issubset(actual) or not created.get("image") or created.get("isPublished") is not True:
         raise RuntimeError(f"Article {created['id']} failed image/metadata/published verification.")
