@@ -1,7 +1,13 @@
 import unittest
 from unittest.mock import Mock, patch
 
-from official_channel_video import (fetch_official_channel_video, _publisher_channel,\n                                     _CHANNEL_ID_CACHE, _CHANNEL_FEED_CACHE, _PLAYABLE_VIDEO_CACHE)
+from official_channel_video import (
+    fetch_official_channel_video,
+    _publisher_channel,
+    _CHANNEL_ID_CACHE,
+    _CHANNEL_FEED_CACHE,
+    _PLAYABLE_VIDEO_CACHE,
+)
 
 
 class OfficialChannelVideoTests(unittest.TestCase):
