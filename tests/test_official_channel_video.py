@@ -10,6 +10,12 @@ class OfficialChannelVideoTests(unittest.TestCase):
                          ("BBC News", "UC16niRr50-MSBwiO3YDb3RA"))
         self.assertEqual(_publisher_channel("https://www.nasa.gov/news/story"),
                          ("NASA", "UCLA_DiR1FfKNvjuUpBHmylQ"))
+        self.assertEqual(_publisher_channel("https://www.npr.org/2026/11/24/story"),
+                         ("NPR", "UCJnS2EsPfv46u1JR8cnD0NA"))
+        self.assertEqual(_publisher_channel("https://www.billboard.com/pro/story"),
+                         ("Billboard", "UCsVcseUYbYjldc-XgcsiEbg"))
+        self.assertEqual(_publisher_channel("https://www.rollingstone.com/music/story"),
+                         ("Rolling Stone", "UC-JblcinswY50lrUdSaRNEg"))
         self.assertIsNone(_publisher_channel("https://example.com/story"))
 
     @patch("official_channel_video.requests.get")
