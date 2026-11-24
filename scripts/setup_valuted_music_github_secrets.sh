@@ -40,21 +40,8 @@ set_secret() {
 
 set_secret "VALUTED_MUSIC_SHOPIFY_CLIENT_ID" "Paste Shopify Client ID"
 set_secret "VALUTED_MUSIC_SHOPIFY_CLIENT_SECRET" "Paste Shopify Client Secret"
-set_secret "VALUTED_MUSIC_YOUTUBE_DATA_API_KEY" "Paste Google YouTube Data API key"
-
 echo
-echo "The Music News workflow also needs OPENAI_API_KEY."
-echo "OpenAI API usage is billed separately from a ChatGPT subscription."
-read -r -s -p "Paste OpenAI API key (press Enter to skip): " openai_key
-printf '\n'
-if [[ -n "$openai_key" ]]; then
-  printf '%s' "$openai_key" | gh secret set "OPENAI_API_KEY" --repo "$REPO"
-  echo "Saved secret: OPENAI_API_KEY"
-else
-  echo "Skipped OPENAI_API_KEY. Daily Music News will not run successfully until it is added."
-fi
-unset openai_key
-
+echo
 gh variable set "VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN" --repo "$REPO" --body "$SHOP_DOMAIN"
 echo "Saved repository variable: VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN"
 
