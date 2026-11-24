@@ -8,7 +8,7 @@ This project is isolated to the Shopify store VALUTED MUSIC (valutedmusic.site),
 - **VALUTED Radar:** browser-only microphone/upload fingerprint matching. No recognition API, server, VPS, or external audio service. It only matches recordings already indexed in the owner's local/shared fingerprint library.
 
 ## Safety defaults
-- All scheduled Music content workflows (music news, official videos and catalogue discovery) run in dry-run mode by default.
+- Scheduled workflows publish automatically only from the Music-only GitHub secrets after their release configuration is complete. Manual dispatch retains an explicit publish checkbox defaulting off.
 - Manual workflow dispatch includes an explicit publish checkbox; it defaults off.
 - Video articles are created as drafts with thumbnail and all required video metadata in the same Shopify mutation. They are published only after the draft is re-read and the image/metafields are verified.
 - Exact Shopify host, store name, primary domain and existing blog handle are checked before any write.
@@ -27,10 +27,11 @@ GitHub Actions → Settings → Secrets and variables:
 Never paste credentials into source files, issues, chat or commits. The direct Shopify publishing test already completed separately; it does not supply GitHub Actions secrets.
 
 ## Schedule and limits
-- Music-news discovery: daily 9:00 PM Cairo; up to 5 source-attributed stories/run; maximum age 36 hours.
-- Official video discovery: daily 9:00 PM Cairo; up to 5 verified videos/run; maximum age 72 hours.
-- Music catalogue discovery: daily 9:00 PM Cairo; up to 15 entries/run.
-- All three remain dry-run by default. Explicitly enable publishing only after credentials and run logs are verified.
+- Official music-video / lyrics-video / official-audio watch pages: daily 9:00 PM Cairo; up to 2 verified videos/run; maximum age 72 hours.
+- Music news: daily 9:15 PM Cairo; up to 3 source-attributed stories/run; maximum age 36 hours.
+- Editorial + video publishing ceiling: 5 new content articles/day (2 video pages + 3 news stories maximum).
+- Music catalogue: daily 9:30 PM Cairo; up to 30 artist, album and recording pages/day, tracked separately from the five editorial/video stories.
+- Scheduled runs publish automatically; manual dispatch remains opt-in. Missing credentials fail closed.
 
 ## Radar limitations
 The bundled shared library.json starts empty. Radar can identify only recordings included in a fingerprint library created from audio the owner is authorized to process. It is an experimental fingerprint matcher, not a global music database or a Shazam-equivalent. It does not identify humming or singing. Test iOS Safari, microphone permissions, noisy recordings and labeled samples before release.
