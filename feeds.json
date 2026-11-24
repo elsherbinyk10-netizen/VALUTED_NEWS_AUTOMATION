@@ -120,11 +120,6 @@
     "category": "Health"
   },
   {
-    "name": "Google News Climate",
-    "url": "https://news.google.com/rss/headlines/section/topic/CLIMATE?hl=en-US&gl=US&ceid=US:en",
-    "category": "Climate"
-  },
-  {
     "name": "The Guardian World",
     "url": "https://www.theguardian.com/world/rss",
     "category": "World"
