@@ -16,7 +16,20 @@ class OfficialChannelVideoTests(unittest.TestCase):
                          ("Billboard", "UCsVcseUYbYjldc-XgcsiEbg"))
         self.assertEqual(_publisher_channel("https://www.rollingstone.com/music/story"),
                          ("Rolling Stone", "UC-JblcinswY50lrUdSaRNEg"))
+        self.assertEqual(_publisher_channel("https://www.theguardian.com/world/story"),
+                         ("The Guardian", "@theGuardian"))
+        self.assertEqual(_publisher_channel("https://variety.com/2026/music/story"),
+                         ("Variety", "@Variety"))
         self.assertIsNone(_publisher_channel("https://example.com/story"))
+
+    @patch("official_channel_video.requests.get")
+    def test_resolves_only_the_allowlisted_handle_to_a_channel_id(self, get_mock):
+        page = Mock(ok=True, text='{"channelId":"UC1234567890123456789012"}')
+        get_mock.return_value = page
+        from official_channel_video import _resolve_channel_id, _CHANNEL_ID_CACHE
+        _CHANNEL_ID_CACHE.clear()
+        self.assertEqual(_resolve_channel_id("@theGuardian"), "UC1234567890123456789012")
+        self.assertEqual(get_mock.call_count, 1)
 
     @patch("official_channel_video.requests.get")
     def test_uses_only_channel_feed_match_and_checks_playback(self, get_mock):
