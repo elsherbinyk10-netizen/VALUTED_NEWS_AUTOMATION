@@ -26,16 +26,23 @@ def safe_diagnostic(raw: bytes, client_id: str, client_secret: str) -> str:
         payload = json.loads(raw.decode("utf-8", errors="replace"))
     except (json.JSONDecodeError, TypeError):
         return "Shopify returned a non-JSON error response."
-    value = payload.get("error") if isinstance(payload, dict) else None
-    if isinstance(value, dict):
-        value = value.get("message") or value.get("code")
-    if not isinstance(value, str):
-        value = "Shopify did not provide a recognized error code."
+    if not isinstance(payload, dict):
+        return "Shopify returned an unrecognized error response."
+    code = payload.get("error")
+    if isinstance(code, dict):
+        code = code.get("message") or code.get("code")
+    description = payload.get("error_description") or payload.get("error_description_hint")
+    if not isinstance(code, str):
+        code = "unknown_error"
+    parts = [code]
+    if isinstance(description, str) and description.strip():
+        parts.append(description.strip())
+    value = "; description=".join(parts)
     for secret in (client_id, client_secret):
         if secret:
             value = value.replace(secret, "[REDACTED]")
     value = re.sub(r"shpat_[A-Za-z0-9]+|shpca_[A-Za-z0-9]+|access_token[^,}]*", "[REDACTED]", value, flags=re.I)
-    return value[:300]
+    return value[:500]
 
 
 def main() -> None:
