@@ -1,0 +1,34 @@
+name: VALUTED MUSIC Radar — static browser app
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: valuted-music-radar-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out development branch
+        uses: actions/checkout@v4
+      - name: Check JavaScript syntax
+        run: node --check music/radar-browser/radar.js
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload static Radar app
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: music/radar-browser
+      - name: Deploy static app
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -12,9 +12,9 @@ API_VERSION = os.getenv("SHOPIFY_API_VERSION", "2026-10")
 SHOP = os.getenv("SHOPIFY_ADMIN_DOMAIN", "").strip()
 TOKEN = os.getenv("SHOPIFY_ADMIN_ACCESS_TOKEN", "")
 OPENAI_KEY = os.getenv("OPENAI_API_KEY", "")
-MAX_ARTICLES = min(5, max(0, int(os.getenv("MAX_ARTICLES_PER_RUN", "5"))))
+MAX_ARTICLES = min(5, max(0, int(os.getenv("MAX_ARTICLES_PER_RUN", "3"))))
 MAX_AGE_HOURS = int(os.getenv("MAX_AGE_HOURS", "36"))
-AUTO_PUBLISH = os.getenv("AUTO_PUBLISH", "true").lower() == "true"
+AUTO_PUBLISH = os.getenv("AUTO_PUBLISH", "false").lower() == "true"
 BLOG_HANDLE = "news"
 
 FEEDS = [
@@ -159,8 +159,9 @@ def draft_story(item):
         if any(term in text for term in terms) and tag not in tags: tags.append(tag)
     if "artist-news" not in tags and "new-releases" not in tags: tags.append("artist-news")
     handle=re.sub(r"[^a-z0-9-]+","-",result.get("handle") or title.lower()).strip("-")[:180]
-    return {"title":title,"handle":handle,"body":body,"seo_title":result.get("seo_title",title)[:70],
-        "seo_description":result.get("seo_description",result.get("summary",""))[:320],"tags":sorted(set(tags))}
+    summary=result.get("summary",result.get("seo_description","")).strip()[:240]
+    return {"title":title,"handle":handle,"body":body,"summary":summary,"seo_title":result.get("seo_title",title)[:70],
+        "seo_description":result.get("seo_description",summary)[:320],"tags":sorted(set(tags))}
 
 def existing_source(blog_id, source_url, handle=None):
     # Walk every page so older stories cannot be duplicated after the newest 100.
@@ -182,33 +183,32 @@ def existing_source(blog_id, source_url, handle=None):
 
 def publish(blog_id, item, article):
     if existing_source(blog_id,item["url"],article["handle"]):
-        log(f"DUPLICATE SKIP: {article['title']}"); return
+        log(f"DUPLICATE SKIP: {article['title']}"); return False
     if not AUTO_PUBLISH:
-        log(f"DRY RUN (AUTO_PUBLISH=false): {article['title']}"); return
-    mutation="""mutation CreateArticle($blog:ID!,$article:ArticleCreateInput!) { articleCreate(blogId:$blog,article:$article) { article { id title handle isPublished tags body seo { title description } } userErrors { field message } } }"""
-    data={"title":article["title"],"handle":article["handle"],"body":article["body"],
-        "tags":article["tags"],"isPublished":True,
-        "seo":{"title":article["seo_title"],"description":article["seo_description"]}}
-    result=gql(mutation,{"blog":blog_id,"article":data})["articleCreate"]
+        log(f"DRY RUN (AUTO_PUBLISH=false): {article['title']}"); return False
+    metafields=[
+      {"namespace":"global","key":"title_tag","type":"single_line_text_field","value":article["seo_title"][:70]},
+      {"namespace":"global","key":"description_tag","type":"single_line_text_field","value":article["seo_description"][:320]}]
+    data={"author":{"name":"VALUTED MUSIC Editorial Desk"},"blogId":blog_id,
+      "title":article["title"],"handle":article["handle"],"body":article["body"],
+      "tags":article["tags"],"summary":article.get("summary","")[:240],
+      "metafields":metafields,"isPublished":True}
+    mutation="""mutation CreateArticle($article:ArticleCreateInput!) { articleCreate(article:$article) { article { id title handle isPublished tags body metafields(first:10,namespace:"global"){edges{node{key value}}} } userErrors { field message } } }"""
+    result=gql(mutation,{"article":data})["articleCreate"]
     if result["userErrors"]: raise RuntimeError("Article write failed: "+json.dumps(result["userErrors"]))
     created=result["article"]
-    # Re-query after every write; verify all required fields against Shopify's persisted record.
-    verify="""query Verify($id:ID!) { article(id:$id) { id title handle isPublished tags body seo { title description } blog { id handle } } }"""
-    saved=gql(verify,{"id":created["id"]})["article"]
-    checks={
-        "title":saved["title"]==article["title"],
-        "handle":saved["handle"]==article["handle"],
-        "published":saved["isPublished"] is True,
-        "body":item["url"] in (saved.get("body") or ""),
-        "tags":set(article["tags"]).issubset(set(saved.get("tags") or [])),
-        "source":item["url"] in (saved.get("body") or ""),
-        "seo_title":(saved.get("seo") or {}).get("title")==article["seo_title"],
-        "seo_description":(saved.get("seo") or {}).get("description")==article["seo_description"],
-        "blog":(saved.get("blog") or {}).get("handle")==BLOG_HANDLE
-    }
+    saved=gql("""query Verify($id:ID!) { article(id:$id) { id title handle isPublished tags body blog { id handle } metafields(first:10,namespace:"global"){edges{node{key value}}} } }""",{"id":created["id"]})["article"]
+    seo={e["node"]["key"]:e["node"]["value"] for e in saved["metafields"]["edges"]}
+    checks={"title":saved["title"]==article["title"],"handle":saved["handle"]==article["handle"],
+      "published":saved["isPublished"] is True,"source":item["url"] in (saved.get("body") or ""),
+      "tags":set(article["tags"]).issubset(set(saved.get("tags") or [])),
+      "seo_title":seo.get("title_tag")==article["seo_title"][:70],
+      "seo_description":seo.get("description_tag")==article["seo_description"][:320],
+      "blog":(saved.get("blog") or {}).get("handle")==BLOG_HANDLE}
     log("POST-WRITE VERIFY: "+json.dumps(checks))
     if not all(checks.values()): raise RuntimeError("Post-write verification failed; do not retry automatically.")
-    log(f"PUBLISHED: {saved['title']} | https://{EXPECTED_HOST}/blogs/{BLOG_HANDLE}/{saved['handle']} | status=published | genres={','.join(saved['tags'])} | embed=none (not verified)")
+    log("PUBLISHED: https://{}/blogs/{}/{} | SEO verified".format(EXPECTED_HOST,BLOG_HANDLE,saved["handle"]))
+    return True
 
 def main():
     blog_id=shop_guard_and_audit()
@@ -222,8 +222,7 @@ def main():
             article=draft_story(item)
             before=existing_source(blog_id,item["url"])
             if before: log(f"DUPLICATE SKIP: {article['title']}"); continue
-            publish(blog_id,item,article)
-            if AUTO_PUBLISH: published+=1
+            if publish(blog_id,item,article): published+=1
         except Exception as e: log(f"HOLD/FAIL: {item.get('title','(untitled)')} | {e}")
     log(f"RUN COMPLETE: published={published}; max={MAX_ARTICLES}; verified_candidates={len(candidates)}; no theme/storefront settings modified.")
 
