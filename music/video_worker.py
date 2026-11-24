@@ -189,7 +189,7 @@ def create_draft(blog_id,video):
     if existing:
         log(f"DUPLICATE SKIP: {video['title']} (published={existing['isPublished']})");return False
     if not AUTO_PUBLISH:
-        log("DRY RUN — verified candidate only: "+video["title"]);return False
+        log("DRY RUN — RSS/oEmbed candidate only; no publishing: "+video["title"]);return False
     mutation="""mutation CreateMusicVideo($article:ArticleCreateInput!){articleCreate(article:$article){article{id title handle isPublished image{altText originalSrc} metafields(first:20){edges{node{namespace key value}}}}userErrors{field message}}}"""
     result=gql(mutation,{"article":dict(build_article(video),blogId=blog_id)})["articleCreate"]
     if result["userErrors"]:raise RuntimeError("Shopify article creation rejected: "+json.dumps(result["userErrors"]))
@@ -198,12 +198,7 @@ def create_draft(blog_id,video):
     actual={e["node"]["key"] for e in created["metafields"]["edges"]}
     if not expected.issubset(actual) or not created.get("image"):
         raise RuntimeError(f"Article {created['id']} remains a draft: thumbnail or VideoObject metadata verification failed.")
-    publish="""mutation PublishMusicVideo($id:ID!,$article:ArticleUpdateInput!){articleUpdate(id:$id,article:$article){article{id title handle isPublished}userErrors{field message}}}"""
-    outcome=gql(publish,{"id":created["id"],"article":{"isPublished":True}})["articleUpdate"]
-    if outcome["userErrors"] or not outcome["article"]["isPublished"]:
-        raise RuntimeError(f"Article {created['id']} remains a draft; publish verification failed: "+json.dumps(outcome["userErrors"]))
-    article=outcome["article"]
-    log(f"PUBLISHED VERIFIED VIDEO: {article['title']} | /blogs/{BLOG_HANDLE}/{article['handle']}")
+    log(f"CREATED REVIEW DRAFT: {created['title']} | /blogs/{BLOG_HANDLE}/{created['handle']} | public/embeddable status not verified without YouTube API.")
     return True
 
 def main():
