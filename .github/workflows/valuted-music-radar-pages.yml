@@ -2,12 +2,6 @@ name: VALUTED MUSIC Radar — static browser app
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - valuted-music-video-platform
-    paths:
-      - "music/radar-browser/**"
-      - ".github/workflows/valuted-music-radar-pages.yml"
 
 permissions:
   contents: read
