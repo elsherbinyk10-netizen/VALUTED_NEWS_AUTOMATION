@@ -1,0 +1,46 @@
+name: VALUTED MUSIC Daily SEO Audit
+
+on:
+  schedule:
+    - cron: "0 20 * * *" # 10:00 PM Cairo during UTC+2 season; GitHub cron uses UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: valuted-music-seo-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install audit dependencies
+        run: python -m pip install --upgrade pip requests beautifulsoup4
+      - name: Authenticate with VALUTED MUSIC Shopify
+        env:
+          SHOPIFY_ADMIN_DOMAIN: ${{ vars.VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN }}
+          SHOPIFY_CLIENT_ID: ${{ secrets.VALUTED_MUSIC_SHOPIFY_CLIENT_ID }}
+          SHOPIFY_CLIENT_SECRET: ${{ secrets.VALUTED_MUSIC_SHOPIFY_CLIENT_SECRET }}
+        run: python music/shopify_auth.py
+      - name: Run read-only SEO audit
+        env:
+          SHOPIFY_ADMIN_DOMAIN: ${{ vars.VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN }}
+          SHOPIFY_API_VERSION: "2026-10"
+          SEO_REPORT_DIR: seo-report
+        run: python music/seo_audit.py
+      - name: Upload SEO report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: valuted-music-seo-report
+          path: seo-report/
+          if-no-files-found: warn
+          retention-days: 30
