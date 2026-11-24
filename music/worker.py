@@ -159,8 +159,9 @@ def draft_story(item):
         if any(term in text for term in terms) and tag not in tags: tags.append(tag)
     if "artist-news" not in tags and "new-releases" not in tags: tags.append("artist-news")
     handle=re.sub(r"[^a-z0-9-]+","-",result.get("handle") or title.lower()).strip("-")[:180]
-    return {"title":title,"handle":handle,"body":body,"seo_title":result.get("seo_title",title)[:70],
-        "seo_description":result.get("seo_description",result.get("summary",""))[:320],"tags":sorted(set(tags))}
+    summary=result.get("summary",result.get("seo_description","")).strip()[:240]
+    return {"title":title,"handle":handle,"body":body,"summary":summary,"seo_title":result.get("seo_title",title)[:70],
+        "seo_description":result.get("seo_description",summary)[:320],"tags":sorted(set(tags))}
 
 def existing_source(blog_id, source_url, handle=None):
     # Walk every page so older stories cannot be duplicated after the newest 100.
