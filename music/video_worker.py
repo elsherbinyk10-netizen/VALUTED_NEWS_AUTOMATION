@@ -75,6 +75,17 @@ def duration_seconds(value):
 EXCLUDED_TITLE=re.compile(r"\b(shorts?|teaser|trailer|behind the scenes|interview|lyrics?|lyric video|audio only|visuali[sz]er|dance practice|reaction|live session)\b",re.I)
 OFFICIAL_VIDEO_TITLE=re.compile(r"\b(official music video|official video|music video|official video clip|official clip)\b",re.I)
 
+def verify_thumbnail(url):
+    """Require a reachable HTTPS image; never publish a broken or non-image thumbnail."""
+    try:
+        response=SESSION.get(url,stream=True,timeout=15,headers={"Range":"bytes=0-0"})
+        try:
+            return response.status_code in (200,206) and response.headers.get("Content-Type","").lower().startswith("image/")
+        finally:
+            response.close()
+    except requests.RequestException:
+        return False
+
 def is_official_music_video(title,description="",duration=""):
     title=html.unescape(title or "").strip()
     description=html.unescape(description or "").strip()
@@ -112,9 +123,9 @@ def collect(channels,now=None):
         duration=cd.get("duration","")
         if len(description)<40 or not is_official_music_video(title,description,duration):continue
         thumbs=sn.get("thumbnails") or {}
-        thumbnail=next((thumbs[k].get("url","") for k in ("maxres","standard","high","medium","default") if thumbs.get(k,{}).get("url")),"")
+        thumbnail=next((thumbs[k].get("url","") for k in ("maxres","standard","high") if thumbs.get(k,{}).get("url")),"")
         parsed=urlparse(thumbnail)
-        if parsed.scheme!="https" or not parsed.netloc:continue
+        if parsed.scheme!="https" or not parsed.netloc or not verify_thumbnail(thumbnail):continue
         results.append({"video_id":vid,"title":title,"description":description[:1800],
             "channel_id":sn["channelId"],"channel_title":sn.get("channelTitle",expected["channel_label"]),
             "thumbnail":thumbnail,"published":expected["published"],"duration":duration,
