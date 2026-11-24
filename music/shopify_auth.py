@@ -25,7 +25,7 @@ def main() -> None:
     client_id = os.environ.get("SHOPIFY_CLIENT_ID", "").strip()
     client_secret = os.environ.get("SHOPIFY_CLIENT_SECRET", "").strip()
 
-    if not re.fullmatch(r"[a-z0-9][a-z0-9-]*\\.myshopify\\.com", domain):
+    if not re.fullmatch(r"[a-z0-9][a-z0-9-]*\.myshopify\.com", domain):
         fail("SHOPIFY_ADMIN_DOMAIN must be a valid *.myshopify.com host.")
     if not client_id or not client_secret:
         fail("Set SHOPIFY_CLIENT_ID and SHOPIFY_CLIENT_SECRET in the environment.")
@@ -67,7 +67,7 @@ def main() -> None:
     if not github_env:
         fail("GITHUB_ENV is not set. Run this helper inside a GitHub Actions step.")
     with open(github_env, "a", encoding="utf-8") as env_file:
-        env_file.write(f"SHOPIFY_ADMIN_ACCESS_TOKEN={token}\\n")
+        env_file.write(f"SHOPIFY_ADMIN_ACCESS_TOKEN={token}\n")
     print("Shopify authentication succeeded; a short-lived token is ready for the next workflow step.")
     print("Granted content scope verified: write_content (includes content read access).")
     print(f"Token lifetime reported by Shopify: {data.get('expires_in', 'not supplied')} seconds.")
