@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime, timezone
-from music.video_worker import duration_seconds, is_official_music_video, parse_published, build_article, channel_allowlist
+from music.video_worker import duration_seconds, is_official_music_video, parse_published, build_article, channel_allowlist, public_player_duration
 
 class MusicVideoWorkerTests(unittest.TestCase):
     def test_duration_parser(self):
@@ -20,6 +20,29 @@ class MusicVideoWorkerTests(unittest.TestCase):
         channels=channel_allowlist()
         ids={item["channel_id"] for item in channels}
         self.assertTrue({"UCg8ZzloDPTrOiGztK0C9txQ","UC9TO_oo4c_LrOiKNaY6aysA","UCowRsWTe-Tpgrckhg26d2kA"}.issubset(ids))
+
+    def test_public_player_must_confirm_exact_public_full_length_video(self):
+        import json
+        player = {
+            "playabilityStatus": {"status": "OK"},
+            "videoDetails": {
+                "videoId": "abcdefghijk",
+                "channelId": "UCNhqvQMXIgRfjAGmxQqdNRw",
+                "lengthSeconds": "214",
+                "isPrivate": False,
+                "isLiveContent": False,
+            },
+        }
+        page = "var ytInitialPlayerResponse = " + json.dumps(player) + ";"
+        self.assertEqual(public_player_duration(page, "abcdefghijk", "UCNhqvQMXIgRfjAGmxQqdNRw"), 214)
+        self.assertEqual(public_player_duration(page, "wrongvideo1", "UCNhqvQMXIgRfjAGmxQqdNRw"), 0)
+        self.assertEqual(public_player_duration(page, "abcdefghijk", "UC0000000000000000000000"), 0)
+        player["videoDetails"]["lengthSeconds"] = "30"
+        short_page = "var ytInitialPlayerResponse = " + json.dumps(player) + ";"
+        self.assertEqual(public_player_duration(short_page, "abcdefghijk", "UCNhqvQMXIgRfjAGmxQqdNRw"), 0)
+        player["playabilityStatus"]["status"] = "ERROR"
+        unavailable_page = "var ytInitialPlayerResponse = " + json.dumps(player) + ";"
+        self.assertEqual(public_player_duration(unavailable_page, "abcdefghijk", "UCNhqvQMXIgRfjAGmxQqdNRw"), 0)
 
     def test_published_timestamp(self):
         self.assertEqual(parse_published("2026-11-24T10:00:00Z"),datetime(2026,11,24,10,0,tzinfo=timezone.utc))
