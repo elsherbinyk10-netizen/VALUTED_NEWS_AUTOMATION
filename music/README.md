@@ -8,7 +8,7 @@ This project is isolated to the Shopify store VALUTED MUSIC (valutedmusic.site),
 - **VALUTED Radar:** browser-only microphone/upload fingerprint matching. No recognition API, server, VPS, or external audio service. It only matches recordings already indexed in the owner's local/shared fingerprint library.
 
 ## Safety defaults
-- Both scheduled discovery workflows run in dry-run mode by default.
+- All scheduled Music content workflows (music news, official videos and catalogue discovery) run in dry-run mode by default.
 - Manual workflow dispatch includes an explicit publish checkbox; it defaults off.
 - Video articles are created as drafts with thumbnail and all required video metadata in the same Shopify mutation. They are published only after the draft is re-read and the image/metafields are verified.
 - Exact Shopify host, store name, primary domain and existing blog handle are checked before any write.
@@ -21,14 +21,16 @@ This project is isolated to the Shopify store VALUTED MUSIC (valutedmusic.site),
 GitHub Actions → Settings → Secrets and variables:
 - Secret VALUTED_MUSIC_SHOPIFY_ADMIN_ACCESS_TOKEN: token for the Music store only, with read_content and write_content.
 - Secret VALUTED_MUSIC_YOUTUBE_DATA_API_KEY: YouTube Data API key for official-video discovery.
+- Secret OPENAI_API_KEY: required only by the separate music-news editorial worker.
 - Variable VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN: 0k31v6-th.myshopify.com.
 
 Never paste credentials into source files, issues, chat or commits. The direct Shopify publishing test already completed separately; it does not supply GitHub Actions secrets.
 
 ## Schedule and limits
-- Official video discovery: daily 9:00 PM Cairo; up to 5 candidates/run; last 72 hours; zero is valid.
-- Music catalogue discovery: daily 9:00 PM Cairo; up to 15 entries/run; zero is valid.
-- Both remain dry-run by default. Explicitly enable publishing only after credentials and run logs are verified.
+- Music-news discovery: daily 9:00 PM Cairo; up to 5 source-attributed stories/run; maximum age 36 hours.
+- Official video discovery: daily 9:00 PM Cairo; up to 5 verified videos/run; maximum age 72 hours.
+- Music catalogue discovery: daily 9:00 PM Cairo; up to 15 entries/run.
+- All three remain dry-run by default. Explicitly enable publishing only after credentials and run logs are verified.
 
 ## Radar limitations
 The bundled shared library.json starts empty. Radar can identify only recordings included in a fingerprint library created from audio the owner is authorized to process. It is an experimental fingerprint matcher, not a global music database or a Shazam-equivalent. It does not identify humming or singing. Test iOS Safari, microphone permissions, noisy recordings and labeled samples before release.
