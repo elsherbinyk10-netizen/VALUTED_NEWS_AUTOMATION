@@ -1,175 +1,202 @@
 #!/usr/bin/env python3
-"""VALUTED MUSIC official music-video publisher. Fails closed without verified channel IDs and secrets."""
+"""VALUTED MUSIC official video publisher with staged, fail-closed publishing."""
 import os, sys, json, re, html
 from datetime import datetime, timezone, timedelta
 from urllib.parse import urlparse
 import requests, feedparser
 from bs4 import BeautifulSoup
 
-EXPECTED_NAME = "VALUTED MUSIC"
-EXPECTED_HOST = "valutedmusic.site"
-SHOP = os.getenv("SHOPIFY_ADMIN_DOMAIN", "").strip()
-TOKEN = os.getenv("SHOPIFY_ADMIN_ACCESS_TOKEN", "")
-YOUTUBE_KEY = os.getenv("YOUTUBE_DATA_API_KEY", "")
-API_VERSION = os.getenv("SHOPIFY_API_VERSION", "2026-10")
-BLOG_HANDLE = "news"
-MAX_VIDEOS = min(5, max(0, int(os.getenv("MAX_VIDEOS_PER_RUN", "5"))))
-MAX_AGE_HOURS = int(os.getenv("MAX_VIDEO_AGE_HOURS", "72"))
-AUTO_PUBLISH = os.getenv("AUTO_PUBLISH", "true").lower() == "true"
-BASE = "https://www.googleapis.com/youtube/v3"
-session = requests.Session()
-session.headers["User-Agent"] = "VALUTED-MUSIC-VideoBot/1.0 (+https://valutedmusic.site)"
+EXPECTED_NAME="VALUTED MUSIC"
+EXPECTED_HOST="valutedmusic.site"
+EXPECTED_SHOP="0k31v6-th.myshopify.com"
+BLOG_HANDLE="news"
+SHOP=os.getenv("SHOPIFY_ADMIN_DOMAIN","").strip().lower()
+TOKEN=os.getenv("SHOPIFY_ADMIN_ACCESS_TOKEN","").strip()
+YOUTUBE_KEY=os.getenv("YOUTUBE_DATA_API_KEY","").strip()
+API_VERSION=os.getenv("SHOPIFY_API_VERSION","2026-10")
+MAX_VIDEOS=min(5,max(0,int(os.getenv("MAX_VIDEOS_PER_RUN","5"))))
+MAX_AGE_HOURS=max(1,int(os.getenv("MAX_VIDEO_AGE_HOURS","72")))
+AUTO_PUBLISH=os.getenv("AUTO_PUBLISH","false").lower()=="true"
+BASE="https://www.googleapis.com/youtube/v3"
+SESSION=requests.Session()
+SESSION.headers["User-Agent"]="VALUTED-MUSIC-VideoBot/2.0 (+https://valutedmusic.site)"
 
-def log(message): print(message, flush=True)
-def gql(query, variables=None):
-    r = session.post(f"https://{SHOP}/admin/api/{API_VERSION}/graphql.json",
-        headers={"X-Shopify-Access-Token": TOKEN, "Content-Type": "application/json"},
-        json={"query": query, "variables": variables or {}}, timeout=35)
-    r.raise_for_status()
-    data = r.json()
-    if data.get("errors"): raise RuntimeError("Shopify GraphQL error: " + json.dumps(data["errors"])[:1000])
+def log(message): print(message,flush=True)
+
+def gql(query,variables=None):
+    r=SESSION.post(f"https://{SHOP}/admin/api/{API_VERSION}/graphql.json",
+        headers={"X-Shopify-Access-Token":TOKEN,"Content-Type":"application/json"},
+        json={"query":query,"variables":variables or {}},timeout=35)
+    r.raise_for_status(); data=r.json()
+    if data.get("errors"): raise RuntimeError("Shopify GraphQL error: "+json.dumps(data["errors"])[:1200])
     return data["data"]
 
 def guard():
-    if not TOKEN or not SHOP.endswith(".myshopify.com") or not YOUTUBE_KEY:
-        raise RuntimeError("Missing Music Shopify token/domain or YOUTUBE_DATA_API_KEY. No publishing.")
-    data = gql("""query Guard { shop { name primaryDomain { host } } blogs(first:50) { edges { node { id handle } } } }""")
-    shop = data["shop"]
-    if shop["name"].strip().casefold() != EXPECTED_NAME.casefold() or shop["primaryDomain"]["host"].lower() != EXPECTED_HOST:
-        log("WRONG SHOP CONNECTED — NO CHANGES MADE.")
-        sys.exit(0)
-    blog = next((x["node"] for x in data["blogs"]["edges"] if x["node"]["handle"] == BLOG_HANDLE), None)
-    if not blog: raise RuntimeError("Expected existing news blog missing. No writes.")
-    log(f"SHOP VERIFIED: {shop['name']} | {EXPECTED_HOST}; blog={BLOG_HANDLE}")
+    if not TOKEN or not YOUTUBE_KEY: raise RuntimeError("Missing Music-only Shopify token or YouTube Data API key. No writes.")
+    if SHOP!=EXPECTED_SHOP: raise RuntimeError("SHOPIFY_ADMIN_DOMAIN is not the configured VALUTED MUSIC shop. No writes.")
+    data=gql("""query Guard { shop { name primaryDomain { host } } blogs(first:50) { edges { node { id handle } } } }""")
+    shop=data["shop"]
+    if shop["name"].strip().casefold()!=EXPECTED_NAME.casefold() or (shop.get("primaryDomain") or {}).get("host","").lower()!=EXPECTED_HOST:
+        raise RuntimeError("Wrong Shopify identity or primary domain. No changes made.")
+    blog=next((e["node"] for e in data["blogs"]["edges"] if e["node"]["handle"]==BLOG_HANDLE),None)
+    if not blog: raise RuntimeError("Expected VALUTED MUSIC news blog is missing. No writes.")
+    log(f"SHOP VERIFIED: {EXPECTED_NAME} / {EXPECTED_HOST} / blog={BLOG_HANDLE}")
     return blog["id"]
 
-def yt(path, params):
-    params = dict(params, key=YOUTUBE_KEY)
-    r = session.get(f"{BASE}/{path}", params=params, timeout=30)
-    r.raise_for_status()
-    payload = r.json()
-    if payload.get("error"): raise RuntimeError(payload["error"].get("message", "YouTube API error"))
+def yt(path,params):
+    r=SESSION.get(f"{BASE}/{path}",params=dict(params,key=YOUTUBE_KEY),timeout=30)
+    r.raise_for_status(); payload=r.json()
+    if payload.get("error"): raise RuntimeError(payload["error"].get("message","YouTube API error"))
     return payload
 
-def channel_allowlist():
-    with open("music/official_channels.json", encoding="utf-8") as f:
-        config = json.load(f)
-    channels = config.get("channels", [])
-    clean = []
-    for item in channels:
-        cid = str(item.get("channel_id", "")).strip()
-        if re.fullmatch(r"UC[A-Za-z0-9_-]{22}", cid):
-            clean.append({"channel_id": cid, "label": str(item.get("label", ""))[:100]})
-    if not clean: raise RuntimeError("No manually verified official YouTube channel IDs in music/official_channels.json. Refusing unverified uploads.")
-    return clean
+def channel_allowlist(path="music/official_channels.json"):
+    with open(path,encoding="utf-8") as f: config=json.load(f)
+    channels=[]; seen=set()
+    for item in config.get("channels",[]):
+        cid=str(item.get("channel_id","")).strip(); label=str(item.get("label","")).strip()[:100]
+        if re.fullmatch(r"UC[A-Za-z0-9_-]{22}",cid) and label and cid not in seen:
+            channels.append({"channel_id":cid,"label":label}); seen.add(cid)
+    if not channels: raise RuntimeError("No manually verified official channel IDs. Refusing unverified uploads.")
+    return channels
 
-def collect(channels):
-    now = datetime.now(timezone.utc)
-    candidates = []
+def parse_published(value):
+    if not value:return None
+    try:
+        dt=datetime.fromisoformat(value.replace("Z","+00:00"))
+        return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt.astimezone(timezone.utc)
+    except (TypeError,ValueError):return None
+
+def duration_seconds(value):
+    m=re.fullmatch(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?",value or "")
+    if not m:return 0
+    h,mi,s=(int(x or 0) for x in m.groups())
+    return h*3600+mi*60+s
+
+EXCLUDED_TITLE=re.compile(r"\b(shorts?|teaser|trailer|behind the scenes|interview|lyrics?|lyric video|audio only|visuali[sz]er|dance practice|reaction|live session)\b",re.I)
+OFFICIAL_VIDEO_TITLE=re.compile(r"\b(official music video|official video|music video|official video clip|official clip)\b",re.I)
+
+def is_official_music_video(title,description="",duration=""):
+    title=html.unescape(title or "").strip()
+    description=html.unescape(description or "").strip()
+    if not title or EXCLUDED_TITLE.search(title):return False
+    if re.search(r"#shorts?\b",title+" "+description,re.I):return False
+    return bool(OFFICIAL_VIDEO_TITLE.search(title) and duration_seconds(duration)>=60)
+
+def collect(channels,now=None):
+    now=now or datetime.now(timezone.utc); candidates={}
     for channel in channels:
-        feed = feedparser.parse(f"https://www.youtube.com/feeds/videos.xml?channel_id={channel['channel_id']}")
-        for entry in feed.entries[:20]:
-            video_id = entry.get("yt_videoid") or entry.get("id", "").rsplit(":", 1)[-1]
-            if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id): continue
-            published = entry.get("published")
-            try: dt = datetime.fromisoformat(published.replace("Z", "+00:00"))
-            except Exception: continue
-            if dt.tzinfo is None: dt = dt.replace(tzinfo=timezone.utc)
-            if now - dt > timedelta(hours=MAX_AGE_HOURS) or dt > now + timedelta(hours=1): continue
-            candidates.append({"video_id": video_id, "channel_id": channel["channel_id"], "channel_label": channel["label"], "published": dt})
-    unique = {x["video_id"]: x for x in candidates}
-    if not unique: return []
-    ids = ",".join(unique)
-    verified = yt("videos", {"part":"snippet,status,contentDetails", "id":ids, "maxResults":50}).get("items", [])
-    results = []
+        url="https://www.youtube.com/feeds/videos.xml?channel_id="+channel["channel_id"]
+        feed=feedparser.parse(url)
+        if getattr(feed,"bozo",False) and not feed.entries:
+            log("RSS unavailable: "+channel["label"]); continue
+        for entry in feed.entries[:25]:
+            vid=entry.get("yt_videoid") or entry.get("id","").rsplit(":",1)[-1]
+            if not re.fullmatch(r"[A-Za-z0-9_-]{11}",vid):continue
+            published=parse_published(entry.get("published"))
+            if not published:continue
+            age=now-published
+            if age>timedelta(hours=MAX_AGE_HOURS) or age<timedelta(hours=-1):continue
+            candidates[vid]={"video_id":vid,"channel_id":channel["channel_id"],"channel_label":channel["label"],"published":published}
+    if not candidates:return []
+    ids=list(candidates); verified=[]
+    for start in range(0,len(ids),50):
+        verified.extend(yt("videos",{"part":"snippet,status,contentDetails","id":",".join(ids[start:start+50]),"maxResults":50}).get("items",[]))
+    results=[]
     for video in verified:
-        vid = video["id"]; sn = video["snippet"]; st = video["status"]
-        expected = unique.get(vid)
-        if not expected or sn.get("channelId") != expected["channel_id"]: continue
-        if st.get("privacyStatus") != "public" or st.get("embeddable") is not True: continue
-        thumbs = sn.get("thumbnails", {})
-        thumb = next((thumbs[k]["url"] for k in ("maxres","standard","high","medium","default") if k in thumbs), "")
-        if not thumb.startswith("https://"): continue
-        title = html.unescape(sn.get("title", "")).strip()
-        description = html.unescape(sn.get("description", "")).strip()
-        duration = video.get("contentDetails", {}).get("duration", "")
-        # Keep the catalogue focused on full-length official music videos, not label promos,
-        # interviews, corporate clips, lyric-only uploads or Shorts.
-        if not title or len(description) < 40: continue
-        if re.search(r"\b(shorts?|teaser|trailer|behind the scenes|interview|lyrics?|audio only|visuali[sz]er)\\b", title, re.I): continue
-        if not re.search(r"\b(official music video|official video|music video|official video clip|official clip)\\b", title, re.I): continue
-        if re.search(r"#shorts?\\b", title + " " + description, re.I): continue
-        results.append({"video_id":vid,"title":title,"description":description[:1200],"channel_id":sn["channelId"],
-            "channel_title":sn.get("channelTitle",""),"thumbnail":thumb,"published":expected["published"],
-            "duration":duration,"embed_url":f"https://www.youtube-nocookie.com/embed/{vid}",
+        vid=video.get("id",""); expected=candidates.get(vid)
+        sn=video.get("snippet") or {}; st=video.get("status") or {}; cd=video.get("contentDetails") or {}
+        if not expected or sn.get("channelId")!=expected["channel_id"]:continue
+        if st.get("privacyStatus")!="public" or st.get("embeddable") is not True:continue
+        title=html.unescape(sn.get("title","")).strip()
+        description=html.unescape(sn.get("description","")).strip()
+        duration=cd.get("duration","")
+        if len(description)<40 or not is_official_music_video(title,description,duration):continue
+        thumbs=sn.get("thumbnails") or {}
+        thumbnail=next((thumbs[k].get("url","") for k in ("maxres","standard","high","medium","default") if thumbs.get(k,{}).get("url")),"")
+        parsed=urlparse(thumbnail)
+        if parsed.scheme!="https" or not parsed.netloc:continue
+        results.append({"video_id":vid,"title":title,"description":description[:1800],
+            "channel_id":sn["channelId"],"channel_title":sn.get("channelTitle",expected["channel_label"]),
+            "thumbnail":thumbnail,"published":expected["published"],"duration":duration,
+            "embed_url":f"https://www.youtube-nocookie.com/embed/{vid}",
             "watch_url":f"https://www.youtube.com/watch?v={vid}"})
     return sorted(results,key=lambda x:x["published"],reverse=True)
 
-def already_exists(blog_id, video):
-    q="""query Existing($id:ID!,$after:String){blog(id:$id){articles(first:100,after:$after){edges{node{id body tags}}pageInfo{hasNextPage endCursor}}}}"""
+def already_exists(blog_id,video_id):
+    q="""query Existing($id:ID!,$after:String){blog(id:$id){articles(first:100,after:$after){edges{node{id body tags isPublished}}pageInfo{hasNextPage endCursor}}}}"""
     cursor=None
     while True:
         page=gql(q,{"id":blog_id,"after":cursor})["blog"]["articles"]
         for edge in page["edges"]:
             node=edge["node"]
-            if video["video_id"] in (node.get("body") or "") or video["video_id"] in (node.get("tags") or []): return True
+            if video_id in (node.get("tags") or []) or video_id in (node.get("body") or ""):return node
         info=page["pageInfo"]
-        if not info["hasNextPage"]: return False
+        if not info["hasNextPage"]:return None
         cursor=info["endCursor"]
 
-def publish(blog_id, video):
-    if already_exists(blog_id, video):
-        log(f"DUPLICATE SKIP: {video['title']}"); return False
-    description = re.sub(r"<[^>]+>", " ", video["description"])
-    description = re.sub(r"\s+", " ", description).strip()
-    body = f'''<p>{html.escape(description[:700])}</p>
+def build_article(video):
+    description=BeautifulSoup(video["description"],"html.parser").get_text(" ",strip=True)
+    description=re.sub(r"\s+"," ",description).strip()
+    title=html.escape(video["title"],quote=True)
+    channel=html.escape(video["channel_title"])
+    body=f'''<p>{html.escape(description[:900])}</p>
 <div class="vm-official-video" style="position:relative;aspect-ratio:16/9;max-width:100%;background:#08080d">
-<iframe src="{html.escape(video["embed_url"], quote=True)}" title="{html.escape(video["title"], quote=True)}" loading="eager" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
+<iframe src="{video["embed_url"]}" title="{title}" loading="eager" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
 </div>
-<p><strong>Official source:</strong> <a href="{html.escape(video["watch_url"], quote=True)}" rel="nofollow noopener" target="_blank">{html.escape(video["channel_title"])}</a></p>
-<p>Video is hosted by YouTube. Playback, regional availability, captions and advertising are controlled by YouTube and the rights holder.</p>'''
-    handle = re.sub(r"[^a-z0-9-]+","-",video["title"].lower()).strip("-")[:130] + "-" + video["video_id"].lower()
-    tags = ["official-music-video", "music-video", video["video_id"]]
-    mutation = """mutation Create($blog:ID!,$article:ArticleCreateInput!){articleCreate(blogId:$blog,article:$article){article{id title handle isPublished}userErrors{field message}}}"""
-    article = {"title":video["title"],"handle":handle,"body":body,"tags":tags,"isPublished":AUTO_PUBLISH,
-        "summary":description[:240],"seo":{"title":(video["title"]+" | VALUTED MUSIC")[:70],"description":description[:300]}}
+<p><strong>Official source:</strong> <a href="{video["watch_url"]}" rel="nofollow noopener" target="_blank">{channel}</a></p>
+<p>Video playback, regional availability, captions and advertising are controlled by YouTube and the rights holder.</p>'''
+    base=re.sub(r"[^a-z0-9-]+","-",video["title"].lower()).strip("-")[:120]
+    summary=description[:240] or f"Official music video from {video['channel_title']}."
+    metafields=[
+      {"namespace":"custom","key":"video_id","type":"single_line_text_field","value":video["video_id"]},
+      {"namespace":"custom","key":"video_embed_url","type":"url","value":video["embed_url"]},
+      {"namespace":"custom","key":"video_thumbnail","type":"url","value":video["thumbnail"]},
+      {"namespace":"custom","key":"video_channel","type":"single_line_text_field","value":video["channel_title"][:255]},
+      {"namespace":"custom","key":"video_upload_date","type":"date_time","value":video["published"].isoformat()},
+      {"namespace":"custom","key":"video_duration","type":"single_line_text_field","value":video["duration"]},
+      {"namespace":"custom","key":"video_description","type":"single_line_text_field","value":description[:255]}]
+    return {"author":{"name":"VALUTED MUSIC Editorial Desk"},"title":video["title"][:255],
+      "handle":f"{base}-{video['video_id'].lower()}".strip("-"),"body":body,"summary":summary,
+      "tags":["official-music-video","music-video",video["video_id"],"official-source"],
+      "image":{"url":video["thumbnail"],"altText":f"{video['title']} — official music video thumbnail"[:512]},
+      "metafields":metafields,"isPublished":False}
+
+def create_draft(blog_id,video):
+    existing=already_exists(blog_id,video["video_id"])
+    if existing:
+        log(f"DUPLICATE SKIP: {video['title']} (published={existing['isPublished']})");return False
     if not AUTO_PUBLISH:
-        log(f"DRY RUN: {video['title']}"); return False
-    result=gql(mutation,{"blog":blog_id,"article":article})["articleCreate"]
-    if result["userErrors"]: raise RuntimeError(json.dumps(result["userErrors"]))
+        log("DRY RUN — verified candidate only: "+video["title"]);return False
+    mutation="""mutation CreateMusicVideo($article:ArticleCreateInput!){articleCreate(article:$article){article{id title handle isPublished image{altText originalSrc} metafields(first:10,namespace:"custom"){edges{node{key value}}}}userErrors{field message}}}"""
+    result=gql(mutation,{"article":dict(build_article(video),blogId=blog_id)})["articleCreate"]
+    if result["userErrors"]:raise RuntimeError("Shopify article creation rejected: "+json.dumps(result["userErrors"]))
     created=result["article"]
-    # Article metafields power VideoObject JSON-LD in the article template.
-    fields=[
-      {"ownerId":created["id"],"namespace":"custom","key":"video_id","type":"single_line_text_field","value":video["video_id"]},
-      {"ownerId":created["id"],"namespace":"custom","key":"video_embed_url","type":"url","value":video["embed_url"]},
-      {"ownerId":created["id"],"namespace":"custom","key":"video_thumbnail","type":"url","value":video["thumbnail"]},
-      {"ownerId":created["id"],"namespace":"custom","key":"video_channel","type":"single_line_text_field","value":video["channel_title"]},
-      {"ownerId":created["id"],"namespace":"custom","key":"video_upload_date","type":"date_time","value":video["published"].isoformat()},
-      {"ownerId":created["id"],"namespace":"custom","key":"video_duration","type":"single_line_text_field","value":video["duration"]},
-      {"ownerId":created["id"],"namespace":"custom","key":"video_description","type":"single_line_text_field","value":description[:300]},
-    ]
-    saved=gql("""mutation SetVideoMetadata($metafields:[MetafieldsSetInput!]!){metafieldsSet(metafields:$metafields){metafields{key value}userErrors{field message}}}""",{"metafields":fields})["metafieldsSet"]
-    if saved["userErrors"]: raise RuntimeError("Article created but VideoObject metadata failed; manual repair required: "+json.dumps(saved["userErrors"]))
-    log(f"PUBLISHED VIDEO: {created['title']} | /blogs/{BLOG_HANDLE}/{created['handle']} | official channel allowlist + embeddable/public verified")
+    expected={"video_id","video_embed_url","video_thumbnail","video_channel","video_upload_date","video_duration","video_description"}
+    actual={e["node"]["key"] for e in created["metafields"]["edges"]}
+    if not expected.issubset(actual) or not created.get("image"):
+        raise RuntimeError(f"Article {created['id']} remains a draft: thumbnail or VideoObject metadata verification failed.")
+    publish="""mutation PublishMusicVideo($id:ID!,$article:ArticleUpdateInput!){articleUpdate(id:$id,article:$article){article{id title handle isPublished}userErrors{field message}}}"""
+    outcome=gql(publish,{"id":created["id"],"article":{"isPublished":True}})["articleUpdate"]
+    if outcome["userErrors"] or not outcome["article"]["isPublished"]:
+        raise RuntimeError(f"Article {created['id']} remains a draft; publish verification failed: "+json.dumps(outcome["userErrors"]))
+    article=outcome["article"]
+    log(f"PUBLISHED VERIFIED VIDEO: {article['title']} | /blogs/{BLOG_HANDLE}/{article['handle']}")
     return True
 
 def main():
-    blog_id=guard()
-    channels=channel_allowlist()
-    candidates=collect(channels)
-    log(f"OFFICIAL VIDEO CANDIDATES VERIFIED: {len(candidates)}")
+    blog=guard(); channels=channel_allowlist(); candidates=collect(channels)
+    log(f"VERIFIED OFFICIAL VIDEO CANDIDATES: {len(candidates)}")
     count=0
     for video in candidates:
-        if count >= MAX_VIDEOS: break
+        if count>=MAX_VIDEOS:break
         try:
-            if publish(blog_id,video): count += 1
-        except Exception as exc:
-            log(f"HOLD/FAIL {video.get('title','(untitled)')}: {exc}")
-    log(f"VIDEO RUN COMPLETE: published={count}; max={MAX_VIDEOS}; no theme/domain changes.")
+            if create_draft(blog,video):count+=1
+        except Exception as error:log(f"HOLD/FAIL {video.get('title','(untitled)')}: {error}")
+    mode="AUTO_PUBLISH" if AUTO_PUBLISH else "DRY_RUN"
+    log(f"VIDEO RUN COMPLETE: published={count}; max={MAX_VIDEOS}; mode={mode}; no theme/domain changes.")
 
 if __name__=="__main__":
-    try: main()
-    except SystemExit: raise
-    except Exception as exc:
-        log(f"VIDEO WORKFLOW FAILED CLOSED: {exc}")
-        sys.exit(1)
+    try:main()
+    except SystemExit:raise
+    except Exception as error:
+        log("VIDEO WORKFLOW FAILED CLOSED: "+str(error));sys.exit(1)
