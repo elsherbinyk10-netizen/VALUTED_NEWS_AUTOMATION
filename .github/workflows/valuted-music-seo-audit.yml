@@ -24,6 +24,8 @@ jobs:
           cache: pip
       - name: Install audit dependencies
         run: python -m pip install --upgrade pip requests beautifulsoup4
+      - name: Validate SEO audit Python syntax
+        run: python -m py_compile music/seo_audit.py
       - name: Authenticate with VALUTED MUSIC Shopify
         env:
           SHOPIFY_ADMIN_DOMAIN: ${{ vars.VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN }}
