@@ -54,9 +54,9 @@ def db():
     conn.commit()
     return conn
 
-def fingerprint(path: str):
+def fingerprint(path: str, max_length: int = MAX_SECONDS):
     proc = subprocess.run(
-        [FPCALC, "-raw", "-json", "-length", str(MAX_SECONDS), path],
+        [FPCALC, "-raw", "-json", "-length", str(max_length), path],
         capture_output=True, text=True, timeout=45, check=False
     )
     if proc.returncode != 0:
@@ -111,7 +111,7 @@ async def index_track(
         tmp.write(payload)
         tmp.flush()
         try:
-            fp, duration = fingerprint(tmp.name)
+            fp, duration = fingerprint(tmp.name, max_length=600)
         except Exception as exc:
             raise HTTPException(422, str(exc))
     with db() as conn:
