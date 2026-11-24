@@ -92,10 +92,16 @@ def collect(channels):
         if not thumb.startswith("https://"): continue
         title = html.unescape(sn.get("title", "")).strip()
         description = html.unescape(sn.get("description", "")).strip()
+        duration = video.get("contentDetails", {}).get("duration", "")
+        # Keep the catalogue focused on full-length official music videos, not label promos,
+        # interviews, corporate clips, lyric-only uploads or Shorts.
         if not title or len(description) < 40: continue
+        if re.search(r"\\b(shorts?|teaser|trailer|behind the scenes|interview|lyrics?|audio only|visuali[sz]er)\\b", title, re.I): continue
+        if not re.search(r"\\b(official music video|official video|music video|official video clip|official clip)\\b", title, re.I): continue
+        if re.search(r"#shorts?\\b", title + " " + description, re.I): continue
         results.append({"video_id":vid,"title":title,"description":description[:1200],"channel_id":sn["channelId"],
             "channel_title":sn.get("channelTitle",""),"thumbnail":thumb,"published":expected["published"],
-            "duration":video.get("contentDetails",{}).get("duration",""),"embed_url":f"https://www.youtube-nocookie.com/embed/{vid}",
+            "duration":duration,"embed_url":f"https://www.youtube-nocookie.com/embed/{vid}",
             "watch_url":f"https://www.youtube.com/watch?v={vid}"})
     return sorted(results,key=lambda x:x["published"],reverse=True)
 
