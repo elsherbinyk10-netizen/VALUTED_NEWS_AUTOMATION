@@ -35,7 +35,11 @@ def guard():
 def mb(kind,query,limit=12):
  time.sleep(1.1)
  url=f"https://musicbrainz.org/ws/2/{kind}/"
- r=S.get(url,params={"query":query,"fmt":"json","limit":limit},timeout=30);r.raise_for_status();return r.json()
+ # Rotate result windows daily so repeated runs discover new records instead of replaying only the first page.
+ offset=(datetime.now(timezone.utc).timetuple().tm_yday * 17) % 100
+ r=S.get(url,params={"query":query,"fmt":"json","limit":limit,"offset":offset},timeout=30)
+ r.raise_for_status()
+ return r.json()
 
 def clean(s):
  return re.sub(r"\s+"," ",html.unescape(str(s or ""))).strip()
