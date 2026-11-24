@@ -102,7 +102,7 @@ def verify_embed(url):
 
 def public_player_duration(page, expected_video_id, expected_channel_id):
     """Return duration only when YouTube's public player confirms the exact public video and channel."""
-    match=re.search(r"ytInitialPlayerResponse\s*=\s*(\{.*?\\})\s*;",page or "",re.S)
+    match=re.search(r"ytInitialPlayerResponse\s*=\s*(\{.*?\})\s*;",page or "",re.S)
     if not match:
         return 0
     try:
