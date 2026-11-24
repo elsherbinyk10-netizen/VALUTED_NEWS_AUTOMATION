@@ -30,15 +30,21 @@ The workflow `.github/workflows/valuted-music-catalog-daily.yml` runs daily at 2
 
 GitHub Actions reuses the Music-only Shopify secret and domain variable listed above. The workflow is committed to the development branch and is not scheduled until merged into the default branch.
 
-## Music Radar audio recognition — self-hosted, no external recognition API
+## Music Radar audio recognition — browser-only, no API and no VPS
 
-The no-API implementation is in `music/radar-selfhosted/`. It uses the open-source Chromaprint fingerprint generator plus VALUTED MUSIC's own private SQLite fingerprint library. It does not call AudD, AcoustID, Shazam, Spotify, Apple Music, or another recognition provider.
+The browser prototype is in `music/radar-browser/`. It is a static HTML/CSS/JavaScript app: microphone capture, audio decoding, fingerprint generation and matching run on the visitor's device. It does not call AudD, AcoustID, Shazam, Spotify, Apple Music, or any external recognition API. It does not need a VPS, a recognition backend, or a server-side database.
 
-The service must be hosted by us behind HTTPS. Set a private `RADAR_ADMIN_TOKEN`, persistent `/data` storage, and `RADAR_ALLOWED_ORIGIN=https://valutedmusic.site`. Only index audio VALUTED MUSIC is authorized to process. The public `/recognize` endpoint accepts short microphone recordings or uploads; the protected `/admin/index` endpoint adds licensed tracks to our fingerprint library.
+The prototype uses a local constellation-style audio fingerprint (FFT spectral peaks paired across time) and matches against a private VALUTED MUSIC JSON fingerprint catalogue. The bundled `library.json` is currently empty. A site owner can add audio files they are authorized to process in the Library Builder, export the JSON catalogue, and publish the resulting JSON as the shared static catalogue. Visitors can also import a catalogue locally.
 
-Chromaprint creates fingerprints but does not provide a worldwide music database. Radar can identify only recordings already indexed in our own library; metadata-only catalogue entries cannot be recognized. The first implementation is a small-library pilot and needs performance testing before large-scale use. It does not recognize humming.
+Important limitations:
+- Radar recognizes only recordings already included in its fingerprint library; it is not a worldwide music database and cannot identify every song.
+- It does not recognize humming or singing.
+- This is an experimental prototype, not a production-grade Shazam replacement. It requires real-device tests with known audio clips, noisy microphone recordings, and iOS Safari before release.
+- Microphone access requires HTTPS and explicit browser permission. Upload is the fallback.
+- Audio samples are processed in memory; only fingerprints and metadata are stored in browser local storage or the exported JSON.
+- The browser downloads the static catalogue JSON from the same site. This is static file hosting, not an external recognition API.
 
-The old `music/radar-worker.js` AudD proxy is not part of the no-API design and must not be deployed. The browser must be connected to our own hosted service only after HTTPS hosting and end-to-end tests are complete.
+The app can be hosted on a static HTTPS host such as GitHub Pages and embedded in a Shopify page. Static hosting must be enabled/configured for the repository before the page is publicly available. Do not deploy the old `music/radar-worker.js` proxy; it is retired.
 
 ## Video SEO
 The theme contains a conditional `VideoObject` section for articles tagged `official-music-video`. The video worker writes the video ID, player URL, thumbnail, upload date, duration and description as article metafields.
