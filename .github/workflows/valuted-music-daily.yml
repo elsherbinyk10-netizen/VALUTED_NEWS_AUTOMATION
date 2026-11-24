@@ -2,7 +2,7 @@ name: VALUTED MUSIC Daily Music News
 
 on:
   schedule:
-    - cron: "15 19 * * *" # 9:00 PM Cairo
+    - cron: "15 19 * * *" # 9:15 PM Cairo
   workflow_dispatch:
     inputs:
       publish:
