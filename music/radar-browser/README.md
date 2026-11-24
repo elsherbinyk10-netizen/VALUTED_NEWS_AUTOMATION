@@ -31,4 +31,4 @@ Use a current Safari, Chrome, or Firefox. Microphone capture requires user permi
 The prototype downsamples decoded audio to 11.025 kHz, computes short-time Fourier transforms with a radix-2 FFT, selects local spectral peaks, and hashes peak pairs with their time delta. Matching votes for consistent time offsets against stored track fingerprints. The threshold is deliberately conservative and must be calibrated using labeled test recordings.
 
 ## Privacy
-No network request is made by radar.js. Audio samples remain in memory during processing. Browser local storage contains the fingerprint library and metadata only. A production release should add an explicit privacy notice and independent code review.
+The app fetches only the static library.json file from the same site. It makes no external recognition API request. Audio samples remain in memory during processing. Browser local storage contains the fingerprint library and metadata only. A production release should add an explicit privacy notice and independent code review.
