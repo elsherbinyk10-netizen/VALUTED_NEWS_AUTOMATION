@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime, timezone
-from music.video_worker import duration_seconds, is_official_music_video, parse_published, build_article
+from music.video_worker import duration_seconds, is_official_music_video, parse_published, build_article, channel_allowlist
 
 class MusicVideoWorkerTests(unittest.TestCase):
     def test_duration_parser(self):
@@ -15,6 +15,11 @@ class MusicVideoWorkerTests(unittest.TestCase):
         self.assertFalse(is_official_music_video("Artist - Track #Shorts (Official Video)","Official video","PT30S"))
         self.assertFalse(is_official_music_video("Artist - Track (Official Music Video)","Official video","PT30S"))
         self.assertTrue(is_official_music_video("Artist - Track (Official Audio)","Official audio","PT3M20S"))
+
+    def test_verified_official_channel_allowlist(self):
+        channels=channel_allowlist()
+        ids={item["channel_id"] for item in channels}
+        self.assertTrue({"UCg8ZzloDPTrOiGztK0C9txQ","UC9TO_oo4c_LrOiKNaY6aysA","UCowRsWTe-Tpgrckhg26d2kA"}.issubset(ids))
 
     def test_published_timestamp(self):
         self.assertEqual(parse_published("2026-11-24T10:00:00Z"),datetime(2026,11,24,10,0,tzinfo=timezone.utc))
