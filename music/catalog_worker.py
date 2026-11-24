@@ -11,7 +11,7 @@ import requests
 SHOP=os.getenv("SHOPIFY_ADMIN_DOMAIN","").strip()
 TOKEN=os.getenv("SHOPIFY_ADMIN_ACCESS_TOKEN","")
 API_VERSION=os.getenv("SHOPIFY_API_VERSION","2026-10")
-MAX_ITEMS=min(30,max(1,int(os.getenv("MAX_CATALOG_ITEMS","15"))))
+MAX_ITEMS=min(30,max(1,int(os.getenv("MAX_CATALOG_ITEMS","30"))))
 AUTO_PUBLISH=os.getenv("AUTO_PUBLISH","false").lower()=="true"
 BLOG_HANDLE="news"
 HEADERS={"User-Agent":"VALUTED-MUSIC-Catalogue/1.0 (https://valutedmusic.site; contact: catalog@valutedmusic.site)","Accept":"application/json"}
@@ -63,7 +63,10 @@ def article_exists(blog_id,tag):
 def create(blog_id,title,handle,body,tags,summary):
  tag=next(t for t in tags if t.startswith("mbid-"))
  if article_exists(blog_id,tag): log("SKIP existing: "+title);return False
- inp={"author":{"name":"VALUTED MUSIC Catalogue Desk"},"blogId":blog_id,"title":title,"handle":handle,"body":body,"tags":tags,"isPublished":AUTO_PUBLISH,"summary":summary[:240]}
+ seo_title=(title+" | VALUTED MUSIC")[:70]
+ seo_description=summary[:320]
+ metafields=[{"namespace":"global","key":"title_tag","type":"single_line_text_field","value":seo_title},{"namespace":"global","key":"description_tag","type":"single_line_text_field","value":seo_description}]
+ inp={"author":{"name":"VALUTED MUSIC Catalogue Desk"},"blogId":blog_id,"title":title,"handle":handle,"body":body,"tags":tags,"isPublished":AUTO_PUBLISH,"summary":summary[:240],"metafields":metafields}
  if not AUTO_PUBLISH:
   log("DRY RUN — verified catalogue candidate: "+title);return False
  d=gql("""mutation Create($article:ArticleCreateInput!){articleCreate(article:$article){article{id title handle isPublished}userErrors{field message}}}""",{"article":inp})["articleCreate"]
