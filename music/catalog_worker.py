@@ -3,7 +3,8 @@
 Creates searchable, crawlable editorial catalogue pages for artists, albums and recordings.
 Uses MusicBrainz public search API; does not invent official video URLs.
 """
-import os, re, sys, json, time, html, hashlib\nfrom datetime import datetime, timezone
+import os, re, sys, json, time, html, hashlib
+from datetime import datetime, timezone
 from urllib.parse import quote
 import requests
 
