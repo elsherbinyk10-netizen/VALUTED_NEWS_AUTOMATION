@@ -392,8 +392,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-24T04:29:50.266068+00:00",
-      "restore_status": "already_present_in_shopify",
+      "restore_attempted_at": "2026-11-24T11:56:46.865296+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669522559213",
       "source_url": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune",
@@ -625,6 +625,11 @@
     "077396b23a98de6698373513bf3a2b22b595ad61e0486fe275c8e460f9cf8975": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
       "source": "NPR Business",
+      "status": "skipped_stale"
+    },
+    "0773d3d170944a83f627fbf28923b41d408640e14945e059393dcc4bdea3fdec": {
+      "seen_at": "2026-11-24T11:54:46.993163+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "0783a78dc33abe0d4e991a1b0d5c8b5f3878f8eb71949bc110379faa05c349fb": {
@@ -862,6 +867,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "0a3f026f3a8e88bda83580701a6a5938c3b760d89407e481295fbfd045872249": {
+      "seen_at": "2026-11-24T11:54:46.993163+00:00",
+      "source": "The Guardian Business",
+      "status": "skipped_stale"
+    },
     "0a3fd8915e04759246e80ce5bfdaa7868d1665b2d0df5f82bf978e1153cf25d6": {
       "created_at": "2026-10-26T18:52:52.237313+00:00",
       "has_embedded_video": true,
@@ -874,6 +884,11 @@
       "source_url": "https://www.rollingstone.com/music/music-news/tate-mcrae-billboard-hot-100-number-two-olivia-rodrigo-1235645932",
       "status": "published",
       "title": "Tate McRae Beats Taylor Swift, Olivia Rodrigo in Billboard Hot 100 Race for \u2026 Number Two"
+    },
+    "0a72272c8d43a3ceda33ea18736a896ee393ced4a8538098b5ebf8fd46e32b0f": {
+      "seen_at": "2026-11-24T11:54:46.993163+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
     },
     "0aeb208b6cbf0fbd6aad9e20a8bbf165f2eb96cb59b257e21b4e7f15f48fdb1b": {
       "seen_at": "2026-11-19T15:40:40.175868+00:00",
@@ -2083,6 +2098,11 @@
     "197b192de847cabb8595ad03752da36a8ffff29ffeca7bdd0d61f868eb446099": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "198e1cba45d16177c6e99f346b3737b88f7c7054dcf684e0dd1e14e352745c98": {
+      "seen_at": "2026-11-24T11:54:46.993163+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "199d8ac1d08d94b75eb18bfe4435d574451fa7a50fe0b0f680e62b93e2648053": {
@@ -4788,6 +4808,11 @@
       "source": "The Guardian Business",
       "status": "skipped_stale"
     },
+    "3a2f8eb4a6af51227e84ce4b16a7be83ec09c122e146282cd5f7a4f785826f48": {
+      "seen_at": "2026-11-24T11:54:46.993163+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "3a411ea5e3414a5be7c514f35371602a889d1e1086f772472d76e6d17f3e7d15": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "BBC Business",
@@ -4801,6 +4826,11 @@
     "3a60039d9eab319d3aaf691817aa8d1fdae5fe7ab17cc7d445697f878fe8b9bb": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "3a79b8d5c4b4253131a4f0b0835460a3b8dc1f072c4d25b48df50e74d4199281": {
+      "seen_at": "2026-11-24T11:54:46.993163+00:00",
+      "source": "BBC World",
       "status": "skipped_stale"
     },
     "3a7a236264a11ceebaaa5d7027beecf2aa9afd0eeb636806c7f828c3a62d99b6": {
@@ -4884,6 +4914,11 @@
     "3b5588db0db1c6fcd4769d9f38aafb86b044fd2b2c0d0bafd4a75977486b84ee": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "3b8e150f33429e8f1590cb3ba1b9b988e5ebeed83b52381fe4530868c50c5108": {
+      "seen_at": "2026-11-24T11:54:46.993163+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "3b99d3adae83c4f5aff3ac593be62e2781694891c3ef02e6976dd7e0b8fedf7f": {
@@ -6838,6 +6873,11 @@
       "status": "published",
       "title": "'We need help for small businesses, not punishment'"
     },
+    "5551def0095f2a9b1f13f8d7e8ceb5e1cd72ced85bec8572d09859e88da5856e": {
+      "seen_at": "2026-11-24T11:54:46.993163+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "556f550810e140e582154921db9164ee9fa459c17c896763b56647350602f44f": {
       "seen_at": "2026-11-03T15:55:12.765905+00:00",
       "source": "Billboard Pro Music Business",
@@ -8237,6 +8277,19 @@
       "seen_at": "2026-11-05T07:23:49.954377+00:00",
       "source": "The Guardian Technology",
       "status": "skipped_stale"
+    },
+    "66403463587777bcb1001dfc4055015c33d034a2e29674b2b7493a67878209f0": {
+      "created_at": "2026-11-24T11:54:46.993163+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Technology",
+      "restore_attempted_at": "2026-11-24T11:56:46.865296+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669563617517",
+      "source_url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal"
     },
     "664049bc3a66e86396f9a73bb5aa8c30fc1a17d4246fbd5a7b612e80b416ef42": {
       "seen_at": "2026-10-17T05:20:12.934883+00:00",
@@ -12752,6 +12805,11 @@
       "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
+    "9922f026851241ecf347962f8225defc35734d401eb60185066fce4a8a51334a": {
+      "seen_at": "2026-11-24T11:54:46.993163+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "99b398a27a008d052d789822f5ce59e21c507b424b1e658abb104067e68ba897": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
       "source": "Google News Science",
@@ -13146,6 +13204,11 @@
       "source": "Variety Music",
       "status": "skipped_stale"
     },
+    "9e20fc51c094e30b2a97571ef4bcc685832c3a0e76d8220da08ca514130694c0": {
+      "seen_at": "2026-11-24T11:54:46.993163+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "9e2fc450dfab756d22171730803d72353021a01e669d4bb16f8df7a8524eb8ed": {
       "seen_at": "2026-11-20T00:35:18.911518+00:00",
       "source": "The Guardian Environment",
@@ -13315,6 +13378,11 @@
     "a0ee2dac3041c140382b812393d29763cfc931a9d71d4c8e2f02e535dc6fa3f0": {
       "seen_at": "2026-11-02T13:11:57.143285+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "a107945cc9c74b6378174dcda9a9839cd85882871d37e8cae3f833366aaf5b89": {
+      "seen_at": "2026-11-24T11:54:46.993163+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "a10bd4d9c13f9b6a89de9a9689d0d5c77bf69ef28798578dd4d1822cd0767481": {
@@ -16287,6 +16355,19 @@
       "source": "Google News Politics",
       "status": "skipped_stale"
     },
+    "c2d8990c4b9f1e1199170513292c8baa653dd4f9e083cb8a824cfc88bc20c834": {
+      "created_at": "2026-11-24T11:54:46.993163+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-24T11:56:46.865296+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669561520365",
+      "source_url": "https://www.bbc.co.uk/news/articles/c63rgpy50x98o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "What Jensen Huang's return teaches China's Xi about Trump"
+    },
     "c2fd79ac5791e4e909e30f6282a90cf5a3b2f4394a766dd82bc6ae307523f039": {
       "seen_at": "2026-11-07T07:01:38.843423+00:00",
       "source": "The Guardian Culture",
@@ -17932,6 +18013,11 @@
       "source": "The Guardian Business",
       "status": "skipped_stale"
     },
+    "d5de94176bfed29c871bcafbc372b9c8706cea014d70f754a893ebe0af94124d": {
+      "seen_at": "2026-11-24T11:54:46.993163+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "d616219135c58b5168d3e7067ef61fa3682fca8bceca00024ea42851e63450cc": {
       "seen_at": "2026-10-27T06:48:31.538195+00:00",
       "source": "Google News World",
@@ -19117,6 +19203,11 @@
     "e38eb9052334f4b4e75cde70e14d6fe5762185fcef91a036dede5445cc1c6218": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "e3a30bb3efab148c4b1fbfcefac77d04557f5f5c323aa3ac7a0fb09fbad1f45e": {
+      "seen_at": "2026-11-24T11:54:46.993163+00:00",
+      "source": "The Guardian Sport",
       "status": "skipped_stale"
     },
     "e3b83f3df8bd66e1ff84f2cb40bf11b83ea1cb47e10bc9e7cd33a25f1547ad98": {
@@ -20765,8 +20856,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-24T04:29:50.266068+00:00",
-      "restore_status": "already_present_in_shopify",
+      "restore_attempted_at": "2026-11-24T11:56:46.865296+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669527736557",
       "source_url": "https://science.nasa.gov/image-article/apod-2026-november-22-swirls-and-colors-on-jupiter-from-juno",
