@@ -59,7 +59,7 @@ def video_id_from_body(body):
     return None
 
 def duration_seconds(value):
-    match=re.fullmatch(r"PT(?:(\\d+)H)?(?:(\\d+)M)?(?:(\\d+)S)?",value or "")
+    match=re.fullmatch(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?",value or "")
     if not match:return 0
     hours,minutes,seconds=(int(part or 0) for part in match.groups())
     return hours*3600+minutes*60+seconds
@@ -84,8 +84,8 @@ def fetch_video(vid):
     v=items[0]; sn=v.get("snippet") or {}; st=v.get("status") or {}; cd=v.get("contentDetails") or {}
     if st.get("privacyStatus")!="public" or st.get("embeddable") is not True:return None
     title=html.unescape(sn.get("title","")).strip()
-    official=re.search(r"official\\s+(?:(?:music\\s+)?video|lyrics?\\s+video|audio)",title,re.I)
-    excluded=re.search(r"\\b(shorts?|teaser|trailer|interview|reaction|dance practice)\\b",title,re.I)
+    official=re.search(r"official\s+(?:(?:music\s+)?video|lyrics?\s+video|audio)",title,re.I)
+    excluded=re.search(r"\b(shorts?|teaser|trailer|interview|reaction|dance practice)\b",title,re.I)
     if not official or excluded or duration_seconds(cd.get("duration"))<60:return None
     thumbs=sn.get("thumbnails") or {}
     thumb=next((thumbs[k].get("url") for k in ("maxres","standard","high","medium","default") if thumbs.get(k,{}).get("url")),None)
@@ -103,7 +103,7 @@ def page_seo(article, video):
     elif "audio" in low: kind="official audio"; heading="Listen to the official audio"
     else: kind="official music video"; heading="Watch the official music video"
     description=BeautifulSoup(video["description"],"html.parser").get_text(" ",strip=True)
-    description=re.sub(r"\\s+"," ",description).strip()
+    description=re.sub(r"\s+"," ",description).strip()
     if len(description)<40: description=f"{title} — {kind} from {video['channel']}. Watch the official release on VALUTED MUSIC."
     description=description[:1000]
     canonical=f"https://{EXPECTED_HOST}/blogs/{BLOG_HANDLE}/{article['handle']}"
