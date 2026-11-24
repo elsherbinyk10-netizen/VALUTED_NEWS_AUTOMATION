@@ -218,7 +218,7 @@ def publish(blog_id, item, article):
 
 def main():
     blog_id=shop_guard_and_audit()
-        candidates=collect()
+    candidates=collect()
     log(f"LIVE SOURCE PAGES VERIFIED: {len(candidates)}")
     published=0
     for item in candidates:
