@@ -8,6 +8,7 @@ class PublisherVideoTrustTests(unittest.TestCase):
         self.assertTrue(_trusted_player_url("https://www.youtube.com/embed/AbCdEf12345"))
         self.assertTrue(_trusted_player_url("https://player.vimeo.com/video/123456789"))
         self.assertTrue(_trusted_player_url("https://players.brightcove.net/123/default_default/index.html"))
+        self.assertTrue(_trusted_player_url("https://emp.bbc.com/emp/SMPj/12345.html"))
 
     def test_accepts_player_hosted_on_the_original_publisher_domain(self):
         self.assertTrue(_trusted_player_url("https://video.publisher.example/player/story-123", "publisher.example"))
