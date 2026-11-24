@@ -8,6 +8,7 @@ This folder is arranged with the correct GitHub Actions workflow and state-file 
 - Direct publishing sources are restricted to the approved publisher allowlist in `news_worker.py` (BBC, NPR, NASA, The Guardian, Variety, Rolling Stone, and Billboard). Add new publishers only after validating their official RSS feed and terms.
 - Every published story must have a verified publisher-declared high-resolution image (minimum 1200×675; prefer 1600×900) and a playable video embedded by the cited publisher. Unrelated search-result videos are not substituted; stories without the publisher's own verified video are held.
 - SEO title, unique description, canonical source attribution, category/tags, encoding, duplicate detection, and text integrity must pass before publishing. High-risk and incomplete items are held.
+- Official-channel video fallback is limited to verified BBC News, NASA, NPR, Billboard, Rolling Stone, The Guardian, and Variety channels; a title match and playback probe are required. Arbitrary third-party videos are never attached.
 - For YouTube publisher embeds, the QA theme requests captions in the visitor's selected site language. Captions appear only where the publisher/video actually provides that language track; other publisher players control their own caption availability.
 - The optional OpenAI key is stored only as a GitHub Actions secret, never in files.
 
@@ -45,7 +46,7 @@ Repository → Settings → Secrets and variables → Actions → Variables:
 - `MAX_ARTICLES_PER_RUN` = `5`
 - `ARCHIVE_RESTORE_PER_RUN` = `15` (the workflow default; up to 25 is supported)
 - `MAX_AGE_HOURS` = `36`
-- `MIN_WORDS_FOR_PUBLISH` = `180`
+- Publishing text gate: at least 120 source words and 800 characters, plus verified publisher artwork, a playable relevant publisher/official-channel video, and all editorial safety checks.
 - `OPENAI_MODEL` = `gpt-4.1-mini`
 
 ## Run
