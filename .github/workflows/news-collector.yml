@@ -132,7 +132,10 @@ jobs:
         run: python audit_repair_articles.py
 
       - name: Run RSS collector
-        run: python news_worker.py
+        shell: bash
+        run: |
+          set -o pipefail
+          python news_worker.py 2>&1 | tee "$RUNNER_TEMP/news-worker.log"
 
       - name: Restore historical articles from verified RSS and publisher media
         env:
@@ -223,4 +226,22 @@ jobs:
           done
           echo "Unable to push merged processing state after 3 attempts."
           exit 1
-# 2026-11-23 guarded same-day retry: recheck fresh RSS and verified publisher videos without weakening media gates.
+
+      - name: Fail visibly when the collector publishes zero articles
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          log="$RUNNER_TEMP/news-worker.log"
+          if [ ! -f "$log" ]; then
+            echo "Publishing verification unavailable: RSS collector log was not created."
+            exit 1
+          fi
+          if ! grep -Eq 'Run complete:.*published=[1-9][0-9]*' "$log"; then
+            echo "PUBLISHING ALERT: collector completed without a confirmed Shopify article publication."
+            grep -E 'Run complete:|Skipped without creating|missing verified embedded video|source text too short' "$log" | tail -40 || true
+            exit 1
+          fi
+          echo "Collector log confirms at least one article was published."
+# 2026-11-24: retain quality gates; recognize BBC's official embedded player and fail runs with zero confirmed publications.
+
