@@ -50,6 +50,20 @@ def slug(s):
  s=re.sub(r"[^a-z0-9]+","-",clean(s).lower()).strip("-")
  return s[:100] or "music-entry"
 
+def verified_cover_art(mbid):
+ """Return a real Cover Art Archive front image URL or None; never invent artwork."""
+ url=f"https://coverartarchive.org/release-group/{mbid}/front-500"
+ try:
+  r=S.get(url,timeout=25,allow_redirects=True,stream=True)
+  try:
+   if r.status_code==200 and r.headers.get("Content-Type","").lower().startswith("image/"):
+    return r.url
+   return None
+  finally:
+   r.close()
+ except requests.RequestException:
+  return None
+
 def article_exists(blog_id,tag):
  q="""query Existing($id:ID!,$after:String){blog(id:$id){articles(first:100,after:$after){edges{node{id tags}}pageInfo{hasNextPage endCursor}}}}"""
  cursor=None
@@ -60,18 +74,21 @@ def article_exists(blog_id,tag):
   if not p["pageInfo"]["hasNextPage"]: return False
   cursor=p["pageInfo"]["endCursor"]
 
-def create(blog_id,title,handle,body,tags,summary):
+def create(blog_id,title,handle,body,tags,summary,image_url):
  tag=next(t for t in tags if t.startswith("mbid-"))
  if article_exists(blog_id,tag): log("SKIP existing: "+title);return False
  seo_title=(title+" | VALUTED MUSIC")[:70]
  seo_description=summary[:320]
  metafields=[{"namespace":"global","key":"title_tag","type":"single_line_text_field","value":seo_title},{"namespace":"global","key":"description_tag","type":"single_line_text_field","value":seo_description}]
- inp={"author":{"name":"VALUTED MUSIC Catalogue Desk"},"blogId":blog_id,"title":title,"handle":handle,"body":body,"tags":tags,"isPublished":AUTO_PUBLISH,"summary":summary[:240],"metafields":metafields}
+ inp={"author":{"name":"VALUTED MUSIC Catalogue Desk"},"blogId":blog_id,"title":title,"handle":handle,"body":body,"tags":tags,"isPublished":AUTO_PUBLISH,"summary":summary[:240],"image":{"url":image_url,"altText":title[:512]},"metafields":metafields}
  if not AUTO_PUBLISH:
   log("DRY RUN — verified catalogue candidate: "+title);return False
- d=gql("""mutation Create($article:ArticleCreateInput!){articleCreate(article:$article){article{id title handle isPublished}userErrors{field message}}}""",{"article":inp})["articleCreate"]
+ d=gql("""mutation Create($article:ArticleCreateInput!){articleCreate(article:$article){article{id title handle isPublished image{originalSrc altText}}userErrors{field message}}}""",{"article":inp})["articleCreate"]
  if d["userErrors"]: raise RuntimeError(json.dumps(d["userErrors"]))
- log("CATALOGUE PAGE: "+d["article"]["title"]+" /blogs/news/"+d["article"]["handle"]);return True
+ saved=d["article"]
+ if not saved.get("image",{}).get("originalSrc") or saved.get("isPublished") is not True:
+  raise RuntimeError("Catalogue page failed featured-image or publish verification")
+ log("PUBLISHED CATALOGUE PAGE WITH COVER ART: "+saved["title"]+" /blogs/news/"+saved["handle"]);return True
 
 def make_artist(x):
  mbid=x.get("id");name=clean(x.get("name"));area=clean((x.get("area") or {}).get("name"));country=clean((x.get("country") or ""));kind=clean(x.get("type"));life=x.get("life-span") or {}
@@ -91,9 +108,13 @@ def make_artist(x):
 def make_release(x):
  mbid=x.get("id");title=clean(x.get("title"));artist=clean(x.get("artist-credit-phrase"));date=clean(x.get("first-release-date"));typ=clean(x.get("primary-type"));secondary=", ".join(x.get("secondary-types") or [])
  if not mbid or not title:return None
+ cover=verified_cover_art(mbid)
+ if not cover:
+  log(f"HOLD release {mbid}: no verified Cover Art Archive front image")
+  return None
  heading=f"{title} — Album & Release Guide"
  body=f"<p><strong>Artist:</strong> {html.escape(artist or 'Not listed')}</p><p><strong>Release date:</strong> {html.escape(date or 'Not listed')}</p><p><strong>Release type:</strong> {html.escape(typ or 'Not listed')}{(' · '+html.escape(secondary)) if secondary else ''}</p><p>Explore this release in the VALUTED MUSIC catalogue. Track listings and release details may vary by edition. Metadata source: <a href=\"https://musicbrainz.org/release-group/{mbid}\" rel=\"nofollow noopener\" target=\"_blank\">MusicBrainz release-group record</a>.</p>"
- return heading,slug(title)+"-release-"+mbid[:8],body,["catalog-album","music-album","mbid-"+mbid],f"Album and release guide for {title} by {artist}."
+ return heading,slug(title)+"-release-"+mbid[:8],body,["catalog-album","music-album","mbid-"+mbid],f"Album and release guide for {title} by {artist}.",cover
 
 def make_recording(x):
  mbid=x.get("id");title=clean(x.get("title"));artist=clean(x.get("artist-credit-phrase"));length=x.get("length")
@@ -107,18 +128,15 @@ def main():
  blog=guard();items=[]
  # Diverse, repeatable discovery across major styles; duplicates are blocked by MusicBrainz IDs.
  searches=[
-  ("artist",'tag:pop AND type:Person'),("artist",'tag:rock AND type:Group'),
-  ("artist",'tag:hip hop AND type:Person'),("artist",'tag:electronic AND type:Group'),
-  ("artist",'tag:arabic music'),("artist",'tag:jazz AND type:Person'),
   ("release-group",'primarytype:Album AND tag:pop'),("release-group",'primarytype:Album AND tag:rock'),
   ("release-group",'primarytype:Album AND tag:hip hop'),("release-group",'primarytype:Album AND tag:arabic music'),
-  ("recording",'tag:pop'),("recording",'tag:rock'),("recording",'tag:hip hop'),("recording",'tag:arabic music')
+  ("release-group",'primarytype:Album AND tag:electronic'),("release-group",'primarytype:Album AND tag:jazz')
  ]
  for kind,q in searches:
   try:
-   key={"artist":"artists","release-group":"release-groups","recording":"recordings"}[kind]
+   key="release-groups"
    for x in mb(kind,q,10).get(key,[]):
-    maker={"artist":make_artist,"release-group":make_release,"recording":make_recording}[kind]
+    maker=make_release
     entry=maker(x)
     if entry:items.append(entry)
   except Exception as e: log(f"Search skipped ({kind} / {q}): {e}")

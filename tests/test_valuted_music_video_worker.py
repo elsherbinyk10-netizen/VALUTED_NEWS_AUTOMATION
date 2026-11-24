@@ -25,7 +25,7 @@ class MusicVideoWorkerTests(unittest.TestCase):
         self.assertEqual(parse_published("2026-11-24T10:00:00Z"),datetime(2026,11,24,10,0,tzinfo=timezone.utc))
         self.assertIsNone(parse_published("not-a-date"))
 
-    def test_article_is_staged_with_thumbnail_and_schema_fields(self):
+    def test_article_is_published_with_thumbnail_and_schema_fields(self):
         video={"video_id":"abcdefghijk","title":"Artist — Song (Official Music Video)",
           "description":"An official music video release description with enough text.",
           "channel_title":"Official Label","thumbnail":"https://i.ytimg.com/vi/abcdefghijk/hqdefault.jpg",
@@ -33,7 +33,7 @@ class MusicVideoWorkerTests(unittest.TestCase):
           "embed_url":"https://www.youtube-nocookie.com/embed/abcdefghijk",
           "watch_url":"https://www.youtube.com/watch?v=abcdefghijk"}
         article=build_article(video)
-        self.assertFalse(article["isPublished"])
+        self.assertTrue(article["isPublished"])
         self.assertEqual(article["image"]["url"],video["thumbnail"])
         self.assertIn("youtube-nocookie.com/embed/abcdefghijk",article["body"])
         keys={item["key"] for item in article["metafields"]}

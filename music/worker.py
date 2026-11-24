@@ -2,7 +2,7 @@
 """VALUTED MUSIC daily publishing worker. Strict store guard; no theme writes."""
 import os, re, sys, json, hashlib, html
 from datetime import datetime, timezone, timedelta
-from urllib.parse import urlparse, urlunparse
+from urllib.parse import urlparse, urlunparse, urljoin
 import requests, feedparser
 from bs4 import BeautifulSoup
 
@@ -56,6 +56,19 @@ def canonicalize(url):
     p=urlparse(url)
     return urlunparse((p.scheme or "https", p.netloc.lower(), p.path.rstrip("/"), "", "", ""))
 
+def verify_image(url):
+    """Accept only reachable HTTPS image resources; fail closed on missing/broken art."""
+    if not url or not url.startswith("https://"):
+        return False
+    try:
+        response=session.get(url,stream=True,timeout=18,headers={"Range":"bytes=0-0"})
+        try:
+            return response.status_code in (200,206) and response.headers.get("Content-Type","").lower().startswith("image/")
+        finally:
+            response.close()
+    except requests.RequestException:
+        return False
+
 def gql(query, variables=None):
     r=session.post(f"https://{SHOP}/admin/api/{API_VERSION}/graphql.json",
         headers={"X-Shopify-Access-Token":TOKEN,"Content-Type":"application/json"},
@@ -95,13 +108,17 @@ def get_page(url):
     for x in soup(["script","style","nav","footer","header","aside","noscript"]): x.decompose()
     title=(soup.find("meta",property="og:title") or {}).get("content") or (soup.title.get_text(" ",strip=True) if soup.title else "")
     desc=(soup.find("meta",property="og:description") or {}).get("content") or ""
+    image_meta=soup.find("meta",property="og:image") or soup.find("meta",attrs={"name":"twitter:image"})
+    image_url=urljoin(r.url,image_meta.get("content","").strip()) if image_meta else ""
+    if not verify_image(image_url):
+        raise ValueError("No reachable HTTPS featured image; story held instead of publishing without a picture")
     body=soup.find("article") or soup.find("main") or soup.body
     text=re.sub(r"\s+"," ",body.get_text(" ",strip=True)) if body else ""
     text=text[:16000]
     if len(text.split())<180: raise ValueError("Underlying publisher page has insufficient readable article text")
     pub=soup.find("meta",property="article:published_time")
     published=pub.get("content") if pub else ""
-    return {"url":canonicalize(canon),"title":html.unescape(title).strip(),"description":desc.strip(),"text":text,"published":published}
+    return {"url":canonicalize(canon),"title":html.unescape(title).strip(),"description":desc.strip(),"text":text,"published":published,"image_url":image_url}
 
 def collect():
     now=datetime.now(timezone.utc); seen=set(); items=[]
@@ -149,7 +166,10 @@ def draft_story(item):
     publisher=html.escape(item.get("publisher","Original publisher"))
     safe_title=html.escape(title)
     source=html.escape(item["url"],quote=True)
-    body=(f"<p>{html.escape(excerpt)}</p>"
+    image_url=html.escape(item["image_url"],quote=True)
+    image_alt=html.escape(title,quote=True)
+    body=(f'<p><img src="{image_url}" alt="{image_alt}" loading="lazy"></p>'
+          f"<p>{html.escape(excerpt)}</p>"
           f"<p>This brief is based on reporting by {publisher}. "
           f"Read the original report for full details and context: "
           f"<a href=\"{source}\" rel=\"nofollow noopener\" target=\"_blank\">{publisher}</a>.</p>")
@@ -163,7 +183,8 @@ def draft_story(item):
     summary=(item.get("description") or excerpt)[:240]
     seo_description=(f"{title} — music news from {publisher}. "+summary)[:320]
     return {"title":title,"handle":handle,"body":body,"summary":summary,
-        "seo_title":title[:70],"seo_description":seo_description,"tags":sorted(set(tags))}
+        "seo_title":title[:70],"seo_description":seo_description,"tags":sorted(set(tags)),
+        "image":{"url":item["image_url"],"altText":title[:512]}}
 
 def existing_source(blog_id, source_url, handle=None):
     # Walk every page so older stories cannot be duplicated after the newest 100.
@@ -195,18 +216,19 @@ def publish(blog_id, item, article):
     data={"author":{"name":"VALUTED MUSIC Editorial Desk"},"blogId":blog_id,
       "title":article["title"],"handle":article["handle"],"body":article["body"],
       "tags":article["tags"],"summary":article.get("summary","")[:240],
-      "metafields":metafields,"isPublished":True}
+      "image":article["image"],"metafields":metafields,"isPublished":True}
     mutation="""mutation CreateArticle($article:ArticleCreateInput!) { articleCreate(article:$article) { article { id title handle isPublished tags body metafields(first:10,namespace:"global"){edges{node{key value}}} } userErrors { field message } } }"""
     result=gql(mutation,{"article":data})["articleCreate"]
     if result["userErrors"]: raise RuntimeError("Article write failed: "+json.dumps(result["userErrors"]))
     created=result["article"]
-    saved=gql("""query Verify($id:ID!) { article(id:$id) { id title handle isPublished tags body blog { id handle } metafields(first:10,namespace:"global"){edges{node{key value}}} } }""",{"id":created["id"]})["article"]
+    saved=gql("""query Verify($id:ID!) { article(id:$id) { id title handle isPublished tags body image { originalSrc altText } blog { id handle } metafields(first:10,namespace:"global"){edges{node{key value}}} } }""",{"id":created["id"]})["article"]
     seo={e["node"]["key"]:e["node"]["value"] for e in saved["metafields"]["edges"]}
     checks={"title":saved["title"]==article["title"],"handle":saved["handle"]==article["handle"],
       "published":saved["isPublished"] is True,"source":item["url"] in (saved.get("body") or ""),
       "tags":set(article["tags"]).issubset(set(saved.get("tags") or [])),
       "seo_title":seo.get("title_tag")==article["seo_title"][:70],
       "seo_description":seo.get("description_tag")==article["seo_description"][:320],
+      "featured_image":bool((saved.get("image") or {}).get("originalSrc")),
       "blog":(saved.get("blog") or {}).get("handle")==BLOG_HANDLE}
     log("POST-WRITE VERIFY: "+json.dumps(checks))
     if not all(checks.values()): raise RuntimeError("Post-write verification failed; do not retry automatically.")
