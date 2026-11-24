@@ -33,7 +33,7 @@ chmod +x scripts/setup_valuted_music_github_secrets.sh
 ./scripts/setup_valuted_music_github_secrets.sh
 \`\`\`
 
-The script asks for the Shopify Client ID, Client secret, YouTube Data API key, and optionally OpenAI API key. Secret input is hidden and piped directly to GitHub CLI. No credentials are written into the repository or a local file.
+The script asks only for the Shopify Client ID and Client Secret. Secret input is hidden and piped directly to GitHub CLI. Music news uses RSS-based source briefs; video discovery uses official-channel RSS and public no-key metadata. No credentials are written into the repository or a local file.
 
 ## C. What GitHub stores
 
