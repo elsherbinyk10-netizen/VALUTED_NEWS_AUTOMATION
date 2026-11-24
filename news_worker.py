@@ -1159,7 +1159,7 @@ def classify_story_category(title, description="", feed_category="World"):
     # otherwise be misrouted to Technology. Explicit film/TV/music formats are
     # stronger evidence than a platform brand mentioned in the same headline.
     entertainment_format = re.search(
-        r"\b(documentary|docuseries|trailer|film|films|movie|movies|tv series|television|
+        r"\b(documentary|docuseries|trailer|film|films|movie|movies|tv series|television|" 
         r"streaming|box office|actor|actress|singer|album|song|concert|music video)\b",
         title_text, re.I,
     )
