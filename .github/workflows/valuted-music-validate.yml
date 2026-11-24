@@ -25,6 +25,10 @@ jobs:
         run: python -m py_compile music/video_worker.py music/catalog_worker.py
       - name: Check Radar worker JavaScript syntax
         run: node --check music/radar-worker.js
+      - name: Check browser-only Radar JavaScript syntax
+        run: node --check music/radar-browser/radar.js
+      - name: Check Radar static app assets
+        run: test -s music/radar-browser/index.html && test -s music/radar-browser/styles.css && test -s music/radar-browser/library.json
       - name: Check official channel configuration
         run: |
           python - <<'PY'
