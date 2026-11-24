@@ -8064,6 +8064,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "6352bd0d59b48f2b0e31c68cf003464b694f66476a4e2054fbd6ddf25bd37292": {
+      "seen_at": "2026-11-24T12:10:00.485297+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "635b0b2984593638ef32fce012be54e44dd3949d62a6df9852421ca1eacc8565": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
@@ -15683,6 +15688,19 @@
       "seen_at": "2026-11-07T12:55:20.001147+00:00",
       "source": "Variety Music",
       "status": "skipped_stale"
+    },
+    "bc3b15000578c7a5d778ce81a5fff438e4a43d43a4c239a06e3b3c2e8c128754": {
+      "created_at": "2026-11-24T12:10:00.485297+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Variety Music",
+      "restore_attempted_at": "2026-11-24T12:11:51.241491+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669565812973",
+      "source_url": "https://variety.com/2026/music/news/ariana-grande-teases-eternal-sunshine-tour-movie-peacock-1236956068",
+      "status": "published",
+      "title": "Ariana Grande Teases \u2018Eternal Sunshine Tour\u2019 Movie at Peacock"
     },
     "bc3fb02f00ae214a3f230248528f97917f200df3d7886987a6b13623518b4442": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
