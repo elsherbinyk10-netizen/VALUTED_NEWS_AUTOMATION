@@ -12,6 +12,7 @@ SHOP=os.getenv("SHOPIFY_ADMIN_DOMAIN","").strip()
 TOKEN=os.getenv("SHOPIFY_ADMIN_ACCESS_TOKEN","")
 API_VERSION=os.getenv("SHOPIFY_API_VERSION","2026-10")
 MAX_ITEMS=min(30,max(1,int(os.getenv("MAX_CATALOG_ITEMS","15"))))
+AUTO_PUBLISH=os.getenv("AUTO_PUBLISH","false").lower()=="true"
 BLOG_HANDLE="news"
 HEADERS={"User-Agent":"VALUTED-MUSIC-Catalogue/1.0 (https://valutedmusic.site; contact: catalog@valutedmusic.site)","Accept":"application/json"}
 S=requests.Session(); S.headers.update(HEADERS)
@@ -62,8 +63,9 @@ def article_exists(blog_id,tag):
 def create(blog_id,title,handle,body,tags,summary):
  tag=next(t for t in tags if t.startswith("mbid-"))
  if article_exists(blog_id,tag): log("SKIP existing: "+title);return False
- inp={"title":title,"handle":handle,"body":body,"tags":tags,"isPublished":True,"summary":summary[:240],
-      "seo":{"title":(title+" | VALUTED MUSIC")[:70],"description":summary[:300]}}
+  inp={"author":{"name":"VALUTED MUSIC Catalogue Desk"},"title":title,"handle":handle,"body":body,"tags":tags,"isPublished":AUTO_PUBLISH,"summary":summary[:240]}
+ if not AUTO_PUBLISH:
+  log("DRY RUN — verified catalogue candidate: "+title);return False
  d=gql("""mutation Create($blog:ID!,$article:ArticleCreateInput!){articleCreate(blogId:$blog,article:$article){article{id title handle isPublished}userErrors{field message}}}""",{"blog":blog_id,"article":inp})["articleCreate"]
  if d["userErrors"]: raise RuntimeError(json.dumps(d["userErrors"]))
  log("CATALOGUE PAGE: "+d["article"]["title"]+" /blogs/news/"+d["article"]["handle"]);return True
