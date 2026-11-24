@@ -1,56 +1,59 @@
-# VALUTED MUSIC — GitHub Actions credentials
+# VALUTED MUSIC — Shopify app and GitHub credentials
 
-This setup configures the repository secrets used by the three scheduled VALUTED MUSIC workflows. It does not create Shopify or Google credentials; create those in their official dashboards first.
+This repository uses a Shopify Dev Dashboard custom app and Shopify's client credentials grant. It does not use a manually copied or permanent Admin API token.
 
-## Run from Terminal (macOS)
+## A. Create the Shopify app once
 
-1. Install GitHub CLI: https://cli.github.com/
-2. Authenticate with repository access:
-   `gh auth login`
-3. Download the repository and run the setup:
+1. Open the VALUTED MUSIC Shopify admin: https://admin.shopify.com/store/0k31v6-th/settings/apps
+2. Choose **Develop apps** → **Build apps in Dev Dashboard** → **Create app**.
+3. Name it **VALUTED MUSIC Automation**.
+4. Create an app version and request these Admin API scopes:
+   - \`read_content\`
+   - \`write_content\`
+5. Release the version.
+6. Install the app on the VALUTED MUSIC store and approve access.
+7. In the app's **Settings → Credentials**, copy the **Client ID** and **Client secret**.
 
-```bash
+Important: the app and store must belong to the same Shopify organization for the client credentials grant. If Shopify returns \`shop_not_permitted\`, stop and confirm both are in the same organization; do not repeatedly retry.
+
+## B. Run the Terminal setup
+
+Requirements: macOS Terminal, Git, and GitHub CLI.
+
+Install GitHub CLI if needed: https://cli.github.com/
+
+Then run:
+
+\`\`\`bash
 git clone https://github.com/elsherbinyk10-netizen/VALUTED_NEWS_AUTOMATION.git
 cd VALUTED_NEWS_AUTOMATION
 git pull origin main
+gh auth login
 chmod +x scripts/setup_valuted_music_github_secrets.sh
 ./scripts/setup_valuted_music_github_secrets.sh
-```
+\`\`\`
 
-The script asks for credentials using hidden terminal input and pipes them directly to `gh secret set`. It does not save credentials in a local file or print them.
+The script asks for the Shopify Client ID, Client secret, YouTube Data API key, and optionally OpenAI API key. Secret input is hidden and piped directly to GitHub CLI. No credentials are written into the repository or a local file.
 
-## Credentials to create
+## C. What GitHub stores
 
-### 1. Shopify Admin API token — required
+Repository secrets:
+- \`VALUTED_MUSIC_SHOPIFY_CLIENT_ID\`
+- \`VALUTED_MUSIC_SHOPIFY_CLIENT_SECRET\`
+- \`VALUTED_MUSIC_YOUTUBE_DATA_API_KEY\`
+- \`OPENAI_API_KEY\` (required by the Music News workflow)
 
-In Shopify Admin for `0k31v6-th.myshopify.com`, open **Settings → Apps → Develop apps**. Create/install a custom app with Admin API scopes:
+Repository variable:
+- \`VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN=0k31v6-th.myshopify.com\`
 
-- `read_content`
-- `write_content`
+## D. Automatic token exchange
 
-Generate an Admin API access token. Enter it when the script asks for `VALUTED_MUSIC_SHOPIFY_ADMIN_ACCESS_TOKEN`.
+Before each scheduled Shopify job, \`music/shopify_auth.py\` exchanges the Client ID and Client secret at Shopify's \`/admin/oauth/access_token\` endpoint using \`grant_type=client_credentials\`. Shopify issues a short-lived token (typically 24 hours). The helper checks that \`read_content\` and \`write_content\` were granted and writes the token only to the current GitHub Actions job environment. It never prints the token.
 
-Use only the VALUTED MUSIC store's token. Never commit it, paste it into chat, or put it in a shell command argument.
+## E. Verify
 
-### 2. YouTube Data API key — required for official-video checks
+Open the repository's **Settings → Secrets and variables → Actions** and confirm the secret names exist. GitHub does not reveal secret values.
 
-In Google Cloud Console, create/select a project, enable **YouTube Data API v3**, and create an API key. Restrict the key to YouTube Data API v3 where practical. Enter it for `VALUTED_MUSIC_YOUTUBE_DATA_API_KEY`.
+Then open **Actions** and inspect the workflow runs. A successful credential setup is not proof of publishing: verify the run logs and the resulting article in Shopify.
 
-### 3. OpenAI API key — required for Music News
-
-Create an API key in the OpenAI Platform dashboard and enter it when prompted. API usage is billed separately from a ChatGPT subscription. If skipped, the daily Music News workflow cannot authenticate and will not publish.
-
-## What the script configures
-
-- Repository secret: `VALUTED_MUSIC_SHOPIFY_ADMIN_ACCESS_TOKEN`
-- Repository secret: `VALUTED_MUSIC_YOUTUBE_DATA_API_KEY`
-- Repository secret: `OPENAI_API_KEY` (optional in the script, required by the News workflow)
-- Repository variable: `VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN=0k31v6-th.myshopify.com`
-
-The script prints only secret names, never secret values. GitHub does not allow reading secret values back; `gh secret list` verifies only that names exist.
-
-## After setup
-
-Open the repository's **Actions** tab and inspect the next scheduled runs. A successful setup command is not proof of a successful Shopify publish. Verify the workflow run logs and the published article in Shopify.
-
-The scheduled workflows are configured for 9:00 PM, 9:15 PM, and 9:30 PM Cairo time. Manual dispatch defaults to dry-run; do not enable publishing manually until the credentials and first live run are verified.
+Schedules remain 9:00 PM video + SEO, 9:15 PM Music News, and 9:30 PM catalogue (Cairo time). Manual dispatch remains dry-run by default.

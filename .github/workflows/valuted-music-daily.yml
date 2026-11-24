@@ -30,10 +30,15 @@ jobs:
           cache: pip
       - name: Install dependencies
         run: python -m pip install --upgrade pip requests feedparser beautifulsoup4
+      - name: Authenticate with Shopify Dev Dashboard
+        env:
+          SHOPIFY_ADMIN_DOMAIN: ${{ vars.VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN }}
+          SHOPIFY_CLIENT_ID: ${{ secrets.VALUTED_MUSIC_SHOPIFY_CLIENT_ID }}
+          SHOPIFY_CLIENT_SECRET: ${{ secrets.VALUTED_MUSIC_SHOPIFY_CLIENT_SECRET }}
+        run: python music/shopify_auth.py
       - name: Verify target configuration and discover music stories
         env:
           SHOPIFY_ADMIN_DOMAIN: ${{ vars.VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN }}
-          SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.VALUTED_MUSIC_SHOPIFY_ADMIN_ACCESS_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           SHOPIFY_API_VERSION: "2026-10"
           MAX_ARTICLES_PER_RUN: "3"
