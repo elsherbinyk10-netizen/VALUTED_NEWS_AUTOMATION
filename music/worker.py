@@ -11,7 +11,6 @@ EXPECTED_HOST = "valutedmusic.site"
 API_VERSION = os.getenv("SHOPIFY_API_VERSION", "2026-10")
 SHOP = os.getenv("SHOPIFY_ADMIN_DOMAIN", "").strip()
 TOKEN = os.getenv("SHOPIFY_ADMIN_ACCESS_TOKEN", "")
-OPENAI_KEY = os.getenv("OPENAI_API_KEY", "")
 MAX_ARTICLES = min(5, max(0, int(os.getenv("MAX_ARTICLES_PER_RUN", "3"))))
 MAX_AGE_HOURS = int(os.getenv("MAX_AGE_HOURS", "36"))
 AUTO_PUBLISH = os.getenv("AUTO_PUBLISH", "false").lower() == "true"
@@ -137,31 +136,38 @@ def collect():
     return sorted(items,key=lambda x:x.get("published",""),reverse=True)
 
 def draft_story(item):
-    if not OPENAI_KEY: raise RuntimeError("Missing OPENAI_API_KEY; refusing to publish unedited feed excerpts")
-    prompt = """Create one concise, original English music-news article based ONLY on the supplied live publisher page text. Do not add facts, dates, quotes, chart positions, video IDs, licensing or ownership claims. If a fact is unclear, omit it. Keep clear attribution and a direct source link. No video embed unless one is explicitly verified separately (none is supplied). Return strict JSON keys: title, handle, body_html, seo_title, seo_description, summary, genre_tags. body_html must contain useful h2 headings and a final source attribution link. 250-450 words. Tags must be selected only from: new-releases, artist-news, hip-hop, pop, rock, electronic, arabic-music, classical, afrobeats, r-and-b, tours, industry-news. No invented internal links."""
-    payload={"model":os.getenv("OPENAI_MODEL","gpt-4.1-mini"),"temperature":0.2,
-        "messages":[{"role":"system","content":prompt},{"role":"user","content":json.dumps(item,ensure_ascii=False)}],
-        "response_format":{"type":"json_object"}}
-    r=session.post("https://api.openai.com/v1/chat/completions",
-        headers={"Authorization":f"Bearer {OPENAI_KEY}","Content-Type":"application/json"},
-        json=payload,timeout=90)
-    r.raise_for_status()
-    result=json.loads(r.json()["choices"][0]["message"]["content"])
-    title=result.get("title","").strip(); body=result.get("body_html","")
-    if not title or len(body.split())<220: raise ValueError("Generated article failed completeness check")
-    if item["url"] not in body: raise ValueError("Article body must contain the canonical source URL")
-    tags=result.get("genre_tags",[])
-    if not isinstance(tags,list): raise ValueError("Invalid tags")
-    allowed={"new-releases","artist-news","hip-hop","pop","rock","electronic","arabic-music","classical","afrobeats","r-and-b","tours","industry-news"}
-    tags=[t for t in tags if t in allowed]
-    text=(title+" "+body).lower()
+    """Build a concise, source-attributed news brief without a generative API."""
+    source_text=BeautifulSoup(item.get("text",""),"html.parser").get_text(" ",strip=True)
+    source_text=re.sub(r"\s+"," ",source_text).strip()
+    # Keep only a short factual excerpt and link readers to the original publisher.
+    sentences=re.split(r"(?<=[.!?])\s+",source_text)
+    excerpt=" ".join(s for s in sentences if len(s.split())>=8)[:900]
+    excerpt=" ".join(excerpt.split()[:125])
+    if len(excerpt.split())<35:
+        excerpt=(item.get("description") or "").strip()
+    if len(excerpt.split())<20:
+        raise ValueError("Source page has too little usable text for a safe news brief")
+    title=html.unescape(item.get("title","")).strip()
+    if not title:
+        raise ValueError("Source headline is missing")
+    publisher=html.escape(item.get("publisher","Original publisher"))
+    safe_title=html.escape(title)
+    source=html.escape(item["url"],quote=True)
+    body=(f"<p>{html.escape(excerpt)}</p>"
+          f"<p>This brief is based on reporting by {publisher}. "
+          f"Read the original report for full details and context: "
+          f"<a href=\"{source}\" rel=\"nofollow noopener\" target=\"_blank\">{publisher}</a>.</p>")
+    tags=["artist-news"]
+    text=(title+" "+excerpt).lower()
     for tag,terms in GENRES.items():
         if any(term in text for term in terms) and tag not in tags: tags.append(tag)
-    if "artist-news" not in tags and "new-releases" not in tags: tags.append("artist-news")
-    handle=re.sub(r"[^a-z0-9-]+","-",result.get("handle") or title.lower()).strip("-")[:180]
-    summary=result.get("summary",result.get("seo_description","")).strip()[:240]
-    return {"title":title,"handle":handle,"body":body,"summary":summary,"seo_title":result.get("seo_title",title)[:70],
-        "seo_description":result.get("seo_description",summary)[:320],"tags":sorted(set(tags))}
+    if any(term in text for term in ("new single","new album","new release","releases")):
+        tags.append("new-releases")
+    handle=re.sub(r"[^a-z0-9-]+","-",title.lower()).strip("-")[:180]
+    summary=(item.get("description") or excerpt)[:240]
+    seo_description=(f"{title} — music news from {publisher}. "+summary)[:320]
+    return {"title":title,"handle":handle,"body":body,"summary":summary,
+        "seo_title":title[:70],"seo_description":seo_description,"tags":sorted(set(tags))}
 
 def existing_source(blog_id, source_url, handle=None):
     # Walk every page so older stories cannot be duplicated after the newest 100.
@@ -212,8 +218,7 @@ def publish(blog_id, item, article):
 
 def main():
     blog_id=shop_guard_and_audit()
-    if not OPENAI_KEY: raise RuntimeError("OPENAI_API_KEY is not configured; identity verified, no publishing attempted.")
-    candidates=collect()
+        candidates=collect()
     log(f"LIVE SOURCE PAGES VERIFIED: {len(candidates)}")
     published=0
     for item in candidates:
