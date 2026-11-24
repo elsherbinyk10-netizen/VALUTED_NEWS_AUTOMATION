@@ -12,7 +12,7 @@ This project is isolated to the Shopify store VALUTED MUSIC (valutedmusic.site),
 - Manual workflow dispatch includes an explicit publish checkbox; it defaults off.
 - Video articles are created as drafts with thumbnail and all required video metadata in the same Shopify mutation. They are published only after the draft is re-read and the image/metafields are verified.
 - Exact Shopify host, store name, primary domain and existing blog handle are checked before any write.
-- Only manually verified official YouTube channel IDs are accepted: Rotana, Warner Music Group, Sony Music UK, THEBLACKLABEL and Daddy Yankee.
+- Only manually verified official YouTube channel IDs are accepted: Rotana, Warner Music Group, Sony Music UK, THEBLACKLABEL, Daddy Yankee and Naima Bock.
 - Existing articles are preserved; video IDs and MusicBrainz IDs are used for duplicate checks.
 - The Radar never uploads audio; audio samples are processed in-browser. Only fingerprints and metadata are saved/exported.
 - No workflow changes Shopify themes, domains, navigation, billing or storefront settings.
