@@ -1,31 +1,43 @@
-# VALUTED MUSIC daily publishing
+# VALUTED MUSIC automation system
 
-This is a separately configured workflow in the GitHub account. It does not reuse VALUTED NEWS's Shopify token.
+This project is isolated to the Shopify store VALUTED MUSIC (valutedmusic.site), Shopify Admin host 0k31v6-th.myshopify.com, and its existing news blog. It does not authorize edits to VALUTED NEWS or VALUTED BEAUTY.
 
-## Target and schedule
-- Store display name must equal `VALUTED MUSIC` (case-insensitive exact match).
-- Shopify primary-domain host must equal `valutedmusic.site` (exact match).
-- Existing Shopify blog handle: `news`.
-- Daily schedule: 21:00 Cairo time (19:00 UTC); manual dispatch is also available.
-- Maximum five articles per run; zero is an acceptable result.
+## Modules
+- **Official music videos:** YouTube channel RSS discovery, strict allowlist matching, YouTube Data API verification of channel ownership/public status/embeddability/duration, thumbnail + responsive player + VideoObject metadata, duplicate prevention.
+- **Music catalogue:** MusicBrainz artist, album/release and recording discovery, stable MBID deduplication, source-linked catalogue entries; no invented playback or official-video claims.
+- **VALUTED Radar:** browser-only microphone/upload fingerprint matching. No recognition API, server, VPS, or external audio service. It only matches recordings already indexed in the owner's local/shared fingerprint library.
 
-## Mandatory GitHub Actions secrets
-Repository → Settings → Secrets and variables → Actions:
-- `VALUTED_MUSIC_SHOPIFY_ADMIN_ACCESS_TOKEN`: Shopify Admin API token for the VALUTED MUSIC shop only, with `read_content` and `write_content` scopes.
-- `OPENAI_API_KEY`: used only to draft original copy from the retrieved live publisher page text.\n\nRepository → Settings → Secrets and variables → Actions → Variables:\n- `VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN`: the exact VALUTED MUSIC shop’s `*.myshopify.com` Admin API host. The script separately verifies that its primary public domain is `valutedmusic.site`.
+## Safety defaults
+- Both scheduled discovery workflows run in dry-run mode by default.
+- Manual workflow dispatch includes an explicit publish checkbox; it defaults off.
+- Video articles are created as drafts with thumbnail and all required video metadata in the same Shopify mutation. They are published only after the draft is re-read and the image/metafields are verified.
+- Exact Shopify host, store name, primary domain and existing blog handle are checked before any write.
+- Only manually verified official YouTube channel IDs are accepted.
+- Existing articles are preserved; video IDs and MusicBrainz IDs are used for duplicate checks.
+- The Radar never uploads audio; audio samples are processed in-browser. Only fingerprints and metadata are saved/exported.
+- No workflow changes Shopify themes, domains, navigation, billing or storefront settings.
 
-Never put tokens in source files, workflow YAML, issues, or chat. Do not reuse the VALUTED NEWS store token.
+## Credentials
+GitHub Actions → Settings → Secrets and variables:
+- Secret VALUTED_MUSIC_SHOPIFY_ADMIN_ACCESS_TOKEN: token for the Music store only, with read_content and write_content.
+- Secret VALUTED_MUSIC_YOUTUBE_DATA_API_KEY: YouTube Data API key for official-video discovery.
+- Variable VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN: 0k31v6-th.myshopify.com.
 
-## Safety behavior
-1. Before any Shopify article write, query the shop identity, exact primary domain, themes and blogs.
-2. If the shop name or domain differs, log exactly `WRONG SHOP CONNECTED — NO CHANGES MADE.` and exit without writing.
-3. Record the single MAIN theme name, ID and role. No theme, design, app, billing, domain, navigation, locale or storefront mutations are implemented.
-4. Read direct publisher pages from the configured RSS discovery feeds. Redirects and canonical URLs must remain on the approved publisher allowlist. Pages must contain sufficient live article text and be recent (36 hours by default).
-5. Drafting is constrained to the live page text. Canonical source URL attribution is mandatory. Duplicate source URLs are checked before each write.
-6. After each article creation, re-query Shopify and verify title, handle, publication status, body/source, tags, SEO title/description and target blog. Verification failures stop the run; the script never blindly retries an article creation.
-7. No video is embedded by this initial release. It publishes source-linked news only; it does not claim any video is official or playable. This avoids fabricated IDs and unverified channel attribution.
-8. English is the only generated language in this initial release. Arabic translation is not claimed or auto-published.
-9. The worker never modifies Shopify themes or storefront settings.
+Never paste credentials into source files, issues, chat or commits. The direct Shopify publishing test already completed separately; it does not supply GitHub Actions secrets.
 
-## Important setup
-The workflow is committed but cannot publish until both secrets above are configured in GitHub. Confirm that the token belongs to the VALUTED MUSIC shop before adding it. Run the workflow manually only after the correct secret is installed; its first action is the hard identity guard.
+## Schedule and limits
+- Official video discovery: daily 9:00 PM Cairo; up to 5 candidates/run; last 72 hours; zero is valid.
+- Music catalogue discovery: daily 9:00 PM Cairo; up to 15 entries/run; zero is valid.
+- Both remain dry-run by default. Explicitly enable publishing only after credentials and run logs are verified.
+
+## Radar limitations
+The bundled shared library.json starts empty. Radar can identify only recordings included in a fingerprint library created from audio the owner is authorized to process. It is an experimental fingerprint matcher, not a global music database or a Shazam-equivalent. It does not identify humming or singing. Test iOS Safari, microphone permissions, noisy recordings and labeled samples before release.
+
+## Release gates
+1. Configure Music-only GitHub secrets/variable.
+2. Run discovery-only workflows and review candidate logs.
+3. Enable publish only for a deliberate manual run after review.
+4. Test the public Radar static host and real-device audio matching.
+5. Connect the Radar page in a duplicate/unpublished Shopify theme; never publish the live theme without separate approval.
+
+The development pull request remains unmerged. Scheduled workflows are not active on the default branch until the pull request is reviewed and merged.
