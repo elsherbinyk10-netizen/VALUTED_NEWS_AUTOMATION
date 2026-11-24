@@ -1,0 +1,37 @@
+name: VALUTED MUSIC Code Validation
+
+on:
+  pull_request:
+    paths:
+      - "music/**"
+      - ".github/workflows/valuted-music-*.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check Python syntax
+        run: python -m py_compile music/video_worker.py music/catalog_worker.py
+      - name: Check Radar worker JavaScript syntax
+        run: node --check music/radar-worker.js
+      - name: Check official channel configuration
+        run: |
+          python - <<'PY'
+          import json, re
+          data = json.load(open("music/official_channels.json", encoding="utf-8"))
+          assert data.get("channels"), "Official channel allowlist is empty"
+          for item in data["channels"]:
+              assert re.fullmatch(r"UC[A-Za-z0-9_-]{22}", item["channel_id"]), item
+          print(f"Validated {len(data['channels'])} official channel IDs")
+          PY
