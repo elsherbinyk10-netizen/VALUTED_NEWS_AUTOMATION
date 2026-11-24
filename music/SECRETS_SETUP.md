@@ -40,15 +40,13 @@ The script asks only for the Shopify Client ID and Client Secret. Secret input i
 Repository secrets:
 - \`VALUTED_MUSIC_SHOPIFY_CLIENT_ID\`
 - \`VALUTED_MUSIC_SHOPIFY_CLIENT_SECRET\`
-- \`VALUTED_MUSIC_YOUTUBE_DATA_API_KEY\`
-- \`OPENAI_API_KEY\` (required by the Music News workflow)
 
 Repository variable:
 - \`VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN=0k31v6-th.myshopify.com\`
 
 ## D. Automatic token exchange
 
-Before each scheduled Shopify job, \`music/shopify_auth.py\` exchanges the Client ID and Client secret at Shopify's \`/admin/oauth/access_token\` endpoint using \`grant_type=client_credentials\`. Shopify issues a short-lived token (typically 24 hours). The helper checks that \`read_content\` and \`write_content\` were granted and writes the token only to the current GitHub Actions job environment. It never prints the token.
+Before each scheduled Shopify job, \`music/shopify_auth.py\` exchanges the Client ID and Client secret at Shopify's \`/admin/oauth/access_token\` endpoint using \`grant_type=client_credentials\`. Shopify issues a short-lived token (typically 24 hours). The helper checks that \`write_content\` was granted (Shopify may report the effective content scope as write access) and writes the token only to the current GitHub Actions job environment. It never prints the token.
 
 ## E. Verify
 
@@ -56,4 +54,4 @@ Open the repository's **Settings → Secrets and variables → Actions** and con
 
 Then open **Actions** and inspect the workflow runs. A successful credential setup is not proof of publishing: verify the run logs and the resulting article in Shopify.
 
-Schedules remain 9:00 PM video + SEO, 9:15 PM Music News, and 9:30 PM catalogue (Cairo time). Manual dispatch remains dry-run by default.
+Schedules remain 9:00 PM video candidate discovery (creates review drafts only), 9:15 PM RSS-based Music News briefs, and 9:30 PM catalogue (Cairo time). No OpenAI or YouTube Data API keys are required. Manual dispatch remains dry-run by default.
