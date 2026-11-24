@@ -17,8 +17,9 @@ echo "VALUTED MUSIC — GitHub Actions credential setup"
 echo "Repository: $REPO"
 echo "Shopify store: $SHOP_DOMAIN"
 echo
-echo "Secret values are entered invisibly and sent directly to GitHub."
-echo "They are not written to files or printed in the terminal."
+echo "Use the Client ID and Client Secret from your Shopify Dev Dashboard app."
+echo "Values are entered invisibly and sent directly to GitHub."
+echo "They are never written to a local file or printed."
 echo
 
 set_secret() {
@@ -37,19 +38,20 @@ set_secret() {
   echo "Saved secret: $name"
 }
 
-set_secret "VALUTED_MUSIC_SHOPIFY_ADMIN_ACCESS_TOKEN" "Paste Shopify Admin API access token"
+set_secret "VALUTED_MUSIC_SHOPIFY_CLIENT_ID" "Paste Shopify Client ID"
+set_secret "VALUTED_MUSIC_SHOPIFY_CLIENT_SECRET" "Paste Shopify Client Secret"
 set_secret "VALUTED_MUSIC_YOUTUBE_DATA_API_KEY" "Paste Google YouTube Data API key"
 
 echo
 echo "The Music News workflow also needs OPENAI_API_KEY."
-echo "If you skip it, video and catalogue workflows can still run, but the news workflow will not authenticate."
+echo "OpenAI API usage is billed separately from a ChatGPT subscription."
 read -r -s -p "Paste OpenAI API key (press Enter to skip): " openai_key
 printf '\n'
 if [[ -n "$openai_key" ]]; then
   printf '%s' "$openai_key" | gh secret set "OPENAI_API_KEY" --repo "$REPO"
   echo "Saved secret: OPENAI_API_KEY"
 else
-  echo "Skipped OPENAI_API_KEY. Daily Music News will need this before it can run."
+  echo "Skipped OPENAI_API_KEY. Daily Music News will not run successfully until it is added."
 fi
 unset openai_key
 
@@ -63,4 +65,4 @@ echo
 echo "Repository variable:"
 gh variable list --repo "$REPO"
 echo
-echo "Setup command completed. This confirms names were saved, not that credentials have been tested against Shopify or Google."
+echo "Setup command completed. This confirms names were saved, not that Shopify or YouTube credentials were tested."
