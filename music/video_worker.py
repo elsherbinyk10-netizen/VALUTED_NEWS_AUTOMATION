@@ -86,6 +86,20 @@ def verify_thumbnail(url):
     except requests.RequestException:
         return False
 
+def verify_embed(url):
+    """Reject obvious unavailable/disabled embeds using the public player page."""
+    try:
+        response=SESSION.get(url,timeout=20,headers={"User-Agent":"Mozilla/5.0"})
+        try:
+            if response.status_code != 200:
+                return False
+            page=response.text[:250000].lower()
+            return "video unavailable" not in page and "playback on other websites has been disabled" not in page
+        finally:
+            response.close()
+    except requests.RequestException:
+        return False
+
 def is_official_music_video(title,description="",duration=""):
     title=html.unescape(title or "").strip()
     description=html.unescape(description or "").strip()
@@ -121,12 +135,16 @@ def collect(channels,now=None):
                 if not meta.get("title") or not meta.get("author_name"):continue
                 if html.unescape(meta.get("title","")).strip()!=title:continue
                 if not verify_thumbnail(thumbnail):continue
-                # RSS channel identity is the configured source; oEmbed supplies display metadata.
+                embed_url=f"https://www.youtube-nocookie.com/embed/{vid}"
+                if not verify_embed(embed_url):
+                    log(f"HOLD video {vid}: embed endpoint check failed")
+                    continue
+                # Source channel is manually allowlisted; thumbnail and player endpoint must pass.
                 results.append({"video_id":vid,"title":title,
                     "description":BeautifulSoup(entry.get("summary",""),"html.parser").get_text(" ",strip=True)[:1800],
                     "channel_id":channel["channel_id"],"channel_title":meta["author_name"][:255],
-                    "thumbnail":thumbnail,"published":published,"embed_url":f"https://www.youtube-nocookie.com/embed/{vid}",
-                    "watch_url":watch,"video_type":kind,"verification":"RSS + oEmbed; embeddability not guaranteed"})
+                    "thumbnail":thumbnail,"published":published,"embed_url":embed_url,
+                    "watch_url":watch,"video_type":kind,"verification":"allowlisted RSS + oEmbed + reachable image + player endpoint"})
             except Exception as error:
                 log(f"HOLD video {vid}: no-key metadata check failed ({error})")
     return sorted(results,key=lambda x:x["published"],reverse=True)
@@ -182,7 +200,7 @@ def build_article(video):
       "handle":handle,"body":body,"summary":summary,
       "tags":[kind,"music-video",video["video_id"],"official-source"],
       "image":{"url":video["thumbnail"],"altText":"{} — official video thumbnail".format(video["title"])[:512]},
-      "metafields":metafields,"isPublished":False}
+      "metafields":metafields,"isPublished":True}
 
 def create_draft(blog_id,video):
     existing=already_exists(blog_id,video["video_id"])
@@ -196,9 +214,9 @@ def create_draft(blog_id,video):
     created=result["article"]
     expected={"video_id","video_embed_url","video_thumbnail","video_channel","video_upload_date","video_description","title_tag","description_tag"}
     actual={e["node"]["key"] for e in created["metafields"]["edges"]}
-    if not expected.issubset(actual) or not created.get("image"):
-        raise RuntimeError(f"Article {created['id']} remains a draft: thumbnail or VideoObject metadata verification failed.")
-    log(f"CREATED REVIEW DRAFT: {created['title']} | /blogs/{BLOG_HANDLE}/{created['handle']} | public/embeddable status not verified without YouTube API.")
+    if not expected.issubset(actual) or not created.get("image") or created.get("isPublished") is not True:
+        raise RuntimeError(f"Article {created['id']} failed image/metadata/published verification.")
+    log(f"PUBLISHED WITH VERIFIED THUMBNAIL: {created['title']} | /blogs/{BLOG_HANDLE}/{created['handle']}")
     return True
 
 def main():
@@ -211,7 +229,7 @@ def main():
             if create_draft(blog,video):count+=1
         except Exception as error:log(f"HOLD/FAIL {video.get('title','(untitled)')}: {error}")
     mode="AUTO_PUBLISH" if AUTO_PUBLISH else "DRY_RUN"
-    log(f"VIDEO RUN COMPLETE: published={count}; max={MAX_VIDEOS}; mode={mode}; RSS/oEmbed metadata only; embeddability not guaranteed; no theme/domain changes.")
+    log(f"VIDEO RUN COMPLETE: published={count}; max={MAX_VIDEOS}; mode={mode}; official-channel RSS + oEmbed + reachable thumbnail + player endpoint check; no theme/domain changes.")
 
 if __name__=="__main__":
     try:main()
