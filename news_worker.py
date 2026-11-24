@@ -653,7 +653,7 @@ def fetch_article_media(source_url, story_title=""):
             text_value = clean_text(node.get_text(" ", strip=True))
             # Publisher article pages often append related-story modules inside
             # the article container. Keep the actual story text, not headline lists.
-            if re.search(r"\\bRelated Stories\\b", text_value, re.I):
+            if re.search(r"\bRelated Stories\b", text_value, re.I):
                 text_value = re.split(r"\\bRelated Stories\\b", text_value, maxsplit=1, flags=re.I)[0].strip()
             if text_value.lower().startswith(("related stories", "more from", "read more")):
                 continue
@@ -1159,8 +1159,8 @@ def classify_story_category(title, description="", feed_category="World"):
     # otherwise be misrouted to Technology. Explicit film/TV/music formats are
     # stronger evidence than a platform brand mentioned in the same headline.
     entertainment_format = re.search(
-        r"\\b(documentary|docuseries|trailer|film|films|movie|movies|tv series|television|"
-        r"streaming|box office|actor|actress|singer|album|song|concert|music video)\\b",
+        r"\b(documentary|docuseries|trailer|film|films|movie|movies|tv series|television|
+        r"streaming|box office|actor|actress|singer|album|song|concert|music video)\b",
         title_text, re.I,
     )
     if entertainment_format:
