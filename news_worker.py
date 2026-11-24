@@ -577,7 +577,7 @@ def fetch_article_media(source_url, story_title=""):
                         image_url = candidate
                         break
         if not image_url:
-            for script in soup.find_all("script", type=re.compile(r"ld\\+json", re.I)):
+            for script in soup.find_all("script", type=re.compile(r"ld\+json", re.I)):
                 raw = script.string or script.get_text(" ", strip=True)
                 try:
                     structured = json.loads(raw)
