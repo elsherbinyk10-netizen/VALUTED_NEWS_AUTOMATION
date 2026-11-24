@@ -12,7 +12,7 @@
 Workflow: .github/workflows/valuted-music-video-daily.yml
 Worker: music/video_worker.py
 
-Discovery uses RSS feeds only from music/official_channels.json. Every candidate is rechecked with YouTube Data API for exact channel ID, public status, embeddability, valid thumbnail, recent upload, full-length duration and official-music-video title signals. Lyric-only, audio-only, teaser, interview, Shorts and other non-video uploads are rejected.
+Discovery uses RSS feeds only from music/official_channels.json. Every candidate is rechecked with YouTube Data API for exact channel ID, public status, embeddability, valid thumbnail, recent upload, full-length duration and official music-video, official lyrics-video and official-audio title signals. Teasers, interviews, Shorts, visualizers and non-official uploads are rejected.
 
 Before publishing, the worker:
 1. Verifies exact Shopify Admin host, store name, primary domain and news blog.
@@ -30,19 +30,19 @@ Required GitHub Actions secrets:
 Required Actions variable:
 - VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN=0k31v6-th.myshopify.com
 
-The workflow schedule is 9:00 PM Cairo (19:00 UTC), maximum five videos/run, maximum age 72 hours. Scheduled runs are discovery-only dry runs. Manual dispatch has a publish checkbox that defaults off.
+The workflow schedule is 9:00 PM Cairo (19:00 UTC), maximum two verified videos/run, maximum age 72 hours. Each watch page receives a thumbnail, responsive embed, unique SEO title/description, VideoObject JSON-LD and article metafields. Schedule is 9:00 PM Cairo; scheduled publishing is enabled once Music-only credentials are configured. Manual dispatch has a publish checkbox defaulting off.
 
 ## 2. Music-news editorial workflow
 Workflow: .github/workflows/valuted-music-daily.yml
 Worker: music/worker.py
 
-The existing RSS-based music-news workflow remains separate from the official-video and catalogue modules. It uses the Music-only Shopify credentials and OPENAI_API_KEY. It is scheduled daily at 9:00 PM Cairo, up to five recent source-attributed stories, and now runs in dry-run mode by default. Manual dispatch has a publish checkbox that defaults off.
+The existing RSS-based music-news workflow remains separate from the official-video and catalogue modules. It uses the Music-only Shopify credentials and OPENAI_API_KEY. It is scheduled daily at 9:15 PM Cairo, up to three recent source-attributed stories. Shopify global title_tag and description_tag metafields are set and verified after creation. Together with up to two official video pages, the editorial/video ceiling is five new articles per day. Scheduled publishing is enabled once Music-only credentials are configured; manual dispatch defaults off.
 
 ## 3. Music catalogue expansion
 Workflow: .github/workflows/valuted-music-catalog-daily.yml
 Worker: music/catalog_worker.py
 
-Uses the public MusicBrainz search API to discover artist, album/release-group and recording metadata, with source links and stable MBID tags. Maximum 15 entries per run. It does not create invented video links, audio streams or claims of music rights. Scheduled runs are dry-run by default; a manual dispatch can explicitly enable publishing.
+Uses the public MusicBrainz search API to discover artist, album/release-group and recording metadata, with source links and stable MBID tags. Maximum 30 entries per run. Each artist, album and recording page receives SEO title and description metafields and a stable MusicBrainz ID tag. It does not create invented video links, audio streams or claims of music rights. Schedule is 9:30 PM Cairo; scheduled publishing is enabled once Music-only credentials are configured; manual dispatch defaults off.
 
 ## 4. VALUTED Radar — no recognition API
 App: music/radar-browser/
@@ -55,4 +55,4 @@ The shared library.json starts empty. The owner must create fingerprints from au
 The static Radar app still needs to be hosted and embedded in a duplicate/unpublished Shopify theme. No live theme, navigation, domain or storefront changes are part of this automation build. Do not publish a theme without separate explicit approval.
 
 ## 6. Credentials and activation
-Never store credentials in source code. Configure the Music-only GitHub secrets/variable above. The draft PR is not merged; its schedules are not active on the default branch. Keep automatic publishing off until dry-run candidates, credentials, tests and a manual publish test have all passed.
+Never store credentials in source code. Configure the Music-only GitHub secrets/variable above. The draft PR remains unmerged; schedules are not active on the default branch until review and merge. Configure the Music-only secrets/variable, verify workflow runs, then merge to activate the scheduled publishing. No other store is in scope.
