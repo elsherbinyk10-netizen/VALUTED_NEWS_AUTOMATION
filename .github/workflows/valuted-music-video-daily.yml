@@ -32,16 +32,16 @@ jobs:
         run: python -m pip install --upgrade pip requests feedparser beautifulsoup4
       - name: Authenticate with Shopify Dev Dashboard
         env:
-          SHOPIFY_ADMIN_DOMAIN: \${{ vars.VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN }}
-          SHOPIFY_CLIENT_ID: \${{ secrets.VALUTED_MUSIC_SHOPIFY_CLIENT_ID }}
-          SHOPIFY_CLIENT_SECRET: \${{ secrets.VALUTED_MUSIC_SHOPIFY_CLIENT_SECRET }}
+          SHOPIFY_ADMIN_DOMAIN: ${{ vars.VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN }}
+          SHOPIFY_CLIENT_ID: ${{ secrets.VALUTED_MUSIC_SHOPIFY_CLIENT_ID }}
+          SHOPIFY_CLIENT_SECRET: ${{ secrets.VALUTED_MUSIC_SHOPIFY_CLIENT_SECRET }}
         run: python music/shopify_auth.py
       - name: Verify official channels and discover candidates
         env:
-          SHOPIFY_ADMIN_DOMAIN: \${{ vars.VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN }}
-          YOUTUBE_DATA_API_KEY: \${{ secrets.VALUTED_MUSIC_YOUTUBE_DATA_API_KEY }}
+          SHOPIFY_ADMIN_DOMAIN: ${{ vars.VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN }}
+          YOUTUBE_DATA_API_KEY: ${{ secrets.VALUTED_MUSIC_YOUTUBE_DATA_API_KEY }}
           SHOPIFY_API_VERSION: "2026-10"
           MAX_VIDEOS_PER_RUN: "2"
           MAX_VIDEO_AGE_HOURS: "72"
-          AUTO_PUBLISH: \${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.publish) }}
+          AUTO_PUBLISH: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.publish) }}
         run: python music/video_seo_audit.py && python music/video_worker.py
