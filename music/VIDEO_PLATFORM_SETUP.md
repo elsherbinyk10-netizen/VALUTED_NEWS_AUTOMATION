@@ -30,13 +30,15 @@ The workflow `.github/workflows/valuted-music-catalog-daily.yml` runs daily at 2
 
 GitHub Actions reuses the Music-only Shopify secret and domain variable listed above. The workflow is committed to the development branch and is not scheduled until merged into the default branch.
 
-## Music Radar audio recognition
-`music/radar-worker.js` is a Cloudflare Worker proxy. Deploy it separately, then configure:
-- Worker secret `AUDD_API_TOKEN` from the recognition provider.
-- CORS is restricted to `https://valutedmusic.site`.
-- The storefront should call the Worker URL; never expose the provider token in theme JavaScript.
+## Music Radar audio recognition — self-hosted, no external recognition API
 
-The current Shopify Radar page still contains text search. Audio recording/upload UI must be connected to the deployed worker URL in the theme section setting before real recognition is available. Audio fingerprint recognition identifies recorded songs; humming recognition is not implemented.
+The no-API implementation is in `music/radar-selfhosted/`. It uses the open-source Chromaprint fingerprint generator plus VALUTED MUSIC's own private SQLite fingerprint library. It does not call AudD, AcoustID, Shazam, Spotify, Apple Music, or another recognition provider.
+
+The service must be hosted by us behind HTTPS. Set a private `RADAR_ADMIN_TOKEN`, persistent `/data` storage, and `RADAR_ALLOWED_ORIGIN=https://valutedmusic.site`. Only index audio VALUTED MUSIC is authorized to process. The public `/recognize` endpoint accepts short microphone recordings or uploads; the protected `/admin/index` endpoint adds licensed tracks to our fingerprint library.
+
+Chromaprint creates fingerprints but does not provide a worldwide music database. Radar can identify only recordings already indexed in our own library; metadata-only catalogue entries cannot be recognized. The first implementation is a small-library pilot and needs performance testing before large-scale use. It does not recognize humming.
+
+The old `music/radar-worker.js` AudD proxy is not part of the no-API design and must not be deployed. The browser must be connected to our own hosted service only after HTTPS hosting and end-to-end tests are complete.
 
 ## Video SEO
 The theme contains a conditional `VideoObject` section for articles tagged `official-music-video`. The video worker writes the video ID, player URL, thumbnail, upload date, duration and description as article metafields.
