@@ -25,6 +25,11 @@ GitHub Actions variable:
 
 The worker fails closed when secrets or the official channel allowlist are missing. The workflow is committed to the `valuted-music-video-platform` branch, not yet merged into the default branch, so the schedule is not active until reviewed and merged.
 
+## Daily catalogue expansion
+The workflow `.github/workflows/valuted-music-catalog-daily.yml` runs daily at 21:00 Cairo and invokes `music/catalog_worker.py`. It searches MusicBrainz for artists, albums/release groups and recordings, then creates crawlable editorial entries in the existing Music blog with MusicBrainz source links and stable MBID duplicate tags. The default cap is 15 new entries per run. It does not invent official video links or claim rights to audio. The MusicBrainz public API is rate-limited politely by the worker.
+
+GitHub Actions reuses the Music-only Shopify secret and domain variable listed above. The workflow is committed to the development branch and is not scheduled until merged into the default branch.
+
 ## Music Radar audio recognition
 `music/radar-worker.js` is a Cloudflare Worker proxy. Deploy it separately, then configure:
 - Worker secret `AUDD_API_TOKEN` from the recognition provider.
@@ -43,7 +48,10 @@ Google's required VideoObject properties include unique `name`, `thumbnailUrl`, 
 - Configure the Shopify and YouTube secrets in GitHub Actions.
 - Deploy the AudD proxy and add its token as a Worker secret.
 - Connect the Radar page to the deployed Worker.
-- Build artist/album/song catalogue ingestion and a video sitemap; the existing eight genre pages are currently static examples.
+- Add verified official channel IDs and complete a real video workflow run; each created video article includes an embedded YouTube player in its page body and conditional VideoObject metadata.
+- Merge and test the daily MusicBrainz catalogue workflow; it can add up to 15 artist/album/song pages daily once enabled.
+- Connect the audio-recording UI on the Radar page to the deployed Worker URL; the current page still has its existing typed-search interface until that wiring is completed.
+- Add a dedicated video sitemap only if required after checking Shopify's native sitemap and the resulting Search Console video indexing.
 - Run a real workflow test, validate video pages and structured data, then inspect Search Console indexing.
 
 Preserve all six existing Music blog articles. Do not modify the VALUTED NEWS domain/store or publish the unpublished Shopify theme without explicit approval.
