@@ -12,12 +12,10 @@ EXPECTED_SHOP="0k31v6-th.myshopify.com"
 BLOG_HANDLE="news"
 SHOP=os.getenv("SHOPIFY_ADMIN_DOMAIN","").strip().lower()
 TOKEN=os.getenv("SHOPIFY_ADMIN_ACCESS_TOKEN","").strip()
-YOUTUBE_KEY=os.getenv("YOUTUBE_DATA_API_KEY","").strip()
 API_VERSION=os.getenv("SHOPIFY_API_VERSION","2026-10")
 MAX_VIDEOS=min(5,max(0,int(os.getenv("MAX_VIDEOS_PER_RUN","2"))))
 MAX_AGE_HOURS=max(1,int(os.getenv("MAX_VIDEO_AGE_HOURS","72")))
 AUTO_PUBLISH=os.getenv("AUTO_PUBLISH","false").lower()=="true"
-BASE="https://www.googleapis.com/youtube/v3"
 SESSION=requests.Session()
 SESSION.headers["User-Agent"]="VALUTED-MUSIC-VideoBot/2.0 (+https://valutedmusic.site)"
 
@@ -32,7 +30,7 @@ def gql(query,variables=None):
     return data["data"]
 
 def guard():
-    if not TOKEN or not YOUTUBE_KEY: raise RuntimeError("Missing Music-only Shopify token or YouTube Data API key. No writes.")
+    if not TOKEN: raise RuntimeError("Missing Music-only Shopify token. No writes.")
     if SHOP!=EXPECTED_SHOP: raise RuntimeError("SHOPIFY_ADMIN_DOMAIN is not the configured VALUTED MUSIC shop. No writes.")
     data=gql("""query Guard { shop { name primaryDomain { host } } blogs(first:50) { edges { node { id handle } } } }""")
     shop=data["shop"]
@@ -42,12 +40,6 @@ def guard():
     if not blog: raise RuntimeError("Expected VALUTED MUSIC news blog is missing. No writes.")
     log(f"SHOP VERIFIED: {EXPECTED_NAME} / {EXPECTED_HOST} / blog={BLOG_HANDLE}")
     return blog["id"]
-
-def yt(path,params):
-    r=SESSION.get(f"{BASE}/{path}",params=dict(params,key=YOUTUBE_KEY),timeout=30)
-    r.raise_for_status(); payload=r.json()
-    if payload.get("error"): raise RuntimeError(payload["error"].get("message","YouTube API error"))
-    return payload
 
 def channel_allowlist(path="music/official_channels.json"):
     with open(path,encoding="utf-8") as f: config=json.load(f)
@@ -102,7 +94,8 @@ def is_official_music_video(title,description="",duration=""):
     return duration_seconds(duration)>=60
 
 def collect(channels,now=None):
-    now=now or datetime.now(timezone.utc); candidates={}
+    """Use public channel RSS plus YouTube's no-key oEmbed metadata endpoint."""
+    now=now or datetime.now(timezone.utc); results=[]
     for channel in channels:
         url="https://www.youtube.com/feeds/videos.xml?channel_id="+channel["channel_id"]
         feed=feedparser.parse(url)
@@ -115,30 +108,27 @@ def collect(channels,now=None):
             if not published:continue
             age=now-published
             if age>timedelta(hours=MAX_AGE_HOURS) or age<timedelta(hours=-1):continue
-            candidates[vid]={"video_id":vid,"channel_id":channel["channel_id"],"channel_label":channel["label"],"published":published}
-    if not candidates:return []
-    ids=list(candidates); verified=[]
-    for start in range(0,len(ids),50):
-        verified.extend(yt("videos",{"part":"snippet,status,contentDetails","id":",".join(ids[start:start+50]),"maxResults":50}).get("items",[]))
-    results=[]
-    for video in verified:
-        vid=video.get("id",""); expected=candidates.get(vid)
-        sn=video.get("snippet") or {}; st=video.get("status") or {}; cd=video.get("contentDetails") or {}
-        if not expected or sn.get("channelId")!=expected["channel_id"]:continue
-        if st.get("privacyStatus")!="public" or st.get("embeddable") is not True:continue
-        title=html.unescape(sn.get("title","")).strip()
-        description=html.unescape(sn.get("description","")).strip()
-        duration=cd.get("duration","")
-        if len(description)<40 or not is_official_music_video(title,description,duration):continue
-        thumbs=sn.get("thumbnails") or {}
-        thumbnail=next((thumbs[k].get("url","") for k in ("maxres","standard","high") if thumbs.get(k,{}).get("url")),"")
-        parsed=urlparse(thumbnail)
-        if parsed.scheme!="https" or not parsed.netloc or not verify_thumbnail(thumbnail):continue
-        results.append({"video_id":vid,"title":title,"description":description[:1800],
-            "channel_id":sn["channelId"],"channel_title":sn.get("channelTitle",expected["channel_label"]),
-            "thumbnail":thumbnail,"published":expected["published"],"duration":duration,
-            "embed_url":f"https://www.youtube-nocookie.com/embed/{vid}",
-            "watch_url":f"https://www.youtube.com/watch?v={vid}","video_type":classify_video_type(title)})
+            title=html.unescape(entry.get("title","")).strip()
+            kind=classify_video_type(title)
+            if not kind:continue
+            watch=f"https://www.youtube.com/watch?v={vid}"
+            try:
+                response=SESSION.get("https://www.youtube.com/oembed",
+                    params={"url":watch,"format":"json"},timeout=20)
+                response.raise_for_status()
+                meta=response.json()
+                thumbnail=meta.get("thumbnail_url","")
+                if not meta.get("title") or not meta.get("author_name"):continue
+                if html.unescape(meta.get("title","")).strip()!=title:continue
+                if not verify_thumbnail(thumbnail):continue
+                # RSS channel identity is the configured source; oEmbed supplies display metadata.
+                results.append({"video_id":vid,"title":title,
+                    "description":BeautifulSoup(entry.get("summary",""),"html.parser").get_text(" ",strip=True)[:1800],
+                    "channel_id":channel["channel_id"],"channel_title":meta["author_name"][:255],
+                    "thumbnail":thumbnail,"published":published,"embed_url":f"https://www.youtube-nocookie.com/embed/{vid}",
+                    "watch_url":watch,"video_type":kind,"verification":"RSS + oEmbed; embeddability not guaranteed"})
+            except Exception as error:
+                log(f"HOLD video {vid}: no-key metadata check failed ({error})")
     return sorted(results,key=lambda x:x["published"],reverse=True)
 
 def already_exists(blog_id,video_id):
@@ -166,7 +156,7 @@ def build_article(video):
     canonical="https://{}/blogs/{}/{}".format(EXPECTED_HOST,BLOG_HANDLE,handle)
     schema={"@context":"https://schema.org","@type":"VideoObject","name":video["title"],
       "description":description[:1000],"thumbnailUrl":[video["thumbnail"]],
-      "uploadDate":video["published"].date().isoformat(),"duration":video["duration"],
+      "uploadDate":video["published"].date().isoformat(),
       "embedUrl":video["embed_url"],"publisher":{"@type":"Organization","name":video["channel_title"]},
       "mainEntityOfPage":canonical}
     schema_json=json.dumps(schema,ensure_ascii=False,separators=(",",":")).replace("<","\\u003c")
@@ -187,7 +177,6 @@ def build_article(video):
       {"namespace":"custom","key":"video_thumbnail","type":"url","value":video["thumbnail"]},
       {"namespace":"custom","key":"video_channel","type":"single_line_text_field","value":video["channel_title"][:255]},
       {"namespace":"custom","key":"video_upload_date","type":"date_time","value":video["published"].isoformat()},
-      {"namespace":"custom","key":"video_duration","type":"single_line_text_field","value":video["duration"]},
       {"namespace":"custom","key":"video_description","type":"single_line_text_field","value":description[:255]}]
     return {"author":{"name":"VALUTED MUSIC Video Desk"},"title":video["title"][:255],
       "handle":handle,"body":body,"summary":summary,
@@ -205,7 +194,7 @@ def create_draft(blog_id,video):
     result=gql(mutation,{"article":dict(build_article(video),blogId=blog_id)})["articleCreate"]
     if result["userErrors"]:raise RuntimeError("Shopify article creation rejected: "+json.dumps(result["userErrors"]))
     created=result["article"]
-    expected={"video_id","video_embed_url","video_thumbnail","video_channel","video_upload_date","video_duration","video_description","title_tag","description_tag"}
+    expected={"video_id","video_embed_url","video_thumbnail","video_channel","video_upload_date","video_description","title_tag","description_tag"}
     actual={e["node"]["key"] for e in created["metafields"]["edges"]}
     if not expected.issubset(actual) or not created.get("image"):
         raise RuntimeError(f"Article {created['id']} remains a draft: thumbnail or VideoObject metadata verification failed.")
@@ -219,7 +208,7 @@ def create_draft(blog_id,video):
 
 def main():
     blog=guard(); channels=channel_allowlist(); candidates=collect(channels)
-    log(f"VERIFIED OFFICIAL VIDEO CANDIDATES: {len(candidates)}")
+    log(f"RSS + oEmbed VIDEO CANDIDATES (embeddability not guaranteed): {len(candidates)}")
     count=0
     for video in candidates:
         if count>=MAX_VIDEOS:break
@@ -227,7 +216,7 @@ def main():
             if create_draft(blog,video):count+=1
         except Exception as error:log(f"HOLD/FAIL {video.get('title','(untitled)')}: {error}")
     mode="AUTO_PUBLISH" if AUTO_PUBLISH else "DRY_RUN"
-    log(f"VIDEO RUN COMPLETE: published={count}; max={MAX_VIDEOS}; mode={mode}; no theme/domain changes.")
+    log(f"VIDEO RUN COMPLETE: published={count}; max={MAX_VIDEOS}; mode={mode}; RSS/oEmbed metadata only; embeddability not guaranteed; no theme/domain changes.")
 
 if __name__=="__main__":
     try:main()
