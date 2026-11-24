@@ -3,7 +3,7 @@
 This project is isolated to the Shopify store VALUTED MUSIC (valutedmusic.site), Shopify Admin host 0k31v6-th.myshopify.com, and its existing news blog. It does not authorize edits to VALUTED NEWS or VALUTED BEAUTY.
 
 ## Modules
-- **Official music videos:** YouTube channel RSS discovery, strict allowlist matching, YouTube Data API verification of channel ownership/public status/embeddability/duration, thumbnail + responsive player + VideoObject metadata, duplicate prevention.
+- **Official music videos:** YouTube channel RSS discovery, strict allowlist matching, YouTube Data API verification of channel ownership/public status/embeddability/duration, thumbnail + responsive player + VideoObject JSON-LD + SEO metadata, duplicate prevention. Accepts verified official music videos, official lyrics videos and official audio.
 - **Music catalogue:** MusicBrainz artist, album/release and recording discovery, stable MBID deduplication, source-linked catalogue entries; no invented playback or official-video claims.
 - **VALUTED Radar:** browser-only microphone/upload fingerprint matching. No recognition API, server, VPS, or external audio service. It only matches recordings already indexed in the owner's local/shared fingerprint library.
 
@@ -12,7 +12,7 @@ This project is isolated to the Shopify store VALUTED MUSIC (valutedmusic.site),
 - Manual workflow dispatch includes an explicit publish checkbox; it defaults off.
 - Video articles are created as drafts with thumbnail and all required video metadata in the same Shopify mutation. They are published only after the draft is re-read and the image/metafields are verified.
 - Exact Shopify host, store name, primary domain and existing blog handle are checked before any write.
-- Only manually verified official YouTube channel IDs are accepted.
+- Only manually verified official YouTube channel IDs are accepted: Rotana, Warner Music Group, Sony Music UK, THEBLACKLABEL and Daddy Yankee.
 - Existing articles are preserved; video IDs and MusicBrainz IDs are used for duplicate checks.
 - The Radar never uploads audio; audio samples are processed in-browser. Only fingerprints and metadata are saved/exported.
 - No workflow changes Shopify themes, domains, navigation, billing or storefront settings.
