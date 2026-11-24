@@ -654,7 +654,7 @@ def fetch_article_media(source_url, story_title=""):
             # Publisher article pages often append related-story modules inside
             # the article container. Keep the actual story text, not headline lists.
             if re.search(r"\bRelated Stories\b", text_value, re.I):
-                text_value = re.split(r"\\bRelated Stories\\b", text_value, maxsplit=1, flags=re.I)[0].strip()
+                text_value = re.split(r"\bRelated Stories\b", text_value, maxsplit=1, flags=re.I)[0].strip()
             if text_value.lower().startswith(("related stories", "more from", "read more")):
                 continue
             if len(text_value) < 35 or text_value in seen_paragraphs:
