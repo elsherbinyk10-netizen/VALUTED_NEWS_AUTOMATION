@@ -12,6 +12,11 @@ OFFICIAL_CHANNELS = {
     "bbc.co.uk": ("BBC News", "UC16niRr50-MSBwiO3YDb3RA"),
     "bbc.com": ("BBC News", "UC16niRr50-MSBwiO3YDb3RA"),
     "nasa.gov": ("NASA", "UCLA_DiR1FfKNvjuUpBHmylQ"),
+    # Verified official publisher channels; IDs are fixed, never discovered from
+    # title search results or arbitrary third-party uploads.
+    "npr.org": ("NPR", "UCJnS2EsPfv46u1JR8cnD0NA"),
+    "billboard.com": ("Billboard", "UCsVcseUYbYjldc-XgcsiEbg"),
+    "rollingstone.com": ("Rolling Stone", "UC-JblcinswY50lrUdSaRNEg"),
 }
 USER_AGENT = "ValutedNewsOfficialVideoDiscovery/1.0"
 
@@ -76,7 +81,7 @@ def fetch_official_channel_video(story_title, source_url):
     except (requests.RequestException, Exception):
         return ""
     ranked = []
-    for entry in parsed.entries[:25]:
+    for entry in parsed.entries[:60]:
         entry_channel = str(entry.get("yt_channelid") or entry.get("channel_id") or "")
         if entry_channel and entry_channel != channel_id:
             continue
