@@ -88,7 +88,10 @@ def main() -> None:
     if "write_content" not in scopes:
         fail("The installed app is missing the required write_content scope.")
 
-    # Register the dynamically issued token with the Actions log masker before it enters later-step env output.\n    print(f"::add-mask::{token}", flush=True)\n\n    github_env = os.environ.get("GITHUB_ENV")
+    # Register the dynamically issued token with the Actions log masker before it enters later-step env output.
+    print(f"::add-mask::{token}", flush=True)
+
+    github_env = os.environ.get("GITHUB_ENV")
     if not github_env:
         fail("GITHUB_ENV is not set. Run this helper inside a GitHub Actions step.")
     with open(github_env, "a", encoding="utf-8") as env_file:
