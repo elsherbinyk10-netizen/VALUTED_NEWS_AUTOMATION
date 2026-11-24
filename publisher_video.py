@@ -16,7 +16,7 @@ PLAYER_HOSTS = (
     "brightcove.net", "jwplayer.com", "jwplatform.com", "dailymotion.com",
     "wistia.net", "wistia.com", "kaltura.com", "theplatform.com",
     "vidyard.com", "sproutvideo.com", "cloudinary.com", "ooyala.com",
-    "video.ibm.com", "ustream.tv",
+    "video.ibm.com", "ustream.tv", "emp.bbc.com",
 )
 
 
@@ -29,7 +29,7 @@ def _trusted_player_url(url, source_host=""):
     publisher_host = (source_host or "").lower().rstrip(".")
     same_publisher = bool(publisher_host and (host == publisher_host or host.endswith("." + publisher_host)))
     path = parsed.path.lower()
-    player_path = any(part in path for part in ("/embed", "/player", "/video", "/iframe", "/media"))
+    player_path = any(part in path for part in ("/embed", "/player", "/video", "/iframe", "/media", "/emp/"))
     return (trusted and (player_path or host.startswith(("player.", "players.", "embed.")))) or (same_publisher and player_path)
 
 
