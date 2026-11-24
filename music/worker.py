@@ -69,19 +69,15 @@ def shop_guard_and_audit():
     if not TOKEN: raise RuntimeError("Missing VALUTED_MUSIC_SHOPIFY_ADMIN_ACCESS_TOKEN")
     if not SHOP or not SHOP.endswith(".myshopify.com"):
         raise RuntimeError("Missing/invalid VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN Actions variable; expected the store-specific .myshopify.com host. No writes.")
-    q="""query Guard { shop { name myshopifyDomain primaryDomain { host url } } themes(first:50) { edges { node { id name role } } } }"""
+    # Verify the exact target store using shop metadata only. This worker never reads or writes themes.
+    q="""query Guard { shop { name myshopifyDomain primaryDomain { host url } } }"""
     d=gql(q); s=d["shop"]
     host=(s.get("primaryDomain") or {}).get("host","").lower()
     name=s.get("name","").strip()
-    themes=[e["node"] for e in d["themes"]["edges"]]
-    main=[t for t in themes if t.get("role")=="MAIN"]
     log(f"SHOP CHECK: name={name!r}; primary_host={host!r}; myshopify={s.get('myshopifyDomain')!r}")
     if name.casefold()!=EXPECTED_NAME.casefold() or host!=EXPECTED_HOST:
         log("WRONG SHOP CONNECTED — NO CHANGES MADE.")
         sys.exit(0)
-    if len(main)!=1:
-        raise RuntimeError(f"Expected exactly one MAIN theme; found {len(main)}. No article writes.")
-    log(f"MAIN THEME: name={main[0]['name']}; id={main[0]['id']}; role={main[0]['role']}")
     blogs=gql("""query Blogs { blogs(first:100) { edges { node { id handle title } } } }""")["blogs"]["edges"]
     target=next((e["node"] for e in blogs if e["node"]["handle"]==BLOG_HANDLE),None)
     if not target: raise RuntimeError("Existing Shopify blog handle 'news' was not found. No writes.")
@@ -186,6 +182,7 @@ def existing_source(blog_id, source_url, handle=None):
                 return True
         info=page["pageInfo"]
         if not info["hasNextPage"]: return False
+        cursor=info["endCursor"]
 
 def publish(blog_id, item, article):
     if existing_source(blog_id,item["url"],article["handle"]):
