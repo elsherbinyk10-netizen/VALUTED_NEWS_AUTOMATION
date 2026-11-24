@@ -40,6 +40,19 @@ jobs:
           SHOPIFY_API_VERSION: "2026-10"
           SEO_REPORT_DIR: seo-report
         run: python music/seo_audit.py
+      - name: Retrofit existing official music video pages
+        env:
+          SHOPIFY_ADMIN_DOMAIN: ${{ vars.VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN }}
+          SHOPIFY_API_VERSION: "2026-10"
+          YOUTUBE_DATA_API_KEY: ${{ secrets.YOUTUBE_DATA_API_KEY }}
+          AUTO_PUBLISH: "true"
+        run: |
+          if [ -z "$YOUTUBE_DATA_API_KEY" ]; then
+            echo "::warning::YOUTUBE_DATA_API_KEY is not configured; video-page retrofit skipped safely."
+          else
+            python -m py_compile music/video_seo_audit.py
+            python music/video_seo_audit.py
+          fi
       - name: Upload SEO report
         if: always()
         uses: actions/upload-artifact@v4
