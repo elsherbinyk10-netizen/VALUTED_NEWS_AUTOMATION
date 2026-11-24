@@ -11,7 +11,15 @@
     {
       "channel_id": "UCn_cTBTFjHu_V0fw_S8WwoQ",
       "label": "Sony Music UK — verified official label channel"
+    },
+    {
+      "channel_id": "UCg8ZzloDPTrOiGztK0C9txQ",
+      "label": "THEBLACKLABEL — verified official label channel"
+    },
+    {
+      "channel_id": "UC9TO_oo4c_LrOiKNaY6aysA",
+      "label": "Daddy Yankee — verified Official Artist Channel"
     }
   ],
-  "note": "Initial verified label channels only. Expand after verifying each artist/label channel ownership. RSS items are subsequently checked with YouTube Data API for exact channel ownership, public visibility and embeddability."
+  "note": "Official label and artist channels verified from their YouTube channel identities. RSS candidates are checked against the exact YouTube Data API channel ID, public visibility, embeddability, upload date, duration and thumbnail before publishing."
 }
