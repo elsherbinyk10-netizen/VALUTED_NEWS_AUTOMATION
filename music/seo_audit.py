@@ -8,6 +8,7 @@ actual indexing status (that requires Search Console access).
 import os, re, json, time, html, sys
 from datetime import datetime, timezone
 from urllib.parse import urlparse
+import xml.etree.ElementTree as ET
 import requests
 from bs4 import BeautifulSoup
 
