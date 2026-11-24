@@ -59,20 +59,26 @@ def fetch_text(url):
     r.raise_for_status()
     return r.url,r.text
 
+def xml_locations(xml_text):
+    root=ET.fromstring(xml_text)
+    values=[]
+    for node in root.iter():
+        if node.tag.rsplit("}",1)[-1]=="loc" and node.text:
+            values.append(node.text.strip())
+    return values
+
 def read_sitemap():
     found=set(); notes=[]
     try:
-        final,xml=fetch_text(f"https://{EXPECTED_HOST}/sitemap.xml")
-        soup=BeautifulSoup(xml,"xml")
-        child=[x.get_text(strip=True) for x in soup.find_all("loc")]
+        _,xml=fetch_text(f"https://{EXPECTED_HOST}/sitemap.xml")
+        child=xml_locations(xml)
         blog_maps=[u for u in child if "sitemap_blogs_" in u]
         if not blog_maps:
             blog_maps=[f"https://{EXPECTED_HOST}/sitemap_blogs_1.xml"]
         for url in blog_maps:
             try:
                 _,body=fetch_text(url)
-                for loc in BeautifulSoup(body,"xml").find_all("loc"):
-                    found.add(loc.get_text(strip=True).rstrip("/"))
+                found.update(u.rstrip("/") for u in xml_locations(body))
             except Exception as exc: notes.append(f"Blog sitemap unavailable: {exc}")
     except Exception as exc: notes.append(f"Root sitemap unavailable: {exc}")
     return found,notes
