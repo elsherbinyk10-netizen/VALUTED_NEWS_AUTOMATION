@@ -45,10 +45,10 @@ def _resolve_channel_id(identifier):
             return ""
         markup = str(getattr(response, "text", "") or "")
         patterns = (
-            r'"channelId"\\s*:\\s*"(UC[A-Za-z0-9_-]{20,})"',
-            r'"externalId"\\s*:\\s*"(UC[A-Za-z0-9_-]{20,})"',
-            r'"browseId"\\s*:\\s*"(UC[A-Za-z0-9_-]{20,})"',
-            r'<meta[^>]+itemprop=["\\']channelId["\\'][^>]+content=["\\'](UC[A-Za-z0-9_-]{20,})',
+            r'"channelId"\s*:\s*"(UC[A-Za-z0-9_-]{20,})"',
+            r'"externalId"\s*:\s*"(UC[A-Za-z0-9_-]{20,})"',
+            r'"browseId"\s*:\s*"(UC[A-Za-z0-9_-]{20,})"',
+            r"<meta[^>]+itemprop=['\"]channelId['\"][^>]+content=['\"](UC[A-Za-z0-9_-]{20,})",
         )
         for pattern in patterns:
             match = re.search(pattern, markup)
