@@ -1,10 +1,15 @@
 import unittest
 from unittest.mock import Mock, patch
 
-from official_channel_video import fetch_official_channel_video, _publisher_channel
+from official_channel_video import (fetch_official_channel_video, _publisher_channel,\n                                     _CHANNEL_ID_CACHE, _CHANNEL_FEED_CACHE, _PLAYABLE_VIDEO_CACHE)
 
 
 class OfficialChannelVideoTests(unittest.TestCase):
+    def setUp(self):
+        _CHANNEL_ID_CACHE.clear()
+        _CHANNEL_FEED_CACHE.clear()
+        _PLAYABLE_VIDEO_CACHE.clear()
+
     def test_only_maps_known_publisher_domains(self):
         self.assertEqual(_publisher_channel("https://www.bbc.com/news/story"),
                          ("BBC News", "UC16niRr50-MSBwiO3YDb3RA"))
