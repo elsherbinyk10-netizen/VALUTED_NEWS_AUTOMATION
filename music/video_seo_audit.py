@@ -58,6 +58,23 @@ def video_id_from_body(body):
                 return parsed.path.strip("/")
     return None
 
+def duration_seconds(value):
+    match=re.fullmatch(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?",value or "")
+    if not match:return 0
+    hours,minutes,seconds=(int(part or 0) for part in match.groups())
+    return hours*3600+minutes*60+seconds
+
+def verify_thumbnail(url):
+    if not url or urlparse(url).scheme!="https":return False
+    try:
+        response=S.get(url,stream=True,timeout=15,headers={"Range":"bytes=0-0"})
+        try:
+            return response.status_code in (200,206) and response.headers.get("Content-Type","").lower().startswith("image/")
+        finally:
+            response.close()
+    except requests.RequestException:
+        return False
+
 def fetch_video(vid):
     r=S.get("https://www.googleapis.com/youtube/v3/videos",
       params={"part":"snippet,status,contentDetails","id":vid,"key":YOUTUBE_KEY},timeout=30)
@@ -67,10 +84,12 @@ def fetch_video(vid):
     v=items[0]; sn=v.get("snippet") or {}; st=v.get("status") or {}; cd=v.get("contentDetails") or {}
     if st.get("privacyStatus")!="public" or st.get("embeddable") is not True:return None
     title=html.unescape(sn.get("title","")).strip()
-    if not re.search(r"official\\s+(music\\s+)?video|official\\s+lyrics?\\s+video|official\\s+audio",title,re.I):return None
+    official=re.search(r"official\s+(?:(?:music\s+)?video|lyrics?\s+video|audio)",title,re.I)
+    excluded=re.search(r"\b(shorts?|teaser|trailer|interview|reaction|dance practice)\b",title,re.I)
+    if not official or excluded or duration_seconds(cd.get("duration"))<60:return None
     thumbs=sn.get("thumbnails") or {}
     thumb=next((thumbs[k].get("url") for k in ("maxres","standard","high","medium","default") if thumbs.get(k,{}).get("url")),None)
-    if not thumb or urlparse(thumb).scheme!="https":return None
+    if not verify_thumbnail(thumb):return None
     return {"id":vid,"title":title,"description":html.unescape(sn.get("description","")).strip(),
       "channel":sn.get("channelTitle","Official channel"),"published":sn.get("publishedAt"),
       "duration":cd.get("duration"),"thumbnail":thumb,
@@ -84,7 +103,7 @@ def page_seo(article, video):
     elif "audio" in low: kind="official audio"; heading="Listen to the official audio"
     else: kind="official music video"; heading="Watch the official music video"
     description=BeautifulSoup(video["description"],"html.parser").get_text(" ",strip=True)
-    description=re.sub(r"\\s+"," ",description).strip()
+    description=re.sub(r"\s+"," ",description).strip()
     if len(description)<40: description=f"{title} — {kind} from {video['channel']}. Watch the official release on VALUTED MUSIC."
     description=description[:1000]
     canonical=f"https://{EXPECTED_HOST}/blogs/{BLOG_HANDLE}/{article['handle']}"

@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime, timezone
-from music.video_worker import duration_seconds, is_official_music_video, parse_published, build_article, channel_allowlist, public_player_duration, public_player_duration
+from music.video_worker import duration_seconds, is_official_music_video, parse_published, build_article, channel_allowlist, public_player_duration
 
 class MusicVideoWorkerTests(unittest.TestCase):
     def test_duration_parser(self):
@@ -98,6 +98,12 @@ class ExistingVideoSeoRetrofitTests(unittest.TestCase):
         self.assertEqual(video_id_from_body('<iframe src="https://www.youtube-nocookie.com/embed/abcdefghijk"></iframe>'),"abcdefghijk")
         self.assertEqual(video_id_from_body('<a href="https://www.youtube.com/watch?v=abcdefghijk">Watch</a>'),"abcdefghijk")
         self.assertIsNone(video_id_from_body('<iframe src="https://example.com/embed/abcdefghijk"></iframe>'))
+
+    def test_video_seo_duration_and_official_title_gate(self):
+        from music.video_seo_audit import duration_seconds
+        self.assertEqual(duration_seconds("PT3M20S"), 200)
+        self.assertEqual(duration_seconds("PT30S"), 30)
+        self.assertEqual(duration_seconds("invalid"), 0)
 
     def test_page_seo_adds_schema_and_correct_video_kind(self):
         from music.video_seo_audit import page_seo
