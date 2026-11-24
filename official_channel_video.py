@@ -12,13 +12,53 @@ OFFICIAL_CHANNELS = {
     "bbc.co.uk": ("BBC News", "UC16niRr50-MSBwiO3YDb3RA"),
     "bbc.com": ("BBC News", "UC16niRr50-MSBwiO3YDb3RA"),
     "nasa.gov": ("NASA", "UCLA_DiR1FfKNvjuUpBHmylQ"),
-    # Verified official publisher channels; IDs are fixed, never discovered from
-    # title search results or arbitrary third-party uploads.
+    # Verified official publisher channels; fixed channel IDs or exact official
+    # handles are allowlisted here. No arbitrary search-result channel is accepted.
     "npr.org": ("NPR", "UCJnS2EsPfv46u1JR8cnD0NA"),
     "billboard.com": ("Billboard", "UCsVcseUYbYjldc-XgcsiEbg"),
     "rollingstone.com": ("Rolling Stone", "UC-JblcinswY50lrUdSaRNEg"),
+    "theguardian.com": ("The Guardian", "@theGuardian"),
+    "variety.com": ("Variety", "@Variety"),
 }
 USER_AGENT = "ValutedNewsOfficialVideoDiscovery/1.0"
+_CHANNEL_ID_CACHE = {}
+
+
+def _resolve_channel_id(identifier):
+    """Resolve an allowlisted official YouTube handle to its stable UC channel ID."""
+    if str(identifier or "").startswith("UC"):
+        return identifier
+    handle = str(identifier or "")
+    if not re.fullmatch(r"@[A-Za-z0-9._-]+", handle):
+        return ""
+    if handle in _CHANNEL_ID_CACHE:
+        return _CHANNEL_ID_CACHE[handle]
+    try:
+        response = requests.get(
+            "https://www.youtube.com/" + handle,
+            headers={"User-Agent": "Mozilla/5.0 " + USER_AGENT,
+                     "Accept": "text/html,application/xhtml+xml"},
+            timeout=(4, 10),
+        )
+        if not response.ok:
+            _CHANNEL_ID_CACHE[handle] = ""
+            return ""
+        markup = str(getattr(response, "text", "") or "")
+        patterns = (
+            r'"channelId"\\s*:\\s*"(UC[A-Za-z0-9_-]{20,})"',
+            r'"externalId"\\s*:\\s*"(UC[A-Za-z0-9_-]{20,})"',
+            r'"browseId"\\s*:\\s*"(UC[A-Za-z0-9_-]{20,})"',
+            r'<meta[^>]+itemprop=["\\']channelId["\\'][^>]+content=["\\'](UC[A-Za-z0-9_-]{20,})',
+        )
+        for pattern in patterns:
+            match = re.search(pattern, markup)
+            if match:
+                _CHANNEL_ID_CACHE[handle] = match.group(1)
+                return match.group(1)
+    except requests.RequestException:
+        pass
+    _CHANNEL_ID_CACHE[handle] = ""
+    return ""
 
 
 def _publisher_channel(source_url):
@@ -66,7 +106,10 @@ def fetch_official_channel_video(story_title, source_url):
     identity = _publisher_channel(source_url)
     if not identity:
         return ""
-    channel_name, channel_id = identity
+    channel_name, channel_identifier = identity
+    channel_id = _resolve_channel_id(channel_identifier)
+    if not channel_id:
+        return ""
     terms = set(re.findall(r"[a-z0-9]{3,}", str(story_title or "").lower()))
     stop = {"the", "and", "for", "with", "from", "that", "this", "after", "before",
             "latest", "news", "update", "says", "said", "will", "into", "about"}
