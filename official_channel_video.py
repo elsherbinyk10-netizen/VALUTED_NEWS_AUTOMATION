@@ -22,6 +22,8 @@ OFFICIAL_CHANNELS = {
 }
 USER_AGENT = "ValutedNewsOfficialVideoDiscovery/1.0"
 _CHANNEL_ID_CACHE = {}
+_CHANNEL_FEED_CACHE = {}
+_PLAYABLE_VIDEO_CACHE = {}
 
 
 def _resolve_channel_id(identifier):
@@ -69,7 +71,7 @@ def _publisher_channel(source_url):
     return None
 
 
-def _playable_youtube_video(video_id, timeout=(3, 7)):
+def _probe_playable_youtube_video(video_id, timeout=(3, 7)):
     if not re.fullmatch(r"[A-Za-z0-9_-]{11}", str(video_id or "")):
         return False
     try:
@@ -101,6 +103,16 @@ def _playable_youtube_video(video_id, timeout=(3, 7)):
         return False
 
 
+def _playable_youtube_video(video_id, timeout=(3, 7)):
+    """Cache positive and negative playback probes during one collector run."""
+    key = str(video_id or "")
+    if key in _PLAYABLE_VIDEO_CACHE:
+        return _PLAYABLE_VIDEO_CACHE[key]
+    result = _probe_playable_youtube_video(key, timeout)
+    _PLAYABLE_VIDEO_CACHE[key] = result
+    return result
+
+
 def fetch_official_channel_video(story_title, source_url):
     """Return an embed only when the cited publisher's own official channel has a matching playable clip."""
     identity = _publisher_channel(source_url)
@@ -116,15 +128,17 @@ def fetch_official_channel_video(story_title, source_url):
     terms -= stop
     if len(terms) < 2:
         return ""
-    feed_url = "https://www.youtube.com/feeds/videos.xml?channel_id=" + channel_id
-    try:
-        response = requests.get(feed_url, headers={"User-Agent": USER_AGENT}, timeout=(3, 7))
-        response.raise_for_status()
-        parsed = feedparser.parse(response.content)
-    except (requests.RequestException, Exception):
-        return ""
+    if channel_id not in _CHANNEL_FEED_CACHE:
+        feed_url = "https://www.youtube.com/feeds/videos.xml?channel_id=" + channel_id
+        try:
+            response = requests.get(feed_url, headers={"User-Agent": USER_AGENT}, timeout=(3, 7))
+            response.raise_for_status()
+            parsed = feedparser.parse(response.content)
+            _CHANNEL_FEED_CACHE[channel_id] = list(parsed.entries[:60])
+        except Exception:
+            _CHANNEL_FEED_CACHE[channel_id] = []
     ranked = []
-    for entry in parsed.entries[:60]:
+    for entry in _CHANNEL_FEED_CACHE[channel_id]:
         entry_channel = str(entry.get("yt_channelid") or entry.get("channel_id") or "")
         if entry_channel and entry_channel != channel_id:
             continue
