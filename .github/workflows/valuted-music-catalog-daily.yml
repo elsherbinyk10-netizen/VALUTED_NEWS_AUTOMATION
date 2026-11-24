@@ -1,7 +1,7 @@
 name: VALUTED MUSIC Daily Catalogue Expansion
 on:
   schedule:
-    - cron: "30 19 * * *" # 9:00 PM Cairo
+    - cron: "30 19 * * *" # 9:30 PM Cairo
   workflow_dispatch:
     inputs:
       publish:
