@@ -20,6 +20,24 @@ def fail(message: str) -> None:
     raise SystemExit(1)
 
 
+def safe_diagnostic(raw: bytes, client_id: str, client_secret: str) -> str:
+    """Return Shopify's useful error code without leaking credentials or tokens."""
+    try:
+        payload = json.loads(raw.decode("utf-8", errors="replace"))
+    except (json.JSONDecodeError, TypeError):
+        return "Shopify returned a non-JSON error response."
+    value = payload.get("error") if isinstance(payload, dict) else None
+    if isinstance(value, dict):
+        value = value.get("message") or value.get("code")
+    if not isinstance(value, str):
+        value = "Shopify did not provide a recognized error code."
+    for secret in (client_id, client_secret):
+        if secret:
+            value = value.replace(secret, "[REDACTED]")
+    value = re.sub(r"shpat_[A-Za-z0-9]+|shpca_[A-Za-z0-9]+|access_token[^,}]*", "[REDACTED]", value, flags=re.I)
+    return value[:300]
+
+
 def main() -> None:
     domain = os.environ.get("SHOPIFY_ADMIN_DOMAIN", "").strip().lower()
     client_id = os.environ.get("SHOPIFY_CLIENT_ID", "").strip()
@@ -39,7 +57,7 @@ def main() -> None:
     request = urllib.request.Request(
         endpoint,
         data=payload,
-        headers={"Content-Type": "application/x-www-form-urlencoded"},
+        headers={"Content-Type": "application/x-www-form-urlencoded", "Accept": "application/json"},
         method="POST",
     )
 
@@ -47,8 +65,10 @@ def main() -> None:
         with urllib.request.urlopen(request, timeout=30) as response:
             data = json.loads(response.read().decode("utf-8"))
     except urllib.error.HTTPError as exc:
-        # Do not print response body: it may contain provider diagnostics.
-        fail(f"Shopify returned HTTP {exc.code}. Check app installation, organization, and credentials.")
+        body = exc.read(8192)
+        request_id = exc.headers.get("x-request-id", "not supplied")
+        diagnostic = safe_diagnostic(body, client_id, client_secret)
+        fail(f"Shopify returned HTTP {exc.code}; error={diagnostic}; request_id={request_id}. Verify the Client ID/secret from this app's Dev Dashboard Settings.")
     except (urllib.error.URLError, TimeoutError):
         fail("Could not reach Shopify token endpoint. Check network and try again.")
     except (json.JSONDecodeError, UnicodeDecodeError):
@@ -56,8 +76,6 @@ def main() -> None:
 
     token = data.get("access_token")
     scopes = {scope.strip() for scope in (data.get("scope") or "").split(",") if scope.strip()}
-    # Shopify's content write scope includes the read capability; the token
-    # response may therefore list write_content without a separate read_content.
     if not isinstance(token, str) or not token:
         fail("Shopify response did not contain an access token.")
     if "write_content" not in scopes:
