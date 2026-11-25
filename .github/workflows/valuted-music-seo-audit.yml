@@ -44,11 +44,12 @@ jobs:
         env:
           SHOPIFY_ADMIN_DOMAIN: ${{ vars.VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN }}
           SHOPIFY_API_VERSION: "2026-10"
-          YOUTUBE_DATA_API_KEY: ${{ secrets.YOUTUBE_DATA_API_KEY }}
+          # Prefer the current name, but accept the legacy name used by earlier setup notes.
+          YOUTUBE_DATA_API_KEY: ${{ secrets.YOUTUBE_DATA_API_KEY || secrets.VALUTED_MUSIC_YOUTUBE_DATA_API_KEY }}
           AUTO_PUBLISH: "true"
         run: |
           if [ -z "$YOUTUBE_DATA_API_KEY" ]; then
-            echo "::warning::YOUTUBE_DATA_API_KEY is not configured; video-page retrofit skipped safely."
+            echo "::warning::Neither YOUTUBE_DATA_API_KEY nor VALUTED_MUSIC_YOUTUBE_DATA_API_KEY is configured; video-page retrofit skipped safely."
           else
             python -m py_compile music/video_seo_audit.py
             python music/video_seo_audit.py
