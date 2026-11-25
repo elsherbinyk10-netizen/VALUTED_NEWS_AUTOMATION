@@ -397,8 +397,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-25T15:42:24.857688+00:00",
-      "restore_status": "blocked_original_rss_excerpt_unavailable",
+      "restore_attempted_at": "2026-11-25T15:44:28.878117+00:00",
+      "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669522559213",
       "source_url": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune",
@@ -1009,7 +1009,7 @@
       "status": "skipped_stale"
     },
     "0be675fc3105b1e3314c25b8994b4376ccd465fdc0b4b1d6d67df8e5ad7cb54c": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
@@ -1253,7 +1253,7 @@
       "status": "skipped_stale"
     },
     "0e8108047025f1dbfe2c53bb61f976f1c9db2713312bb555d322e3202aecd477": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "Variety Music",
       "status": "skipped_stale"
     },
@@ -1547,7 +1547,7 @@
       "status": "skipped_stale"
     },
     "1221712236f0eeeaa047ed1e221baf33211a355e7a9b8d58847cc48a02bae252": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
@@ -1984,7 +1984,7 @@
       "status": "skipped_stale"
     },
     "1799c0a1447805d68e19edbcf5ce8411f97e69ec0080c1a8239d4355934d8565": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
     },
@@ -2087,6 +2087,11 @@
     "18cdee13e7a3dcdf2990ec7beb542bcf692753971ecc805e06f0cdd6676723eb": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "18d2d15197a71813b9b65cfd5f994eb2b390dcbd9fa0d4b68db923c7a4db1c22": {
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
+      "source": "NASA Astronomy Picture of the Day",
       "status": "skipped_stale"
     },
     "18f15e30b0ad70d60b6d755b684a586a8cc592250990396ff2576aaf3ce0bdca": {
@@ -3368,6 +3373,11 @@
     "27fc5802fd1bbae96633ea3e766c81d8ee670ce2750456029d418f88b98821ee": {
       "seen_at": "2026-11-21T23:11:19.093182+00:00",
       "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
+    "27ff426d4247d2c99f7f1f87c720c58293afe598b185dbe819824f32e0823b1a": {
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
+      "source": "NASA Astronomy Picture of the Day",
       "status": "skipped_stale"
     },
     "281b7706903247e7ba836fac2a9f0840d3a3d0225226018256ba88a657199d7d": {
@@ -5172,6 +5182,19 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "3e500e04dfa2ba493c9c6021021dbaec92d570d4523d03c04dea47e4bba71dc0": {
+      "created_at": "2026-11-25T15:42:48.491093+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "restore_attempted_at": "2026-11-25T15:44:28.878117+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669596025069",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckx283y8wwwgo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Canadian astronaut welcomes baby girl from space station"
+    },
     "3e58ff883dd03a6f556f7b89565ef3874a096afd91b8560dd2033b71a9910650": {
       "seen_at": "2026-11-04T07:21:09.092237+00:00",
       "source": "Google News Science",
@@ -5514,7 +5537,7 @@
       "status": "skipped_stale"
     },
     "422b856a11e56406787ba2b9a3e8cf6cce9722b507ec16040e935297cd9f6b03": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "The Guardian World",
       "status": "skipped_stale"
     },
@@ -6068,7 +6091,7 @@
       "status": "skipped_stale"
     },
     "496dfdefe1dadc23690a612e9c33e0f75bc6ce77fae6c98094f2c9ef4f6070fd": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "The Guardian World",
       "status": "skipped_stale"
     },
@@ -6220,6 +6243,11 @@
     "4bbafec6b8ea82af1d94f0044a52aa3ed086963569920c6b0bdf512080f41759": {
       "seen_at": "2026-11-21T14:35:47.501261+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "4bc31da9475875589e290faa372a3ae5e787e94d154dbb787349d5ff5409fb22": {
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
+      "source": "NASA Astronomy Picture of the Day",
       "status": "skipped_stale"
     },
     "4c00a260dcb6f9fa03675e22f4805ba7bc856d3161faf7e3d988d791eb17e6a7": {
@@ -6502,7 +6530,7 @@
       "status": "skipped_stale"
     },
     "4e88db410190916fea38e450bbe3c465fc50a95e34a8bdcc115a5fc429cc43c8": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
@@ -7530,6 +7558,11 @@
       "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
+    "5cf4301583bea7d8db6f5ed62f533202dae9d09bdc87322e4a4d5b8c2ed096eb": {
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
+      "source": "NASA Astronomy Picture of the Day",
+      "status": "skipped_stale"
+    },
     "5cf497c37d8467081586543e48eee043ad2c4f7e79f725787d68a7b549297c42": {
       "seen_at": "2026-11-13T15:42:46.158902+00:00",
       "source": "NASA News",
@@ -8417,7 +8450,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Technology",
-      "restore_attempted_at": "2026-11-25T15:42:24.857688+00:00",
+      "restore_attempted_at": "2026-11-25T15:44:28.878117+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669563617517",
@@ -8943,7 +8976,7 @@
       "status": "skipped_stale"
     },
     "6c54e429c45fa76d2d5e9c9a423b72d38c47e4505766e929a649662f910c0037": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
@@ -9303,6 +9336,11 @@
     "7036ebf54b0f0aa145a3d8e1eac11f35bfadb17de1029e12816427ca6b37b0f4": {
       "seen_at": "2026-11-06T07:20:31.183807+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "7050bc9bb18cc80eaa17227f1d3f09a26fe68cae9aa4b8846c6507bb3039a832": {
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
+      "source": "NASA Astronomy Picture of the Day",
       "status": "skipped_stale"
     },
     "708f03734dbf68f5f6322e4ddd3ab9734c6342e5269daa46690a777d800e0a7a": {
@@ -11012,6 +11050,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "8382e242923f3b28b1ae7b714227593e645d09fe118aca41cad66b75fef1e093": {
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
+      "source": "NASA Astronomy Picture of the Day",
+      "status": "skipped_stale"
+    },
     "8392886200744ee07ddc57e0e5568183a975a0f62824f48a1be5be8f126f55bf": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "Variety Music",
@@ -12377,7 +12420,7 @@
       "status": "skipped_stale"
     },
     "92464261785b40bff0616ccf4f6b74f1615f0ac3b6470dcdd625349cfb01688d": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
@@ -13164,7 +13207,7 @@
       "status": "skipped_stale"
     },
     "9b65bf7dece6a8fddab22efccc7d5515995b99db504c50abe53579c5275cb22c": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "Variety Music",
       "status": "skipped_stale"
     },
@@ -14580,6 +14623,11 @@
       "status": "published",
       "title": "Alleged Russell Brand rape victim wants age of consent law changed"
     },
+    "acc301e7ba339cf75435540392d2cc0c1893bbafa8983e38c5b2e7035974d11a": {
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
+      "source": "NASA Astronomy Picture of the Day",
+      "status": "skipped_stale"
+    },
     "acdf91ab146529f559efae3dffc1ff7d5cb8673064ccaa1cab65ecaff6ad4f22": {
       "seen_at": "2026-11-02T21:07:26.153658+00:00",
       "source": "The Guardian Technology",
@@ -14702,7 +14750,7 @@
       "status": "skipped_stale"
     },
     "af0717d10aa2330b68779d5b6ac2ae45dcf2750e033bb14f9a8201e0767f17b7": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "The Guardian World",
       "status": "skipped_stale"
     },
@@ -14769,7 +14817,7 @@
       "title": "China's Shenzhou-24 carries Pakistan's first astronaut into space"
     },
     "af2b643b7746f71ab98f2fc9ac2e440fc0dacaf16ffe978c2f386ce0c65a2a0d": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
@@ -15916,7 +15964,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Variety Music",
-      "restore_attempted_at": "2026-11-25T15:42:24.857688+00:00",
+      "restore_attempted_at": "2026-11-25T15:44:28.878117+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669565812973",
@@ -16605,7 +16653,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-25T15:42:24.857688+00:00",
+      "restore_attempted_at": "2026-11-25T15:44:28.878117+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669561520365",
@@ -17866,7 +17914,7 @@
       "status": "skipped_stale"
     },
     "d116c3d9f1d390741d8251edbb9d7af80c57205d89620048b1bfed096a75d165": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
     },
@@ -18494,7 +18542,7 @@
       "status": "skipped_stale"
     },
     "d82c40666b6e071453b82448c4cb27f7b0eed64afd80fb2a05b0d04496cc3cb6": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
@@ -18851,7 +18899,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Variety Music",
-      "restore_attempted_at": "2026-11-25T15:42:24.857688+00:00",
+      "restore_attempted_at": "2026-11-25T15:44:28.878117+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669564502253",
@@ -18956,7 +19004,7 @@
       "status": "skipped_stale"
     },
     "de264d24b1a82fc129c505618fe4a2f8f345db185d17c2b966740c94d8061877": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "BBC World",
       "status": "skipped_stale"
     },
@@ -19087,7 +19135,7 @@
       "status": "skipped_stale"
     },
     "df8cf82ed3b7a0b06840b2081858392ec16447aa4a790a076bf5f8703ca58002": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
@@ -19145,7 +19193,7 @@
       "status": "skipped_stale"
     },
     "e000e454f6b288cbd948ac44a76c60da64c48fd0f1a1c080f6c172bbba985f04": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
@@ -19180,7 +19228,7 @@
       "status": "skipped_stale"
     },
     "e0495d6a5040b0f670d8ef31885b1a35d6910bc6e9ee068cbe134f692e337072": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "BBC World",
       "status": "skipped_stale"
     },
@@ -19659,7 +19707,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-25T15:42:24.857688+00:00",
+      "restore_attempted_at": "2026-11-25T15:44:28.878117+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669529145581",
@@ -20432,6 +20480,11 @@
       "source": "Google News Politics",
       "status": "skipped_stale"
     },
+    "ed9cb9e56822e19bebb355c60f72b52b655819da28d15d8a65fafb8c2303c5a0": {
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
+      "source": "NASA Astronomy Picture of the Day",
+      "status": "skipped_stale"
+    },
     "ed9cbc1269ba9db404b4e6a4b805b1abdccddf7bd522f2f90ee7a9ce2b77301c": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "NPR Business",
@@ -21056,6 +21109,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "f465450090ebfb43055039b5f06ebb9c5aad54ec21f61579b4a554705b3c46ea": {
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
+      "source": "NASA Astronomy Picture of the Day",
+      "status": "skipped_stale"
+    },
     "f46ca9a79cba57f0c3899c4a9e87cd4c818e129c8bff40fcea880f10833a6367": {
       "seen_at": "2026-11-22T23:35:09.678949+00:00",
       "source": "The Guardian World",
@@ -21132,7 +21190,7 @@
       "status": "skipped_stale"
     },
     "f53d7a9d4f31c892a618b64c48c63217a33fe77fc02dedfa2480cbcf204de8f2": {
-      "seen_at": "2026-11-25T15:40:34.692242+00:00",
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
     },
@@ -21184,8 +21242,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-25T15:42:24.857688+00:00",
-      "restore_status": "blocked_original_rss_excerpt_unavailable",
+      "restore_attempted_at": "2026-11-25T15:44:28.878117+00:00",
+      "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669527736557",
       "source_url": "https://science.nasa.gov/image-article/apod-2026-november-22-swirls-and-colors-on-jupiter-from-juno",
@@ -21631,6 +21689,11 @@
     "fb7cc8f3d7abb95415e23fa2c1bd7891625a36ee330245940f8a339217a624b9": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "fb849f3daf520e54868f4ec1d2f080e07c91d5b1c07e86eb5e79b59715798085": {
+      "seen_at": "2026-11-25T15:42:48.491093+00:00",
+      "source": "NASA Astronomy Picture of the Day",
       "status": "skipped_stale"
     },
     "fb9cd0d5f3da21017e195d4da1bcfec26b5135242bca800d46e13bc32a0b581a": {
