@@ -2196,6 +2196,11 @@
       "source": "Google News India Top Stories",
       "status": "skipped_stale"
     },
+    "1a3a9fd940b1f30a11f97019680c21dfc60a3f3e638a7f9ac1fe508ec0712d62": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "1a454b4cb386db80a512ef25d93e8b0abcdaeaab12fa9262a7a7c3bb727c001e": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Business",
@@ -2444,6 +2449,11 @@
     "1d23156725b579620f1d580075c919edfefdaa93423070e6af6601d611460137": {
       "seen_at": "2026-11-20T15:22:57.268874+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "1d43078cf591ea5ba91266c6e85aafd122f5ee2ac7971142a1f246c1c2ff2e6c": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "The Guardian Business",
       "status": "skipped_stale"
     },
     "1d605c32c4c62cbf5a2046653b4eb1fd82f00849a2251c2209faec112604758f": {
@@ -4919,6 +4929,11 @@
       "source": "The Guardian World",
       "status": "skipped_stale"
     },
+    "3b152dca00dd577e08d76b6767d3f748bebae3ddbe5351fd8373f407f3c33deb": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "3b166923ae876e6fb9450b1d1fd7c2b73a175f26db35bbca50e2fc68074055ae": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Technology",
@@ -6149,6 +6164,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "4b7fad258a938ce7c4be84effc0bf7bb51820b9b37b09c159389ce86aec5fc67": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "4bbafec6b8ea82af1d94f0044a52aa3ed086963569920c6b0bdf512080f41759": {
       "seen_at": "2026-11-21T14:35:47.501261+00:00",
       "source": "BBC Business",
@@ -6749,6 +6769,11 @@
     "52b0db1a9e3e7edc9c4979a955cb36e446a4c22961af467a41190c61caffd67d": {
       "seen_at": "2026-11-04T07:21:09.092237+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "52c4aa285a1cbbe6e60c469b011789acba78da63e46df216fd90c0c62eea7def": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "52e95f71193f3c56e712fd91bd1a5722b7233e9f447bb9b2c839b7f5150d3166": {
@@ -8684,6 +8709,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "6a4294e10373fa7cd687fa1be0344ceea39db7dcb08272d1c9f35cedf0f3895d": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
     "6a53cf88b3eeb5c3e0529e2c81c5916dd9d40253d2a9f93cbacff2761560c7f8": {
       "seen_at": "2026-10-25T06:45:22.038349+00:00",
       "source": "Google News Technology",
@@ -9043,6 +9073,11 @@
     },
     "6e711ee81d8445b2aa43e77b05d1978127484a59d892f68dc8ff6444b0b46917": {
       "seen_at": "2026-11-11T14:14:28.111405+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
+    "6e96e09d83a9fa5935c649194977f4f01398fe432a9bec92b4dde77854ffa64e": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
       "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
@@ -10586,6 +10621,11 @@
       "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
+    "8006ba0f9c438f1c4f570ce3c017a6441dc889b89a2088230be32294d568f74c": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "800b5314ea9f7962b91dea08a1ac455e1cba00eb82139e4e551abe997225cb26": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Variety Music",
@@ -11323,6 +11363,11 @@
       "source": "The Guardian World",
       "status": "skipped_stale"
     },
+    "87fce63a3e4e49e77d81de1ff0ed68ae009230bcd28856a9d05b2f033acacbc0": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "8809f12aec96573b710a1196e11b222e261e5974fcd12ab336329e07e1e7ad70": {
       "seen_at": "2026-10-29T13:00:30.022198+00:00",
       "source": "Google News Top Stories",
@@ -11731,6 +11776,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "8cf9c5611257b2ce0a16c95f65873ce7d19c12cbeb16bdb870ae611c0cdd4e9c": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "8d0760264f59afe3b04c653d3010f1b4170390f9eae3a40a55c4d4092e28194a": {
       "seen_at": "2026-11-07T20:19:01.218307+00:00",
       "source": "The Guardian Culture",
@@ -11782,6 +11832,11 @@
     "8d787f1efae63ab8869c347e08b197fb8264957a740d2a1379cbd3aee70c4537": {
       "seen_at": "2026-10-18T12:53:00.593654+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "8d7cf698b74b40ddb12411a1f459ce59de1d3809ae8d96ea39e0db9e9b953224": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "8d8b5b6590fe99c4f1831efd8625e002a7bde81db6112f32afcd08d994da5252": {
@@ -12600,6 +12655,11 @@
       "status": "published",
       "title": "Met chief says he wouldn't be surprised if more allegations made about Brand after rape conviction"
     },
+    "9656908f750774a963ee9ba904514cef262f6da359dffd52a31fc5255bc6dff4": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
     "9664c27d40099e09339f9b390e18081f6c7511a3a7f269e0f1e01b499bd7f702": {
       "seen_at": "2026-10-23T18:45:13.548852+00:00",
       "source": "Google News World",
@@ -12800,6 +12860,11 @@
     "98a3d67bbe96fadc05a472471edfbe3241f633ae9e5370d451498938f1c4b292": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "98dc3bf6f35d41bef52929212115cd27901970f2be5bda1938a95e945ee39384": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
     "98f379766467445167e40b4e70c4720852d07003b13af293b8b055f76ce91e89": {
@@ -14212,6 +14277,11 @@
     "aa9a4da2b7657b1edae16269a9b4a2d7186f0d6157694e60d0ec890cf590c75d": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
+    "aa9ddcb6bf350999121f4e701fa13f55a2708aeb4ab9614fcd0ae800eaa6c38d": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "aaa731da7deaa2d7e7c4bc0c137600e2afd43f7d14fb36e783c895c968001b2b": {
@@ -16411,6 +16481,11 @@
       "source": "The Guardian Sport",
       "status": "skipped_stale"
     },
+    "c2c96bd84b3ba5dfacc313d502710dfa9fa9bc8b817a500a6db5333aa5b46066": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
     "c2d5c21b657a1ac4b508135b8dd49d37fad6c8d694024c0e36b2e2c8dac30f47": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "Google News Politics",
@@ -17181,8 +17256,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-23T19:32:13.129102+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-25T02:24:25.351831+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669550379245",
       "source_url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
@@ -17961,6 +18036,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "d436bcfe7782f86c3661758b39a4dc0ffa7c39ae0d144f3f0f9910b73462cbb9": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "The Guardian Sport",
+      "status": "skipped_stale"
+    },
     "d438c334ca9963e4136d0c19c790177350e2708da030c0dc580cb16ae489419d": {
       "seen_at": "2026-11-14T22:19:49.798488+00:00",
       "source": "Billboard Pro Music Business",
@@ -17989,6 +18069,11 @@
     "d47390aacd6d8c146016d576c3a55aac467400bbd35b9cc569ac5d1a446bbb9b": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "d49e57d73ff1c309ef5b584fb583dd4faa9f9fe0b2b5130e1cb7204614b16cf4": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "d4b6180a8b35fab528b53115c70fd64c05ed6a203d048fb4870753a74ee177cd": {
@@ -20419,6 +20504,11 @@
     "f042aa9758b87d2def7127f7e7d76ed5550fe21737c3a7a212e1709322f15eee": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "f0571c633967751ad9efc093fed0937629ffbbcd4fe990f7b6aa4a09515ed9f3": {
+      "seen_at": "2026-11-25T02:22:26.625354+00:00",
+      "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
     "f063ceae6ff751ba9d7c0016577e4d21789ec447aebba83a0f25d33648ac7e4f": {
