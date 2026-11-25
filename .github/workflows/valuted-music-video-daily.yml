@@ -40,7 +40,7 @@ jobs:
         env:
           SHOPIFY_ADMIN_DOMAIN: ${{ vars.VALUTED_MUSIC_SHOPIFY_ADMIN_DOMAIN }}
           SHOPIFY_API_VERSION: "2026-10"
-          MAX_VIDEOS_PER_RUN: "2"
+          MAX_VIDEOS_PER_RUN: "5"
           MAX_VIDEO_AGE_HOURS: "72"
           AUTO_PUBLISH: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.publish) }}
         run: python music/video_worker.py
