@@ -22,7 +22,7 @@ This is a static, client-side music fingerprint matcher. It makes no recognition
 The app stores the current library in browser local storage. Do not put copyrighted audio files in the repository.
 
 ## Static hosting
-The folder can be served by any static HTTPS host (for example, GitHub Pages) and embedded in a Shopify page using an iframe. Static hosting serves HTML, JavaScript and JSON only; it does not process or recognize audio server-side. GitHub Pages must be enabled for the repository before it is publicly available.
+The repository includes a GitHub Actions Pages deployment workflow. After this change is merged to main, the workflow configures GitHub Pages and publishes this folder as a static HTTPS site at `https://elsherbinyk10-netizen.github.io/VALUTED_NEWS_AUTOMATION/` (the exact URL is also reported by the deployment job). The Radar can then be embedded in a Shopify page using an iframe; this does not require a theme edit or a server. Static hosting serves HTML, JavaScript and JSON only; it does not process or recognize audio server-side. The initial shared `library.json` is intentionally empty. Populate it with audio you are authorized to fingerprint, export the JSON, and update the shared catalogue through a reviewed repository change.
 
 ## Browser compatibility
 Use a current Safari, Chrome, or Firefox. Microphone capture requires user permission and HTTPS. File upload is the fallback. iOS Safari MediaRecorder support varies by version; test on the target iPhone before release.

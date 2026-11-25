@@ -1,0 +1,50 @@
+name: Deploy VALUTED MUSIC Radar
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "music/radar-browser/**"
+      - ".github/workflows/deploy-valuted-music-radar.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: valuted-music-radar-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Radar
+        uses: actions/checkout@v4
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Validate static Radar files
+        run: |
+          test -s music/radar-browser/index.html
+          test -s music/radar-browser/radar.js
+          test -s music/radar-browser/styles.css
+          python -m json.tool music/radar-browser/library.json >/dev/null
+
+      - name: Upload Radar site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: music/radar-browser
+
+      - name: Publish Radar site
+        id: deployment
+        uses: actions/deploy-pages@v4
