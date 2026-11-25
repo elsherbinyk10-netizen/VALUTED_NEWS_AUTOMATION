@@ -13,7 +13,7 @@ BLOG_HANDLE="news"
 SHOP=os.getenv("SHOPIFY_ADMIN_DOMAIN","").strip().lower()
 TOKEN=os.getenv("SHOPIFY_ADMIN_ACCESS_TOKEN","").strip()
 API_VERSION=os.getenv("SHOPIFY_API_VERSION","2026-10")
-MAX_VIDEOS=min(5,max(0,int(os.getenv("MAX_VIDEOS_PER_RUN","2"))))
+MAX_VIDEOS=min(5,max(0,int(os.getenv("MAX_VIDEOS_PER_RUN","5"))))
 MAX_AGE_HOURS=max(1,int(os.getenv("MAX_VIDEO_AGE_HOURS","72")))
 AUTO_PUBLISH=os.getenv("AUTO_PUBLISH","false").lower()=="true"
 SESSION=requests.Session()
