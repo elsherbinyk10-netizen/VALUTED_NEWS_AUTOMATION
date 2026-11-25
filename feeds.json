@@ -15,6 +15,11 @@
     "category": "Science"
   },
   {
+    "name": "NASA Astronomy Picture of the Day",
+    "url": "https://apod.nasa.gov/apod.rss",
+    "category": "Science"
+  },
+  {
     "name": "NPR News",
     "url": "https://feeds.npr.org/1001/rss.xml",
     "category": "World"
