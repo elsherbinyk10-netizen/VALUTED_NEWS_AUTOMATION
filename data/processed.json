@@ -169,7 +169,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
+      "restore_attempted_at": "2026-11-26T17:56:19.654336+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669225451757",
@@ -402,7 +402,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
+      "restore_attempted_at": "2026-11-26T17:56:19.654336+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669522559213",
@@ -995,6 +995,11 @@
     },
     "0bc0c52c432a37f7d3483ee37709e98a4b451967177cff1f9db0a00ef468fab6": {
       "seen_at": "2026-11-06T07:20:31.183807+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
+    "0bc7e86c1a22bc02f1bca5486178b15e2ca5883987be44aeb7c83a61ffa902b7": {
+      "seen_at": "2026-11-26T17:54:46.767714+00:00",
       "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
@@ -6256,6 +6261,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "4a7a95b8fa9298855a4869f48ddc9eab2aa29b88571835bd9e2f329052b49f0d": {
+      "seen_at": "2026-11-26T17:54:46.767714+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "4a8d6963c49732a8843f10ce6bc6d81a8dfe80e21cd943005121d06bff3590fd": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News Technology",
@@ -6485,7 +6495,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
+      "restore_attempted_at": "2026-11-26T17:56:19.654336+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220045037",
@@ -8034,7 +8044,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
+      "restore_attempted_at": "2026-11-26T17:56:19.654336+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669254123757",
@@ -13402,6 +13412,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "9b16178844348ed0d65fdc462a07370aab0041272f56bfee8a736088650becb2": {
+      "seen_at": "2026-11-26T17:54:46.767714+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "9b1a3613ee8adfb4d85b7e437deec6f02606f5726735f9ff2454ebe1cca4934c": {
       "created_at": "2026-10-22T18:45:05.397738+00:00",
       "has_embedded_video": true,
@@ -13523,8 +13538,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Rolling Stone Music News",
-      "restore_attempted_at": "2026-11-25T17:09:59.493601+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-26T17:56:19.654336+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669596221677",
       "source_url": "https://www.rollingstone.com/music/music-news/new-order-first-tour-without-drummer-stephen-morris-1235664185",
@@ -13786,7 +13801,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
+      "restore_attempted_at": "2026-11-26T17:56:19.654336+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220077805",
@@ -15534,6 +15549,11 @@
       "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
+    "b41c5c05b357ac652019b11d66212d72940ed0fa2e801144628f1a7cf0d02a92": {
+      "seen_at": "2026-11-26T17:54:46.767714+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "b42216ee01e9395550078bcd5d36aa9a3622a40937454a843e0b2cbc8c454377": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News Business",
@@ -17012,6 +17032,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c63rgpy50x98o?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "What Jensen Huang's return teaches China's Xi about Trump"
+    },
+    "c2dcde0f0be44afb558ac916c17f0d090cde3427fd1765ca79f88ac82cf049aa": {
+      "seen_at": "2026-11-26T17:54:46.767714+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
     },
     "c2fd79ac5791e4e909e30f6282a90cf5a3b2f4394a766dd82bc6ae307523f039": {
       "seen_at": "2026-11-07T07:01:38.843423+00:00",
@@ -19526,6 +19551,11 @@
       "source": "The Guardian World",
       "status": "skipped_stale"
     },
+    "dfb8587813183240c253156fcc26c6176eedf025573dc78ef6fc78e123af315c": {
+      "seen_at": "2026-11-26T17:54:46.767714+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "dfbbff184799bb2a99b63ee5c8e411fe200f910cff72e61ed82cd739c7626076": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News World",
@@ -21658,7 +21688,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
+      "restore_attempted_at": "2026-11-26T17:56:19.654336+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669527736557",
@@ -21911,7 +21941,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
+      "restore_attempted_at": "2026-11-26T17:56:19.654336+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669302980845",
