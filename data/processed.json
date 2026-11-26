@@ -169,7 +169,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
+      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669225451757",
@@ -402,7 +402,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
+      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669522559213",
@@ -6429,7 +6429,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
+      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220045037",
@@ -7973,7 +7973,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
+      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669254123757",
@@ -8783,6 +8783,11 @@
     "692cc31d9bc4e5818f2869abd237ceddc2e03ce9ae641eb8dcc8fb4b31042297": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "6943060eb2f601d4610a39cd2637923f1f20d442b85def976e992c294dbf13f1": {
+      "seen_at": "2026-11-26T02:29:42.784432+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "69465d17130aefc94ee137fef8d446a7b89cccbe0d649e1aebc5f4b6b5fabe66": {
@@ -11623,6 +11628,19 @@
       "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
+    "88ab6f2dc35843e69a529c9ce936604b42c9d3ea182553f4710471f8aad899bd": {
+      "created_at": "2026-11-26T02:29:42.784432+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669598679277",
+      "source_url": "https://www.bbc.co.uk/news/articles/c820qnznkrn4o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "'I only use the washing machine on a Sunday' - how we're keeping our energy bills down"
+    },
     "88b4d9d68ea3fc0325a57bd7cc37cfb120884397c07a04bdf6095b138ce59147": {
       "seen_at": "2026-10-31T12:52:32.223221+00:00",
       "source": "Billboard Pro Music Business",
@@ -11736,6 +11754,19 @@
       "seen_at": "2026-11-06T07:20:31.183807+00:00",
       "source": "The Guardian Technology",
       "status": "skipped_stale"
+    },
+    "89b18da6a7540b0a77375480e0ad9f29e1f9b322fece78c87828d285a562b55e": {
+      "created_at": "2026-11-26T02:29:42.784432+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669598777581",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckjrel5vdj9zo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "BBC launches partnership with Met Office for weather coverage"
     },
     "89e7ce0e0402bd6a0d8b5c53de32180e1fdb4b369d3fede76c1dd9d5340de1ed": {
       "seen_at": "2026-10-17T06:08:31.417343+00:00",
@@ -13636,7 +13667,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
+      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220077805",
@@ -15174,6 +15205,19 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "b1db65a692ce60efc8bbcb8c7b12c31eca5a5d50d9088b8b0b6fca930f733246": {
+      "created_at": "2026-11-26T02:29:42.784432+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669598744813",
+      "source_url": "https://www.bbc.co.uk/news/articles/cdd29v8mp9jo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "What will the energy cap changes mean for my bills?"
+    },
     "b1ec56d4f3bf48b64460b777428a80c0412ff056264565b0c6b2a1ecfe8f8768": {
       "seen_at": "2026-10-21T12:33:58.920704+00:00",
       "source": "Google News Business",
@@ -15514,6 +15558,19 @@
       "seen_at": "2026-11-08T07:04:06.879708+00:00",
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
+    },
+    "b6100b41d82114b18fc35f22377aa3f5399a4cb145d91778e896556092b32437": {
+      "created_at": "2026-11-26T02:29:42.784432+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669598646509",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwg7l5ve251ko?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "US Army says controlled blast of explosives in Iowa was 'huge success'"
     },
     "b616cbfad7308834b85f201abfadac479e4da5cb7988e4e094b4ae69dc5d6e6f": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
@@ -17566,7 +17623,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-25T02:24:25.351831+00:00",
+      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669550379245",
@@ -21429,7 +21486,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
+      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669527736557",
@@ -21682,7 +21739,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
+      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669302980845",
