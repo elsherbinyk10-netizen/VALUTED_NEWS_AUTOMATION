@@ -169,7 +169,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669225451757",
@@ -402,13 +402,18 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669522559213",
       "source_url": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune",
       "status": "published",
       "title": "APOD: 2026 November 21 \u2013 Voyager\u2019s Neptune"
+    },
+    "04d7a75d17591af0239d4740af1b79b9d855e00f9271a872730dba9ff974a44d": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
     },
     "04da432b5f6b8a4a3410f3d49d2644c9aab2b6fb4307d2319b64aed46d22bf45": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
@@ -2031,6 +2036,11 @@
       "status": "published",
       "title": "Faisal Islam: Why Jensen Huang proved too big to fire"
     },
+    "1805f8dc6de13f8744f239ee032e0d790d3de7659e381205781b5120b9a4702d": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "183e669d93df89be7f7e5115fe8b0a75e4373b4b78d15c5146d91717c5b10c81": {
       "seen_at": "2026-11-03T07:14:01.426928+00:00",
       "source": "Google News Health",
@@ -2265,6 +2275,19 @@
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "Google News Health",
       "status": "skipped_stale"
+    },
+    "1a893a3cfba6f3fbf827bdc382e928a2e5ec519539b0a598c8090ef5521bd98b": {
+      "created_at": "2026-11-26T16:49:31.079642+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Variety Music",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669609361645",
+      "source_url": "https://variety.com/2026/music/news/ariana-grande-petal-music-video-backlash-black-mirror-1236958153",
+      "status": "published",
+      "title": "Ariana Grande Says \u2018Petal\u2019 Music Video Backlash Felt Like \u2018Black Mirror\u2019 and \u2018I Wouldn\u2019t Change a Thing. I\u2019d Put It Out"
     },
     "1a9050cff6dfdc717632313359c3ef3ab70482b3337c049fd09d30504af04f7a": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
@@ -3650,6 +3673,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "2a8093fc0feffa72196c8b26d85687d75aaf3f0ea43ea07be5612d8858c79dbb": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
+    },
     "2aa9217ba353bb4e037bc5b8f9756026138544368da27de79ee3e9447a04c1ae": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Environment",
@@ -4246,7 +4274,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Business",
-      "restore_attempted_at": "2026-11-25T15:42:24.857688+00:00",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669595992301",
@@ -5047,6 +5075,19 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "3b6d8168dfb48d44176c20e4c8fd305846905bbd243def993bba383820e08180": {
+      "created_at": "2026-11-26T16:49:31.079642+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669609394413",
+      "source_url": "https://www.rollingstone.com/music/music-news/ariana-grande-petal-video-reaction-black-mirror-1235664830",
+      "status": "published",
+      "title": "Ariana Grande Says Reaction to \u2018Petal\u2019 Video Felt Like \u2018Black Mirror\u2019"
+    },
     "3b8e150f33429e8f1590cb3ba1b9b988e5ebeed83b52381fe4530868c50c5108": {
       "seen_at": "2026-11-24T11:57:16.977087+00:00",
       "source": "The Guardian Environment",
@@ -5182,6 +5223,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "3d8f05f75b9061b94d043cb4fd8c5679cab46ca9023e51ae70f8ddac6e0a0e9a": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
     "3dc6f12e33fbdf3fcc36693b643638696988e870a919d9e38500bacc200c1bc9": {
       "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "BBC Business",
@@ -5222,7 +5268,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Science and Environment",
-      "restore_attempted_at": "2026-11-25T15:44:28.878117+00:00",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669596025069",
@@ -5464,6 +5510,11 @@
     "4124fc328a5ee49a687c2d5982eeef1670eb0189a0627b748b2ededdaae95477": {
       "seen_at": "2026-11-08T07:04:06.879708+00:00",
       "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
+    "412d8d18996417f012b31595ca95b7b8ffb2d19ce0973d1073b1a279823c4df6": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "412f9ebdecc7f61d6133c1c04a4d436dda09fed4684dff4bf9da3bad8d450ec7": {
@@ -5721,6 +5772,11 @@
     "435930c6fb79d947a5f1f06baf7c40bfc7e39aa32b4c3bd287d97c8b32ffd81a": {
       "seen_at": "2026-10-26T14:51:31.038592+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "43762f8766423fb44723758d09eb32a51c36a026b74dab30bcaaf306f7ba2adf": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "437c7c5f6ea541b64ee5a38a8b46098c51edc09bec6dd591b29ebcd0309e3220": {
@@ -6429,7 +6485,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220045037",
@@ -6769,6 +6825,11 @@
     "514a71d7a0b2cf65699b2bbe42a7d1f086d3062da7c35c790b6fd36f08721b1d": {
       "seen_at": "2026-11-12T23:34:59.272434+00:00",
       "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
+    "51526959fd76ab404dd81cfc07e07b8d6b5f49d2b05ff84044042cb96764b32a": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "The Guardian Business",
       "status": "skipped_stale"
     },
     "5176aed3c8dc012f398185f45e5e4b2b8d873b071aa0c097375b034c1078f152": {
@@ -7371,7 +7432,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Business",
-      "restore_attempted_at": "2026-11-25T15:42:24.857688+00:00",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669595926765",
@@ -7973,7 +8034,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669254123757",
@@ -8495,12 +8556,17 @@
       "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
+    "662dd4090d4d9ea8679e02a3175823fede773c033c3b6ecfb4b70f4339f8ef50": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
+    },
     "66403463587777bcb1001dfc4055015c33d034a2e29674b2b7493a67878209f0": {
       "created_at": "2026-11-24T11:54:46.993163+00:00",
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Technology",
-      "restore_attempted_at": "2026-11-25T15:44:28.878117+00:00",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669563617517",
@@ -8600,6 +8666,11 @@
     "676660f80babe08cfe7f4d4de50ff4d747dae06963913d082dbfdf409274c1c3": {
       "seen_at": "2026-11-12T01:42:01.206310+00:00",
       "source": "NPR Business",
+      "status": "skipped_stale"
+    },
+    "6791e8a4e26fa51958e120fa72d77b89c1cbceb23fb3a3d6a0a98fe03ffa87fd": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "67995f7cc430892b7825b95f9765bd388db9294d6b2a11a849ebfc963c610a40": {
@@ -9813,6 +9884,11 @@
       "source": "The Guardian Business",
       "status": "skipped_stale"
     },
+    "7491f5c45d84e077375d3fe7da2c49415dde777efedcc83c7db34ab9327e23bf": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "749bb522333e5a4c2bcaf6f0c6cb8090d85a02c3d20f8c3d45ad8ae13079f296": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News Science",
@@ -9942,6 +10018,11 @@
       "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
+    "75a3a86ed42c87797de443aa44a5ed3bf85fbfa9b011843b936e90628ac96b69": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "75a6c9e8e6a52931e87641436b90dd172435611b75af8a3885ff4357d30a9dfa": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Business",
@@ -9966,6 +10047,19 @@
       "seen_at": "2026-11-08T12:55:50.653866+00:00",
       "source": "Variety Music",
       "status": "skipped_stale"
+    },
+    "762ce6d7fedd6d19f353495e1e2d060b51e9ec2a66b98e3d78465b806cda9e6e": {
+      "created_at": "2026-11-26T16:49:31.079642+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Technology",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669609328877",
+      "source_url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering"
     },
     "76312383b194b3dec8fd4c08234b989a15b099c535e6c7a38ffefa6bdf088133": {
       "seen_at": "2026-11-19T15:40:40.175868+00:00",
@@ -10400,6 +10494,11 @@
     "7bafb220f98f86da04653385ab6009cc9d67e25d83c3a5a0429697001b6a450b": {
       "seen_at": "2026-10-24T06:45:02.857725+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "7bb420701ce274545da359f50e7464e788028f78ac415e9bf9bc574f7674a6fb": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "7bb6240ca4db6fd926719c55664b6db5c3805f84d47125f4450a4a93a172df92": {
@@ -12445,6 +12544,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "912dcc7ffb345aa14cdf1c4a3e4f7830cc83c16ef70d57e0aded609fd8bffbee": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "9140ef865ada44375b054344741cd27985b779299ce15e59ca804145fef9bcda": {
       "seen_at": "2026-11-03T10:22:46.950392+00:00",
       "source": "Google News Health",
@@ -13253,6 +13357,11 @@
       "source": "The Guardian World",
       "status": "skipped_stale"
     },
+    "9a6b3fcb56fa25187a96d95709edfc7badafc668c992487d209ba8d61ed16940": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "9a9074b43d782e9bd94702650d60fe48e0010f40801a66e0f2aafcdfaf97657d": {
       "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "BBC Entertainment and Arts",
@@ -13482,6 +13591,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "9d421e7751f5a3091ba608473e243745bb9ae0e5f12509dfcff29e6df9b9c528": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
     "9d44d70993c5d210fec3d8982819925b0da90c2e5bf261758c2e2ed84a0a862f": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "NPR Arts and Entertainment",
@@ -13632,6 +13746,11 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "9ea1097cc1107eb4832baff73d0b428d4be746a7a9dc33f94c0a74a7b800a775": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
+    },
     "9f04938368cd338eb5ff492ce1b63b3e91e435212ec6e9c2d0c97ba478b84447": {
       "seen_at": "2026-11-13T23:30:17.556858+00:00",
       "source": "NASA News",
@@ -13667,7 +13786,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220077805",
@@ -13742,6 +13861,19 @@
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
       "source": "BBC Business",
       "status": "skipped_stale"
+    },
+    "a067c0da2f1d96696152779850abefb98b2c9c43923fffcee50670ce53b798da": {
+      "created_at": "2026-11-26T16:49:31.079642+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669609296109",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Hundreds of flights cancelled as severe weather disrupts Thanksgiving travel in US"
     },
     "a0a95622d4e184757dcef478a29aa30410695d7eee8b50421b06fb51c97c2a35": {
       "seen_at": "2026-10-23T12:47:40.686991+00:00",
@@ -14103,6 +14235,11 @@
     "a4db15e2b4ef120fafee883d5814b06faaf0659e8d1609ad86a54ee2a2f82038": {
       "seen_at": "2026-11-15T13:53:13.942811+00:00",
       "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
+    "a4e986911abd23a3edb86c2ac50f53d65d0256455671aeb075271fe83fa4b07e": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "a4eeca19666ee1344b25e3e1f0e8c41f3b9ecd4c32e7c560ca1120e1865d1e70": {
@@ -14969,7 +15106,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Science and Environment",
-      "restore_attempted_at": "2026-11-25T15:42:24.857688+00:00",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669595959533",
@@ -15890,6 +16027,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "ba119d93117449dd8fd22eb385ef34fcf0526d8ceef072929ac5bce44eab5ea4": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
     "ba482738f51de2b98af4a793b2b602108d301a521ecf546e5d16f3475291db87": {
       "seen_at": "2026-11-02T07:29:49.590724+00:00",
       "source": "Variety Music",
@@ -16156,8 +16298,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Variety Music",
-      "restore_attempted_at": "2026-11-25T15:44:28.878117+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669565812973",
       "source_url": "https://variety.com/2026/music/news/ariana-grande-teases-eternal-sunshine-tour-movie-peacock-1236956068",
@@ -16719,6 +16861,11 @@
       "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
+    "c18f5a8804513b9ffd5685ec7a35f1f52cc6976cadfaf5052dcdd732d22ad65b": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "c195611169542d126d4d054c79cbbc6258d4a3edee2120710561b2307c300c5f": {
       "created_at": "2026-11-14T22:19:49.798488+00:00",
       "has_embedded_video": true,
@@ -16858,7 +17005,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-25T15:44:28.878117+00:00",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669561520365",
@@ -17889,6 +18036,11 @@
       "source": "BBC Technology",
       "status": "skipped_stale"
     },
+    "ce3c59e14045226ced47ac55a126a61994e756af9693ca9417397c9e3e25e205": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "ce5e1fa823cbaec20cf97d98a0e7ad209b2a120ef339b739721980ed04149064": {
       "seen_at": "2026-11-13T23:30:17.556858+00:00",
       "source": "The Guardian World",
@@ -18723,6 +18875,11 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "d7d928cc05d2d4f38cdb92fd792e4dab75ca2fc23f3d37d12c87f28c27d2983d": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "d802c71a57c49f9ab2ca526899fd6054bf2ff788eb7c4d36dc6441899c11dff1": {
       "created_at": "2026-11-02T18:00:08.385896+00:00",
       "has_embedded_video": true,
@@ -18914,6 +19071,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "da04ad40ce2f609badbf828892ca6684fd81a1d2547da7f787ae1741c15a88e0": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "da06580b0f9ba483c273d0dda6320395e80d621bde2801b1ca1dc2c40707bdd0": {
       "seen_at": "2026-10-24T18:39:21.262654+00:00",
       "source": "Google News Entertainment",
@@ -19034,6 +19196,11 @@
       "status": "published",
       "title": "Fed-up driver builds AI litter tracker"
     },
+    "db727ed730a6c2c879eae935a0119372c7a3d2666155a32da701308d5d29f911": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "db8922eb3e1bc9cbaa932e04ea9d1893d5eb123789c0ed4536a1f24e1f7fe833": {
       "seen_at": "2026-10-27T06:48:31.538195+00:00",
       "source": "Google News World",
@@ -19109,7 +19276,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Variety Music",
-      "restore_attempted_at": "2026-11-25T15:44:28.878117+00:00",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669564502253",
@@ -19490,6 +19657,11 @@
     "e0d76b8e43b043e67bf0b31bf533b156c6ca2726b02d3c4d2b621edf38594999": {
       "seen_at": "2026-11-07T07:01:38.843423+00:00",
       "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
+    "e0ee458ad4118b14dec561364b6ef46940f969a46d0d95e34fdb64049314bb3e": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "e10069f8e2c7b8d4cf0767327db6c358f769d2c017f4d7e301fa7396bf74f22c": {
@@ -19922,7 +20094,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-25T15:44:28.878117+00:00",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669529145581",
@@ -21486,7 +21658,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669527736557",
@@ -21739,7 +21911,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
+      "restore_attempted_at": "2026-11-26T16:51:13.875438+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669302980845",
@@ -22091,6 +22263,11 @@
     "fda864e0f96d6b4d5147129540d523c1f761071e1c1f49ed44822d47eb8a0ad5": {
       "seen_at": "2026-11-04T08:40:52.307503+00:00",
       "source": "Google News Health",
+      "status": "skipped_stale"
+    },
+    "fda9d1c96e82f25b6b4e5aae5af6d7842f645b03c125d74a3353b0871816a83c": {
+      "seen_at": "2026-11-26T16:49:31.079642+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "fdc68fc73f84ad9975282815331b293a15b6a5a9ff67f31d9dab02386012d5be": {
