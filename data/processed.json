@@ -169,7 +169,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-25T18:14:54.895812+00:00",
+      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669225451757",
@@ -245,6 +245,11 @@
     "0368c5d46264a4fc19637b605faa57ef5a3a79aacd90b795893155fb5352b4f1": {
       "seen_at": "2026-11-04T07:21:09.092237+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "036b94382fb31f5287a8a18a768126bf5e82cfe506d11363b2a9603370c6af95": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "03708d20b3bf537e7147bcd88a23e3589ac71d468c11a6bc7d2bff7e3ac472cf": {
@@ -397,7 +402,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-25T18:14:54.895812+00:00",
+      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669522559213",
@@ -1034,6 +1039,11 @@
     "0c76433c2bc5ed53ca9ff3c77b9267ce3e18c392392786d67885e7e60bb7f722": {
       "seen_at": "2026-11-19T15:40:40.175868+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "0c7d9de5ee4c574a6d4571cf8181e23185f72b32ff0c73444046218d7fb7ac61": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "0c7f926aea3a26867280d908740ef5a39942a4c674674553e01504881c2841fb": {
@@ -2013,7 +2023,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Business",
-      "restore_attempted_at": "2026-11-24T19:09:27.952014+00:00",
+      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669549592813",
@@ -2282,6 +2292,11 @@
     "1ac43336cbc52c0f7e0d76167c92b1b4f6314ffab697a1a3a40ba18c4b1eb1b0": {
       "seen_at": "2026-11-08T07:04:06.879708+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "1aef64a14ae860d088d49ff157099ae6645f2f4b2df28cb9dd33e3e2b9b99238": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "1aefc3b058a85a50b2d8eb39a5c192edd60e00633bea92b150733685104d786c": {
@@ -2832,6 +2847,11 @@
     "2165659aa7e3cefe549e2666b391c9a6fd92427bc511877f308f0ee767b37d8f": {
       "seen_at": "2026-10-30T07:00:00.666940+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "217d643100a86d273397936dc168d9f026be003bdb59a87cd3b40c9bc4cc6525": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "BBC Technology",
       "status": "skipped_stale"
     },
     "2186df7a2daa5f63da89b1ac41f5d506153d1516f09cfdfba5fb2a9d037e03e7": {
@@ -4123,6 +4143,11 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "31245ab1d4b02dc83589704f111c19c9b21cd7d825634b2bf5e19003c6bf0197": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "3153533058c38308d5559ab1c82925a67a66cb9fa6416d94b79e26b37b683b3a": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Google News Business",
@@ -4267,6 +4292,11 @@
     "32d8556c864135da4f66198b897c2e99e6f322b6af57944f5f8b8e6f59577d93": {
       "seen_at": "2026-10-25T12:44:03.153981+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "3322fa9d980c2769fe7b5a226888199ff2c0cf30aa2d91d2906458cf04d9a623": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "332a35648ccb8186b06eccee84b628d85a6b2e1bbcd3fd95412360cafa9f0bdb": {
@@ -4654,6 +4684,11 @@
     "36b50e41cc093ad694447af133ca58364a7d8a0f92a95fb942fbd43c32e58ea9": {
       "seen_at": "2026-11-21T23:57:43.144238+00:00",
       "source": "NPR Business",
+      "status": "skipped_stale"
+    },
+    "36c577d123afc504d87c821bc92155b4b2188355d147eca3bb38263eb30e63bd": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "36cd3c034800949469389dad991aeaa723b733e8b0b0690556e4de4f11b62b41": {
@@ -5723,6 +5758,11 @@
       "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
+    "43cc35066942f4f57605d2a8c69f990e63015db84bfd51fd5913c759cf865fa8": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "43d3c4ff1e9f08c7ee05c636087cad01a8db9ce8d1d50176e82bab1392b4ef66": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "BBC Science and Environment",
@@ -6389,7 +6429,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-25T18:14:54.895812+00:00",
+      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220045037",
@@ -7420,6 +7460,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "5a4894369ce62850a972d67a3b446b6aba6067a70904874367f1b57f73a9ef6f": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "5a4cb931b2e0a9c43653e0288f57c13566f76b48ef92dcc0a02cfa0e23e8927e": {
       "seen_at": "2026-10-23T18:45:13.548852+00:00",
       "source": "Google News Science",
@@ -7928,7 +7973,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-25T18:14:54.895812+00:00",
+      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669254123757",
@@ -9040,6 +9085,19 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "6cd45e2d2b78eb32e04a91d60f05204a5df2d3d7581778df327e6c16104016b2": {
+      "created_at": "2026-11-26T01:46:09.776778+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669598384365",
+      "source_url": "https://www.bbc.co.uk/news/articles/cw8dv112r5gmo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Images of asteroid targeted to test Earth's defences reveal stadium-sized crater"
+    },
     "6cdb0ccc5e113187cf5e8f87046cab0a415488a0044feaa91a78869afa587fde": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Technology",
@@ -9158,6 +9216,11 @@
     "6dd2a1a779a8f81f3375230e01219c69f816bdf42a01012c9d71db6b6e884117": {
       "seen_at": "2026-11-02T13:11:57.143285+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "6dd4698fb982b913bac2b084a237ee5db8e9d645a5f2b1a7812da215c6cfa538": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "6e000bbcb515255613d8958906ad348645204c82ed58461de3edb8018881e264": {
@@ -9662,6 +9725,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "73aad3be019cb905ab143f890ade4a984427279130420f773bc235cb9c8e7ef2": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "The Guardian Business",
+      "status": "skipped_stale"
+    },
     "73b4180fc21f2f32ebece7d9d9e93d67703247979e5373ccd86588d81a31023a": {
       "seen_at": "2026-11-03T17:07:40.495903+00:00",
       "source": "The Guardian Culture",
@@ -10023,6 +10091,11 @@
     "77df63124e83957689b0686fad79fad39f15e37d673a426ca3079cd9097c8d88": {
       "seen_at": "2026-10-28T18:54:08.851553+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "780443208f48f7c5803527dcd4a51261c216c42a1f07756bcb4f69d7fadefad3": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "The Guardian Business",
       "status": "skipped_stale"
     },
     "782d0eff1df90b4d6f6f62642cf390d13d405d75d4bf24ca295fe0c0c87d4ec2": {
@@ -10630,6 +10703,19 @@
       "status": "published",
       "title": "Political battle intensifies within Labour over Rosebank oil field"
     },
+    "7f1c1565e7e8ac93a33ec9e69cfc37720fad1ce5b7bdc4370a1a4cbe5e7be901": {
+      "created_at": "2026-11-26T01:46:09.776778+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669598286061",
+      "source_url": "https://www.rollingstone.com/music/music-news/duran-duran-guitarist-andy-taylor-dead-obituary-1234634531",
+      "status": "published",
+      "title": "Duran Duran Guitarist Andy Taylor Dead at 65"
+    },
     "7f20739422a6c9dc994fd11f0aec096e241d76a138bd4743cb31ba90fba0c52a": {
       "created_at": "2026-10-18T12:53:00.593654+00:00",
       "has_embedded_video": false,
@@ -11054,6 +11140,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/ckr5ydvvln0mo?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Poundland in rescue talks as owners seek buyer"
+    },
+    "837241caff94db097c2aa5362decb0f0bac1d829e9a89eac4e61264b15a5fc78": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
     },
     "837c76bf5124121b1fa6f78d004f07a4b204449cb13cab5d4887b9511ebb66e6": {
       "seen_at": "2026-10-21T18:45:36.006025+00:00",
@@ -12761,6 +12852,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "95e39dc6121e06babe8963232cacc7b2751ce2701935ae7d99bcfc90d4bcf4fe": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "95ecc6f97a9f1bc8198a7fb70e738b2369ccd60b191172449b77ae8411cac7e6": {
       "seen_at": "2026-10-26T06:51:53.293616+00:00",
       "source": "Google News World",
@@ -12797,6 +12893,11 @@
     "966eb7b7127784768f02fdd665fe44861d2ece0d92deb6fb047b6ed4740b3cee": {
       "seen_at": "2026-10-17T18:37:15.737884+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "9671d7102145722813e7b326c65f6e1080f506641f908b9ada5b89f345f02b42": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "9681545d43c7a6e03e1975ef98ebf0f69ec939a8578bcb00a3e7ef3a1e9c50b6": {
@@ -13535,7 +13636,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-25T18:14:54.895812+00:00",
+      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220077805",
@@ -14493,6 +14594,11 @@
     "ab1f32c969187813b33248b0c54cbe2b53490c83bee750be7563d53b67b9b49d": {
       "seen_at": "2026-11-08T08:32:43.086208+00:00",
       "source": "Variety Music",
+      "status": "skipped_stale"
+    },
+    "ab2bdcd761e0a4d8592b06a4fcf4713931aea9489e7335fe2f4ad8cb19a0a961": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "ab425d8a0fa213e9b9ef46d895632d8e3bbc09eda236fc738d7322746d007616": {
@@ -15574,6 +15680,11 @@
       "status": "published",
       "title": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing"
     },
+    "b7e4dc7f4250d265591914592f80b519c2ac15349b3d42e2e17a85cf18fb37b3": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "b81979796939ee3f3cd976e207ce1f5077d900d54c813ff5d0ee74654c7879f2": {
       "seen_at": "2026-10-22T06:29:51.905141+00:00",
       "source": "Google News World",
@@ -16231,6 +16342,19 @@
       "seen_at": "2026-11-04T07:21:09.092237+00:00",
       "source": "The Guardian Business",
       "status": "skipped_stale"
+    },
+    "be54e905a796b4cee0cd01426abfd367a24a103d3316a9af411ae0aa6acd28d0": {
+      "created_at": "2026-11-26T01:46:09.776778+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669598318829",
+      "source_url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "US announces new tariffs on host of countries including China"
     },
     "be5e986e3230912e7dd1226887002ae99cbbb912be140b07dc4973acd6045e04": {
       "seen_at": "2026-10-22T07:25:24.220805+00:00",
@@ -18058,6 +18182,11 @@
       "source": "The Guardian World",
       "status": "skipped_stale"
     },
+    "d27819dae585d0c35e31a0e7b745c03b9fec5c1d210f032bb223323f8dc8fcbf": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "d2993bad186de5c25047abc08d290e95c1d2bb3d332d97e2b54cd6f41443fab0": {
       "seen_at": "2026-11-21T14:35:47.501261+00:00",
       "source": "Rolling Stone Music News",
@@ -19575,6 +19704,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "e3786350c1a3934d8e180ce9a555b1872dc04939cf9c19936fbc656bf4bd53fd": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "e379bdc26eaa2b515a65b7f06841b6e7fc468f094aa19cb1d6c90de9f33bcc02": {
       "seen_at": "2026-11-10T20:29:23.086218+00:00",
       "source": "The Guardian Culture",
@@ -20316,6 +20450,11 @@
       "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
+    "eb6b1c69c3bd5aa59e279dbdf13d8ba518ddfd8890d1e47d41acccb5bd070263": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "eb803718bb4d0d83dd8393b5caec5c7a8ed6f4676c6b23804b2a7bff6fbf16db": {
       "seen_at": "2026-10-22T18:45:05.397738+00:00",
       "source": "Google News Science",
@@ -20553,6 +20692,11 @@
     "ee175ffd2fd8c8a92ce95f03b29878df86dd3b0ec3d1ad9c17d067c17009198c": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "ee210614424def02b66fbbb23a84824771d34c240b13b809fa0a405300c5630c": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "ee3549b21570cda7c5104b7817bb24a7b1239441fe3d197efc93a35d55fabbfb": {
@@ -20807,6 +20951,19 @@
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Technology",
       "status": "skipped_stale"
+    },
+    "f173384f0c16026eba31029167f8205babde06e3df9d1b366c0554957a0f68a9": {
+      "created_at": "2026-11-26T01:46:09.776778+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669598253293",
+      "source_url": "https://www.bbc.co.uk/weather/articles/cr894e8dd7wqo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "New York's annual Thanksgiving Parade threatened by approaching storm"
     },
     "f18d4b65d9b1444b574b12734ee1dd4daa73cccc94efcadc702fecc91ac812ec": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
@@ -21164,6 +21321,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "f4bbebaa85cca0b8a6a89590d72bad813da0ba9a4df75cbef24c279c0efe8c7b": {
+      "seen_at": "2026-11-26T01:46:09.776778+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "f4c532d7ef6fa0bfdd02f4af83fa003f3b3e7ace685eaf046bb4483147b8aead": {
       "seen_at": "2026-11-08T07:04:06.879708+00:00",
       "source": "BBC Science and Environment",
@@ -21267,7 +21429,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-25T18:14:54.895812+00:00",
+      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669527736557",
@@ -21520,7 +21682,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-25T18:14:54.895812+00:00",
+      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669302980845",
@@ -21977,6 +22139,19 @@
       "seen_at": "2026-11-14T22:19:49.798488+00:00",
       "source": "Variety Music",
       "status": "skipped_stale"
+    },
+    "fee99f7092cda5689bd8401342840a424a9a96581a17edf29bea8e70b20d7b20": {
+      "created_at": "2026-11-26T01:46:09.776778+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669598351597",
+      "source_url": "https://www.bbc.co.uk/news/articles/cwkgr38l2g9yo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Macy's postpones Thanksgiving parade due to weather"
     },
     "feefd6e3a3c91480d4daa1805903179876a48e6c1bd3919570f7adb5d5c82649": {
       "seen_at": "2026-10-18T18:37:56.281386+00:00",
