@@ -5,6 +5,11 @@
       "source": "The Guardian Business",
       "status": "skipped_stale"
     },
+    "0060cf9caac9e09ebc736c9c3f2249836a31fd174f32d91281bff19a7435f980": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
     "0065792c5b2b1c383fc931095c651b6cee1d736723ad0fffce9ed1380ed8b6ed": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Science",
@@ -174,7 +179,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
+      "restore_attempted_at": "2026-11-27T16:37:15.518957+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669225451757",
@@ -407,7 +412,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
+      "restore_attempted_at": "2026-11-27T16:37:15.518957+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669522559213",
@@ -526,6 +531,11 @@
       "status": "published",
       "title": "UK cannot 'cherry pick' EU single market deal, Barnier tells BBC"
     },
+    "062b95b48643a8750543e9568ade049171e3e897fccd05a7241094d5d8984ec3": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "062dc2f9623ace7a0376f8dec477c0ff3f0b35c53012f019ad0eed956da49522": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "Google News Top Stories",
@@ -544,6 +554,11 @@
     "0650b0415999f05713dc06221e88afd34dc3f32740b996891108f4e3786f3dbd": {
       "seen_at": "2026-11-21T23:11:19.093182+00:00",
       "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
+    "065563fac21694c1701bfba15ad7c228ac70676458fdb8a6c4cb0b5a81187ae6": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "NPR Business",
       "status": "skipped_stale"
     },
     "066e844cded50c26d49cfdda8404e53814515558b442acd961beeae1e4fdb536": {
@@ -1310,6 +1325,11 @@
     "0eaee9087a814918e50ffd324c2e8f4bcc15753078bfce749b2ddb4d0d88d931": {
       "seen_at": "2026-11-27T01:41:48.315620+00:00",
       "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
+    "0eb775f636214d226a2af0555bf7619f2399f02a7506407b2b70474708d33359": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Business",
       "status": "skipped_stale"
     },
     "0edd0ded6eb21d98507fd28ad8db34a956e09fa0796af5c94974f95b5614c98f": {
@@ -2392,6 +2412,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "1b5c200d0220b0026cc96d4173166529ec55859833dc1b7497c523789e5c0ff6": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "1b8ebbd43f78db22fb85e67fdb6f6b5d726d52c5a2b5f708e8259b61decbda06": {
       "seen_at": "2026-11-17T15:56:05.238079+00:00",
       "source": "The Guardian World",
@@ -2649,6 +2674,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Copper wire upgrade caused nationwide flight suspension, US transport secretary says"
+    },
+    "1e4d9f02ad1c0cc664bac82d32354324b46bf50f641a5a9b33d706df373f6d39": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
     },
     "1e617b4a6f80a8972d00c719474dab5dbe11895679c6c5e2f90c505ff413b895": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
@@ -3875,6 +3905,11 @@
       "source": "Google News Technology",
       "status": "skipped_stale"
     },
+    "2be9ae934a2d7d5b9aed830bc213f715bd017b35e274c87041a17a2da7412278": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "2bf653dff003324e7835cf211c65986db9752fa9d3ff6a85afd6bd82025349e6": {
       "seen_at": "2026-11-22T14:29:58.270998+00:00",
       "source": "BBC World",
@@ -3920,6 +3955,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o?at_medium=RSS&at_campaign=rss",
       "status": "draft",
       "title": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times'"
+    },
+    "2cdf27b08a75a07c39a97e09a76d6df31d77299ac5381f23a176211e49637df8": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "NASA News",
+      "status": "skipped_stale"
     },
     "2ce8150d180c8e5d04442c127f367c0b7c34751294b332148e1ff1895029be08": {
       "seen_at": "2026-11-04T08:40:52.307503+00:00",
@@ -4059,6 +4099,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision"
+    },
+    "2eb146ad21c16aa00ed0087edc28c13379a2e5b33a1d7d4884c77a444b63690f": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
     },
     "2eb401fedf29c3ecfbcfdd1d9da2bbfa6a5020f0fb5b199568be7e0367c9ffe0": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
@@ -4513,6 +4558,19 @@
       "source": "The Guardian Sport",
       "status": "skipped_stale"
     },
+    "3430407687451b6c4f61d7b697427f76e555dd59ee9f404d7053727c29d585c5": {
+      "created_at": "2026-11-27T16:35:21.385655+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "restore_attempted_at": "2026-11-27T16:37:15.518957+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669637607661",
+      "source_url": "https://www.rollingstone.com/music/music-news/justin-timberlake-upcoming-doc-series-interview-fallon-1235665140",
+      "status": "published",
+      "title": "Watch Justin Timberlake Reluctantly Sing Backstreet Boys on \u2018Fallon\u2019: \u2018This is Sacrilegious\u2019"
+    },
     "344d924327419a44654fb9b2604effd3e6f97899a5fdb1d166cf534e56652efc": {
       "seen_at": "2026-11-08T07:04:06.879708+00:00",
       "source": "NASA News",
@@ -4597,6 +4655,11 @@
     "3519de8795face3c22fca72465d951a8bf24afefa3e5d04f4cc0c0bca655d597": {
       "seen_at": "2026-11-13T23:30:17.556858+00:00",
       "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
+    "35263c1b521a922f6e3b242a2ac16ea23d55902dc24d5d817270d6285b081aa5": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "353033d77773e1d38ac1ba8b830c9de309b55596b34f8cbda1ddac2b2aae119e": {
@@ -4910,6 +4973,11 @@
     "38df11dd1b3a89214b8bd53cf9ef6ef674a9cd862e59b5e3b1ad68139ddd3078": {
       "seen_at": "2026-11-11T14:14:28.111405+00:00",
       "source": "NPR Arts and Entertainment",
+      "status": "skipped_stale"
+    },
+    "38e06c270c47f4dfdb02695be0f3757d5173c2157e50749f06d9ca6d69b1bfcf": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "392291d3bd118e17b93d1f0405cdede48e9b0b9163fbf289614401b183372de1": {
@@ -5256,6 +5324,11 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "3d1ce876ad23f933bbc1618b0ec97eaae5680cbcd2627266e006b683ae432c11": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
     "3d3872524055d437f9478244b505ee5b11c63d054435a6c97cf4aa386ac09d76": {
       "seen_at": "2026-10-17T04:04:22.722721+00:00",
       "source": "BBC Entertainment and Arts",
@@ -5488,6 +5561,11 @@
     "404ba329b755c4be11911aa065da45fff335fb3d3d1f2c7f686d887d0515f2f0": {
       "seen_at": "2026-11-09T18:59:08.667366+00:00",
       "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
+    "40530bdc7146b086f0574301fcc7af2528bc42c6604db357a609be61e1e8e973": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "405792bef55538f3f9c7c62c37ee7cec9755cb8bd57276f09a151fb277072d1b": {
@@ -5753,6 +5831,11 @@
       "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
+    "42b954009353f086b60c4595b68150c624927a58f3f991399cde424acc8354b2": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "42ceb7372686636bd3d831f57beea3155d2e7980a8bbf9eb382e3cf46302b0a6": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "BBC World",
@@ -5885,6 +5968,11 @@
     "43d3c4ff1e9f08c7ee05c636087cad01a8db9ce8d1d50176e82bab1392b4ef66": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "43e1f449dc10cbb2bd3d4b639aad6d5e033399d1af75824598b3be2198f67e3b": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
     },
     "44063326be3c72f6097761376967a1914c2abc4f6efa5c67982e3cea3b8f22f3": {
@@ -6558,7 +6646,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
+      "restore_attempted_at": "2026-11-27T16:37:15.518957+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220045037",
@@ -7704,6 +7792,11 @@
       "source": "Google News Top Stories",
       "status": "skipped_stale"
     },
+    "5bef0d8413708efa52991e39ecba55dc5b8c3e35c41fc6ffb5172c295d8c702c": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "5c145585894c2fcefed65070fab71c5ec1070136320fc0786ffd44fc4319705b": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Rolling Stone Music News",
@@ -8112,7 +8205,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
+      "restore_attempted_at": "2026-11-27T16:37:15.518957+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669254123757",
@@ -9012,6 +9105,11 @@
       "status": "published",
       "title": "Two rescued after Nairobi building collapse with five still missing"
     },
+    "6a1635e03916a87f99c7da0560e5a31cfa5a1f87a49514924fd47cbd13d8e387": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "Variety Music",
+      "status": "skipped_stale"
+    },
     "6a27115d23ae67045a2d9be833353e55aab5d5f04743746bca044eccc242dedf": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Top Stories",
@@ -9112,6 +9210,11 @@
     "6b6ff484cbb3b693a4fea65a375cfd4bf312e50e3934f054ba4f2c56d1f1687d": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "6b8d957999b89407b4b8e30493ed70b59bd1569ab225417da7f6b225284e26cb": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
     },
     "6bb0e61c8c94bb5e2cf8accc20864478f80abeef97f1ba5501a87722bfd8819c": {
@@ -9242,6 +9345,11 @@
     "6caf8a684ef5c09a15d414841922724a43820c63ad6d9430deb5e1d9e5f46f88": {
       "seen_at": "2026-11-15T13:53:13.942811+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "6cb00d1a6c7424834e5d65c2593862e978139ffca8a4f001c48a3bfd4a8939a4": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "6cb7644571f4340fd2d61a295ca975b48427a87eafbf5a205da856d601af5f92": {
@@ -9395,6 +9503,11 @@
     "6e000bbcb515255613d8958906ad348645204c82ed58461de3edb8018881e264": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "6e0ee1104774a8e417da9f54e942a7b0d4960ff749c02fc4a09aae2d13bc476a": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "Billboard Pro Music Business",
       "status": "skipped_stale"
     },
     "6e1142813e707b23d8cce4b06a2b0d4c7ade55016e735b52bd96a126251e2b2d": {
@@ -10106,6 +10219,11 @@
       "source": "The Guardian World",
       "status": "skipped_stale"
     },
+    "7583f52321a2849b1c95e16cc3a0a88f29b162e06b8eede532479ea8930cbc86": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "758ad43d3928c5df1a09f2d9d7132b863dfbb63a32e167fc323dee342f7f269b": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
       "source": "BBC Technology",
@@ -10280,6 +10398,11 @@
       "status": "published",
       "title": "Harry Styles, Billie Eilish, Sam Fender and Cher to headline Glastonbury 2027"
     },
+    "779cda7961453741446fba8f2ec64f0a169e4715db4a1893406c12153f1ec7a9": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "77be400b70f0468ad3cc58b48d90c46c1db99040fcb56d201aed26ffc4742b91": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Entertainment",
@@ -10289,6 +10412,19 @@
       "seen_at": "2026-10-28T18:54:08.851553+00:00",
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
+    },
+    "77ed0ea9783dbc608b293322b1c49c0a98ef057d1b78671d64b3aa715ead35c8": {
+      "created_at": "2026-11-27T16:35:21.385655+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Business",
+      "restore_attempted_at": "2026-11-27T16:37:15.518957+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669637542125",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Faisal Islam: Why Trump's new tariffs are less of a threat"
     },
     "780443208f48f7c5803527dcd4a51261c216c42a1f07756bcb4f69d7fadefad3": {
       "seen_at": "2026-11-26T01:46:09.776778+00:00",
@@ -10423,6 +10559,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "798ddef09ff4ec3d65bae1f88559c3d88686336222fcea99235154da13d75dd5": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "7992ef0a53024180669a48f19502df3f249f666c777cb8a060a8bb6235069497": {
       "seen_at": "2026-10-17T05:38:12.339694+00:00",
       "source": "Google News Business",
@@ -10451,6 +10592,11 @@
     "79d8a4e50f13c9fb96b0c8eadf9576dadd8b044a37e0b03f9803d9b7468d04cb": {
       "seen_at": "2026-11-05T18:59:01.479043+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "79dd1dbc21515e8ff27ed90a2b75b227f8681e2b5c5d4d6ebef2c829fd93ac17": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "79ea67570baaf8b1402ecee4e22a235db522953989550e7c780d91a745c7fc4b": {
@@ -10928,6 +11074,11 @@
       "status": "published",
       "title": "Duran Duran Guitarist Andy Taylor Dead at 65"
     },
+    "7f1d3233eac54534532c3857b7c39ef49bc0abe38e73bcffdf9bd9df7119e92e": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "7f20739422a6c9dc994fd11f0aec096e241d76a138bd4743cb31ba90fba0c52a": {
       "created_at": "2026-10-18T12:53:00.593654+00:00",
       "has_embedded_video": false,
@@ -11240,6 +11391,11 @@
     "824d24ae70515a028d7e4ebedb38a5aab36d06641a5358d6e269698400484f6b": {
       "seen_at": "2026-10-30T12:59:19.385395+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "8261bf9ed172a6795b61266861f6fd14b1dea87fc23e5ff4d546ce66fb0a1019": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "NASA News",
       "status": "skipped_stale"
     },
     "826e7f78baea1ec30a496a86de0dcee5d3f5cbce532f9b1360ae53b45055350e": {
@@ -11767,6 +11923,11 @@
       "source": "Rolling Stone Music News",
       "status": "skipped_stale"
     },
+    "875f93d4f61775b7c8483e9f2975c828fd776cf334a677261a81003af9b38c3a": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "87637d121da9ed2306d0a368808019ab5b46e375ef194761cab2b7a22b8f0b34": {
       "seen_at": "2026-10-18T12:41:54.057892+00:00",
       "source": "Google News Business",
@@ -11810,6 +11971,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "87fef03462db2cadf79958e841d1d1e2c9bce76e1405262562c62d8abfd4fdab": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "8809f12aec96573b710a1196e11b222e261e5974fcd12ab336329e07e1e7ad70": {
       "seen_at": "2026-10-29T13:00:30.022198+00:00",
       "source": "Google News Top Stories",
@@ -11835,6 +12001,11 @@
       "source": "BBC World",
       "status": "skipped_stale"
     },
+    "8842d637b0f0fbcccbea6dc4547414cac84e9731c0cda728951acf98b6c37042": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "885bf00be80eecf56d8648d49b1bba182766bbab65b1873f7b1bb97f7af569a4": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "BBC World",
@@ -11855,8 +12026,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Business",
-      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-27T16:37:15.518957+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669598679277",
       "source_url": "https://www.bbc.co.uk/news/articles/c820qnznkrn4o?at_medium=RSS&at_campaign=rss",
@@ -11982,7 +12153,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Entertainment and Arts",
-      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
+      "restore_attempted_at": "2026-11-27T16:37:15.518957+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669598777581",
@@ -13934,7 +14105,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
+      "restore_attempted_at": "2026-11-27T16:37:15.518957+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220077805",
@@ -14501,6 +14672,11 @@
       "status": "published",
       "title": "Who could replace Jensen Huang as Nvidia's permanent chief executive?"
     },
+    "a60791c866814e25b9ec76f17a5a84dd9dfec45c9fa21c7c5dd8fa432eb955dd": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
     "a60ef15e42ee33d723d5ce2e9936d59ba620e51c3e7ff95a962beab49519d5e2": {
       "created_at": "2026-10-13T18:35:38.703000+00:00",
       "has_publisher_artwork": true,
@@ -14613,6 +14789,11 @@
     "a7352542a0842364ef26dc8762688c7045beae2a53c5f722164cb59cc036c145": {
       "seen_at": "2026-10-29T06:59:32.446399+00:00",
       "source": "BBC Science and Environment",
+      "status": "skipped_stale"
+    },
+    "a736c6b1125a4d8d6eea49b04e9f0f8581233a5a54223871635523d7c65a449a": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "a737f2eecd870613fb027ce5f150a5d70f5be3dbcb1b4ba3b0811f04be8cabf7": {
@@ -14789,6 +14970,11 @@
     "a9b71661addb0e224e95ac3c745212731a74e18269a755e11919bdde35655486": {
       "seen_at": "2026-11-10T18:58:12.608846+00:00",
       "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
+    "a9c62cdd7213c88961e4403e7c8e5c817d77e7b280e69357dfc54ae03f639b04": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "BBC Science and Environment",
       "status": "skipped_stale"
     },
     "a9cd9fd7d34595d41ff65f50ab36a1fef2120cb9ac41b420be2ba713e8bdd402": {
@@ -15180,6 +15366,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "aeb8bb40768b1b7c8b15441ae4c47d896bb1c469fc90920ec9df8427d1c5ffc9": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "aecc960e934c04c0aae7f934709f21600274e97ac8dceea9d21c81e44ea17b9c": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Environment",
@@ -15500,8 +15691,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Business",
-      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-27T16:37:15.518957+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669598744813",
       "source_url": "https://www.bbc.co.uk/news/articles/cdd29v8mp9jo?at_medium=RSS&at_campaign=rss",
@@ -15854,6 +16045,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "b5cf1873b222cec9fdf5f61ffb4d23072ab959b4c90d6f844936b12f1b1e5f5a": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "BBC World",
+      "status": "skipped_stale"
+    },
     "b5e451424d169f3eb4e1578789a958f252f7eb4158545dd16f469880af29a8c1": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Google News Business",
@@ -15869,7 +16065,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
+      "restore_attempted_at": "2026-11-27T16:37:15.518957+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669598646509",
@@ -17469,6 +17665,11 @@
       "source": "Google News Entertainment",
       "status": "skipped_stale"
     },
+    "c593d674df44ff8cc046f1e9a85a51914d0f0ea7958c8c6117ad3dfe05b46f4c": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "c5a56df9ef05386d870d84e8d51123acdc5fb409a3280ce3b5744173f7b04ae4": {
       "seen_at": "2026-10-20T06:46:53.923558+00:00",
       "source": "Google News Science",
@@ -17877,6 +18078,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "c9e618f014134d2b010449722ad12633a2d124a21a54f5f152fa5bc068b47898": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "Rolling Stone Music News",
+      "status": "skipped_stale"
+    },
     "c9e8be921c9e89a5431ae52b954e884452618f29020bb14d36daa41fa1163912": {
       "seen_at": "2026-11-10T18:58:12.608846+00:00",
       "source": "BBC Science and Environment",
@@ -17958,7 +18164,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-26T02:31:19.079908+00:00",
+      "restore_attempted_at": "2026-11-27T16:37:15.518957+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669550379245",
@@ -18279,6 +18485,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "cebb3704f07352337888e790c15dec25e3fa562913e98349b68e69a036c92e6f": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "cef4e950ba0db74507dfa8db6d67fdd9c6da8d39fb1f8537c61db5b279015f54": {
       "seen_at": "2026-10-19T10:50:30.417663+00:00",
       "source": "Google News Technology",
@@ -18436,6 +18647,11 @@
     "d0c82f8edc4bd2a93fd7696c457f0a98a68b1143b8ac8a8cbf6a845dc9b102b7": {
       "seen_at": "2026-11-23T17:11:45.448488+00:00",
       "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
+    "d0cd305c8bbe8414227df31fca81ede9464f41bf2efecfd3f0ae483c4104af24": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "d0cfd23bd2632071aeb3edcb276f7ef415172ed4c97ca3416cc6f3db9114b560": {
@@ -18738,6 +18954,11 @@
       "source": "NPR Business",
       "status": "skipped_stale"
     },
+    "d3ef1d162b630b21c1c20accf72b083ee5e424fb71ff6977207b33a734a669fc": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "d4036d1f11fee211fd2e268968317bc1f0be4714b2f5b74d01496f628f2f9cb0": {
       "seen_at": "2026-11-12T00:38:06.876272+00:00",
       "source": "BBC Business",
@@ -18801,6 +19022,11 @@
     "d4c478081cbaf508cf874ccb92a1d65dcef67836a773c0eee98d1cf1c6188485": {
       "seen_at": "2026-11-01T12:54:22.780534+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "d4cc56dec42331549cf083dd20b8ed39f3f90b5bccc1452fbbe3d0752f9bfad8": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "d4f2375d084377be7fd8ef69d085c683056d119f53eeaa916391a4b8376549e0": {
@@ -19142,6 +19368,11 @@
     "d89bf61864549fe79cbdda5bcd619a28b020e33174d7d5d5cc29d1268d18a9ba": {
       "seen_at": "2026-10-24T12:44:36.694392+00:00",
       "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
+    "d8a263907752007716f7978c21b835f9ab262f8329304f100f8986a076602a42": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "d8b2e2b81bbb6b138e185e6552343ea4ef807294f4cbbc26d38afc642308d957": {
@@ -20343,6 +20574,11 @@
       "source": "BBC Business",
       "status": "skipped_stale"
     },
+    "e57eaf5d28507d8a83b02d4136566c56ac98b64c929cf9b45cd2bd9c3e95d79c": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Business",
+      "status": "skipped_stale"
+    },
     "e57fb579949bca90755ee05d9af2325129b99adbfd99089f1bc690f68b4e82a7": {
       "seen_at": "2026-11-19T15:40:40.175868+00:00",
       "source": "The Guardian World",
@@ -20980,6 +21216,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "ec7d726e8b64153783e5477c4aabd5596e696e60167c7f17fec844b37487e6e2": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "ec8eb3b1f3a3231ad33fdcd7eca36db36d185d1a579c752b740ab9a89251aa66": {
       "created_at": "2026-11-02T07:29:49.590724+00:00",
       "has_embedded_video": true,
@@ -21268,6 +21509,11 @@
     "ef9af6a3bdb6655a17e28d9d081465a7ad7a4039d205d26c2f33c0a4749f5e02": {
       "seen_at": "2026-11-05T13:15:18.266721+00:00",
       "source": "BBC Business",
+      "status": "skipped_stale"
+    },
+    "efad23ef3736ba81b75f8199ea1ac8a379b2a9c7d7dee2a37214da0cb9bab9f3": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "NASA News",
       "status": "skipped_stale"
     },
     "efb5e46ff25eb37594fecdc5f5e25827c349e0bbaf7b23743f4c545aa261199f": {
@@ -21568,6 +21814,19 @@
       "seen_at": "2026-11-08T07:04:06.879708+00:00",
       "source": "The Guardian Culture",
       "status": "skipped_stale"
+    },
+    "f2ac1357c96a17a8da455768208bc3ab459413d212d8a5d852bf375e380d38a5": {
+      "created_at": "2026-11-27T16:35:21.385655+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "Rolling Stone Music News",
+      "restore_attempted_at": "2026-11-27T16:37:15.518957+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669637574893",
+      "source_url": "https://www.rollingstone.com/music/music-news/sesame-street-mariah-carey-christmas-song-homage-1235665152",
+      "status": "published",
+      "title": "Watch \u2018Sesame Street\u2019 Pay Homage to Mariah Carey\u2019s \u2018All I Want for Christmas Is You\u2019"
     },
     "f2b1c1da7d3551faace04af900f6c401bd44280539973f5f2243b6c62ab31f1a": {
       "seen_at": "2026-11-01T18:48:11.579033+00:00",
@@ -21881,7 +22140,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
+      "restore_attempted_at": "2026-11-27T16:37:15.518957+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669527736557",
@@ -21932,6 +22191,11 @@
     "f6509decff3d18fa33aa419a78392163aa8334e57c38a21a46bea94eec890bfe": {
       "seen_at": "2026-11-27T01:41:48.315620+00:00",
       "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
+    "f65803651a967091c51c01d85169e517e00f6e9aab9d76c3459ede4c22ea5da8": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "Variety Music",
       "status": "skipped_stale"
     },
     "f68449c7c292c55ed42942c077a9f07830a4e636681dde351b5fb271ac5af8fd": {
@@ -22139,7 +22403,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
+      "restore_attempted_at": "2026-11-27T16:37:15.518957+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669302980845",
@@ -22448,6 +22712,11 @@
       "source": "NPR Arts and Entertainment",
       "status": "skipped_stale"
     },
+    "fce630a2b39df32cc523f2431ac8cddb909b9b201a88f9b4a888d5c605d43752": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "The Guardian Business",
+      "status": "skipped_stale"
+    },
     "fcf2e7da91e68f35d3ffb7857f6979ab5dcf51182155a00104124e65cb65188e": {
       "seen_at": "2026-11-08T07:04:06.879708+00:00",
       "source": "Variety Music",
@@ -22633,6 +22902,11 @@
     "fefbc7cfa54a720a2d3011f741167baa82db2e30d42de3f47b139de7e9da907e": {
       "seen_at": "2026-11-01T07:00:28.338527+00:00",
       "source": "Google News Business",
+      "status": "skipped_stale"
+    },
+    "ff0501dec8e204f83b6b26a1d2b43f4a11440380c5c11221bcdfeda09678add8": {
+      "seen_at": "2026-11-27T16:35:21.385655+00:00",
+      "source": "NASA News",
       "status": "skipped_stale"
     },
     "ff28c5ebc1a708716e19f57280b9de9b01136fe4bba1cc4e86dd1fb4f89b0f11": {
