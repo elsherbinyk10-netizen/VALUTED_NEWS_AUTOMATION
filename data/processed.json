@@ -174,7 +174,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T01:43:35.900236+00:00",
+      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669225451757",
@@ -407,7 +407,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T01:43:35.900236+00:00",
+      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669522559213",
@@ -2048,7 +2048,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Business",
-      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
+      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669549592813",
@@ -4639,6 +4639,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "3576fb03c0c9694f001069d023f665b381f5a8a8ba8ae5d931a3e2943b4b4c85": {
+      "seen_at": "2026-11-27T02:25:58.553531+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "357726915098a0230cd544cc8907bb4aa82d45da9c63f5074c3101c7edbf5ee6": {
       "seen_at": "2026-10-17T12:41:47.879859+00:00",
       "source": "Google News World",
@@ -4925,6 +4930,11 @@
     "392c730c8e0b33426b562d7f656b99b5143f27930f84c87c3284d0ddce3e2526": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
+    "392d37d6cece7cd25c483ab0f923d88c3faff5ec87dba64cc14318cccabd5784": {
+      "seen_at": "2026-11-27T02:25:58.553531+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "393faee9d99aea209a60d28510cd14c38e67c0ce0edd298277c4504c4747e5ba": {
@@ -6548,7 +6558,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T01:43:35.900236+00:00",
+      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220045037",
@@ -8102,7 +8112,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T01:43:35.900236+00:00",
+      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669254123757",
@@ -8873,6 +8883,11 @@
       "status": "published",
       "title": "Brand moved from Wandsworth to category C prison, his wife confirms on podcast"
     },
+    "687b574949c4511db83aa7f21f68ddfd4a4f1ddfef22bf5f911997a7ffc7de04": {
+      "seen_at": "2026-11-27T02:25:58.553531+00:00",
+      "source": "NPR Business",
+      "status": "skipped_stale"
+    },
     "68d1483b3beb217b9f9b54278949c7f36639db4b930e486f60191e091abba950": {
       "seen_at": "2026-10-23T05:45:26.319124+00:00",
       "source": "BBC Business",
@@ -9239,7 +9254,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
+      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669598384365",
@@ -10675,6 +10690,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "7ca710f81fcc0cc501bf27a02eee40a4660c52e6983322a7ffac07c07dba5d8e": {
+      "seen_at": "2026-11-27T02:25:58.553531+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "7cac2a0794bc52e65e0c2f232ebcaaba100264d40b73b128b4662ddb9f246e40": {
       "seen_at": "2026-11-11T14:14:28.111405+00:00",
       "source": "BBC Business",
@@ -10900,7 +10920,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Rolling Stone Music News",
-      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
+      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669598286061",
@@ -13914,7 +13934,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T01:43:35.900236+00:00",
+      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220077805",
@@ -16700,7 +16720,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
+      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
       "restore_status": "blocked_insufficient_recoverable_source_text",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669598318829",
@@ -17926,6 +17946,11 @@
     "cadad02909632f47469b925afad57bd4841c8c6950b541cdb6228f6637fc471c": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Business",
+      "status": "skipped_stale"
+    },
+    "cb0e24754b95a4ee621d4fa6762cbabdd2ee211f0997026e2fda4879f34e8418": {
+      "seen_at": "2026-11-27T02:25:58.553531+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "cb29a20e38ef835b166a4d395353ae86504ae35fb2f596a0ef1919dcacfac8d4": {
@@ -20376,6 +20401,11 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "e6430c4f0b912788f6640ff4fc32f746c0f650f99aafcbd35eb167acb0d4eb7a": {
+      "seen_at": "2026-11-27T02:25:58.553531+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "e64af4de629f30dfe0f350012997ece1b758690775111532b2580d732657cd70": {
       "seen_at": "2026-10-22T12:48:45.756621+00:00",
       "source": "Google News Entertainment",
@@ -21379,8 +21409,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC Science and Environment",
-      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669598253293",
       "source_url": "https://www.bbc.co.uk/weather/articles/cr894e8dd7wqo?at_medium=RSS&at_campaign=rss",
@@ -21851,7 +21881,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T01:43:35.900236+00:00",
+      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669527736557",
@@ -22109,7 +22139,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T01:43:35.900236+00:00",
+      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669302980845",
@@ -22577,8 +22607,8 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "BBC World",
-      "restore_attempted_at": "2026-11-26T01:47:27.086439+00:00",
-      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "restore_attempted_at": "2026-11-27T02:27:15.289809+00:00",
+      "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669598351597",
       "source_url": "https://www.bbc.co.uk/news/articles/cwkgr38l2g9yo?at_medium=RSS&at_campaign=rss",
