@@ -179,7 +179,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T17:44:09.949533+00:00",
+      "restore_attempted_at": "2026-11-28T01:27:52.551857+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669225451757",
@@ -412,7 +412,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T17:44:09.949533+00:00",
+      "restore_attempted_at": "2026-11-28T01:27:52.551857+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669522559213",
@@ -938,6 +938,11 @@
     "0afa2143f712e4f6c6884651d6881d68012878f6071955454a167f7d8acaefb3": {
       "seen_at": "2026-11-11T15:38:48.305480+00:00",
       "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
+    "0b032116e10466e07e3bd0c2cda9f4620bb9ae336fc7b43416c4e2890223334f": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "0b07673914f5cfa843e40e6209ee9902e8ac5a10834af5f1c6634df739e08ce9": {
@@ -1683,6 +1688,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "1339e65df707c6f7f206b370144010ca7a8f7a3f034e5baf860dd671e691688e": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
     "134cb4c717d1d7719aeb388962775069a773ce61c24c60e366ffd67b64c768aa": {
       "seen_at": "2026-11-08T07:04:06.879708+00:00",
       "source": "BBC Science and Environment",
@@ -1940,6 +1950,11 @@
     "167d0cdc76e9096617b0887d260bed3a090bcc397ccd3743441b4d14d1326095": {
       "seen_at": "2026-10-11T21:26:28.869298+00:00",
       "source": "BBC World",
+      "status": "skipped_stale"
+    },
+    "16a9a4cec15bb55bbdb90978f503ee76ea94dcc130041ff270f7be9785d36dd5": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "16b45dda4b6dc086193882645e155859caea4ef02b4ae696a35e21d03fef2e93": {
@@ -3664,6 +3679,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Musk's plan to send a million SpaceX data satellites into space approved"
+    },
+    "29fb29d24609010b90e1c445148fc4ab0233050c4870f0d617358c4e75b0724d": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
     },
     "2a00e825095109564ac93d93965311f61deaf82fa432066ac2f63d78bc04f2fe": {
       "seen_at": "2026-10-21T06:48:19.413657+00:00",
@@ -6646,7 +6666,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T17:44:09.949533+00:00",
+      "restore_attempted_at": "2026-11-28T01:27:52.551857+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220045037",
@@ -8210,7 +8230,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T17:44:09.949533+00:00",
+      "restore_attempted_at": "2026-11-28T01:27:52.551857+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669254123757",
@@ -8571,6 +8591,11 @@
     "640fab09d2bdbf866bd043668fd7992bca8e1164be72606ca74d93f91fb1e13b": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
+    "64197c66139c41ea21d6c7734f8905221d0a9d0c5c62b4115343500e37dd4107": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "642c34e7eb1fd5c37a9322813ee6345f92ac49ffe7593939b9f088d1e1fb9799": {
@@ -9603,6 +9628,11 @@
       "source": "Google News World",
       "status": "skipped_stale"
     },
+    "6f6f69c8e4a3aeab13e6ecf11f632ce6fed1e6a14b5057fcd2565e19278fc448": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "The Guardian Environment",
+      "status": "skipped_stale"
+    },
     "6f7a421ef50a3ee20db8241fb0a750f651be5eda6a1409d46b092d588d09d510": {
       "seen_at": "2026-10-31T06:55:30.871191+00:00",
       "source": "NPR Business",
@@ -10582,6 +10612,11 @@
     "799f240e804d6b0aa2d0058e09c8ca46283e2f5f7d24f6ca5028346a339a48f1": {
       "seen_at": "2026-10-25T18:39:34.241726+00:00",
       "source": "Google News Entertainment",
+      "status": "skipped_stale"
+    },
+    "79a17237bc68ab6eaadd196eef4c6eb0b67d8ce6ec4d147437bbebf7334dfebd": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "79cf80c310c774b9200e14e5af6b6da381738cc522815ce9bf42500ce5184505": {
@@ -12290,6 +12325,11 @@
       "source": "The Guardian Culture",
       "status": "skipped_stale"
     },
+    "8b1572b79a8c7c3b756cc74301ffe0dd560aff07b7d0abf0de760ec20ac78b7c": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
+    },
     "8b2a114e56c9250a8c4197f6ba2b16275c580586198a478357d727179d8d8723": {
       "seen_at": "2026-11-03T16:31:36.882369+00:00",
       "source": "Google News Technology",
@@ -12303,6 +12343,11 @@
     "8b58371186fd9dcef24e3d0021f9a373f372d2aac50865eb0f329ec9bc9440de": {
       "seen_at": "2026-10-17T06:34:07.201625+00:00",
       "source": "Google News Technology",
+      "status": "skipped_stale"
+    },
+    "8b6511b8a945cf9cfc3549e436c52968bdd2e50fe52ee993e19932973d363d51": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "8b821bca7cc8bd92f27cc81dec276eb4eeb42ab2e08bcad8c38f60aaf74631ec": {
@@ -12724,6 +12769,11 @@
       "source_url": "https://www.bbc.co.uk/news/articles/c3x29ggenz12o?at_medium=RSS&at_campaign=rss",
       "status": "published",
       "title": "Anthropic becomes one of world's most valuable public companies in stock market debut"
+    },
+    "900b9bd984f0957b75772a2067b84b28b52f79cadbd11ba4151bd4368f37f111": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
     },
     "901e4c6072cf569b275ad463cd8bfc33dab8b1384194d34453431c8b15d7d05c": {
       "seen_at": "2026-11-11T14:14:28.111405+00:00",
@@ -13537,6 +13587,19 @@
       "source": "Google News Business",
       "status": "skipped_stale"
     },
+    "98da82969ae5130028fb3307fc2ddeb3643b930be75f73c49c6893b470d086d1": {
+      "created_at": "2026-11-28T01:25:39.104946+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Entertainment and Arts",
+      "restore_attempted_at": "2026-11-28T01:27:52.551857+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669640622317",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm0jx92d07n5o?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Five Gladiators will not return for new BBC series"
+    },
     "98dc3bf6f35d41bef52929212115cd27901970f2be5bda1938a95e945ee39384": {
       "seen_at": "2026-11-25T02:22:26.625354+00:00",
       "source": "NPR Arts and Entertainment",
@@ -13847,7 +13910,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "Rolling Stone Music News",
-      "restore_attempted_at": "2026-11-26T17:56:19.654336+00:00",
+      "restore_attempted_at": "2026-11-28T01:27:52.551857+00:00",
       "restore_status": "blocked_original_rss_excerpt_unavailable",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669596221677",
@@ -14110,7 +14173,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T17:44:09.949533+00:00",
+      "restore_attempted_at": "2026-11-28T01:27:52.551857+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669220077805",
@@ -14431,6 +14494,19 @@
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "NPR Business",
       "status": "skipped_stale"
+    },
+    "a38c1440c2b10cd04c72610c661ab1f6e9bafb8703b14f69624053a5e8248317": {
+      "created_at": "2026-11-28T01:25:39.104946+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC Science and Environment",
+      "restore_attempted_at": "2026-11-28T01:27:52.551857+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669640655085",
+      "source_url": "https://www.bbc.co.uk/news/articles/cre3dj5n7dpwo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Hundreds of thousands still without power a day after US slammed with Thanksgiving storms"
     },
     "a38f0bbad45d6651efeb6d42e464e8f819efa277d77048ce3bccdc67c87ab556": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
@@ -14814,6 +14890,11 @@
     "a77442616d23ec077509817ea976c4ca78ce1e2ab358fb382ba5346e3dfc87be": {
       "seen_at": "2026-11-08T12:55:50.653866+00:00",
       "source": "Billboard Pro Music Business",
+      "status": "skipped_stale"
+    },
+    "a77b5085c9245e54e54e404e6a1346886c4838ab0d532cea025380f9df34ac39": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "The Guardian World",
       "status": "skipped_stale"
     },
     "a78524245ccecf633b6efbb2f5fbcf0ea3387848318163873290261e2ce1577b": {
@@ -15229,6 +15310,11 @@
       "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
+    "ac83d7c5a5e9c811f22b1b06e645ccc96f7b2b2e4f25ac3a7363e0fac2f636ab": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "The Guardian Culture",
+      "status": "skipped_stale"
+    },
     "aca8c961095aa0b53a4df8246b4cd897effa74ff844697a5993e4a22b3517ba9": {
       "seen_at": "2026-11-02T17:41:57.122272+00:00",
       "source": "Google News Health",
@@ -15619,6 +15705,11 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "b0d21790b662805d9b39e43e9753d12b8817f00ae1d62b945005d8b2b691d3eb": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "BBC Entertainment and Arts",
+      "status": "skipped_stale"
+    },
     "b0e5eca479589d50d5e791f8a4c25f9fef87a296448094ed96ba9e77df063dc7": {
       "seen_at": "2026-11-15T13:53:13.942811+00:00",
       "source": "BBC Entertainment and Arts",
@@ -15778,6 +15869,11 @@
     "b28b4bafb15ddcf6cd10067914aeeae03c1aa238b8b66a44ee23e2bf032229f1": {
       "seen_at": "2026-10-30T07:00:00.666940+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "b2b5c2ca37a05d4d3392f1e5b5b6737e213f894c4076ca203bb7c41a19693aaf": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "b2b721d93807ad8f5f326dfd48e1521b016df4dccfa059435b8891834cd14930": {
@@ -17382,6 +17478,11 @@
     "c2c96bd84b3ba5dfacc313d502710dfa9fa9bc8b817a500a6db5333aa5b46066": {
       "seen_at": "2026-11-25T02:22:26.625354+00:00",
       "source": "BBC Technology",
+      "status": "skipped_stale"
+    },
+    "c2cda04dc49edbd4d5b92e27127dab5dafcc87dbe4b046c23f97f18545c63d17": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "The Guardian Technology",
       "status": "skipped_stale"
     },
     "c2d5c21b657a1ac4b508135b8dd49d37fad6c8d694024c0e36b2e2c8dac30f47": {
@@ -19561,6 +19662,11 @@
       "source": "NASA News",
       "status": "skipped_stale"
     },
+    "da9c922ba02a1320e0da0ec65f48694cae96c68d7ed1aa1d7ad3b116c0d6bef8": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
     "dab6e9b3c71af175b308e31e4871d3612e80ab80327a78c7baad833ee0193005": {
       "seen_at": "2026-11-14T13:27:15.188339+00:00",
       "source": "BBC Business",
@@ -20073,6 +20179,19 @@
       "source": "Google News Science",
       "status": "skipped_stale"
     },
+    "e056cc8e97bf4372ee4c952dd6dfc0c8ed652cb000ab2931cd6392407767a5f8": {
+      "created_at": "2026-11-28T01:25:39.104946+00:00",
+      "has_embedded_video": true,
+      "has_publisher_artwork": true,
+      "publisher": "BBC World",
+      "restore_attempted_at": "2026-11-28T01:27:52.551857+00:00",
+      "restore_status": "blocked_insufficient_recoverable_source_text",
+      "risk_flag": false,
+      "shopify_article_id": "gid://shopify/Article/669640786157",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm5y1380q3vgo?at_medium=RSS&at_campaign=rss",
+      "status": "published",
+      "title": "Rare turtles found inside baggage at Amsterdam airport"
+    },
     "e05d3103e4dd13025c3329c52fd56d3bc66c5839a485b9d9d1dd75d2ce590774": {
       "seen_at": "2026-11-15T13:53:13.942811+00:00",
       "source": "Billboard Pro Music Business",
@@ -20284,6 +20403,11 @@
       "source_url": "https://www.theguardian.com/technology/2026/nov/03/uk-meat-processing-firms-fridges-heat-up-cyber-attacks",
       "status": "published",
       "title": "UK meat processing firms\u2019 fridges heat up after cyber-attacks"
+    },
+    "e2256bea95974a4470d23777567ca0acc07921554279d6c9e077c571470282b5": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "BBC Business",
+      "status": "skipped_stale"
     },
     "e234be1478cf3d5ec7916b271b5f2d6fb655a2e7213fd47be5817c1650345c60": {
       "seen_at": "2026-11-10T07:13:55.903933+00:00",
@@ -20810,6 +20934,11 @@
     "e79817d7ec61bb3dea4dee2c513c04b616836020f1de5cf456a51a5a595770b3": {
       "seen_at": "2026-10-18T06:43:24.869573+00:00",
       "source": "Google News Science",
+      "status": "skipped_stale"
+    },
+    "e798b0b9bff155871d07357e27f9fb269fac0fa276100ef818a90ab7784c7ea8": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "e79e077a07ff0a3008042476cc600dcfbb222b1692990c6c35ca0e547684b7b3": {
@@ -22170,7 +22299,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T17:44:09.949533+00:00",
+      "restore_attempted_at": "2026-11-28T01:27:52.551857+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669527736557",
@@ -22246,6 +22375,11 @@
     "f6c98a0cf9634b9b5f0ac5d4943a71b415ee08138038d72c429bc89aad9a901f": {
       "seen_at": "2026-10-19T06:52:17.936982+00:00",
       "source": "Google News World",
+      "status": "skipped_stale"
+    },
+    "f6d76ba3883e1c3778780e564f5aefe14ff510b9d0600756b46c1af09303c178": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "BBC Entertainment and Arts",
       "status": "skipped_stale"
     },
     "f7030ce7d2a2f87fc8c09e952b13b7cbc7b47e9124b05110a9dc7cbecbf12b33": {
@@ -22433,7 +22567,7 @@
       "has_embedded_video": true,
       "has_publisher_artwork": true,
       "publisher": "NASA News",
-      "restore_attempted_at": "2026-11-27T17:44:09.949533+00:00",
+      "restore_attempted_at": "2026-11-28T01:27:52.551857+00:00",
       "restore_status": "already_present_in_shopify",
       "risk_flag": false,
       "shopify_article_id": "gid://shopify/Article/669302980845",
@@ -22497,6 +22631,11 @@
     "f956819c709825a6e15b4103ed75eaf8ec4e7afd0ea38eac424570d18c792294": {
       "seen_at": "2026-11-04T07:21:09.092237+00:00",
       "source": "The Guardian Technology",
+      "status": "skipped_stale"
+    },
+    "f9a9f4e77b5965d48e6e9f401516fa6e2233c6a900444b8b9ad2244f0d5f50e5": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "The Guardian Environment",
       "status": "skipped_stale"
     },
     "f9ce569d6615b2e5a37fe8790d0520ba1c1368ab8e67bf7a55b45df0f9d25e8d": {
@@ -22725,6 +22864,11 @@
     "fc9bcbb71a5289aeef2944cf153171b97abe1b7900f322cdbd6a16d6b973613a": {
       "seen_at": "2026-11-14T13:27:15.188339+00:00",
       "source": "The Guardian World",
+      "status": "skipped_stale"
+    },
+    "fcba5c9d7e3f7593e60a3b818992ee1499e498eef5e805a9dfe2803dfef820c5": {
+      "seen_at": "2026-11-28T01:25:39.104946+00:00",
+      "source": "BBC Business",
       "status": "skipped_stale"
     },
     "fcbdd747222bb5da54bfcb80a58a9cc540bb2eabcd7a59b128d7653bc447bf0d": {
